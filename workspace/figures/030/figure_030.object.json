@@ -1,0 +1,322 @@
+{
+  "figure_no": 30,
+  "figure_id": "Figure 30",
+  "api_page": 115,
+  "pdf_page": 123,
+  "caption_ru": "Рисунок 30 — Узел компенсации плотности для парового барабана",
+  "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=123",
+  "stage4_status": "translated_review_pending_user_approval",
+  "source_policy": "translations from approved V2; protected symbol/formula policy applied before placement; no OCR-derived decisions used",
+  "source_crop": "figure_030_source_crop.png",
+  "translated_review_png": "figure_030_translated_review.png",
+  "translated_review_png_sha256": "69d142763e204e801a080fc1526b32e250a4b3c13e9a9355810abcae2eecd401",
+  "visual_label_blocks": [
+    {
+      "label_block_no": 1,
+      "original_text": "Steam from Boiler drum",
+      "effective_ru_text": "Пар от парового барабана",
+      "source_rows": [
+        "block-002"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-002:bbox_safe_stage3k",
+      "approved_base_bbox": [
+        780.0,
+        126.0,
+        876.0,
+        163.0
+      ],
+      "scaled_bbox": [
+        1170,
+        189,
+        1314,
+        244
+      ],
+      "placement": {
+        "rect": [
+          1165,
+          184,
+          1506,
+          249
+        ],
+        "lines": [
+          "Пар от парового барабана"
+        ],
+        "font_size": 21,
+        "placement_mode": "expanded_right"
+      }
+    },
+    {
+      "label_block_no": 2,
+      "original_text": "Max level",
+      "effective_ru_text": "Максимальный уровень",
+      "source_rows": [
+        "fig30_stage3j_candidate_0001"
+      ],
+      "coverage_resolution": "stage4_translated_current_stage",
+      "stage4_translation_added": true,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:fig30_stage3j_candidate_0001:bbox_safe_stage3k",
+      "approved_base_bbox": [
+        633.0,
+        237.0,
+        717.0,
+        262.0
+      ],
+      "scaled_bbox": [
+        950,
+        355,
+        1076,
+        393
+      ],
+      "placement": {
+        "rect": [
+          945,
+          350,
+          1257,
+          398
+        ],
+        "lines": [
+          "Максимальный уровень"
+        ],
+        "font_size": 21,
+        "placement_mode": "expanded_right"
+      }
+    },
+    {
+      "label_block_no": 3,
+      "original_text": "Condensate",
+      "effective_ru_text": "Конденсат",
+      "source_rows": [
+        "fig30_stage3j_candidate_0002"
+      ],
+      "coverage_resolution": "stage4_translated_current_stage",
+      "stage4_translation_added": true,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:fig30_stage3j_candidate_0002:bbox_safe_stage3k",
+      "approved_base_bbox": [
+        312.0,
+        335.0,
+        412.0,
+        352.0
+      ],
+      "scaled_bbox": [
+        468,
+        502,
+        618,
+        528
+      ],
+      "placement": {
+        "rect": [
+          463,
+          497,
+          623,
+          533
+        ],
+        "lines": [
+          "Конденсат"
+        ],
+        "font_size": 21,
+        "placement_mode": "approved_bbox_no_expand"
+      }
+    },
+    {
+      "label_block_no": 4,
+      "original_text": "Insulation",
+      "effective_ru_text": "Теплоизоляция",
+      "source_rows": [
+        "fig30_stage3j_candidate_0003"
+      ],
+      "coverage_resolution": "stage4_translated_current_stage",
+      "stage4_translation_added": true,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:fig30_stage3j_candidate_0003:bbox_safe_stage3k",
+      "approved_base_bbox": [
+        333.0,
+        441.0,
+        412.0,
+        458.0
+      ],
+      "scaled_bbox": [
+        500,
+        661,
+        618,
+        687
+      ],
+      "placement": {
+        "rect": [
+          404,
+          656,
+          623,
+          692
+        ],
+        "lines": [
+          "Теплоизоляция"
+        ],
+        "font_size": 21,
+        "placement_mode": "expanded_left"
+      }
+    },
+    {
+      "label_block_no": 5,
+      "original_text": "Actual level",
+      "effective_ru_text": "Фактический уровень",
+      "source_rows": [
+        "fig30_stage3j_candidate_0004"
+      ],
+      "coverage_resolution": "stage4_translated_current_stage",
+      "stage4_translation_added": true,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:fig30_stage3j_candidate_0004:bbox_safe_stage3k",
+      "approved_base_bbox": [
+        633.0,
+        484.0,
+        733.0,
+        509.0
+      ],
+      "scaled_bbox": [
+        950,
+        726,
+        1100,
+        763
+      ],
+      "placement": {
+        "rect": [
+          945,
+          721,
+          1236,
+          768
+        ],
+        "lines": [
+          "Фактический уровень"
+        ],
+        "font_size": 21,
+        "placement_mode": "expanded_right"
+      }
+    },
+    {
+      "label_block_no": 6,
+      "original_text": "Min level",
+      "effective_ru_text": "Минимальный уровень",
+      "source_rows": [
+        "fig30_stage3j_candidate_0005"
+      ],
+      "coverage_resolution": "stage4_translated_current_stage",
+      "stage4_translation_added": true,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:fig30_stage3j_candidate_0005:bbox_safe_stage3k",
+      "approved_base_bbox": [
+        634.0,
+        795.0,
+        707.0,
+        812.0
+      ],
+      "scaled_bbox": [
+        951,
+        1192,
+        1060,
+        1217
+      ],
+      "placement": {
+        "rect": [
+          946,
+          1187,
+          1236,
+          1222
+        ],
+        "lines": [
+          "Минимальный уровень"
+        ],
+        "font_size": 20,
+        "placement_mode": "expanded_right"
+      }
+    },
+    {
+      "label_block_no": 7,
+      "original_text": "Condensate To boiler drum",
+      "effective_ru_text": "Конденсат к паровому барабану",
+      "source_rows": [
+        "block-003"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-003:bbox_safe_stage3k",
+      "approved_base_bbox": [
+        779.0,
+        924.0,
+        897.0,
+        961.0
+      ],
+      "scaled_bbox": [
+        1168,
+        1385,
+        1346,
+        1441
+      ],
+      "placement": {
+        "rect": [
+          1163,
+          1380,
+          1573,
+          1446
+        ],
+        "lines": [
+          "Конденсат к паровому барабану"
+        ],
+        "font_size": 21,
+        "placement_mode": "expanded_right"
+      }
+    },
+    {
+      "label_block_no": 8,
+      "original_text": "Differential pressure Level transmitter",
+      "effective_ru_text": "Преобразователь уровня по перепаду давления",
+      "source_rows": [
+        "block-004"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-004:bbox_safe_stage3k",
+      "approved_base_bbox": [
+        366.0,
+        1050.0,
+        529.0,
+        1087.0
+      ],
+      "scaled_bbox": [
+        549,
+        1574,
+        794,
+        1630
+      ],
+      "placement": {
+        "rect": [
+          544,
+          1569,
+          1129,
+          1635
+        ],
+        "lines": [
+          "Преобразователь уровня по перепаду давления"
+        ],
+        "font_size": 21,
+        "placement_mode": "expanded_right"
+      }
+    }
+  ],
+  "unresolved_items": [],
+  "ready_for_final_export": true,
+  "approval_status": "accepted_by_user_2026-06-17"
+}

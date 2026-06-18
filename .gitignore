@@ -1,0 +1,27 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Local runtime
+.cache/
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+
+# Logs
+*.log
+
+# Local-only helper scripts
+API551_BOOTSTRAP_GITHUB_REPO*.ps1
+API551_GIT_INIT_AND_CHECK*.ps1
+
+# Do not ignore project source archives/pdf.
+!source/*.zip
+!source/*.pdf

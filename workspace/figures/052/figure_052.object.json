@@ -1,0 +1,27 @@
+{
+  "object_schema": "api551_stage4_figure_object_v1",
+  "stage": "Stage 4",
+  "approval_status": "approved",
+  "approval_basis": "accepted by user in chat; do not modify this figure further",
+  "figure_no": 52,
+  "figure_id": "Figure 52",
+  "api_page": 177,
+  "pdf_page": 185,
+  "caption_ru": "Рисунок 52 — Типовой узел прочистки для фланцев диафрагмы",
+  "caption_mode": "bottom_after_image",
+  "components_order": [
+    "image",
+    "caption"
+  ],
+  "object_kind": "title_only",
+  "png_file": "figure_052.png",
+  "png_sha256": "6be043ad45aab91a5133c99eb1c5f08228fc64c2f978b12659a82f480a8f3a5b",
+  "png_size_px": [
+    1064,
+    404
+  ],
+  "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=185",
+  "on_image_russian_labels": false,
+  "ready_for_final_export": true,
+  "do_not_touch_after_approval": true
+}

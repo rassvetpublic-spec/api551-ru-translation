@@ -1,0 +1,141 @@
+{
+  "project": "API 551 Stage 4",
+  "updated": "2026-06-18",
+  "status": "drive_source_folder_canonical_consolidated_tz_and_rules_active",
+  "canonical_source_policy": {
+    "primary_source_folder": {
+      "name": "API 551/Source",
+      "folder_id": "1LmtL05ABlWHKY3gI8LbONq-7Ju4-hezH",
+      "url": "https://drive.google.com/drive/folders/1LmtL05ABlWHKY3gI8LbONq-7Ju4-hezH",
+      "read_status": "accessible",
+      "file_count_via_drive_api": 9,
+      "promoted_to_canonical": true
+    },
+    "local_cache_role": "fallback_and_working_copy_only",
+    "rule": "Before Stage 4 work, verify mandatory source availability in API 551/Source first. Active Stage 4 TZ is TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md. Active policy/rules source is API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md. Use local cache only as fallback or working copy after Drive Source verification."
+  },
+  "mandatory_sources": [
+    {
+      "file": "TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md",
+      "role": "current consolidated Stage 4 operational TZ; replaces prior split/current TZ files after user approval on 2026-06-18",
+      "drive_source_file_id": "1zQaH9JrtqSPJ1cC8H5cr-kCFGRPTvEJP",
+      "drive_source_size": 15649,
+      "local_size": 15649,
+      "comparison": "size_match",
+      "read_check": "metadata_and_text_fetch_ok_after_active_status_update"
+    },
+    {
+      "file": "TZ_API551_translation_project_RU.md",
+      "role": "archive/baseline/restart; do not delete",
+      "drive_source_file_id": "15ZTe5bje5R3pBcSwSWIjhGP9itQ2r70c",
+      "drive_source_size": 25134,
+      "local_size": 25134,
+      "comparison": "size_match",
+      "read_check": "metadata_ok"
+    },
+    {
+      "file": "API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md",
+      "role": "single mandatory active source for API 551 policies and rules; consolidates v5 rules ZIP, Stage2 replacement rules, Stage4 consolidated policies, and archived Stage4 corrections without information loss",
+      "drive_source_file_id": "1gSeHuC22cQ9ug4dl0F52bV_93_VFO8v_",
+      "drive_source_size": 145148,
+      "local_size": 145148,
+      "comparison": "size_match",
+      "read_check": "metadata_ok; generated coverage register includes source sizes and SHA-256"
+    },
+    {
+      "file": "API 551 2016 (R2024).pdf",
+      "role": "primary source and visual reference",
+      "drive_source_file_id": "1sRmyn5oVf-c1fPJczFMEnUy6L3MfSxyx",
+      "drive_source_size": 8089772,
+      "local_size": 8089772,
+      "comparison": "size_match",
+      "read_check": "metadata_and_raw_fetch_ok"
+    },
+    {
+      "file": "api551_approved_label_master_v1.csv",
+      "role": "approved label and translation master",
+      "drive_source_file_id": "1xljstjVHEFgsXn3f4ZMDmFdkJQHnzJQE",
+      "drive_source_size": 629680,
+      "local_size": 629680,
+      "comparison": "size_match",
+      "read_check": "metadata_ok"
+    },
+    {
+      "file": "API_551_STAGE3_SOURCE_PACKAGE_v1.zip",
+      "role": "Stage 3 production package",
+      "drive_source_file_id": "1ZfS_iY_AzBKyzZUGwwrtB6ugxczJKgvL",
+      "drive_source_size": 28313449,
+      "local_size": 28313449,
+      "comparison": "size_match",
+      "read_check": "metadata_and_raw_fetch_ok"
+    },
+    {
+      "file": "API_551_STAGE2_REFERENCE_FILES_v1.zip",
+      "role": "Stage 2 reference/register package",
+      "drive_source_file_id": "1UzXbg1Xsq7YQQB17HqlricUaBsJQitOC",
+      "drive_source_size": 28671362,
+      "local_size": 28671362,
+      "comparison": "size_match",
+      "read_check": "metadata_ok"
+    },
+    {
+      "file": "api551_control_build_v1.zip",
+      "role": "control build, not primary source of truth",
+      "drive_source_file_id": "12-xbnKpkYY2qpuU_OFbXLFXm0nq--JMW",
+      "drive_source_size": 34726175,
+      "local_size": 34726175,
+      "comparison": "size_match",
+      "read_check": "metadata_ok"
+    }
+  ],
+  "supplemental_source_files": [],
+  "duplicates_observed": [],
+  "non_mandatory_source_files": [],
+  "drive_context": {
+    "api551_root_folder_id": "19f-4J2gALi5Kco6e-XD_d8VEET05Upmv",
+    "api551_root_url": "https://drive.google.com/drive/folders/19f-4J2gALi5Kco6e-XD_d8VEET05Upmv",
+    "source_folder_id": "1LmtL05ABlWHKY3gI8LbONq-7Ju4-hezH",
+    "source_folder_url": "https://drive.google.com/drive/folders/1LmtL05ABlWHKY3gI8LbONq-7Ju4-hezH",
+    "archive_folder_id": "1OxJtq4o01cQsegeiZTY8bRb9ilJnX3Eo",
+    "archive_folder_url": "https://drive.google.com/drive/folders/1OxJtq4o01cQsegeiZTY8bRb9ilJnX3Eo"
+  },
+  "active_source_working_files": [
+    {
+      "name": "API551_SOURCE_MANIFEST_CURRENT.json",
+      "id": "1DfN16bnHuFZI17gfjR0OPRnDsoK8QNhJ",
+      "role": "current Source manifest and Drive link registry"
+    }
+  ],
+  "archived_after_consolidation": [
+    {
+      "name": "TZ_API551_STAGE4_FIGURE_OBJECTS_CURRENT_2026-06-16.md",
+      "id": "1tO3nqqR8Drl2b1NpDqH_8zmIZ2rKx_jz",
+      "archive_folder_id": "1OxJtq4o01cQsegeiZTY8bRb9ilJnX3Eo",
+      "reason": "superseded by consolidated Stage 4 TZ"
+    },
+    {
+      "name": "TZ_API551_translation_project_RU_CURRENT_2026-06-16.md",
+      "id": "1_Lx4o-A6bJwLAw0C6V-Bad_9eJe4E27c",
+      "archive_folder_id": "1OxJtq4o01cQsegeiZTY8bRb9ilJnX3Eo",
+      "reason": "superseded by consolidated Stage 4 TZ; baseline TZ remains active as restart/archive"
+    },
+    {
+      "name": "API551_RULES_SYSTEMATIZED_v5_CLEAN_2026-06-16.zip",
+      "id": "1kKr0qUoVt76worG-P8zpUiiKY_BYrEob",
+      "archive_folder_id": "1OxJtq4o01cQsegeiZTY8bRb9ilJnX3Eo",
+      "reason": "covered by API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md; preserved as original v5 package"
+    },
+    {
+      "name": "API551_STAGE4_CONSOLIDATED_CURRENT_POLICIES_2026-06-18.zip",
+      "id": "1-tp2RAiQsYwkAsHct9XZjMTjRpBtA5TN",
+      "archive_folder_id": "1OxJtq4o01cQsegeiZTY8bRb9ilJnX3Eo",
+      "reason": "covered by API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md; preserved as prior consolidated package"
+    },
+    {
+      "name": "RULES_API551_STAGE2_IMAGE_LABEL_REPLACEMENT_STRATEGIES_v1.md",
+      "id": "19I2aTUdk5V8pLuAb6KZSRIphVjmOvdOV",
+      "archive_folder_id": "1OxJtq4o01cQsegeiZTY8bRb9ilJnX3Eo",
+      "reason": "covered by API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md; preserved as approved Stage2 rule source"
+    }
+  ]
+}

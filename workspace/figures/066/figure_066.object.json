@@ -1,0 +1,80 @@
+{
+  "object_schema": "api551_stage4_figure_object_v1",
+  "stage": "Stage 4",
+  "approval_status": "approved",
+  "approval_basis": "accepted by user in chat; do not modify this figure further",
+  "figure_no": 66,
+  "figure_id": "Figure 66",
+  "api_page": 208,
+  "pdf_page": 216,
+  "caption_ru": "Рисунок 66 — Рекомендуемые расходы продувки для различных размеров отборов фланцев диафрагмы",
+  "caption_mode": "bottom_after_reconstructed_table",
+  "components_order": [
+    "reconstructed_table_with_embedded_drawing",
+    "caption"
+  ],
+  "object_kind": "reconstructed_table_with_embedded_drawing",
+  "png_file": "figure_066.png",
+  "png_sha256": "75d7eb58311b1d8f31aa229cfdf85054fe4af54c4e57df91fadacfaf646c26f5",
+  "png_size_px": [
+    265,
+    285
+  ],
+  "reconstructed_table": {
+    "top_text_ru": "Использовать отборы давления NPS 1/2 или 3/4 со сверлом 12 мм (1/2″) для трубы ≥4″; сверлом 10 мм (3/8″) для трубы 3″; и сверлом 6 мм (1/4″) для трубы ≤2″.",
+    "header_rows_ru": [
+      [
+        "NPS",
+        "Диаметр сверления",
+        "",
+        "Расход газа",
+        "",
+        "Расход жидкости",
+        ""
+      ],
+      [
+        "NPS",
+        "дюймы",
+        "мм",
+        "фт³/ч",
+        "м³/ч",
+        "галл/ч",
+        "м³/ч"
+      ]
+    ],
+    "data_rows_ru": [
+      [
+        "≤2″",
+        "1/4",
+        "6",
+        "1",
+        "0.03",
+        "3",
+        "0.01"
+      ],
+      [
+        "3″",
+        "3/8",
+        "9.5",
+        "2",
+        "0.06",
+        "5",
+        "0.02"
+      ],
+      [
+        "≥4″",
+        "1/2",
+        "12",
+        "5",
+        "0.14",
+        "6",
+        "0.02"
+      ]
+    ],
+    "embedded_drawing_file": "figure_066.png"
+  },
+  "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=216",
+  "on_image_russian_labels": false,
+  "ready_for_final_export": true,
+  "do_not_touch_after_approval": true
+}

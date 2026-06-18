@@ -1,0 +1,22 @@
+{
+  "object_schema": "api551_stage4_figure_object_v1",
+  "stage": "Stage 4",
+  "approval_status": "approved",
+  "approval_basis": "accepted by user in chat; do not modify this figure further",
+  "figure_no": 4,
+  "figure_id": "Figure 4",
+  "api_page": 28,
+  "pdf_page": 36,
+  "caption_ru": "Рисунок 4 — Защитная гильза типа Van Stone в патрубке с резьбовыми шпильками",
+  "caption_mode": "external_text_component_below_png",
+  "internal_label_policy": "no internal translated labels for this object",
+  "png_file": "figure_004.png",
+  "png_sha256": "963003446da2f57a7fa415b97ccad4f954e60e8deb51787763199c874b1f3e35",
+  "png_size_px": [
+    1064,
+    690
+  ],
+  "source_operation": "accepted review candidate; image content not changed during approved ZIP packaging",
+  "ready_for_final_export": true,
+  "do_not_touch_after_approval": true
+}

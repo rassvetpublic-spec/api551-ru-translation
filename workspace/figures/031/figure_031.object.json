@@ -1,0 +1,221 @@
+{
+  "figure_no": 31,
+  "figure_id": "Figure 31",
+  "api_page": 118,
+  "pdf_page": 126,
+  "caption_original": "Figure 31—Displacer Transmitter Mounting",
+  "caption_ru": "Рисунок 31 — Монтаж буйкового преобразователя",
+  "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=126",
+  "status": "accepted",
+  "stage4_status": "accepted",
+  "source_policy": "rendered from primary PDF using inventory crop bbox; labels from api551_approved_label_master_v1.csv manual-approved rows",
+  "source_crop": "figure_031.source_crop.png",
+  "translated_review_png": "figure_031.png",
+  "translated_review_png_sha256": "2c94fb61f6aa0f4030f58d782fa517b9f69572e5d660081e43a3e4c22d6cf4de",
+  "source_crop_sha256": "7d11bbcf5573fbc5b3d1e1ab161f4a9c3adf4c9e7c48c6aedbee91c77d9ebe0b",
+  "visual_label_blocks": [
+    {
+      "label_block_no": 1,
+      "block_id": "block-002",
+      "block_type": "callout",
+      "original_text": "Rotatable transmitter mounting",
+      "effective_ru_text": "Поворотное крепление преобразователя",
+      "wrapped_ru": [
+        "Поворотное крепление",
+        "преобразователя"
+      ],
+      "placed": true,
+      "bbox_source": "api551_approved_label_master_v1.csv:bbox_crop_pixels_stage3",
+      "original_bbox_crop_pixels": [
+        253,
+        35,
+        404,
+        73
+      ],
+      "replacement_bbox_crop_pixels": [
+        246,
+        32,
+        430,
+        78
+      ],
+      "font": "/usr/share/fonts/opentype/urw-base35/NimbusSans-Regular.otf",
+      "font_size": 15,
+      "status": "измененно_2026-06-17"
+    },
+    {
+      "label_block_no": 2,
+      "block_id": "block-003",
+      "block_type": "callout",
+      "original_text": "Typical spool for top or bottom connected displacer",
+      "effective_ru_text": "Типовая вставка для буйка с верхним или нижним присоединением",
+      "wrapped_ru": [
+        "Типовая вставка",
+        "для буйка с верхним",
+        "или нижним",
+        "присоединением"
+      ],
+      "placed": true,
+      "bbox_source": "api551_approved_label_master_v1.csv:bbox_crop_pixels_stage3",
+      "original_bbox_crop_pixels": [
+        529,
+        34,
+        689,
+        92
+      ],
+      "replacement_bbox_crop_pixels": [
+        526,
+        28,
+        718,
+        98
+      ],
+      "font": "/usr/share/fonts/opentype/urw-base35/NimbusSans-Regular.otf",
+      "font_size": 14,
+      "status": "измененно_2026-06-17"
+    },
+    {
+      "label_block_no": 3,
+      "block_id": "block-004",
+      "block_type": "callout",
+      "original_text": "Mirrored transmitter mounting",
+      "effective_ru_text": "Зеркальное крепление преобразователя",
+      "wrapped_ru": [
+        "Зеркальное",
+        "крепление",
+        "преобразователя"
+      ],
+      "placed": true,
+      "bbox_source": "api551_approved_label_master_v1.csv:bbox_crop_pixels_stage3",
+      "original_bbox_crop_pixels": [
+        807,
+        33,
+        892,
+        91
+      ],
+      "replacement_bbox_crop_pixels": [
+        794,
+        30,
+        930,
+        88
+      ],
+      "font": "/usr/share/fonts/opentype/urw-base35/NimbusSans-Regular.otf",
+      "font_size": 14,
+      "status": "измененно_2026-06-17"
+    },
+    {
+      "label_block_no": 4,
+      "block_id": "block-005",
+      "block_type": "callout",
+      "original_text": "Side-side displacer",
+      "effective_ru_text": "Буйок с боковым-боковым присоединением",
+      "wrapped_ru": [
+        "Буйок с боковым-",
+        "боковым присоединением"
+      ],
+      "placed": true,
+      "bbox_source": "api551_approved_label_master_v1.csv:bbox_crop_pixels_stage3",
+      "original_bbox_crop_pixels": [
+        170,
+        788,
+        242,
+        826
+      ],
+      "replacement_bbox_crop_pixels": [
+        144,
+        784,
+        308,
+        825
+      ],
+      "font": "/usr/share/fonts/opentype/urw-base35/NimbusSans-Regular.otf",
+      "font_size": 14,
+      "status": "измененно_2026-06-17"
+    },
+    {
+      "label_block_no": 5,
+      "block_id": "block-006",
+      "block_type": "callout",
+      "original_text": "Side-bottom displacer",
+      "effective_ru_text": "Буйок с боковым-нижним присоединением",
+      "wrapped_ru": [
+        "Буйок с боковым-",
+        "нижним присоединением"
+      ],
+      "placed": true,
+      "bbox_source": "api551_approved_label_master_v1.csv:bbox_crop_pixels_stage3",
+      "original_bbox_crop_pixels": [
+        454,
+        788,
+        543,
+        826
+      ],
+      "replacement_bbox_crop_pixels": [
+        414,
+        784,
+        620,
+        825
+      ],
+      "font": "/usr/share/fonts/opentype/urw-base35/NimbusSans-Regular.otf",
+      "font_size": 14,
+      "status": "измененно_2026-06-17"
+    },
+    {
+      "label_block_no": 6,
+      "block_id": "block-007",
+      "block_type": "callout",
+      "original_text": "Top-side displacer",
+      "effective_ru_text": "Буйок с верхним-боковым присоединением",
+      "wrapped_ru": [
+        "Буйок с верхним-",
+        "боковым присоединением"
+      ],
+      "placed": true,
+      "bbox_source": "api551_approved_label_master_v1.csv:bbox_crop_pixels_stage3",
+      "original_bbox_crop_pixels": [
+        740,
+        788,
+        812,
+        826
+      ],
+      "replacement_bbox_crop_pixels": [
+        704,
+        784,
+        896,
+        825
+      ],
+      "font": "/usr/share/fonts/opentype/urw-base35/NimbusSans-Regular.otf",
+      "font_size": 14,
+      "status": "измененно_2026-06-17"
+    },
+    {
+      "label_block_no": 7,
+      "block_id": "block-008",
+      "block_type": "callout",
+      "original_text": "Mid-range mark",
+      "effective_ru_text": "Отметка середины диапазона",
+      "wrapped_ru": [
+        "Отметка",
+        "середины",
+        "диапазона"
+      ],
+      "placed": true,
+      "bbox_source": "api551_approved_label_master_v1.csv:bbox_crop_pixels_stage3",
+      "original_bbox_crop_pixels": [
+        323,
+        425,
+        397,
+        463
+      ],
+      "replacement_bbox_crop_pixels": [
+        320,
+        420,
+        446,
+        466
+      ],
+      "font": "/usr/share/fonts/opentype/urw-base35/NimbusSans-Regular.otf",
+      "font_size": 15,
+      "status": "измененно_2026-06-17"
+    }
+  ],
+  "unresolved_items": [],
+  "ready_for_final_export": true,
+  "approval_status": "accepted_by_user_2026-06-17"
+}

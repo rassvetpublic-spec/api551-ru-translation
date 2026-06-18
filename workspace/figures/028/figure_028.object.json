@@ -1,0 +1,223 @@
+{
+  "figure_no": 28,
+  "figure_id": "Figure 28",
+  "caption_ru": "Рисунок 28 — Общие формулы для калибровки прибора дифференциального измерения уровня",
+  "pdf_page": 119,
+  "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=119",
+  "status": "corrected_review_pending_user_approval",
+  "font": "/usr/share/fonts/opentype/urw-base35/NimbusSans-Regular.otf",
+  "corrected_review_png": "figure_028_corrected_review.png",
+  "corrected_review_png_sha256": "179616d152b7bfd5445012797564773a438aab7bc6473cba14b01a863e46ff8d",
+  "visual_label_blocks": [
+    {
+      "label_block_no": 1,
+      "original_text": "SG 2",
+      "effective_ru_text": "SG 2 — отн. плотность 2",
+      "source_rows": [
+        "block-002"
+      ],
+      "coverage_resolution": "stage4_terminology_shortened_current_stage",
+      "stage4_translation_added": false,
+      "coverage_note": "Сокращено по правилу Stage 4.",
+      "placed": false,
+      "reason": "protected_symbol_digit",
+      "stage4_policy": "protected_do_not_translate_or_redraw"
+    },
+    {
+      "label_block_no": 2,
+      "original_text": "High Level (URV)",
+      "effective_ru_text": "Верхний уровень (URV)",
+      "source_rows": [
+        "block-003"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-003:bbox_safe_stage3k",
+      "placement": {
+        "rect": [
+          647,
+          394,
+          871,
+          458
+        ],
+        "lines": [
+          "Верхний уровень",
+          "(URV)"
+        ],
+        "font_size": 20,
+        "placement_mode": "centered"
+      }
+    },
+    {
+      "label_block_no": 3,
+      "original_text": "Low Level (URV)",
+      "effective_ru_text": "Нижний уровень (URV)",
+      "source_rows": [
+        "block-004"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-004:bbox_safe_stage3k",
+      "placement": {
+        "rect": [
+          457,
+          996,
+          675,
+          1060
+        ],
+        "lines": [
+          "Нижний уровень",
+          "(URV)"
+        ],
+        "font_size": 20,
+        "placement_mode": "centered"
+      }
+    },
+    {
+      "label_block_no": 4,
+      "original_text": "H1",
+      "effective_ru_text": "H1",
+      "source_rows": [
+        "block-005"
+      ],
+      "coverage_resolution": "protected_no_change",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": false,
+      "reason": "protected_no_change",
+      "stage4_policy": "protected_do_not_translate_or_redraw"
+    },
+    {
+      "label_block_no": 5,
+      "original_text": "H2",
+      "effective_ru_text": "H2",
+      "source_rows": [
+        "block-006"
+      ],
+      "coverage_resolution": "protected_no_change",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": false,
+      "reason": "protected_no_change",
+      "stage4_policy": "protected_do_not_translate_or_redraw"
+    },
+    {
+      "label_block_no": 6,
+      "original_text": "H4",
+      "effective_ru_text": "H4",
+      "source_rows": [
+        "block-007"
+      ],
+      "coverage_resolution": "protected_no_change",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": false,
+      "reason": "protected_no_change",
+      "stage4_policy": "protected_do_not_translate_or_redraw"
+    },
+    {
+      "label_block_no": 7,
+      "original_text": "SG 1",
+      "effective_ru_text": "SG 1 — отн. плотность 1",
+      "source_rows": [
+        "block-008"
+      ],
+      "coverage_resolution": "stage4_terminology_shortened_current_stage",
+      "stage4_translation_added": false,
+      "coverage_note": "Сокращено по правилу Stage 4.",
+      "placed": false,
+      "reason": "protected_symbol_digit",
+      "stage4_policy": "protected_do_not_translate_or_redraw"
+    },
+    {
+      "label_block_no": 8,
+      "original_text": "H3",
+      "effective_ru_text": "H3",
+      "source_rows": [
+        "block-009"
+      ],
+      "coverage_resolution": "protected_no_change",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": false,
+      "reason": "protected_no_change",
+      "stage4_policy": "protected_do_not_translate_or_redraw"
+    },
+    {
+      "label_block_no": 9,
+      "original_text": "SG 3",
+      "effective_ru_text": "SG 3 — отн. плотность 3",
+      "source_rows": [
+        "block-010"
+      ],
+      "coverage_resolution": "stage4_terminology_shortened_current_stage",
+      "stage4_translation_added": false,
+      "coverage_note": "Сокращено по правилу Stage 4.",
+      "placed": false,
+      "reason": "protected_symbol_digit",
+      "stage4_policy": "protected_do_not_translate_or_redraw"
+    },
+    {
+      "label_block_no": 10,
+      "original_text": "SG 4",
+      "effective_ru_text": "SG 4 — отн. плотность 4",
+      "source_rows": [
+        "block-011"
+      ],
+      "coverage_resolution": "stage4_terminology_shortened_current_stage",
+      "stage4_translation_added": false,
+      "coverage_note": "Сокращено по правилу Stage 4.",
+      "placed": false,
+      "reason": "protected_symbol_digit",
+      "stage4_policy": "protected_do_not_translate_or_redraw"
+    },
+    {
+      "label_block_no": "11-12",
+      "original_text": "Level\nTransmitter",
+      "effective_ru_text": "Преобразователь уровня",
+      "source_rows": [
+        "block-012",
+        "block-013"
+      ],
+      "coverage_resolution": "stage4_user_corrected_multiline_label",
+      "stage4_translation_added": false,
+      "coverage_note": "Level + Transmitter объединены как один многострочный блок.",
+      "placed": true,
+      "bbox_source": "master_csv:block-012+block-013:merged_bbox",
+      "placement": {
+        "rect": [
+          1064,
+          1512,
+          1277,
+          1577
+        ],
+        "lines": [
+          "Преобразователь",
+          "уровня"
+        ],
+        "font_size": 20,
+        "placement_mode": "top_anchor"
+      }
+    },
+    {
+      "label_block_no": 13,
+      "original_text": "SPAN = |URV – LRV|",
+      "effective_ru_text": "Диапазон = |URV – LRV|",
+      "source_rows": [
+        "block-014"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": false,
+      "reason": "protected_formula_label",
+      "stage4_policy": "protected_do_not_translate_or_redraw"
+    }
+  ],
+  "ready_for_final_export": true,
+  "approval_status": "accepted_by_user_2026-06-17"
+}

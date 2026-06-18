@@ -1,0 +1,238 @@
+{
+  "figure_no": 37,
+  "figure_id": "Figure 37",
+  "caption_ru": "Рисунок 37 — Сигнализаторы переполнения, установленные на уровне земли",
+  "pdf_page": 154,
+  "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=154",
+  "status": "accepted",
+  "font": "/usr/share/fonts/opentype/urw-base35/NimbusSans-Regular.otf",
+  "corrected_review_png": "figure_037_corrected_review.png",
+  "corrected_review_png_sha256": "b9dfd38011171b5a8959e6c51b5a28bece183b1d25568d88d88e5fe76a2bfddd",
+  "visual_label_blocks": [
+    {
+      "label_block_no": 1,
+      "original_text": "High-high level overflow",
+      "effective_ru_text": "Переполнение при аварийно высоком уровне",
+      "source_rows": [
+        "block-002"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-002:bbox_safe_stage3k",
+      "placement": {
+        "rect": [
+          921,
+          242,
+          1113,
+          324
+        ],
+        "lines": [
+          "Переполнение при",
+          "аварийно высоком",
+          "уровне"
+        ],
+        "font_size": 20,
+        "placement_mode": "centered"
+      }
+    },
+    {
+      "label_block_no": 2,
+      "original_text": "High level overflow",
+      "effective_ru_text": "Переполнение при высоком уровне",
+      "source_rows": [
+        "block-003"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-003:bbox_safe_stage3k",
+      "placement": {
+        "rect": [
+          422,
+          410,
+          607,
+          476
+        ],
+        "lines": [
+          "Переполнение",
+          "при высоком",
+          "уровне"
+        ],
+        "font_size": 20,
+        "placement_mode": "centered"
+      }
+    },
+    {
+      "label_block_no": 3,
+      "original_text": "Normal working level",
+      "effective_ru_text": "Нормальный рабочий уровень",
+      "source_rows": [
+        "fig37_stage3j_candidate_0001",
+        "block-004"
+      ],
+      "coverage_resolution": "stage4_resolved_fragment_of_existing_label",
+      "stage4_translation_added": false,
+      "coverage_note": "Вертикальный OCR-фрагмент `level` присоединен к родительской надписи слева.",
+      "placed": true,
+      "bbox_source": "master_csv:block-004:bbox_safe_stage3k",
+      "placement": {
+        "rect": [
+          194,
+          956,
+          243,
+          1159
+        ],
+        "lines": [
+          "Нормальный рабочий уровень"
+        ],
+        "font_size": 13,
+        "placement_mode": "vertical_clockwise_rotated"
+      },
+      "block_no": 3,
+      "orientation": "vertical",
+      "source_reading_normalization": "rotate_page_clockwise_90_to_read_original",
+      "translation_page_rotation": "counterclockwise_90",
+      "direction_policy": "match_original_reading_direction_after_probe_rotation",
+      "restored_source_patch_pixels": [
+        170,
+        620,
+        300,
+        1195
+      ],
+      "cleared_original_bbox_pixels": [
+        196,
+        940,
+        266,
+        1164
+      ],
+      "replacement_bbox_crop_pixels": [
+        202,
+        948,
+        248,
+        1123
+      ],
+      "font": "/usr/share/fonts/opentype/urw-base35/NimbusSans-Regular.otf",
+      "font_size": 16,
+      "status": "измененно_2026-06-17"
+    },
+    {
+      "label_block_no": 4,
+      "original_text": "High-high level switch",
+      "effective_ru_text": "Сигнализатор аварийно высокого уровня",
+      "source_rows": [
+        "block-005"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-005:bbox_safe_stage3k",
+      "placement": {
+        "rect": [
+          745,
+          969,
+          896,
+          1065
+        ],
+        "lines": [
+          "Сигнализатор",
+          "аварийно",
+          "высокого",
+          "уровня"
+        ],
+        "font_size": 20,
+        "placement_mode": "centered"
+      }
+    },
+    {
+      "label_block_no": 5,
+      "original_text": "High level switch",
+      "effective_ru_text": "Сигнализатор высокого уровня",
+      "source_rows": [
+        "block-006"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-006:bbox_safe_stage3k",
+      "placement": {
+        "rect": [
+          643,
+          1103,
+          820,
+          1168
+        ],
+        "lines": [
+          "Сигнализатор",
+          "высокого",
+          "уровня"
+        ],
+        "font_size": 20,
+        "placement_mode": "centered"
+      }
+    },
+    {
+      "label_block_no": 6,
+      "original_text": "Reset/drain valve",
+      "effective_ru_text": "Клапан сброса/дренажа",
+      "source_rows": [
+        "block-007"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-007:bbox_safe_stage3k",
+      "placement": {
+        "rect": [
+          396,
+          1358,
+          595,
+          1423
+        ],
+        "lines": [
+          "Клапан",
+          "сброса/дренажа"
+        ],
+        "font_size": 20,
+        "placement_mode": "centered"
+      }
+    },
+    {
+      "label_block_no": 7,
+      "original_text": "Optional calibration piping",
+      "effective_ru_text": "Дополнительная калибровочная обвязка",
+      "source_rows": [
+        "block-008"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-008:bbox_safe_stage3k",
+      "placement": {
+        "rect": [
+          859,
+          1403,
+          1091,
+          1482
+        ],
+        "lines": [
+          "Дополнительная",
+          "калибровочная",
+          "обвязка"
+        ],
+        "font_size": 20,
+        "placement_mode": "centered"
+      }
+    }
+  ],
+  "ready_for_final_export": true,
+  "approval_status": "accepted_by_user_2026-06-17",
+  "stage4_status": "accepted",
+  "vertical_direction_policy": "For vertical labels, rotate the original crop both +90 and -90; choose the rotation that makes the original readable, then apply the inverse page rotation to the Russian translation so the reading direction matches the source."
+}

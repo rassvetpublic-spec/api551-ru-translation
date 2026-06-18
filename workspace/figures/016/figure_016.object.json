@@ -1,0 +1,22 @@
+{
+  "object_schema": "api551_stage4_figure_object_v1",
+  "stage": "Stage 4",
+  "approval_status": "approved",
+  "approval_basis": "accepted by user in chat; do not modify this figure further",
+  "figure_no": 16,
+  "figure_id": "Figure 16",
+  "api_page": 59,
+  "pdf_page": 67,
+  "caption_ru": "Рисунок 16 — Закручивание потока при отводах в плоскостях 90°",
+  "caption_mode": "external_text_component_below_png",
+  "internal_label_policy": "no internal translated labels for this object",
+  "png_file": "figure_016.png",
+  "png_sha256": "a5609f327ad2aa410a0723f011da2bab413766ae4e1d4ab8f808c4b66efc83b0",
+  "png_size_px": [
+    1064,
+    700
+  ],
+  "source_operation": "accepted review candidate; image content not changed during approved ZIP packaging",
+  "ready_for_final_export": true,
+  "do_not_touch_after_approval": true
+}

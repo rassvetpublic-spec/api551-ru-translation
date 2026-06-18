@@ -1,0 +1,22 @@
+{
+  "object_schema": "api551_stage4_figure_object_v1",
+  "stage": "Stage 4",
+  "approval_status": "approved",
+  "approval_basis": "accepted by user in chat; do not modify this figure further",
+  "figure_no": 23,
+  "figure_id": "Figure 23",
+  "api_page": 83,
+  "pdf_page": 91,
+  "caption_ru": "Рисунок 23 — Разрез турбинного расходомера",
+  "caption_mode": "external_text_component_below_png",
+  "internal_label_policy": "no internal translated labels for this object",
+  "png_file": "figure_023.png",
+  "png_sha256": "84b7398ed94eac2528e7d329bcee167949f6fe9416d7328342a3fd96b12fa896",
+  "png_size_px": [
+    1064,
+    385
+  ],
+  "source_operation": "accepted review candidate; image content not changed during approved ZIP packaging",
+  "ready_for_final_export": true,
+  "do_not_touch_after_approval": true
+}

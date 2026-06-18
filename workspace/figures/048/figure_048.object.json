@@ -1,0 +1,175 @@
+{
+  "figure_no": 48,
+  "figure_id": "Figure 48",
+  "caption_ru": "Рисунок 48 — Измерение перепада давления",
+  "pdf_page": 176,
+  "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=176",
+  "status": "tight_clearing_review_pending_user_approval",
+  "font": "/usr/share/fonts/opentype/urw-base35/NimbusSans-Regular.otf",
+  "policy_update": "Original label cleanup is separated from tight Russian text background.",
+  "review_png": "figure_48_tight_clearing_review.png",
+  "review_png_sha256": "de791111104ac3b7fd2fcc07f06ca062271f4156b6a04bf1c5c97079e580e28f",
+  "visual_label_blocks": [
+    {
+      "label_block_no": 1,
+      "original_text": "Differential-pressure transmitter (with vent valves)",
+      "effective_ru_text": "Преобразователь перепада давления (с вентиляционными клапанами)",
+      "source_rows": [
+        "block-002"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-002:bbox_safe_stage3k",
+      "placement": {
+        "cleanup_rect": [
+          858,
+          66,
+          1247,
+          133
+        ],
+        "text_background_rect": [
+          914,
+          79,
+          1190,
+          120
+        ],
+        "lines": [
+          "Преобразователь перепада давления",
+          "(с вентиляционными клапанами)"
+        ],
+        "font_size": 15,
+        "placement_mode": "tight_background_centered",
+        "post_render_margin_px": {
+          "left": 5,
+          "right": 5,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "label_block_no": 2,
+      "original_text": "Differential-pressure transmitter (with drain valves)",
+      "effective_ru_text": "Преобразователь перепада давления (с дренажными клапанами)",
+      "source_rows": [
+        "fig48_stage3j_candidate_0001",
+        "block-003"
+      ],
+      "coverage_resolution": "stage4_resolved_duplicate_existing_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "Кандидат с пустым ru_text не является отдельным новым блоком; он совпадает с block-003.",
+      "placed": true,
+      "bbox_source": "master_csv:fig48_stage3j_candidate_0001:bbox_safe_stage3k",
+      "placement": {
+        "cleanup_rect": [
+          607,
+          352,
+          859,
+          451
+        ],
+        "text_background_rect": [
+          595,
+          381,
+          871,
+          422
+        ],
+        "lines": [
+          "Преобразователь перепада давления",
+          "(с дренажными клапанами)"
+        ],
+        "font_size": 15,
+        "placement_mode": "tight_background_centered",
+        "post_render_margin_px": {
+          "left": 5,
+          "right": 5,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "label_block_no": 3,
+      "original_text": "Where condensation is present, provide gas purge or increase size of impulse line",
+      "effective_ru_text": "При наличии конденсации предусмотреть продувку газом или увеличить размер импульсной линии",
+      "source_rows": [
+        "fig48_stage3j_candidate_0002",
+        "block-004"
+      ],
+      "coverage_resolution": "stage4_resolved_fragment_of_existing_label",
+      "stage4_translation_added": false,
+      "coverage_note": "Кандидат p2 является фрагментом многострочного block-004.",
+      "placed": true,
+      "bbox_source": "master_csv:block-004:replacement_bbox_stage3l",
+      "placement": {
+        "cleanup_rect": [
+          989,
+          322,
+          1353,
+          420
+        ],
+        "text_background_rect": [
+          989,
+          322,
+          1353,
+          374
+        ],
+        "lines": [
+          "При наличии конденсации предусмотреть",
+          "продувку газом или увеличить размер импульсной",
+          "линии"
+        ],
+        "font_size": 15,
+        "placement_mode": "tight_background_top_anchor",
+        "post_render_margin_px": {
+          "left": 5,
+          "right": 5,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "label_block_no": 4,
+      "original_text": "Compensate transmitter calibration for low-leg head",
+      "effective_ru_text": "Скорректировать калибровку преобразователя на напор нижней линии",
+      "source_rows": [
+        "block-005"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-005:bbox_safe_stage3k",
+      "placement": {
+        "cleanup_rect": [
+          863,
+          528,
+          1201,
+          595
+        ],
+        "text_background_rect": [
+          862,
+          541,
+          1201,
+          582
+        ],
+        "lines": [
+          "Скорректировать калибровку преобразователя",
+          "на напор нижней линии"
+        ],
+        "font_size": 15,
+        "placement_mode": "tight_background_centered",
+        "post_render_margin_px": {
+          "left": 5,
+          "right": 5,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    }
+  ],
+  "ready_for_final_export": true,
+  "approval_status": "accepted_by_user_2026-06-17"
+}

@@ -1,0 +1,22 @@
+{
+  "object_schema": "api551_stage4_figure_object_v1",
+  "stage": "Stage 4",
+  "approval_status": "approved",
+  "approval_basis": "accepted by user in chat; do not modify this figure further",
+  "figure_no": 50,
+  "figure_id": "Figure 50",
+  "api_page": 173,
+  "pdf_page": 181,
+  "caption_ru": "Рисунок 50 — Трубная фитинговая деталь высокого давления API типа III",
+  "caption_mode": "external_text_component_below_png",
+  "internal_label_policy": "no internal translated labels for this object",
+  "png_file": "figure_050.png",
+  "png_sha256": "821eae045aa203880003f92c4561b1dc5093e9039a155edb41bf9e765ac5e2fc",
+  "png_size_px": [
+    984,
+    800
+  ],
+  "source_operation": "accepted review candidate; image content not changed during approved ZIP packaging",
+  "ready_for_final_export": true,
+  "do_not_touch_after_approval": true
+}

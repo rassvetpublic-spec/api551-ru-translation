@@ -1,0 +1,27 @@
+{
+  "object_schema": "api551_stage4_figure_object_v1",
+  "stage": "Stage 4",
+  "approval_status": "approved",
+  "approval_basis": "accepted by user in chat; do not modify this figure further",
+  "figure_no": 14,
+  "figure_id": "Figure 14",
+  "api_page": 43,
+  "pdf_page": 51,
+  "caption_ru": "Рисунок 14 — Преобразователь, установленный в соединительной головке",
+  "caption_mode": "bottom_after_image",
+  "components_order": [
+    "image",
+    "caption"
+  ],
+  "object_kind": "title_only",
+  "png_file": "figure_014.png",
+  "png_sha256": "07e0d01917be2cabe05a27bd6d23fc29823b3c9abaf6d15c3837cee747008981",
+  "png_size_px": [
+    1064,
+    372
+  ],
+  "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=51",
+  "on_image_russian_labels": false,
+  "ready_for_final_export": true,
+  "do_not_touch_after_approval": true
+}

@@ -1,0 +1,97 @@
+{
+  "object_schema": "api551_stage4_figure_object_v1",
+  "stage": "Stage 4",
+  "approval_status": "approved",
+  "approval_basis": "accepted by user in chat; do not modify this figure further",
+  "figure_no": 1,
+  "figure_id": "Figure 1",
+  "api_page": 24,
+  "pdf_page": 32,
+  "caption_ru": "Рисунок 1 — Терминология защитной гильзы",
+  "caption_mode": "bottom_after_image_tables_and_notes",
+  "components_order": [
+    "image",
+    "restored_label_table",
+    "restored_notes_table",
+    "caption"
+  ],
+  "png_file": "figure_001.png",
+  "png_sha256": "b2b68929055d05ae6b27de423c54cb362391a6d6351ca8e0cec553cbff155da2",
+  "png_size_px": [
+    1064,
+    846
+  ],
+  "restored_label_table": [
+    {
+      "term": "B",
+      "text_ru": "Диаметр отверстия",
+      "block_id": "block-013"
+    },
+    {
+      "term": "E",
+      "text_ru": "Минимальная толщина наконечника",
+      "block_id": "block-014"
+    },
+    {
+      "term": "Q",
+      "text_ru": "Диаметр основания",
+      "block_id": "block-015"
+    },
+    {
+      "term": "S",
+      "text_ru": "Глубина отверстия",
+      "block_id": "block-016"
+    },
+    {
+      "term": "T",
+      "text_ru": "Удлинение под теплоизоляцию",
+      "block_id": "block-017"
+    },
+    {
+      "term": "U",
+      "text_ru": "Длина ввода",
+      "block_id": "block-018"
+    },
+    {
+      "term": "V",
+      "text_ru": "Диаметр наконечника",
+      "block_id": "block-019"
+    },
+    {
+      "term": "b",
+      "text_ru": "Радиус галтели у основания хвостовика",
+      "block_id": "block-020"
+    },
+    {
+      "term": "L",
+      "text_ru": "Общая длина (S + E)",
+      "block_id": "block-021"
+    },
+    {
+      "term": "N",
+      "text_ru": "Внутреннее резьбовое присоединение",
+      "block_id": "block-022"
+    },
+    {
+      "term": "P",
+      "text_ru": "Наружное резьбовое присоединение",
+      "block_id": "block-023"
+    }
+  ],
+  "restored_notes_table": [
+    {
+      "label": "Примечание 1",
+      "text_ru": "Показана 9-дюймовая резьбовая защитная гильза по ASME B40.9 с удлинением под теплоизоляцию.",
+      "block_id": "block-024"
+    },
+    {
+      "label": "Примечание 2",
+      "text_ru": "Показана 9-дюймовая фланцевая защитная гильза по ASME B40.9 с фланцем NPS 1 1 2 класса 300.",
+      "block_id": "block-025"
+    }
+  ],
+  "on_image_russian_labels": false,
+  "ready_for_final_export": true,
+  "do_not_touch_after_approval": true,
+  "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=32"
+}

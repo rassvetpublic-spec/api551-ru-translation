@@ -1,0 +1,94 @@
+{
+  "figure_no": 33,
+  "figure_id": "Figure 33",
+  "api_page": 121,
+  "pdf_page": 129,
+  "caption_ru": "Рисунок 33 — Радиоизотопный преобразователь уровня",
+  "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=129",
+  "stage4_status": "translated_review_pending_user_approval",
+  "source_policy": "translations from approved V2; protected symbol/formula policy applied before placement; no OCR-derived decisions used",
+  "source_crop": "figure_033_source_crop.png",
+  "translated_review_png": "figure_033_translated_review.png",
+  "translated_review_png_sha256": "abe463094dc6f93e8566917911ef7fb24f115440805dcdafef1a1c385a9a05aa",
+  "visual_label_blocks": [
+    {
+      "label_block_no": 1,
+      "original_text": "Source",
+      "effective_ru_text": "Источник",
+      "source_rows": [
+        "block-002"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-002:bbox_safe_stage3k",
+      "approved_base_bbox": [
+        283.0,
+        148.0,
+        343.0,
+        165.0
+      ],
+      "scaled_bbox": [
+        424,
+        222,
+        514,
+        248
+      ],
+      "placement": {
+        "rect": [
+          419,
+          217,
+          519,
+          253
+        ],
+        "lines": [
+          "Источник"
+        ],
+        "font_size": 21,
+        "placement_mode": "wrapped_vertical"
+      }
+    },
+    {
+      "label_block_no": 2,
+      "original_text": "Detector",
+      "effective_ru_text": "Детектор",
+      "source_rows": [
+        "block-003"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-003:bbox_safe_stage3k",
+      "approved_base_bbox": [
+        773.0,
+        249.0,
+        790.0,
+        320.0
+      ],
+      "scaled_bbox": [
+        1160,
+        374,
+        1185,
+        480
+      ],
+      "placement": {
+        "rect": [
+          1155,
+          369,
+          1309,
+          485
+        ],
+        "lines": [
+          "Детектор"
+        ],
+        "font_size": 21,
+        "placement_mode": "expanded_right"
+      }
+    }
+  ],
+  "unresolved_items": [],
+  "ready_for_final_export": true,
+  "approval_status": "accepted_by_user_2026-06-17"
+}

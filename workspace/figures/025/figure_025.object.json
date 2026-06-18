@@ -1,0 +1,29 @@
+{
+  "object_schema": "api551_stage4_figure_object_v1",
+  "stage": "Stage 4",
+  "approval_status": "approved",
+  "approval_basis": "accepted by user in chat; do not modify this figure further",
+  "figure_no": 25,
+  "figure_id": "Figure 25",
+  "api_page": 102,
+  "pdf_page": 110,
+  "caption_ru": "Рисунок 25 — Относительная теплопроводность распространённых газов",
+  "caption_mode": "bottom_after_image",
+  "components_order": [
+    "image",
+    "caption"
+  ],
+  "object_kind": "symbol_only_protected",
+  "internal_label_policy": "chemical formulas, gas designations, and numeric scale are protected and not translated",
+  "png_file": "figure_025.png",
+  "png_sha256": "f9fe85c2a1f64604535e6915c111adaa53a98dd0144eda970078f812521df9e0",
+  "png_size_px": [
+    2128,
+    1406
+  ],
+  "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=110",
+  "on_image_russian_labels": false,
+  "service_data_in_clean_object": false,
+  "ready_for_final_export": true,
+  "do_not_touch_after_approval": true
+}

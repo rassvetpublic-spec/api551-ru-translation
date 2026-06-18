@@ -1,0 +1,161 @@
+{
+  "figure_no": 51,
+  "figure_id": "Figure 51",
+  "api_page": 176,
+  "pdf_page": 184,
+  "caption_ru": "Рисунок 51 — Тройники для прочистки",
+  "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=184",
+  "stage4_status": "измененно_2026-06-17",
+  "source_policy": "translations from approved V2; protected symbol/formula policy applied before placement; no OCR-derived decisions used",
+  "source_crop": "figure_051_source_crop.png",
+  "translated_review_png": "figure_051_translated_review.png",
+  "translated_review_png_sha256": "43a18866d81aa924ca5d29f24018a386a7e4cd5daf13f97df449d2a6b46604fd",
+  "visual_label_blocks": [
+    {
+      "label_block_no": 1,
+      "original_text": "Provide clearance for rodout device 760 mm (30 in.) or more",
+      "effective_ru_text": "Предусмотреть свободное пространство для устройства прочистки 760 мм (30″) или более",
+      "source_rows": [
+        "block-002"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-002:bbox_safe_stage3k",
+      "approved_base_bbox": [
+        458.0,
+        45.0,
+        743.0,
+        86.0
+      ],
+      "scaled_bbox": [
+        687,
+        68,
+        1114,
+        129
+      ],
+      "placement": {
+        "rect": [
+          682,
+          63,
+          1596,
+          134
+        ],
+        "lines": [
+          "Предусмотреть свободное пространство для устройства прочистки 760 мм (30",
+          "дюймов) или более"
+        ],
+        "font_size": 21,
+        "placement_mode": "expanded_right"
+      },
+      "wrapped_ru": [
+        "Предусмотреть свободное",
+        "пространство для устройства",
+        "прочистки 760 мм (30″) или более"
+      ],
+      "replacement_bbox_crop_pixels": [
+        738,
+        54,
+        1068,
+        132
+      ],
+      "original_bbox_crop_pixels": [
+        680,
+        58,
+        1130,
+        134
+      ],
+      "restore_source_patch_pixels": [
+        620,
+        35,
+        1245,
+        165
+      ],
+      "font": "/usr/share/fonts/opentype/urw-base35/NimbusSans-Regular.otf",
+      "font_size": 19,
+      "status": "измененно_2026-06-17",
+      "line_wrap_policy": "manual_word_boundary_wrap_no_word_breaks"
+    },
+    {
+      "label_block_no": 2,
+      "original_text": "Rodout tee",
+      "effective_ru_text": "Тройник для прочистки",
+      "source_rows": [
+        "block-003"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-003:bbox_safe_stage3k",
+      "approved_base_bbox": [
+        309.0,
+        659.0,
+        399.0,
+        676.0
+      ],
+      "scaled_bbox": [
+        464,
+        988,
+        598,
+        1014
+      ],
+      "placement": {
+        "rect": [
+          291,
+          983,
+          603,
+          1019
+        ],
+        "lines": [
+          "Тройник для прочистки"
+        ],
+        "font_size": 21,
+        "placement_mode": "expanded_left"
+      }
+    },
+    {
+      "label_block_no": 3,
+      "original_text": "Blowback valve",
+      "effective_ru_text": "Клапан обратной продувки",
+      "source_rows": [
+        "block-004"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-004:bbox_safe_stage3k",
+      "approved_base_bbox": [
+        368.0,
+        776.0,
+        495.0,
+        793.0
+      ],
+      "scaled_bbox": [
+        552,
+        1164,
+        742,
+        1190
+      ],
+      "placement": {
+        "rect": [
+          394,
+          1159,
+          747,
+          1195
+        ],
+        "lines": [
+          "Клапан обратной продувки"
+        ],
+        "font_size": 21,
+        "placement_mode": "expanded_left"
+      }
+    }
+  ],
+  "unresolved_items": [],
+  "ready_for_final_export": false,
+  "approval_status": "review_pending_user_approval",
+  "status": "измененно_2026-06-17"
+}

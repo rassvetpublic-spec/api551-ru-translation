@@ -1,0 +1,210 @@
+{
+  "figure_no": 46,
+  "figure_id": "Figure 46",
+  "api_page": 165,
+  "pdf_page": 173,
+  "caption_ru": "Рисунок 46 — Вид с торца на отборы горизонтального трубопровода",
+  "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=173",
+  "stage4_status": "translated_review_pending_user_approval",
+  "source_policy": "translations from approved V2; protected symbol/formula policy applied before placement; no OCR-derived decisions used",
+  "source_crop": "figure_046_source_crop.png",
+  "translated_review_png": "figure_046_translated_review.png",
+  "translated_review_png_sha256": "2d79c6d0b893446b683c6e17d82e0f3bb95cd9c46d79b356c5b0e2aa5bc38e16",
+  "visual_label_blocks": [
+    {
+      "label_block_no": 1,
+      "original_text": "Preferred tap location",
+      "effective_ru_text": "Предпочтительное расположение отбора",
+      "source_rows": [
+        "block-002"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-002:bbox_safe_stage3k",
+      "approved_base_bbox": [
+        614.0,
+        20.0,
+        709.0,
+        61.0
+      ],
+      "scaled_bbox": [
+        921,
+        30,
+        1064,
+        92
+      ],
+      "placement": {
+        "rect": [
+          736,
+          25,
+          1249,
+          97
+        ],
+        "lines": [
+          "Предпочтительное расположение отбора"
+        ],
+        "font_size": 21,
+        "placement_mode": "expanded_horizontal_both"
+      }
+    },
+    {
+      "label_block_no": 2,
+      "original_text": "Gas, slurry, or cryogenic fluids (alternate location for condensables)",
+      "effective_ru_text": "Газ, суспензия или криогенные жидкости (альтернативное расположение для конденсируемых сред)",
+      "source_rows": [
+        "block-003"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-003:bbox_safe_stage3k",
+      "approved_base_bbox": [
+        400.0,
+        158.0,
+        694.0,
+        199.0
+      ],
+      "scaled_bbox": [
+        600,
+        237,
+        1041,
+        299
+      ],
+      "placement": {
+        "rect": [
+          224,
+          232,
+          1416,
+          304
+        ],
+        "lines": [
+          "Газ, суспензия или криогенные жидкости (альтернативное расположение для конденсируемых сред)"
+        ],
+        "font_size": 21,
+        "placement_mode": "expanded_horizontal_both"
+      }
+    },
+    {
+      "label_block_no": 3,
+      "original_text": "Clean liquid, steam or other single component condensable",
+      "effective_ru_text": "Чистая жидкость, пар или другая однокомпонентная конденсируемая среда",
+      "source_rows": [
+        "block-004"
+      ],
+      "coverage_resolution": "previously_approved_translation",
+      "stage4_translation_added": false,
+      "coverage_note": "",
+      "placed": true,
+      "bbox_source": "master_csv:block-004:bbox_safe_stage3k",
+      "approved_base_bbox": [
+        421.0,
+        481.0,
+        673.0,
+        522.0
+      ],
+      "scaled_bbox": [
+        632,
+        722,
+        1010,
+        783
+      ],
+      "placement": {
+        "rect": [
+          366,
+          717,
+          1276,
+          788
+        ],
+        "lines": [
+          "Чистая жидкость, пар или другая однокомпонентная конденсируемая среда"
+        ],
+        "font_size": 21,
+        "placement_mode": "expanded_horizontal_both"
+      }
+    },
+    {
+      "label_block_no": 4,
+      "original_text": "Area to avoid",
+      "effective_ru_text": "Зона, которой следует избегать",
+      "source_rows": [
+        "fig46_stage3j_candidate_0001"
+      ],
+      "coverage_resolution": "stage4_translated_current_stage",
+      "stage4_translation_added": true,
+      "coverage_note": "Самостоятельная нижняя подпись.",
+      "placed": true,
+      "bbox_source": "master_csv:fig46_stage3j_candidate_0001:bbox_safe_stage3k",
+      "approved_base_bbox": [
+        493.0,
+        581.0,
+        602.0,
+        598.0
+      ],
+      "scaled_bbox": [
+        740,
+        872,
+        903,
+        897
+      ],
+      "placement": {
+        "rect": [
+          735,
+          837,
+          908,
+          902
+        ],
+        "lines": [
+          "Зона, которой",
+          "следует избегать"
+        ],
+        "font_size": 17,
+        "placement_mode": "wrapped_expand_up"
+      }
+    },
+    {
+      "label_block_no": 5,
+      "original_text": "Preferred tap locations",
+      "effective_ru_text": "Предпочтительные места расположения отборов",
+      "source_rows": [
+        "fig46_stage3j_candidate_0002"
+      ],
+      "coverage_resolution": "stage4_translated_current_stage",
+      "stage4_translation_added": true,
+      "coverage_note": "Самостоятельная нижняя подпись.",
+      "placed": true,
+      "bbox_source": "master_csv:fig46_stage3j_candidate_0002:bbox_safe_stage3k",
+      "approved_base_bbox": [
+        456.0,
+        653.0,
+        640.0,
+        669.0
+      ],
+      "scaled_bbox": [
+        684,
+        980,
+        960,
+        1004
+      ],
+      "placement": {
+        "rect": [
+          679,
+          958,
+          965,
+          1004
+        ],
+        "lines": [
+          "Предпочтительные места",
+          "расположения отборов"
+        ],
+        "font_size": 17,
+        "placement_mode": "wrapped_vertical_expand_both"
+      }
+    }
+  ],
+  "unresolved_items": [],
+  "ready_for_final_export": true,
+  "approval_status": "accepted_by_user_2026-06-17"
+}

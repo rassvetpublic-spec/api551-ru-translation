@@ -1,0 +1,38 @@
+name: Structure check
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  structure-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check required folders
+        run: |
+          test -d source
+          test -d workspace
+          test -d workspace/figures
+          test -d docs
+          test -d archive
+          test -d .github/workflows
+
+      - name: Check required source files
+        run: |
+          test -f "source/API551_SOURCE_MANIFEST_CURRENT.json"
+          test -f "source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md"
+          test -f "source/TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md"
+          test -f "source/api551_approved_label_master_v1.csv"
+          test -f "source/api551_control_build_v1.zip"
+          test -f "source/API_551_STAGE3_SOURCE_PACKAGE_v1.zip"
+          test -f "source/API_551_STAGE2_REFERENCE_FILES_v1.zip"
+          test -f "source/TZ_API551_translation_project_RU.md"
+          test -f "source/API 551 2016 (R2024).pdf"
+
+      - name: Validate JSON
+        run: |
+          python -m json.tool source/API551_SOURCE_MANIFEST_CURRENT.json > /dev/null
+          python -m json.tool catalog.json > /dev/null
