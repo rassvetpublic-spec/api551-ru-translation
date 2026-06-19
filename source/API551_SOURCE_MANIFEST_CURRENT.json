@@ -1,18 +1,18 @@
 {
   "project": "API 551 Stage 4",
-  "updated": "2026-06-18",
-  "status": "drive_source_folder_canonical_consolidated_tz_and_rules_active",
+  "updated": "2026-06-19",
+  "status": "active_source_minimized_archived_zip_packages_reference_only",
   "canonical_source_policy": {
     "primary_source_folder": {
       "name": "API 551/Source",
       "folder_id": "1uLQQ1XHveKaUzLgULQ84jYUD1GYMWPKX",
       "url": "https://drive.google.com/drive/folders/1uLQQ1XHveKaUzLgULQ84jYUD1GYMWPKX",
       "read_status": "accessible",
-      "file_count_via_drive_api": 9,
+      "file_count_via_drive_api": 6,
       "promoted_to_canonical": true
     },
     "local_cache_role": "fallback_and_working_copy_only",
-    "rule": "Before Stage 4 work, verify mandatory source availability in API 551/Source first. Active Stage 4 TZ is TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md. Active policy/rules source is API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md. Use local cache only as fallback or working copy after Drive Source verification."
+    "rule": "Before Stage 4 work, verify mandatory source availability in API 551/Source first. Active Source now excludes legacy ZIP packages. Active Stage 4 TZ is TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md. Active policy/rules source is API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md. Archived ZIP packages are QA/evidence only and are forbidden as generation input for the final one-pass rebuild."
   },
   "mandatory_sources": [
     {
@@ -57,33 +57,6 @@
       "drive_source_file_id": "1xljstjVHEFgsXn3f4ZMDmFdkJQHnzJQE",
       "drive_source_size": 629680,
       "local_size": 629680,
-      "comparison": "size_match",
-      "read_check": "metadata_ok"
-    },
-    {
-      "file": "API_551_STAGE3_SOURCE_PACKAGE_v1.zip",
-      "role": "Stage 3 production package",
-      "drive_source_file_id": "1ZfS_iY_AzBKyzZUGwwrtB6ugxczJKgvL",
-      "drive_source_size": 28313449,
-      "local_size": 28313449,
-      "comparison": "size_match",
-      "read_check": "metadata_and_raw_fetch_ok"
-    },
-    {
-      "file": "API_551_STAGE2_REFERENCE_FILES_v1.zip",
-      "role": "Stage 2 reference/register package",
-      "drive_source_file_id": "1UzXbg1Xsq7YQQB17HqlricUaBsJQitOC",
-      "drive_source_size": 28671362,
-      "local_size": 28671362,
-      "comparison": "size_match",
-      "read_check": "metadata_ok"
-    },
-    {
-      "file": "api551_control_build_v1.zip",
-      "role": "control build, not primary source of truth",
-      "drive_source_file_id": "12-xbnKpkYY2qpuU_OFbXLFXm0nq--JMW",
-      "drive_source_size": 34726175,
-      "local_size": 34726175,
       "comparison": "size_match",
       "read_check": "metadata_ok"
     }
@@ -137,5 +110,59 @@
       "archive_folder_id": "1OxJtq4o01cQsegeiZTY8bRb9ilJnX3Eo",
       "reason": "covered by API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md; preserved as approved Stage2 rule source"
     }
-  ]
+  ],
+  "archived_source_packages": [
+    {
+      "file": "API_551_STAGE3_SOURCE_PACKAGE_v1.zip",
+      "role": "archive/source package; Stage 3 production package; QA/evidence only; forbidden as generation input for final one-pass rebuild",
+      "drive_source_file_id": "1ZfS_iY_AzBKyzZUGwwrtB6ugxczJKgvL",
+      "drive_source_size": 28313449,
+      "local_size": 28313449,
+      "comparison": "size_match",
+      "read_check": "metadata_and_raw_fetch_ok",
+      "archive_path": "archive/source-packages/API_551_STAGE3_SOURCE_PACKAGE_v1.zip",
+      "extracted_reference_root": "archive/extracted-reference/stage3",
+      "archive_reason": "moved out of active source because it contains prior production outputs, crops, assets and derived registers",
+      "archived_on": "2026-06-19"
+    },
+    {
+      "file": "API_551_STAGE2_REFERENCE_FILES_v1.zip",
+      "role": "archive/source package; Stage 2 reference/register package; QA/evidence only; forbidden as generation input for final one-pass rebuild",
+      "drive_source_file_id": "1UzXbg1Xsq7YQQB17HqlricUaBsJQitOC",
+      "drive_source_size": 28671362,
+      "local_size": 28671362,
+      "comparison": "size_match",
+      "read_check": "metadata_ok",
+      "archive_path": "archive/source-packages/API_551_STAGE2_REFERENCE_FILES_v1.zip",
+      "extracted_reference_root": "archive/extracted-reference/stage2",
+      "archive_reason": "moved out of active source because final rebuild must be independent from prior derived registers/HTML outputs",
+      "archived_on": "2026-06-19"
+    },
+    {
+      "file": "api551_control_build_v1.zip",
+      "role": "archive/source package; frozen control build bundle; QA/evidence only; forbidden as generation input for final one-pass rebuild",
+      "drive_source_file_id": "12-xbnKpkYY2qpuU_OFbXLFXm0nq--JMW",
+      "drive_source_size": 34726175,
+      "local_size": 34726175,
+      "comparison": "size_match",
+      "read_check": "metadata_ok",
+      "archive_path": "archive/source-packages/api551_control_build_v1.zip",
+      "extracted_reference_root": "archive/extracted-reference/control-build",
+      "archive_reason": "moved out of active source because it duplicates PDF/CSV/Stage3 package and old rules",
+      "archived_on": "2026-06-19"
+    }
+  ],
+  "extracted_reference_policy": {
+    "root": "archive/extracted-reference",
+    "status": "archive_reference_index_only_not_generation_input",
+    "rule": "Archived ZIP packages remain in archive/source-packages. The extracted-reference manifest is an index of useful ZIP members for QA/audit/traceability only. The selected members are not active source and are forbidden as generation input for the final one-pass rebuild.",
+    "manifest": "archive/extracted-reference/EXTRACTED_REFERENCE_MANIFEST.json",
+    "excluded_from_extraction": [
+      "RU HTML registers",
+      "Stage3 production HTML/JSON duplicates",
+      "crop ZIP",
+      "stage_c_assets PNG/crops",
+      "duplicate PDF/CSV/rules from control build"
+    ]
+  }
 }
