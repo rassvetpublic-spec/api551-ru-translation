@@ -172,3 +172,46 @@ jobs:
               raise SystemExit("catalog stats mismatch")
           print("catalog Stage 4 status OK")
           PY
+      - name: Check portable relative review links
+        run: |
+          python3 - <<'PY'
+          import json
+          import re
+          from pathlib import Path
+
+          root_files = [Path("index.html"), Path("catalog.json")]
+          figure_html = sorted(Path("workspace/figures").glob("*/figure_*.html"))
+          files = root_files + figure_html
+          for path in files:
+              text = path.read_text(encoding="utf-8", errors="replace")
+              if "file:///C:/" in text or "C:/Downloads/" in text:
+                  raise SystemExit(f"absolute Windows path is forbidden: {path}")
+
+          catalog = json.loads(Path("catalog.json").read_text(encoding="utf-8"))
+          for fig in catalog.get("figures", []):
+              link = fig.get("source_pdf_link", "")
+              if not link.startswith("source/API%20551%202016%20(R2024).pdf#page="):
+                  raise SystemExit(f"bad root PDF link for Figure {fig.get('figure_no')}: {link}")
+              for key in ["folder", "html", "json", "png", "source_crop", "out_html"]:
+                  value = fig.get(key)
+                  if value and value.startswith("figures/"):
+                      raise SystemExit(f"non-portable catalog path for Figure {fig.get('figure_no')} {key}: {value}")
+
+          index = Path("index.html").read_text(encoding="utf-8", errors="replace")
+          if 'href="figures/' in index:
+              raise SystemExit("index.html still points to root figures/")
+          if "source/API%20551%202016%20(R2024).pdf#page=" not in index:
+              raise SystemExit("index.html has no relative source PDF links")
+
+          for path in figure_html:
+              text = path.read_text(encoding="utf-8", errors="replace")
+              if "../../../source/API%20551%202016%20(R2024).pdf#page=" not in text:
+                  raise SystemExit(f"Figure HTML has no relative source PDF link: {path}")
+              for src in re.findall(r"<img[^>]+src=[\"']([^\"']+)[\"']", text, flags=re.I):
+                  if src.startswith(("http://", "https://", "data:")):
+                      continue
+                  image_path = path.parent / src
+                  if not image_path.is_file():
+                      raise SystemExit(f"broken image reference {src} in {path}")
+          print("portable relative review links OK")
+          PY
