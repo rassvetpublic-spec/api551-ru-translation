@@ -93,16 +93,21 @@ jobs:
               if suffix in {".html", ".png", ".jpg", ".jpeg", ".zip", ".pdf"}:
                   raise SystemExit(f"forbidden reference member selected: {item}")
 
-          expected_sizes = {}
-          for item in manifest["mandatory_sources"]:
-              if "local_size" in item:
-                  expected_sizes[Path("source") / item["file"]] = int(item["local_size"])
-          for path, expected_size in expected_sizes.items():
-              size = path.stat().st_size
-              if size != expected_size:
-                  raise SystemExit(f"{path} size mismatch: expected {expected_size}, got {size}")
+          lfs_pointer_prefix = b"version https://git-lfs.github.com/spec/v1"
+          for name in active:
+              path = Path("source") / name
+              data = path.read_bytes()
+              if not data:
+                  raise SystemExit(f"{path} is empty")
+              if data.startswith(lfs_pointer_prefix):
+                  raise SystemExit(f"{path} is a Git LFS pointer, not usable content")
 
-          if not Path("source/API 551 2016 (R2024).pdf").read_bytes()[:5].startswith(b"%PDF"):
+          pdf = Path("source/API 551 2016 (R2024).pdf")
+          pdf_size = pdf.stat().st_size
+          expected_pdf_size = 8089772
+          if pdf_size != expected_pdf_size:
+              raise SystemExit(f"{pdf} size mismatch: expected {expected_pdf_size}, got {pdf_size}")
+          if not pdf.read_bytes()[:5].startswith(b"%PDF"):
               raise SystemExit("source PDF does not start with %PDF")
 
           expected_zip_oid = {
