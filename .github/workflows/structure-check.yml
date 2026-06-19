@@ -97,9 +97,6 @@ jobs:
           for item in manifest["mandatory_sources"]:
               if "local_size" in item:
                   expected_sizes[Path("source") / item["file"]] = int(item["local_size"])
-          for item in manifest.get("archived_source_packages", []):
-              if "local_size" in item:
-                  expected_sizes[Path(item["archive_path"])] = int(item["local_size"])
           for path, expected_size in expected_sizes.items():
               size = path.stat().st_size
               if size != expected_size:
@@ -107,13 +104,30 @@ jobs:
 
           if not Path("source/API 551 2016 (R2024).pdf").read_bytes()[:5].startswith(b"%PDF"):
               raise SystemExit("source PDF does not start with %PDF")
-          for path in sorted(Path("archive/source-packages").glob("*.zip")):
-              if path.read_bytes()[:2] != b"PK":
-                  raise SystemExit(f"{path} does not look like a ZIP file")
-              with zipfile.ZipFile(path) as zf:
-                  bad = zf.testzip()
-              if bad is not None:
-                  raise SystemExit(f"{path} ZIP integrity failed at {bad}")
+
+          expected_zip_oid = {
+              "API_551_STAGE2_REFERENCE_FILES_v1.zip": "cda3e972a0acc5104e61a538c19f5c301c554eab03abd1bf868474f12babdf70",
+              "API_551_STAGE3_SOURCE_PACKAGE_v1.zip": "5a6d1bb1fb099dd5346297855b57758e68b503d84bdb890b0c775650d4fd7643",
+              "api551_control_build_v1.zip": "c9a8c330b0b20eb1c7b3f82dbf98eafa3409aec3611ff874419ecb3c5b627cc2",
+          }
+          for item in manifest.get("archived_source_packages", []):
+              path = Path(item["archive_path"])
+              data = path.read_bytes()
+              if data.startswith(b"PK"):
+                  if path.stat().st_size != int(item["local_size"]):
+                      raise SystemExit(f"{path} size mismatch after LFS smudge")
+                  with zipfile.ZipFile(path) as zf:
+                      bad = zf.testzip()
+                  if bad is not None:
+                      raise SystemExit(f"{path} ZIP integrity failed at {bad}")
+                  continue
+              text = data.decode("utf-8", errors="replace")
+              expected_oid = expected_zip_oid[item["file"]]
+              expected_size = str(item["local_size"])
+              if "version https://git-lfs.github.com/spec/v1" not in text:
+                  raise SystemExit(f"{path} is neither ZIP nor LFS pointer")
+              if f"oid sha256:{expected_oid}" not in text or f"size {expected_size}" not in text:
+                  raise SystemExit(f"{path} LFS pointer does not match expected oid/size")
 
           readme = Path("README.md").read_text(encoding="utf-8")
           workflow = Path(".github/workflows/structure-check.yml").read_text(encoding="utf-8")
