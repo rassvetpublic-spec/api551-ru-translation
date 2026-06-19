@@ -17,10 +17,13 @@ venv/
 
 # Logs
 *.log
+!docs/run-logs/
+!docs/run-logs/*.log
 
 # Local-only helper scripts
-API551_BOOTSTRAP_GITHUB_REPO*.ps1
-API551_GIT_INIT_AND_CHECK*.ps1
+/API551_BOOTSTRAP_GITHUB_REPO*.ps1
+/API551_GIT_INIT_AND_CHECK*.ps1
+/api551_migrate_relative_paths.ps1
 
 # Do not ignore project source archives/pdf.
 !source/*.zip
