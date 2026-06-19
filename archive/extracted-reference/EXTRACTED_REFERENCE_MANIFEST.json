@@ -1,0 +1,148 @@
+{
+  "status": "archive_reference_index_only_not_generation_input",
+  "updated": "2026-06-19",
+  "rule": "Archived ZIP packages are preserved in archive/source-packages. This index records which ZIP members are useful only for QA/audit/traceability. These members are not active source and are forbidden as generation input for the final one-pass rebuild.",
+  "extracted_files_created_in_repo": [],
+  "selected_reference_members": [
+    {
+      "path": "archive/extracted-reference/stage2/legacy-rules/RULES_Figure.md",
+      "source_zip": "API_551_STAGE2_REFERENCE_FILES_v1.zip",
+      "source_member": "RULES_Figure.md",
+      "size": 46955,
+      "sha256": "30941ba0674447c59e6762275931472a430c9c140a025fa05b936515383ec77c"
+    },
+    {
+      "path": "archive/extracted-reference/stage2/registers/API_551_image_register_v40.json",
+      "source_zip": "API_551_STAGE2_REFERENCE_FILES_v1.zip",
+      "source_member": "API_551_image_register_v40.json",
+      "size": 1497669,
+      "sha256": "15bf5aa1d0c2b55ef5ad9b4a23ad3834dac9c30d0e46ac7e130f1846fc8393ae"
+    },
+    {
+      "path": "archive/extracted-reference/stage2/registers/API_551_combined_figures_tables_register_v41.json",
+      "source_zip": "API_551_STAGE2_REFERENCE_FILES_v1.zip",
+      "source_member": "API_551_combined_figures_tables_register_v41.json",
+      "size": 1553380,
+      "sha256": "46a764d86cedf64fc62e4776482dccad784742994deb9984d2bdf3900dec9691"
+    },
+    {
+      "path": "archive/extracted-reference/stage2/registers/API_551_figures_full_reconstructed_register_v42.json",
+      "source_zip": "API_551_STAGE2_REFERENCE_FILES_v1.zip",
+      "source_member": "API_551_figures_full_reconstructed_register_v42.json",
+      "size": 1487431,
+      "sha256": "24e9d7a87c09f6c9ce2c67462ae9f432ecd2adc442044f2494261f60e0f0a7e2"
+    },
+    {
+      "path": "archive/extracted-reference/stage3/evidence/README_STAGE3_SOURCE.txt",
+      "source_zip": "API_551_STAGE3_SOURCE_PACKAGE_v1.zip",
+      "source_member": "README_STAGE3_SOURCE.txt",
+      "size": 1281,
+      "sha256": "ef45b1f5ecd2c3239eb7af0deb7d3ae26bfea89fc7e3244c2747bf71e823aabf"
+    },
+    {
+      "path": "archive/extracted-reference/stage3/evidence/AUDIT_API551_CROP_V2_CONTROL_BUILD_v2_NOTES_TABLES.csv",
+      "source_zip": "API_551_STAGE3_SOURCE_PACKAGE_v1.zip",
+      "source_member": "AUDIT_API551_CROP_V2_CONTROL_BUILD_v2_NOTES_TABLES.csv",
+      "size": 322,
+      "sha256": "f32376cd720d8d483621ce0126ca6d384e2a79bb2d8c1463bd60701284c7c119"
+    },
+    {
+      "path": "archive/extracted-reference/stage3/evidence/AUDIT_API551_FIGURE_CROP_ITERATION_v2.csv",
+      "source_zip": "API_551_STAGE3_SOURCE_PACKAGE_v1.zip",
+      "source_member": "AUDIT_API551_FIGURE_CROP_ITERATION_v2.csv",
+      "size": 8242,
+      "sha256": "e41e34afcf2d6ff29dda715ccfe31469286820c3fc9e8fc30fa31efdb1b580a2"
+    },
+    {
+      "path": "archive/extracted-reference/stage3/evidence/CHECK_API551_CROP_V2_CONTROL_BUILD_v5.csv",
+      "source_zip": "API_551_STAGE3_SOURCE_PACKAGE_v1.zip",
+      "source_member": "CHECK_API551_CROP_V2_CONTROL_BUILD_v5.csv",
+      "size": 298,
+      "sha256": "ca745f644925c223c2e668daa8532a23d3c779487c22a4e8a04274687eaa62e3"
+    },
+    {
+      "path": "archive/extracted-reference/stage3/evidence/CHECK_API551_CROP_V2_CONTROL_BUILD_v6.csv",
+      "source_zip": "API_551_STAGE3_SOURCE_PACKAGE_v1.zip",
+      "source_member": "CHECK_API551_CROP_V2_CONTROL_BUILD_v6.csv",
+      "size": 314,
+      "sha256": "5bcc03834e47f29f8a5568f7edcf9dd5d53fdaa3bac1d99541f25856e8629804"
+    },
+    {
+      "path": "archive/extracted-reference/stage3/evidence/REPORT_API551_CROP_V2_CONTROL_BUILD_v5.md",
+      "source_zip": "API_551_STAGE3_SOURCE_PACKAGE_v1.zip",
+      "source_member": "REPORT_API551_CROP_V2_CONTROL_BUILD_v5.md",
+      "size": 1775,
+      "sha256": "bbfaee96be465f4be9c9d430cf319255546523c642e5e314d96c5d9c32d8e163"
+    },
+    {
+      "path": "archive/extracted-reference/stage3/evidence/REPORT_API551_CROP_V2_CONTROL_BUILD_v6.md",
+      "source_zip": "API_551_STAGE3_SOURCE_PACKAGE_v1.zip",
+      "source_member": "REPORT_API551_CROP_V2_CONTROL_BUILD_v6.md",
+      "size": 2059,
+      "sha256": "61177bf86e08e44de83887c69b95b36943165db966696d0de6fa968f316a9d17"
+    },
+    {
+      "path": "archive/extracted-reference/stage3/evidence/STAGE3_coordinate_coverage_report.csv",
+      "source_zip": "API_551_STAGE3_SOURCE_PACKAGE_v1.zip",
+      "source_member": "STAGE3_coordinate_coverage_report.csv",
+      "size": 156866,
+      "sha256": "73a79360d65025626023abe1199fe22373e71b1a9c1c56f2f57a1e367fe724bb"
+    },
+    {
+      "path": "archive/extracted-reference/stage3/evidence/STAGE3_missing_or_incomplete_coordinates.csv",
+      "source_zip": "API_551_STAGE3_SOURCE_PACKAGE_v1.zip",
+      "source_member": "STAGE3_missing_or_incomplete_coordinates.csv",
+      "size": 48271,
+      "sha256": "fb8ce090dba20cec05908f1a8c9c1411082db407eb804268a65756e6b557e8e7"
+    },
+    {
+      "path": "archive/extracted-reference/stage3/evidence/STAGE3_source_manifest.json",
+      "source_zip": "API_551_STAGE3_SOURCE_PACKAGE_v1.zip",
+      "source_member": "STAGE3_source_manifest.json",
+      "size": 8611,
+      "sha256": "e9264b2fa56c1c7fee7a52aacf7f2bfb08801069a5a1018133b292a8397de1cf"
+    },
+    {
+      "path": "archive/extracted-reference/stage3/evidence/RULES_API551_FIGURE_CROP_ITERATION_v2.md",
+      "source_zip": "API_551_STAGE3_SOURCE_PACKAGE_v1.zip",
+      "source_member": "RULES_API551_FIGURE_CROP_ITERATION_v2.md",
+      "size": 2324,
+      "sha256": "86d479741ca896842310b6f3aa862de54cde77cf0924b857cab6afd5b2c6820b"
+    },
+    {
+      "path": "archive/extracted-reference/stage3/evidence/RULES_API551_STAGE3_SOURCE_MASTER.md",
+      "source_zip": "API_551_STAGE3_SOURCE_PACKAGE_v1.zip",
+      "source_member": "RULES_API551_STAGE3_SOURCE_MASTER.md",
+      "size": 8551,
+      "sha256": "3b1c2a3acc831c3544e85bd13669236ceafe13af7caadb8a4b18bd9839a76eac"
+    },
+    {
+      "path": "archive/extracted-reference/stage3/evidence/RULES_API551_STAGE_C_TARGET_COMPOSITE_v10.md",
+      "source_zip": "API_551_STAGE3_SOURCE_PACKAGE_v1.zip",
+      "source_member": "RULES_API551_STAGE_C_TARGET_COMPOSITE_v10.md",
+      "size": 16526,
+      "sha256": "a62769b0c034d0434b62566446667a25228fee829979e8a1cdec7443fa549c7f"
+    },
+    {
+      "path": "archive/extracted-reference/control-build/evidence/manifest.json",
+      "source_zip": "api551_control_build_v1.zip",
+      "source_member": "api551_control_build_v1/manifest.json",
+      "size": 913,
+      "sha256": "93596e4f0c65817946369d039b0f133ed544e89098d54fff94222381083c5cce"
+    },
+    {
+      "path": "archive/extracted-reference/control-build/evidence/report.md",
+      "source_zip": "api551_control_build_v1.zip",
+      "source_member": "api551_control_build_v1/report.md",
+      "size": 601,
+      "sha256": "1fb45babe76265437c9cab919bc715dc8b8b7b79091e88d5614d00e2159ff956"
+    }
+  ],
+  "excluded_by_policy": [
+    "RU HTML registers",
+    "Stage3 production HTML/JSON duplicates",
+    "crop ZIP",
+    "stage_c_assets PNG/crops",
+    "duplicate PDF/CSV/rules from control build"
+  ]
+}
