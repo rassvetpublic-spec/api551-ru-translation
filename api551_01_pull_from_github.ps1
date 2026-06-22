@@ -31,7 +31,7 @@ Log "API551 pull started"
 Run { git remote set-url origin $RepoUrl } "git remote set-url origin"
 Run { git fetch --prune origin $Branch } "git fetch --prune origin $Branch"
 Run { git checkout -B $Branch "origin/$Branch" } "git checkout branch"
-Run { git pull --ff-only origin $Branch } "git pull --ff-only origin $Branch"
+Run { git reset --hard "origin/$Branch" } "git reset --hard origin/$Branch"
 
 if (-not $NoLfsPull) {
     if (Get-Command git-lfs -ErrorAction SilentlyContinue) {
@@ -46,11 +46,19 @@ Run { git rev-parse HEAD } "git rev-parse HEAD"
 Log "API551 pull completed"
 
 if (-not $NoLogPush) {
-    Run { git add $LogPath } "git add run log"
-    git diff --cached --quiet
+    Log "Preparing run log commit"
+    & git add -- $LogPath
+    if ($LASTEXITCODE -ne 0) { throw "Failed: git add run log" }
+
+    & git diff --cached --quiet
     if ($LASTEXITCODE -eq 1) {
-        Run { git commit -m "Add API551 pull run log" } "git commit run log"
-        Run { git pull --rebase origin $Branch } "git pull --rebase origin $Branch"
-        Run { git push origin $Branch } "git push origin $Branch"
+        & git commit -m "Add API551 pull run log"
+        if ($LASTEXITCODE -ne 0) { throw "Failed: git commit run log" }
+        & git push origin $Branch
+        if ($LASTEXITCODE -ne 0) { throw "Failed: git push origin $Branch" }
+        Write-Host "Run log pushed: $LogPath"
+    }
+    elseif ($LASTEXITCODE -ne 0) {
+        throw "Failed: git diff --cached --quiet"
     }
 }
