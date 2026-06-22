@@ -17,6 +17,8 @@ $Utf8NoBom = [System.Text.UTF8Encoding]::new($false)
 $script:OriginalConsoleOutputEncoding = [Console]::OutputEncoding
 [Console]::OutputEncoding = $Utf8NoBom
 $OutputEncoding = $Utf8NoBom
+$script:RemoteHeadSha = $null
+$script:GithubToken = $null
 
 function Log([string]$Text) {
     $Line = "[{0}] {1}" -f (Get-Date -Format "yyyy-MM-dd HH:mm:ss"), $Text
@@ -42,6 +44,10 @@ function ConvertTo-ApiPath([string]$Path) {
     return (($Path -split '/') | ForEach-Object { [System.Uri]::EscapeDataString($_) }) -join '/'
 }
 
+function ConvertTo-UrlPath([string]$Path) {
+    return (($Path -split '/') | ForEach-Object { [System.Uri]::EscapeDataString($_) }) -join '/'
+}
+
 function Should-PullPath([string]$Path) {
     if ($Path -eq 'api551_pull.ps1') { return $true }
     if ($Path -match '^scripts/.*\.ps1$') { return $true }
@@ -56,6 +62,26 @@ function Should-PullPath([string]$Path) {
     if ($Path -match '^tasks/.*\.(ps1|md|json|txt)$') { return $true }
     if ($Path -match '^docs/.*\.(md|json|csv|txt|log)$') { return $true }
     return $false
+}
+
+function Test-PngFile([string]$Path) {
+    if (-not (Test-Path -LiteralPath $Path -PathType Leaf)) {
+        throw "PNG file missing after download: $Path"
+    }
+    $bytes = [System.IO.File]::ReadAllBytes($Path)
+    $sig = [byte[]](0x89,0x50,0x4E,0x47,0x0D,0x0A,0x1A,0x0A)
+    if ($bytes.Length -lt 8) {
+        throw "PNG file too small after download: $Path"
+    }
+    for ($i = 0; $i -lt 8; $i++) {
+        if ($bytes[$i] -ne $sig[$i]) {
+            $headText = [System.Text.Encoding]::ASCII.GetString($bytes, 0, [Math]::Min($bytes.Length, 120))
+            if ($headText.StartsWith("version https://git-lfs.github.com/spec/v1")) {
+                throw "Downloaded LFS pointer instead of PNG: $Path"
+            }
+            throw "Downloaded file is not PNG: $Path"
+        }
+    }
 }
 
 function Invoke-GhRawToFile([string]$Endpoint, [string]$Destination) {
@@ -73,12 +99,8 @@ function Invoke-GhRawToFile([string]$Endpoint, [string]$Destination) {
         $process = [System.Diagnostics.Process]::Start($psi)
         $stdout = $process.StandardOutput.BaseStream
         $file = [System.IO.File]::Open($temp, [System.IO.FileMode]::Create, [System.IO.FileAccess]::Write, [System.IO.FileShare]::None)
-        try {
-            $stdout.CopyTo($file)
-        }
-        finally {
-            $file.Dispose()
-        }
+        try { $stdout.CopyTo($file) }
+        finally { $file.Dispose() }
         $stderr = $process.StandardError.ReadToEnd()
         $process.WaitForExit()
 
@@ -95,11 +117,47 @@ function Invoke-GhRawToFile([string]$Endpoint, [string]$Destination) {
     }
 }
 
+function Invoke-MediaToFile([string]$RepoPath, [string]$Destination) {
+    if ([string]::IsNullOrWhiteSpace($script:RemoteHeadSha)) {
+        throw "Remote head SHA is not initialized"
+    }
+    if ([string]::IsNullOrWhiteSpace($script:GithubToken)) {
+        $script:GithubToken = (& gh auth token 2>$null | Select-Object -First 1).Trim()
+        if ([string]::IsNullOrWhiteSpace($script:GithubToken)) {
+            throw "Cannot get GitHub token from gh auth token"
+        }
+    }
+
+    $urlPath = ConvertTo-UrlPath $RepoPath
+    $url = "https://media.githubusercontent.com/media/$Repo/$($script:RemoteHeadSha)/$urlPath"
+    $temp = Join-Path ([System.IO.Path]::GetTempPath()) ("api551-media-" + [System.Guid]::NewGuid().ToString("N") + ".tmp")
+    try {
+        $headers = @{
+            Authorization = "Bearer $($script:GithubToken)"
+            Accept = "application/octet-stream"
+            "User-Agent" = "api551-pull"
+        }
+        Invoke-WebRequest -Uri $url -Headers $headers -OutFile $temp -UseBasicParsing -MaximumRedirection 10
+        $dir = Split-Path -Parent $Destination
+        if ($dir) { New-Item -ItemType Directory -Force -Path $dir | Out-Null }
+        Move-Item -LiteralPath $temp -Destination $Destination -Force
+    }
+    finally {
+        if (Test-Path -LiteralPath $temp) { Remove-Item -LiteralPath $temp -Force }
+    }
+}
+
 function Download-RepositoryFile([string]$RepoPath) {
+    $destination = Join-Path $LocalPath ($RepoPath -replace '/', [System.IO.Path]::DirectorySeparatorChar)
+    if ($RepoPath -match '\.png$') {
+        Invoke-MediaToFile -RepoPath $RepoPath -Destination $destination
+        Test-PngFile -Path $destination
+        return
+    }
+
     $apiPath = ConvertTo-ApiPath $RepoPath
     $ref = [System.Uri]::EscapeDataString($Branch)
     $endpoint = "repos/$Repo/contents/$apiPath`?ref=$ref"
-    $destination = Join-Path $LocalPath ($RepoPath -replace '/', [System.IO.Path]::DirectorySeparatorChar)
     Invoke-GhRawToFile -Endpoint $endpoint -Destination $destination
 }
 
@@ -142,6 +200,7 @@ try {
 
     $refData = Invoke-GhJson @("api", "repos/$Repo/git/ref/heads/$Branch")
     $headSha = [string]$refData.object.sha
+    $script:RemoteHeadSha = $headSha
     $commit = Invoke-GhJson @("api", "repos/$Repo/git/commits/$headSha")
     $treeSha = [string]$commit.tree.sha
     $tree = Invoke-GhJson @("api", "repos/$Repo/git/trees/$treeSha`?recursive=1")
@@ -176,6 +235,9 @@ try {
 
     $rootFiles = Get-ChildItem -LiteralPath $LocalPath -File -Filter "api551*.ps1" | Select-Object -ExpandProperty Name | Sort-Object
     Log "local root api551 scripts: $($rootFiles -join ', ')"
+
+    $localPngCount = @(Get-ChildItem -LiteralPath (Join-Path $LocalPath "workspace\figures") -Recurse -Filter "*.png" -File -ErrorAction SilentlyContinue).Count
+    Log "local PNG files present: $localPngCount"
 
     Log "API551 pull completed"
     Log "Log file: $LogPath"
