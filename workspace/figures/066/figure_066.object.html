@@ -12,8 +12,15 @@
     .image-wrap { padding: 12px; text-align: center; border: 1px solid #e5e7eb; margin: 10px 0 16px; }
     img { max-width: 100%; height: auto; }
     table { width: 100%; border-collapse: collapse; }
-    th, td { border-bottom: 1px solid #e5e7eb; padding: 7px 8px; text-align: left; vertical-align: top; font-size: 13px; }
-    th:first-child, td:first-child { width: 56px; text-align: center; }
+    th, td { border: 1px solid #d1d5db; padding: 7px 8px; vertical-align: top; font-size: 13px; }
+    th { background: #f3f4f6; text-align: center; }
+    td { text-align: center; }
+    .top-text { text-align: left; line-height: 1.35; }
+    .drawing-cell { text-align: center; }
+    .drawing-cell img { max-width: 220px; width: 100%; height: auto; }
+    .audit td:first-child { width: 260px; text-align: left; font-weight: 700; color: #374151; }
+    .audit td:last-child { text-align: left; }
+    .caption { padding: 12px 18px; text-align: center; font-weight: 700; border: 1px solid #d1d5db; border-top: 0; }
     a { color: #0f3b7a; }
   </style>
 </head>
@@ -21,19 +28,46 @@
 <main>
   <h1>Рисунок 66 — Рекомендуемые расходы продувки для различных размеров отборов фланцев диафрагмы</h1>
   <div class="meta">Status: accepted · Figure 66 · PDF page: 216 · <a href="../../../source/API%20551%202016%20(R2024).pdf#page=216">source PDF</a></div>
-  <h2>Финальный PNG для итогового документа</h2>
-  <div class="image-wrap"><img src="figure_066.png" alt="Рисунок 66 — Рекомендуемые расходы продувки для различных размеров отборов фланцев диафрагмы"></div>
+
+  <h2>Восстановленный объект для итогового документа</h2>
+  <section data-figure-kind="reconstructed_table_with_embedded_drawing">
+    <table class="reconstructed-table" aria-label="Рисунок 66">
+      <tbody>
+        <tr>
+          <td class="top-text" colspan="4">Использовать отборы давления NPS 1/2 или 3/4 со сверлом 12 мм (1/2″) для трубы ≥4″; сверлом 10 мм (3/8″) для трубы 3″; и сверлом 6 мм (1/4″) для трубы ≤2″.</td>
+          <td class="drawing-cell" colspan="3"><img src="figure_066.png" alt="Чертёж ячейки таблицы Figure 66"></td>
+        </tr>
+        <tr><th rowspan="2">NPS</th><th colspan="2">Диаметр сверления</th><th colspan="2">Расход газа</th><th colspan="2">Расход жидкости</th></tr>
+        <tr><th>дюймы</th><th>мм</th><th>фт³/ч</th><th>м³/ч</th><th>галл/ч</th><th>м³/ч</th></tr>
+        <tr><td>≤2″</td><td>1/4</td><td>6</td><td>1</td><td>0.03</td><td>3</td><td>0.01</td></tr>
+        <tr><td>3″</td><td>3/8</td><td>9.5</td><td>2</td><td>0.06</td><td>5</td><td>0.02</td></tr>
+        <tr><td>≥4″</td><td>1/2</td><td>12</td><td>5</td><td>0.14</td><td>6</td><td>0.02</td></tr>
+      </tbody>
+    </table>
+    <div class="caption"><a href="../../../source/API%20551%202016%20(R2024).pdf#page=216">Рисунок 66 — Рекомендуемые расходы продувки для различных размеров отборов фланцев диафрагмы</a></div>
+  </section>
+
   <h2>Исходный crop PNG</h2>
   <div class="image-wrap"><img src="figure_066.source_crop.png" alt="Исходный crop Figure 66"></div>
+
   <h2>Служебная информация</h2>
+  <table class="audit">
+    <tbody>
+      <tr><td>Object kind</td><td>reconstructed_table_with_embedded_drawing</td></tr>
+      <tr><td>Correction</td><td>repaired_2026-06-22_full_reconstructed_object_html</td></tr>
+      <tr><td>Embedded drawing file</td><td>figure_066.png</td></tr>
+      <tr><td>Reconstructed table source</td><td>figure_066.reconstructed_table.json</td></tr>
+      <tr><td>Ready for final export</td><td>true</td></tr>
+    </tbody>
+  </table>
+
   <ul>
-    <li>Placed labels: 0</li>
-    <li>Protected/no-change labels: 0</li>
-    <li>Ready for final export: True</li>
-    <li>Approval: approved</li>
+    <li>Экспортный HTML: <a href="figure_066.out.html">figure_066.out.html</a></li>
+    <li>Служебный JSON: <a href="figure_066.object.json">figure_066.object.json</a></li>
+    <li>JSON восстановленной таблицы: <a href="figure_066.reconstructed_table.json">figure_066.reconstructed_table.json</a></li>
+    <li>Чертёж ячейки таблицы: <a href="figure_066.png">figure_066.png</a></li>
+    <li>Исходный crop PNG: <a href="figure_066.source_crop.png">figure_066.source_crop.png</a></li>
   </ul>
-  <ul><li>Экспортный HTML: <a href="figure_066.out.html">figure_066.out.html</a></li><li>Служебный JSON: <a href="figure_066.object.json">figure_066.object.json</a></li><li>Финальный PNG: <a href="figure_066.png">figure_066.png</a></li><li>Исходный crop PNG: <a href="figure_066.source_crop.png">figure_066.source_crop.png</a></li></ul>
-  
 </main>
 </body>
 </html>

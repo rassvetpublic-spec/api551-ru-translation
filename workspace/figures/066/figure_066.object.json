@@ -2,7 +2,7 @@
   "object_schema": "api551_stage4_figure_object_v1",
   "stage": "Stage 4",
   "approval_status": "approved",
-  "approval_basis": "accepted by user in chat; do not modify this figure further",
+  "approval_basis": "accepted by user in chat; repaired export template on 2026-06-22 to restore full reconstructed table object",
   "figure_no": 66,
   "figure_id": "Figure 66",
   "api_page": 208,
@@ -73,8 +73,10 @@
     ],
     "embedded_drawing_file": "figure_066.png"
   },
-  "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=216",
+  "source_pdf_link": "../../../source/API%20551%202016%20(R2024).pdf#page=216",
   "on_image_russian_labels": false,
   "ready_for_final_export": true,
-  "do_not_touch_after_approval": true
+  "do_not_touch_after_approval": true,
+  "repair_status": "repaired_2026-06-22_full_reconstructed_object_html",
+  "repair_reason": "The accepted metadata described a reconstructed table with embedded drawing, but out_html/object_html rendered only the embedded drawing PNG and caption."
 }

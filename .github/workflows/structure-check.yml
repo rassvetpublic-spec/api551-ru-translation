@@ -218,5 +218,20 @@ jobs:
                   image_path = path.parent / src
                   if not image_path.is_file():
                       raise SystemExit(f"broken image reference {src} in {path}")
+          fig66_out = Path("workspace/figures/066/figure_066.out.html").read_text(encoding="utf-8", errors="replace")
+          fig66_json = Path("workspace/figures/066/figure_066.object.json").read_text(encoding="utf-8", errors="replace")
+          for needle in [
+              'data-figure-kind="reconstructed_table_with_embedded_drawing"',
+              'class="reconstructed-table"',
+              '<th colspan="2">Расход газа</th>',
+              '<th colspan="2">Расход жидкости</th>',
+              '<td>≥4″</td>',
+              'figure_066.png',
+          ]:
+              if needle not in fig66_out:
+                  raise SystemExit(f"Figure 66 reconstructed object missing fragment: {needle}")
+          if "file:///C:/" in fig66_json or "C:/Downloads/" in fig66_json:
+              raise SystemExit("Figure 66 object JSON contains absolute Windows path")
+          print("Figure 66 reconstructed table check OK")
           print("portable relative review links OK")
           PY
