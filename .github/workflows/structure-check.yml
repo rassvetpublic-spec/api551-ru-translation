@@ -144,6 +144,71 @@ jobs:
           print("API551 source/archive model OK")
           PY
 
+      - name: Check UTF-8 text encodings
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          text_suffixes = {
+              ".html", ".json", ".md", ".csv", ".txt", ".log",
+              ".ps1", ".yml", ".yaml",
+          }
+          excluded_parts = {".git"}
+          forbidden_boms = {
+              b"\xef\xbb\xbf": "UTF-8 BOM",
+              b"\xff\xfe": "UTF-16 LE BOM",
+              b"\xfe\xff": "UTF-16 BE BOM",
+          }
+          mojibake_markers = [
+              "╨", "╤", "┬", "┐", "└", "─", "│",
+              "Ð", "Ñ", "Â", "ð", "ñ", "РЎ", "Рњ", "Рё",
+              "�",
+          ]
+          allowed_marker_paths = {
+              ".github/workflows/structure-check.yml",
+          }
+
+          failures = []
+          checked = 0
+          for path in sorted(Path(".").rglob("*")):
+              if not path.is_file():
+                  continue
+              rel = path.relative_to(Path("."))
+              rel_posix = rel.as_posix()
+              if any(part in excluded_parts for part in rel.parts):
+                  continue
+              if path.suffix.lower() not in text_suffixes:
+                  continue
+
+              checked += 1
+              data = path.read_bytes()
+              for bom, label in forbidden_boms.items():
+                  if data.startswith(bom):
+                      failures.append(f"{rel_posix}: forbidden {label}")
+              try:
+                  text = data.decode("utf-8", errors="strict")
+              except UnicodeDecodeError as exc:
+                  failures.append(f"{rel_posix}: invalid UTF-8 at byte {exc.start}")
+                  continue
+
+              if "\x00" in text:
+                  failures.append(f"{rel_posix}: NUL byte in text file; possible UTF-16/invalid text encoding")
+
+              if rel_posix not in allowed_marker_paths:
+                  found = [marker for marker in mojibake_markers if marker in text]
+                  if found:
+                      failures.append(f"{rel_posix}: possible mojibake markers found: {found[:8]}")
+
+              if path.suffix.lower() == ".html":
+                  head = text[:1000].lower()
+                  if "<meta charset=\"utf-8\">" not in head and "<meta charset='utf-8'>" not in head:
+                      failures.append(f"{rel_posix}: missing <meta charset=\"utf-8\"> near document head")
+
+          if failures:
+              raise SystemExit("encoding check failed:\n" + "\n".join(failures[:80]))
+          print(f"UTF-8 encoding check OK ({checked} text files)")
+          PY
+
       - name: Validate JSON files
         run: |
           python3 -m json.tool source/API551_SOURCE_MANIFEST_CURRENT.json > /dev/null
