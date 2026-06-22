@@ -63,7 +63,7 @@ function Resolve-BranchName([string]$RequestedBranch) {
     }
 
     $defaultBranch = if ($ordered.Contains("candidates")) { "candidates" } elseif ($ordered.Contains("main")) { "main" } else { $ordered[0] }
-    $answer = Read-Host "Выберите ветку (Enter=$defaultBranch, номер или имя)"
+    $answer = Read-Host "Select branch (Enter=$defaultBranch, number or name)"
     if ([string]::IsNullOrWhiteSpace($answer)) { return $defaultBranch }
 
     $answer = $answer.Trim()
