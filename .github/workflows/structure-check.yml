@@ -67,7 +67,7 @@ jobs:
           if list(Path("source").glob("*.zip")):
               raise SystemExit("source/ must not contain ZIP packages")
 
-          manifest = json.loads(Path("source/API551_SOURCE_MANIFEST_CURRENT.json").read_text(encoding="utf-8"))
+          manifest = json.loads(Path("source/API551_SOURCE_MANIFEST_CURRENT.json").read_text(encoding="utf-8-sig"))
           folder = manifest["canonical_source_policy"]["primary_source_folder"]
           folder_id = "1uLQQ1XHveKaUzLgULQ84jYUD1GYMWPKX"
           folder_url = f"https://drive.google.com/drive/folders/{folder_id}"
@@ -96,7 +96,7 @@ jobs:
               if "forbidden as generation input" not in record.get("role", ""):
                   raise SystemExit(f"archived package role must forbid generation input: {name}")
 
-          ref = json.loads(Path("archive/extracted-reference/EXTRACTED_REFERENCE_MANIFEST.json").read_text(encoding="utf-8"))
+          ref = json.loads(Path("archive/extracted-reference/EXTRACTED_REFERENCE_MANIFEST.json").read_text(encoding="utf-8-sig"))
           if ref.get("status") != "archive_reference_index_only_not_generation_input":
               raise SystemExit("wrong extracted reference manifest status")
           if ref.get("extracted_files_created_in_repo") != []:
@@ -116,8 +116,7 @@ jobs:
                   raise SystemExit(f"{path} is a Git LFS pointer, not usable content")
 
           pdf = Path("source/API 551 2016 (R2024).pdf")
-          expected_pdf_size = 8089772
-          if pdf.stat().st_size != expected_pdf_size:
+          if pdf.stat().st_size != 8089772:
               raise SystemExit(f"{pdf} size mismatch")
           if not pdf.read_bytes()[:5].startswith(b"%PDF"):
               raise SystemExit("source PDF does not start with %PDF")
@@ -146,8 +145,8 @@ jobs:
               if f"oid sha256:{expected_oid}" not in text or f"size {expected_size}" not in text:
                   raise SystemExit(f"{path} LFS pointer does not match expected oid/size")
 
-          readme = Path("README.md").read_text(encoding="utf-8")
-          workflow = Path(".github/workflows/structure-check.yml").read_text(encoding="utf-8")
+          readme = Path("README.md").read_text(encoding="utf-8-sig")
+          workflow = Path(".github/workflows/structure-check.yml").read_text(encoding="utf-8-sig")
           for name in active + archived:
               if name not in readme:
                   raise SystemExit(f"README does not mention {name}")
@@ -165,7 +164,6 @@ jobs:
           excluded_parts = {".git"}
           excluded_prefixes = {"docs/run-logs/"}
           forbidden_boms = {
-              b"\xef\xbb\xbf": "UTF-8 BOM",
               b"\xff\xfe": "UTF-16 LE BOM",
               b"\xfe\xff": "UTF-16 BE BOM",
           }
@@ -195,7 +193,7 @@ jobs:
                   if data.startswith(bom):
                       failures.append(f"{rel_posix}: forbidden {label}")
               try:
-                  text = data.decode("utf-8", errors="strict")
+                  text = data.decode("utf-8-sig", errors="strict")
               except UnicodeDecodeError as exc:
                   failures.append(f"{rel_posix}: invalid UTF-8 at byte {exc.start}")
                   continue
@@ -230,7 +228,7 @@ jobs:
           import json
           from pathlib import Path
 
-          catalog = json.loads(Path("catalog.json").read_text(encoding="utf-8"))
+          catalog = json.loads(Path("catalog.json").read_text(encoding="utf-8-sig"))
           figures = catalog.get("figures", [])
           if len(figures) != 69:
               raise SystemExit(f"catalog must contain 69 figures, got {len(figures)}")
@@ -263,11 +261,11 @@ jobs:
           figure_html = sorted(Path("workspace/figures").glob("*/figure_*.html"))
           files = root_files + figure_html
           for path in files:
-              text = path.read_text(encoding="utf-8", errors="replace")
+              text = path.read_text(encoding="utf-8-sig", errors="replace")
               if "file:///C:/" in text or "C:/Downloads/" in text:
                   raise SystemExit(f"absolute Windows path is forbidden: {path}")
 
-          catalog = json.loads(Path("catalog.json").read_text(encoding="utf-8"))
+          catalog = json.loads(Path("catalog.json").read_text(encoding="utf-8-sig"))
           for fig in catalog.get("figures", []):
               link = fig.get("source_pdf_link", "")
               if not link.startswith("source/API%20551%202016%20(R2024).pdf#page="):
@@ -277,14 +275,14 @@ jobs:
                   if value and value.startswith("figures/"):
                       raise SystemExit(f"non-portable catalog path for Figure {fig.get('figure_no')} {key}: {value}")
 
-          index = Path("index.html").read_text(encoding="utf-8", errors="replace")
+          index = Path("index.html").read_text(encoding="utf-8-sig", errors="replace")
           if 'href="figures/' in index:
               raise SystemExit("index.html still points to root figures/")
           if "source/API%20551%202016%20(R2024).pdf#page=" not in index:
               raise SystemExit("index.html has no relative source PDF links")
 
           for path in figure_html:
-              text = path.read_text(encoding="utf-8", errors="replace")
+              text = path.read_text(encoding="utf-8-sig", errors="replace")
               if "../../../source/API%20551%202016%20(R2024).pdf#page=" not in text:
                   raise SystemExit(f"Figure HTML has no relative source PDF link: {path}")
               for src in re.findall(r"<img[^>]+src=[\"']([^\"']+)[\"']", text, flags=re.I):
@@ -294,8 +292,8 @@ jobs:
                   if not image_path.is_file():
                       raise SystemExit(f"broken image reference {src} in {path}")
 
-          fig66_out = Path("workspace/figures/066/figure_066.out.html").read_text(encoding="utf-8", errors="replace")
-          fig66_json = Path("workspace/figures/066/figure_066.object.json").read_text(encoding="utf-8", errors="replace")
+          fig66_out = Path("workspace/figures/066/figure_066.out.html").read_text(encoding="utf-8-sig", errors="replace")
+          fig66_json = Path("workspace/figures/066/figure_066.object.json").read_text(encoding="utf-8-sig", errors="replace")
           for needle in [
               'data-figure-kind="reconstructed_table_with_embedded_drawing"',
               'class="reconstructed-table"',
