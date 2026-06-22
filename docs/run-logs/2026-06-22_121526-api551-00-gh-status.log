@@ -1,0 +1,21 @@
+[2026-06-22 12:15:26] API551 gh status started
+[2026-06-22 12:15:26] Repo: rassvetpublic-spec/api551-ru-translation
+[2026-06-22 12:15:26] Branch: codex/archive-source-zips
+[2026-06-22 12:15:26] PR: #1
+[2026-06-22 12:15:26] gh: gh version 2.95.0 (2026-06-17)
+[2026-06-22 12:15:26] api.github.com DNS: 140.82.121.5
+[2026-06-22 12:15:27] gh auth status OK
+[2026-06-22 12:15:27] repo default branch: main
+[2026-06-22 12:15:27] repo pushed_at: 06/22/2026 09:11:45
+[2026-06-22 12:15:28] PR state: open; draft: True; mergeable: True
+[2026-06-22 12:15:28] PR head: codex/archive-source-zips @ ffd226174aafcfd80703299fa03415d5116fb693
+[2026-06-22 12:15:28] PR base: main @ 7b378201c34f4a450317048a48baf398aa08917b
+[2026-06-22 12:15:28] branch object sha: ffd226174aafcfd80703299fa03415d5116fb693
+[2026-06-22 12:15:29] latest CI: Structure check; status=completed; conclusion=success; run=27942035587
+[2026-06-22 12:15:29] root script present: api551_00_gh_status.ps1
+[2026-06-22 12:15:29] root script present: api551_01_pull_from_github.ps1
+[2026-06-22 12:15:29] root script present: api551_02_sync_up.ps1
+[2026-06-22 12:15:30] root script present: api551_03_apply_task.ps1
+[2026-06-22 12:15:30] scripts folder present: review/archive candidate
+[2026-06-22 12:15:30] API551 gh status completed
+[2026-06-22 12:15:30] Log file: C:\Downloads\API 551\docs\run-logs\2026-06-22_121526-api551-00-gh-status.log
