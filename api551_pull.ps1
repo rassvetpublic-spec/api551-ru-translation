@@ -1,7 +1,7 @@
 param(
     [string]$Repo = "rassvetpublic-spec/api551-ru-translation",
     [string]$Branch = "main",
-    [int]$PrNumber = 1,
+    [int]$PrNumber = 0,
     [string]$LocalPath = "C:\Downloads\API 551"
 )
 
@@ -183,7 +183,7 @@ try {
     Log "API551 pull started"
     Log "Repo: $Repo"
     Log "Branch: $Branch"
-    Log "PR: #$PrNumber"
+    if ($PrNumber -gt 0) { Log "PR: #$PrNumber" } else { Log "PR: skipped" }
     Log "LocalPath: $LocalPath"
 
     Require-Command "gh"
@@ -220,10 +220,14 @@ try {
 
     Remove-ObsoleteRootScripts
 
-    $pr = Invoke-GhJson @("api", "repos/$Repo/pulls/$PrNumber")
-    Log "PR state: $($pr.state); draft: $($pr.draft); mergeable: $($pr.mergeable)"
-    Log "PR head: $($pr.head.ref) @ $($pr.head.sha)"
-    Log "PR base: $($pr.base.ref) @ $($pr.base.sha)"
+    if ($PrNumber -gt 0) {
+        $pr = Invoke-GhJson @("api", "repos/$Repo/pulls/$PrNumber")
+        Log "PR state: $($pr.state); draft: $($pr.draft); mergeable: $($pr.mergeable)"
+        Log "PR head: $($pr.head.ref) @ $($pr.head.sha)"
+        Log "PR base: $($pr.base.ref) @ $($pr.base.sha)"
+    } else {
+        Log "PR check skipped"
+    }
 
     $runs = Invoke-GhJson @("api", "repos/$Repo/actions/runs?branch=$Branch&per_page=5")
     $latestRun = $runs.workflow_runs | Select-Object -First 1
