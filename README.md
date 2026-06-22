@@ -8,26 +8,24 @@ Working repository for the API 551 Russian technical translation project.
 - `workspace/figures/` - Stage 4 figure objects and review/export artifacts.
 - `docs/` - project documentation and run logs.
 - `archive/` - preserved superseded files, archived source packages, extracted QA/reference evidence, and cleanup history.
+- `scripts/` - non-root helper scripts and legacy fallback tools.
 - `.github/workflows/` - repository checks.
 - `index.html` and `catalog.json` - published review export in repository root.
 
 ## Root script layout
 
-Active local workflow now uses GitHub CLI because local DNS can block normal `git fetch` to `github.com` while `api.github.com` remains reachable.
+Repository root must stay clean. The only active root script is:
 
-Active `gh` scripts in repository root:
+- `api551_pull.ps1` - pull text review state through GitHub CLI, check PR/CI status, and remove obsolete local root scripts.
 
-1. `api551_00_gh_status.ps1` - check PR, branch, CI, root layout, and GitHub CLI connectivity.
-2. `api551_01_gh_pull_text_state.ps1` - pull the text review state through `gh api`.
-3. `api551_02_gh_upload_run_log.ps1` - upload only approved `.log` files from `docs/run-logs`.
+Helper scripts live under `scripts/`:
 
-Legacy Git scripts retained as fallback / historical workflow until a full replacement is approved:
+- `scripts/api551_gh_upload_run_log.ps1` - upload only approved `.log` files from `docs/run-logs`.
+- `scripts/api551_git_pull_from_github.ps1` - legacy Git pull fallback.
+- `scripts/api551_git_sync_up.ps1` - legacy Git sync fallback.
+- `scripts/api551_git_apply_task.ps1` - legacy Git task fallback.
 
-1. `api551_01_pull_from_github.ps1`
-2. `api551_02_sync_up.ps1`
-3. `api551_03_apply_task.ps1`
-
-Do not add new active helper scripts under `scripts/`. One-off migration helpers must be archived or deleted after their output is captured.
+Do not add new active scripts to the repository root. If a root helper is needed, fold it into `api551_pull.ps1` or place it under `scripts/`.
 
 ## Active source model
 
