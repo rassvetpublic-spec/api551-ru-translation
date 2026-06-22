@@ -14,6 +14,9 @@ $LogPath = Join-Path $LogDir "$Stamp-api551-pull.log"
 New-Item -ItemType Directory -Force -Path $LogDir | Out-Null
 
 $Utf8NoBom = [System.Text.UTF8Encoding]::new($false)
+$script:OriginalConsoleOutputEncoding = [Console]::OutputEncoding
+[Console]::OutputEncoding = $Utf8NoBom
+$OutputEncoding = $Utf8NoBom
 
 function Log([string]$Text) {
     $Line = "[{0}] {1}" -f (Get-Date -Format "yyyy-MM-dd HH:mm:ss"), $Text
@@ -54,18 +57,49 @@ function Should-PullPath([string]$Path) {
     return $false
 }
 
+function Invoke-GhRawToFile([string]$Endpoint, [string]$Destination) {
+    $temp = Join-Path ([System.IO.Path]::GetTempPath()) ("api551-gh-raw-" + [System.Guid]::NewGuid().ToString("N") + ".tmp")
+    try {
+        $psi = [System.Diagnostics.ProcessStartInfo]::new()
+        $psi.FileName = "gh"
+        foreach ($arg in @("api", "-H", "Accept: application/vnd.github.raw", $Endpoint)) {
+            [void]$psi.ArgumentList.Add($arg)
+        }
+        $psi.UseShellExecute = $false
+        $psi.RedirectStandardOutput = $true
+        $psi.RedirectStandardError = $true
+
+        $process = [System.Diagnostics.Process]::Start($psi)
+        $stdout = $process.StandardOutput.BaseStream
+        $file = [System.IO.File]::Open($temp, [System.IO.FileMode]::Create, [System.IO.FileAccess]::Write, [System.IO.FileShare]::None)
+        try {
+            $stdout.CopyTo($file)
+        }
+        finally {
+            $file.Dispose()
+        }
+        $stderr = $process.StandardError.ReadToEnd()
+        $process.WaitForExit()
+
+        if ($process.ExitCode -ne 0) {
+            throw "gh raw download failed: $Endpoint`n$stderr"
+        }
+
+        $dir = Split-Path -Parent $Destination
+        if ($dir) { New-Item -ItemType Directory -Force -Path $dir | Out-Null }
+        Move-Item -LiteralPath $temp -Destination $Destination -Force
+    }
+    finally {
+        if (Test-Path -LiteralPath $temp) { Remove-Item -LiteralPath $temp -Force }
+    }
+}
+
 function Download-TextFile([string]$RepoPath) {
     $apiPath = ConvertTo-ApiPath $RepoPath
     $ref = [System.Uri]::EscapeDataString($Branch)
     $endpoint = "repos/$Repo/contents/$apiPath`?ref=$ref"
-    $output = & gh api -H "Accept: application/vnd.github.raw" $endpoint 2>&1
-    if ($LASTEXITCODE -ne 0) {
-        throw "download failed: $RepoPath`n$($output | Out-String)"
-    }
     $destination = Join-Path $LocalPath ($RepoPath -replace '/', [System.IO.Path]::DirectorySeparatorChar)
-    $dir = Split-Path -Parent $destination
-    if ($dir) { New-Item -ItemType Directory -Force -Path $dir | Out-Null }
-    [System.IO.File]::WriteAllText($destination, (($output | Out-String).TrimEnd("`r", "`n") + "`r`n"), $Utf8NoBom)
+    Invoke-GhRawToFile -Endpoint $endpoint -Destination $destination
 }
 
 function Remove-ObsoleteRootScripts {
@@ -86,59 +120,64 @@ function Remove-ObsoleteRootScripts {
     }
 }
 
-Log "API551 pull started"
-Log "Repo: $Repo"
-Log "Branch: $Branch"
-Log "PR: #$PrNumber"
-Log "LocalPath: $LocalPath"
+try {
+    Log "API551 pull started"
+    Log "Repo: $Repo"
+    Log "Branch: $Branch"
+    Log "PR: #$PrNumber"
+    Log "LocalPath: $LocalPath"
 
-Require-Command "gh"
-New-Item -ItemType Directory -Force -Path $LocalPath | Out-Null
+    Require-Command "gh"
+    New-Item -ItemType Directory -Force -Path $LocalPath | Out-Null
 
-$ghVersion = (& gh --version | Select-Object -First 1)
-Log "gh: $ghVersion"
+    $ghVersion = (& gh --version | Select-Object -First 1)
+    Log "gh: $ghVersion"
 
-$auth = & gh auth status -h github.com 2>&1
-if ($LASTEXITCODE -ne 0) {
-    throw "gh auth status failed:`n$($auth | Out-String)"
+    $auth = & gh auth status -h github.com 2>&1
+    if ($LASTEXITCODE -ne 0) {
+        throw "gh auth status failed:`n$($auth | Out-String)"
+    }
+    Log "gh auth status OK"
+
+    $refData = Invoke-GhJson @("api", "repos/$Repo/git/ref/heads/$Branch")
+    $headSha = [string]$refData.object.sha
+    $commit = Invoke-GhJson @("api", "repos/$Repo/git/commits/$headSha")
+    $treeSha = [string]$commit.tree.sha
+    $tree = Invoke-GhJson @("api", "repos/$Repo/git/trees/$treeSha`?recursive=1")
+
+    Log "remote head: $headSha"
+
+    $paths = @($tree.tree | Where-Object { $_.type -eq 'blob' } | ForEach-Object { [string]$_.path } | Where-Object { Should-PullPath $_ } | Sort-Object -Unique)
+    Log "text files selected: $($paths.Count)"
+
+    $count = 0
+    foreach ($path in $paths) {
+        Download-TextFile $path
+        $count++
+    }
+    Log "downloaded text files: $count"
+
+    Remove-ObsoleteRootScripts
+
+    $pr = Invoke-GhJson @("api", "repos/$Repo/pulls/$PrNumber")
+    Log "PR state: $($pr.state); draft: $($pr.draft); mergeable: $($pr.mergeable)"
+    Log "PR head: $($pr.head.ref) @ $($pr.head.sha)"
+    Log "PR base: $($pr.base.ref) @ $($pr.base.sha)"
+
+    $runs = Invoke-GhJson @("api", "repos/$Repo/actions/runs?branch=$Branch&per_page=5")
+    $latestRun = $runs.workflow_runs | Select-Object -First 1
+    if ($latestRun) {
+        Log "latest CI: $($latestRun.name); status=$($latestRun.status); conclusion=$($latestRun.conclusion); run=$($latestRun.id)"
+    } else {
+        Log "latest CI: no workflow runs returned"
+    }
+
+    $rootFiles = Get-ChildItem -LiteralPath $LocalPath -File -Filter "api551*.ps1" | Select-Object -ExpandProperty Name | Sort-Object
+    Log "local root api551 scripts: $($rootFiles -join ', ')"
+
+    Log "API551 pull completed"
+    Log "Log file: $LogPath"
 }
-Log "gh auth status OK"
-
-$refData = Invoke-GhJson @("api", "repos/$Repo/git/ref/heads/$Branch")
-$headSha = [string]$refData.object.sha
-$commit = Invoke-GhJson @("api", "repos/$Repo/git/commits/$headSha")
-$treeSha = [string]$commit.tree.sha
-$tree = Invoke-GhJson @("api", "repos/$Repo/git/trees/$treeSha`?recursive=1")
-
-Log "remote head: $headSha"
-
-$paths = @($tree.tree | Where-Object { $_.type -eq 'blob' } | ForEach-Object { [string]$_.path } | Where-Object { Should-PullPath $_ } | Sort-Object -Unique)
-Log "text files selected: $($paths.Count)"
-
-$count = 0
-foreach ($path in $paths) {
-    Download-TextFile $path
-    $count++
+finally {
+    [Console]::OutputEncoding = $script:OriginalConsoleOutputEncoding
 }
-Log "downloaded text files: $count"
-
-Remove-ObsoleteRootScripts
-
-$pr = Invoke-GhJson @("api", "repos/$Repo/pulls/$PrNumber")
-Log "PR state: $($pr.state); draft: $($pr.draft); mergeable: $($pr.mergeable)"
-Log "PR head: $($pr.head.ref) @ $($pr.head.sha)"
-Log "PR base: $($pr.base.ref) @ $($pr.base.sha)"
-
-$runs = Invoke-GhJson @("api", "repos/$Repo/actions/runs?branch=$Branch&per_page=5")
-$latestRun = $runs.workflow_runs | Select-Object -First 1
-if ($latestRun) {
-    Log "latest CI: $($latestRun.name); status=$($latestRun.status); conclusion=$($latestRun.conclusion); run=$($latestRun.id)"
-} else {
-    Log "latest CI: no workflow runs returned"
-}
-
-$rootFiles = Get-ChildItem -LiteralPath $LocalPath -File -Filter "api551*.ps1" | Select-Object -ExpandProperty Name | Sort-Object
-Log "local root api551 scripts: $($rootFiles -join ', ')"
-
-Log "API551 pull completed"
-Log "Log file: $LogPath"
