@@ -50,6 +50,7 @@ function Should-PullPath([string]$Path) {
     if ($Path -match '^source/.*\.(json|md|csv)$') { return $true }
     if ($Path -match '^workspace/figures/\d{3}/figure_\d{3}\.(object|out)\.html$') { return $true }
     if ($Path -match '^workspace/figures/\d{3}/figure_\d{3}\.object\.json$') { return $true }
+    if ($Path -match '^workspace/figures/\d{3}/.*\.png$') { return $true }
     if ($Path -match '^archive/extracted-reference/.*\.json$') { return $true }
     if ($Path -match '^archive/cleanup-history/.*\.md$') { return $true }
     if ($Path -match '^tasks/.*\.(ps1|md|json|txt)$') { return $true }
@@ -94,7 +95,7 @@ function Invoke-GhRawToFile([string]$Endpoint, [string]$Destination) {
     }
 }
 
-function Download-TextFile([string]$RepoPath) {
+function Download-RepositoryFile([string]$RepoPath) {
     $apiPath = ConvertTo-ApiPath $RepoPath
     $ref = [System.Uri]::EscapeDataString($Branch)
     $endpoint = "repos/$Repo/contents/$apiPath`?ref=$ref"
@@ -148,14 +149,15 @@ try {
     Log "remote head: $headSha"
 
     $paths = @($tree.tree | Where-Object { $_.type -eq 'blob' } | ForEach-Object { [string]$_.path } | Where-Object { Should-PullPath $_ } | Sort-Object -Unique)
-    Log "text files selected: $($paths.Count)"
+    $pngCount = @($paths | Where-Object { $_ -match '\.png$' }).Count
+    Log "files selected: $($paths.Count), png assets: $pngCount"
 
     $count = 0
     foreach ($path in $paths) {
-        Download-TextFile $path
+        Download-RepositoryFile $path
         $count++
     }
-    Log "downloaded text files: $count"
+    Log "downloaded files: $count"
 
     Remove-ObsoleteRootScripts
 
