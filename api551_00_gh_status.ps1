@@ -78,14 +78,18 @@ if ($latestRun) {
 
 $root = Invoke-GhJson @("api", "repos/$Repo/contents?ref=$Branch")
 $rootNames = @($root | ForEach-Object { $_.name })
-foreach ($name in @("api551_00_gh_status.ps1", "api551_01_pull_from_github.ps1", "api551_02_sync_up.ps1", "api551_03_apply_task.ps1")) {
-    if ($rootNames -contains $name) { Log "root script present: $name" }
-    else { Log "root script missing: $name" }
+foreach ($name in @("api551_00_gh_status.ps1", "api551_01_gh_pull_text_state.ps1", "api551_02_gh_upload_run_log.ps1")) {
+    if ($rootNames -contains $name) { Log "active gh root script present: $name" }
+    else { Log "active gh root script missing: $name" }
+}
+foreach ($name in @("api551_01_pull_from_github.ps1", "api551_02_sync_up.ps1", "api551_03_apply_task.ps1")) {
+    if ($rootNames -contains $name) { Log "fallback git root script retained: $name" }
+    else { Log "fallback git root script absent: $name" }
 }
 if ($rootNames -contains "scripts") {
-    Log "scripts folder present: review/archive candidate"
+    Log "scripts folder present"
 } else {
-    Log "scripts folder absent"
+    Log "scripts folder absent: OK"
 }
 
 Log "API551 gh status completed"
