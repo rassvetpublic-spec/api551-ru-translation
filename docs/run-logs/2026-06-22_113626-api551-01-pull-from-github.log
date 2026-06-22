@@ -1,0 +1,195 @@
+[2026-06-22 11:36:26] API551 pull started
+[2026-06-22 11:36:26] git remote set-url origin
+[2026-06-22 11:36:26] git fetch --prune origin codex/archive-source-zips
+[2026-06-22 11:36:27]   From https://github.com/rassvetpublic-spec/api551-ru-translation
+[2026-06-22 11:36:27]    * branch            codex/archive-source-zips -> FETCH_HEAD
+[2026-06-22 11:36:27] git checkout branch
+[2026-06-22 11:36:27]   D	.gitattributes
+[2026-06-22 11:36:27]   D	.gitignore
+[2026-06-22 11:36:27]   D	README.md
+[2026-06-22 11:36:27]   D	api551_02_sync_up.ps1
+[2026-06-22 11:36:27]   D	api551_03_apply_task.ps1
+[2026-06-22 11:36:27]   D	archive/API551_ROOT_DUPLICATE_ARCHIVED_2026-06-18.pdf
+[2026-06-22 11:36:27]   D	archive/_archive_source_cleanup_2026-06-18/API551_FIGURE_SPECIFIC_RULES_CURRENT.md
+[2026-06-22 11:36:27]   D	archive/_archive_source_cleanup_2026-06-18/API551_RULES_01_FINAL_HTML_CURRENT.md
+[2026-06-22 11:36:27]   D	archive/_archive_source_cleanup_2026-06-18/API551_RULES_03_WORKING_HTML_QA_CURRENT.md
+[2026-06-22 11:36:27]   D	archive/_archive_source_cleanup_2026-06-18/API551_RULES_04_FIGURE_COMPOSITE_OBJECTS_CURRENT.md
+[2026-06-22 11:36:27]   D	archive/_archive_source_cleanup_2026-06-18/API551_RULES_05_FIGURE_LABEL_REGISTER_CURRENT.md
+[2026-06-22 11:36:27]   D	archive/_archive_source_cleanup_2026-06-18/API551_RULES_INDEX_AND_SOURCES_CURRENT.md
+[2026-06-22 11:36:27]   D	archive/_archive_source_cleanup_2026-06-18/API551_RULES_SYSTEMATIZED_v5_CLEAN_2026-06-16.zip
+[2026-06-22 11:36:27]   D	archive/_archive_source_cleanup_2026-06-18/API551_SOURCE_CLEANUP_REVIEW_2026-06-18_v2.zip
+[2026-06-22 11:36:27]   D	archive/_archive_source_cleanup_2026-06-18/API551_SOURCE_LINKS_CURRENT.md
+[2026-06-22 11:36:27]   D	archive/_archive_source_cleanup_2026-06-18/API551_STAGE4_CONSOLIDATED_CURRENT_POLICIES_2026-06-18.zip
+[2026-06-22 11:36:27]   D	archive/_archive_source_cleanup_2026-06-18/API551_STAGE4_FIG47_OCR_AUDIT_AND_STRATEGY_FIX_2026-06-16.md
+[2026-06-22 11:36:27]   D	archive/_archive_source_cleanup_2026-06-18/API551_STAGE4_RULES_STRATEGY_PATCH_CURRENT_2026-06-17.md
+[2026-06-22 11:36:27]   D	archive/_archive_source_cleanup_2026-06-18/API551_STAGE4_VERTICAL_TEXT_DIRECTION_STRATEGY_FIX_2026-06-17.md
+[2026-06-22 11:36:27]   D	archive/_archive_source_cleanup_2026-06-18/API551_STAGE4_WORKING_MEMORY_2026-06-18.md
+[2026-06-22 11:36:27]   D	archive/_archive_source_cleanup_2026-06-18/CHECKLIST_API551_PDF_FORMATTING_APPROVED.json
+[2026-06-22 11:36:27]   D	archive/_archive_source_cleanup_2026-06-18/CHECKLIST_API551_PDF_FORMATTING_APPROVED.md
+[2026-06-22 11:36:27]   D	archive/_archive_source_cleanup_2026-06-18/RULES_API551_PDF_FORMATTING_APPROVED.md
+[2026-06-22 11:36:27]   D	archive/_archive_source_cleanup_2026-06-18/RULES_API551_STAGE2_IMAGE_LABEL_REPLACEMENT_STRATEGIES_v1.md
+[2026-06-22 11:36:27]   D	archive/_archive_source_cleanup_2026-06-18/TZ_API551_STAGE4_FIGURE_OBJECTS_CURRENT_2026-06-16.md
+[2026-06-22 11:36:27]   D	archive/_archive_source_cleanup_2026-06-18/TZ_API551_translation_project_RU_CURRENT_2026-06-16.md
+[2026-06-22 11:36:27]   D	archive/extracted-reference/EXTRACTED_REFERENCE_MANIFEST.json
+[2026-06-22 11:36:27]   D	archive/source-packages/API_551_STAGE2_REFERENCE_FILES_v1.zip
+[2026-06-22 11:36:27]   D	archive/source-packages/API_551_STAGE3_SOURCE_PACKAGE_v1.zip
+[2026-06-22 11:36:27]   D	archive/source-packages/api551_control_build_v1.zip
+[2026-06-22 11:36:27]   D	catalog.json
+[2026-06-22 11:36:27]   D	docs/CONNECTION_STATUS.md
+[2026-06-22 11:36:27]   D	docs/GITHUB_SETUP.md
+[2026-06-22 11:36:27]   D	docs/SOURCE_LAYOUT_CURRENT.md
+[2026-06-22 11:36:27]   D	docs/run-logs/2026-06-19_112458-relative-path-migration.log
+[2026-06-22 11:36:27]   D	docs/run-logs/2026-06-19_115227-local-sync.log
+[2026-06-22 11:36:27]   D	docs/run-logs/2026-06-22_081940-figure066-full-object-repair.log
+[2026-06-22 11:36:27]   D	docs/run-logs/2026-06-22_103444-api551-01-pull-from-github.log
+[2026-06-22 11:36:27]   D	docs/run-logs/2026-06-22_104111-api551-01-pull-from-github.log
+[2026-06-22 11:36:27]   D	docs/run-logs/2026-06-22_113505-api551-01-pull-from-github.log
+[2026-06-22 11:36:27]   D	docs/run-logs/2026-06-22_113524-api551-01-pull-from-github.log
+[2026-06-22 11:36:27]   D	index.html
+[2026-06-22 11:36:27]   D	scripts/api551_migrate_relative_paths.ps1
+[2026-06-22 11:36:27]   D	source/API 551 2016 (R2024).pdf
+[2026-06-22 11:36:27]   D	source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md
+[2026-06-22 11:36:27]   D	source/API551_SOURCE_MANIFEST_CURRENT.json
+[2026-06-22 11:36:27]   D	source/TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md
+[2026-06-22 11:36:27]   D	source/TZ_API551_translation_project_RU.md
+[2026-06-22 11:36:27]   D	source/api551_approved_label_master_v1.csv
+[2026-06-22 11:36:27]   D	tasks/.gitkeep
+[2026-06-22 11:36:27]   D	workspace/figures/001/figure_001.caption_ru.txt
+[2026-06-22 11:36:27]   D	workspace/figures/001/figure_001.object.html
+[2026-06-22 11:36:27]   D	workspace/figures/001/figure_001.object.json
+[2026-06-22 11:36:27]   D	workspace/figures/001/figure_001.out.html
+[2026-06-22 11:36:27]   D	workspace/figures/001/figure_001.png
+[2026-06-22 11:36:27]   D	workspace/figures/001/figure_001.restored_labels.json
+[2026-06-22 11:36:27]   D	workspace/figures/001/figure_001.restored_notes.json
+[2026-06-22 11:36:27]   D	workspace/figures/001/figure_001.source_crop.png
+[2026-06-22 11:36:27]   D	workspace/figures/004/figure_004.caption_ru.txt
+[2026-06-22 11:36:27]   D	workspace/figures/004/figure_004.object.html
+[2026-06-22 11:36:27]   D	workspace/figures/004/figure_004.object.json
+[2026-06-22 11:36:27]   D	workspace/figures/004/figure_004.out.html
+[2026-06-22 11:36:27]   D	workspace/figures/004/figure_004.png
+[2026-06-22 11:36:27]   D	workspace/figures/004/figure_004.source_crop.png
+[2026-06-22 11:36:27]   D	workspace/figures/009/figure_009.caption_ru.txt
+[2026-06-22 11:36:27]   D	workspace/figures/009/figure_009.object.html
+[2026-06-22 11:36:27]   D	workspace/figures/009/figure_009.object.json
+[2026-06-22 11:36:27]   D	workspace/figures/009/figure_009.out.html
+[2026-06-22 11:36:27]   D	workspace/figures/009/figure_009.png
+[2026-06-22 11:36:27]   D	workspace/figures/009/figure_009.source_crop.png
+[2026-06-22 11:36:27]   D	workspace/figures/014/figure_014.caption_ru.txt
+[2026-06-22 11:36:27]   D	workspace/figures/014/figure_014.object.html
+[2026-06-22 11:36:27]   D	workspace/figures/014/figure_014.object.json
+[2026-06-22 11:36:27]   D	workspace/figures/014/figure_014.out.html
+[2026-06-22 11:36:27]   D	workspace/figures/014/figure_014.png
+[2026-06-22 11:36:27]   D	workspace/figures/014/figure_014.source_crop.png
+[2026-06-22 11:36:27]   D	workspace/figures/016/figure_016.caption_ru.txt
+[2026-06-22 11:36:27]   D	workspace/figures/016/figure_016.object.html
+[2026-06-22 11:36:27]   D	workspace/figures/016/figure_016.object.json
+[2026-06-22 11:36:27]   D	workspace/figures/016/figure_016.out.html
+[2026-06-22 11:36:27]   D	workspace/figures/016/figure_016.png
+[2026-06-22 11:36:27]   D	workspace/figures/016/figure_016.source_crop.png
+[2026-06-22 11:36:27]   D	workspace/figures/018/figure_018.caption_ru.txt
+[2026-06-22 11:36:27]   D	workspace/figures/018/figure_018.object.html
+[2026-06-22 11:36:27]   D	workspace/figures/018/figure_018.object.json
+[2026-06-22 11:36:27]   D	workspace/figures/018/figure_018.out.html
+[2026-06-22 11:36:27]   D	workspace/figures/018/figure_018.png
+[2026-06-22 11:36:27]   D	workspace/figures/018/figure_018.source_crop.png
+[2026-06-22 11:36:27]   D	workspace/figures/023/figure_023.caption_ru.txt
+[2026-06-22 11:36:27]   D	workspace/figures/023/figure_023.object.html
+[2026-06-22 11:36:27]   D	workspace/figures/023/figure_023.object.json
+[2026-06-22 11:36:27]   D	workspace/figures/023/figure_023.out.html
+[2026-06-22 11:36:27]   D	workspace/figures/023/figure_023.png
+[2026-06-22 11:36:27]   D	workspace/figures/023/figure_023.source_crop.png
+[2026-06-22 11:36:27]   D	workspace/figures/025/figure_025.caption_ru.txt
+[2026-06-22 11:36:27]   D	workspace/figures/025/figure_025.object.html
+[2026-06-22 11:36:27]   D	workspace/figures/025/figure_025.object.json
+[2026-06-22 11:36:27]   D	workspace/figures/025/figure_025.out.html
+[2026-06-22 11:36:27]   D	workspace/figures/025/figure_025.png
+[2026-06-22 11:36:27]   D	workspace/figures/025/figure_025.source_crop.png
+[2026-06-22 11:36:27]   D	workspace/figures/028/figure_028.caption_ru.txt
+[2026-06-22 11:36:27]   D	workspace/figures/028/figure_028.object.html
+[2026-06-22 11:36:27]   D	workspace/figures/028/figure_028.object.json
+[2026-06-22 11:36:27]   D	workspace/figures/028/figure_028.out.html
+[2026-06-22 11:36:27]   D	workspace/figures/028/figure_028.png
+[2026-06-22 11:36:27]   D	workspace/figures/028/figure_028.source_crop.png
+[2026-06-22 11:36:27]   D	workspace/figures/030/figure_030.caption_ru.txt
+[2026-06-22 11:36:27]   D	workspace/figures/030/figure_030.object.html
+[2026-06-22 11:36:27]   D	workspace/figures/030/figure_030.object.json
+[2026-06-22 11:36:27]   D	workspace/figures/030/figure_030.out.html
+[2026-06-22 11:36:27]   D	workspace/figures/030/figure_030.png
+[2026-06-22 11:36:27]   D	workspace/figures/030/figure_030.source_crop.png
+[2026-06-22 11:36:27]   D	workspace/figures/031/figure_031.caption_ru.txt
+[2026-06-22 11:36:27]   D	workspace/figures/031/figure_031.object.html
+[2026-06-22 11:36:27]   D	workspace/figures/031/figure_031.object.json
+[2026-06-22 11:36:27]   D	workspace/figures/031/figure_031.out.html
+[2026-06-22 11:36:27]   D	workspace/figures/031/figure_031.png
+[2026-06-22 11:36:27]   D	workspace/figures/031/figure_031.source_crop.png
+[2026-06-22 11:36:27]   D	workspace/figures/033/figure_033.caption_ru.txt
+[2026-06-22 11:36:27]   D	workspace/figures/033/figure_033.object.html
+[2026-06-22 11:36:27]   D	workspace/figures/033/figure_033.object.json
+[2026-06-22 11:36:27]   D	workspace/figures/033/figure_033.out.html
+[2026-06-22 11:36:27]   D	workspace/figures/033/figure_033.png
+[2026-06-22 11:36:27]   D	workspace/figures/033/figure_033.source_crop.png
+[2026-06-22 11:36:27]   D	workspace/figures/037/figure_037.caption_ru.txt
+[2026-06-22 11:36:27]   D	workspace/figures/037/figure_037.object.html
+[2026-06-22 11:36:27]   D	workspace/figures/037/figure_037.object.json
+[2026-06-22 11:36:27]   D	workspace/figures/037/figure_037.out.html
+[2026-06-22 11:36:27]   D	workspace/figures/037/figure_037.png
+[2026-06-22 11:36:27]   D	workspace/figures/037/figure_037.source_crop.png
+[2026-06-22 11:36:27]   D	workspace/figures/046/figure_046.caption_ru.txt
+[2026-06-22 11:36:27]   D	workspace/figures/046/figure_046.object.html
+[2026-06-22 11:36:27]   D	workspace/figures/046/figure_046.object.json
+[2026-06-22 11:36:27]   D	workspace/figures/046/figure_046.out.html
+[2026-06-22 11:36:27]   D	workspace/figures/046/figure_046.png
+[2026-06-22 11:36:27]   D	workspace/figures/046/figure_046.source_crop.png
+[2026-06-22 11:36:27]   D	workspace/figures/048/figure_048.caption_ru.txt
+[2026-06-22 11:36:27]   D	workspace/figures/048/figure_048.object.html
+[2026-06-22 11:36:27]   D	workspace/figures/048/figure_048.object.json
+[2026-06-22 11:36:27]   D	workspace/figures/048/figure_048.out.html
+[2026-06-22 11:36:27]   D	workspace/figures/048/figure_048.png
+[2026-06-22 11:36:27]   D	workspace/figures/048/figure_048.source_crop.png
+[2026-06-22 11:36:27]   D	workspace/figures/050/figure_050.caption_ru.txt
+[2026-06-22 11:36:27]   D	workspace/figures/050/figure_050.object.html
+[2026-06-22 11:36:27]   D	workspace/figures/050/figure_050.object.json
+[2026-06-22 11:36:27]   D	workspace/figures/050/figure_050.out.html
+[2026-06-22 11:36:27]   D	workspace/figures/050/figure_050.png
+[2026-06-22 11:36:27]   D	workspace/figures/050/figure_050.source_crop.png
+[2026-06-22 11:36:27]   D	workspace/figures/051/figure_051.caption_ru.txt
+[2026-06-22 11:36:27]   D	workspace/figures/051/figure_051.object.html
+[2026-06-22 11:36:27]   D	workspace/figures/051/figure_051.object.json
+[2026-06-22 11:36:27]   D	workspace/figures/051/figure_051.out.html
+[2026-06-22 11:36:27]   D	workspace/figures/051/figure_051.png
+[2026-06-22 11:36:27]   D	workspace/figures/051/figure_051.source_crop.png
+[2026-06-22 11:36:27]   D	workspace/figures/052/figure_052.caption_ru.txt
+[2026-06-22 11:36:27]   D	workspace/figures/052/figure_052.object.html
+[2026-06-22 11:36:27]   D	workspace/figures/052/figure_052.object.json
+[2026-06-22 11:36:27]   Reset branch 'codex/archive-source-zips'
+[2026-06-22 11:36:27]   D	workspace/figures/052/figure_052.out.html
+[2026-06-22 11:36:27]   D	workspace/figures/052/figure_052.png
+[2026-06-22 11:36:27]   D	workspace/figures/052/figure_052.source_crop.png
+[2026-06-22 11:36:27]   D	workspace/figures/062/figure_062.caption_ru.txt
+[2026-06-22 11:36:27]   D	workspace/figures/062/figure_062.object.html
+[2026-06-22 11:36:27]   D	workspace/figures/062/figure_062.object.json
+[2026-06-22 11:36:27]   D	workspace/figures/062/figure_062.out.html
+[2026-06-22 11:36:27]   D	workspace/figures/062/figure_062.png
+[2026-06-22 11:36:27]   D	workspace/figures/062/figure_062.source_crop.png
+[2026-06-22 11:36:27]   D	workspace/figures/066/figure_066.caption_ru.txt
+[2026-06-22 11:36:27]   D	workspace/figures/066/figure_066.object.html
+[2026-06-22 11:36:27]   D	workspace/figures/066/figure_066.object.json
+[2026-06-22 11:36:27]   D	workspace/figures/066/figure_066.out.html
+[2026-06-22 11:36:27]   D	workspace/figures/066/figure_066.png
+[2026-06-22 11:36:27]   D	workspace/figures/066/figure_066.reconstructed_table.json
+[2026-06-22 11:36:27]   D	workspace/figures/066/figure_066.source_crop.png
+[2026-06-22 11:36:27]   branch 'codex/archive-source-zips' set up to track 'origin/codex/archive-source-zips'.
+[2026-06-22 11:36:27]   Your branch is up to date with 'origin/codex/archive-source-zips'.
+[2026-06-22 11:36:27] git reset --hard origin/codex/archive-source-zips
+[2026-06-22 11:36:28]   HEAD is now at 7da754a Add API551 pull run log
+[2026-06-22 11:36:28] git lfs install --local
+[2026-06-22 11:36:29]   Updated Git hooks.
+[2026-06-22 11:36:29]   Git LFS initialized.
+[2026-06-22 11:36:29] git lfs pull origin codex/archive-source-zips
+[2026-06-22 11:36:29] git status -sb
+[2026-06-22 11:36:29]   ## codex/archive-source-zips...origin/codex/archive-source-zips
+[2026-06-22 11:36:29]   ?? docs/run-logs/2026-06-22_113626-api551-01-pull-from-github.log
+[2026-06-22 11:36:29] git rev-parse HEAD
+[2026-06-22 11:36:29]   7da754a6c738f4680c463df7ac070bfc64559c43
+[2026-06-22 11:36:29] API551 pull completed
+[2026-06-22 11:36:29] Preparing run log commit
