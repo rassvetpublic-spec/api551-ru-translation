@@ -1,6 +1,6 @@
 param(
     [string]$Repo = "rassvetpublic-spec/api551-ru-translation",
-    [string]$Branch = "codex/archive-source-zips",
+    [string]$Branch = "main",
     [int]$PrNumber = 1,
     [string]$LocalPath = "C:\Downloads\API 551"
 )
