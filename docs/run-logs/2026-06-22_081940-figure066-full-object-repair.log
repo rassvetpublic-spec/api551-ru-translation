@@ -1,0 +1,38 @@
+[2026-06-22 08:19:40] API551 Figure 66 full object repair started
+[2026-06-22 08:19:40] Repo: C:\Downloads\API 551
+[2026-06-22 08:19:40] Branch: codex/archive-source-zips
+[2026-06-22 08:19:40] + git remote set-url origin https://github.com/rassvetpublic-spec/api551-ru-translation.git
+[2026-06-22 08:19:40] + git fetch --prune origin codex/archive-source-zips
+[2026-06-22 08:19:40]   From https://github.com/rassvetpublic-spec/api551-ru-translation
+[2026-06-22 08:19:40]    * branch            codex/archive-source-zips -> FETCH_HEAD
+[2026-06-22 08:19:40] + git checkout -B codex/archive-source-zips origin/codex/archive-source-zips
+[2026-06-22 08:19:41]   Reset branch 'codex/archive-source-zips'
+[2026-06-22 08:19:41]   branch 'codex/archive-source-zips' set up to track 'origin/codex/archive-source-zips'.
+[2026-06-22 08:19:41]   Your branch is up to date with 'origin/codex/archive-source-zips'.
+[2026-06-22 08:19:41] + git reset --hard origin/codex/archive-source-zips
+[2026-06-22 08:19:41]   HEAD is now at 0180f6c Add local sync run log
+[2026-06-22 08:19:41] + git lfs install --local
+[2026-06-22 08:19:41]   Updated Git hooks.
+[2026-06-22 08:19:41]   Git LFS initialized.
+[2026-06-22 08:19:41] + git lfs pull origin codex/archive-source-zips
+[2026-06-22 08:19:42] Figure 66 HTML/JSON files rewritten
+[2026-06-22 08:19:42] Figure 66 local validation OK
+[2026-06-22 08:19:42] Workflow Figure 66 guard inserted
+[2026-06-22 08:19:42] + git status --short
+[2026-06-22 08:19:42]    M .github/workflows/structure-check.yml
+[2026-06-22 08:19:42]    M workspace/figures/066/figure_066.object.html
+[2026-06-22 08:19:42]    M workspace/figures/066/figure_066.object.json
+[2026-06-22 08:19:42]    M workspace/figures/066/figure_066.out.html
+[2026-06-22 08:19:42]   ?? docs/run-logs/2026-06-22_081940-figure066-full-object-repair.log
+[2026-06-22 08:19:42] + git add workspace/figures/066/figure_066.out.html workspace/figures/066/figure_066.object.html workspace/figures/066/figure_066.object.json .github/workflows/structure-check.yml docs/run-logs
+[2026-06-22 08:19:42]   warning: in the working copy of 'workspace/figures/066/figure_066.object.html', CRLF will be replaced by LF the next time Git touches it
+[2026-06-22 08:19:42]   warning: in the working copy of 'workspace/figures/066/figure_066.object.json', CRLF will be replaced by LF the next time Git touches it
+[2026-06-22 08:19:42]   warning: in the working copy of 'workspace/figures/066/figure_066.out.html', CRLF will be replaced by LF the next time Git touches it
+[2026-06-22 08:19:43] + git status -sb
+[2026-06-22 08:19:43]   ## codex/archive-source-zips...origin/codex/archive-source-zips
+[2026-06-22 08:19:43]   M  .github/workflows/structure-check.yml
+[2026-06-22 08:19:43]   AM docs/run-logs/2026-06-22_081940-figure066-full-object-repair.log
+[2026-06-22 08:19:43]   M  workspace/figures/066/figure_066.object.html
+[2026-06-22 08:19:43]   M  workspace/figures/066/figure_066.object.json
+[2026-06-22 08:19:43]   M  workspace/figures/066/figure_066.out.html
+[2026-06-22 08:19:43] DONE Figure 66 full object repair

@@ -1,8 +1,8 @@
 {
   "package_id": "API551_STAGE4_DIFF_031_037_ACCEPTED_051_REVIEW_2026-06-17_v8",
-  "created_utc": "2026-06-17T11:12:56.057388+00:00",
-  "layout": "unpack into C:/Downloads/API 551; PDF is external and not included",
-  "pdf_expected_path": "C:/Downloads/API 551/API 551 2016 (R2024).pdf",
+  "created_utc": "2026-06-17T14:12:56.057388+03:00",
+  "layout": "portable local review package; unpack/use from any local project folder; PDF is included in source/",
+  "pdf_expected_path": "source/API 551 2016 (R2024).pdf",
   "stats": {
     "total": 69,
     "accepted": 19,
@@ -17,15 +17,15 @@
       "caption_ru": "Рисунок 1 — Терминология защитной гильзы",
       "api_page": "24",
       "pdf_page": "32",
-      "folder": "figures/001",
+      "folder": "workspace/figures/001",
       "status": "accepted",
       "source_package": "API551_STAGE4_CUMULATIVE_APPROVED_2026-06-17_v4_2",
-      "html": "figures/001/figure_001.object.html",
-      "json": "figures/001/figure_001.object.json",
-      "png": "figures/001/figure_001.png",
-      "source_crop": "figures/001/figure_001.source_crop.png",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=32",
-      "out_html": "figures/001/figure_001.out.html"
+      "html": "workspace/figures/001/figure_001.object.html",
+      "json": "workspace/figures/001/figure_001.object.json",
+      "png": "workspace/figures/001/figure_001.png",
+      "source_crop": "workspace/figures/001/figure_001.source_crop.png",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=32",
+      "out_html": "workspace/figures/001/figure_001.out.html"
     },
     {
       "figure_no": 2,
@@ -35,7 +35,7 @@
       "api_page": "25",
       "pdf_page": "33",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=33"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=33"
     },
     {
       "figure_no": 3,
@@ -45,7 +45,7 @@
       "api_page": "27",
       "pdf_page": "35",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=35"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=35"
     },
     {
       "figure_no": 4,
@@ -54,15 +54,15 @@
       "caption_ru": "Рисунок 4 — Защитная гильза типа Van Stone в патрубке с резьбовыми шпильками",
       "api_page": "28",
       "pdf_page": "36",
-      "folder": "figures/004",
+      "folder": "workspace/figures/004",
       "status": "accepted",
       "source_package": "API551_STAGE4_CUMULATIVE_APPROVED_2026-06-17_v4_2",
-      "html": "figures/004/figure_004.object.html",
-      "json": "figures/004/figure_004.object.json",
-      "png": "figures/004/figure_004.png",
-      "source_crop": "figures/004/figure_004.source_crop.png",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=36",
-      "out_html": "figures/004/figure_004.out.html"
+      "html": "workspace/figures/004/figure_004.object.html",
+      "json": "workspace/figures/004/figure_004.object.json",
+      "png": "workspace/figures/004/figure_004.png",
+      "source_crop": "workspace/figures/004/figure_004.source_crop.png",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=36",
+      "out_html": "workspace/figures/004/figure_004.out.html"
     },
     {
       "figure_no": 5,
@@ -72,7 +72,7 @@
       "api_page": "29",
       "pdf_page": "37",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=37"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=37"
     },
     {
       "figure_no": 6,
@@ -82,7 +82,7 @@
       "api_page": "31",
       "pdf_page": "39",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=39"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=39"
     },
     {
       "figure_no": 7,
@@ -92,7 +92,7 @@
       "api_page": "34",
       "pdf_page": "42",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=42"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=42"
     },
     {
       "figure_no": 8,
@@ -102,7 +102,7 @@
       "api_page": "35",
       "pdf_page": "43",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=43"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=43"
     },
     {
       "figure_no": 9,
@@ -111,15 +111,15 @@
       "caption_ru": "Рисунок 9 — Поверхностная термопара трубной стенки с ножевой кромкой",
       "api_page": "35",
       "pdf_page": "43",
-      "folder": "figures/009",
+      "folder": "workspace/figures/009",
       "status": "accepted",
       "source_package": "API551_STAGE4_CUMULATIVE_APPROVED_2026-06-17_v4_2",
-      "html": "figures/009/figure_009.object.html",
-      "json": "figures/009/figure_009.object.json",
-      "png": "figures/009/figure_009.png",
-      "source_crop": "figures/009/figure_009.source_crop.png",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=43",
-      "out_html": "figures/009/figure_009.out.html"
+      "html": "workspace/figures/009/figure_009.object.html",
+      "json": "workspace/figures/009/figure_009.object.json",
+      "png": "workspace/figures/009/figure_009.png",
+      "source_crop": "workspace/figures/009/figure_009.source_crop.png",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=43",
+      "out_html": "workspace/figures/009/figure_009.out.html"
     },
     {
       "figure_no": 10,
@@ -129,7 +129,7 @@
       "api_page": "35",
       "pdf_page": "43",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=43"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=43"
     },
     {
       "figure_no": 11,
@@ -139,7 +139,7 @@
       "api_page": "37",
       "pdf_page": "45",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=45"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=45"
     },
     {
       "figure_no": 12,
@@ -149,7 +149,7 @@
       "api_page": "42",
       "pdf_page": "50",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=50"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=50"
     },
     {
       "figure_no": 13,
@@ -159,7 +159,7 @@
       "api_page": "42",
       "pdf_page": "50",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=50"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=50"
     },
     {
       "figure_no": 14,
@@ -168,15 +168,15 @@
       "caption_ru": "Рисунок 14 — Преобразователь, установленный в соединительной головке",
       "api_page": "43",
       "pdf_page": "51",
-      "folder": "figures/014",
+      "folder": "workspace/figures/014",
       "status": "accepted",
       "source_package": "API551_STAGE4_CUMULATIVE_APPROVED_2026-06-17_v4_2",
-      "html": "figures/014/figure_014.object.html",
-      "json": "figures/014/figure_014.object.json",
-      "png": "figures/014/figure_014.png",
-      "source_crop": "figures/014/figure_014.source_crop.png",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=51",
-      "out_html": "figures/014/figure_014.out.html"
+      "html": "workspace/figures/014/figure_014.object.html",
+      "json": "workspace/figures/014/figure_014.object.json",
+      "png": "workspace/figures/014/figure_014.png",
+      "source_crop": "workspace/figures/014/figure_014.source_crop.png",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=51",
+      "out_html": "workspace/figures/014/figure_014.out.html"
     },
     {
       "figure_no": 15,
@@ -186,7 +186,7 @@
       "api_page": "46",
       "pdf_page": "54",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=54"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=54"
     },
     {
       "figure_no": 16,
@@ -195,15 +195,15 @@
       "caption_ru": "Рисунок 16 — Закручивание потока при отводах в плоскостях 90°",
       "api_page": "59",
       "pdf_page": "67",
-      "folder": "figures/016",
+      "folder": "workspace/figures/016",
       "status": "accepted",
       "source_package": "API551_STAGE4_CUMULATIVE_APPROVED_2026-06-17_v4_2",
-      "html": "figures/016/figure_016.object.html",
-      "json": "figures/016/figure_016.object.json",
-      "png": "figures/016/figure_016.png",
-      "source_crop": "figures/016/figure_016.source_crop.png",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=67",
-      "out_html": "figures/016/figure_016.out.html"
+      "html": "workspace/figures/016/figure_016.object.html",
+      "json": "workspace/figures/016/figure_016.object.json",
+      "png": "workspace/figures/016/figure_016.png",
+      "source_crop": "workspace/figures/016/figure_016.source_crop.png",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=67",
+      "out_html": "workspace/figures/016/figure_016.out.html"
     },
     {
       "figure_no": 17,
@@ -213,7 +213,7 @@
       "api_page": "66",
       "pdf_page": "74",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=74"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=74"
     },
     {
       "figure_no": 18,
@@ -222,15 +222,15 @@
       "caption_ru": "Рисунок 18 — Измерительный участок со встроенной диафрагмой",
       "api_page": "67",
       "pdf_page": "75",
-      "folder": "figures/018",
+      "folder": "workspace/figures/018",
       "status": "accepted",
       "source_package": "API551_STAGE4_CUMULATIVE_APPROVED_2026-06-17_v4_2",
-      "html": "figures/018/figure_018.object.html",
-      "json": "figures/018/figure_018.object.json",
-      "png": "figures/018/figure_018.png",
-      "source_crop": "figures/018/figure_018.source_crop.png",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=75",
-      "out_html": "figures/018/figure_018.out.html"
+      "html": "workspace/figures/018/figure_018.object.html",
+      "json": "workspace/figures/018/figure_018.object.json",
+      "png": "workspace/figures/018/figure_018.png",
+      "source_crop": "workspace/figures/018/figure_018.source_crop.png",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=75",
+      "out_html": "workspace/figures/018/figure_018.out.html"
     },
     {
       "figure_no": 19,
@@ -240,7 +240,7 @@
       "api_page": "68",
       "pdf_page": "76",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=76"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=76"
     },
     {
       "figure_no": 20,
@@ -250,7 +250,7 @@
       "api_page": "69",
       "pdf_page": "77",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=77"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=77"
     },
     {
       "figure_no": 21,
@@ -260,7 +260,7 @@
       "api_page": "74",
       "pdf_page": "82",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=82"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=82"
     },
     {
       "figure_no": 22,
@@ -270,7 +270,7 @@
       "api_page": "76",
       "pdf_page": "84",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=84"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=84"
     },
     {
       "figure_no": 23,
@@ -279,15 +279,15 @@
       "caption_ru": "Рисунок 23 — Разрез турбинного расходомера",
       "api_page": "83",
       "pdf_page": "91",
-      "folder": "figures/023",
+      "folder": "workspace/figures/023",
       "status": "accepted",
       "source_package": "API551_STAGE4_CUMULATIVE_APPROVED_2026-06-17_v4_2",
-      "html": "figures/023/figure_023.object.html",
-      "json": "figures/023/figure_023.object.json",
-      "png": "figures/023/figure_023.png",
-      "source_crop": "figures/023/figure_023.source_crop.png",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=91",
-      "out_html": "figures/023/figure_023.out.html"
+      "html": "workspace/figures/023/figure_023.object.html",
+      "json": "workspace/figures/023/figure_023.object.json",
+      "png": "workspace/figures/023/figure_023.png",
+      "source_crop": "workspace/figures/023/figure_023.source_crop.png",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=91",
+      "out_html": "workspace/figures/023/figure_023.out.html"
     },
     {
       "figure_no": 24,
@@ -297,7 +297,7 @@
       "api_page": "86",
       "pdf_page": "94",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=94"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=94"
     },
     {
       "figure_no": 25,
@@ -306,15 +306,15 @@
       "caption_ru": "Рисунок 25 — Относительная теплопроводность распространённых газов",
       "api_page": "102",
       "pdf_page": "110",
-      "folder": "figures/025",
+      "folder": "workspace/figures/025",
       "status": "accepted",
       "source_package": "API551_STAGE4_CUMULATIVE_APPROVED_2026-06-17_v4_2",
-      "html": "figures/025/figure_025.object.html",
-      "json": "figures/025/figure_025.object.json",
-      "png": "figures/025/figure_025.png",
-      "source_crop": "figures/025/figure_025.source_crop.png",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=110",
-      "out_html": "figures/025/figure_025.out.html"
+      "html": "workspace/figures/025/figure_025.object.html",
+      "json": "workspace/figures/025/figure_025.object.json",
+      "png": "workspace/figures/025/figure_025.png",
+      "source_crop": "workspace/figures/025/figure_025.source_crop.png",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=110",
+      "out_html": "workspace/figures/025/figure_025.out.html"
     },
     {
       "figure_no": 26,
@@ -324,7 +324,7 @@
       "api_page": "107",
       "pdf_page": "115",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=115"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=115"
     },
     {
       "figure_no": 27,
@@ -334,7 +334,7 @@
       "api_page": "108",
       "pdf_page": "116",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=116"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=116"
     },
     {
       "figure_no": 28,
@@ -343,15 +343,15 @@
       "caption_ru": "Рисунок 28 — Общие формулы для калибровки прибора дифференциального измерения уровня",
       "api_page": "111",
       "pdf_page": "119",
-      "folder": "figures/028",
+      "folder": "workspace/figures/028",
       "status": "accepted",
       "source_package": "API551_STAGE4_CUMULATIVE_APPROVED_2026-06-17_v4_2",
-      "html": "figures/028/figure_028.object.html",
-      "json": "figures/028/figure_028.object.json",
-      "png": "figures/028/figure_028.png",
-      "source_crop": "figures/028/figure_028.source_crop.png",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=119",
-      "out_html": "figures/028/figure_028.out.html"
+      "html": "workspace/figures/028/figure_028.object.html",
+      "json": "workspace/figures/028/figure_028.object.json",
+      "png": "workspace/figures/028/figure_028.png",
+      "source_crop": "workspace/figures/028/figure_028.source_crop.png",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=119",
+      "out_html": "workspace/figures/028/figure_028.out.html"
     },
     {
       "figure_no": 29,
@@ -361,7 +361,7 @@
       "api_page": "112",
       "pdf_page": "120",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=120"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=120"
     },
     {
       "figure_no": 30,
@@ -370,15 +370,15 @@
       "caption_ru": "Рисунок 30 — Узел компенсации плотности для парового барабана",
       "api_page": "115",
       "pdf_page": "123",
-      "folder": "figures/030",
+      "folder": "workspace/figures/030",
       "status": "accepted",
       "source_package": "API551_STAGE4_CUMULATIVE_APPROVED_2026-06-17_v4_2",
-      "html": "figures/030/figure_030.object.html",
-      "json": "figures/030/figure_030.object.json",
-      "png": "figures/030/figure_030.png",
-      "source_crop": "figures/030/figure_030.source_crop.png",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=123",
-      "out_html": "figures/030/figure_030.out.html"
+      "html": "workspace/figures/030/figure_030.object.html",
+      "json": "workspace/figures/030/figure_030.object.json",
+      "png": "workspace/figures/030/figure_030.png",
+      "source_crop": "workspace/figures/030/figure_030.source_crop.png",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=123",
+      "out_html": "workspace/figures/030/figure_030.out.html"
     },
     {
       "figure_no": 31,
@@ -388,13 +388,13 @@
       "api_page": "118",
       "pdf_page": "126",
       "status": "accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=126",
-      "folder": "figures/031",
-      "html": "figures/031/figure_031.object.html",
-      "out_html": "figures/031/figure_031.out.html",
-      "json": "figures/031/figure_031.object.json",
-      "png": "figures/031/figure_031.png",
-      "source_crop": "figures/031/figure_031.source_crop.png"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=126",
+      "folder": "workspace/figures/031",
+      "html": "workspace/figures/031/figure_031.object.html",
+      "out_html": "workspace/figures/031/figure_031.out.html",
+      "json": "workspace/figures/031/figure_031.object.json",
+      "png": "workspace/figures/031/figure_031.png",
+      "source_crop": "workspace/figures/031/figure_031.source_crop.png"
     },
     {
       "figure_no": 32,
@@ -404,7 +404,7 @@
       "api_page": "119",
       "pdf_page": "127",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=127"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=127"
     },
     {
       "figure_no": 33,
@@ -413,15 +413,15 @@
       "caption_ru": "Рисунок 33 — Радиоизотопный преобразователь уровня",
       "api_page": "121",
       "pdf_page": "129",
-      "folder": "figures/033",
+      "folder": "workspace/figures/033",
       "status": "accepted",
       "source_package": "API551_STAGE4_CUMULATIVE_APPROVED_2026-06-17_v4_2",
-      "html": "figures/033/figure_033.object.html",
-      "json": "figures/033/figure_033.object.json",
-      "png": "figures/033/figure_033.png",
-      "source_crop": "figures/033/figure_033.source_crop.png",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=129",
-      "out_html": "figures/033/figure_033.out.html"
+      "html": "workspace/figures/033/figure_033.object.html",
+      "json": "workspace/figures/033/figure_033.object.json",
+      "png": "workspace/figures/033/figure_033.png",
+      "source_crop": "workspace/figures/033/figure_033.source_crop.png",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=129",
+      "out_html": "workspace/figures/033/figure_033.out.html"
     },
     {
       "figure_no": 34,
@@ -431,7 +431,7 @@
       "api_page": "130",
       "pdf_page": "138",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=138"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=138"
     },
     {
       "figure_no": 35,
@@ -441,7 +441,7 @@
       "api_page": "137",
       "pdf_page": "145",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=145"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=145"
     },
     {
       "figure_no": 36,
@@ -451,7 +451,7 @@
       "api_page": "138",
       "pdf_page": "146",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=146"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=146"
     },
     {
       "figure_no": 37,
@@ -460,15 +460,15 @@
       "caption_ru": "Рисунок 37 — Сигнализаторы переполнения, установленные на уровне земли",
       "api_page": "146",
       "pdf_page": "154",
-      "folder": "figures/037",
+      "folder": "workspace/figures/037",
       "status": "accepted",
       "source_package": "API551_STAGE4_CUMULATIVE_APPROVED_2026-06-17_v4_2",
-      "html": "figures/037/figure_037.object.html",
-      "json": "figures/037/figure_037.object.json",
-      "png": "figures/037/figure_037.png",
-      "source_crop": "figures/037/figure_037.source_crop.png",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=154",
-      "out_html": "figures/037/figure_037.out.html"
+      "html": "workspace/figures/037/figure_037.object.html",
+      "json": "workspace/figures/037/figure_037.object.json",
+      "png": "workspace/figures/037/figure_037.png",
+      "source_crop": "workspace/figures/037/figure_037.source_crop.png",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=154",
+      "out_html": "workspace/figures/037/figure_037.out.html"
     },
     {
       "figure_no": 38,
@@ -478,7 +478,7 @@
       "api_page": "150",
       "pdf_page": "158",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=158"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=158"
     },
     {
       "figure_no": 39,
@@ -488,7 +488,7 @@
       "api_page": "153",
       "pdf_page": "161",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=161"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=161"
     },
     {
       "figure_no": 40,
@@ -498,7 +498,7 @@
       "api_page": "155",
       "pdf_page": "163",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=163"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=163"
     },
     {
       "figure_no": 41,
@@ -508,7 +508,7 @@
       "api_page": "156",
       "pdf_page": "164",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=164"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=164"
     },
     {
       "figure_no": 42,
@@ -518,7 +518,7 @@
       "api_page": "159",
       "pdf_page": "167",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=167"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=167"
     },
     {
       "figure_no": 43,
@@ -528,7 +528,7 @@
       "api_page": "160",
       "pdf_page": "168",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=168"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=168"
     },
     {
       "figure_no": 44,
@@ -538,7 +538,7 @@
       "api_page": "161",
       "pdf_page": "169",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=169"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=169"
     },
     {
       "figure_no": 45,
@@ -548,7 +548,7 @@
       "api_page": "164",
       "pdf_page": "172",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=172"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=172"
     },
     {
       "figure_no": 46,
@@ -557,15 +557,15 @@
       "caption_ru": "Рисунок 46 — Вид с торца на отборы горизонтального трубопровода",
       "api_page": "165",
       "pdf_page": "173",
-      "folder": "figures/046",
+      "folder": "workspace/figures/046",
       "status": "accepted",
       "source_package": "API551_STAGE4_CUMULATIVE_APPROVED_2026-06-17_v4_2",
-      "html": "figures/046/figure_046.object.html",
-      "json": "figures/046/figure_046.object.json",
-      "png": "figures/046/figure_046.png",
-      "source_crop": "figures/046/figure_046.source_crop.png",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=173",
-      "out_html": "figures/046/figure_046.out.html"
+      "html": "workspace/figures/046/figure_046.object.html",
+      "json": "workspace/figures/046/figure_046.object.json",
+      "png": "workspace/figures/046/figure_046.png",
+      "source_crop": "workspace/figures/046/figure_046.source_crop.png",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=173",
+      "out_html": "workspace/figures/046/figure_046.out.html"
     },
     {
       "figure_no": 47,
@@ -575,7 +575,7 @@
       "api_page": "167",
       "pdf_page": "175",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=175"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=175"
     },
     {
       "figure_no": 48,
@@ -584,15 +584,15 @@
       "caption_ru": "Рисунок 48 — Измерение перепада давления",
       "api_page": "168",
       "pdf_page": "176",
-      "folder": "figures/048",
+      "folder": "workspace/figures/048",
       "status": "accepted",
       "source_package": "API551_STAGE4_FIG48_TIGHT_CLEARING_REVIEW_2026-06-17",
-      "html": "figures/048/figure_048.object.html",
-      "json": "figures/048/figure_048.object.json",
-      "png": "figures/048/figure_048.png",
-      "source_crop": "figures/048/figure_048.source_crop.png",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=176",
-      "out_html": "figures/048/figure_048.out.html"
+      "html": "workspace/figures/048/figure_048.object.html",
+      "json": "workspace/figures/048/figure_048.object.json",
+      "png": "workspace/figures/048/figure_048.png",
+      "source_crop": "workspace/figures/048/figure_048.source_crop.png",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=176",
+      "out_html": "workspace/figures/048/figure_048.out.html"
     },
     {
       "figure_no": 49,
@@ -602,7 +602,7 @@
       "api_page": "171",
       "pdf_page": "179",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=179"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=179"
     },
     {
       "figure_no": 50,
@@ -611,15 +611,15 @@
       "caption_ru": "Рисунок 50 — Трубная фитинговая деталь высокого давления API типа III",
       "api_page": "173",
       "pdf_page": "181",
-      "folder": "figures/050",
+      "folder": "workspace/figures/050",
       "status": "accepted",
       "source_package": "API551_STAGE4_CUMULATIVE_APPROVED_2026-06-17_v4_2",
-      "html": "figures/050/figure_050.object.html",
-      "json": "figures/050/figure_050.object.json",
-      "png": "figures/050/figure_050.png",
-      "source_crop": "figures/050/figure_050.source_crop.png",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=181",
-      "out_html": "figures/050/figure_050.out.html"
+      "html": "workspace/figures/050/figure_050.object.html",
+      "json": "workspace/figures/050/figure_050.object.json",
+      "png": "workspace/figures/050/figure_050.png",
+      "source_crop": "workspace/figures/050/figure_050.source_crop.png",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=181",
+      "out_html": "workspace/figures/050/figure_050.out.html"
     },
     {
       "figure_no": 51,
@@ -628,15 +628,15 @@
       "caption_ru": "Рисунок 51 — Тройники для прочистки",
       "api_page": "176",
       "pdf_page": "184",
-      "folder": "figures/051",
+      "folder": "workspace/figures/051",
       "status": "измененно_2026-06-17",
       "source_package": "API551_STAGE4_CUMULATIVE_APPROVED_2026-06-17_v4_2",
-      "html": "figures/051/figure_051.object.html",
-      "json": "figures/051/figure_051.object.json",
-      "png": "figures/051/figure_051.png",
-      "source_crop": "figures/051/figure_051.source_crop.png",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=184",
-      "out_html": "figures/051/figure_051.out.html"
+      "html": "workspace/figures/051/figure_051.object.html",
+      "json": "workspace/figures/051/figure_051.object.json",
+      "png": "workspace/figures/051/figure_051.png",
+      "source_crop": "workspace/figures/051/figure_051.source_crop.png",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=184",
+      "out_html": "workspace/figures/051/figure_051.out.html"
     },
     {
       "figure_no": 52,
@@ -645,15 +645,15 @@
       "caption_ru": "Рисунок 52 — Типовой узел прочистки для фланцев диафрагмы",
       "api_page": "177",
       "pdf_page": "185",
-      "folder": "figures/052",
+      "folder": "workspace/figures/052",
       "status": "accepted",
       "source_package": "API551_STAGE4_CUMULATIVE_APPROVED_2026-06-17_v4_2",
-      "html": "figures/052/figure_052.object.html",
-      "json": "figures/052/figure_052.object.json",
-      "png": "figures/052/figure_052.png",
-      "source_crop": "figures/052/figure_052.source_crop.png",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=185",
-      "out_html": "figures/052/figure_052.out.html"
+      "html": "workspace/figures/052/figure_052.object.html",
+      "json": "workspace/figures/052/figure_052.object.json",
+      "png": "workspace/figures/052/figure_052.png",
+      "source_crop": "workspace/figures/052/figure_052.source_crop.png",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=185",
+      "out_html": "workspace/figures/052/figure_052.out.html"
     },
     {
       "figure_no": 53,
@@ -663,7 +663,7 @@
       "api_page": "177",
       "pdf_page": "185",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=185"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=185"
     },
     {
       "figure_no": 54,
@@ -673,7 +673,7 @@
       "api_page": "179",
       "pdf_page": "187",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=187"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=187"
     },
     {
       "figure_no": 55,
@@ -683,7 +683,7 @@
       "api_page": "182",
       "pdf_page": "190",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=190"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=190"
     },
     {
       "figure_no": 56,
@@ -693,7 +693,7 @@
       "api_page": "184",
       "pdf_page": "192",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=192"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=192"
     },
     {
       "figure_no": 57,
@@ -703,7 +703,7 @@
       "api_page": "185",
       "pdf_page": "193",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=193"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=193"
     },
     {
       "figure_no": 58,
@@ -713,7 +713,7 @@
       "api_page": "188",
       "pdf_page": "196",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=196"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=196"
     },
     {
       "figure_no": 59,
@@ -723,7 +723,7 @@
       "api_page": "189",
       "pdf_page": "197",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=197"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=197"
     },
     {
       "figure_no": 60,
@@ -733,7 +733,7 @@
       "api_page": "190",
       "pdf_page": "198",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=198"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=198"
     },
     {
       "figure_no": 61,
@@ -743,7 +743,7 @@
       "api_page": "191",
       "pdf_page": "199",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=199"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=199"
     },
     {
       "figure_no": 62,
@@ -752,15 +752,15 @@
       "caption_ru": "Рисунок 62 — Межфланцевый диафрагменный разделитель",
       "api_page": "197",
       "pdf_page": "205",
-      "folder": "figures/062",
+      "folder": "workspace/figures/062",
       "status": "accepted",
       "source_package": "API551_STAGE4_CUMULATIVE_APPROVED_2026-06-17_v4_2",
-      "html": "figures/062/figure_062.object.html",
-      "json": "figures/062/figure_062.object.json",
-      "png": "figures/062/figure_062.png",
-      "source_crop": "figures/062/figure_062.source_crop.png",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=205",
-      "out_html": "figures/062/figure_062.out.html"
+      "html": "workspace/figures/062/figure_062.object.html",
+      "json": "workspace/figures/062/figure_062.object.json",
+      "png": "workspace/figures/062/figure_062.png",
+      "source_crop": "workspace/figures/062/figure_062.source_crop.png",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=205",
+      "out_html": "workspace/figures/062/figure_062.out.html"
     },
     {
       "figure_no": 63,
@@ -770,7 +770,7 @@
       "api_page": "202",
       "pdf_page": "210",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=210"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=210"
     },
     {
       "figure_no": 64,
@@ -780,7 +780,7 @@
       "api_page": "203",
       "pdf_page": "211",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=211"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=211"
     },
     {
       "figure_no": 65,
@@ -790,7 +790,7 @@
       "api_page": "205",
       "pdf_page": "213",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=213"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=213"
     },
     {
       "figure_no": 66,
@@ -799,15 +799,15 @@
       "caption_ru": "Рисунок 66 — Рекомендуемые расходы продувки для различных размеров отборов фланцев диафрагмы",
       "api_page": "208",
       "pdf_page": "216",
-      "folder": "figures/066",
+      "folder": "workspace/figures/066",
       "status": "accepted",
       "source_package": "API551_STAGE4_CUMULATIVE_APPROVED_2026-06-17_v4_2",
-      "html": "figures/066/figure_066.object.html",
-      "json": "figures/066/figure_066.object.json",
-      "png": "figures/066/figure_066.png",
-      "source_crop": "figures/066/figure_066.source_crop.png",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=216",
-      "out_html": "figures/066/figure_066.out.html"
+      "html": "workspace/figures/066/figure_066.object.html",
+      "json": "workspace/figures/066/figure_066.object.json",
+      "png": "workspace/figures/066/figure_066.png",
+      "source_crop": "workspace/figures/066/figure_066.source_crop.png",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=216",
+      "out_html": "workspace/figures/066/figure_066.out.html"
     },
     {
       "figure_no": 67,
@@ -817,7 +817,7 @@
       "api_page": "210",
       "pdf_page": "218",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=218"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=218"
     },
     {
       "figure_no": 68,
@@ -827,7 +827,7 @@
       "api_page": "215",
       "pdf_page": "223",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=223"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=223"
     },
     {
       "figure_no": 69,
@@ -837,7 +837,7 @@
       "api_page": "219",
       "pdf_page": "227",
       "status": "not_accepted",
-      "source_pdf_link": "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=227"
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=227"
     }
   ],
   "html_policy": {

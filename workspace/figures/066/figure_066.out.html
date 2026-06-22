@@ -6,20 +6,48 @@
   <style>
     body { font-family: Arial, sans-serif; margin: 0; color: #111827; background: #fff; }
     .figure { max-width: 1120px; margin: 0 auto; border: 1px solid #d9dee7; }
-    .image-wrap { padding: 18px; text-align: center; }
-    img { max-width: 100%; height: auto; }
-    table.labels { width: 100%; border-collapse: collapse; border-top: 1px solid #d9dee7; }
-    .labels td { border-bottom: 1px solid #e5e7eb; padding: 8px 10px; vertical-align: top; font-size: 14px; }
-    .labels td:first-child { width: 56px; text-align: center; color: #4b5563; }
+    .table-wrap { padding: 18px; }
+    table.reconstructed-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+    th, td { border: 1px solid #9ca3af; padding: 7px 8px; vertical-align: middle; font-size: 14px; }
+    th { text-align: center; font-weight: 700; background: #f3f4f6; }
+    td { text-align: center; }
+    .top-text { text-align: left; line-height: 1.35; }
+    .drawing-cell { text-align: center; padding: 8px; }
+    .drawing-cell img { max-width: 220px; width: 100%; height: auto; }
     .caption { padding: 12px 18px; text-align: center; font-weight: 700; border-top: 1px solid #d9dee7; }
     a { color: #111827; text-decoration: none; }
   </style>
 </head>
 <body>
-  <section class="figure">
-    <div class="image-wrap"><img src="figure_066.png" alt="Рисунок 66 — Рекомендуемые расходы продувки для различных размеров отборов фланцев диафрагмы"></div>
-    
-    <div class="caption"><a href="file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=216">Рисунок 66 — Рекомендуемые расходы продувки для различных размеров отборов фланцев диафрагмы</a></div>
+  <section class="figure" data-figure-kind="reconstructed_table_with_embedded_drawing">
+    <div class="table-wrap">
+      <table class="reconstructed-table" aria-label="Рисунок 66 — Рекомендуемые расходы продувки для различных размеров отборов фланцев диафрагмы">
+        <tbody>
+          <tr>
+            <td class="top-text" colspan="4">Использовать отборы давления NPS 1/2 или 3/4 со сверлом 12 мм (1/2″) для трубы ≥4″; сверлом 10 мм (3/8″) для трубы 3″; и сверлом 6 мм (1/4″) для трубы ≤2″.</td>
+            <td class="drawing-cell" colspan="3"><img src="figure_066.png" alt="Чертёж ячейки таблицы Figure 66"></td>
+          </tr>
+          <tr>
+            <th rowspan="2">NPS</th>
+            <th colspan="2">Диаметр сверления</th>
+            <th colspan="2">Расход газа</th>
+            <th colspan="2">Расход жидкости</th>
+          </tr>
+          <tr>
+            <th>дюймы</th>
+            <th>мм</th>
+            <th>фт³/ч</th>
+            <th>м³/ч</th>
+            <th>галл/ч</th>
+            <th>м³/ч</th>
+          </tr>
+          <tr><td>≤2″</td><td>1/4</td><td>6</td><td>1</td><td>0.03</td><td>3</td><td>0.01</td></tr>
+          <tr><td>3″</td><td>3/8</td><td>9.5</td><td>2</td><td>0.06</td><td>5</td><td>0.02</td></tr>
+          <tr><td>≥4″</td><td>1/2</td><td>12</td><td>5</td><td>0.14</td><td>6</td><td>0.02</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="caption"><a href="../../../source/API%20551%202016%20(R2024).pdf#page=216">Рисунок 66 — Рекомендуемые расходы продувки для различных размеров отборов фланцев диафрагмы</a></div>
   </section>
 </body>
 </html>

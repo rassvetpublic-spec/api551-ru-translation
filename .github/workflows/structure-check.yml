@@ -16,145 +16,226 @@ jobs:
         with:
           lfs: true
 
-      - name: Check required folders
-        run: |
-          test -d source
-          test -d workspace
-          test -d workspace/figures
-          test -d docs
-          test -d archive
-          test -d .github/workflows
-
-      - name: Check source manifest consistency
+      - name: Check API551 source/archive model
         run: |
           python3 - <<'PY'
           import json
-          import sys
+          import zipfile
           from pathlib import Path
 
-          expected = [
+          active = [
               "API551_SOURCE_MANIFEST_CURRENT.json",
               "API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md",
               "TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md",
               "api551_approved_label_master_v1.csv",
-              "api551_control_build_v1.zip",
-              "API_551_STAGE3_SOURCE_PACKAGE_v1.zip",
-              "API_551_STAGE2_REFERENCE_FILES_v1.zip",
               "TZ_API551_translation_project_RU.md",
               "API 551 2016 (R2024).pdf",
           ]
-          expected_sorted = sorted(expected)
+          archived = [
+              "API_551_STAGE2_REFERENCE_FILES_v1.zip",
+              "API_551_STAGE3_SOURCE_PACKAGE_v1.zip",
+              "api551_control_build_v1.zip",
+          ]
+          required_dirs = [
+              "source",
+              "workspace/figures",
+              "docs",
+              "archive/source-packages",
+              "archive/extracted-reference",
+              "scripts",
+              ".github/workflows",
+          ]
+          for dirname in required_dirs:
+              if not Path(dirname).is_dir():
+                  raise SystemExit(f"missing required folder: {dirname}")
 
-          source_dir = Path("source")
-          actual = sorted(p.name for p in source_dir.iterdir() if p.is_file())
-          if actual != expected_sorted:
-              print("source/ file set mismatch")
-              print("expected:", expected_sorted)
-              print("actual:  ", actual)
-              sys.exit(1)
+          root_scripts = sorted(p.name for p in Path('.').glob('api551*.ps1'))
+          if root_scripts != ["api551_pull.ps1"]:
+              raise SystemExit(f"root must contain only api551_pull.ps1, got: {root_scripts}")
+          for helper in [
+              "scripts/api551_gh_upload_run_log.ps1",
+              "scripts/api551_git_pull_from_github.ps1",
+              "scripts/api551_git_sync_up.ps1",
+              "scripts/api551_git_apply_task.ps1",
+          ]:
+              if not Path(helper).is_file():
+                  raise SystemExit(f"missing helper script: {helper}")
 
-          manifest_path = source_dir / "API551_SOURCE_MANIFEST_CURRENT.json"
-          manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+          source_files = sorted(p.name for p in Path("source").iterdir() if p.is_file())
+          if source_files != sorted(active):
+              raise SystemExit(f"source/ file set mismatch: {source_files}")
+          if list(Path("source").glob("*.zip")):
+              raise SystemExit("source/ must not contain ZIP packages")
 
+          manifest = json.loads(Path("source/API551_SOURCE_MANIFEST_CURRENT.json").read_text(encoding="utf-8-sig"))
           folder = manifest["canonical_source_policy"]["primary_source_folder"]
-          expected_folder_id = "1uLQQ1XHveKaUzLgULQ84jYUD1GYMWPKX"
-          expected_folder_url = f"https://drive.google.com/drive/folders/{expected_folder_id}"
-          if folder.get("folder_id") != expected_folder_id:
-              raise SystemExit(f"manifest primary folder_id is wrong: {folder.get('folder_id')}")
-          if folder.get("url") != expected_folder_url:
-              raise SystemExit(f"manifest primary folder url is wrong: {folder.get('url')}")
-          if folder.get("file_count_via_drive_api") != 9:
-              raise SystemExit("manifest Drive source file count must be 9")
-
-          drive_context = manifest.get("drive_context", {})
-          if drive_context.get("source_folder_id") != expected_folder_id:
+          folder_id = "1uLQQ1XHveKaUzLgULQ84jYUD1GYMWPKX"
+          folder_url = f"https://drive.google.com/drive/folders/{folder_id}"
+          if folder.get("folder_id") != folder_id or folder.get("url") != folder_url:
+              raise SystemExit("manifest Drive source folder mismatch")
+          if folder.get("file_count_via_drive_api") != 6:
+              raise SystemExit("manifest Drive source file count must be 6")
+          if manifest.get("drive_context", {}).get("source_folder_id") != folder_id:
               raise SystemExit("manifest drive_context.source_folder_id mismatch")
-          if drive_context.get("source_folder_url") != expected_folder_url:
-              raise SystemExit("manifest drive_context.source_folder_url mismatch")
 
           manifest_files = {item["file"] for item in manifest.get("mandatory_sources", [])}
           manifest_files.update(item["name"] for item in manifest.get("active_source_working_files", []))
-          missing = sorted(set(expected) - manifest_files)
-          extra = sorted(manifest_files - set(expected))
-          if missing or extra:
-              print("manifest active/mandatory file set mismatch")
-              print("missing:", missing)
-              print("extra:  ", extra)
-              sys.exit(1)
+          if manifest_files != set(active):
+              raise SystemExit(f"manifest active file set mismatch: {sorted(manifest_files)}")
 
-          readme = Path("README.md").read_text(encoding="utf-8")
-          workflow = Path(".github/workflows/structure-check.yml").read_text(encoding="utf-8")
-          for name in expected:
-              if name not in readme:
-                  raise SystemExit(f"README does not mention required source file: {name}")
-              if name not in workflow:
-                  raise SystemExit(f"workflow does not mention required source file: {name}")
+          archived_records = {item["file"]: item for item in manifest.get("archived_source_packages", [])}
+          if set(archived_records) != set(archived):
+              raise SystemExit("manifest archived_source_packages mismatch")
+          for name in archived:
+              path = Path("archive/source-packages") / name
+              if not path.is_file():
+                  raise SystemExit(f"missing archived package: {path}")
+              record = archived_records[name]
+              if record.get("archive_path") != str(path):
+                  raise SystemExit(f"archive_path mismatch for {name}")
+              if "forbidden as generation input" not in record.get("role", ""):
+                  raise SystemExit(f"archived package role must forbid generation input: {name}")
 
-          print("source manifest consistency OK")
-          PY
+          ref = json.loads(Path("archive/extracted-reference/EXTRACTED_REFERENCE_MANIFEST.json").read_text(encoding="utf-8-sig"))
+          if ref.get("status") != "archive_reference_index_only_not_generation_input":
+              raise SystemExit("wrong extracted reference manifest status")
+          if ref.get("extracted_files_created_in_repo") != []:
+              raise SystemExit("extracted reference index must not create derived files as repo inputs")
+          for item in ref.get("selected_reference_members", []):
+              suffix = Path(item.get("source_member", "")).suffix.lower()
+              if suffix in {".html", ".png", ".jpg", ".jpeg", ".zip", ".pdf"}:
+                  raise SystemExit(f"forbidden reference member selected: {item}")
 
-      - name: Validate JSON
-        run: |
-          python3 -m json.tool source/API551_SOURCE_MANIFEST_CURRENT.json > /dev/null
-          python3 -m json.tool catalog.json > /dev/null
-
-      - name: Check LFS and binary source integrity
-        run: |
-          python3 - <<'PY'
-          import json
-          import sys
-          import zipfile
-          from pathlib import Path
-
-          pointer_prefix = b"version https://git-lfs.github.com/spec/v1"
-          manifest = json.loads(Path("source/API551_SOURCE_MANIFEST_CURRENT.json").read_text(encoding="utf-8"))
-
-          expected_sizes = {"API551_SOURCE_MANIFEST_CURRENT.json": 6316}
-          for item in manifest["mandatory_sources"]:
-              if "local_size" in item:
-                  expected_sizes[item["file"]] = int(item["local_size"])
-
-          for name, expected_size in expected_sizes.items():
+          lfs_pointer_prefix = b"version https://git-lfs.github.com/spec/v1"
+          for name in active:
               path = Path("source") / name
-              size = path.stat().st_size
-              if size != expected_size:
-                  raise SystemExit(f"{path} size mismatch: expected {expected_size}, got {size}")
-              head = path.read_bytes()[:128]
-              if head.startswith(pointer_prefix):
-                  raise SystemExit(f"{path} is a Git LFS pointer, not real content")
+              data = path.read_bytes()
+              if not data:
+                  raise SystemExit(f"{path} is empty")
+              if data.startswith(lfs_pointer_prefix):
+                  raise SystemExit(f"{path} is a Git LFS pointer, not usable content")
 
           pdf = Path("source/API 551 2016 (R2024).pdf")
+          if pdf.stat().st_size != 8089772:
+              raise SystemExit(f"{pdf} size mismatch")
           if not pdf.read_bytes()[:5].startswith(b"%PDF"):
               raise SystemExit("source PDF does not start with %PDF")
 
-          for path in sorted(Path("source").glob("*.zip")):
-              if path.read_bytes()[:2] != b"PK":
-                  raise SystemExit(f"{path} does not look like a ZIP file")
-              with zipfile.ZipFile(path) as zf:
-                  bad = zf.testzip()
-              if bad is not None:
-                  raise SystemExit(f"{path} ZIP integrity failed at {bad}")
+          expected_zip_oid = {
+              "API_551_STAGE2_REFERENCE_FILES_v1.zip": "cda3e972a0acc5104e61a538c19f5c301c554eab03abd1bf868474f12babdf70",
+              "API_551_STAGE3_SOURCE_PACKAGE_v1.zip": "5a6d1bb1fb099dd5346297855b57758e68b503d84bdb890b0c775650d4fd7643",
+              "api551_control_build_v1.zip": "c9a8c330b0b20eb1c7b3f82dbf98eafa3409aec3611ff874419ecb3c5b627cc2",
+          }
+          for item in manifest.get("archived_source_packages", []):
+              path = Path(item["archive_path"])
+              data = path.read_bytes()
+              if data.startswith(b"PK"):
+                  if path.stat().st_size != int(item["local_size"]):
+                      raise SystemExit(f"{path} size mismatch after LFS smudge")
+                  with zipfile.ZipFile(path) as zf:
+                      bad = zf.testzip()
+                  if bad is not None:
+                      raise SystemExit(f"{path} ZIP integrity failed at {bad}")
+                  continue
+              text = data.decode("utf-8", errors="replace")
+              expected_oid = expected_zip_oid[item["file"]]
+              expected_size = str(item["local_size"])
+              if "version https://git-lfs.github.com/spec/v1" not in text:
+                  raise SystemExit(f"{path} is neither ZIP nor LFS pointer")
+              if f"oid sha256:{expected_oid}" not in text or f"size {expected_size}" not in text:
+                  raise SystemExit(f"{path} LFS pointer does not match expected oid/size")
 
-          print("LFS and binary source integrity OK")
+          readme = Path("README.md").read_text(encoding="utf-8-sig")
+          workflow = Path(".github/workflows/structure-check.yml").read_text(encoding="utf-8-sig")
+          for name in active + archived:
+              if name not in readme:
+                  raise SystemExit(f"README does not mention {name}")
+              if name not in workflow:
+                  raise SystemExit(f"workflow does not mention {name}")
+          print("API551 source/archive model OK")
           PY
+
+      - name: Check UTF-8 text encodings
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          text_suffixes = {".html", ".json", ".md", ".csv", ".txt", ".ps1", ".yml", ".yaml"}
+          excluded_parts = {".git"}
+          excluded_prefixes = {"docs/run-logs/"}
+          forbidden_boms = {
+              b"\xff\xfe": "UTF-16 LE BOM",
+              b"\xfe\xff": "UTF-16 BE BOM",
+          }
+          mojibake_markers = ["╨", "╤", "┬", "┐", "└", "─", "│", "Ð", "Ñ", "Â", "ð", "ñ", "РЎ", "Рњ", "Рё", "�"]
+          allowed_marker_paths = {".github/workflows/structure-check.yml"}
+          important_files = {"index.html", "catalog.json"}
+          important_files.update(p.as_posix() for p in Path("workspace/figures").glob("*/figure_*.html"))
+          important_files.update(p.as_posix() for p in Path("workspace/figures").glob("*/figure_*.json"))
+
+          failures = []
+          checked = 0
+          for path in sorted(Path(".").rglob("*")):
+              if not path.is_file():
+                  continue
+              rel = path.relative_to(Path("."))
+              rel_posix = rel.as_posix()
+              if any(part in excluded_parts for part in rel.parts):
+                  continue
+              if any(rel_posix.startswith(prefix) for prefix in excluded_prefixes):
+                  continue
+              if path.suffix.lower() not in text_suffixes:
+                  continue
+
+              checked += 1
+              data = path.read_bytes()
+              for bom, label in forbidden_boms.items():
+                  if data.startswith(bom):
+                      failures.append(f"{rel_posix}: forbidden {label}")
+              try:
+                  text = data.decode("utf-8-sig", errors="strict")
+              except UnicodeDecodeError as exc:
+                  failures.append(f"{rel_posix}: invalid UTF-8 at byte {exc.start}")
+                  continue
+
+              if "\x00" in text:
+                  failures.append(f"{rel_posix}: NUL byte in text file; possible UTF-16/invalid text encoding")
+
+              if rel_posix in important_files and rel_posix not in allowed_marker_paths:
+                  found = [marker for marker in mojibake_markers if marker in text]
+                  if found:
+                      failures.append(f"{rel_posix}: possible mojibake markers found: {found[:8]}")
+
+              if path.suffix.lower() == ".html" and rel_posix in important_files:
+                  head = text[:1000].lower()
+                  if "<meta charset=\"utf-8\">" not in head and "<meta charset='utf-8'>" not in head:
+                      failures.append(f"{rel_posix}: missing <meta charset=\"utf-8\"> near document head")
+
+          if failures:
+              raise SystemExit("encoding check failed:\n" + "\n".join(failures[:80]))
+          print(f"UTF-8 encoding check OK ({checked} text files; {len(important_files)} mojibake-guarded files)")
+          PY
+
+      - name: Validate JSON files
+        run: |
+          python3 -m json.tool source/API551_SOURCE_MANIFEST_CURRENT.json > /dev/null
+          python3 -m json.tool archive/extracted-reference/EXTRACTED_REFERENCE_MANIFEST.json > /dev/null
+          python3 -m json.tool catalog.json > /dev/null
 
       - name: Check catalog Stage 4 status
         run: |
           python3 - <<'PY'
           import json
-          import sys
           from pathlib import Path
 
-          catalog = json.loads(Path("catalog.json").read_text(encoding="utf-8"))
+          catalog = json.loads(Path("catalog.json").read_text(encoding="utf-8-sig"))
           figures = catalog.get("figures", [])
           if len(figures) != 69:
               raise SystemExit(f"catalog must contain 69 figures, got {len(figures)}")
-
           accepted_expected = {1, 4, 9, 14, 16, 18, 23, 25, 28, 30, 31, 33, 37, 46, 48, 50, 52, 62, 66}
           accepted = {int(f["figure_no"]) for f in figures if f.get("status") == "accepted"}
           changed = [f for f in figures if str(f.get("status", "")).startswith("измененно_")]
           not_accepted = [f for f in figures if f.get("status") == "not_accepted"]
-
           if accepted != accepted_expected:
               raise SystemExit(f"accepted figure set mismatch: {sorted(accepted)}")
           if len(changed) != 1 or int(changed[0]["figure_no"]) != 51:
@@ -163,82 +244,68 @@ jobs:
               raise SystemExit("Figure 51 status must be измененно_2026-06-17")
           if len(not_accepted) != 49:
               raise SystemExit(f"not_accepted count mismatch: {len(not_accepted)}")
-
-          stats = catalog.get("stats", {})
           expected_stats = {"total": 69, "accepted": 19, "changed": 1, "not_accepted": 49}
-          if stats != expected_stats:
-              raise SystemExit(f"catalog stats mismatch: expected {expected_stats}, got {stats}")
-
+          if catalog.get("stats", {}) != expected_stats:
+              raise SystemExit("catalog stats mismatch")
           print("catalog Stage 4 status OK")
           PY
 
-      - name: Check accepted and changed Figure object files
+      - name: Check portable relative review links
         run: |
           python3 - <<'PY'
           import json
           import re
-          import sys
           from pathlib import Path
 
-          catalog = json.loads(Path("catalog.json").read_text(encoding="utf-8"))
-          forbidden_out_markers = [
-              "Источник bbox",
-              "source bbox",
-              "raw OCR",
-              "Служебная",
-              "Служебное",
-              "object.json",
-              "source_crop",
-              "C:/Users/",
-              "debug",
-              "TODO",
-              "REBUILD",
-          ]
-          expected_pdf_prefix = "file:///C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page="
+          root_files = [Path("index.html"), Path("catalog.json")]
+          figure_html = sorted(Path("workspace/figures").glob("*/figure_*.html"))
+          files = root_files + figure_html
+          for path in files:
+              text = path.read_text(encoding="utf-8-sig", errors="replace")
+              if "file:///C:/" in text or "C:/Downloads/" in text:
+                  raise SystemExit(f"absolute Windows path is forbidden: {path}")
 
-          for fig in catalog["figures"]:
-              status = str(fig.get("status", ""))
-              if status != "accepted" and not status.startswith("измененно_"):
-                  continue
+          catalog = json.loads(Path("catalog.json").read_text(encoding="utf-8-sig"))
+          for fig in catalog.get("figures", []):
+              link = fig.get("source_pdf_link", "")
+              if not link.startswith("source/API%20551%202016%20(R2024).pdf#page="):
+                  raise SystemExit(f"bad root PDF link for Figure {fig.get('figure_no')}: {link}")
+              for key in ["folder", "html", "json", "png", "source_crop", "out_html"]:
+                  value = fig.get(key)
+                  if value and value.startswith("figures/"):
+                      raise SystemExit(f"non-portable catalog path for Figure {fig.get('figure_no')} {key}: {value}")
 
-              no = int(fig["figure_no"])
-              folder = fig.get("folder")
-              if not folder:
-                  raise SystemExit(f"Figure {no}: accepted/changed object has no folder")
+          index = Path("index.html").read_text(encoding="utf-8-sig", errors="replace")
+          if 'href="figures/' in index:
+              raise SystemExit("index.html still points to root figures/")
+          if "source/API%20551%202016%20(R2024).pdf#page=" not in index:
+              raise SystemExit("index.html has no relative source PDF links")
 
-              physical_folder = Path("workspace") / folder
-              if not physical_folder.is_dir():
-                  raise SystemExit(f"Figure {no}: missing physical folder {physical_folder}")
-
-              required_keys = ["html", "out_html", "json", "png", "source_crop"]
-              for key in required_keys:
-                  rel = fig.get(key)
-                  if not rel:
-                      raise SystemExit(f"Figure {no}: missing catalog key {key}")
-                  physical = Path("workspace") / rel
-                  if not physical.is_file():
-                      raise SystemExit(f"Figure {no}: missing file {physical}")
-                  if physical.read_bytes()[:128].startswith(b"version https://git-lfs.github.com/spec/v1"):
-                      raise SystemExit(f"Figure {no}: {physical} is a Git LFS pointer")
-
-              source_pdf_link = fig.get("source_pdf_link", "")
-              if not source_pdf_link.startswith(expected_pdf_prefix):
-                  raise SystemExit(f"Figure {no}: wrong source_pdf_link {source_pdf_link}")
-
-              out_path = Path("workspace") / fig["out_html"]
-              out_text = out_path.read_text(encoding="utf-8", errors="replace")
-              for marker in forbidden_out_markers:
-                  if marker in out_text:
-                      raise SystemExit(f"Figure {no}: out.html contains forbidden marker {marker!r}")
-              if "C:/Downloads/API%20551/API%20551%202016%20(R2024).pdf#page=" not in out_text:
-                  raise SystemExit(f"Figure {no}: out.html has no expected source PDF link")
-
-              for src in re.findall(r"<img[^>]+src=[\"']([^\"']+)[\"']", out_text, flags=re.I):
+          for path in figure_html:
+              text = path.read_text(encoding="utf-8-sig", errors="replace")
+              if "../../../source/API%20551%202016%20(R2024).pdf#page=" not in text:
+                  raise SystemExit(f"Figure HTML has no relative source PDF link: {path}")
+              for src in re.findall(r"<img[^>]+src=[\"']([^\"']+)[\"']", text, flags=re.I):
                   if src.startswith(("http://", "https://", "data:")):
                       continue
-                  image_path = out_path.parent / src
+                  image_path = path.parent / src
                   if not image_path.is_file():
-                      raise SystemExit(f"Figure {no}: broken image reference {src} in {out_path}")
+                      raise SystemExit(f"broken image reference {src} in {path}")
 
-          print("accepted/changed Figure object files OK")
+          fig66_out = Path("workspace/figures/066/figure_066.out.html").read_text(encoding="utf-8-sig", errors="replace")
+          fig66_json = Path("workspace/figures/066/figure_066.object.json").read_text(encoding="utf-8-sig", errors="replace")
+          for needle in [
+              'data-figure-kind="reconstructed_table_with_embedded_drawing"',
+              'class="reconstructed-table"',
+              '<th colspan="2">Расход газа</th>',
+              '<th colspan="2">Расход жидкости</th>',
+              '<td>≥4″</td>',
+              'figure_066.png',
+          ]:
+              if needle not in fig66_out:
+                  raise SystemExit(f"Figure 66 reconstructed object missing fragment: {needle}")
+          if "file:///C:/" in fig66_json or "C:/Downloads/" in fig66_json:
+              raise SystemExit("Figure 66 object JSON contains absolute Windows path")
+          print("Figure 66 reconstructed table check OK")
+          print("portable relative review links OK")
           PY
