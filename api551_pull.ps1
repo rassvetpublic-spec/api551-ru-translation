@@ -1,6 +1,6 @@
 param(
     [string]$Repo = "rassvetpublic-spec/api551-ru-translation",
-    [string]$Branch = "main",
+    [string]$Branch = "",
     [int]$PrNumber = 0,
     [string]$LocalPath = "C:\Downloads\API 551"
 )
@@ -40,6 +40,43 @@ function Invoke-GhJson([string[]]$Arguments) {
     return ($output | Out-String | ConvertFrom-Json)
 }
 
+function Resolve-BranchName([string]$RequestedBranch) {
+    if (-not [string]::IsNullOrWhiteSpace($RequestedBranch)) {
+        return $RequestedBranch.Trim()
+    }
+
+    $branchItems = @(Invoke-GhJson @("api", "repos/$Repo/branches?per_page=100"))
+    $branchNames = @($branchItems | ForEach-Object { [string]$_.name })
+    if ($branchNames.Count -eq 0) { throw "No branches returned from GitHub" }
+
+    $ordered = New-Object System.Collections.Generic.List[string]
+    foreach ($preferred in @("candidates", "main")) {
+        if ($branchNames -contains $preferred) { [void]$ordered.Add($preferred) }
+    }
+    foreach ($name in ($branchNames | Sort-Object)) {
+        if (-not $ordered.Contains($name)) { [void]$ordered.Add($name) }
+    }
+
+    Write-Host "Available branches:"
+    for ($i = 0; $i -lt $ordered.Count; $i++) {
+        Write-Host ("[{0}] {1}" -f ($i + 1), $ordered[$i])
+    }
+
+    $defaultBranch = if ($ordered.Contains("candidates")) { "candidates" } elseif ($ordered.Contains("main")) { "main" } else { $ordered[0] }
+    $answer = Read-Host "Выберите ветку (Enter=$defaultBranch, номер или имя)"
+    if ([string]::IsNullOrWhiteSpace($answer)) { return $defaultBranch }
+
+    $answer = $answer.Trim()
+    $number = 0
+    if ([int]::TryParse($answer, [ref]$number)) {
+        if ($number -lt 1 -or $number -gt $ordered.Count) { throw "Branch number out of range: $answer" }
+        return $ordered[$number - 1]
+    }
+
+    if (-not ($branchNames -contains $answer)) { throw "Branch not found: $answer" }
+    return $answer
+}
+
 function ConvertTo-ApiPath([string]$Path) {
     return (($Path -split '/') | ForEach-Object { [System.Uri]::EscapeDataString($_) }) -join '/'
 }
@@ -65,14 +102,10 @@ function Should-PullPath([string]$Path) {
 }
 
 function Test-PngFile([string]$Path) {
-    if (-not (Test-Path -LiteralPath $Path -PathType Leaf)) {
-        throw "PNG file missing after download: $Path"
-    }
+    if (-not (Test-Path -LiteralPath $Path -PathType Leaf)) { throw "PNG file missing after download: $Path" }
     $bytes = [System.IO.File]::ReadAllBytes($Path)
     $sig = [byte[]](0x89,0x50,0x4E,0x47,0x0D,0x0A,0x1A,0x0A)
-    if ($bytes.Length -lt 8) {
-        throw "PNG file too small after download: $Path"
-    }
+    if ($bytes.Length -lt 8) { throw "PNG file too small after download: $Path" }
     for ($i = 0; $i -lt 8; $i++) {
         if ($bytes[$i] -ne $sig[$i]) {
             $headText = [System.Text.Encoding]::ASCII.GetString($bytes, 0, [Math]::Min($bytes.Length, 120))
@@ -89,25 +122,17 @@ function Invoke-GhRawToFile([string]$Endpoint, [string]$Destination) {
     try {
         $psi = [System.Diagnostics.ProcessStartInfo]::new()
         $psi.FileName = "gh"
-        foreach ($arg in @("api", "-H", "Accept: application/vnd.github.raw", $Endpoint)) {
-            [void]$psi.ArgumentList.Add($arg)
-        }
+        foreach ($arg in @("api", "-H", "Accept: application/vnd.github.raw", $Endpoint)) { [void]$psi.ArgumentList.Add($arg) }
         $psi.UseShellExecute = $false
         $psi.RedirectStandardOutput = $true
         $psi.RedirectStandardError = $true
-
         $process = [System.Diagnostics.Process]::Start($psi)
         $stdout = $process.StandardOutput.BaseStream
         $file = [System.IO.File]::Open($temp, [System.IO.FileMode]::Create, [System.IO.FileAccess]::Write, [System.IO.FileShare]::None)
-        try { $stdout.CopyTo($file) }
-        finally { $file.Dispose() }
+        try { $stdout.CopyTo($file) } finally { $file.Dispose() }
         $stderr = $process.StandardError.ReadToEnd()
         $process.WaitForExit()
-
-        if ($process.ExitCode -ne 0) {
-            throw "gh raw download failed: $Endpoint`n$stderr"
-        }
-
+        if ($process.ExitCode -ne 0) { throw "gh raw download failed: $Endpoint`n$stderr" }
         $dir = Split-Path -Parent $Destination
         if ($dir) { New-Item -ItemType Directory -Force -Path $dir | Out-Null }
         Move-Item -LiteralPath $temp -Destination $Destination -Force
@@ -118,25 +143,16 @@ function Invoke-GhRawToFile([string]$Endpoint, [string]$Destination) {
 }
 
 function Invoke-MediaToFile([string]$RepoPath, [string]$Destination) {
-    if ([string]::IsNullOrWhiteSpace($script:RemoteHeadSha)) {
-        throw "Remote head SHA is not initialized"
-    }
+    if ([string]::IsNullOrWhiteSpace($script:RemoteHeadSha)) { throw "Remote head SHA is not initialized" }
     if ([string]::IsNullOrWhiteSpace($script:GithubToken)) {
         $script:GithubToken = (& gh auth token 2>$null | Select-Object -First 1).Trim()
-        if ([string]::IsNullOrWhiteSpace($script:GithubToken)) {
-            throw "Cannot get GitHub token from gh auth token"
-        }
+        if ([string]::IsNullOrWhiteSpace($script:GithubToken)) { throw "Cannot get GitHub token from gh auth token" }
     }
-
     $urlPath = ConvertTo-UrlPath $RepoPath
     $url = "https://media.githubusercontent.com/media/$Repo/$($script:RemoteHeadSha)/$urlPath"
     $temp = Join-Path ([System.IO.Path]::GetTempPath()) ("api551-media-" + [System.Guid]::NewGuid().ToString("N") + ".tmp")
     try {
-        $headers = @{
-            Authorization = "Bearer $($script:GithubToken)"
-            Accept = "application/octet-stream"
-            "User-Agent" = "api551-pull"
-        }
+        $headers = @{ Authorization = "Bearer $($script:GithubToken)"; Accept = "application/octet-stream"; "User-Agent" = "api551-pull" }
         Invoke-WebRequest -Uri $url -Headers $headers -OutFile $temp -UseBasicParsing -MaximumRedirection 10
         $dir = Split-Path -Parent $Destination
         if ($dir) { New-Item -ItemType Directory -Force -Path $dir | Out-Null }
@@ -154,7 +170,6 @@ function Download-RepositoryFile([string]$RepoPath) {
         Test-PngFile -Path $destination
         return
     }
-
     $apiPath = ConvertTo-ApiPath $RepoPath
     $ref = [System.Uri]::EscapeDataString($Branch)
     $endpoint = "repos/$Repo/contents/$apiPath`?ref=$ref"
@@ -162,15 +177,7 @@ function Download-RepositoryFile([string]$RepoPath) {
 }
 
 function Remove-ObsoleteRootScripts {
-    $obsolete = @(
-        'api551_00_gh_status.ps1',
-        'api551_01_gh_pull_text_state.ps1',
-        'api551_02_gh_upload_run_log.ps1',
-        'api551_01_pull_from_github.ps1',
-        'api551_02_sync_up.ps1',
-        'api551_03_apply_task.ps1'
-    )
-    foreach ($name in $obsolete) {
+    foreach ($name in @('api551_00_gh_status.ps1','api551_01_gh_pull_text_state.ps1','api551_02_gh_upload_run_log.ps1','api551_01_pull_from_github.ps1','api551_02_sync_up.ps1','api551_03_apply_task.ps1')) {
         $path = Join-Path $LocalPath $name
         if (Test-Path -LiteralPath $path -PathType Leaf) {
             Remove-Item -LiteralPath $path -Force
@@ -182,21 +189,18 @@ function Remove-ObsoleteRootScripts {
 try {
     Log "API551 pull started"
     Log "Repo: $Repo"
+    Require-Command "gh"
+    New-Item -ItemType Directory -Force -Path $LocalPath | Out-Null
+    $ghVersion = (& gh --version | Select-Object -First 1)
+    Log "gh: $ghVersion"
+    $auth = & gh auth status -h github.com 2>&1
+    if ($LASTEXITCODE -ne 0) { throw "gh auth status failed:`n$($auth | Out-String)" }
+    Log "gh auth status OK"
+
+    $Branch = Resolve-BranchName $Branch
     Log "Branch: $Branch"
     if ($PrNumber -gt 0) { Log "PR: #$PrNumber" } else { Log "PR: skipped" }
     Log "LocalPath: $LocalPath"
-
-    Require-Command "gh"
-    New-Item -ItemType Directory -Force -Path $LocalPath | Out-Null
-
-    $ghVersion = (& gh --version | Select-Object -First 1)
-    Log "gh: $ghVersion"
-
-    $auth = & gh auth status -h github.com 2>&1
-    if ($LASTEXITCODE -ne 0) {
-        throw "gh auth status failed:`n$($auth | Out-String)"
-    }
-    Log "gh auth status OK"
 
     $refData = Invoke-GhJson @("api", "repos/$Repo/git/ref/heads/$Branch")
     $headSha = [string]$refData.object.sha
@@ -204,20 +208,17 @@ try {
     $commit = Invoke-GhJson @("api", "repos/$Repo/git/commits/$headSha")
     $treeSha = [string]$commit.tree.sha
     $tree = Invoke-GhJson @("api", "repos/$Repo/git/trees/$treeSha`?recursive=1")
-
     Log "remote head: $headSha"
 
     $paths = @($tree.tree | Where-Object { $_.type -eq 'blob' } | ForEach-Object { [string]$_.path } | Where-Object { Should-PullPath $_ } | Sort-Object -Unique)
     $pngCount = @($paths | Where-Object { $_ -match '\.png$' }).Count
     Log "files selected: $($paths.Count), png assets: $pngCount"
-
     $count = 0
     foreach ($path in $paths) {
         Download-RepositoryFile $path
         $count++
     }
     Log "downloaded files: $count"
-
     Remove-ObsoleteRootScripts
 
     if ($PrNumber -gt 0) {
@@ -225,24 +226,16 @@ try {
         Log "PR state: $($pr.state); draft: $($pr.draft); mergeable: $($pr.mergeable)"
         Log "PR head: $($pr.head.ref) @ $($pr.head.sha)"
         Log "PR base: $($pr.base.ref) @ $($pr.base.sha)"
-    } else {
-        Log "PR check skipped"
-    }
+    } else { Log "PR check skipped" }
 
     $runs = Invoke-GhJson @("api", "repos/$Repo/actions/runs?branch=$Branch&per_page=5")
     $latestRun = $runs.workflow_runs | Select-Object -First 1
-    if ($latestRun) {
-        Log "latest CI: $($latestRun.name); status=$($latestRun.status); conclusion=$($latestRun.conclusion); run=$($latestRun.id)"
-    } else {
-        Log "latest CI: no workflow runs returned"
-    }
-
+    if ($latestRun) { Log "latest CI: $($latestRun.name); status=$($latestRun.status); conclusion=$($latestRun.conclusion); run=$($latestRun.id)" }
+    else { Log "latest CI: no workflow runs returned" }
     $rootFiles = Get-ChildItem -LiteralPath $LocalPath -File -Filter "api551*.ps1" | Select-Object -ExpandProperty Name | Sort-Object
     Log "local root api551 scripts: $($rootFiles -join ', ')"
-
     $localPngCount = @(Get-ChildItem -LiteralPath (Join-Path $LocalPath "workspace\figures") -Recurse -Filter "*.png" -File -ErrorAction SilentlyContinue).Count
     Log "local PNG files present: $localPngCount"
-
     Log "API551 pull completed"
     Log "Log file: $LogPath"
 }
