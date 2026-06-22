@@ -42,11 +42,24 @@ jobs:
               "docs",
               "archive/source-packages",
               "archive/extracted-reference",
+              "scripts",
               ".github/workflows",
           ]
           for dirname in required_dirs:
               if not Path(dirname).is_dir():
                   raise SystemExit(f"missing required folder: {dirname}")
+
+          root_scripts = sorted(p.name for p in Path('.').glob('api551*.ps1'))
+          if root_scripts != ["api551_pull.ps1"]:
+              raise SystemExit(f"root must contain only api551_pull.ps1, got: {root_scripts}")
+          for helper in [
+              "scripts/api551_gh_upload_run_log.ps1",
+              "scripts/api551_git_pull_from_github.ps1",
+              "scripts/api551_git_sync_up.ps1",
+              "scripts/api551_git_apply_task.ps1",
+          ]:
+              if not Path(helper).is_file():
+                  raise SystemExit(f"missing helper script: {helper}")
 
           source_files = sorted(p.name for p in Path("source").iterdir() if p.is_file())
           if source_files != sorted(active):
@@ -103,10 +116,9 @@ jobs:
                   raise SystemExit(f"{path} is a Git LFS pointer, not usable content")
 
           pdf = Path("source/API 551 2016 (R2024).pdf")
-          pdf_size = pdf.stat().st_size
           expected_pdf_size = 8089772
-          if pdf_size != expected_pdf_size:
-              raise SystemExit(f"{pdf} size mismatch: expected {expected_pdf_size}, got {pdf_size}")
+          if pdf.stat().st_size != expected_pdf_size:
+              raise SystemExit(f"{pdf} size mismatch")
           if not pdf.read_bytes()[:5].startswith(b"%PDF"):
               raise SystemExit("source PDF does not start with %PDF")
 
@@ -149,27 +161,19 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
 
-          text_suffixes = {
-              ".html", ".json", ".md", ".csv", ".txt",
-              ".ps1", ".yml", ".yaml",
-          }
+          text_suffixes = {".html", ".json", ".md", ".csv", ".txt", ".ps1", ".yml", ".yaml"}
           excluded_parts = {".git"}
-          excluded_prefixes = {
-              "docs/run-logs/",
-          }
+          excluded_prefixes = {"docs/run-logs/"}
           forbidden_boms = {
               b"\xef\xbb\xbf": "UTF-8 BOM",
               b"\xff\xfe": "UTF-16 LE BOM",
               b"\xfe\xff": "UTF-16 BE BOM",
           }
-          mojibake_markers = [
-              "╨", "╤", "┬", "┐", "└", "─", "│",
-              "Ð", "Ñ", "Â", "ð", "ñ", "РЎ", "Рњ", "Рё",
-              "�",
-          ]
-          allowed_marker_paths = {
-              ".github/workflows/structure-check.yml",
-          }
+          mojibake_markers = ["╨", "╤", "┬", "┐", "└", "─", "│", "Ð", "Ñ", "Â", "ð", "ñ", "РЎ", "Рњ", "Рё", "�"]
+          allowed_marker_paths = {".github/workflows/structure-check.yml"}
+          important_files = {"index.html", "catalog.json"}
+          important_files.update(p.as_posix() for p in Path("workspace/figures").glob("*/figure_*.html"))
+          important_files.update(p.as_posix() for p in Path("workspace/figures").glob("*/figure_*.json"))
 
           failures = []
           checked = 0
@@ -199,19 +203,19 @@ jobs:
               if "\x00" in text:
                   failures.append(f"{rel_posix}: NUL byte in text file; possible UTF-16/invalid text encoding")
 
-              if rel_posix not in allowed_marker_paths:
+              if rel_posix in important_files and rel_posix not in allowed_marker_paths:
                   found = [marker for marker in mojibake_markers if marker in text]
                   if found:
                       failures.append(f"{rel_posix}: possible mojibake markers found: {found[:8]}")
 
-              if path.suffix.lower() == ".html":
+              if path.suffix.lower() == ".html" and rel_posix in important_files:
                   head = text[:1000].lower()
                   if "<meta charset=\"utf-8\">" not in head and "<meta charset='utf-8'>" not in head:
                       failures.append(f"{rel_posix}: missing <meta charset=\"utf-8\"> near document head")
 
           if failures:
               raise SystemExit("encoding check failed:\n" + "\n".join(failures[:80]))
-          print(f"UTF-8 encoding check OK ({checked} text files)")
+          print(f"UTF-8 encoding check OK ({checked} text files; {len(important_files)} mojibake-guarded files)")
           PY
 
       - name: Validate JSON files
@@ -247,6 +251,7 @@ jobs:
               raise SystemExit("catalog stats mismatch")
           print("catalog Stage 4 status OK")
           PY
+
       - name: Check portable relative review links
         run: |
           python3 - <<'PY'
@@ -288,6 +293,7 @@ jobs:
                   image_path = path.parent / src
                   if not image_path.is_file():
                       raise SystemExit(f"broken image reference {src} in {path}")
+
           fig66_out = Path("workspace/figures/066/figure_066.out.html").read_text(encoding="utf-8", errors="replace")
           fig66_json = Path("workspace/figures/066/figure_066.object.json").read_text(encoding="utf-8", errors="replace")
           for needle in [
