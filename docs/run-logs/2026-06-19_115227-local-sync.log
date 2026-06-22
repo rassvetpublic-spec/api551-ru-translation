@@ -1,0 +1,78 @@
+﻿**********************
+Начало записи сценария Windows PowerShell
+Время начала: 20260619115227
+Имя пользователя: ELEMER\verendeev-as
+Запуск от имени пользователя: ELEMER\verendeev-as
+Имя конфигурации: 
+Компьютер: VERENDEEV-2125 (Microsoft Windows NT 10.0.19044.0)
+Ведущее приложение: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Downloads\api551_update_local_from_github.ps1 -LocalPath C:\Downloads\API 551 -Branch codex/archive-source-zips -ForceClean
+ИД процесса: 5644
+PSVersion: 5.1.19041.7417
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.7417
+BuildVersion: 10.0.19041.7417
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+
+== API551 local sync from GitHub
+RepoUrl: https://github.com/rassvetpublic-spec/api551-ru-translation.git
+Branch: codex/archive-source-zips
+LocalPath: C:\Downloads\API 551
+ForceClean: True
+NoLfsPull: False
+
+== Existing Git repository detected
+
++ git remote set-url origin https://github.com/rassvetpublic-spec/api551-ru-translation.git
+
+
++ git fetch --prune origin codex/archive-source-zips
+From https://github.com/rassvetpublic-spec/api551-ru-translation
+ * branch            codex/archive-source-zips -> FETCH_HEAD
+
++ git checkout -B codex/archive-source-zips origin/codex/archive-source-zips
+branch 'codex/archive-source-zips' set up to track 'origin/codex/archive-source-zips'.
+Reset branch 'codex/archive-source-zips'
+Your branch is up to date with 'origin/codex/archive-source-zips'.
+
++ git reset --hard origin/codex/archive-source-zips
+HEAD is now at 8f27e50 Track run logs and ignore local helper script
+
++ git clean -fdx
+Removing api551_update_local_from_github.ps1
+Removing docs/run-logs/2026-06-19_114812-local-sync.log
+
+== Git LFS pull
+
++ git lfs install --local
+Updated Git hooks.
+Git LFS initialized.
+
++ git lfs fetch origin codex/archive-source-zips
+Fetching reference refs/heads/codex/archive-source-zips
+
++ git lfs checkout
+Checking out LFS objects:   0% (0/1), 0 B | 0 B/s
+
++ git lfs pull origin codex/archive-source-zips
+
+
+== Required source/archive checks
+
+== Git status
+
++ git status -sb
+## codex/archive-source-zips...origin/codex/archive-source-zips
+
++ git rev-parse HEAD
+8f27e502cef14824571c93c1bb3b03414e87c202
+
+== DONE
+Local folder is synchronized from GitHub branch: codex/archive-source-zips
+**********************
+Конец записи протокола Windows PowerShell
+Время окончания: 20260619115229
+**********************
