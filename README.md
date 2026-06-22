@@ -6,10 +6,28 @@ Working repository for the API 551 Russian technical translation project.
 
 - `source/` - current active source package for the independent final rebuild.
 - `workspace/figures/` - Stage 4 figure objects and review/export artifacts.
-- `docs/` - project documentation.
+- `docs/` - project documentation and run logs.
 - `archive/` - preserved superseded files, archived source packages, extracted QA/reference evidence, and cleanup history.
 - `.github/workflows/` - repository checks.
 - `index.html` and `catalog.json` - published review export in repository root.
+
+## Root script layout
+
+Active local workflow now uses GitHub CLI because local DNS can block normal `git fetch` to `github.com` while `api.github.com` remains reachable.
+
+Active `gh` scripts in repository root:
+
+1. `api551_00_gh_status.ps1` - check PR, branch, CI, root layout, and GitHub CLI connectivity.
+2. `api551_01_gh_pull_text_state.ps1` - pull the text review state through `gh api`.
+3. `api551_02_gh_upload_run_log.ps1` - upload only approved `.log` files from `docs/run-logs`.
+
+Legacy Git scripts retained as fallback / historical workflow until a full replacement is approved:
+
+1. `api551_01_pull_from_github.ps1`
+2. `api551_02_sync_up.ps1`
+3. `api551_03_apply_task.ps1`
+
+Do not add new active helper scripts under `scripts/`. One-off migration helpers must be archived or deleted after their output is captured.
 
 ## Active source model
 
