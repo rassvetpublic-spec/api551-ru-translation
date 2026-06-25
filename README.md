@@ -29,16 +29,17 @@ Do not add new active scripts to the repository root. If a root helper is needed
 
 ## Active source model
 
-The active source set is intentionally small. Current rules and policies are consolidated. Legacy ZIP packages are not active production inputs.
+The active source set is intentionally small. Current rules and policies are consolidated. Legacy ZIP packages are not active production inputs. The universal Figure label cleanup and placement addendum is an active Stage 4+ source file that supplements the consolidated policy/rules source.
 
 Required current files in `source/`:
 
 1. `API551_SOURCE_MANIFEST_CURRENT.json`
 2. `API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md`
-3. `TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md`
-4. `api551_approved_label_master_v1.csv`
-5. `TZ_API551_translation_project_RU.md`
-6. `API 551 2016 (R2024).pdf`
+3. `API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md`
+4. `TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md`
+5. `api551_approved_label_master_v1.csv`
+6. `TZ_API551_translation_project_RU.md`
+7. `API 551 2016 (R2024).pdf`
 
 Archived source packages in `archive/source-packages/`:
 

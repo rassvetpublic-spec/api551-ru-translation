@@ -1,18 +1,18 @@
 {
   "project": "API 551 Stage 4",
-  "updated": "2026-06-19",
-  "status": "active_source_minimized_archived_zip_packages_reference_only",
+  "updated": "2026-06-25",
+  "status": "active_source_minimized_with_universal_addendum_archived_zip_packages_reference_only",
   "canonical_source_policy": {
     "primary_source_folder": {
       "name": "API 551/Source",
       "folder_id": "1uLQQ1XHveKaUzLgULQ84jYUD1GYMWPKX",
       "url": "https://drive.google.com/drive/folders/1uLQQ1XHveKaUzLgULQ84jYUD1GYMWPKX",
       "read_status": "accessible",
-      "file_count_via_drive_api": 6,
+      "file_count_via_drive_api": 7,
       "promoted_to_canonical": true
     },
     "local_cache_role": "fallback_and_working_copy_only",
-    "rule": "Before Stage 4 work, verify mandatory source availability in API 551/Source first. Active Source now excludes legacy ZIP packages. Active Stage 4 TZ is TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md. Active policy/rules source is API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md. Archived ZIP packages are QA/evidence only and are forbidden as generation input for the final one-pass rebuild."
+    "rule": "Before Stage 4 work, verify mandatory source availability in API 551/Source first. Active Source now excludes legacy ZIP packages. Active Stage 4 TZ is TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md. Active policy/rules source is API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md. Active universal Figure label cleanup and placement addendum is API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md. Archived ZIP packages are QA/evidence only and are forbidden as generation input for the final one-pass rebuild."
   },
   "mandatory_sources": [
     {
@@ -61,7 +61,18 @@
       "read_check": "metadata_ok"
     }
   ],
-  "supplemental_source_files": [],
+  "supplemental_source_files": [
+    {
+      "file": "API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md",
+      "role": "CURRENT active universal Stage 4+ addendum for Figure label cleanup, placement, protected graphics, boxed callouts, leader-line protection, and replacement text fitting; supplements API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md and must be checked before Figure production",
+      "source_path": "source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md",
+      "github_blob_sha": "d7da43f2de68065f8f360441035efbd5cda78b04",
+      "drive_source_file_id": null,
+      "drive_source_size": null,
+      "comparison": "github_active_pending_drive_registration",
+      "read_check": "metadata_and_text_fetch_ok_from_github"
+    }
+  ],
   "duplicates_observed": [],
   "non_mandatory_source_files": [],
   "drive_context": {
