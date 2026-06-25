@@ -1,10 +1,12 @@
 # API551 Universal Figure Label Cleanup and Placement Rules
 
-Status: CURRENT addendum candidate for Stage 4+ after merge into `main`.
+Status: CURRENT active universal addendum for Stage 4+.
 
 Date: 2026-06-25.
 
 Scope: all API 551 Figure objects, all Figure label replacement strategies, all programmatic PNG/HTML/JSON reconstruction steps, unless a stricter figure-specific approved rule overrides this file.
+
+Authority: this file supplements `source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md`. If a conflict is detected, stop and report the source, role, conflict, and risk before production work.
 
 Origin: rules and strategies consolidated from the active discussion of Figure label cleanup, boxed callouts, leader-line protection, and replacement text fitting. Previous temporary/local workflow items `A10`, `A11`, `A16`, and `A19` are intentionally excluded and must not be restored as universal rules.
 
