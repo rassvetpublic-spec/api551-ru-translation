@@ -15,10 +15,11 @@ Reproduce the accepted Stage 4 style instead of re-solving the task from scratch
 
 1. Accepted Figure object and explicitly approved user corrections for that Figure.
 2. `source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md`.
-3. `source/TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md`.
-4. `source/api551_approved_label_master_v1.csv`.
-5. Source crop and original PDF visual reference.
-6. OCR only as a checking aid, never as source of truth.
+3. `.codex/skills/api551-stage4-figure-operator/LABEL_PLACEMENT_AND_CLEARING_STRATEGY_CURRENT.md` for label cleanup, placement, callout frames, and protected-geometry strategy.
+4. `source/TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md`.
+5. `source/api551_approved_label_master_v1.csv`.
+6. Source crop and original PDF visual reference.
+7. OCR only as a checking aid, never as source of truth.
 
 ## Current Stage 4 status to verify
 
@@ -43,6 +44,22 @@ Do not trust this list without checking current catalog/manifest, but use it as 
 ## Anti-example
 
 Figure 51 is not accepted. Do not use it as an approved model. If rebuilding it, start from the clean source crop/original, not from an old final PNG.
+
+Figure 51 also shows why cleanup and placement must be separated: leftover source letters, oversized callout boxes, clipped Russian text, and damaged leader lines are all defects.
+
+## Label placement and clearing
+
+Before changing on-image labels, apply `.codex/skills/api551-stage4-figure-operator/LABEL_PLACEMENT_AND_CLEARING_STRATEGY_CURRENT.md`.
+
+Core requirements:
+
+1. identify all source text components before clearing;
+2. keep cleanup zones independent from translation placement zones;
+3. preserve leader lines, arrows, drawing geometry, dimensions, borders, and protected symbols;
+4. for boxed callouts, size the frame from the actual rendered Russian text;
+5. keep the frame side attached to the leader line fixed;
+6. expand the frame only away from the leader line;
+7. recompute frame geometry whenever text, line breaks, font, or font size changes.
 
 ## Composite object order
 
