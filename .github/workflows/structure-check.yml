@@ -234,21 +234,33 @@ jobs:
           figures = catalog.get("figures", [])
           if len(figures) != 69:
               raise SystemExit(f"catalog must contain 69 figures, got {len(figures)}")
-          accepted_expected = {1, 4, 9, 14, 16, 18, 23, 25, 28, 30, 31, 33, 37, 46, 48, 50, 52, 62, 66}
+          accepted_expected = {1, 4, 9, 14, 16, 18, 23, 25, 28, 30, 31, 33, 37, 46, 48, 50, 51, 52, 62, 66}
           accepted = {int(f["figure_no"]) for f in figures if f.get("status") == "accepted"}
           changed = [f for f in figures if str(f.get("status", "")).startswith("измененно_")]
           not_accepted = [f for f in figures if f.get("status") == "not_accepted"]
           if accepted != accepted_expected:
               raise SystemExit(f"accepted figure set mismatch: {sorted(accepted)}")
-          if len(changed) != 1 or int(changed[0]["figure_no"]) != 51:
-              raise SystemExit("Figure 51 must be the only changed/review figure")
-          if changed[0].get("status") != "измененно_2026-06-17":
-              raise SystemExit("Figure 51 status must be измененно_2026-06-17")
+          if changed:
+              raise SystemExit(f"changed/review figures must be empty after Figure 51 acceptance, got {[f.get('figure_no') for f in changed]}")
           if len(not_accepted) != 49:
               raise SystemExit(f"not_accepted count mismatch: {len(not_accepted)}")
-          expected_stats = {"total": 69, "accepted": 19, "changed": 1, "not_accepted": 49}
+          expected_stats = {"total": 69, "accepted": 20, "changed": 0, "not_accepted": 49}
           if catalog.get("stats", {}) != expected_stats:
               raise SystemExit("catalog stats mismatch")
+          fig51 = next((f for f in figures if int(f.get("figure_no")) == 51), None)
+          if not fig51 or fig51.get("status") != "accepted":
+              raise SystemExit("Figure 51 must be accepted")
+          for key in ["folder", "html", "json", "png", "source_crop", "out_html"]:
+              if not fig51.get(key):
+                  raise SystemExit(f"Figure 51 missing catalog key: {key}")
+          png_signature = b"\x89PNG\r\n\x1a\n"
+          for rel_path in [fig51["png"], fig51["source_crop"]]:
+              path = Path(rel_path)
+              if not path.is_file():
+                  raise SystemExit(f"Figure 51 missing PNG asset: {path}")
+              data = path.read_bytes()
+              if not data.startswith(png_signature):
+                  raise SystemExit(f"Figure 51 PNG asset is not a real PNG after LFS checkout: {path}")
           print("catalog Stage 4 status OK")
           PY
 
