@@ -67,10 +67,11 @@
       "role": "CURRENT active universal Stage 4+ addendum for Figure label cleanup, placement, protected graphics, boxed callouts, leader-line protection, and replacement text fitting; supplements API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md and must be checked before Figure production",
       "source_path": "source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md",
       "github_blob_sha": "d7da43f2de68065f8f360441035efbd5cda78b04",
-      "drive_source_file_id": null,
-      "drive_source_size": null,
-      "comparison": "github_active_pending_drive_registration",
-      "read_check": "metadata_and_text_fetch_ok_from_github"
+      "drive_source_file_id": "1kgyZgCTicTBoKsFtbCWhiD-mwY2pZjii",
+      "drive_source_size": 11248,
+      "local_size": 11248,
+      "comparison": "size_match",
+      "read_check": "metadata_and_text_fetch_ok_from_github_and_drive_upload_ok"
     }
   ],
   "duplicates_observed": [],
