@@ -19,3 +19,7 @@ rassvetpublic-spec/rassvet-rules-hub
 ## Local priority
 
 Local Project Instructions, ACTIVE/CURRENT files, and API551 CURRENT policy/rules remain project-specific sources for this repo.
+
+## Local workflow addenda
+
+- `docs/rules/STAGE4_ACCEPTANCE_PIPELINE_CURRENT_2026-06-26.md` - mandatory workflow rule for user-accepted Figure objects, merge into `candidates`, promotion into `main`, and cleanup of temporary branches.

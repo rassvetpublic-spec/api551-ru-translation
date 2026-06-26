@@ -8,11 +8,12 @@ Before any Stage 4 work, run the API551 source gate from `.codex/skills/api551-s
 
 Do not work from memory, old chat context, old local caches, or archive files unless the active source gate explicitly allows it.
 
-Use these repository skills:
+Use these repository skills and rules:
 
 - `.codex/skills/api551-source-gate/SKILL.md`
 - `.codex/skills/api551-stage4-figure-operator/SKILL.md`
 - `.codex/skills/api551-figure-layout-qa/SKILL.md`
+- `docs/rules/STAGE4_ACCEPTANCE_PIPELINE_CURRENT_2026-06-26.md`
 
 ## Current active source model
 
@@ -23,10 +24,29 @@ Active source files are expected in `source/` and are defined by `source/API551_
 ## Write policy
 
 - Do not push Figure candidates directly to `main`.
+- Do not push accepted Figure status changes directly to `main`.
 - Use a branch for new work.
-- Prefer a branch named `candidates/...` for Figure candidates.
+- Use an acceptance branch from `candidates` for accepted Figure integration, normally `accept-figNN-YYYYMMDD`.
+- Do not use branch names under `candidates/...` while a real branch named `candidates` exists; use `figNN-*` or `accept-figNN-*` names instead.
 - For rules/playbook updates, use a dedicated branch and PR.
 - Never delete archive evidence.
+
+## Acceptance pipeline
+
+When the user explicitly writes that a Figure is accepted, such as `Рисунок 51 принят` or `51 принят`, follow `docs/rules/STAGE4_ACCEPTANCE_PIPELINE_CURRENT_2026-06-26.md`.
+
+The required chain is:
+
+1. source gate;
+2. acceptance branch from `candidates`;
+3. coherent Figure/status/catalog/index/CI update;
+4. PR into `candidates`;
+5. merge only after checks;
+6. delete temporary acceptance branch after merge unless audit preservation is required;
+7. later promote `candidates` into `main` by PR, not by direct push;
+8. delete obsolete temporary candidate/acceptance branches after successful promotion.
+
+If the current toolchain cannot safely commit binary/LFS Figure assets, stop and return a verified overlay ZIP plus local Git/LFS instructions instead of opening an incomplete PR.
 
 ## Output policy
 
