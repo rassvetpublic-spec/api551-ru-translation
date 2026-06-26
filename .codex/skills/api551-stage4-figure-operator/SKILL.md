@@ -1,6 +1,6 @@
 ---
 name: api551-stage4-figure-operator
-description: Use when creating, reviewing, or correcting API 551 Stage 4 composite Figure objects.
+description: Use when creating, reviewing, correcting, or accepting API 551 Stage 4 composite Figure objects.
 ---
 
 # API551 Stage 4 Figure Operator
@@ -16,10 +16,11 @@ Reproduce the accepted Stage 4 style instead of re-solving the task from scratch
 1. Accepted Figure object and explicitly approved user corrections for that Figure.
 2. `source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md`.
 3. `.codex/skills/api551-stage4-figure-operator/LABEL_PLACEMENT_AND_CLEARING_STRATEGY_CURRENT.md` for label cleanup, placement, callout frames, and protected-geometry strategy.
-4. `source/TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md`.
-5. `source/api551_approved_label_master_v1.csv`.
-6. Source crop and original PDF visual reference.
-7. OCR only as a checking aid, never as source of truth.
+4. `docs/rules/STAGE4_ACCEPTANCE_PIPELINE_CURRENT_2026-06-26.md` for user acceptance, merge chain, promotion to `main`, and temporary-branch cleanup.
+5. `source/TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md`.
+6. `source/api551_approved_label_master_v1.csv`.
+7. Source crop and original PDF visual reference.
+8. OCR only as a checking aid, never as source of truth.
 
 ## Current Stage 4 status to verify
 
@@ -99,6 +100,23 @@ Do not translate, erase, or reinterpret:
 6. For new/changed Figures, use a small batch, normally one to three Figures.
 7. Produce a branch/PR or diff-only ZIP, not a cumulative package.
 
+## Accepted Figure workflow
+
+When the user explicitly writes that a Figure is accepted, such as `Рисунок 51 принят` or `51 принят`, follow `docs/rules/STAGE4_ACCEPTANCE_PIPELINE_CURRENT_2026-06-26.md`.
+
+The acceptance workflow is:
+
+1. run source gate and verify current `main`, `candidates`, catalog, index, workspace files, and CI;
+2. create an acceptance branch from `candidates`, normally `accept-figNN-YYYYMMDD`;
+3. apply the accepted Figure files and update status/catalog/index/CI expectations coherently;
+4. open PR into `candidates`;
+5. merge into `candidates` only after checks pass or after explicit user risk acceptance;
+6. delete the temporary acceptance branch after merge unless audit preservation is required;
+7. later promote accepted work from `candidates` to `main` by PR;
+8. delete obsolete temporary candidate/acceptance branches after successful promotion.
+
+If binary/LFS assets cannot be committed safely, stop and return a verified overlay ZIP plus exact local Git/LFS instructions. Do not create a status-only PR with stale image assets.
+
 ## Required report
 
 For each batch, report:
@@ -107,6 +125,8 @@ For each batch, report:
 - source gate result;
 - files touched;
 - checks passed;
+- PR and merge target, when applicable;
+- branches deleted or intentionally retained;
 - items requiring manual visual review.
 
 Do not paste large HTML, JSON, CSV, or image previews into chat.
