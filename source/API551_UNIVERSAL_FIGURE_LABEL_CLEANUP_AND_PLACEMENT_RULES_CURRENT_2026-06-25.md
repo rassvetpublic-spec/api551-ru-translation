@@ -243,3 +243,23 @@ Origin: rules and strategies consolidated from the active discussion of Figure l
 11.13. Verify cleanup, text completeness, geometry, protected graphics, and changed files.
 
 11.14. Keep the Figure in review until explicit approval.
+
+## 12. Artifact handoff freshness
+
+12.1. After any correction, rebuild every downloadable artifact from the corrected working files before giving the user a download link.
+
+12.2. Do not treat a previously offered file path, uploaded file object, or sandbox link as proof that the current correction is inside the artifact.
+
+12.3. Before posting a download link, verify the exact final path that will be linked in the response.
+
+12.4. For ZIP packages, open the final ZIP, list its members, extract it into a fresh verification folder, and inspect the corrected inner file from that extracted copy.
+
+12.5. For Figure packages, inspect the extracted `workspace/figures/NNN/figure_NNN.png` after final ZIP creation. Checking only the working-copy PNG is insufficient.
+
+12.6. If the fixed output filename cannot be overwritten because of permissions, caching, connector upload behavior, or any other runtime issue, do not link the stale fixed filename. Create a new uniquely named artifact, verify that new artifact, and state why the fixed filename was not reused.
+
+12.7. Prefer revisioned filenames for iterative corrections, for example `FIGURE_51_CANDIDATE_R02.ZIP`, unless the user explicitly requires a fixed filename.
+
+12.8. The final response that includes a download link must include a freshness marker from the verified final artifact: SHA-256, file size, modified time, or a concise note that the linked ZIP was extracted and the corrected inner file was inspected.
+
+12.9. If final artifact verification fails, stop and report the failure. Do not claim that the download contains the correction.
