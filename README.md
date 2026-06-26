@@ -6,7 +6,7 @@ Working repository for the API 551 Russian technical translation project.
 
 - `source/` - current active source package for the independent final rebuild.
 - `workspace/figures/` - Stage 4 figure objects and review/export artifacts.
-- `docs/` - project documentation and run logs.
+- `docs/` - project documentation, workflow rules, and run logs.
 - `archive/` - preserved superseded files, archived source packages, extracted QA/reference evidence, and cleanup history.
 - `scripts/` - non-root helper scripts and legacy fallback tools.
 - `.github/workflows/` - repository checks.
@@ -48,6 +48,10 @@ Archived source packages in `archive/source-packages/`:
 3. `api551_control_build_v1.zip`
 
 The reference index in `archive/extracted-reference/` records useful ZIP members for QA/audit/traceability only. The selected members remain inside the archived ZIP packages and are forbidden as generation input for the final one-pass rebuild.
+
+## Workflow rules
+
+- `docs/rules/STAGE4_ACCEPTANCE_PIPELINE_CURRENT_2026-06-26.md` defines the mandatory chain for user-accepted Figures: source gate, acceptance branch from `candidates`, PR into `candidates`, later PR from `candidates` into `main`, and cleanup of temporary branches.
 
 ## Notes
 
