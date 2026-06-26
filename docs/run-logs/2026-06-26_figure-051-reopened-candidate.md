@@ -15,10 +15,20 @@ Source basis:
 - Active policy: `source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md`.
 - Universal addendum: `source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md`.
 
+R02 correction:
+- Problem found in R01: the top clearance callout used a 3-line layout.
+- Non-compliance: the line wrap did not follow the approved master wrap for block-002 and made the last line too wide toward the leader-line zone.
+- Fix: restored the approved 4-line wrap and recalculated placement geometry with compact text left of the leader line.
+- Final top wrap:
+  - `Предусмотреть свободное`
+  - `пространство для устройства`
+  - `прочистки 760 мм (30″) или`
+  - `более`
+
 Generated local artifact:
-- ZIP: `API551_STAGE4_FIG51_CANDIDATE_2026-06-26.zip`.
-- ZIP SHA-256: `c7613e707402d18583f0cec6d65dfdbeb8810991b44e75619dde9551e72f9c4b`.
-- ZIP size: 118008 bytes.
+- ZIP: `API551_STAGE4_FIG51_CANDIDATE_R02_2026-06-26.zip`.
+- ZIP SHA-256: `5f6f97359c701ced688fcdd1b2184f9672dd683ab1eee917474734cbf1d5083a`.
+- ZIP size: 127354 bytes.
 - ZIP members: 8.
 
 Generated figure assets inside ZIP:
@@ -31,6 +41,14 @@ Generated figure assets inside ZIP:
 - root `index.html`.
 - `docs/run-logs/figure_051_candidate_qa.json`.
 
+Verification summary:
+- ZIP opened successfully.
+- `testzip` passed.
+- Extracted `workspace/figures/051/figure_051.png` was inspected from the final ZIP.
+- PNG SHA-256: `c0636e2936bab434d26972c75da22fd8b49d6968b6f6cbc493ed4478e34735db`.
+- PDF was not included in ZIP.
+- `out.html` has no service markers and no absolute Windows PDF path.
+
 Important note:
 - Current `main` previously promoted Figure 51 to accepted on 2026-06-26.
-- This handoff records the user's explicit reopening instruction and the local candidate ZIP hash for review.
+- This handoff records the user's explicit reopening instruction and the corrected local candidate ZIP hash for review.
