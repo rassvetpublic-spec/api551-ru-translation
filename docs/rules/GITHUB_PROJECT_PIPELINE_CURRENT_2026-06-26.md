@@ -108,7 +108,8 @@ For local execution scripts, follow the user-wide rule:
 3. provide a short `Downloads` launch command;
 4. script must verify repo, branch, and target state;
 5. script must stop on error;
-6. destructive operations require explicit confirmation inside the script.
+6. destructive operations require explicit confirmation inside the script;
+7. script delivery must follow the PowerShell validation gate in Section 14.
 
 Standard launch command pattern:
 
@@ -261,3 +262,129 @@ Do not:
 6. mass-delete branches without explicit confirmation;
 7. change approved API 551 translations without grounds;
 8. use image generation or generative image editing for API 551.
+
+## 14. PowerShell script validation gate
+
+Every `.ps1` delivered to the user must include an explicit validation status in the final response.
+
+Allowed validation statuses:
+
+```text
+PS1 validation: PASSED by PowerShell parser + PSScriptAnalyzer
+PS1 validation: PASSED by PowerShell parser; PSScriptAnalyzer unavailable
+PS1 validation: STATIC ONLY, no PowerShell runtime available
+PS1 validation: FAILED — file not delivered
+```
+
+Do not imply that a `.ps1` was fully validated unless it was actually parsed by PowerShell parser and, when available, checked by PSScriptAnalyzer.
+
+Minimum static checks before delivering any `.ps1`:
+
+1. file exists and is non-empty;
+2. size and SHA-256 are reported;
+3. encoding is identified;
+4. no long script body is pasted into chat;
+5. file extension is `.ps1`, not ZIP, unless ZIP is explicitly requested;
+6. no accidental placeholders, debug paths, or unrelated project files are included;
+7. `$ErrorActionPreference = "Stop"` or equivalent fail-fast behavior is present unless intentionally not applicable;
+8. external commands such as `git`, `gh`, `powershell`, or `pwsh` are invoked safely, preferably through argument arrays rather than unescaped command strings;
+9. destructive operations are gated by repository/path checks or explicit confirmation.
+
+## 15. PowerShell parser and analyzer rules
+
+When a PowerShell runtime is available, validate syntax before delivery with the PowerShell parser:
+
+```powershell
+$tokens = $null
+$errors = $null
+[System.Management.Automation.Language.Parser]::ParseFile($Path, [ref]$tokens, [ref]$errors) | Out-Null
+if ($errors.Count -gt 0) { $errors | Format-List *; exit 1 }
+```
+
+When PSScriptAnalyzer is available, also run:
+
+```powershell
+Invoke-ScriptAnalyzer -Path $Path -Severity Error,Warning -ReportSummary
+```
+
+For CI or strict mode, use:
+
+```powershell
+Invoke-ScriptAnalyzer -Path $Path -Severity Error,Warning -EnableExit
+```
+
+If `pwsh`/`powershell` is not available in the assistant runtime, the assistant must not claim full validation. Use `STATIC ONLY` unless validation was performed through another reliable PowerShell runtime such as GitHub Actions or the user's local validation wrapper.
+
+## 16. ValidateOnly / DryRun requirement
+
+Scripts that perform GitHub, Git, filesystem, branch, merge, reset, clean, delete, or force operations should include one of these validation modes where feasible:
+
+```text
+-ValidateOnly
+-DryRun
+-WhatIf
+```
+
+The validation mode should check preconditions without performing the destructive or state-changing action:
+
+1. required commands exist (`git`, `gh`, `pwsh`, `powershell` as applicable);
+2. repository remote is correct;
+3. branch/base/head match the expected values;
+4. target path is inside the intended project directory;
+5. requested PR/commit/head SHA matches the expected value;
+6. destructive action would be limited to the expected file, branch, or directory.
+
+High-risk scripts require either parser/analyzer validation before delivery or explicit `STATIC ONLY` disclosure plus user confirmation before use. High-risk operations include:
+
+```text
+git reset --hard
+git clean -fd
+git push
+git push --force
+git branch -D
+gh pr merge
+gh api DELETE
+remote branch deletion
+file deletion
+force ref update
+```
+
+## 17. Local validate-and-run wrapper
+
+Preferred fast path for ordinary `.ps1` scripts is a persistent local wrapper named like:
+
+```text
+api551_validate_and_run_ps1.ps1
+```
+
+The wrapper should:
+
+1. find the newest target script in `Downloads` by pattern;
+2. run PowerShell parser validation on the target script;
+3. run PSScriptAnalyzer if installed, but not require internet access;
+4. stop before execution on parser errors;
+5. optionally warn but allow continuation on analyzer warnings when the user confirms;
+6. execute the target only after validation passes;
+7. print the target file path, SHA-256, validation result, and exit code.
+
+For ordinary scripts, delivery may state that full validation is expected to occur through the local wrapper immediately before execution. For dangerous scripts, prefer GitHub Actions validation or a script-specific local parser/analyzer run before the user executes state-changing operations.
+
+## 18. GitHub Actions validation option
+
+Use GitHub Actions validation when a script is high-risk, multi-file, CI-sensitive, or when the user asks for pre-delivery validation and local validation is not acceptable.
+
+Preferred runner for Windows-specific PowerShell scripts:
+
+```yaml
+runs-on: windows-latest
+```
+
+A PS1 validation workflow should run at least:
+
+```text
+PowerShell parser check
+PSScriptAnalyzer when installable/available
+project-specific forbidden-pattern checks
+```
+
+Do not use GitHub Actions for every ordinary small script by default because it adds significant latency. Use the local wrapper as the default fast validation path and GitHub Actions as the stricter/high-risk path.
