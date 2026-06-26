@@ -130,6 +130,16 @@ Origin: rules and strategies consolidated from the active discussion of Figure l
 
 6.14. Do not use the translated box as the source-text cleanup mask.
 
+6.15. If the original callout uses a gray or light-gray frame, the replacement callout must preserve that visible gray frame style unless a stricter figure-specific approved rule says otherwise.
+
+6.16. The visible clearance from the rendered text ink to the inside edge of the callout frame must be 3 to 5 px on all sides, except where a documented figure-specific constraint makes that physically impossible.
+
+6.17. A required leader-line callout frame must touch the leader line at the corresponding contact side. A visible gap between the frame and the leader line is a defect unless the source figure itself has that gap.
+
+6.18. The callout frame must not cross, cover, erase, or overwrite the leader line or any other drawing line. The frame may touch a leader line, but it must not overlap protected drawing geometry.
+
+6.19. If a compact frame with 3 to 5 px padding would overlap drawing geometry, adjust line breaks, font size, or placement away from the protected geometry. Do not solve this by masking, erasing, or drawing over protected lines.
+
 ## 7. Text fitting inside boxes and callouts
 
 7.1. Select the translation line-break strategy before calculating the box.
@@ -188,9 +198,15 @@ Origin: rules and strategies consolidated from the active discussion of Figure l
 
 9.8. Verify that the box touches but does not cross the leader line.
 
-9.9. Verify that only intended Figure files changed.
+9.9. Verify that callout text has 3 to 5 px visible clearance to the inside frame edge.
 
-9.10. If unexpected files changed, stop and report before proceeding.
+9.10. Verify that gray/light-gray source callout frames remain gray/light-gray after replacement.
+
+9.11. Verify that the callout frame does not overlap any protected drawing line other than allowed tangent contact with the leader line.
+
+9.12. Verify that only intended Figure files changed.
+
+9.13. If unexpected files changed, stop and report before proceeding.
 
 ## 10. Prohibited strategies
 
@@ -213,6 +229,12 @@ Origin: rules and strategies consolidated from the active discussion of Figure l
 10.9. Do not clip translation letters to preserve a smaller box.
 
 10.10. Do not improve a label at the cost of damaging the drawing.
+
+10.11. Do not leave an avoidable gap between a required callout frame and its leader line.
+
+10.12. Do not use an oversized frame or excessive padding to avoid text-fitting work.
+
+10.13. Do not draw a callout frame over protected drawing lines.
 
 ## 11. Universal workflow
 
