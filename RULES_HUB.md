@@ -74,5 +74,6 @@ Local Project Instructions, ACTIVE/CURRENT files, and API551 CURRENT policy/rule
 
 ## Local workflow addenda
 
+- `docs/API551_PROJECT_QUICK_START_CURRENT.md` - compact current onboarding/source-gate/handoff helper. It is not a source of truth and does not replace `source/API551_SOURCE_MANIFEST_CURRENT.json` or CURRENT policy/rules.
 - `docs/rules/GITHUB_PROJECT_PIPELINE_CURRENT_2026-06-26.md` - local GitHub workflow addendum for connector use, local `.ps1` fallback, PR/merge checks, branch cleanup, and reporting. If a more specific CURRENT project workflow file conflicts with this addendum, the more specific file controls.
 - `docs/rules/STAGE4_ACCEPTANCE_PIPELINE_CURRENT_2026-06-26.md` - mandatory workflow rule for user-accepted Figure objects, merge into `candidates`, promotion into `main`, and cleanup of temporary branches.
