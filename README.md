@@ -51,6 +51,7 @@ The reference index in `archive/extracted-reference/` records useful ZIP members
 
 ## Workflow rules
 
+- `docs/API551_PROJECT_QUICK_START_CURRENT.md` is a compact current onboarding/source-gate/handoff helper. It preserves useful earlier project notes but is not a source of truth and does not replace the manifest or CURRENT policy/rules.
 - `docs/rules/STAGE4_ACCEPTANCE_PIPELINE_CURRENT_2026-06-26.md` defines the mandatory chain for user-accepted Figures: source gate, acceptance branch from `candidates`, PR into `candidates`, later PR from `candidates` into `main`, and cleanup of temporary branches.
 
 ## Notes
