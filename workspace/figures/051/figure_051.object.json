@@ -218,7 +218,7 @@
     "boxed_callout_rule": "gray outline only; white interior; no solid gray fill",
     "out_html_clean": true,
     "object_html_service": true,
-    "status_consistency": "object files mark changed/review, not accepted"
+    "status_consistency": "object files/catalog mark accepted after user approval on 2026-07-01"
   },
   "ready_for_final_export": true,
   "do_not_touch_after_approval": true,
