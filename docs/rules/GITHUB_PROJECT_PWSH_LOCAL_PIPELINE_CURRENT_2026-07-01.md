@@ -206,23 +206,19 @@ files diff = []
 
 ## 13. Синхронизация candidates после promotion
 
-Когда PR `candidates -> main` смёржен и `candidates` не содержит уникальных изменений, можно синхронизировать `candidates` до `main`.
+Когда PR `candidates -> main` смёржен и `candidates` не содержит уникальных изменений, можно синхронизировать `candidates` до `main` и убрать временные ветки.
 
-Использовать:
-
-```text
-scripts/api551_cleanup_merged_branches_pwsh.ps1
-```
-
-Скрипт должен:
+На уровне документации фиксируются обязательные safety-условия:
 
 1. явно fetch-ить `main` и `candidates`, включая single-branch clone case;
 2. проверять ahead/behind;
-3. запрещать сброс, если `candidates ahead_by > 0`;
-4. fast-forward/sync `candidates` до `main`, если это безопасно;
+3. запрещать синхронизацию, если `candidates ahead_by > 0`;
+4. синхронизировать `candidates` до `main` только после успешного promotion PR;
 5. удалять только явно перечисленные временные ветки;
-6. требовать подтверждение `CLEANUP`;
+6. требовать явное подтверждение перед изменениями;
 7. после cleanup приводить локальную рабочую папку к чистому `origin/candidates`.
+
+Repo-скрипт для этой операции не фиксируется в `main`, пока не пройдёт отдельную проверку парсером `pwsh` и dry-run на локальном checkout. Для разовой операции допустим verified downloaded `.ps1`, запущенный через `api551_validate_and_run_ps1_pwsh.ps1`.
 
 ## 14. Удаление временных веток
 
