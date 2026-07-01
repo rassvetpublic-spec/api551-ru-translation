@@ -314,3 +314,51 @@ Origin: rules and strategies consolidated from the active discussion of Figure l
 * рамка не перекрывает графику,
 
 объект переводится в manual review.
+
+## Mandatory leader-line callout rendering gate
+
+This section makes the existing boxed / leader-line callout placement rule an explicit pre-delivery gate.
+
+1. Any translated on-image label connected with a leader line, pointer line, arrow, callout pointer, callout box, or local callout explanation must be classified as a `leader_line_callout`, even when the master CSV block type is only `callout` or `dimension_or_callout`.
+
+2. Free-floating replacement text is prohibited for `leader_line_callout` labels unless a figure-specific approved rule explicitly allows it.
+
+3. Default `leader_line_callout` rendering must use a thin gray frame. The frame interior must remain white or transparent unless a figure-specific approved rule requires a fill.
+
+4. The frame must be compact and text-driven, with normal padding of approximately 3 to 5 px.
+
+5. The frame must be placed as close as practical to the corresponding leader line or source callout anchor.
+
+6. If the source callout touched a leader line, the replacement frame must also touch the corresponding leader line whenever this can be done without damaging protected graphics.
+
+7. If exact contact would cross, cover, or erase a leader line, arrow, contour, dimension line, or other protected graphic, use the smallest safe gap and record that exception in object JSON QA notes.
+
+8. The replacement frame must not overlap, cross, erase, or visually merge with leader lines, arrows, equipment outlines, pipe/nozzle contours, dimension lines, table borders, or other protected graphics.
+
+9. Gray-frame rendering is required for every translated leader-line callout before review ZIP delivery. If any label fails this rule, do not deliver the ZIP; stop and report the failing label and reason.
+
+10. Before packaging a Figure review overlay, run per-label QA for every translated on-image label:
+
+   * source block id or local label id;
+   * original text;
+   * approved Russian text;
+   * selected strategy;
+   * source cleanup complete;
+   * gray frame present when strategy is `leader_line_callout`;
+   * frame close/contact relation to leader line checked;
+   * protected graphics intersection is none;
+   * no free-floating callout text remains.
+
+11. If a callout label cannot be placed in a gray frame near its leader line without damaging protected graphics, stop and escalate to manual review rather than delivering an approximate layout.
+
+## Figure 2 — Thermowell Installation specific rule
+
+1. In Figure 2, all translated on-image labels except protected pure dimensions must be rendered as compact gray-framed leader-line callouts.
+
+2. `6.35 mm (0.250 in.)` and `Sheathed element` must be treated as one two-line callout in one thin gray frame: `6,35 мм (0.250″)` on the first line and `Элемент в оболочке` on the second line.
+
+3. The Figure 2 callout frames must be as close as practical to their corresponding leader lines and must not overlap leader lines, pipe outlines, thermowell outlines, flange outlines, dimension lines, note references, or other protected drawing elements.
+
+4. `120 mm (5 in.) TYP` remains a protected pure linear dimension and must not be translated unless the user explicitly reopens that decision.
+
+5. Figure 2 may not be delivered as a review overlay if any translated callout is free-floating text without a thin gray frame.
