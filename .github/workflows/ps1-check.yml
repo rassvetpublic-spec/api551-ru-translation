@@ -1,0 +1,64 @@
+name: PowerShell script check
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ps1-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate PowerShell scripts with pwsh parser
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $paths = @()
+          if (Test-Path -LiteralPath "api551_pull.ps1") { $paths += "api551_pull.ps1" }
+          if (Test-Path -LiteralPath "scripts") {
+            $paths += Get-ChildItem -LiteralPath "scripts" -Filter "*.ps1" -File | Sort-Object FullName | ForEach-Object { $_.FullName }
+          }
+          if ($paths.Count -eq 0) {
+            throw "No PowerShell scripts found"
+          }
+          foreach ($path in $paths) {
+            Write-Host "Parsing $path"
+            $tokens = $null
+            $errors = $null
+            [System.Management.Automation.Language.Parser]::ParseFile($path, [ref]$tokens, [ref]$errors) | Out-Null
+            if ($errors.Count -gt 0) {
+              $errors | Format-List * | Out-String | Write-Host
+              throw "PowerShell parser failed for $path"
+            }
+          }
+          Write-Host "PowerShell parser validation OK for $($paths.Count) scripts"
+
+      - name: Check local pipeline docs mention pwsh
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $required = @(
+            "docs/rules/GITHUB_PROJECT_PWSH_LOCAL_PIPELINE_CURRENT_2026-07-01.md",
+            "docs/runbooks/API551_LOCAL_PWSH_PIPELINE_CURRENT_2026-07-01.md",
+            "scripts/api551_validate_and_run_ps1_pwsh.ps1",
+            "scripts/api551_sync_candidates_pwsh.ps1",
+            "scripts/api551_check_pr_pwsh.ps1",
+            "scripts/api551_overlay_sanity_pwsh.ps1"
+          )
+          foreach ($path in $required) {
+            if (-not (Test-Path -LiteralPath $path -PathType Leaf)) {
+              throw "Missing required local pipeline file: $path"
+            }
+          }
+          foreach ($path in $required[0..1]) {
+            $text = Get-Content -LiteralPath $path -Raw -Encoding UTF8
+            if ($text -notmatch "pwsh") {
+              throw "Required doc does not mention pwsh: $path"
+            }
+          }
+          Write-Host "Local pwsh pipeline docs/tools check OK"
