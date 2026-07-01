@@ -118,199 +118,48 @@ Origin: rules and strategies consolidated from the active discussion of Figure l
 
 6.8. The box side adjacent to the leader line is fixed by the leader-line contact point.
 
-6.9. The box may expand only away from the leader line.
+## 7. Mandatory leader-line callout rendering gate
 
-6.10. If the leader line is on the right side of the box, expand the box leftward.
+7.1. Any translated on-image label connected with a leader line, pointer line, arrow, callout pointer, callout box, or local callout explanation must be classified as a `leader_line_callout`, even when the master CSV block type is only `callout` or `dimension_or_callout`.
 
-6.11. If the leader line is on the left side of the box, expand the box rightward.
+7.2. Free-floating replacement text is prohibited for `leader_line_callout` labels unless a figure-specific approved rule explicitly allows it.
 
-6.12. If the leader line is above or below, expand the box away from that side while preserving the contact side.
+7.3. Default `leader_line_callout` rendering must use a thin gray frame. The frame interior must remain white or transparent unless a figure-specific approved rule requires a fill.
 
-6.13. Draw the translated box after source-text cleanup.
+7.4. The frame must be compact and text-driven, with normal padding of approximately 3 to 5 px.
 
-6.14. Do not use the translated box as the source-text cleanup mask.
+7.5. The frame must be placed as close as practical to the corresponding leader line or source callout anchor.
 
-## 7. Text fitting inside boxes and callouts
+7.6. If the source callout touched a leader line, the replacement frame must also touch the corresponding leader line whenever this can be done without damaging protected graphics.
 
-7.1. Select the translation line-break strategy before calculating the box.
+7.7. If exact contact would cross, cover, or erase a leader line, arrow, contour, dimension line, or other protected graphic, use the smallest safe gap and record that exception in object JSON QA notes.
 
-7.2. The line-break strategy includes exact text, number of lines, font, font size, line spacing, and alignment.
+7.8. The replacement frame must not overlap, cross, erase, or visually merge with leader lines, arrows, equipment outlines, pipe/nozzle contours, dimension lines, table borders, or other protected graphics.
 
-7.3. Measure every rendered line in the selected font and size.
+7.9. Gray-frame rendering is required for every translated leader-line callout before review ZIP delivery. If any label fails this rule, do not deliver the ZIP; stop and report the failing label and reason.
 
-7.4. Determine box width from the longest rendered line plus padding.
+7.10. Before packaging a Figure review overlay, run per-label QA for every translated on-image label:
 
-7.5. Determine box height from total rendered line height, line spacing, and padding.
+- source block id or local label id;
+- original text;
+- approved Russian text;
+- selected strategy;
+- source cleanup complete;
+- gray frame present when strategy is `leader_line_callout`;
+- frame close/contact relation to leader line checked;
+- protected graphics intersection is none;
+- no free-floating callout text remains.
 
-7.6. If a line is clipped, the box width/height is wrong and must be recalculated.
+7.11. If a callout label cannot be placed in a gray frame near its leader line without damaging protected graphics, stop and escalate to manual review rather than delivering an approximate layout.
 
-7.7. If text, line breaks, font, font size, or line spacing change, repeat the measurement and box sizing.
+## 8. Figure 2 — Thermowell Installation specific rule
 
-7.8. For multiline labels, the longest line controls minimum box width.
+8.1. In Figure 2, all translated on-image labels except protected pure dimensions must be rendered as compact gray-framed leader-line callouts.
 
-7.9. The final text must not lose letters, endings, units, punctuation, or symbols.
+8.2. `6.35 mm (0.250 in.)` and `Sheathed element` must be treated as one two-line callout in one thin gray frame: `6,35 мм (0.250″)` on the first line and `Элемент в оболочке` on the second line.
 
-7.10. Translation text should be visually centered within the box unless source layout or figure-specific rules require another alignment.
+8.3. The Figure 2 callout frames must be as close as practical to their corresponding leader lines and must not overlap leader lines, pipe outlines, thermowell outlines, flange outlines, dimension lines, note references, or other protected drawing elements.
 
-7.11. If text does not fit compactly, first test alternative line breaks, then test acceptable font-size reduction. Do not silently truncate text.
+8.4. `120 mm (5 in.) TYP` remains a protected pure linear dimension and must not be translated unless the user explicitly reopens that decision.
 
-7.12. Iteration continues until the best variant satisfies all fit, cleanup, and protected-graphics conditions.
-
-## 8. Multiline label strategy
-
-8.1. Multiline translation is not a fixed string dump; it is a layout decision.
-
-8.2. Line breaks must preserve meaning and technical readability.
-
-8.3. Line breaks must not create ambiguous units or split critical numeric expressions incorrectly.
-
-8.4. The longest line must be remeasured after every line-break change.
-
-8.5. Height must account for all lines, interline spacing, and padding.
-
-8.6. A visually good multiline label must still be checked for hidden clipping at glyph edges.
-
-## 9. Verification criteria
-
-9.1. Verify that the original source text is fully removed.
-
-9.2. Verify that no isolated source glyphs or text fragments remain.
-
-9.3. Verify that the Russian translation is complete and technically correct.
-
-9.4. Verify that no translated letters are clipped.
-
-9.5. Verify that leader lines, arrows, outlines, dimensions, frames, and neighboring drawing elements are not damaged.
-
-9.6. Verify that boxed callouts remain compact and visually aligned with the original callout logic.
-
-9.7. Verify that leader-line contact is preserved where applicable.
-
-9.8. Verify that the box touches but does not cross the leader line.
-
-9.9. Verify that only intended Figure files changed.
-
-9.10. If unexpected files changed, stop and report before proceeding.
-
-## 10. Prohibited strategies
-
-10.1. Do not place free text when the source uses a required boxed callout.
-
-10.2. Do not size a replacement box from a large source cleanup area.
-
-10.3. Do not treat placement and cleanup as the same operation.
-
-10.4. Do not expand a box into or through its leader line.
-
-10.5. Do not erase protected graphics during text cleanup.
-
-10.6. Do not leave source-text remnants behind a visually acceptable translation.
-
-10.7. Do not choose box size before finalizing the text layout.
-
-10.8. Do not change line breaks or font and reuse an old box size.
-
-10.9. Do not clip translation letters to preserve a smaller box.
-
-10.10. Do not improve a label at the cost of damaging the drawing.
-
-## 11. Universal workflow
-
-11.1. Identify the source label and its visual components.
-
-11.2. Confirm the approved translation.
-
-11.3. Select the replacement strategy.
-
-11.4. Detect protected graphics around the label.
-
-11.5. Compute a safe cleanup operation for source text only.
-
-11.6. Select translation line breaks, font, size, and spacing.
-
-11.7. Measure all rendered translation lines.
-
-11.8. Compute the replacement placement geometry from the measured translation.
-
-11.9. For boxed/leader-line callouts, fix the leader-line side and expand the box away from the leader line.
-
-11.10. Clear source text without damaging protected graphics.
-
-11.11. Draw the replacement frame/box if required.
-
-11.12. Draw the translated text.
-
-11.13. Verify cleanup, text completeness, geometry, protected graphics, and changed files.
-
-11.14. Keep the Figure in review until explicit approval.
-
-## 12. Artifact handoff freshness
-
-12.1. After any correction, rebuild every downloadable artifact from the corrected working files before giving the user a download link.
-
-12.2. Do not treat a previously offered file path, uploaded file object, or sandbox link as proof that the current correction is inside the artifact.
-
-12.3. Before posting a download link, verify the exact final path that will be linked in the response.
-
-12.4. For ZIP packages, open the final ZIP, list its members, extract it into a fresh verification folder, and inspect the corrected inner file from that extracted copy.
-
-12.5. For Figure packages, inspect the extracted `workspace/figures/NNN/figure_NNN.png` after final ZIP creation. Checking only the working-copy PNG is insufficient.
-
-12.6. If the fixed output filename cannot be overwritten because of permissions, caching, connector upload behavior, or any other runtime issue, do not link the stale fixed filename. Create a new uniquely named artifact, verify that new artifact, and state why the fixed filename was not reused.
-
-12.7. Prefer revisioned filenames for iterative corrections, for example `FIGURE_51_CANDIDATE_R02.ZIP`, unless the user explicitly requires a fixed filename.
-
-12.8. The final response that includes a download link must include a freshness marker from the verified final artifact: SHA-256, file size, modified time, or a concise note that the linked ZIP was extracted and the corrected inner file was inspected.
-
-12.9. If final artifact verification fails, stop and report the failure. Do not claim that the download contains the correction.
-
-## Boxed / leader-line callout placement rule
-
-После удаления исходной надписи:
-
-1. Определить вариант написания перевода:
-
-   * точный текст;
-   * число строк;
-   * переносы;
-   * размер шрифта;
-   * межстрочный интервал.
-
-2. Измерить фактические границы отрисованных букв перевода.
-
-3. Построить тонкую серую рамку вокруг перевода так, чтобы расстояние от краёв букв до внутреннего края рамки было 3–5 px со всех сторон.
-
-4. Разместить рамку так, чтобы она касалась выносной линии, если выносная линия есть.
-
-5. Если к одному callout подходят две выносные линии, рамка должна касаться обеих выносных линий в соответствующих точках контакта.
-
-6. Рамка может касаться выносной линии, но не должна:
-
-   * перекрывать выносную линию;
-   * пересекать выносную линию;
-   * закрывать линии рисунка;
-   * повреждать контуры, стрелки, размеры, таблицы и другие защищённые элементы.
-
-7. Перевод должен полностью помещаться внутри этой рамки.
-
-8. Если перевод не помещается:
-
-   * сначала пробовать расширить рамку в сторону, противоположную от выносной линии;
-   * при двух выносных линиях расширять только в безопасную сторону, не нарушая оба контакта;
-   * обязательно контролировать, что рамка не наезжает на другие элементы рисунка.
-
-9. Если расширение не решает проблему:
-
-   * попробовать другой вариант написания перевода;
-   * увеличить число строк;
-   * либо уменьшить число строк, если это даёт более компактную рамку;
-   * после каждого изменения заново измерить текст, пересчитать рамку и проверить контакты с выносными линиями.
-
-10. Если ни один вариант не удовлетворяет одновременно условиям:
-
-* зазор 3–5 px;
-* рамка касается нужных выносных линий;
-* перевод полностью помещается;
-* рамка не перекрывает графику,
-
-объект переводится в manual review.
+8.5. Figure 2 may not be delivered as a review overlay if any translated callout is free-floating text without a thin gray frame.
