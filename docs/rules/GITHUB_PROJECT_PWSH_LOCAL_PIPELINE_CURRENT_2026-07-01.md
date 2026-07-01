@@ -1,99 +1,139 @@
-# API 551 Local pwsh Pipeline
+# API 551 — локальный pipeline через pwsh
 
-Status: CURRENT operational addendum.
+Статус: CURRENT operational addendum.
 
-Date: 2026-07-01.
+Дата: 2026-07-01.
 
-Scope: local Windows execution, ChatGPT-assisted script handoff, overlay sanity checks, PR checks, and copy/paste command style for this repository.
+Область применения: локальная работа в Windows, передача `.ps1`-скриптов через ChatGPT, проверка overlay-пакетов, PR-проверки, слияние `candidates -> main`, синхронизация веток и правила копирования команд в терминал.
 
-Priority: this file supplements `docs/rules/GITHUB_PROJECT_PIPELINE_CURRENT_2026-06-26.md`. For accepted Stage 4 Figure objects, `docs/rules/STAGE4_ACCEPTANCE_PIPELINE_CURRENT_2026-06-26.md` remains the higher-priority acceptance policy.
+Приоритет: этот файл дополняет `docs/rules/GITHUB_PROJECT_PIPELINE_CURRENT_2026-06-26.md`. Для принятых Stage 4 Figure-объектов более приоритетным остаётся `docs/rules/STAGE4_ACCEPTANCE_PIPELINE_CURRENT_2026-06-26.md`.
 
-## 1. Default shell
+## 1. Язык документации и комментариев
 
-Use PowerShell 7 through `pwsh` for local commands and delivered `.ps1` scripts.
+Новые рабочие инструкции, runbook-файлы, поясняющие комментарии в `.ps1` и пользовательские handoff-команды для этого проекта писать по-русски.
 
-Do not use Windows PowerShell 5.1 through `powershell.exe` by default. Use it only when the user explicitly asks or when a legacy script requires it.
+Исключения допустимы только для:
 
-Reason: Windows PowerShell 5.1 has encoding and native-command stderr behavior that can break UTF-8 Cyrillic scripts and Git commands.
+1. имён команд, параметров, путей и GitHub/Git терминов;
+2. уже существующих upstream-файлов, которые не меняются в текущей задаче;
+3. технических строк, где английский текст является частью API, CLI или CI.
 
-## 2. Chat command format
+## 2. Основная оболочка
 
-When giving operational commands for copy/paste, provide one command line.
+Для локальных команд и доставляемых `.ps1` использовать PowerShell 7 через `pwsh`.
 
-Preferred format:
+Windows PowerShell 5.1 через `powershell.exe` по умолчанию не использовать. Он допустим только по явной просьбе пользователя или для legacy-скрипта, который требует именно 5.1.
+
+Причина: PowerShell 5.1 чаще ломает UTF-8/кириллицу и может превращать штатный stderr от `git` в ложную ошибку `NativeCommandError`.
+
+## 3. Команды для чата
+
+Если пользователь уже находится в открытом `pwsh` и видит prompt вида `PS C:\...>`, команды давать без внешнего `pwsh -Command`.
+
+Правильный формат для уже открытого `pwsh`:
 
 ```powershell
-pwsh -NoProfile -Command "Set-Location -LiteralPath 'C:\\GIT\\API 551'; git status"
+$D=(New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path; $Checker=(Get-ChildItem $D -Filter 'api551_validate_and_run_ps1_pwsh.ps1' | Sort-Object LastWriteTime -Descending | Select-Object -First 1).FullName; $Target=(Get-ChildItem $D -Filter 'api551_*_pwsh.ps1' | Where-Object { $_.Name -ne 'api551_validate_and_run_ps1_pwsh.ps1' } | Sort-Object LastWriteTime -Descending | Select-Object -First 1).FullName; & pwsh -NoProfile -ExecutionPolicy Bypass -File $Checker -TargetScript $Target -ValidateOnly
 ```
 
-Avoid multi-line terminal command blocks for routine operations because they are error-prone in the chat copy UI and can paste in the wrong order.
+Если пользователь находится не в `pwsh`, сначала дать короткую команду входа:
 
-## 3. Default local paths
+```powershell
+pwsh -NoProfile
+```
 
-Default local checkout:
+Затем дать одну строку для выполнения уже внутри `pwsh`.
+
+Не вкладывать `pwsh -Command "...$D..."` внутрь уже открытого `pwsh`: внешний интерпретатор может съесть переменные `$D`, `$Checker`, `$Target`, после чего появятся ошибки вида `=: The term '=' is not recognized`.
+
+## 4. Формат копирования
+
+Операционные команды давать одной физической строкой через `;`.
+
+Не использовать длинные многострочные блоки для ручной вставки в терминал: при копировании из чата порядок строк может нарушиться.
+
+Для сложных операций выдавать не тело скрипта в чат, а `.ps1`-файл и короткую команду запуска через проверяльщик.
+
+## 5. Локальные пути
+
+Путь локального checkout по умолчанию:
 
 ```text
-C:\\GIT\\API 551
+C:\GIT\API 551
 ```
 
-Downloaded helper scripts and overlay packages should be discovered from the user's Downloads folder:
+Скачанные скрипты и overlay-пакеты искать через системную папку Downloads:
 
 ```powershell
 $D=(New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path
 ```
 
-Do not hard-code a user profile Downloads path.
+Не зашивать `C:\Users\...\Downloads` вручную.
 
-## 4. Persistent validator/runner
+## 6. Постоянный проверяльщик скриптов
 
-Use `scripts/api551_validate_and_run_ps1_pwsh.ps1` as the persistent local wrapper.
+Основной wrapper:
 
-The wrapper must:
+```text
+scripts/api551_validate_and_run_ps1_pwsh.ps1
+```
 
-1. resolve `pwsh`;
-2. resolve the target script from Downloads or from `-TargetScript`;
-3. print target path, size, and SHA-256;
-4. run PowerShell parser validation;
-5. run PSScriptAnalyzer if locally available;
-6. stop on parser errors;
-7. execute the target with `pwsh` only after validation passes;
-8. return the target exit code.
+Он должен:
 
-## 5. Target script requirements
+1. найти `pwsh`;
+2. найти target-скрипт из Downloads или из `-TargetScript`;
+3. вывести путь, размер и SHA-256 target-скрипта;
+4. выполнить PowerShell parser validation;
+5. выполнить PSScriptAnalyzer, если он установлен локально;
+6. остановиться при parser errors;
+7. запускать target только после успешной проверки;
+8. вернуть exit code target-скрипта.
 
-Local target scripts that change filesystem, Git, GitHub, branches, PRs, or overlays should support:
+## 7. Требования к target-скриптам
+
+Скрипты, которые меняют файловую систему, Git, GitHub, ветки, PR или overlay, должны иметь режим:
 
 ```text
 -ValidateOnly
 ```
 
-`-ValidateOnly` should check preconditions and planned scope without changing state.
+`-ValidateOnly` проверяет предусловия и план действий, но не меняет состояние.
 
-High-risk scripts should also:
+High-risk скрипты также должны:
 
-1. verify repo origin;
-2. verify current branch or intended base branch;
-3. verify working tree state;
-4. verify target path is under the expected project folder;
-5. require explicit confirmation before reset, clean, delete, push, merge, or branch deletion;
-6. use argument arrays for external commands, not raw string concatenation.
+1. проверять `remote.origin.url`;
+2. проверять текущую/целевую ветку;
+3. проверять состояние рабочей папки;
+4. проверять, что путь находится внутри ожидаемого проекта;
+5. требовать явное подтверждение перед `reset`, `clean`, `delete`, `push`, `merge`, удалением веток;
+6. вызывать внешние команды массивом аргументов, а не склеенной строкой.
 
-## 6. Native command handling
+## 8. Обработка git/gh/pwsh в скриптах
 
-When wrapping external commands (`git`, `gh`, `pwsh`) inside PowerShell scripts:
+При обёртывании внешних команд (`git`, `gh`, `pwsh`) в PowerShell:
 
-1. capture exit code from `$LASTEXITCODE`;
-2. do not treat all stderr text as fatal by itself;
-3. handle expected Git stderr/status messages safely;
-4. fail only on non-zero exit unless the command is intentionally allowed to fail.
+1. читать код возврата из `$LASTEXITCODE`;
+2. не считать сам факт вывода в stderr ошибкой;
+3. нормально обрабатывать штатные сообщения Git, например `Already on 'candidates'`;
+4. падать только при ненулевом exit code, если команда не помечена как допустимо падающая.
 
-This prevents false failures from messages such as `Already on 'candidates'`.
+## 9. Single-branch clone
 
-## 7. Figure overlay sanity
+Локальный checkout может быть создан как single-branch `candidates`. В таком случае `origin/main` может отсутствовать локально даже при наличии remote-ветки `main`.
 
-Figure overlay ZIPs intended for unpacking over the repository must contain only project-relative paths.
+Перед проверкой или синхронизацией `main` и `candidates` скрипт должен явно подтянуть обе remote-tracking ветки:
 
-Allowed examples:
+```powershell
+git fetch origin +refs/heads/main:refs/remotes/origin/main +refs/heads/candidates:refs/remotes/origin/candidates --prune
+```
+
+Нельзя полагаться только на `git fetch origin --prune`, если дальше используется `git rev-parse origin/main`.
+
+## 10. Проверка overlay ZIP
+
+Overlay ZIP для наложения на репозиторий должен содержать только project-relative paths.
+
+Разрешённый пример:
 
 ```text
 workspace/figures/051/figure_051.png
@@ -103,7 +143,7 @@ workspace/figures/051/figure_051.object.html
 workspace/figures/051/figure_051.out.html
 ```
 
-Forbidden in overlay root unless explicitly requested:
+Запрещено в корне overlay без отдельного решения:
 
 ```text
 README_*.md
@@ -113,42 +153,129 @@ temp/*
 *.log
 ```
 
-Use `scripts/api551_overlay_sanity_pwsh.ps1` before applying an overlay.
+Перед применением overlay использовать:
 
-## 8. Acceptance PR preflight
+```text
+scripts/api551_overlay_sanity_pwsh.ps1
+```
 
-Before pushing an accepted Figure PR, verify:
+## 11. Acceptance PR preflight
 
-1. `catalog.json` parses;
-2. Figure status is coherent between catalog and object JSON;
-3. accepted stats match expected totals;
-4. `figure_*.out.html` is clean and contains no service/review markers;
-5. `figure_*.object.html` contains review/service data and a relative source PDF link;
-6. every Figure HTML contains `../../../source/API%20551%202016%20(R2024).pdf#page=`;
-7. PNG files are real PNGs after Git LFS checkout;
-8. no root debug, QA, temp, or README files are added by mistake.
+Перед push accepted Figure PR проверять:
 
-## 9. PR check workflow
+1. `catalog.json` парсится;
+2. статус Figure согласован между catalog и object JSON;
+3. accepted/not_accepted/changed статистика ожидаемая;
+4. `figure_*.out.html` чистый и не содержит service/review markers;
+5. `figure_*.object.html` содержит service/review data и относительную ссылку на source PDF;
+6. каждый Figure HTML содержит `../../../source/API%20551%202016%20(R2024).pdf#page=`;
+7. PNG-файлы являются реальными PNG после Git LFS checkout;
+8. root debug/QA/temp/README-файлы не добавлены случайно.
 
-Use `scripts/api551_check_pr_pwsh.ps1` for local PR checks when the connector or UI is insufficient.
+## 12. Promotion: candidates -> main
 
-Minimum checks:
+После принятия Figure и merge acceptance PR в `candidates` перенос в `main` делать отдельным PR:
 
-1. PR state;
+```text
+base: main
+head: candidates
+```
+
+До создания PR проверить:
+
+1. `candidates` содержит только ожидаемые изменения;
+2. `main` не содержит этих Figure-изменений;
+3. `candidates` не содержит unrelated rules/scripts/debug edits;
+4. changed files соответствуют ожидаемому набору.
+
+После merge PR `candidates -> main` не сбрасывать `candidates` механически до проверки. Сначала сравнить:
+
+```text
+base: main
+head: candidates
+```
+
+Безопасный случай для синхронизации:
+
+```text
+candidates ahead_by = 0
+files diff = []
+```
+
+Если `candidates` содержит уникальные изменения (`ahead_by > 0`), остановиться: сначала нужен отдельный PR или решение пользователя.
+
+## 13. Синхронизация candidates после promotion
+
+Когда PR `candidates -> main` смёржен и `candidates` не содержит уникальных изменений, можно синхронизировать `candidates` до `main`.
+
+Использовать:
+
+```text
+scripts/api551_cleanup_merged_branches_pwsh.ps1
+```
+
+Скрипт должен:
+
+1. явно fetch-ить `main` и `candidates`, включая single-branch clone case;
+2. проверять ahead/behind;
+3. запрещать сброс, если `candidates ahead_by > 0`;
+4. fast-forward/sync `candidates` до `main`, если это безопасно;
+5. удалять только явно перечисленные временные ветки;
+6. требовать подтверждение `CLEANUP`;
+7. после cleanup приводить локальную рабочую папку к чистому `origin/candidates`.
+
+## 14. Удаление временных веток
+
+Удалять можно только явно перечисленные temporary branches, например:
+
+```text
+accept-figNN-YYYYMMDD
+rules/<short-topic>-YYYY-MM-DD
+fix/<short-topic>-YYYY-MM-DD
+stage4/figNN-<short-topic>-YYYY-MM-DD
+```
+
+Нельзя удалять:
+
+```text
+main
+candidates
+archive/*
+evidence/*
+branches explicitly preserved by the user
+```
+
+Массовое удаление по wildcard запрещено.
+
+## 15. PR check workflow
+
+Для локальной проверки PR использовать:
+
+```text
+scripts/api551_check_pr_pwsh.ps1
+```
+
+Минимум проверки:
+
+1. состояние PR;
 2. base branch;
 3. head branch;
 4. head SHA;
-5. changed file list;
-6. GitHub check status;
+5. список changed files;
+6. GitHub checks;
 7. mergeability.
 
-Do not merge from the UI or local CLI until checks are known and the user explicitly commands merge.
+Не выполнять merge до known checks и явной команды пользователя.
 
-## 10. Routine local sync
+## 16. Routine local sync
 
-Use `scripts/api551_sync_candidates_pwsh.ps1` or the single-line command from `docs/runbooks/API551_LOCAL_PWSH_PIPELINE_CURRENT_2026-07-01.md`.
+Для обычного обновления локального `candidates` использовать:
 
-Routine sync should end with:
+```text
+scripts/api551_sync_candidates_pwsh.ps1
+```
+
+Успешный sync должен закончиться состоянием:
 
 ```text
 working tree clean
@@ -157,14 +284,14 @@ HEAD equals origin/candidates
 Git LFS content pulled
 ```
 
-## 11. Delivery standard
+## 17. Стандарт доставки `.ps1`
 
-When delivering a `.ps1` to the user, state:
+При передаче `.ps1` пользователю указывать:
 
-1. file link or repo path;
+1. ссылку на файл или repo path;
 2. SHA-256;
-3. validation status;
-4. one-line `pwsh` launch command;
-5. whether the script changes state or is validation-only.
+3. статус проверки;
+4. одну строку запуска под открытый `pwsh`;
+5. меняет ли скрипт состояние или только проверяет.
 
-Do not paste long script contents into chat.
+Длинное тело скрипта в чат не вставлять.
