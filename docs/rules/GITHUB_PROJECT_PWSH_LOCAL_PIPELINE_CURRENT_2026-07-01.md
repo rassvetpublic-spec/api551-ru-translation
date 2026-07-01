@@ -30,12 +30,6 @@ Windows PowerShell 5.1 через `powershell.exe` по умолчанию не 
 
 Если пользователь уже находится в открытом `pwsh` и видит prompt вида `PS C:\...>`, команды давать без внешнего `pwsh -Command`.
 
-Правильный формат для уже открытого `pwsh`:
-
-```powershell
-$D=(New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path; $Checker=(Get-ChildItem $D -Filter 'api551_validate_and_run_ps1_pwsh.ps1' | Sort-Object LastWriteTime -Descending | Select-Object -First 1).FullName; $Target=(Get-ChildItem $D -Filter 'api551_*_pwsh.ps1' | Where-Object { $_.Name -ne 'api551_validate_and_run_ps1_pwsh.ps1' } | Sort-Object LastWriteTime -Descending | Select-Object -First 1).FullName; & pwsh -NoProfile -ExecutionPolicy Bypass -File $Checker -TargetScript $Target -ValidateOnly
-```
-
 Если пользователь находится не в `pwsh`, сначала дать короткую команду входа:
 
 ```powershell
@@ -133,26 +127,6 @@ git fetch origin +refs/heads/main:refs/remotes/origin/main +refs/heads/candidate
 
 Overlay ZIP для наложения на репозиторий должен содержать только project-relative paths.
 
-Разрешённый пример:
-
-```text
-workspace/figures/051/figure_051.png
-workspace/figures/051/figure_051.source_crop.png
-workspace/figures/051/figure_051.object.json
-workspace/figures/051/figure_051.object.html
-workspace/figures/051/figure_051.out.html
-```
-
-Запрещено в корне overlay без отдельного решения:
-
-```text
-README_*.md
-*_QA_REPORT.json
-debug/*
-temp/*
-*.log
-```
-
 Перед применением overlay использовать:
 
 ```text
@@ -181,13 +155,6 @@ base: main
 head: candidates
 ```
 
-До создания PR проверить:
-
-1. `candidates` содержит только ожидаемые изменения;
-2. `main` не содержит этих Figure-изменений;
-3. `candidates` не содержит unrelated rules/scripts/debug edits;
-4. changed files соответствуют ожидаемому набору.
-
 После merge PR `candidates -> main` не сбрасывать `candidates` механически до проверки. Сначала сравнить:
 
 ```text
@@ -208,7 +175,7 @@ files diff = []
 
 Когда PR `candidates -> main` смёржен и `candidates` не содержит уникальных изменений, можно синхронизировать `candidates` до `main` и убрать временные ветки.
 
-На уровне документации фиксируются обязательные safety-условия:
+Обязательные safety-условия:
 
 1. явно fetch-ить `main` и `candidates`, включая single-branch clone case;
 2. проверять ahead/behind;
@@ -251,16 +218,6 @@ branches explicitly preserved by the user
 scripts/api551_check_pr_pwsh.ps1
 ```
 
-Минимум проверки:
-
-1. состояние PR;
-2. base branch;
-3. head branch;
-4. head SHA;
-5. список changed files;
-6. GitHub checks;
-7. mergeability.
-
 Не выполнять merge до known checks и явной команды пользователя.
 
 ## 16. Routine local sync
@@ -269,15 +226,6 @@ scripts/api551_check_pr_pwsh.ps1
 
 ```text
 scripts/api551_sync_candidates_pwsh.ps1
-```
-
-Успешный sync должен закончиться состоянием:
-
-```text
-working tree clean
-current branch candidates
-HEAD equals origin/candidates
-Git LFS content pulled
 ```
 
 ## 17. Стандарт доставки `.ps1`
