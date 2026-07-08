@@ -40,10 +40,11 @@ Required current files in `source/`:
 1. `API551_SOURCE_MANIFEST_CURRENT.json`
 2. `API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md`
 3. `API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md`
-4. `TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md`
-5. `api551_approved_label_master_v1.csv`
-6. `TZ_API551_translation_project_RU.md`
-7. `API 551 2016 (R2024).pdf`
+4. `API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md`
+5. `TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md`
+6. `api551_approved_label_master_v1.csv`
+7. `TZ_API551_translation_project_RU.md`
+8. `API 551 2016 (R2024).pdf`
 
 Archived source packages in `archive/source-packages/`:
 
@@ -64,3 +65,4 @@ The reference index in `archive/extracted-reference/` records useful ZIP members
 - Do not delete archived files. They preserve project traceability.
 - The PDF and archived ZIP files are large binary sources and are tracked through Git LFS.
 - `index.html` and `catalog.json` remain in the repository root as the published review export.
+

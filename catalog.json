@@ -1,14 +1,14 @@
 {
-  "package_id": "API551_STAGE4_ACCEPTED_051_2026-07-01",
+  "package_id": "API551_STAGE4_ACCEPTED_002_051_2026-07-08",
   "created_utc": "2026-06-17T14:12:56.057388+03:00",
-  "updated_utc": "2026-07-01T12:00:00+03:00",
+  "updated_utc": "2026-07-08T00:00:00+03:00",
   "layout": "portable local review package; unpack/use from any local project folder; PDF is included in source/",
   "pdf_expected_path": "source/API 551 2016 (R2024).pdf",
   "stats": {
     "total": 69,
-    "accepted": 20,
+    "accepted": 21,
     "changed": 0,
-    "not_accepted": 49
+    "not_accepted": 48
   },
   "figures": [
     {
@@ -35,8 +35,15 @@
       "caption_ru": "Рисунок 2 — Установка защитной гильзы",
       "api_page": "25",
       "pdf_page": "33",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=33"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=33",
+      "folder": "workspace/figures/002",
+      "source_package": "API551_STAGE4_ACCEPTED_002_2026-07-08_R08",
+      "html": "workspace/figures/002/figure_002.object.html",
+      "json": "workspace/figures/002/figure_002.object.json",
+      "png": "workspace/figures/002/figure_002.png",
+      "source_crop": "workspace/figures/002/figure_002.source_crop.png",
+      "out_html": "workspace/figures/002/figure_002.out.html"
     },
     {
       "figure_no": 3,
