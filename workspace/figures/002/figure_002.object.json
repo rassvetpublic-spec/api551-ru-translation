@@ -1,0 +1,268 @@
+{
+  "figure_no": 2,
+  "figure_id": "Figure 2",
+  "api_page": 25,
+  "pdf_page": 33,
+  "caption_original": "Figure 2—Thermowell Installation",
+  "caption_ru": "Рисунок 2 — Установка защитной гильзы",
+  "stage4_status": "accepted_2026-07-08_R08",
+  "approval_status": "accepted",
+  "approval_basis": "User accepted Figure 2 R08 on 2026-07-08; rebuilt from original PDF-derived source crop with pre-render source-text cleanup, exact 3-5 px callout frame padding, and residual-source-text QA.",
+  "source_policy": "original PDF visual/text layer + approved label master; PDF text layer used for source label cleanup; no previous review PNG used as production source",
+  "source_pdf_link": "../../../source/API%20551%202016%20(R2024).pdf#page=33",
+  "source_pdf_sha256_local": "d458b3a899902f216767e753aa5737a9745b61adcab02f85c9521937a9d3e270",
+  "source_crop": "figure_002.source_crop.png",
+  "source_crop_sha256": "bec3fec3164ba6672938fd0f4faa29fcc67e667a038c6db20058a058760cec48",
+  "png_file": "figure_002.png",
+  "translated_review_png_sha256": "ce9e1a657f4d2861f98cfa3c77ad71656d6982b961d58ff50066384a5202912b",
+  "font": "/usr/share/fonts/truetype/croscore/Arimo-Regular.ttf",
+  "render_scale": 3.0,
+  "crop_pdf_points": {
+    "source_crop": [
+      95.0,
+      95.0,
+      530.0,
+      690.0
+    ],
+    "final_png": [
+      95.0,
+      95.0,
+      530.0,
+      535.0
+    ]
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002+003",
+      "original_text": "6.35 mm (0.250 in.) / Seathed element",
+      "ru_text": "6,35 мм (0.250″) / Элемент в оболочке",
+      "strategy": "leader_line_callout",
+      "frame_px": [
+        226,
+        76,
+        461,
+        127
+      ],
+      "text_bbox_px": [
+        231,
+        81,
+        457,
+        123
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 3,
+        "bottom": 3
+      },
+      "leader_relation": "right frame edge touches top sheathed-element leader line",
+      "frame_color": "gray",
+      "frame_width_px": 1,
+      "qa": {
+        "source_cleanup_by_pdf_text_layer": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "free_floating_text": false,
+        "residual_source_text": "none_visible_by_final_review"
+      }
+    },
+    {
+      "block_id": "block-004",
+      "original_text": "Tapered / thermowell",
+      "ru_text": "Коническая / защитная гильза",
+      "strategy": "leader_line_callout",
+      "frame_px": [
+        243,
+        200,
+        440,
+        251
+      ],
+      "text_bbox_px": [
+        248,
+        205,
+        436,
+        247
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 3,
+        "bottom": 3
+      },
+      "leader_relation": "right frame edge touches tapered-thermowell leader line",
+      "frame_color": "gray",
+      "frame_width_px": 1,
+      "qa": {
+        "source_cleanup_by_pdf_text_layer": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "free_floating_text": false,
+        "residual_source_text": "none_visible_by_final_review"
+      }
+    },
+    {
+      "block_id": "block-005",
+      "original_text": "C (Note 1)",
+      "ru_text": "C (примечание 1)",
+      "strategy": "leader_line_callout",
+      "frame_px": [
+        980,
+        236,
+        1182,
+        267
+      ],
+      "text_bbox_px": [
+        985,
+        241,
+        1178,
+        263
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 3,
+        "bottom": 3
+      },
+      "leader_relation": "left frame edge touches vertical C dimension/leader line",
+      "frame_color": "gray",
+      "frame_width_px": 1,
+      "qa": {
+        "source_cleanup_by_pdf_text_layer": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "free_floating_text": false,
+        "residual_source_text": "none_visible_by_final_review"
+      }
+    },
+    {
+      "block_id": "block-006",
+      "original_text": "1½ in. NPS Flange",
+      "ru_text": "Фланец NPS 1½″",
+      "strategy": "leader_line_callout",
+      "frame_px": [
+        237,
+        607,
+        435,
+        638
+      ],
+      "text_bbox_px": [
+        242,
+        612,
+        431,
+        634
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 3,
+        "bottom": 3
+      },
+      "leader_relation": "right frame edge placed at flange leader line start",
+      "frame_color": "gray",
+      "frame_width_px": 1,
+      "qa": {
+        "source_cleanup_by_pdf_text_layer": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "free_floating_text": false,
+        "residual_source_text": "none_visible_by_final_review"
+      }
+    },
+    {
+      "block_id": "block-007",
+      "original_text": "6 in. NPS MIN (Note 5)",
+      "ru_text": "NPS 6″ мин. / (примечание 5)",
+      "strategy": "leader_line_callout",
+      "frame_px": [
+        253,
+        744,
+        431,
+        795
+      ],
+      "text_bbox_px": [
+        258,
+        749,
+        427,
+        791
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 3,
+        "bottom": 3
+      },
+      "leader_relation": "right frame edge placed at NPS MIN leader line start",
+      "frame_color": "gray",
+      "frame_width_px": 1,
+      "qa": {
+        "source_cleanup_by_pdf_text_layer": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "free_floating_text": false,
+        "residual_source_text": "none_visible_by_final_review"
+      }
+    },
+    {
+      "block_id": "block-008",
+      "original_text": "50 mm (2 in.) MIN (Note 6)",
+      "ru_text": "50 мм (2″) мин. / (примечание 6)",
+      "strategy": "leader_line_callout",
+      "frame_px": [
+        973,
+        902,
+        1151,
+        958
+      ],
+      "text_bbox_px": [
+        978,
+        907,
+        1147,
+        954
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 3,
+        "bottom": 3
+      },
+      "leader_relation": "left frame edge close to vertical dimension arrow line; source text had no boxed callout",
+      "frame_color": "gray",
+      "frame_width_px": 1,
+      "qa": {
+        "source_cleanup_by_pdf_text_layer": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "free_floating_text": false,
+        "residual_source_text": "none_visible_by_final_review"
+      }
+    }
+  ],
+  "notes_ru": [
+    "ПРИМЕЧАНИЕ 1. Для обеспечения демонтажа гильзы размер C должен составлять 610 мм (24″) или полную длину защитной гильзы плюс 76 мм (3″), в зависимости от того, что больше.",
+    "ПРИМЕЧАНИЕ 2. Для предотвращения образования карманов на горизонтальном трубопроводе следует предусматривать эксцентрические переходы.",
+    "ПРИМЕЧАНИЕ 3. Внутренний диаметр ответвительного присоединения должен быть не менее 1″.",
+    "ПРИМЕЧАНИЕ 4. Для некриогенных сред защитную гильзу предпочтительно устанавливать сверху трубопровода. Для криогенных жидкостей, чтобы избежать скопления паров, рекомендуется располагать гильзу в секторе от горизонтальной плоскости до 45° ниже этой точки.",
+    "ПРИМЕЧАНИЕ 5. Минимальный размер трубопровода может изменяться в зависимости от глубины штуцера и выбранной длины защитной гильзы. Сведения о технологических трубных присоединениях см. в PIP PNF0200.",
+    "ПРИМЕЧАНИЕ 6. С учётом длины чувствительного элемента минимальная глубина для RTD и биметаллических индикаторов должна составлять 75 мм (3″)."
+  ],
+  "dimension_text_kept_original": [
+    "120 mm (5 in.) TYP"
+  ],
+  "project_rule_refs": [
+    "source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md",
+    "source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md"
+  ],
+  "qa_summary": "ACCEPTED: R08 rebuilt from original PDF with pre-render source cleanup by PDF text spans, exact frame fit 3-5 px in final PNG, no post-render cleanup over Russian text; user accepted."
+}
