@@ -2,6 +2,23 @@
 
 Working repository for the API 551 Russian technical translation project.
 
+## New chat bootstrap / Новый чат
+
+Для продолжения Stage 4 в новом чате сначала читать:
+
+1. `docs/project/API551_NEW_CHAT_START_RU.md`
+2. `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`
+3. `source/API551_SOURCE_MANIFEST_CURRENT.json`
+4. `catalog.json`
+5. `index.html`
+6. `.github/workflows/structure-check.yml`
+
+Рабочая ветка: `candidates`.
+
+`main` напрямую не менять. Не выполнять `git lfs pull` по умолчанию. CI использует LFS-tolerant `Structure check` с `lfs: false` и pointer checks.
+
+При принятии любого Figure-кандидата обязательно обновлять не только Figure object files, `catalog.json` и `index.html`, но и `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`; при изменении правил, entrypoint, workflow или source-gate также обновлять `docs/project/API551_NEW_CHAT_START_RU.md`, `README.md` и `docs/API551_PROJECT_QUICK_START_CURRENT.md`.
+
 ## Current structure
 
 - `source/` - current active source package for the independent final rebuild.
@@ -40,10 +57,11 @@ Required current files in `source/`:
 1. `API551_SOURCE_MANIFEST_CURRENT.json`
 2. `API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md`
 3. `API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md`
-4. `TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md`
-5. `api551_approved_label_master_v1.csv`
-6. `TZ_API551_translation_project_RU.md`
-7. `API 551 2016 (R2024).pdf`
+4. `API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md`
+5. `TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md`
+6. `api551_approved_label_master_v1.csv`
+7. `TZ_API551_translation_project_RU.md`
+8. `API 551 2016 (R2024).pdf`
 
 Archived source packages in `archive/source-packages/`:
 
@@ -55,6 +73,8 @@ The reference index in `archive/extracted-reference/` records useful ZIP members
 
 ## Workflow rules
 
+- `docs/project/API551_NEW_CHAT_START_RU.md` is the primary Russian bootstrap for starting or continuing Stage 4 in a new chat.
+- `docs/project/API551_STAGE4_HANDOFF_CURRENT.json` is the machine-readable current Stage 4 handoff/status file and must be updated when a Figure is accepted.
 - `docs/API551_PROJECT_QUICK_START_CURRENT.md` is a compact current onboarding/source-gate/handoff helper. It preserves useful earlier project notes but is not a source of truth and does not replace the manifest or CURRENT policy/rules.
 - `docs/rules/STAGE4_ACCEPTANCE_PIPELINE_CURRENT_2026-06-26.md` defines the mandatory chain for user-accepted Figures: source gate, acceptance branch from `candidates`, PR into `candidates`, later PR from `candidates` into `main`, and cleanup of temporary branches.
 - `docs/rules/GITHUB_PROJECT_PWSH_LOCAL_PIPELINE_CURRENT_2026-07-01.md` defines the current local Windows/PowerShell 7 operational pipeline for scripts, single-line commands, overlays, PR checks, and local repo sync.
