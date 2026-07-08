@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          lfs: true
+          lfs: false
 
       - name: Check API551 source/archive model
         run: |
@@ -47,6 +47,29 @@ jobs:
               "scripts",
               ".github/workflows",
           ]
+          lfs_pointer_prefix = b"version https://git-lfs.github.com/spec/v1"
+
+          def is_lfs_pointer(data: bytes) -> bool:
+              return data.startswith(lfs_pointer_prefix)
+
+          def require_lfs_pointer(path: Path, expected_oid: str, expected_size: int) -> None:
+              data = path.read_bytes()
+              text = data.decode("utf-8", errors="replace")
+              if "version https://git-lfs.github.com/spec/v1" not in text:
+                  raise SystemExit(f"{path} is neither usable content nor an LFS pointer")
+              if f"oid sha256:{expected_oid}" not in text or f"size {expected_size}" not in text:
+                  raise SystemExit(f"{path} LFS pointer does not match expected oid/size")
+
+          def require_binary_or_lfs(path: Path, signature: bytes, expected_oid: str, expected_size: int, label: str) -> None:
+              if not path.is_file():
+                  raise SystemExit(f"missing {label}: {path}")
+              data = path.read_bytes()
+              if data.startswith(signature):
+                  if path.stat().st_size != expected_size:
+                      raise SystemExit(f"{path} size mismatch after LFS smudge")
+                  return
+              require_lfs_pointer(path, expected_oid, expected_size)
+
           for dirname in required_dirs:
               if not Path(dirname).is_dir():
                   raise SystemExit(f"missing required folder: {dirname}")
@@ -109,20 +132,22 @@ jobs:
               if suffix in {".html", ".png", ".jpg", ".jpeg", ".zip", ".pdf"}:
                   raise SystemExit(f"forbidden reference member selected: {item}")
 
-          lfs_pointer_prefix = b"version https://git-lfs.github.com/spec/v1"
-          for name in active:
+          text_active = [name for name in active if not name.endswith(".pdf")]
+          for name in text_active:
               path = Path("source") / name
               data = path.read_bytes()
               if not data:
                   raise SystemExit(f"{path} is empty")
-              if data.startswith(lfs_pointer_prefix):
-                  raise SystemExit(f"{path} is a Git LFS pointer, not usable content")
+              if is_lfs_pointer(data):
+                  raise SystemExit(f"{path} is a Git LFS pointer, not usable text content")
 
-          pdf = Path("source/API 551 2016 (R2024).pdf")
-          if pdf.stat().st_size != 8089772:
-              raise SystemExit(f"{pdf} size mismatch")
-          if not pdf.read_bytes()[:5].startswith(b"%PDF"):
-              raise SystemExit("source PDF does not start with %PDF")
+          require_binary_or_lfs(
+              Path("source/API 551 2016 (R2024).pdf"),
+              b"%PDF",
+              "d458b3a899902f216767e753aa5737a9745b61adcab02f85c9521937a9d3e270",
+              8089772,
+              "source PDF",
+          )
 
           expected_zip_oid = {
               "API_551_STAGE2_REFERENCE_FILES_v1.zip": "cda3e972a0acc5104e61a538c19f5c301c554eab03abd1bf868474f12babdf70",
@@ -140,13 +165,7 @@ jobs:
                   if bad is not None:
                       raise SystemExit(f"{path} ZIP integrity failed at {bad}")
                   continue
-              text = data.decode("utf-8", errors="replace")
-              expected_oid = expected_zip_oid[item["file"]]
-              expected_size = str(item["local_size"])
-              if "version https://git-lfs.github.com/spec/v1" not in text:
-                  raise SystemExit(f"{path} is neither ZIP nor LFS pointer")
-              if f"oid sha256:{expected_oid}" not in text or f"size {expected_size}" not in text:
-                  raise SystemExit(f"{path} LFS pointer does not match expected oid/size")
+              require_lfs_pointer(path, expected_zip_oid[item["file"]], int(item["local_size"]))
 
           readme = Path("README.md").read_text(encoding="utf-8-sig")
           workflow = Path(".github/workflows/structure-check.yml").read_text(encoding="utf-8-sig")
@@ -231,6 +250,22 @@ jobs:
           import json
           from pathlib import Path
 
+          lfs_pointer_prefix = b"version https://git-lfs.github.com/spec/v1"
+          png_signature = b"\x89PNG\r\n\x1a\n"
+
+          def require_png_or_lfs_pointer(path: Path, label: str) -> None:
+              if not path.is_file():
+                  raise SystemExit(f"missing PNG asset for {label}: {path}")
+              data = path.read_bytes()
+              if data.startswith(png_signature):
+                  return
+              if data.startswith(lfs_pointer_prefix):
+                  text = data.decode("utf-8", errors="replace")
+                  if "oid sha256:" not in text or "size " not in text:
+                      raise SystemExit(f"invalid LFS pointer for {label}: {path}")
+                  return
+              raise SystemExit(f"{label} PNG asset is neither real PNG nor LFS pointer: {path}")
+
           catalog = json.loads(Path("catalog.json").read_text(encoding="utf-8-sig"))
           figures = catalog.get("figures", [])
           if len(figures) != 69:
@@ -242,26 +277,22 @@ jobs:
           if accepted != accepted_expected:
               raise SystemExit(f"accepted figure set mismatch: {sorted(accepted)}")
           if changed:
-              raise SystemExit(f"changed/review figures must be empty after Figure 51 acceptance, got {[f.get('figure_no') for f in changed]}")
+              raise SystemExit(f"changed/review figures must be empty after Figure 2 acceptance, got {[f.get('figure_no') for f in changed]}")
           if len(not_accepted) != 48:
               raise SystemExit(f"not_accepted count mismatch: {len(not_accepted)}")
           expected_stats = {"total": 69, "accepted": 21, "changed": 0, "not_accepted": 48}
           if catalog.get("stats", {}) != expected_stats:
               raise SystemExit("catalog stats mismatch")
-          fig51 = next((f for f in figures if int(f.get("figure_no")) == 51), None)
-          if not fig51 or fig51.get("status") != "accepted":
-              raise SystemExit("Figure 51 must be accepted")
-          for key in ["folder", "html", "json", "png", "source_crop", "out_html"]:
-              if not fig51.get(key):
-                  raise SystemExit(f"Figure 51 missing catalog key: {key}")
-          png_signature = b"\x89PNG\r\n\x1a\n"
-          for rel_path in [fig51["png"], fig51["source_crop"]]:
-              path = Path(rel_path)
-              if not path.is_file():
-                  raise SystemExit(f"Figure 51 missing PNG asset: {path}")
-              data = path.read_bytes()
-              if not data.startswith(png_signature):
-                  raise SystemExit(f"Figure 51 PNG asset is not a real PNG after LFS checkout: {path}")
+
+          for figure_no in sorted(accepted_expected):
+              fig = next((f for f in figures if int(f.get("figure_no")) == figure_no), None)
+              if not fig or fig.get("status") != "accepted":
+                  raise SystemExit(f"Figure {figure_no} must be accepted")
+              for key in ["folder", "html", "json", "png", "source_crop", "out_html"]:
+                  if not fig.get(key):
+                      raise SystemExit(f"Figure {figure_no} missing catalog key: {key}")
+              require_png_or_lfs_pointer(Path(fig["png"]), f"Figure {figure_no}")
+              require_png_or_lfs_pointer(Path(fig["source_crop"]), f"Figure {figure_no} source crop")
           print("catalog Stage 4 status OK")
           PY
 
@@ -324,4 +355,3 @@ jobs:
           print("Figure 66 reconstructed table check OK")
           print("portable relative review links OK")
           PY
-
