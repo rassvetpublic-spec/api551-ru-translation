@@ -1,0 +1,102 @@
+{
+  "project": "API 551 RU Translation / Stage 4 Figure Objects",
+  "language": "ru",
+  "updated": "2026-07-08",
+  "status": "current_stage4_handoff_for_new_chat_bootstrap",
+  "repo": "rassvetpublic-spec/api551-ru-translation",
+  "stable_branch": "main",
+  "working_branch": "candidates",
+  "do_not_modify_directly": [
+    "main"
+  ],
+  "current_stage": "Stage 4 Figure Objects",
+  "figures_total": 69,
+  "figures_accepted": 21,
+  "figures_changed": 0,
+  "figures_not_accepted": 48,
+  "accepted_figures": [
+    1,
+    2,
+    4,
+    9,
+    14,
+    16,
+    18,
+    23,
+    25,
+    28,
+    30,
+    31,
+    33,
+    37,
+    46,
+    48,
+    50,
+    51,
+    52,
+    62,
+    66
+  ],
+  "latest_merged_prs": [
+    {
+      "pr": 31,
+      "title": "CI: make structure check tolerant of LFS budget",
+      "base": "candidates",
+      "meaning": "Structure check no longer downloads Git LFS objects by default; CI validates text state and LFS pointers when binary assets are not smudged."
+    },
+    {
+      "pr": 30,
+      "title": "Accept Figure 2 R08",
+      "base": "candidates",
+      "meaning": "Figure 2 accepted; catalog/index moved to 21/69 accepted; rework cleanup source gate was registered."
+    },
+    {
+      "pr": 29,
+      "title": "Rules: require pre-render source-text cleanup QA",
+      "base": "candidates",
+      "meaning": "Source text cleanup must complete before rendering Russian translation and callout geometry."
+    }
+  ],
+  "active_source_gate_files": [
+    "README.md",
+    "docs/project/API551_NEW_CHAT_START_RU.md",
+    "docs/project/API551_STAGE4_HANDOFF_CURRENT.json",
+    "source/API551_SOURCE_MANIFEST_CURRENT.json",
+    "source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md",
+    "source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md",
+    "source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md",
+    "catalog.json",
+    "index.html",
+    ".github/workflows/structure-check.yml"
+  ],
+  "lfs_policy": {
+    "default": "Do not run git lfs pull by default.",
+    "ci": "Structure check uses lfs:false and pointer checks.",
+    "local_clone": "Use GIT_LFS_SKIP_SMUDGE=1 for normal clone/sync work.",
+    "download": "Download LFS assets only by exact include path when needed.",
+    "pointer_files": "Small text LFS pointer files in local no-smudge checkout are expected and must not be treated as project corruption."
+  },
+  "acceptance_update_rule": {
+    "description": "Every accepted Figure candidate must update both Figure object files and project bootstrap/handoff/init files.",
+    "required_on_every_acceptance": [
+      "workspace/figures/<NNN>/figure_<NNN>.object.json",
+      "workspace/figures/<NNN>/figure_<NNN>.object.html",
+      "workspace/figures/<NNN>/figure_<NNN>.out.html",
+      "workspace/figures/<NNN>/figure_<NNN>.png",
+      "workspace/figures/<NNN>/figure_<NNN>.source_crop.png",
+      "catalog.json",
+      "index.html",
+      "docs/project/API551_STAGE4_HANDOFF_CURRENT.json"
+    ],
+    "required_when_hard_coded_acceptance_state_changes": [
+      ".github/workflows/structure-check.yml"
+    ],
+    "required_when_policy_or_entrypoint_changes": [
+      "docs/project/API551_NEW_CHAT_START_RU.md",
+      "README.md",
+      "docs/API551_PROJECT_QUICK_START_CURRENT.md"
+    ],
+    "failure_condition": "A Figure acceptance PR is incomplete if catalog/index accepted counts differ from handoff/bootstrap status or if handoff accepted_figures does not include the newly accepted Figure."
+  },
+  "next_recommended_action": "Continue Stage 4 Figure production/rework from the current source gate; choose the next not_accepted Figure and produce a review package without accepting it until explicit user approval."
+}
