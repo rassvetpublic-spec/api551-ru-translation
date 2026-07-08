@@ -38,10 +38,16 @@ jobs:
               "API_551_STAGE3_SOURCE_PACKAGE_v1.zip",
               "api551_control_build_v1.zip",
           ]
+          project_docs = [
+              "docs/project/API551_NEW_CHAT_START_RU.md",
+              "docs/project/API551_STAGE4_HANDOFF_CURRENT.json",
+              "docs/API551_PROJECT_QUICK_START_CURRENT.md",
+          ]
           required_dirs = [
               "source",
               "workspace/figures",
               "docs",
+              "docs/project",
               "archive/source-packages",
               "archive/extracted-reference",
               "scripts",
@@ -85,6 +91,10 @@ jobs:
           ]:
               if not Path(helper).is_file():
                   raise SystemExit(f"missing helper script: {helper}")
+
+          for doc in project_docs:
+              if not Path(doc).is_file():
+                  raise SystemExit(f"missing project bootstrap/handoff doc: {doc}")
 
           source_files = sorted(p.name for p in Path("source").iterdir() if p.is_file())
           if source_files != sorted(active):
@@ -169,12 +179,26 @@ jobs:
 
           readme = Path("README.md").read_text(encoding="utf-8-sig")
           workflow = Path(".github/workflows/structure-check.yml").read_text(encoding="utf-8-sig")
+          quickstart = Path("docs/API551_PROJECT_QUICK_START_CURRENT.md").read_text(encoding="utf-8-sig")
+          bootstrap = Path("docs/project/API551_NEW_CHAT_START_RU.md").read_text(encoding="utf-8-sig")
+          handoff = Path("docs/project/API551_STAGE4_HANDOFF_CURRENT.json").read_text(encoding="utf-8-sig")
           for name in active + archived:
               if name not in readme:
                   raise SystemExit(f"README does not mention {name}")
               if name not in workflow:
                   raise SystemExit(f"workflow does not mention {name}")
-          print("API551 source/archive model OK")
+          for name in project_docs:
+              if name not in readme:
+                  raise SystemExit(f"README does not mention project doc {name}")
+              if name not in quickstart and name != "docs/API551_PROJECT_QUICK_START_CURRENT.md":
+                  raise SystemExit(f"quickstart does not mention project doc {name}")
+              if name not in workflow:
+                  raise SystemExit(f"workflow does not mention project doc {name}")
+          if "docs/project/API551_STAGE4_HANDOFF_CURRENT.json" not in bootstrap:
+              raise SystemExit("bootstrap does not point to handoff JSON")
+          if "acceptance_update_rule" not in handoff:
+              raise SystemExit("handoff JSON must include acceptance_update_rule")
+          print("API551 source/archive/bootstrap model OK")
           PY
 
       - name: Check UTF-8 text encodings
@@ -194,6 +218,11 @@ jobs:
           important_files = {"index.html", "catalog.json"}
           important_files.update(p.as_posix() for p in Path("workspace/figures").glob("*/figure_*.html"))
           important_files.update(p.as_posix() for p in Path("workspace/figures").glob("*/figure_*.json"))
+          important_files.update({
+              "docs/project/API551_NEW_CHAT_START_RU.md",
+              "docs/project/API551_STAGE4_HANDOFF_CURRENT.json",
+              "docs/API551_PROJECT_QUICK_START_CURRENT.md",
+          })
 
           failures = []
           checked = 0
@@ -243,6 +272,7 @@ jobs:
           python3 -m json.tool source/API551_SOURCE_MANIFEST_CURRENT.json > /dev/null
           python3 -m json.tool archive/extracted-reference/EXTRACTED_REFERENCE_MANIFEST.json > /dev/null
           python3 -m json.tool catalog.json > /dev/null
+          python3 -m json.tool docs/project/API551_STAGE4_HANDOFF_CURRENT.json > /dev/null
 
       - name: Check catalog Stage 4 status
         run: |
@@ -267,6 +297,7 @@ jobs:
               raise SystemExit(f"{label} PNG asset is neither real PNG nor LFS pointer: {path}")
 
           catalog = json.loads(Path("catalog.json").read_text(encoding="utf-8-sig"))
+          handoff = json.loads(Path("docs/project/API551_STAGE4_HANDOFF_CURRENT.json").read_text(encoding="utf-8-sig"))
           figures = catalog.get("figures", [])
           if len(figures) != 69:
               raise SystemExit(f"catalog must contain 69 figures, got {len(figures)}")
@@ -284,6 +315,27 @@ jobs:
           if catalog.get("stats", {}) != expected_stats:
               raise SystemExit("catalog stats mismatch")
 
+          if handoff.get("working_branch") != "candidates":
+              raise SystemExit("handoff working_branch must be candidates")
+          if handoff.get("stable_branch") != "main":
+              raise SystemExit("handoff stable_branch must be main")
+          if handoff.get("figures_total") != expected_stats["total"]:
+              raise SystemExit("handoff figures_total mismatch")
+          if handoff.get("figures_accepted") != expected_stats["accepted"]:
+              raise SystemExit("handoff figures_accepted mismatch")
+          if handoff.get("figures_changed") != expected_stats["changed"]:
+              raise SystemExit("handoff figures_changed mismatch")
+          if handoff.get("figures_not_accepted") != expected_stats["not_accepted"]:
+              raise SystemExit("handoff figures_not_accepted mismatch")
+          if set(map(int, handoff.get("accepted_figures", []))) != accepted_expected:
+              raise SystemExit("handoff accepted_figures mismatch")
+          if "acceptance_update_rule" not in handoff:
+              raise SystemExit("handoff must include acceptance_update_rule")
+          required_acceptance_sync = set(handoff["acceptance_update_rule"].get("required_on_every_acceptance", []))
+          for required in ["catalog.json", "index.html", "docs/project/API551_STAGE4_HANDOFF_CURRENT.json"]:
+              if required not in required_acceptance_sync:
+                  raise SystemExit(f"handoff acceptance_update_rule missing {required}")
+
           for figure_no in sorted(accepted_expected):
               fig = next((f for f in figures if int(f.get("figure_no")) == figure_no), None)
               if not fig or fig.get("status") != "accepted":
@@ -293,7 +345,7 @@ jobs:
                       raise SystemExit(f"Figure {figure_no} missing catalog key: {key}")
               require_png_or_lfs_pointer(Path(fig["png"]), f"Figure {figure_no}")
               require_png_or_lfs_pointer(Path(fig["source_crop"]), f"Figure {figure_no} source crop")
-          print("catalog Stage 4 status OK")
+          print("catalog Stage 4 status and handoff sync OK")
           PY
 
       - name: Check portable relative review links
