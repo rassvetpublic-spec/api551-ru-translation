@@ -12,10 +12,13 @@ Working repository for the API 551 Russian technical translation project.
 4. `catalog.json`
 5. `index.html`
 6. `.github/workflows/structure-check.yml`
+7. `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md` when local LFS recovery or visual hydrated folders are relevant
 
 Рабочая ветка: `candidates`.
 
 `main` напрямую не менять. Не выполнять `git lfs pull` по умолчанию. CI использует LFS-tolerant `Structure check` с `lfs: false` и pointer checks.
+
+Local LFS rule: keep `C:\GIT\API 551` as a clean Git repo for commits/PRs, and keep real PNG/PDF/ZIP files in `C:\GIT\API551_HYDRATED_VIEW` or dated local backups. Never commit hydrated binary files as ordinary Git modifications.
 
 При принятии любого Figure-кандидата обязательно обновлять не только Figure object files, `catalog.json` и `index.html`, но и `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`; при изменении правил, entrypoint, workflow или source-gate также обновлять `docs/project/API551_NEW_CHAT_START_RU.md`, `README.md` и `docs/API551_PROJECT_QUICK_START_CURRENT.md`.
 
@@ -75,12 +78,7 @@ The reference index in `archive/extracted-reference/` records useful ZIP members
 
 - `docs/project/API551_NEW_CHAT_START_RU.md` is the primary Russian bootstrap for starting or continuing Stage 4 in a new chat.
 - `docs/project/API551_STAGE4_HANDOFF_CURRENT.json` is the machine-readable current Stage 4 handoff/status file and must be updated when a Figure is accepted.
+- `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md` defines local no-smudge/LFS-pointer/hydrated-view handling for real PNG/PDF/ZIP recovery and visual review.
 - `docs/API551_PROJECT_QUICK_START_CURRENT.md` is a compact current onboarding/source-gate/handoff helper. It preserves useful earlier project notes but is not a source of truth and does not replace the manifest or CURRENT policy/rules.
 - `docs/rules/STAGE4_ACCEPTANCE_PIPELINE_CURRENT_2026-06-26.md` defines the mandatory chain for user-accepted Figures: source gate, acceptance branch from `candidates`, PR into `candidates`, later PR from `candidates` into `main`, and cleanup of temporary branches.
 - `docs/rules/GITHUB_PROJECT_PWSH_LOCAL_PIPELINE_CURRENT_2026-07-01.md` defines the current local Windows/PowerShell 7 operational pipeline for scripts, single-line commands, overlays, PR checks, and local repo sync.
-
-## Notes
-
-- Do not delete archived files. They preserve project traceability.
-- The PDF and archived ZIP files are large binary sources and are tracked through Git LFS.
-- `index.html` and `catalog.json` remain in the repository root as the published review export.
