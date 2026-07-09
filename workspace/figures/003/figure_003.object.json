@@ -1,0 +1,616 @@
+{
+  "project": "API 551 RU Translation / Stage 4 Figure Objects",
+  "figure_no": 3,
+  "figure_id": "Figure 3",
+  "caption_original": "Figure 3—Standard Thermowells",
+  "caption_ru": "Рисунок 3 — Стандартные защитные гильзы",
+  "stage4_status": "accepted_2026-07-09_R03",
+  "approval_status": "accepted",
+  "source_policy": "original PDF visual/text-layer source crop + approved label master; R01/R02 not used as production source",
+  "source_pdf_link": "../../../source/API%20551%202016%20(R2024).pdf#page=35",
+  "source_pdf_sha256_local": "d458b3a899902f216767e753aa5737a9745b61adcab02f85c9521937a9d3e270",
+  "source_pdf_size_bytes": 8089772,
+  "source_crop": "figure_003.source_crop.png",
+  "source_graphic_crop": "figure_003.source_graphic_crop.png",
+  "png_file": "figure_003.png",
+  "render_scale": 3.0,
+  "crop_pdf_points": {
+    "source_crop": [
+      60,
+      85,
+      560,
+      740
+    ],
+    "graphic_bottom_pt": 678
+  },
+  "figure_specific_structure": {
+    "type": "reconstructed_composite_table_with_panel_drawings",
+    "panel_titles_as_text_rows": true,
+    "panel_drawing_cells": [
+      "A",
+      "B",
+      "C"
+    ],
+    "note_row": "Примечание 1",
+    "caption_last_visible_component": true
+  },
+  "protected_items": {
+    "dimensions_and_unit_values": "preserved visually unchanged in panel drawing images",
+    "symbol_only_U": "preserved visually unchanged",
+    "panel_titles": "moved out of drawing image into text table rows"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-012",
+      "panel": "A",
+      "original_text": "Chamfer",
+      "ru_text": "Фаска",
+      "strategy": "leader_line_callout",
+      "source_cleanup_bbox_px_panel": [
+        1305,
+        190,
+        1397,
+        214
+      ],
+      "frame_px_panel": [
+        1305,
+        190,
+        1389,
+        218
+      ],
+      "text_bbox_px_panel": [
+        1309,
+        194,
+        1385,
+        214
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "font_size_px": 27,
+      "leader_relation": "preview: frame near original chamfer leader endpoint",
+      "qa": {
+        "clean_source_used": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "free_floating_text": false,
+        "residual_source_text": "not_ocr_claimed; visual/manual QA required before acceptance"
+      }
+    },
+    {
+      "block_id": "block-013",
+      "panel": "A",
+      "original_text": "Full penetration welds per PTC-19.3TW",
+      "ru_text": "Сварные швы с полным проплавлением по PTC-19.3TW",
+      "strategy": "leader_line_callout",
+      "source_cleanup_bbox_px_panel": [
+        260,
+        433,
+        422,
+        510
+      ],
+      "frame_px_panel": [
+        260,
+        433,
+        419,
+        496
+      ],
+      "text_bbox_px_panel": [
+        264,
+        437,
+        415,
+        492
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "font_size_px": 22,
+      "leader_relation": "preview: frame placed in original label zone",
+      "qa": {
+        "clean_source_used": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "free_floating_text": false,
+        "residual_source_text": "not_ocr_claimed; visual/manual QA required before acceptance"
+      }
+    },
+    {
+      "block_id": "block-014",
+      "panel": "A",
+      "original_text": "1/2 in. NPSM Connection (Note 1) drilled per ASME B40.200-2008 (B40.9) §3.2.2",
+      "ru_text": "Присоединение 1/2″ NPSM (примечание 1), просверленное по ASME B40.200-2008 (B40.9) §3.2.2",
+      "strategy": "leader_line_callout",
+      "source_cleanup_bbox_px_panel": [
+        77,
+        558,
+        408,
+        637
+      ],
+      "frame_px_panel": [
+        77,
+        558,
+        449,
+        622
+      ],
+      "text_bbox_px_panel": [
+        81,
+        562,
+        445,
+        618
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "font_size_px": 18,
+      "leader_relation": "preview: frame placed in original connection-callout zone",
+      "qa": {
+        "clean_source_used": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "free_floating_text": false,
+        "residual_source_text": "not_ocr_claimed; visual/manual QA required before acceptance"
+      }
+    },
+    {
+      "block_id": "block-015",
+      "panel": "A",
+      "original_text": "Surface finish per ASME B40.9-2008 §5.2.1 and tolerances per §5.2.2",
+      "ru_text": "Чистота поверхности по ASME B40.9-2008 §5.2.1 и допуски по §5.2.2",
+      "strategy": "leader_line_callout",
+      "source_cleanup_bbox_px_panel": [
+        806,
+        473,
+        1196,
+        525
+      ],
+      "frame_px_panel": [
+        806,
+        473,
+        1247,
+        519
+      ],
+      "text_bbox_px_panel": [
+        810,
+        477,
+        1243,
+        515
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "font_size_px": 19,
+      "leader_relation": "preview: frame placed in original surface-finish label zone",
+      "qa": {
+        "clean_source_used": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "free_floating_text": false,
+        "residual_source_text": "not_ocr_claimed; visual/manual QA required before acceptance"
+      }
+    },
+    {
+      "block_id": "block-016",
+      "panel": "B",
+      "original_text": "1/2 in. NPSM Connection (Note 1) drilled per ASME B40.200-2008 (B40.9) §3.2.2",
+      "ru_text": "Присоединение 1/2″ NPSM (примечание 1), просверленное по ASME B40.200-2008 (B40.9) §3.2.2",
+      "strategy": "leader_line_callout",
+      "source_cleanup_bbox_px_panel": [
+        77,
+        63,
+        407,
+        142
+      ],
+      "frame_px_panel": [
+        77,
+        63,
+        449,
+        127
+      ],
+      "text_bbox_px_panel": [
+        81,
+        67,
+        445,
+        123
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "font_size_px": 18,
+      "leader_relation": "preview: frame placed in original connection-callout zone",
+      "qa": {
+        "clean_source_used": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "free_floating_text": false,
+        "residual_source_text": "not_ocr_claimed; visual/manual QA required before acceptance"
+      }
+    },
+    {
+      "block_id": "block-020",
+      "panel": "B",
+      "original_text": "Chamfer",
+      "ru_text": "Фаска",
+      "strategy": "leader_line_callout",
+      "source_cleanup_bbox_px_panel": [
+        1148,
+        24,
+        1240,
+        48
+      ],
+      "frame_px_panel": [
+        1148,
+        24,
+        1232,
+        52
+      ],
+      "text_bbox_px_panel": [
+        1152,
+        28,
+        1228,
+        48
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "font_size_px": 27,
+      "leader_relation": "preview: frame near original chamfer leader endpoint",
+      "qa": {
+        "clean_source_used": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "free_floating_text": false,
+        "residual_source_text": "not_ocr_claimed; visual/manual QA required before acceptance"
+      }
+    },
+    {
+      "block_id": "block-022",
+      "panel": "B",
+      "original_text": "30 mm (1 1/4 in.) Hex bar (Typical)",
+      "ru_text": "Шестигранный пруток 30 мм (1¼″) (типовой)",
+      "strategy": "leader_line_callout",
+      "source_cleanup_bbox_px_panel": [
+        268,
+        237,
+        440,
+        289
+      ],
+      "frame_px_panel": [
+        268,
+        237,
+        470,
+        283
+      ],
+      "text_bbox_px_panel": [
+        272,
+        241,
+        466,
+        279
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "font_size_px": 19,
+      "leader_relation": "preview: frame placed in original hex-bar label zone",
+      "qa": {
+        "clean_source_used": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "free_floating_text": false,
+        "residual_source_text": "not_ocr_claimed; visual/manual QA required before acceptance"
+      }
+    },
+    {
+      "block_id": "block-023",
+      "panel": "B",
+      "original_text": "3/4 in. NPT Thread",
+      "ru_text": "Резьба NPT 3/4″",
+      "strategy": "leader_line_callout",
+      "source_cleanup_bbox_px_panel": [
+        488,
+        247,
+        590,
+        298
+      ],
+      "frame_px_panel": [
+        488,
+        247,
+        663,
+        273
+      ],
+      "text_bbox_px_panel": [
+        492,
+        251,
+        659,
+        269
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "font_size_px": 22,
+      "leader_relation": "preview: frame placed in original NPT-thread label zone",
+      "qa": {
+        "clean_source_used": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "free_floating_text": false,
+        "residual_source_text": "not_ocr_claimed; visual/manual QA required before acceptance"
+      }
+    },
+    {
+      "block_id": "block-027",
+      "panel": "B",
+      "original_text": "Surface finish per ASME B40.9-2008 §5.2.1 and tolerances per §5.2.2",
+      "ru_text": "Чистота поверхности по ASME B40.9-2008 §5.2.1 и допуски по §5.2.2",
+      "strategy": "leader_line_callout",
+      "source_cleanup_bbox_px_panel": [
+        990,
+        268,
+        1454,
+        320
+      ],
+      "frame_px_panel": [
+        990,
+        268,
+        1408,
+        313
+      ],
+      "text_bbox_px_panel": [
+        994,
+        272,
+        1404,
+        309
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "font_size_px": 18,
+      "leader_relation": "preview: frame placed in original surface-finish label zone",
+      "qa": {
+        "clean_source_used": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "free_floating_text": false,
+        "residual_source_text": "not_ocr_claimed; visual/manual QA required before acceptance"
+      }
+    },
+    {
+      "block_id": "block-033",
+      "panel": "C",
+      "original_text": "Chamfer",
+      "ru_text": "Фаска",
+      "strategy": "leader_line_callout",
+      "source_cleanup_bbox_px_panel": [
+        1344,
+        180,
+        1436,
+        204
+      ],
+      "frame_px_panel": [
+        1344,
+        180,
+        1428,
+        208
+      ],
+      "text_bbox_px_panel": [
+        1348,
+        184,
+        1424,
+        204
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "font_size_px": 27,
+      "leader_relation": "preview: frame near original chamfer leader endpoint",
+      "qa": {
+        "clean_source_used": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "free_floating_text": false,
+        "residual_source_text": "not_ocr_claimed; visual/manual QA required before acceptance"
+      }
+    },
+    {
+      "block_id": "block-037",
+      "panel": "C",
+      "original_text": "Surface Finish per ASME B40.9-2008 §5.2.1 and Tolerances per §5.2.2",
+      "ru_text": "Чистота поверхности по ASME B40.9-2008 §5.2.1 и допуски по §5.2.2",
+      "strategy": "leader_line_callout",
+      "source_cleanup_bbox_px_panel": [
+        888,
+        421,
+        1360,
+        473
+      ],
+      "frame_px_panel": [
+        888,
+        421,
+        1306,
+        466
+      ],
+      "text_bbox_px_panel": [
+        892,
+        425,
+        1302,
+        462
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "font_size_px": 18,
+      "leader_relation": "preview: frame placed in original surface-finish label zone",
+      "qa": {
+        "clean_source_used": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "free_floating_text": false,
+        "residual_source_text": "not_ocr_claimed; visual/manual QA required before acceptance"
+      }
+    },
+    {
+      "block_id": "block-038",
+      "panel": "C",
+      "original_text": "Lap joint flange per ASME B16.5 (Not provided unless specified)",
+      "ru_text": "Свободный фланец по ASME B16.5 (не поставляется, если не указано)",
+      "strategy": "leader_line_callout",
+      "source_cleanup_bbox_px_panel": [
+        690,
+        492,
+        1037,
+        544
+      ],
+      "frame_px_panel": [
+        690,
+        492,
+        997,
+        538
+      ],
+      "text_bbox_px_panel": [
+        694,
+        496,
+        993,
+        534
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "font_size_px": 18,
+      "leader_relation": "preview: frame placed in original lap-joint-flange label zone",
+      "qa": {
+        "clean_source_used": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "free_floating_text": false,
+        "residual_source_text": "not_ocr_claimed; visual/manual QA required before acceptance"
+      }
+    },
+    {
+      "block_id": "block-040",
+      "panel": "C",
+      "original_text": "1/2 in. NPSM Connection (Note 1) drilled per ASME B40.200-2008 (B40.9) §3.2.2",
+      "ru_text": "Присоединение 1/2″ NPSM (примечание 1), просверленное по ASME B40.200-2008 (B40.9) §3.2.2",
+      "strategy": "leader_line_callout",
+      "source_cleanup_bbox_px_panel": [
+        79,
+        509,
+        409,
+        587
+      ],
+      "frame_px_panel": [
+        79,
+        509,
+        451,
+        573
+      ],
+      "text_bbox_px_panel": [
+        83,
+        513,
+        447,
+        569
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "font_size_px": 18,
+      "leader_relation": "preview: frame placed in original connection-callout zone",
+      "qa": {
+        "clean_source_used": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "free_floating_text": false,
+        "residual_source_text": "not_ocr_claimed; visual/manual QA required before acceptance"
+      }
+    }
+  ],
+  "qa_summary": {
+    "clean_pdf_source_verified": true,
+    "no_image_generation": true,
+    "pre_render_cleanup_intermediates_included": true,
+    "gray_frames_for_callout_replacements": true,
+    "catalog_index_handoff_changed": false,
+    "acceptance_not_set": true,
+    "manual_visual_review_required_before_acceptance": true
+  },
+  "approval_basis": "User accepted Figure 3 R03 on 2026-07-09; rebuilt from clean PDF-derived source crop as composite object with panel text rows, drawing cells, note row, and final caption.",
+  "accepted_on": "2026-07-09",
+  "accepted_version": "R03",
+  "out_html": "figure_003.out.html",
+  "object_html": "figure_003.object.html",
+  "acceptance_notes": {
+    "user_message": "3 принят",
+    "status_sync_required": [
+      "catalog.json",
+      "index.html",
+      "docs/project/API551_STAGE4_HANDOFF_CURRENT.json",
+      ".github/workflows/structure-check.yml"
+    ],
+    "binary_commit_note": "PNG assets must be committed through Git LFS according to .gitattributes."
+  },
+  "api_page": 27,
+  "pdf_page": 35
+}
