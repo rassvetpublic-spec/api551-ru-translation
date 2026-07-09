@@ -14,15 +14,16 @@ Primary bootstrap files:
 
 1. `docs/project/API551_NEW_CHAT_START_RU.md`
 2. `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`
-3. `source/API551_SOURCE_MANIFEST_CURRENT.json`
-4. `source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md`
-5. `source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md`
-6. `source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md`
-7. `catalog.json`
-8. `index.html`
-9. `.github/workflows/structure-check.yml`
-10. `.github/workflows/api551-tooling-check.yml`
-11. `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md` when local LFS recovery or visual hydrated folders are relevant
+3. `docs/API551_PROJECT_QUICK_START_CURRENT.md`
+4. `source/API551_SOURCE_MANIFEST_CURRENT.json`
+5. `source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md`
+6. `source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md`
+7. `source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md`
+8. `catalog.json`
+9. `index.html`
+10. `.github/workflows/structure-check.yml`
+11. `.github/workflows/api551-tooling-check.yml`
+12. `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md` when local LFS recovery or visual hydrated folders are relevant
 
 Working branch: `candidates`.
 
