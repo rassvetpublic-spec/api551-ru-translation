@@ -94,6 +94,7 @@
     "docs/project/API551_FIGURE_LIFECYCLE_CURRENT.md",
     "docs/project/API551_PACKAGE_QA_CURRENT.md",
     "docs/project/API551_PR_WORKFLOW_CURRENT.md",
+    "docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md when diagnosing why the repo-local toolkit blocks a workflow",
     "docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md when local LFS recovery or hydrated-view handling is relevant"
   ],
   "tooling_policy": {
@@ -118,6 +119,11 @@
     "backup_source_example": "C:\\GIT\\API 551 — копия",
     "rule": "Copy local binary files into a hydrated view only after matching source SHA-256 and byte size against the current branch LFS pointer oid sha256 and size.",
     "do_not_commit": "Do not git add or commit hydrated PNG/PDF/ZIP files as ordinary Git modifications. Use the clean repo for branches and PRs."
+  },
+  "repair_history": {
+    "doc": "docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md",
+    "role": "Operational evidence explaining why repo-local API551 tooling blocks stale overlays, accepted-status regressions, multi-root packages, LFS pointer confusion, PowerShell fragility, force-with-lease stale state, and docs/status drift.",
+    "authority": "History/evidence only; it does not replace CURRENT policy/rules."
   },
   "acceptance_update_rule": {
     "description": "Every accepted Figure candidate must update both Figure object files and project bootstrap/handoff/init files.",
@@ -144,7 +150,8 @@
       "docs/project/API551_RULES_RESOLUTION_CURRENT.md",
       "docs/project/API551_FIGURE_LIFECYCLE_CURRENT.md",
       "docs/project/API551_PACKAGE_QA_CURRENT.md",
-      "docs/project/API551_PR_WORKFLOW_CURRENT.md"
+      "docs/project/API551_PR_WORKFLOW_CURRENT.md",
+      "docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md"
     ],
     "failure_condition": "A Figure acceptance PR is incomplete if catalog/index accepted counts differ from handoff/bootstrap status or if handoff accepted_figures does not include the newly accepted Figure."
   },
