@@ -1,0 +1,29 @@
+name: API551 tooling check
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  api551-tooling-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+
+      - name: Run API551 source-gate
+        run: python3 tools/api551/api551.py source-gate --ci
+
+      - name: Run API551 status sync
+        run: python3 tools/api551/api551.py status --ci --json
+
+      - name: Run API551 docs sync check
+        run: python3 tools/api551/api551.py docs-sync-check --ci
+
+      - name: Run API551 accepted Figure checks
+        run: python3 tools/api551/api551.py figure-check --all-known --ci
