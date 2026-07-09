@@ -55,7 +55,8 @@ main
 7. `catalog.json`;
 8. `index.html`;
 9. `.github/workflows/structure-check.yml`;
-10. применимые файлы в `docs/rules/`.
+10. применимые файлы в `docs/rules/`;
+11. `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md`, если задача касается Git LFS, локальных PNG/PDF/ZIP, hydrated-view, backup или визуальной проверки без широкого LFS download.
 
 `API551_PROMPTS.md`, старые ZIP, review HTML, audit/report и patch-файлы использовать только как archive/evidence/reference, если они не конфликтуют с CURRENT источниками.
 
@@ -93,6 +94,7 @@ not_accepted: 48/69
 changed/review: 0
 Figure 2: accepted через PR #30
 LFS-tolerant CI: включён через PR #31
+Local hydrated-view workflow: закреплён через PR #34
 ```
 
 Перед началом новой работы всегда сверить эти числа с `catalog.json` и `index.html`.
@@ -120,6 +122,24 @@ git lfs pull --include="workspace/figures/002/figure_002.png"
 Если локальные PNG/PDF/ZIP выглядят как маленькие текстовые файлы, это может быть нормальный Git LFS pointer после no-smudge clone, а не порча проекта.
 
 CI `Structure check` должен работать без скачивания всех LFS-объектов: checkout с `lfs: false`, проверка текстовых файлов и pointer checks для binary assets.
+
+### Local hydrated-view правило
+
+Для локального просмотра и страховки binary-файлов использовать отдельную папку:
+
+```text
+C:\GIT\API551_HYDRATED_VIEW
+```
+
+Основной repo:
+
+```text
+C:\GIT\API 551
+```
+
+должен оставаться чистым Git checkout для commits/PR. Не коммитить hydrated PNG/PDF/ZIP как обычные изменения. Если binary-файлы восстанавливаются из локальной копии, копировать их только при совпадении `oid sha256` и `size` с LFS pointer текущей ветки.
+
+Подробное правило: `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md`.
 
 ## 7. Figure production / rework rules
 
@@ -197,7 +217,8 @@ source-gate -> clean branch from candidates -> changes -> local/diff check -> PR
 - менять `main` напрямую;
 - выводить большие HTML, PNG, JSON, CSV или debug dump в чат;
 - считать File Library source of truth;
-- считать старые archive ZIP production input.
+- считать старые archive ZIP production input;
+- коммитить локально hydrated PNG/PDF/ZIP как обычные Git modifications.
 
 ## 11. Новый чат: готовый стартовый промпт
 
@@ -217,6 +238,7 @@ rassvetpublic-spec/api551-ru-translation
 7. catalog.json
 8. index.html
 9. .github/workflows/structure-check.yml
+10. docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md, если задача касается LFS/local hydrated view.
 
 Рабочая ветка: candidates.
 main напрямую не менять.
@@ -224,7 +246,8 @@ main напрямую не менять.
 Git LFS:
 не делать git lfs pull по умолчанию;
 CI должен работать с lfs:false и pointer checks;
-LFS assets скачивать только точечно.
+LFS assets скачивать только точечно;
+для просмотра real PNG/PDF/ZIP использовать local hydrated-view, не Git worktree.
 
 Задача: продолжить Stage 4 Figure Objects. Сначала выполни source-gate, затем определи текущий Figure-статус и предложи следующий минимальный проверяемый шаг.
 ```
