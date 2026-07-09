@@ -1,0 +1,34 @@
+{
+  "003": [
+    "Variants A/B/C require separate reconstruction of drawings, panels, tables, paragraphs, and notes.",
+    "Figure 3 R03 is accepted; do not reopen or change status without explicit user instruction.",
+    "Panel titles are text rows; panel drawings are separate drawing cells; NOTE row and caption remain visible in final object."
+  ],
+  "020": [
+    "Use only the upper drawing; lower fabrication method material is not part of Figure 20 object."
+  ],
+  "027": [
+    "Special block: frame text is one technical paragraph.",
+    "NOTE 1 through NOTE 6 are separate multiline blocks.",
+    "Embedded table contains drawing as a separate cell."
+  ],
+  "036": ["Table or table reconstruction."],
+  "037": [
+    "Vertical fragments such as `level` are not independent when part of `Normal working level`.",
+    "Determine vertical direction by crop rotation test."
+  ],
+  "038": ["Long text block under drawing is paragraph text, not an on-image label."],
+  "043": ["Table or table reconstruction."],
+  "044": ["Text block is paragraph in table cell above drawing."],
+  "046": ["`Area to avoid` and `Preferred tap locations` must be accounted for."],
+  "047": [
+    "Mixed object, not note-only.",
+    "Callouts must be checked and translated.",
+    "Notes restored below; note references remain protected/manual-control."
+  ],
+  "048": ["Accepted; parent-block bbox, parenthetical wrapping, and tight clearing policy apply."],
+  "051": ["Accepted in current handoff; if reopened, rebuild from clean source crop, not old translated output."],
+  "058": ["Reconstruct table of 4 cells with headings including steam service and steam/vapor service meter headings."],
+  "062": ["Combined OCR candidate may need split into two visually separate labels."],
+  "066": ["Reconstructed table with drawing cell; not title-only PNG."]
+}
