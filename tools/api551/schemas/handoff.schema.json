@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "API551 Stage 4 handoff",
+  "type": "object",
+  "required": [
+    "project",
+    "repo",
+    "stable_branch",
+    "working_branch",
+    "figures_total",
+    "figures_accepted",
+    "figures_changed",
+    "figures_not_accepted",
+    "accepted_figures",
+    "active_source_gate_files",
+    "acceptance_update_rule"
+  ],
+  "properties": {
+    "project": {"type": "string"},
+    "repo": {"type": "string"},
+    "stable_branch": {"const": "main"},
+    "working_branch": {"const": "candidates"},
+    "figures_total": {"const": 69},
+    "figures_accepted": {"type": "integer"},
+    "figures_changed": {"type": "integer"},
+    "figures_not_accepted": {"type": "integer"},
+    "accepted_figures": {"type": "array", "items": {"type": "integer"}}
+  }
+}
