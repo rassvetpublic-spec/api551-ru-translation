@@ -1,0 +1,19 @@
+{
+  "status": "current_tooling_rule_lock",
+  "purpose": "Fail-closed list of active API551 Stage 4+ rules that the repo-local toolkit must locate before Figure work.",
+  "authority_note": "This lock lists active files; it does not replace their contents.",
+  "files": [
+    {
+      "path": "source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md",
+      "role": "single mandatory operational policy/rules source for Stage 4+"
+    },
+    {
+      "path": "source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md",
+      "role": "universal cleanup and placement addendum"
+    },
+    {
+      "path": "source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md",
+      "role": "rework from clean source and callout frame-fit addendum"
+    }
+  ]
+}

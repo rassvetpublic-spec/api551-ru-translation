@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "API551 source-gate report",
+  "type": "object",
+  "required": ["figure", "status", "rule_files", "source_gate_required", "package_check_required"],
+  "properties": {
+    "figure": {"type": "integer"},
+    "status": {"type": "string"},
+    "rule_files": {"type": "array", "items": {"type": "string"}},
+    "figure_notes": {"type": "array", "items": {"type": "string"}},
+    "source_gate_required": {"type": "boolean"},
+    "package_check_required": {"type": "boolean"}
+  }
+}

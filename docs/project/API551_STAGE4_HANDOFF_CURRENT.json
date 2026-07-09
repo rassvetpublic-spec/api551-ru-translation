@@ -40,6 +40,18 @@
   ],
   "latest_merged_prs": [
     {
+      "pr": 37,
+      "title": "Fix Figure 3 R03 workspace package",
+      "base": "candidates",
+      "meaning": "Figure 3 R03 accepted workspace package display assets were corrected after local preview/index mismatch."
+    },
+    {
+      "pr": 36,
+      "title": "Accept Figure 3 R03",
+      "base": "candidates",
+      "meaning": "Figure 3 accepted; catalog/index/handoff moved to 22/69 accepted."
+    },
+    {
       "pr": 34,
       "title": "Docs: add local LFS hydrated view workflow",
       "base": "main",
@@ -56,24 +68,13 @@
       "title": "CI: make structure check tolerant of LFS budget",
       "base": "candidates",
       "meaning": "Structure check no longer downloads Git LFS objects by default; CI validates text state and LFS pointers when binary assets are not smudged."
-    },
-    {
-      "pr": 30,
-      "title": "Accept Figure 2 R08",
-      "base": "candidates",
-      "meaning": "Figure 2 accepted; catalog/index moved to 21/69 accepted; rework cleanup source gate was registered."
-    },
-    {
-      "pr": 29,
-      "title": "Rules: require pre-render source-text cleanup QA",
-      "base": "candidates",
-      "meaning": "Source text cleanup must complete before rendering Russian translation and callout geometry."
     }
   ],
   "active_source_gate_files": [
     "README.md",
     "docs/project/API551_NEW_CHAT_START_RU.md",
     "docs/project/API551_STAGE4_HANDOFF_CURRENT.json",
+    "docs/API551_PROJECT_QUICK_START_CURRENT.md",
     "source/API551_SOURCE_MANIFEST_CURRENT.json",
     "source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md",
     "source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md",
@@ -81,11 +82,31 @@
     "catalog.json",
     "index.html",
     ".github/workflows/structure-check.yml",
+    ".github/workflows/api551-tooling-check.yml",
+    "tools/api551/api551.ps1",
+    "tools/api551/api551.py",
+    "tools/api551/api551.config.json",
+    "tools/api551/rules/active_rules.lock.json",
+    "tools/api551/rules/figure_rule_map.json",
+    "docs/project/API551_TOOLING_CURRENT.md",
+    "docs/project/API551_SOURCE_GATE_CURRENT.md",
+    "docs/project/API551_RULES_RESOLUTION_CURRENT.md",
+    "docs/project/API551_FIGURE_LIFECYCLE_CURRENT.md",
+    "docs/project/API551_PACKAGE_QA_CURRENT.md",
+    "docs/project/API551_PR_WORKFLOW_CURRENT.md",
+    "docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md when diagnosing why the repo-local toolkit blocks a workflow",
     "docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md when local LFS recovery or hydrated-view handling is relevant"
   ],
+  "tooling_policy": {
+    "entrypoint": "tools/api551/api551.ps1",
+    "core": "tools/api551/api551.py",
+    "first_command": ".\\tools\\api551\\api551.ps1 source-gate",
+    "rule": "Repo-local tools under /tools/api551 are the default. Do not create new one-off active scripts in C:\\GIT as the normal workflow.",
+    "write_boundary": "Toolkit write actions must not commit, push, merge, or delete branches. Git write operations require explicit user instruction."
+  },
   "lfs_policy": {
     "default": "Do not run git lfs pull by default.",
-    "ci": "Structure check uses lfs:false and pointer checks.",
+    "ci": "Structure check and API551 tooling check use lfs:false and pointer-safe checks.",
     "local_clone": "Use GIT_LFS_SKIP_SMUDGE=1 for normal clone/sync work.",
     "download": "Download LFS assets only by exact include path when needed.",
     "pointer_files": "Small text LFS pointer files in local no-smudge checkout are expected and must not be treated as project corruption.",
@@ -98,6 +119,11 @@
     "backup_source_example": "C:\\GIT\\API 551 — копия",
     "rule": "Copy local binary files into a hydrated view only after matching source SHA-256 and byte size against the current branch LFS pointer oid sha256 and size.",
     "do_not_commit": "Do not git add or commit hydrated PNG/PDF/ZIP files as ordinary Git modifications. Use the clean repo for branches and PRs."
+  },
+  "repair_history": {
+    "doc": "docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md",
+    "role": "Operational evidence explaining why repo-local API551 tooling blocks stale overlays, accepted-status regressions, multi-root packages, LFS pointer confusion, PowerShell fragility, force-with-lease stale state, and docs/status drift.",
+    "authority": "History/evidence only; it does not replace CURRENT policy/rules."
   },
   "acceptance_update_rule": {
     "description": "Every accepted Figure candidate must update both Figure object files and project bootstrap/handoff/init files.",
@@ -112,14 +138,22 @@
       "docs/project/API551_STAGE4_HANDOFF_CURRENT.json"
     ],
     "required_when_hard_coded_acceptance_state_changes": [
-      ".github/workflows/structure-check.yml"
+      ".github/workflows/structure-check.yml",
+      ".github/workflows/api551-tooling-check.yml"
     ],
     "required_when_policy_or_entrypoint_changes": [
       "docs/project/API551_NEW_CHAT_START_RU.md",
       "README.md",
-      "docs/API551_PROJECT_QUICK_START_CURRENT.md"
+      "docs/API551_PROJECT_QUICK_START_CURRENT.md",
+      "docs/project/API551_TOOLING_CURRENT.md",
+      "docs/project/API551_SOURCE_GATE_CURRENT.md",
+      "docs/project/API551_RULES_RESOLUTION_CURRENT.md",
+      "docs/project/API551_FIGURE_LIFECYCLE_CURRENT.md",
+      "docs/project/API551_PACKAGE_QA_CURRENT.md",
+      "docs/project/API551_PR_WORKFLOW_CURRENT.md",
+      "docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md"
     ],
     "failure_condition": "A Figure acceptance PR is incomplete if catalog/index accepted counts differ from handoff/bootstrap status or if handoff accepted_figures does not include the newly accepted Figure."
   },
-  "next_recommended_action": "Continue Stage 4 Figure production/rework from the current source gate; Figure 3 R03 is accepted, choose the next not_accepted Figure and produce a review package without accepting it until explicit user approval."
+  "next_recommended_action": "Run tools/api551 source-gate, choose the next not_accepted Figure from catalog.json, generate a rules-for report, and produce a review package without accepting it until explicit user approval."
 }

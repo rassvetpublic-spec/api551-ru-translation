@@ -4,21 +4,23 @@
 Проект: API 551 RU Translation / Stage 4 Figure Objects.  
 Язык работы: русский.
 
-Этот файл нужен, чтобы новый чат мог начать работу без восстановления контекста по старой переписке. Если этот файл конфликтует с `source/API551_SOURCE_MANIFEST_CURRENT.json`, CURRENT policy/rules или системными инструкциями проекта, более высокий источник управляет.
+Этот файл нужен, чтобы новый чат начал работу без восстановления контекста по старой переписке. Если этот файл конфликтует с `source/API551_SOURCE_MANIFEST_CURRENT.json`, CURRENT policy/rules или системными инструкциями проекта, более высокий источник управляет.
 
-## 1. Назначение проекта
+## 1. Первый вход
 
-Цель Stage 4 — получить проверяемые русские составные Figure-объекты API RP 551 для дальнейшей финальной сборки документа.
+Главный вход в проектный инструментарий:
 
-Figure-объект обычно включает:
+```powershell
+.\tools\api551\api551.ps1 source-gate
+```
 
-1. исходный crop / source crop;
-2. финальный PNG с русскими надписями;
-3. object JSON;
-4. service/review HTML;
-5. out/export HTML;
-6. запись в `catalog.json`;
-7. строку в `index.html`.
+Инструментарий хранится в repo:
+
+```text
+tools/api551/
+```
+
+Не начинать Stage 4 с временных скриптов в `C:\GIT`. Новые project tools должны жить в `/tools/api551`.
 
 ## 2. Source of truth
 
@@ -40,7 +42,7 @@ candidates
 main
 ```
 
-`main` напрямую не менять без явного разрешения пользователя. Рабочие PR для Figure-кандидатов и правил делать в `candidates`.
+`main` напрямую не менять без явного разрешения пользователя.
 
 ## 3. Что читать первым
 
@@ -54,25 +56,42 @@ main
 6. `source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md`;
 7. `catalog.json`;
 8. `index.html`;
-9. `.github/workflows/structure-check.yml`;
-10. применимые файлы в `docs/rules/`;
-11. `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md`, если задача касается Git LFS, локальных PNG/PDF/ZIP, hydrated-view, backup или визуальной проверки без широкого LFS download.
+9. `tools/api551/api551.ps1`;
+10. `docs/project/API551_TOOLING_CURRENT.md`;
+11. `docs/project/API551_SOURCE_GATE_CURRENT.md`;
+12. `docs/project/API551_RULES_RESOLUTION_CURRENT.md`;
+13. `docs/project/API551_FIGURE_LIFECYCLE_CURRENT.md`;
+14. `docs/project/API551_PACKAGE_QA_CURRENT.md`;
+15. `docs/project/API551_PR_WORKFLOW_CURRENT.md`;
+16. `.github/workflows/structure-check.yml`;
+17. `.github/workflows/api551-tooling-check.yml`;
+18. `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md`, если задача касается LFS/local hydrated view;
+19. `docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md`, если нужно понять историю типовых ошибок toolkit.
 
 `API551_PROMPTS.md`, старые ZIP, review HTML, audit/report и patch-файлы использовать только как archive/evidence/reference, если они не конфликтуют с CURRENT источниками.
 
 ## 4. Source-gate перед работой
 
-Перед задачами с файлами, GitHub, Figure, workflow, acceptance pipeline или deliverables выполнить source-gate:
+Перед задачами с файлами, GitHub, Figure, workflow, acceptance pipeline или deliverables выполнить:
 
-1. проверить Project Instructions текущего проекта;
-2. проверить CURRENT manifest;
-3. проверить CURRENT consolidated policy/rules;
-4. проверить CURRENT universal cleanup/placement addendum;
-5. проверить CURRENT rework/source/frame-fit addendum;
-6. проверить source data и роль каждого source;
-7. проверить GitHub `catalog.json`, `index.html`, `workspace/figures/`, workflow;
-8. определить статус нужного Figure;
-9. при конфликте остановиться и показать:
+```powershell
+.\tools\api551\api551.ps1 source-gate
+```
+
+Source-gate обязан проверить:
+
+1. Project Instructions текущего проекта;
+2. CURRENT manifest;
+3. CURRENT consolidated policy/rules;
+4. CURRENT universal cleanup/placement addendum;
+5. CURRENT rework/source/frame-fit addendum;
+6. source data и роль каждого source;
+7. GitHub `catalog.json`, `index.html`, `workspace/figures/`, workflow;
+8. текущий Figure-статус;
+9. docs/status sync;
+10. применимые `tools/api551` checks.
+
+При конфликте остановиться и показать:
 
 ```text
 source -> role -> problem -> risk -> required decision
@@ -86,18 +105,23 @@ source -> role -> problem -> risk -> required decision
 docs/project/API551_STAGE4_HANDOFF_CURRENT.json
 ```
 
-На момент создания этого bootstrap:
+Текущий статус после принятия Figure 3 R03:
 
 ```text
-accepted: 21/69
-not_accepted: 48/69
+accepted: 22/69
+not_accepted: 47/69
 changed/review: 0
-Figure 2: accepted через PR #30
-LFS-tolerant CI: включён через PR #31
-Local hydrated-view workflow: закреплён через PR #34
+Figure 2: accepted
+Figure 3: accepted
+LFS-tolerant CI: включён
+Repo-local toolkit: /tools/api551
 ```
 
-Перед началом новой работы всегда сверить эти числа с `catalog.json` и `index.html`.
+Перед началом новой работы всегда сверить эти числа командой:
+
+```powershell
+.\tools\api551\api551.ps1 status
+```
 
 ## 6. Git LFS policy
 
@@ -107,29 +131,7 @@ Local hydrated-view workflow: закреплён через PR #34
 git lfs pull
 ```
 
-Для обычного clone / sync использовать no-smudge режим:
-
-```powershell
-$env:GIT_LFS_SKIP_SMUDGE='1'; git clone --branch candidates --single-branch https://github.com/rassvetpublic-spec/api551-ru-translation.git 'API 551'; Remove-Item Env:\GIT_LFS_SKIP_SMUDGE -ErrorAction SilentlyContinue
-```
-
-Точечно скачивать LFS только при реальной необходимости:
-
-```powershell
-git lfs pull --include="workspace/figures/002/figure_002.png"
-```
-
-Если локальные PNG/PDF/ZIP выглядят как маленькие текстовые файлы, это может быть нормальный Git LFS pointer после no-smudge clone, а не порча проекта.
-
-CI `Structure check` должен работать без скачивания всех LFS-объектов: checkout с `lfs: false`, проверка текстовых файлов и pointer checks для binary assets.
-
-### Local hydrated-view правило
-
-Для локального просмотра и страховки binary-файлов использовать отдельную папку:
-
-```text
-C:\GIT\API551_HYDRATED_VIEW
-```
+Для обычного clone / sync использовать no-smudge режим. Точечно скачивать LFS только при реальной необходимости.
 
 Основной repo:
 
@@ -137,7 +139,13 @@ C:\GIT\API551_HYDRATED_VIEW
 C:\GIT\API 551
 ```
 
-должен оставаться чистым Git checkout для commits/PR. Не коммитить hydrated PNG/PDF/ZIP как обычные изменения. Если binary-файлы восстанавливаются из локальной копии, копировать их только при совпадении `oid sha256` и `size` с LFS pointer текущей ветки.
+Hydrated visual view:
+
+```text
+C:\GIT\API551_HYDRATED_VIEW
+```
+
+Не коммитить hydrated PNG/PDF/ZIP как обычные Git modifications.
 
 Подробное правило: `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md`.
 
@@ -150,11 +158,17 @@ C:\GIT\API 551
 3. old translated assets можно использовать только как visual reference;
 4. cleanup исходного английского текста выполнять до отрисовки русского перевода;
 5. запрещён post-render cleanup в зоне, пересекающей русский текст или новую рамку;
-6. если после render найдены остатки исходного английского текста, надо вернуться к clean source и пересобрать, а не стирать поверх результата;
+6. если после render найдены остатки исходного английского текста, надо вернуться к clean source и пересобрать;
 7. для PDF с текстовым слоем preferred cleanup — по PDF text span/glyph bbox с safety padding;
 8. для leader-line/callout labels обязательна compact gray frame модель с фактическим внутренним padding 3–5 px в финальном PNG;
-9. рамки не должны портить protected graphics: оборудование, линии, стрелки, размеры, контуры, трубопроводы, фланцы;
+9. рамки не должны портить protected graphics;
 10. approved-переводы не менять без traceable основания.
+
+Команда для правил конкретного Figure:
+
+```powershell
+.\tools\api551\api551.ps1 rules-for -Figure NNN
+```
 
 ## 8. Правило принятия Figure-кандидата
 
@@ -169,22 +183,9 @@ Acceptance PR обязан обновить и проверить весь си�
 5. `workspace/figures/<NNN>/figure_<NNN>.source_crop.png`;
 6. `catalog.json`;
 7. `index.html`;
-8. `.github/workflows/structure-check.yml`, если в нём есть hard-coded accepted set, stats или Figure-specific checks;
+8. `.github/workflows/structure-check.yml`, если accepted set/stats hard-coded;
 9. `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`;
-10. `docs/project/API551_NEW_CHAT_START_RU.md`, если изменились правила, workflow, source-gate, LFS policy или текстовый текущий статус Stage 4;
-11. `README.md`, если изменились entrypoint, source-gate, workflow policy или список обязательных стартовых файлов;
-12. `docs/API551_PROJECT_QUICK_START_CURRENT.md`, если изменился порядок стартового чтения или новый bootstrap/handoff.
-
-Acceptance PR считается неполным, если Figure принят в `catalog.json`, но bootstrap/handoff/init-файлы нового чата не отражают новый статус проекта.
-
-Минимально при каждом новом accepted Figure должен обновляться:
-
-```text
-catalog.json
-index.html
-docs/project/API551_STAGE4_HANDOFF_CURRENT.json
-.github/workflows/structure-check.yml, если accepted set/stats в нём hard-coded
-```
+10. entrypoint docs, если изменились правила/workflow/tooling.
 
 ## 9. Acceptance pipeline
 
@@ -200,9 +201,14 @@ source-gate -> clean branch from candidates -> changes -> local/diff check -> PR
 2. начинать branch от актуального `origin/candidates`;
 3. не менять `main`;
 4. PR должен быть в `candidates`;
-5. в PR summary указать Figure number, accepted status, изменённые sync-файлы, проверки;
-6. перед merge проверить open review comments, changed files, base/head, CI;
-7. merge выполнять только после явной команды пользователя.
+5. перед merge проверить open review comments, changed files, base/head, CI;
+6. merge выполнять только после явной команды пользователя.
+
+Команда PR-проверки:
+
+```powershell
+.\tools\api551\api551.ps1 pr-check -Pr N
+```
 
 ## 10. Запрещено
 
@@ -228,6 +234,9 @@ source-gate -> clean branch from candidates -> changes -> local/diff check -> PR
 Source of truth — GitHub repo:
 rassvetpublic-spec/api551-ru-translation
 
+Рабочая ветка: candidates.
+main напрямую не менять.
+
 Перед началом обязательно прочитай:
 1. docs/project/API551_NEW_CHAT_START_RU.md
 2. docs/project/API551_STAGE4_HANDOFF_CURRENT.json
@@ -237,17 +246,11 @@ rassvetpublic-spec/api551-ru-translation
 6. source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md
 7. catalog.json
 8. index.html
-9. .github/workflows/structure-check.yml
-10. docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md, если задача касается LFS/local hydrated view.
+9. tools/api551/api551.ps1
+10. docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md, если нужно понять историю типовых ошибок toolkit.
 
-Рабочая ветка: candidates.
-main напрямую не менять.
-
-Git LFS:
-не делать git lfs pull по умолчанию;
-CI должен работать с lfs:false и pointer checks;
-LFS assets скачивать только точечно;
-для просмотра real PNG/PDF/ZIP использовать local hydrated-view, не Git worktree.
+Git LFS assets не скачивать по умолчанию.
+Для просмотра real PNG/PDF/ZIP использовать local hydrated-view, не Git worktree.
 
 Задача: продолжить Stage 4 Figure Objects. Сначала выполни source-gate, затем определи текущий Figure-статус и предложи следующий минимальный проверяемый шаг.
 ```
