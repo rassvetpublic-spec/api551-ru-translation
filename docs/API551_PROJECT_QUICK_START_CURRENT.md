@@ -1,16 +1,10 @@
 # API551 Project Quick Start
 
-Status: CURRENT quick-start / onboarding / handoff helper.  
+Status: CURRENT compact onboarding / source-gate / handoff helper.  
 Project: API 551 RU Translation / Stage 4 Figure Objects.  
-Scope: compact source-gate and new-chat handoff for API 551 work.
+Scope: Stage 4+ Figure object production, rework, package QA, and PR workflow.
 
-> Для нового чата Stage 4 сначала используйте:
-> `docs/project/API551_NEW_CHAT_START_RU.md`
->
-> Текущий машинно-читаемый статус Stage 4:
-> `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`
-
-This file is a compact helper. It is not a source of truth and does not replace:
+This file is a helper. It is not source truth and does not replace:
 
 1. Project Instructions for the current ChatGPT project;
 2. `docs/project/API551_NEW_CHAT_START_RU.md`;
@@ -19,20 +13,47 @@ This file is a compact helper. It is not a source of truth and does not replace:
 5. `source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md`;
 6. `source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md`;
 7. `source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md`;
-8. `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md` when local LFS recovery or hydrated-view handling is relevant;
-9. Figure-specific accepted objects, `catalog.json`, or `index.html`.
+8. `catalog.json`;
+9. `index.html`;
+10. Figure-specific accepted objects in `workspace/figures/`.
 
 If this file conflicts with an ACTIVE/CURRENT project file, the ACTIVE/CURRENT file controls.
 
-## 1. Purpose
+## 1. First command
 
-The goal of Stage 4 is to produce verified Russian composite Figure objects for final API 551 document assembly.
+Run from `C:\GIT\API 551` or any folder inside the repo:
 
-This quick-start preserves compact onboarding material from earlier project notes, while the primary new-chat route is now `docs/project/API551_NEW_CHAT_START_RU.md`.
+```powershell
+.\tools\api551\api551.ps1 source-gate
+```
 
-## 2. Current source hierarchy
+The repo-local toolkit lives in:
 
-Use this order before any meaningful API 551 work:
+```text
+tools/api551/
+```
+
+## 2. Current status source
+
+Current machine-readable Stage 4 status:
+
+```text
+docs/project/API551_STAGE4_HANDOFF_CURRENT.json
+```
+
+The status must match `catalog.json` and `index.html`.
+
+Current expected Stage 4 status after Figure 3 R03:
+
+```text
+accepted: 22/69
+changed/review: 0
+not_accepted: 47/69
+```
+
+## 3. Source hierarchy
+
+Use this order before meaningful API 551 work:
 
 1. System / safety / developer instructions.
 2. API 551 Project Instructions.
@@ -52,44 +73,72 @@ Use this order before any meaningful API 551 work:
     - `index.html`;
     - `workspace/figures/`;
     - `.github/workflows/structure-check.yml`;
+    - `.github/workflows/api551-tooling-check.yml`;
     - `docs/rules/*CURRENT*`.
-11. Local LFS/hydrated-view workflow when relevant:
+11. Tooling docs:
+    - `docs/project/API551_TOOLING_CURRENT.md`;
+    - `docs/project/API551_SOURCE_GATE_CURRENT.md`;
+    - `docs/project/API551_RULES_RESOLUTION_CURRENT.md`;
+    - `docs/project/API551_FIGURE_LIFECYCLE_CURRENT.md`;
+    - `docs/project/API551_PACKAGE_QA_CURRENT.md`;
+    - `docs/project/API551_PR_WORKFLOW_CURRENT.md`.
+12. Local LFS/hydrated-view workflow when relevant:
     - `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md`.
-12. Current chat instructions for the current task.
-13. Memory and old chats as reference only.
-14. `archive/*` as reference/evidence only.
+13. Current chat instruction for the current task.
+14. Memory and old chats as reference only.
+15. `archive/*` as reference/evidence only.
 
-## 3. Active source model
+## 4. Active source model
 
-The active source set is intentionally small.
+Current source/rules are consolidated. Legacy ZIP packages are not active production inputs.
 
-Current rules and policies are consolidated. Legacy ZIP packages are not active production inputs. The universal Figure cleanup/placement addendum and rework/source/frame-fit addendum are active Stage 4+ source files and supplement the consolidated policy/rules source.
+Active files in `source/`:
 
-Archived ZIP packages remain useful for QA, audit, and traceability, but are forbidden as generation input for the final one-pass rebuild.
+1. `API551_SOURCE_MANIFEST_CURRENT.json`
+2. `API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md`
+3. `API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md`
+4. `API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md`
+5. `TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md`
+6. `api551_approved_label_master_v1.csv`
+7. `TZ_API551_translation_project_RU.md`
+8. `API 551 2016 (R2024).pdf`
 
-## 4. Source-gate before work
+Archived source packages in `archive/source-packages/`:
+
+1. `API_551_STAGE2_REFERENCE_FILES_v1.zip`
+2. `API_551_STAGE3_SOURCE_PACKAGE_v1.zip`
+3. `api551_control_build_v1.zip`
+
+These archived packages are evidence/audit/reference only and are forbidden as generation input.
+
+## 5. Source-gate before work
 
 Before any task involving API 551 files, GitHub, figures, acceptance, workflow, or deliverables:
 
-1. Check Project Instructions.
-2. Check `docs/project/API551_NEW_CHAT_START_RU.md`.
-3. Check `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`.
-4. Check `source/API551_SOURCE_MANIFEST_CURRENT.json`.
-5. Check the CURRENT consolidated policy/rules file.
-6. Check the CURRENT universal Figure cleanup/placement addendum.
-7. Check the CURRENT rework/source/frame-fit addendum.
-8. Check mandatory source data availability and role.
-9. Check GitHub `catalog.json`, `index.html`, and `workspace/figures/` when Figure status matters.
-10. Check `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md` when LFS budget, local hydrated PNG/PDF/ZIP, visual-review folders, or local binary recovery matter.
-11. Determine the Figure status when working on a Figure.
-12. Do not use memory, old chats, `API551_PROMPTS.md`, File Library, or `/mnt/data` as the only source of truth.
-13. If there is a conflict, stop and report:
+```powershell
+.\tools\api551\api551.ps1 source-gate
+```
+
+Then, for Figure work:
+
+```powershell
+.\tools\api551\api551.ps1 rules-for -Figure NNN
+.\tools\api551\api551.ps1 figure-check -Figure NNN
+```
+
+For package work:
+
+```powershell
+.\tools\api551\api551.ps1 package-check -PackageZip C:\GIT\package.zip -Figure NNN
+```
+
+If there is a conflict, stop and report:
 
 ```text
 source -> role -> problem -> risk -> required decision
 ```
 
-## 5. Hard prohibitions
+## 6. Hard prohibitions
 
 Do not:
 
@@ -103,96 +152,52 @@ Do not:
 - merge a PR without explicit user command;
 - output large HTML, PNG, JSON, CSV, or debug dumps into chat;
 - work from stale local files or `/mnt/data` as the only source;
-- commit hydrated PNG/PDF/ZIP files as ordinary Git modifications after local LFS recovery.
+- commit hydrated PNG/PDF/ZIP files as ordinary Git modifications.
 
-## 6. GitHub workflow
+## 7. GitHub workflow
 
-Default Stage 4 sequence:
+Default chain:
 
 ```text
-source gate -> clean branch from candidates -> change -> diff check -> PR into candidates -> CI/status check -> merge only after explicit user command -> verify candidates -> handoff
+source-gate -> clean branch from candidates -> change -> local checks -> PR into candidates -> CI/status check -> merge only after explicit user command -> verify candidates -> handoff
 ```
 
-For accepted Stage 4 Figure objects, use `docs/rules/STAGE4_ACCEPTANCE_PIPELINE_CURRENT_2026-06-26.md`. That file has priority over the general GitHub workflow.
+Use:
 
-For local GitHub edits and fallback scripts, use `docs/rules/GITHUB_PROJECT_PWSH_LOCAL_PIPELINE_CURRENT_2026-07-01.md`.
+```powershell
+.\tools\api551\api551.ps1 pr-check -Pr N
+```
 
-## 7. Figure-object workflow reminder
+for PR metadata and checks when GitHub CLI is available.
 
-For each Figure task:
-
-1. Verify the Figure number and status.
-2. Use the original PDF as visual truth.
-3. Use the approved label master CSV as label/translation truth.
-4. Use accepted Figure object status when the Figure is already accepted.
-5. Clean source labels programmatically without damaging protected graphics.
-6. Place Russian replacement text according to CURRENT policy and active addenda.
-7. Verify PNG/HTML/JSON/catalog/index consistency.
-8. Produce a ZIP/file, short summary, key counts, verification report, and next step.
-
-## 8. Figure acceptance sync rule
-
-When a Figure candidate is accepted, the acceptance PR must update the synchronized project state, not only the Figure object files.
-
-Required on every acceptance:
-
-1. Figure object files under `workspace/figures/<NNN>/`;
-2. `catalog.json`;
-3. `index.html`;
-4. `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`;
-5. `.github/workflows/structure-check.yml` if accepted set/stats are hard-coded there.
-
-Required when policy, entrypoint, workflow, source-gate, or current-status wording changes:
-
-1. `docs/project/API551_NEW_CHAT_START_RU.md`;
-2. `README.md`;
-3. `docs/API551_PROJECT_QUICK_START_CURRENT.md`.
-
-A Figure acceptance PR is incomplete if catalog/index accepted counts differ from the handoff/bootstrap status.
-
-## 9. Git LFS and local hydrated view reminder
+## 8. Git LFS and hydrated view
 
 Do not run `git lfs pull` by default. Normal work should use no-smudge clone/sync and fetch LFS assets only by exact include path when needed.
 
-`Structure check` is expected to run with `lfs: false` and validate LFS pointer state for binary assets.
-
-For local visual review and offline recovery of real PNG/PDF/ZIP files, use:
-
-```text
-C:\GIT\API551_HYDRATED_VIEW
-```
-
-Keep the main working repository clean:
+Clean repo:
 
 ```text
 C:\GIT\API 551
 ```
 
-Do not use a hydrated worktree with many `M` binary files for PR work. Do not commit hydrated binary files. Copy local binaries only after validating SHA-256 and size against the current branch's LFS pointer.
+Hydrated visual view:
+
+```text
+C:\GIT\API551_HYDRATED_VIEW
+```
 
 Detailed rule: `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md`.
 
-## 10. Archive and evidence policy
-
-Archive/evidence/reference materials include old rules, old Stage 4 patch files, review HTML, audit/report files, cumulative ZIPs, old handoff/source-pack files, uploaded chat source notes, and old GitHub skill ZIPs.
-
-These can be used for audit, comparison, traceability, and to recover useful wording. They do not override CURRENT policy/rules or the active source manifest.
-
-## 11. API551_PROMPTS.md
-
-`API551_PROMPTS.md` is a prompt library only. It is not source truth.
-
-Use it only after checking Project Instructions, the active manifest, CURRENT policy/rules, CURRENT addenda, and source data.
-
-## 12. New chat handoff prompt
-
-Use this when starting a new API 551 chat:
+## 9. New chat prompt
 
 ```text
 Работаем в проекте API 551 RU Translation / Stage 4 Figure Objects.
 
 Source of truth — GitHub repo:
 rassvetpublic-spec/api551-ru-translation
+
+Рабочая ветка: candidates.
+main напрямую не менять.
 
 Перед началом обязательно прочитай:
 1. docs/project/API551_NEW_CHAT_START_RU.md
@@ -203,15 +208,7 @@ rassvetpublic-spec/api551-ru-translation
 6. source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md
 7. catalog.json
 8. index.html
-9. .github/workflows/structure-check.yml
-10. docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md, если задача касается LFS/local hydrated view.
-
-Рабочая ветка: candidates.
-main напрямую не менять.
-Git LFS assets не скачивать по умолчанию.
-Для просмотра real PNG/PDF/ZIP использовать local hydrated-view, не Git worktree.
+9. tools/api551/api551.ps1
 
 Сначала выполни source-gate, затем определи текущий Figure-статус и предложи следующий минимальный проверяемый шаг.
 ```
-
-This file intentionally does not restore old files as active source.
