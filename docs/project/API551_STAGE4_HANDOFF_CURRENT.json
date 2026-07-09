@@ -39,6 +39,12 @@
   ],
   "latest_merged_prs": [
     {
+      "pr": 34,
+      "title": "Docs: add local LFS hydrated view workflow",
+      "base": "main",
+      "meaning": "Local LFS/hydrated-view workflow was added and linked from README, new-chat bootstrap, quick-start, and handoff; main and candidates were synchronized after merge."
+    },
+    {
       "pr": 33,
       "title": "Promote candidates to main after Figure 2 R08 acceptance",
       "base": "main",
