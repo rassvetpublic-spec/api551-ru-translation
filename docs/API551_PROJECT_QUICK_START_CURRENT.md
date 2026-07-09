@@ -81,7 +81,8 @@ Use this order before meaningful API 551 work:
     - `docs/project/API551_RULES_RESOLUTION_CURRENT.md`;
     - `docs/project/API551_FIGURE_LIFECYCLE_CURRENT.md`;
     - `docs/project/API551_PACKAGE_QA_CURRENT.md`;
-    - `docs/project/API551_PR_WORKFLOW_CURRENT.md`.
+    - `docs/project/API551_PR_WORKFLOW_CURRENT.md`;
+    - `docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md` when diagnosing why the repo-local toolkit blocks a workflow.
 12. Local LFS/hydrated-view workflow when relevant:
     - `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md`.
 13. Current chat instruction for the current task.
@@ -209,6 +210,7 @@ main напрямую не менять.
 7. catalog.json
 8. index.html
 9. tools/api551/api551.ps1
+10. docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md, если нужно понять историю типовых ошибок toolkit.
 
 Сначала выполни source-gate, затем определи текущий Figure-статус и предложи следующий минимальный проверяемый шаг.
 ```
