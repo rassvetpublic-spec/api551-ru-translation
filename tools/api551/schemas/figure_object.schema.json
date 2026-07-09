@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "API551 Stage 4 Figure object",
+  "type": "object",
+  "required": ["figure_no", "approval_status"],
+  "properties": {
+    "figure_no": {"type": ["integer", "string"]},
+    "approval_status": {"type": "string"},
+    "stage4_status": {"type": "string"},
+    "accepted_on": {"type": "string"},
+    "accepted_version": {"type": "string"},
+    "out_html": {"type": "string"},
+    "source_crop": {"type": "string"}
+  }
+}
