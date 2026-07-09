@@ -65,7 +65,8 @@ main
 15. `docs/project/API551_PR_WORKFLOW_CURRENT.md`;
 16. `.github/workflows/structure-check.yml`;
 17. `.github/workflows/api551-tooling-check.yml`;
-18. `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md`, если задача касается LFS/local hydrated view.
+18. `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md`, если задача касается LFS/local hydrated view;
+19. `docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md`, если нужно понять историю типовых ошибок toolkit.
 
 `API551_PROMPTS.md`, старые ZIP, review HTML, audit/report и patch-файлы использовать только как archive/evidence/reference, если они не конфликтуют с CURRENT источниками.
 
@@ -246,6 +247,7 @@ main напрямую не менять.
 7. catalog.json
 8. index.html
 9. tools/api551/api551.ps1
+10. docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md, если нужно понять историю типовых ошибок toolkit.
 
 Git LFS assets не скачивать по умолчанию.
 Для просмотра real PNG/PDF/ZIP использовать local hydrated-view, не Git worktree.
