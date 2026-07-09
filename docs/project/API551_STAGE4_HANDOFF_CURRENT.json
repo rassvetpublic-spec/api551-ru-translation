@@ -1,7 +1,7 @@
 {
   "project": "API 551 RU Translation / Stage 4 Figure Objects",
   "language": "ru",
-  "updated": "2026-07-08",
+  "updated": "2026-07-09",
   "status": "current_stage4_handoff_for_new_chat_bootstrap",
   "repo": "rassvetpublic-spec/api551-ru-translation",
   "stable_branch": "main",
@@ -11,12 +11,13 @@
   ],
   "current_stage": "Stage 4 Figure Objects",
   "figures_total": 69,
-  "figures_accepted": 21,
+  "figures_accepted": 22,
   "figures_changed": 0,
-  "figures_not_accepted": 48,
+  "figures_not_accepted": 47,
   "accepted_figures": [
     1,
     2,
+    3,
     4,
     9,
     14,
@@ -120,5 +121,5 @@
     ],
     "failure_condition": "A Figure acceptance PR is incomplete if catalog/index accepted counts differ from handoff/bootstrap status or if handoff accepted_figures does not include the newly accepted Figure."
   },
-  "next_recommended_action": "Continue Stage 4 Figure production/rework from the current source gate; choose the next not_accepted Figure and produce a review package without accepting it until explicit user approval."
+  "next_recommended_action": "Continue Stage 4 Figure production/rework from the current source gate; Figure 3 R03 is accepted, choose the next not_accepted Figure and produce a review package without accepting it until explicit user approval."
 }
