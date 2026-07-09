@@ -55,7 +55,7 @@
     "review_only",
     "manual_visual_review_required_before_acceptance"
   ],
-  "accepted_status_values": ["accepted"],
+  "accepted_status_values": ["accepted", "approved"],
   "changed_status_prefix": "измененно_",
   "not_accepted_status": "not_accepted"
 }
