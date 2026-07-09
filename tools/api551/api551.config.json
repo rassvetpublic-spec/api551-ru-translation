@@ -1,0 +1,61 @@
+{
+  "project": "API 551 RU Translation / Stage 4 Figure Objects",
+  "language": "ru",
+  "repo": "rassvetpublic-spec/api551-ru-translation",
+  "stable_branch": "main",
+  "working_branch": "candidates",
+  "local_clean_repo_path": "C:\\GIT\\API 551",
+  "local_hydrated_view_path": "C:\\GIT\\API551_HYDRATED_VIEW",
+  "figures_total": 69,
+  "status_source": "catalog.json + docs/project/API551_STAGE4_HANDOFF_CURRENT.json",
+  "required_dirs": [
+    "source",
+    "workspace/figures",
+    "docs",
+    "docs/project",
+    "tools/api551",
+    ".github/workflows"
+  ],
+  "current_rule_files": [
+    "source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md",
+    "source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md",
+    "source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md"
+  ],
+  "mandatory_source_files": [
+    "source/API551_SOURCE_MANIFEST_CURRENT.json",
+    "source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md",
+    "source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md",
+    "source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md",
+    "source/TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md",
+    "source/api551_approved_label_master_v1.csv",
+    "source/TZ_API551_translation_project_RU.md",
+    "source/API 551 2016 (R2024).pdf"
+  ],
+  "project_entrypoint_docs": [
+    "README.md",
+    "docs/project/API551_NEW_CHAT_START_RU.md",
+    "docs/project/API551_STAGE4_HANDOFF_CURRENT.json",
+    "docs/API551_PROJECT_QUICK_START_CURRENT.md",
+    "docs/project/API551_TOOLING_CURRENT.md",
+    "docs/project/API551_SOURCE_GATE_CURRENT.md",
+    "docs/project/API551_RULES_RESOLUTION_CURRENT.md",
+    "docs/project/API551_FIGURE_LIFECYCLE_CURRENT.md",
+    "docs/project/API551_PACKAGE_QA_CURRENT.md",
+    "docs/project/API551_PR_WORKFLOW_CURRENT.md"
+  ],
+  "forbidden_text_markers": [
+    "file:///C:/Users/",
+    "C:/Users/",
+    "C:\\Users\\",
+    "review_only_not_accepted"
+  ],
+  "service_markers_forbidden_in_out_html": [
+    "Служебная",
+    "Источник bbox",
+    "review_only",
+    "manual_visual_review_required_before_acceptance"
+  ],
+  "accepted_status_values": ["accepted"],
+  "changed_status_prefix": "измененно_",
+  "not_accepted_status": "not_accepted"
+}
