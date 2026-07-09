@@ -596,7 +596,7 @@
     "acceptance_not_set": true,
     "manual_visual_review_required_before_acceptance": true
   },
-  "approval_basis": "User accepted Figure 3 R03 on 2026-07-09; rebuilt from clean PDF-derived source crop as composite object with panel text rows, drawing cells, note row, and final caption.",
+  "approval_basis": "User accepted Figure 3 R03 on 2026-07-09; object rebuilt from clean PDF-derived source crop; panel titles are text rows in the composite table; panel drawings are separate drawing cells; NOTE 1 is reconstructed below drawings; caption remains last visible component.",
   "accepted_on": "2026-07-09",
   "accepted_version": "R03",
   "out_html": "figure_003.out.html",
@@ -610,7 +610,5 @@
       ".github/workflows/structure-check.yml"
     ],
     "binary_commit_note": "PNG assets must be committed through Git LFS according to .gitattributes."
-  },
-  "api_page": 27,
-  "pdf_page": 35
+  }
 }
