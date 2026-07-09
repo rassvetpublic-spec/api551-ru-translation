@@ -24,6 +24,7 @@ Primary bootstrap files:
 10. `.github/workflows/structure-check.yml`
 11. `.github/workflows/api551-tooling-check.yml`
 12. `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md` when local LFS recovery or visual hydrated folders are relevant
+13. `docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md` when diagnosing why the repo-local toolkit blocks a workflow
 
 Working branch: `candidates`.
 
@@ -64,6 +65,7 @@ The toolkit is documented in:
 - `docs/project/API551_FIGURE_LIFECYCLE_CURRENT.md`
 - `docs/project/API551_PACKAGE_QA_CURRENT.md`
 - `docs/project/API551_PR_WORKFLOW_CURRENT.md`
+- `docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md`
 
 ## Current structure
 
