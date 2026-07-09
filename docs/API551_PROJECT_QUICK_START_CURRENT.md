@@ -19,7 +19,8 @@ This file is a compact helper. It is not a source of truth and does not replace:
 5. `source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md`;
 6. `source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md`;
 7. `source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md`;
-8. Figure-specific accepted objects, `catalog.json`, or `index.html`.
+8. `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md` when local LFS recovery or hydrated-view handling is relevant;
+9. Figure-specific accepted objects, `catalog.json`, or `index.html`.
 
 If this file conflicts with an ACTIVE/CURRENT project file, the ACTIVE/CURRENT file controls.
 
@@ -52,9 +53,11 @@ Use this order before any meaningful API 551 work:
     - `workspace/figures/`;
     - `.github/workflows/structure-check.yml`;
     - `docs/rules/*CURRENT*`.
-11. Current chat instructions for the current task.
-12. Memory and old chats as reference only.
-13. `archive/*` as reference/evidence only.
+11. Local LFS/hydrated-view workflow when relevant:
+    - `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md`.
+12. Current chat instructions for the current task.
+13. Memory and old chats as reference only.
+14. `archive/*` as reference/evidence only.
 
 ## 3. Active source model
 
@@ -77,9 +80,10 @@ Before any task involving API 551 files, GitHub, figures, acceptance, workflow, 
 7. Check the CURRENT rework/source/frame-fit addendum.
 8. Check mandatory source data availability and role.
 9. Check GitHub `catalog.json`, `index.html`, and `workspace/figures/` when Figure status matters.
-10. Determine the Figure status when working on a Figure.
-11. Do not use memory, old chats, `API551_PROMPTS.md`, File Library, or `/mnt/data` as the only source of truth.
-12. If there is a conflict, stop and report:
+10. Check `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md` when LFS budget, local hydrated PNG/PDF/ZIP, visual-review folders, or local binary recovery matter.
+11. Determine the Figure status when working on a Figure.
+12. Do not use memory, old chats, `API551_PROMPTS.md`, File Library, or `/mnt/data` as the only source of truth.
+13. If there is a conflict, stop and report:
 
 ```text
 source -> role -> problem -> risk -> required decision
@@ -98,7 +102,8 @@ Do not:
 - change `main` directly without explicit user permission;
 - merge a PR without explicit user command;
 - output large HTML, PNG, JSON, CSV, or debug dumps into chat;
-- work from stale local files or `/mnt/data` as the only source.
+- work from stale local files or `/mnt/data` as the only source;
+- commit hydrated PNG/PDF/ZIP files as ordinary Git modifications after local LFS recovery.
 
 ## 6. GitHub workflow
 
@@ -145,11 +150,27 @@ Required when policy, entrypoint, workflow, source-gate, or current-status wordi
 
 A Figure acceptance PR is incomplete if catalog/index accepted counts differ from the handoff/bootstrap status.
 
-## 9. Git LFS reminder
+## 9. Git LFS and local hydrated view reminder
 
 Do not run `git lfs pull` by default. Normal work should use no-smudge clone/sync and fetch LFS assets only by exact include path when needed.
 
 `Structure check` is expected to run with `lfs: false` and validate LFS pointer state for binary assets.
+
+For local visual review and offline recovery of real PNG/PDF/ZIP files, use:
+
+```text
+C:\GIT\API551_HYDRATED_VIEW
+```
+
+Keep the main working repository clean:
+
+```text
+C:\GIT\API 551
+```
+
+Do not use a hydrated worktree with many `M` binary files for PR work. Do not commit hydrated binary files. Copy local binaries only after validating SHA-256 and size against the current branch's LFS pointer.
+
+Detailed rule: `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md`.
 
 ## 10. Archive and evidence policy
 
@@ -183,10 +204,12 @@ rassvetpublic-spec/api551-ru-translation
 7. catalog.json
 8. index.html
 9. .github/workflows/structure-check.yml
+10. docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md, если задача касается LFS/local hydrated view.
 
 Рабочая ветка: candidates.
 main напрямую не менять.
 Git LFS assets не скачивать по умолчанию.
+Для просмотра real PNG/PDF/ZIP использовать local hydrated-view, не Git worktree.
 
 Сначала выполни source-gate, затем определи текущий Figure-статус и предложи следующий минимальный проверяемый шаг.
 ```

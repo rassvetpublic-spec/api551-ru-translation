@@ -39,6 +39,12 @@
   ],
   "latest_merged_prs": [
     {
+      "pr": 33,
+      "title": "Promote candidates to main after Figure 2 R08 acceptance",
+      "base": "main",
+      "meaning": "Main was updated from candidates after Figure 2 R08 acceptance; main and candidates were then synchronized."
+    },
+    {
       "pr": 31,
       "title": "CI: make structure check tolerant of LFS budget",
       "base": "candidates",
@@ -67,14 +73,24 @@
     "source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md",
     "catalog.json",
     "index.html",
-    ".github/workflows/structure-check.yml"
+    ".github/workflows/structure-check.yml",
+    "docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md when local LFS recovery or hydrated-view handling is relevant"
   ],
   "lfs_policy": {
     "default": "Do not run git lfs pull by default.",
     "ci": "Structure check uses lfs:false and pointer checks.",
     "local_clone": "Use GIT_LFS_SKIP_SMUDGE=1 for normal clone/sync work.",
     "download": "Download LFS assets only by exact include path when needed.",
-    "pointer_files": "Small text LFS pointer files in local no-smudge checkout are expected and must not be treated as project corruption."
+    "pointer_files": "Small text LFS pointer files in local no-smudge checkout are expected and must not be treated as project corruption.",
+    "hydrated_view": "Keep the clean Git repo separate from local real PNG/PDF/ZIP review assets. Use C:\\GIT\\API551_HYDRATED_VIEW for hydrated visual review and recovery. Do not commit hydrated binary files as ordinary modifications."
+  },
+  "local_lfs_hydrated_view_workflow": {
+    "doc": "docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md",
+    "clean_repo_path": "C:\\GIT\\API 551",
+    "hydrated_view_path": "C:\\GIT\\API551_HYDRATED_VIEW",
+    "backup_source_example": "C:\\GIT\\API 551 — копия",
+    "rule": "Copy local binary files into a hydrated view only after matching source SHA-256 and byte size against the current branch LFS pointer oid sha256 and size.",
+    "do_not_commit": "Do not git add or commit hydrated PNG/PDF/ZIP files as ordinary Git modifications. Use the clean repo for branches and PRs."
   },
   "acceptance_update_rule": {
     "description": "Every accepted Figure candidate must update both Figure object files and project bootstrap/handoff/init files.",
