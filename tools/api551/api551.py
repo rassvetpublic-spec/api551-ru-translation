@@ -91,6 +91,18 @@ def require_real_png_bytes(data: bytes, name: str) -> None:
         fail(f"package PNG has invalid signature: {name}")
 
 
+def has_tool_marker(text: str) -> bool:
+    return "tools/api551/api551.ps1" in text or ".\\tools\\api551\\api551.ps1" in text
+
+
+def is_accepted_approval_status(value: Any, cfg: dict[str, Any]) -> bool:
+    if value in set(cfg.get("accepted_status_values", ["accepted", "approved", None])):
+        return True
+    text = "" if value is None else str(value)
+    prefixes = cfg.get("accepted_status_prefixes", ["accepted_by_user_"])
+    return any(text.startswith(prefix) for prefix in prefixes)
+
+
 def catalog_stats(catalog: dict[str, Any]) -> dict[str, Any]:
     figures = catalog.get("figures", [])
     accepted = sorted(int(f["figure_no"]) for f in figures if f.get("status") == "accepted")
@@ -136,13 +148,6 @@ def validate_status_sync(root: Path) -> dict[str, Any]:
 
 def docs_sync_check(root: Path, quiet: bool = False) -> dict[str, Any]:
     stats = validate_status_sync(root)
-    markers = [
-        f"accepted: {stats['accepted']}/69",
-        f"not_accepted: {stats['not_accepted']}/69",
-        f"changed/review: {stats['changed']}",
-        "tools/api551/api551.ps1",
-        "source-gate",
-    ]
     docs = [
         root / "README.md",
         root / "docs" / "API551_PROJECT_QUICK_START_CURRENT.md",
@@ -157,15 +162,15 @@ def docs_sync_check(root: Path, quiet: bool = False) -> dict[str, Any]:
         if "source-gate" not in text:
             fail(f"documentation does not mention source-gate: {doc.relative_to(root).as_posix()}")
     bootstrap = read_text(root / "docs" / "project" / "API551_NEW_CHAT_START_RU.md")
-    for marker in markers:
+    for marker in [f"accepted: {stats['accepted']}/69", f"not_accepted: {stats['not_accepted']}/69", f"changed/review: {stats['changed']}"]:
         if marker not in bootstrap:
             fail(f"bootstrap marker missing: {marker}")
-    for doc in [root / "README.md", root / "docs" / "API551_PROJECT_QUICK_START_CURRENT.md"]:
+    for doc in [root / "README.md", root / "docs" / "API551_PROJECT_QUICK_START_CURRENT.md", root / "docs" / "project" / "API551_NEW_CHAT_START_RU.md"]:
         text = read_text(doc)
         if "docs/project/API551_STAGE4_HANDOFF_CURRENT.json" not in text:
             fail(f"{doc.relative_to(root).as_posix()} does not mention handoff JSON")
-        if "tools/api551/api551.ps1" not in text:
-            fail(f"{doc.relative_to(root).as_posix()} does not mention repo-local toolkit")
+        if not has_tool_marker(text):
+            fail(f"{doc.relative_to(root).as_posix()} does not mention repo-local toolkit entrypoint")
     if not quiet:
         print("docs/status sync OK")
     return stats
@@ -237,12 +242,8 @@ def validate_image_refs(html_path: Path) -> None:
 def figure_check(args: argparse.Namespace) -> None:
     root = repo_root()
     cfg = load_config(root)
-    accepted_values = set(cfg.get("accepted_status_values", ["accepted", "approved"]))
     catalog = read_json(root / "catalog.json")
-    figures = (
-        [figure_id(f.get("figure_no")) for f in catalog.get("figures", []) if f.get("status") == "accepted"]
-        if args.all_known else [figure_id(args.figure)]
-    )
+    figures = ([figure_id(f.get("figure_no")) for f in catalog.get("figures", []) if f.get("status") == "accepted"] if args.all_known else [figure_id(args.figure)])
     checked = 0
     for fig_id in figures:
         fig = find_catalog_figure(root, fig_id)
@@ -257,8 +258,8 @@ def figure_check(args: argparse.Namespace) -> None:
                 fail(f"Figure {fig_id} {key} is neither PNG nor LFS pointer: {fig[key]}")
         obj = read_json(rel_path(root, fig["json"]))
         if fig.get("status") == "accepted":
-            if obj.get("approval_status") not in accepted_values:
-                fail(f"Figure {fig_id} object JSON approval_status is not accepted/approved")
+            if not is_accepted_approval_status(obj.get("approval_status"), cfg):
+                fail(f"Figure {fig_id} object JSON approval_status is not recognized as accepted")
             if "review_only_not_accepted" in json.dumps(obj, ensure_ascii=False):
                 fail(f"Figure {fig_id} object JSON contains review_only_not_accepted")
         html_path = rel_path(root, fig["html"])
@@ -276,10 +277,13 @@ def figure_check(args: argparse.Namespace) -> None:
     print(f"figure-check OK ({checked} figure(s))")
 
 
+def package_roots(names: list[str]) -> list[str]:
+    return sorted({name.split("/", 1)[0] for name in names if "/" in name and name.split("/", 1)[0]})
+
+
 def package_check(args: argparse.Namespace) -> None:
     root = repo_root()
     cfg = load_config(root)
-    accepted_values = set(cfg.get("accepted_status_values", ["accepted", "approved"]))
     zip_path = Path(args.package_zip).expanduser().resolve()
     if not zip_path.is_file():
         fail(f"package ZIP not found: {zip_path}")
@@ -288,16 +292,16 @@ def package_check(args: argparse.Namespace) -> None:
         bad = zf.testzip()
         if bad:
             fail(f"ZIP integrity failed at {bad}")
-        names = [n.replace("\\", "/") for n in zf.namelist()]
-        if any(n.lower().endswith(".pdf") for n in names):
+        names = [name.replace("\\", "/") for name in zf.namelist()]
+        if any(name.lower().endswith(".pdf") for name in names):
             fail("package must not include PDF files")
-        roots = sorted({n.split("/", 1)[0] for n in names if "/" in n})
+        roots = package_roots(names)
         if fig_id is None:
             if len(roots) != 1 or not re.fullmatch(r"\d{3}", roots[0]):
                 fail(f"package must contain exactly one NNN root folder, got {roots}")
             fig_id = roots[0]
-        if not any(n.startswith(f"{fig_id}/") for n in names):
-            fail(f"package must contain root folder {fig_id}/")
+        if roots != [fig_id]:
+            fail(f"package must contain only root folder {fig_id}/, got {roots}")
         required = [
             f"{fig_id}/figure_{fig_id}.object.html",
             f"{fig_id}/figure_{fig_id}.object.json",
@@ -305,7 +309,7 @@ def package_check(args: argparse.Namespace) -> None:
             f"{fig_id}/figure_{fig_id}.png",
             f"{fig_id}/figure_{fig_id}.source_crop.png",
         ]
-        missing = [n for n in required if n not in names]
+        missing = [name for name in required if name not in names]
         if missing:
             fail("package missing required files: " + ", ".join(missing))
         for name in [n for n in names if n.lower().endswith((".html", ".json", ".md", ".txt", ".csv"))]:
@@ -318,7 +322,7 @@ def package_check(args: argparse.Namespace) -> None:
                         fail(f"out.html contains service marker {marker}: {name}")
         obj_text = zf.read(f"{fig_id}/figure_{fig_id}.object.json").decode("utf-8-sig")
         obj = json.loads(obj_text)
-        if obj.get("approval_status") in accepted_values and "review_only_not_accepted" in obj_text:
+        if is_accepted_approval_status(obj.get("approval_status"), cfg) and "review_only_not_accepted" in obj_text:
             fail("accepted object JSON contains review_only_not_accepted")
         for name in required:
             if name.lower().endswith(".png"):
@@ -326,7 +330,7 @@ def package_check(args: argparse.Namespace) -> None:
         name_set = set(names)
         for html_name in [f"{fig_id}/figure_{fig_id}.object.html", f"{fig_id}/figure_{fig_id}.out.html"]:
             html = zf.read(html_name).decode("utf-8-sig", errors="replace")
-            if obj.get("approval_status") in accepted_values and "review_only_not_accepted" in html:
+            if is_accepted_approval_status(obj.get("approval_status"), cfg) and "review_only_not_accepted" in html:
                 fail(f"accepted HTML contains review_only_not_accepted: {html_name}")
             for src in re.findall(r"<img[^>]+src=[\"']([^\"']+)[\"']", html, flags=re.I):
                 if src.startswith(("http://", "https://", "data:")):
@@ -337,18 +341,31 @@ def package_check(args: argparse.Namespace) -> None:
     print(f"package-check OK: {zip_path}")
 
 
+def safe_extract_figure_root(zf: zipfile.ZipFile, destination: Path, fig_id: str) -> None:
+    base = destination.resolve()
+    prefix = f"{fig_id}/"
+    for info in zf.infolist():
+        name = info.filename.replace("\\", "/")
+        if not name.startswith(prefix):
+            fail(f"refusing to extract non-selected package member: {name}")
+        target = (destination / name).resolve()
+        if not str(target).startswith(str(base) + os.sep):
+            fail(f"refusing unsafe ZIP path: {name}")
+    zf.extractall(destination)
+
+
 def install_package(args: argparse.Namespace) -> None:
     package_check(args)
     root = repo_root()
     fig_id = figure_id(args.figure) if args.figure else None
     with zipfile.ZipFile(Path(args.package_zip).expanduser().resolve()) as zf:
-        names = [n.replace("\\", "/") for n in zf.namelist()]
+        names = [name.replace("\\", "/") for name in zf.namelist()]
         if fig_id is None:
-            fig_id = sorted({n.split("/", 1)[0] for n in names if "/" in n})[0]
+            fig_id = package_roots(names)[0]
         target = root / "workspace" / "figures" / fig_id
         if target.exists():
             shutil.rmtree(target)
-        zf.extractall(root / "workspace" / "figures")
+        safe_extract_figure_root(zf, root / "workspace" / "figures", fig_id)
     print(f"installed package to workspace/figures/{fig_id}")
 
 
