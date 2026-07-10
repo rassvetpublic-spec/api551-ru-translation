@@ -1,0 +1,169 @@
+{
+  "figure_no": 6,
+  "figure_id": "Figure 6",
+  "caption_original": "Figure 6—Metal Sheathed Thermocouple Types",
+  "caption_ru": "Рисунок 6 — Типы термопар в металлической оболочке",
+  "api_page": "31",
+  "pdf_page": "39",
+  "source_pdf_link": "../../../source/API%20551%202016%20(R2024).pdf#page=39",
+  "status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-10",
+  "stage4_status": "accepted",
+  "source_policy": "PDF-derived source crop; final PNG excludes figure caption/title; no generative image editing; no leader-line redraw; source-text cleanup before translation; callout frames measured from rendered Russian text alpha-mask pixel bbox with 4 px padding.",
+  "folder_layout": "accepted-folder-compatible_minimal_files_only",
+  "files": {
+    "caption_ru": "figure_006.caption_ru.txt",
+    "object_html": "figure_006.object.html",
+    "object_json": "figure_006.object.json",
+    "out_html": "figure_006.out.html",
+    "png": "figure_006.png",
+    "source_crop": "figure_006.source_crop.png"
+  },
+  "visual_label_blocks": [
+    {
+      "label_block_no": 1,
+      "original_text": "Cross Section",
+      "effective_ru_text": "Поперечное сечение",
+      "coverage_resolution": "approved_master_translation",
+      "stage4_translation_added": false,
+      "placed": true,
+      "placement": {
+        "text_bbox_px": [
+          55,
+          22,
+          271,
+          39
+        ],
+        "underline_px": [
+          55,
+          42,
+          271,
+          42
+        ],
+        "placement_mode": "replace_text_preserve_heading_underline"
+      }
+    },
+    {
+      "label_block_no": 2,
+      "original_text": "Sheath",
+      "effective_ru_text": "Оболочка",
+      "coverage_resolution": "approved_master_translation",
+      "stage4_translation_added": false,
+      "placed": true,
+      "placement": {
+        "text_bbox_px": [
+          16,
+          86,
+          101,
+          100
+        ],
+        "frame_bbox_px": [
+          12,
+          82,
+          105,
+          104
+        ],
+        "frame_padding_px": {
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "placement_mode": "pixel_bbox_boxed_callout_no_leader_redraw"
+      }
+    },
+    {
+      "label_block_no": 3,
+      "original_text": "Thermocouple wire",
+      "effective_ru_text": "Термоэлектрод термопары",
+      "coverage_resolution": "approved_master_translation",
+      "stage4_translation_added": false,
+      "placed": true,
+      "placement": {
+        "text_bbox_px": [
+          215,
+          58,
+          346,
+          89
+        ],
+        "frame_bbox_px": [
+          211,
+          54,
+          350,
+          93
+        ],
+        "frame_padding_px": {
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "placement_mode": "pixel_bbox_boxed_callout_no_leader_redraw"
+      }
+    },
+    {
+      "label_block_no": 4,
+      "original_text": "Insulation",
+      "effective_ru_text": "Изоляция",
+      "coverage_resolution": "approved_master_translation",
+      "stage4_translation_added": false,
+      "placed": true,
+      "placement": {
+        "text_bbox_px": [
+          23,
+          254,
+          107,
+          268
+        ],
+        "frame_bbox_px": [
+          19,
+          250,
+          111,
+          272
+        ],
+        "frame_padding_px": {
+          "left": 4,
+          "top": 4,
+          "right": 4,
+          "bottom": 4
+        },
+        "placement_mode": "pixel_bbox_boxed_callout_no_leader_redraw"
+      }
+    },
+    {
+      "label_block_no": 5,
+      "original_text": "A",
+      "effective_ru_text": "A — тип A, заземлённый спай",
+      "coverage_resolution": "protected_symbol_only",
+      "stage4_translation_added": false,
+      "placed": false,
+      "placement": {
+        "placement_mode": "protected_do_not_translate"
+      }
+    },
+    {
+      "label_block_no": 6,
+      "original_text": "B",
+      "effective_ru_text": "B — тип B, незаземлённый спай",
+      "coverage_resolution": "protected_symbol_only",
+      "stage4_translation_added": false,
+      "placed": false,
+      "placement": {
+        "placement_mode": "protected_do_not_translate"
+      }
+    }
+  ],
+  "qa": {
+    "r04_corrections": [
+      "removed figure caption/title from final PNG by using graphic-only source crop height",
+      "removed residual source glyph fragments from Thermocouple wire cleanup area",
+      "no leader/arrow/dimension lines were drawn or extended",
+      "all boxed callout frames are derived from final rendered Russian text pixel bbox with 4 px padding"
+    ],
+    "source_crop_policy": "figure_006.source_crop.png is graphic-only crop; caption is represented by figure_006.caption_ru.txt and HTML caption.",
+    "ready_for_final_export": false
+  },
+  "ready_for_final_export": true,
+  "source_package": "API551_FIG06_ACCEPTED_R04_NORMALIZED_20260710",
+  "folder": "workspace/figures/006"
+}
