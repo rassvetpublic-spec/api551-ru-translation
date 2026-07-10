@@ -1,0 +1,322 @@
+{
+  "project": "API 551 RU Translation / Stage 4 Figure Objects",
+  "figure_no": 5,
+  "figure_id": "Figure 5",
+  "caption_original": "Figure 5—Ceramic Thermowell",
+  "caption_ru": "Рисунок 5 — Керамическая защитная гильза",
+  "stage4_status": "accepted_2026-07-10_R02",
+  "approval_status": "accepted",
+  "source_policy": "rebuild from clean PDF-derived source crop after R01 rejection; no reuse of translated PNG as production source",
+  "source_pdf_link": "../../../source/API%20551%202016%20(R2024).pdf#page=37",
+  "source_pdf_sha256_local": "d458b3a899902f216767e753aa5737a9745b61adcab02f85c9521937a9d3e270",
+  "source_pdf_size_bytes": 8089772,
+  "source_crop": "figure_005.source_crop.png",
+  "clean_intermediate": "figure_005.clean_intermediate_R02.png",
+  "png_file": "figure_005.png",
+  "qa_overlay": "figure_005.qa_overlay_R02.png",
+  "render_scale": 2.0,
+  "crop_pdf_points": [
+    40.0,
+    176.0,
+    572.0,
+    551.9
+  ],
+  "catalog_status_before": "not_accepted",
+  "accepted_by_script": false,
+  "rework_reason": "R01 rejected: missing frames, displaced 3-inch text, labels too far from leaders, and damage/clearance issues near leader lines.",
+  "visual_label_blocks": [
+    {
+      "block_id": "block-004",
+      "original_text": "Steel sheathing",
+      "ru_text": "Стальная оболочка",
+      "strategy": "leader_line_callout",
+      "source_cleanup_bbox_px": [
+        388,
+        70,
+        520,
+        170
+      ],
+      "frame_bbox_px": [
+        387,
+        76,
+        479,
+        118
+      ],
+      "text_bbox_px": [
+        391,
+        80,
+        475.0,
+        114
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4.0,
+        "bottom": 4
+      },
+      "qa": {
+        "clean_source_used": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "leader_relation": "frame near leader; no crossing",
+        "protected_graphics_overlap": false,
+        "note": "Compact box placed at original label area."
+      }
+    },
+    {
+      "block_id": "block-003",
+      "original_text": "Refractory and insulation",
+      "ru_text": "Огнеупорная футеровка и теплоизоляция",
+      "strategy": "leader_line_callout",
+      "source_cleanup_bbox_px": [
+        546,
+        4,
+        724,
+        130
+      ],
+      "frame_bbox_px": [
+        548,
+        6,
+        684,
+        69
+      ],
+      "text_bbox_px": [
+        552,
+        10,
+        680.0,
+        65
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4.0,
+        "bottom": 4
+      },
+      "qa": {
+        "clean_source_used": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "leader_relation": "frame moved close to three leaders",
+        "protected_graphics_overlap": false,
+        "note": "Kept near original text zone; protected leaders restored from source."
+      }
+    },
+    {
+      "block_id": "block-005",
+      "original_text": "Screwed coupling or flange",
+      "ru_text": "Резьбовая муфта или фланец",
+      "strategy": "leader_line_callout",
+      "source_cleanup_bbox_px": [
+        284,
+        142,
+        430,
+        260
+      ],
+      "frame_bbox_px": [
+        288,
+        146,
+        389,
+        214
+      ],
+      "text_bbox_px": [
+        292,
+        150,
+        385.0,
+        210
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4.0,
+        "bottom": 4
+      },
+      "qa": {
+        "clean_source_used": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "leader_relation": "frame close to leader vertical segment",
+        "protected_graphics_overlap": false,
+        "note": "Box compact and close to original callout position."
+      }
+    },
+    {
+      "block_id": "block-006",
+      "original_text": "Furnace tube",
+      "ru_text": "Труба печи",
+      "strategy": "leader_line_callout",
+      "source_cleanup_bbox_px": [
+        882,
+        68,
+        1010,
+        175
+      ],
+      "frame_bbox_px": [
+        886,
+        76,
+        944,
+        119
+      ],
+      "text_bbox_px": [
+        890,
+        80,
+        940.0,
+        115
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4.0,
+        "bottom": 4
+      },
+      "qa": {
+        "clean_source_used": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "leader_relation": "frame close to arrow leader",
+        "protected_graphics_overlap": false,
+        "note": "Placed in original label area."
+      }
+    },
+    {
+      "block_id": "block-007-left",
+      "original_text": "3 in. Approximately",
+      "ru_text": "3″ приблизительно",
+      "strategy": "dimension_callout_boxed",
+      "source_cleanup_bbox_px": [
+        338,
+        517,
+        475,
+        590
+      ],
+      "frame_bbox_px": [
+        330,
+        520,
+        487,
+        566
+      ],
+      "text_bbox_px": [
+        334,
+        524,
+        483.0,
+        562
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4.0,
+        "bottom": 4
+      },
+      "qa": {
+        "clean_source_used": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "leader_relation": "frame close to leader/arrow",
+        "protected_graphics_overlap": false,
+        "note": "Order preserved: dimension value first, then qualifier."
+      }
+    },
+    {
+      "block_id": "block-007-right",
+      "original_text": "3 in. Approximately",
+      "ru_text": "3″ приблизительно",
+      "strategy": "dimension_callout_boxed",
+      "source_cleanup_bbox_px": [
+        689,
+        645,
+        846,
+        691
+      ],
+      "frame_bbox_px": [
+        654,
+        646,
+        833,
+        672
+      ],
+      "text_bbox_px": [
+        658,
+        650,
+        829,
+        668
+      ],
+      "actual_padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "qa": {
+        "clean_source_used": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": true,
+        "padding_3_to_5_px_final_png": true,
+        "leader_relation": "frame close to bottom dimension line",
+        "protected_graphics_overlap": false,
+        "note": "Order preserved and box kept near original baseline."
+      }
+    },
+    {
+      "block_id": "block-001-caption",
+      "original_text": "Figure 5—Ceramic Thermowell",
+      "ru_text": "Рисунок 5 — Керамическая защитная гильза",
+      "strategy": "caption_inside_png",
+      "source_cleanup_bbox_px": [
+        360,
+        704,
+        742,
+        746
+      ],
+      "text_bbox_px": [
+        294,
+        710,
+        769,
+        729
+      ],
+      "qa": {
+        "clean_source_used": true,
+        "source_cleanup_before_render": true,
+        "post_render_cleanup_used": false,
+        "gray_frame_present": false,
+        "note": "Caption replaced at original caption location."
+      }
+    }
+  ],
+  "protected_items": {
+    "dimension_U_plus_3_4_in": "preserved visually unchanged as protected source dimension",
+    "leader_lines_arrows_dimension_lines": "treated as protected graphics and restored from source where cleanup touched them"
+  },
+  "qa_summary": {
+    "source_crop_from_pdf": true,
+    "source_text_cleanup_before_render": true,
+    "post_render_cleanup_used": false,
+    "gray_frames_present_for_translated_callouts": true,
+    "two_3in_occurrences_kept_with_number_first": true,
+    "manual_review_required_before_acceptance": false,
+    "accepted_after_user_review": true
+  },
+  "files": [
+    "figure_005.R02_QA_REPORT.md",
+    "figure_005.clean_intermediate_R02.png",
+    "figure_005.object.html",
+    "figure_005.object.json",
+    "figure_005.out.html",
+    "figure_005.png",
+    "figure_005.qa_overlay_R02.png",
+    "figure_005.source_crop.png"
+  ],
+  "created_utc": "2026-07-09T17:09:28.079313+03:00",
+  "api_page": 29,
+  "pdf_page": 37,
+  "approval_basis": "User accepted Figure 5 R02 after R01 rejection and R02 rework.",
+  "source_package": "API551_FIG05_ACCEPTED_R02_2026-07-10"
+}

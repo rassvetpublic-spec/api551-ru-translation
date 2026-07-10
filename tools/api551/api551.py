@@ -201,8 +201,9 @@ def source_gate(args: argparse.Namespace) -> None:
         try:
             branch = subprocess.check_output(["git", "branch", "--show-current"], cwd=root, text=True, stderr=subprocess.DEVNULL).strip()
             allowed = {cfg["working_branch"], "tools/api551-stage4-toolkit-v1"}
-            if branch and branch not in allowed:
-                fail(f"current branch is {branch!r}; expected one of {sorted(allowed)}")
+            allowed_prefixes = ("accept-", "fix-", "fix/", "tools/", "docs/", "ci/", "rules/")
+            if branch and branch not in allowed and not branch.startswith(allowed_prefixes):
+                fail(f"current branch is {branch!r}; expected one of {sorted(allowed)} or work branch prefixes {allowed_prefixes}")
         except subprocess.CalledProcessError:
             pass
     print("source-gate OK")
@@ -247,28 +248,45 @@ def figure_check(args: argparse.Namespace) -> None:
     checked = 0
     for fig_id in figures:
         fig = find_catalog_figure(root, fig_id)
-        for key in ["folder", "html", "json", "png", "source_crop", "out_html"]:
-            value = fig.get(key)
-            if not value:
-                fail(f"Figure {fig_id} missing catalog key: {key}")
-            if not rel_path(root, value).exists():
-                fail(f"Figure {fig_id} catalog path missing for {key}: {value}")
-        for key in ["png", "source_crop"]:
-            if not is_png_or_lfs(rel_path(root, fig[key])):
-                fail(f"Figure {fig_id} {key} is neither PNG nor LFS pointer: {fig[key]}")
-        obj = read_json(rel_path(root, fig["json"]))
-        if fig.get("status") == "accepted":
+        status = fig.get("status")
+        if status == "accepted":
+            for key in ["folder", "html", "json", "png", "source_crop", "out_html"]:
+                value = fig.get(key)
+                if not value:
+                    fail(f"Figure {fig_id} missing catalog key: {key}")
+                if not rel_path(root, value).exists():
+                    fail(f"Figure {fig_id} catalog path missing for {key}: {value}")
+            html_path = rel_path(root, fig["html"])
+            json_path = rel_path(root, fig["json"])
+            out_path = rel_path(root, fig["out_html"])
+            png_path = rel_path(root, fig["png"])
+            source_crop_path = rel_path(root, fig["source_crop"])
+        else:
+            fig_dir = root / "workspace" / "figures" / fig_id
+            if not fig_dir.is_dir():
+                fail(f"Figure {fig_id} is {status!r} in catalog and has no review folder: {fig_dir.relative_to(root).as_posix()}")
+            html_path = fig_dir / f"figure_{fig_id}.object.html"
+            json_path = fig_dir / f"figure_{fig_id}.object.json"
+            out_path = fig_dir / f"figure_{fig_id}.out.html"
+            png_path = fig_dir / f"figure_{fig_id}.png"
+            source_crop_path = fig_dir / f"figure_{fig_id}.source_crop.png"
+            for path in [html_path, json_path, out_path, png_path, source_crop_path]:
+                if not path.exists():
+                    fail(f"Figure {fig_id} review path missing: {path.relative_to(root).as_posix()}")
+        for path, key in [(png_path, "png"), (source_crop_path, "source_crop")]:
+            if not is_png_or_lfs(path):
+                fail(f"Figure {fig_id} {key} is neither PNG nor LFS pointer: {path.relative_to(root).as_posix()}")
+        obj = read_json(json_path)
+        if status == "accepted":
             if not is_accepted_approval_status(obj.get("approval_status"), cfg):
                 fail(f"Figure {fig_id} object JSON approval_status is not recognized as accepted")
             if "review_only_not_accepted" in json.dumps(obj, ensure_ascii=False):
                 fail(f"Figure {fig_id} object JSON contains review_only_not_accepted")
-        html_path = rel_path(root, fig["html"])
-        out_path = rel_path(root, fig["out_html"])
         validate_image_refs(html_path)
         validate_image_refs(out_path)
         html_text = read_text(html_path)
         out_text = read_text(out_path)
-        if fig.get("status") == "accepted" and "review_only_not_accepted" in html_text:
+        if status == "accepted" and "review_only_not_accepted" in html_text:
             fail(f"Figure {fig_id} object HTML contains review_only_not_accepted")
         for marker in cfg.get("service_markers_forbidden_in_out_html", []):
             if marker in out_text:
@@ -344,14 +362,54 @@ def package_check(args: argparse.Namespace) -> None:
 def safe_extract_figure_root(zf: zipfile.ZipFile, destination: Path, fig_id: str) -> None:
     base = destination.resolve()
     prefix = f"{fig_id}/"
+    members = []
     for info in zf.infolist():
-        name = info.filename.replace("\\", "/")
+        name = info.filename.replace(chr(92), "/")
         if not name.startswith(prefix):
             fail(f"refusing to extract non-selected package member: {name}")
         target = (destination / name).resolve()
         if not str(target).startswith(str(base) + os.sep):
             fail(f"refusing unsafe ZIP path: {name}")
-    zf.extractall(destination)
+        members.append((info, name, target))
+    for info, name, target in members:
+        if info.is_dir():
+            target.mkdir(parents=True, exist_ok=True)
+            continue
+        target.parent.mkdir(parents=True, exist_ok=True)
+        try:
+            with zf.open(info) as src, open(target, "wb") as dst:
+                shutil.copyfileobj(src, dst)
+        except PermissionError as exc:
+            fail(
+                f"cannot write extracted file due to Windows permission/file-lock: {target}. "
+                "Close Explorer preview, image viewers, browser tabs, and retry. "
+                f"Original error: {exc}"
+            )
+
+
+def remove_tree_for_install(target: Path) -> None:
+    if not target.exists():
+        return
+
+    def onerror(func, path, exc_info):
+        try:
+            os.chmod(path, 0o700)
+            func(path)
+        except PermissionError as exc:
+            fail(
+                f"cannot remove existing install target due to Windows permission/file-lock: {path}. "
+                "Close Explorer preview, image viewers, browser tabs, and retry. "
+                f"Original error: {exc}"
+            )
+
+    try:
+        shutil.rmtree(target, onerror=onerror)
+    except PermissionError as exc:
+        fail(
+            f"cannot remove existing install target due to Windows permission/file-lock: {target}. "
+            "Close Explorer preview, image viewers, browser tabs, and retry. "
+            f"Original error: {exc}"
+        )
 
 
 def install_package(args: argparse.Namespace) -> None:
@@ -359,12 +417,11 @@ def install_package(args: argparse.Namespace) -> None:
     root = repo_root()
     fig_id = figure_id(args.figure) if args.figure else None
     with zipfile.ZipFile(Path(args.package_zip).expanduser().resolve()) as zf:
-        names = [name.replace("\\", "/") for name in zf.namelist()]
+        names = [name.replace(chr(92), "/") for name in zf.namelist()]
         if fig_id is None:
             fig_id = package_roots(names)[0]
         target = root / "workspace" / "figures" / fig_id
-        if target.exists():
-            shutil.rmtree(target)
+        remove_tree_for_install(target)
         safe_extract_figure_root(zf, root / "workspace" / "figures", fig_id)
     print(f"installed package to workspace/figures/{fig_id}")
 
