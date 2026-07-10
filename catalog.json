@@ -6,9 +6,9 @@
   "pdf_expected_path": "source/API 551 2016 (R2024).pdf",
   "stats": {
     "total": 69,
-    "accepted": 23,
+    "accepted": 24,
     "changed": 0,
-    "not_accepted": 46
+    "not_accepted": 45
   },
   "figures": [
     {
@@ -103,8 +103,15 @@
       "caption_ru": "Рисунок 6 — Типы термопар в металлической оболочке",
       "api_page": "31",
       "pdf_page": "39",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=39"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=39",
+      "folder": "workspace/figures/006",
+      "source_package": "API551_FIG06_ACCEPTED_R04_NORMALIZED_20260710",
+      "html": "workspace/figures/006/figure_006.object.html",
+      "json": "workspace/figures/006/figure_006.object.json",
+      "png": "workspace/figures/006/figure_006.png",
+      "source_crop": "workspace/figures/006/figure_006.source_crop.png",
+      "out_html": "workspace/figures/006/figure_006.out.html"
     },
     {
       "figure_no": 7,

@@ -46,9 +46,9 @@ The status must match `catalog.json` and `index.html`.
 Current expected Stage 4 status after Figure 3 R03:
 
 ```text
-accepted: 22/69
+accepted: 24/69
 changed/review: 0
-not_accepted: 47/69
+not_accepted: 45/69
 ```
 
 ## 3. Source hierarchy
