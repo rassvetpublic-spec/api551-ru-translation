@@ -1,14 +1,14 @@
 {
-  "package_id": "API551_STAGE4_ACCEPTED_002_003_051_2026-07-09",
+  "package_id": "API551_STAGE4_ACCEPTED_002_003_005_051_2026-07-10",
   "created_utc": "2026-06-17T14:12:56.057388+03:00",
-  "updated_utc": "2026-07-09T00:00:00+03:00",
+  "updated_utc": "2026-07-10T00:00:00+03:00",
   "layout": "portable local review package; unpack/use from any local project folder; PDF is included in source/",
   "pdf_expected_path": "source/API 551 2016 (R2024).pdf",
   "stats": {
     "total": 69,
-    "accepted": 22,
+    "accepted": 23,
     "changed": 0,
-    "not_accepted": 47
+    "not_accepted": 46
   },
   "figures": [
     {
@@ -86,8 +86,15 @@
       "caption_ru": "Рисунок 5 — Керамическая защитная гильза",
       "api_page": "29",
       "pdf_page": "37",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=37"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=37",
+      "folder": "workspace/figures/005",
+      "source_package": "API551_FIG05_ACCEPTED_R02_2026-07-10",
+      "html": "workspace/figures/005/figure_005.object.html",
+      "json": "workspace/figures/005/figure_005.object.json",
+      "png": "workspace/figures/005/figure_005.png",
+      "source_crop": "workspace/figures/005/figure_005.source_crop.png",
+      "out_html": "workspace/figures/005/figure_005.out.html"
     },
     {
       "figure_no": 6,
