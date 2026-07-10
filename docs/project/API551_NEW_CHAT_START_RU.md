@@ -258,3 +258,14 @@ Git LFS assets не скачивать по умолчанию.
 ## 12. Следующий безопасный шаг
 
 После source-gate выбрать следующий `not_accepted` Figure из `catalog.json`, проверить его source labels и rules, затем готовить review package без изменения accepted status до явного принятия пользователем.
+
+## accept-figure command
+
+For a Figure candidate already approved by the user, use the repo-local acceptance command instead of one-off scripts:
+
+```powershell
+.	oolspi551pi551.ps1 accept-figure -Figure NNN -PackageZip <path-to-review-zip>
+```
+
+The command performs package-check, installs `workspace/figures/NNN`, marks the Figure as accepted, updates `catalog.json`, `index.html`, `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`, bootstrap status markers, and the hard-coded accepted state in `.github/workflows/structure-check.yml`. It does not commit, push, merge, or delete branches.
+

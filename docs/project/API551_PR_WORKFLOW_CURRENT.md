@@ -39,3 +39,14 @@ Before merge verify:
 ## 5. Force push policy
 
 If a branch must be overwritten, use expected-head guarded force-with-lease. Do not force push blindly. After force push, verify PR head through GitHub API or `gh pr view`; the local `gh` result may lag immediately after push.
+
+## accept-figure command
+
+For a Figure candidate already approved by the user, use the repo-local acceptance command instead of one-off scripts:
+
+```powershell
+.	oolspi551pi551.ps1 accept-figure -Figure NNN -PackageZip <path-to-review-zip>
+```
+
+The command performs package-check, installs `workspace/figures/NNN`, marks the Figure as accepted, updates `catalog.json`, `index.html`, `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`, bootstrap status markers, and the hard-coded accepted state in `.github/workflows/structure-check.yml`. It does not commit, push, merge, or delete branches.
+

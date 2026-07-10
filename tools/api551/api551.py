@@ -7,6 +7,7 @@ Read-only checks are the default. Write actions never commit, push, merge, or de
 from __future__ import annotations
 
 import argparse
+from datetime import date
 import json
 import os
 import re
@@ -321,6 +322,7 @@ def package_check(args: argparse.Namespace) -> None:
         if roots != [fig_id]:
             fail(f"package must contain only root folder {fig_id}/, got {roots}")
         required = [
+            f"{fig_id}/figure_{fig_id}.caption_ru.txt",
             f"{fig_id}/figure_{fig_id}.object.html",
             f"{fig_id}/figure_{fig_id}.object.json",
             f"{fig_id}/figure_{fig_id}.out.html",
@@ -426,6 +428,162 @@ def install_package(args: argparse.Namespace) -> None:
     print(f"installed package to workspace/figures/{fig_id}")
 
 
+
+def write_json(path: Path, data: Any) -> None:
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def update_catalog_stats(catalog: dict[str, Any]) -> dict[str, Any]:
+    stats = catalog_stats(catalog)
+    catalog["stats"] = {
+        "total": stats["total"],
+        "accepted": stats["accepted"],
+        "changed": stats["changed"],
+        "not_accepted": stats["not_accepted"],
+    }
+    return stats
+
+
+def html_escape(value: Any) -> str:
+    text = "" if value is None else str(value)
+    return (text.replace("&", "&amp;")
+                .replace("<", "&lt;")
+                .replace(">", "&gt;")
+                .replace('"', "&quot;"))
+
+
+def render_index_html(catalog: dict[str, Any]) -> str:
+    stats = catalog_stats(catalog)
+    rows: list[str] = []
+    for fig in catalog.get("figures", []):
+        no = int(fig.get("figure_no"))
+        status = str(fig.get("status", ""))
+        caption = html_escape(fig.get("caption_ru") or fig.get("caption_original") or f"Figure {no}")
+        cls = "accepted" if status == "accepted" else ("changed" if status.startswith("измененно_") else "pending")
+        if status == "accepted" and fig.get("out_html"):
+            export = f'<a href="{html_escape(fig.get("out_html"))}">{caption}</a>'
+            service = f'<a href="{html_escape(fig.get("html"))}">service</a>' if fig.get("html") else ""
+        else:
+            export = caption
+            service = ""
+        source_link = fig.get("source_pdf_link", "")
+        source = f'<a href="{html_escape(source_link)}">PDF</a>' if source_link else ""
+        rows.append(f'<tr class="{cls}"><td>{no}</td><td>{html_escape(status)}</td><td>{export}</td><td>{service}</td><td>{source}</td></tr>')
+    return """<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><title>API 551 Stage 4 - Figure catalog</title>
+<style>body{font-family:Arial,sans-serif;margin:24px;color:#111827;background:#f6f7f9}main{max-width:1240px;margin:0 auto;background:#fff;border:1px solid #d9dee7;padding:22px}h1{margin:0 0 8px;font-size:22px}.meta{color:#4b5563;margin-bottom:16px}table{width:100%;border-collapse:collapse;table-layout:fixed}th,td{border-bottom:1px solid #e5e7eb;padding:7px 8px;text-align:left;vertical-align:top;font-size:14px;word-break:normal;overflow-wrap:normal;hyphens:none}th:first-child,td:first-child{width:64px;text-align:right;white-space:nowrap}th:nth-child(2),td:nth-child(2){width:180px;white-space:nowrap}th:nth-child(4),td:nth-child(4){width:82px;white-space:nowrap}th:nth-child(5),td:nth-child(5){width:68px;white-space:nowrap}th:nth-child(3),td:nth-child(3){overflow-wrap:break-word;word-break:normal}tr.accepted td:nth-child(2){color:#166534;font-weight:700}tr.changed td:nth-child(2){color:#854d0e;font-weight:700}tr.pending td:nth-child(2){color:#991b1b}a{color:#0f3b7a}</style></head><body><main>
+<h1>API 551 Stage 4 - Figure catalog</h1>
+""" + f'<div class="meta">Accepted: {stats["accepted"]}/69. Changed: {stats["changed"]}. Portable local review export; all links are relative to the repository root.</div>\n' + """<table><thead><tr><th>Figure</th><th>Status</th><th>Export object</th><th>Service</th><th>Source</th></tr></thead><tbody>
+""" + "\n".join(rows) + """
+</tbody></table></main></body></html>
+"""
+
+
+def update_handoff(root: Path, stats: dict[str, Any]) -> None:
+    handoff_path = root / "docs" / "project" / "API551_STAGE4_HANDOFF_CURRENT.json"
+    handoff = read_json(handoff_path)
+    handoff["updated"] = date.today().isoformat()
+    handoff["figures_total"] = stats["total"]
+    handoff["figures_accepted"] = stats["accepted"]
+    handoff["figures_changed"] = stats["changed"]
+    handoff["figures_not_accepted"] = stats["not_accepted"]
+    handoff["accepted_figures"] = stats["accepted_figures"]
+    write_json(handoff_path, handoff)
+
+
+def update_bootstrap_markers(root: Path, stats: dict[str, Any]) -> None:
+    path = root / "docs" / "project" / "API551_NEW_CHAT_START_RU.md"
+    text = read_text(path)
+    text = re.sub(r"accepted: \d+/69", f"accepted: {stats['accepted']}/69", text)
+    text = re.sub(r"not_accepted: \d+/69", f"not_accepted: {stats['not_accepted']}/69", text)
+    text = re.sub(r"changed/review: \d+", f"changed/review: {stats['changed']}", text)
+    text = re.sub(r"Текущий статус после принятия Figure .*?:", "Текущий статус Stage 4:", text)
+    if "accept-figure" not in text:
+        text += """
+
+## accept-figure
+
+Для принятого пользователем Figure-кандидата использовать repo-local команду:
+
+```powershell
+.\tools\api551\api551.ps1 accept-figure -Figure NNN -PackageZip <path-to-review-zip>
+```
+
+Команда устанавливает пакет, переводит Figure в `accepted`, обновляет `catalog.json`, `index.html`, handoff/bootstrap status и hard-coded acceptance state в workflow. Команда не выполняет commit, push или merge.
+"""
+    path.write_text(text, encoding="utf-8")
+
+
+def update_structure_check(root: Path, stats: dict[str, Any]) -> None:
+    path = root / ".github" / "workflows" / "structure-check.yml"
+    text = read_text(path)
+    accepted_set = ", ".join(map(str, stats["accepted_figures"]))
+    text = re.sub(r"accepted_expected = \{[^}]*\}", f"accepted_expected = {{{accepted_set}}}", text, count=1, flags=re.S)
+    text = re.sub(r"if len\(not_accepted\) != \d+:", f"if len(not_accepted) != {stats['not_accepted']}:", text, count=1)
+    text = re.sub(
+        r"expected_stats = \{\"total\": 69, \"accepted\": \d+, \"changed\": \d+, \"not_accepted\": \d+\}",
+        f"expected_stats = {{\"total\": 69, \"accepted\": {stats['accepted']}, \"changed\": {stats['changed']}, \"not_accepted\": {stats['not_accepted']}}}",
+        text,
+        count=1,
+    )
+    write(path, text)
+
+
+def ensure_caption_file(root: Path, fig_id: str, caption: str) -> None:
+    path = root / "workspace" / "figures" / fig_id / f"figure_{fig_id}.caption_ru.txt"
+    if not path.is_file():
+        path.write_text(caption.rstrip() + "\n", encoding="utf-8")
+
+
+def accept_figure(args: argparse.Namespace) -> None:
+    root = repo_root()
+    fig_id = figure_id(args.figure)
+    package_check(args)
+    install_package(args)
+
+    catalog_path = root / "catalog.json"
+    catalog = read_json(catalog_path)
+    fig = find_catalog_figure(root, fig_id)
+    caption = fig.get("caption_ru") or fig.get("caption_original") or f"Figure {int(fig_id)}"
+    fig_dir = root / "workspace" / "figures" / fig_id
+    ensure_caption_file(root, fig_id, str(caption))
+
+    json_path = fig_dir / f"figure_{fig_id}.object.json"
+    obj = read_json(json_path)
+    today = date.today().isoformat()
+    obj["status"] = "accepted"
+    obj["approval_status"] = f"accepted_by_user_{today}"
+    obj["stage4_status"] = "accepted"
+    obj["ready_for_final_export"] = True
+    obj["source_package"] = Path(args.package_zip).stem.replace("REVIEW", "ACCEPTED")
+    write_json(json_path, obj)
+
+    rel_base = f"workspace/figures/{fig_id}"
+    fig.update({
+        "status": "accepted",
+        "folder": rel_base,
+        "source_package": Path(args.package_zip).stem.replace("REVIEW", "ACCEPTED"),
+        "html": f"{rel_base}/figure_{fig_id}.object.html",
+        "json": f"{rel_base}/figure_{fig_id}.object.json",
+        "png": f"{rel_base}/figure_{fig_id}.png",
+        "source_crop": f"{rel_base}/figure_{fig_id}.source_crop.png",
+        "out_html": f"{rel_base}/figure_{fig_id}.out.html",
+    })
+    if not fig.get("source_pdf_link") and fig.get("pdf_page"):
+        fig["source_pdf_link"] = f"source/API%20551%202016%20(R2024).pdf#page={fig['pdf_page']}"
+
+    stats = update_catalog_stats(catalog)
+    write_json(catalog_path, catalog)
+    (root / "index.html").write_text(render_index_html(catalog), encoding="utf-8")
+    update_handoff(root, stats)
+    update_bootstrap_markers(root, stats)
+    update_structure_check(root, stats)
+
+    docs_sync_check(root, quiet=True)
+    figure_check(argparse.Namespace(figure=fig_id, all_known=False, ci=True))
+    figure_check(argparse.Namespace(figure=None, all_known=True, ci=True))
+    print(f"accepted Figure {fig_id}: {stats['accepted']}/69 accepted, {stats['not_accepted']}/69 not_accepted")
+
 def rules_for(args: argparse.Namespace) -> None:
     root = repo_root()
     fig_id = figure_id(args.figure)
@@ -512,6 +670,7 @@ def build_parser() -> argparse.ArgumentParser:
     p = sub.add_parser("figure-check"); p.add_argument("-Figure", "--figure", default=None); p.add_argument("--all-known", action="store_true"); p.add_argument("--ci", action="store_true"); p.set_defaults(func=figure_check)
     p = sub.add_parser("package-check"); p.add_argument("-PackageZip", "--package-zip", required=True); p.add_argument("-Figure", "--figure", default=None); p.set_defaults(func=package_check)
     p = sub.add_parser("install-package"); p.add_argument("-PackageZip", "--package-zip", required=True); p.add_argument("-Figure", "--figure", default=None); p.set_defaults(func=install_package)
+    p = sub.add_parser("accept-figure"); p.add_argument("-PackageZip", "--package-zip", required=True); p.add_argument("-Figure", "--figure", required=True); p.set_defaults(func=accept_figure)
     p = sub.add_parser("rules-for"); p.add_argument("-Figure", "--figure", required=True); p.set_defaults(func=rules_for)
     p = sub.add_parser("open-review"); p.add_argument("-Figure", "--figure", required=True); p.add_argument("--service", action="store_true"); p.set_defaults(func=open_review)
     p = sub.add_parser("pr-check"); p.add_argument("-Pr", "--pr", required=True); p.set_defaults(func=pr_check)
