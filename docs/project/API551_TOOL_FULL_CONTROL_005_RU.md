@@ -1,0 +1,32 @@
+# API551 Codex Pack №005 — описание
+
+Пакет №005 объединяет ночной оператор, Python bootstrap, GitHub relay, auto-fetch и token-saver.
+
+## Точки входа
+
+- Bootstrap: `tools\api551\api551_005_bootstrap.ps1`
+- GitHub relay: `tools\api551\publish_codex_report.ps1`
+- Preview index: `tools\api551\api551_preview_index.ps1`
+
+## Принцип
+
+Codex не должен ждать ручной распаковки и не должен писать артефакты вне `C:\GIT`.
+
+## Инструментарий в repo
+
+Если Codex исправляет или создаёт инструмент, он должен оформить это как repo asset:
+
+- код: `tools/api551/`
+- русская документация: `docs/project/`
+- проверка: repo-local smoke test
+- PR: отдельная tooling branch
+
+## Проверка без изменения состояния
+
+Перед обычным запуском выполнить:
+
+- pwsh -NoProfile -ExecutionPolicy Bypass -File tools\api551\api551_005_bootstrap.ps1 -ValidateOnly
+- pwsh -NoProfile -ExecutionPolicy Bypass -File tools\api551\api551_preview_index.ps1 -Figure 010 -State review -ValidateOnly
+- pwsh -NoProfile -ExecutionPolicy Bypass -File tools\api551\publish_codex_report.ps1 -ValidateOnly
+
+После PASS целевой скрипт запускают той же командой без ключа ValidateOnly. Все persistent outputs остаются внутри C:\GIT.
