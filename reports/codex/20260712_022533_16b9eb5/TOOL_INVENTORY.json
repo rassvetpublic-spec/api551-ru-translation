@@ -1,0 +1,14 @@
+{
+  "python": {
+    "path": "C:\\GIT\\api551\\.venv\\Scripts\\python.exe",
+    "version": "3.12.13"
+  },
+  "canonical_tool": "tools\\api551\\api551.py",
+  "Pillow": "12.2.0",
+  "pypdfium2": "5.11.0",
+  "pdfplumber": "0.11.9",
+  "git": "2.55.0.windows.2",
+  "gh": "2.95.0",
+  "image_generation_used": false,
+  "ocr_used_as_source_truth": false
+}

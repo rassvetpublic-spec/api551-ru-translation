@@ -1,0 +1,70 @@
+{
+  "overall": "PASS",
+  "checks": [
+    {
+      "name": "baseline_candidates_16b9eb5",
+      "result": "PASS"
+    },
+    {
+      "name": "source_gate_before_figure_010",
+      "result": "PASS"
+    },
+    {
+      "name": "source_pdf_page_43_render_pypdfium2",
+      "result": "PASS"
+    },
+    {
+      "name": "png_integrity_pillow",
+      "result": "PASS"
+    },
+    {
+      "name": "direct_view_image",
+      "result": "FAIL_NONBLOCKING",
+      "detail": "windows sandbox helper_unknown_error: setup refresh had errors before file access"
+    },
+    {
+      "name": "windows_screenshot_runtime",
+      "result": "FAIL_NONBLOCKING",
+      "detail": "same sandbox-helper setup refresh failure before UI connection"
+    },
+    {
+      "name": "in_memory_image_inspection",
+      "result": "PASS",
+      "detail": "PowerShell byte read to base64 image inspection; synthetic PNG, source PDF page 43, cleaned-only, full candidate, zoomed regions, and fresh-extracted candidate visually inspected"
+    },
+    {
+      "name": "cleaned_only_visual_qa",
+      "result": "PASS"
+    },
+    {
+      "name": "layout_visual_qa",
+      "result": "PASS"
+    },
+    {
+      "name": "approved_label_master_exact_match",
+      "result": "PASS",
+      "detail": "9 translated callouts"
+    },
+    {
+      "name": "protected_dimension",
+      "result": "PASS",
+      "detail": "3 in. unchanged"
+    },
+    {
+      "name": "caption_outside_png",
+      "result": "PASS"
+    },
+    {
+      "name": "package_check",
+      "result": "PASS"
+    },
+    {
+      "name": "fresh_extract_exact_six_files_and_hashes",
+      "result": "PASS"
+    },
+    {
+      "name": "catalog_index_accepted_state_unchanged",
+      "result": "PASS"
+    }
+  ]
+}

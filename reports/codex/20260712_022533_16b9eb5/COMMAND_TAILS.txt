@@ -1,0 +1,8 @@
+source-gate --ci: exit 0, source-gate OK
+rules-for -Figure 010: exit 0
+PDF page 43 render with pypdfium2: exit 0
+PNG validation with Pillow: exit 0
+visual inspection: PASS through in-memory image path
+package-check -PackageZip ... -Figure 010: exit 0, package-check OK
+fresh extract / exact six files / hash comparison: PASS
+copy to D:\ЗАГРУЗКИ and destination SHA-256 verification: PASS

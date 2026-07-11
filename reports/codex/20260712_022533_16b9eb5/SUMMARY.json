@@ -1,0 +1,45 @@
+{
+  "run_id": "20260712_022533_16b9eb5",
+  "status": "PASS",
+  "base_branch": "candidates",
+  "base_sha": "16b9eb5b6c9a4cb27de2eeca325b8c11ceadb323",
+  "scope": {
+    "figure_8": "not_repeated",
+    "review_figures": [
+      10
+    ],
+    "catalog_index_accepted_state_changed": false
+  },
+  "source_gate": "PASS",
+  "visual_layout_qa": "PASS",
+  "package_check": "PASS",
+  "fresh_extract_check": "PASS",
+  "review_zip": {
+    "path": "D:\\ЗАГРУЗКИ\\API551_FIGURE_010_REVIEW_R01_20260712.zip",
+    "bytes": 854752,
+    "sha256": "19c78b30a741bc9d7463b241d3f9e6b6c39eca874f509eaccf7a8bda21c49d4f"
+  },
+  "figure_010": {
+    "status": "review_only_not_accepted",
+    "approved_labels": 9,
+    "protected": [
+      "3 in."
+    ],
+    "caption_inside_png": false,
+    "png_size": [
+      1704,
+      624
+    ],
+    "source_crop_size": [
+      1704,
+      624
+    ]
+  },
+  "catalog_counts": {
+    "total": 69,
+    "accepted": 26,
+    "changed": 0,
+    "not_accepted": 43
+  },
+  "next_action": "User reviews Figure 10 ZIP. Do not merge this report PR and do not update accepted state without explicit acceptance."
+}
