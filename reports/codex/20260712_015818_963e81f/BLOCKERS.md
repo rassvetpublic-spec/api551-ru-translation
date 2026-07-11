@@ -1,0 +1,2 @@
+- Chrome/ChatGPT relay unavailable; gh fallback selected.
+- All 43 not_accepted Figures were source-gated individually and blocked from packaging because mandatory visual/layout QA was unavailable. No review ZIPs were delivered.

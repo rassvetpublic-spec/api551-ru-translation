@@ -1,0 +1,169 @@
+{
+  "generated_utc": "2026-07-11T23:02:11.4524050Z",
+  "tools": [
+    {
+      "name": "git",
+      "exit_code": 0,
+      "duration_ms": 55,
+      "output": "git version 2.55.0.windows.2"
+    },
+    {
+      "name": "git_lfs",
+      "exit_code": 0,
+      "duration_ms": 182,
+      "output": "git-lfs/3.7.1 (GitHub; windows amd64; go 1.25.1; git b84b3384)"
+    },
+    {
+      "name": "pwsh",
+      "exit_code": 0,
+      "duration_ms": 192,
+      "output": "PowerShell 7.6.3"
+    },
+    {
+      "name": "py3",
+      "exit_code": 0,
+      "duration_ms": 56,
+      "output": "Python 3.13.14"
+    },
+    {
+      "name": "python",
+      "exit_code": 9009,
+      "duration_ms": 136,
+      "output": "Python "
+    },
+    {
+      "name": "python3",
+      "exit_code": 9009,
+      "duration_ms": 112,
+      "output": "Python "
+    },
+    {
+      "name": "gh",
+      "exit_code": 0,
+      "duration_ms": 82,
+      "output": "gh version 2.95.0 (2026-06-17)\r\nhttps://github.com/cli/cli/releases/tag/v2.95.0"
+    },
+    {
+      "name": "rg",
+      "exit_code": 0,
+      "duration_ms": 22,
+      "output": "ripgrep 15.1.0 (rev af60c2de9d)\r\n\r\nfeatures:+pcre2\r\nsimd(compile):+SSE2,-SSSE3,-AVX2\r\nsimd(runtime):+SSE2,+SSSE3,+AVX2\r\n\r\nPCRE2 10.45 is available (JIT is available)"
+    },
+    {
+      "name": "gh_auth",
+      "exit_code": 0,
+      "duration_ms": null,
+      "output": "authenticated"
+    }
+  ],
+  "python_runtime": "repo .venv with bundled system-site-packages",
+  "python_packages": {
+    "pypdfium2": "5.11.0",
+    "pdfplumber": "0.11.9",
+    "pypdf": "6.10.0",
+    "Pillow": "12.2.0",
+    "numpy": "2.3.5"
+  },
+  "required_installations": [],
+  "repo_import_scan": [
+    "tools\\api551\\api551.py:7:from __future__ import annotations",
+    "tools\\api551\\api551.py:9:import argparse",
+    "tools\\api551\\api551.py:10:from datetime import date",
+    "tools\\api551\\api551.py:11:import json",
+    "tools\\api551\\api551.py:12:import os",
+    "tools\\api551\\api551.py:13:import re",
+    "tools\\api551\\api551.py:14:import shutil",
+    "tools\\api551\\api551.py:15:import subprocess",
+    "tools\\api551\\api551.py:16:import sys",
+    "tools\\api551\\api551.py:17:import zipfile",
+    "tools\\api551\\api551.py:18:from pathlib import Path",
+    "tools\\api551\\api551.py:19:from typing import Any"
+  ],
+  "powershell_tool_scan": [
+    "tools\\api551\\api551.ps1:23:    @{ Command = \"python\"; Args = @() },",
+    "tools\\api551\\api551.ps1:24:    @{ Command = \"python3\"; Args = @() }",
+    "tools\\api551\\api551.ps1:30:    $CommandInfo = Get-Command $Command -ErrorAction SilentlyContinue",
+    "tools\\api551\\api551.ps1:44:    throw \"Python runtime not found. Install Python 3 or make one of these commands available in PATH: py -3, python, python3.\"",
+    "scripts\\api551_check_pr_pwsh.ps1:16:    if (-not (Get-Command $Name -ErrorAction SilentlyContinue)) {",
+    "scripts\\api551_check_pr_pwsh.ps1:22:    Write-Host (\"> gh \" + ($Args -join \" \"))",
+    "scripts\\api551_check_pr_pwsh.ps1:26:        $output = & gh @Args 2>&1",
+    "scripts\\api551_check_pr_pwsh.ps1:36:        Fail \"gh exited with code $code\"",
+    "scripts\\api551_check_pr_pwsh.ps1:43:$json = & gh pr view $PrNumber --repo $Repo --json number,url,state,isDraft,mergeable,baseRefName,headRefName,headRefOid,changedFiles,additions,deletions,commits,title 2>&1",
+    "scripts\\api551_check_pr_pwsh.ps1:45:    Fail \"gh pr view failed:`n$($json | Out-String)\"",
+    "scripts\\api551_gh_upload_run_log.ps1:13:    if (-not (Get-Command $Name -ErrorAction SilentlyContinue)) {",
+    "scripts\\api551_gh_upload_run_log.ps1:27:        $output = & gh @Arguments 2>&1",
+    "scripts\\api551_gh_upload_run_log.ps1:31:            throw \"gh failed: gh $($Arguments -join ' ')`n$text\"",
+    "scripts\\api551_git_pull_from_github.ps1:37:    if (Get-Command git-lfs -ErrorAction SilentlyContinue) {",
+    "scripts\\api551_git_pull_from_github.ps1:38:        Run { git lfs install --local } \"git lfs install --local\"",
+    "scripts\\api551_git_pull_from_github.ps1:39:        Run { git lfs pull origin $Branch } \"git lfs pull origin $Branch\"",
+    "scripts\\api551_run_checked_ps1.ps1:112:    $analyzer = Get-Command Invoke-ScriptAnalyzer -ErrorAction SilentlyContinue",
+    "scripts\\api551_run_checked_ps1.ps1:151:        [pscustomobject]@{ Name = \"gh api DELETE\"; Pattern = \"gh\\s+.*api\\s+.*DELETE|gh\\s+.*api\\s+.*-X\\s+DELETE\" },",
+    "scripts\\api551_run_checked_ps1.ps1:152:        [pscustomobject]@{ Name = \"gh pr merge\"; Pattern = \"gh\\s+.*pr\\s+merge\" },",
+    "scripts\\api551_sync_candidates_pwsh.ps1:62:if (-not (Get-Command git -ErrorAction SilentlyContinue)) {",
+    "scripts\\api551_sync_candidates_pwsh.ps1:65:if (-not (Get-Command git-lfs -ErrorAction SilentlyContinue) -and -not (Get-Command \"git-lfs.exe\" -ErrorAction SilentlyContinue)) {",
+    "scripts\\api551_sync_candidates_pwsh.ps1:66:    Step \"git-lfs command not found directly; checking via git lfs version\"",
+    "scripts\\api551_validate_and_run_ps1_pwsh.ps1:16:    Write-Host \"[api551-pwsh-checker] $Message\"",
+    "scripts\\api551_validate_and_run_ps1_pwsh.ps1:41:    $cmd = Get-Command pwsh -ErrorAction SilentlyContinue",
+    "scripts\\api551_validate_and_run_ps1_pwsh.ps1:43:        $cmd = Get-Command pwsh.exe -ErrorAction SilentlyContinue",
+    "scripts\\api551_validate_and_run_ps1_pwsh.ps1:46:        throw \"pwsh was not found in PATH. Install PowerShell 7 or add pwsh.exe to PATH.\"",
+    "scripts\\api551_validate_and_run_ps1_pwsh.ps1:60:    $target = Get-ChildItem -LiteralPath $downloads -Filter 'api551_*_pwsh.ps1' |",
+    "scripts\\api551_validate_and_run_ps1_pwsh.ps1:61:        Where-Object { $_.Name -ne 'api551_validate_and_run_ps1_pwsh.ps1' } |",
+    "scripts\\api551_validate_and_run_ps1_pwsh.ps1:66:        throw \"Target script not found in Downloads: api551_*_pwsh.ps1\"",
+    "scripts\\api551_validate_and_run_ps1_pwsh.ps1:105:    Write-Step \"Running pwsh parser validation...\"",
+    "scripts\\api551_validate_and_run_ps1_pwsh.ps1:113:        throw \"PS1 validation failed by pwsh parser.\"",
+    "scripts\\api551_validate_and_run_ps1_pwsh.ps1:116:    Write-Step \"pwsh parser validation: PASSED\"",
+    "scripts\\api551_validate_and_run_ps1_pwsh.ps1:122:    $cmd = Get-Command Invoke-ScriptAnalyzer -ErrorAction SilentlyContinue",
+    "scripts\\api551_validate_and_run_ps1_pwsh.ps1:141:    $pwsh = Resolve-Pwsh",
+    "scripts\\api551_validate_and_run_ps1_pwsh.ps1:142:    Write-Step \"Using engine: $pwsh\"",
+    "scripts\\api551_validate_and_run_ps1_pwsh.ps1:151:        Write-Host \"PS1 validation: PASSED by pwsh parser + PSScriptAnalyzer\"",
+    "scripts\\api551_validate_and_run_ps1_pwsh.ps1:153:        Write-Host \"PS1 validation: PASSED by pwsh parser; PSScriptAnalyzer unavailable\"",
+    "scripts\\api551_validate_and_run_ps1_pwsh.ps1:161:    Write-Step \"Executing target script with pwsh...\"",
+    "scripts\\api551_validate_and_run_ps1_pwsh.ps1:167:    $proc = Start-Process -FilePath $pwsh -ArgumentList $argList -Wait -PassThru -NoNewWindow",
+    "scripts\\api551_validate_and_run_ps1_pwsh.ps1:172:    Write-Host \"[api551-pwsh-checker] FAILED: $($_.Exception.Message)\" -ForegroundColor Red"
+  ],
+  "workflow_tool_scan": [
+    ".github/workflows\\api551-tooling-check.yml:15:      - uses: actions/checkout@v4",
+    ".github/workflows\\api551-tooling-check.yml:20:        run: python3 tools/api551/api551.py source-gate --ci",
+    ".github/workflows\\api551-tooling-check.yml:23:        run: python3 tools/api551/api551.py status --ci --json",
+    ".github/workflows\\api551-tooling-check.yml:26:        run: python3 tools/api551/api551.py docs-sync-check --ci",
+    ".github/workflows\\api551-tooling-check.yml:29:        run: python3 tools/api551/api551.py figure-check --all-known --ci",
+    ".github/workflows\\structure-check.yml:15:      - uses: actions/checkout@v4",
+    ".github/workflows\\structure-check.yml:21:          python3 - <<'PY'",
+    ".github/workflows\\structure-check.yml:206:          python3 - <<'PY'",
+    ".github/workflows\\structure-check.yml:272:          python3 -m json.tool source/API551_SOURCE_MANIFEST_CURRENT.json > /dev/null",
+    ".github/workflows\\structure-check.yml:273:          python3 -m json.tool archive/extracted-reference/EXTRACTED_REFERENCE_MANIFEST.json > /dev/null",
+    ".github/workflows\\structure-check.yml:274:          python3 -m json.tool catalog.json > /dev/null",
+    ".github/workflows\\structure-check.yml:275:          python3 -m json.tool docs/project/API551_STAGE4_HANDOFF_CURRENT.json > /dev/null",
+    ".github/workflows\\structure-check.yml:279:          python3 - <<'PY'",
+    ".github/workflows\\structure-check.yml:353:          python3 - <<'PY'",
+    ".github/workflows\\ps1-check.yml:15:      - uses: actions/checkout@v4",
+    ".github/workflows\\ps1-check.yml:17:      - name: Validate PowerShell scripts with pwsh parser",
+    ".github/workflows\\ps1-check.yml:18:        shell: pwsh",
+    ".github/workflows\\ps1-check.yml:41:      - name: Check local pipeline docs mention pwsh",
+    ".github/workflows\\ps1-check.yml:42:        shell: pwsh",
+    ".github/workflows\\ps1-check.yml:48:            \"scripts/api551_validate_and_run_ps1_pwsh.ps1\",",
+    ".github/workflows\\ps1-check.yml:49:            \"scripts/api551_sync_candidates_pwsh.ps1\",",
+    ".github/workflows\\ps1-check.yml:50:            \"scripts/api551_check_pr_pwsh.ps1\",",
+    ".github/workflows\\ps1-check.yml:51:            \"scripts/api551_overlay_sanity_pwsh.ps1\"",
+    ".github/workflows\\ps1-check.yml:60:            if ($text -notmatch \"pwsh\") {",
+    ".github/workflows\\ps1-check.yml:61:              throw \"Required doc does not mention pwsh: $path\"",
+    ".github/workflows\\ps1-check.yml:64:          Write-Host \"Local pwsh pipeline docs/tools check OK\""
+  ],
+  "source_files": [
+    {
+      "path": "source\\API 551 2016 (R2024).pdf",
+      "bytes": 8089772,
+      "sha256": "D458B3A899902F216767E753AA5737A9745B61ADCAB02F85C9521937A9D3E270"
+    },
+    {
+      "path": "source\\api551_approved_label_master_v1.csv",
+      "bytes": 628729,
+      "sha256": "F2517D33FFC95C7BB4396131BCAE432CDAF1BC617056EB704666315CC1A65984"
+    },
+    {
+      "path": "source\\API551_SOURCE_MANIFEST_CURRENT.json",
+      "bytes": 10207,
+      "sha256": "057809AE9935AE1CF65C1D15150F0DAD9AA71304F59043FF49AB13AAC40F5729"
+    }
+  ]
+}

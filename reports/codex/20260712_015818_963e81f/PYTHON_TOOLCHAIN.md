@@ -1,0 +1,24 @@
+# Python toolchain
+
+- selected Python executable: .venv/Scripts/python.exe
+- Python version: Python 3.12.13
+- venv path: C:\GIT\api551\.venv
+- activation test: PASS
+- primary API551 tool: tools/api551/api551.py
+- PowerShell wrapper: tools/api551/api551.ps1
+- system aliases python/python3: unusable; not selected
+- Python launcher py -3: available
+- packaging tools upgraded: pip, setuptools, wheel
+- required runtime packages: {"pip": "26.1.2", "setuptools": "83.0.0", "wheel": "0.47.0", "pypdfium2": "5.11.0", "pdfplumber": "0.11.9", "pypdf": "6.10.0", "Pillow": "12.2.0", "numpy": "2.3.5"}
+- repo Python files discovered: 1
+  - tools/api551/api551.py
+- repo Python reference files: 18
+- old ChatGPT Python/PowerShell/ZIP tools found in C:\GIT\inbox_chatgpt: 0
+- old tools executed: 0
+- migration candidates: 0
+- classification result: none found
+- direct canonical tool tests: 5/5 PASS
+- PDF render/read: PASS
+- PNG open/signature: PASS
+- ZIP testzip: PASS
+- blocker: none for Python toolchain

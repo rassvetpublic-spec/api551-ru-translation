@@ -1,0 +1,21 @@
+# API551 Codex night handoff
+
+- run_id: 20260712_015818_963e81f
+- repo: rassvetpublic-spec/api551-ru-translation
+- candidates HEAD: 16b9eb5b6c9a4cb27de2eeca325b8c11ceadb323
+- source_gate: OK
+- rules_hub_status: not_connected
+- Python toolchain: PASS; .venv/Scripts/python.exe; canonical tool tools/api551/api551.py; direct checks 5/5
+- old ChatGPT Python/PowerShell/ZIP tools found: 0; executed: 0
+- night operator skill: installed and merged by PR https://github.com/rassvetpublic-spec/api551-ru-translation/pull/47, merge 16b9eb5b6c9a4cb27de2eeca325b8c11ceadb323
+- Figure 8: accepted, PR https://github.com/rassvetpublic-spec/api551-ru-translation/pull/45, merge 963e81fbcbeee8aecb5ab1da0a6e2a51f97d206e, current package-check PASS
+- accepted: 26/69
+- changed/review: 0
+- not_accepted: 43
+- review audit: 43 Figures in 15 batches, individual source-gate before each
+- review ZIPs: none
+- blocker: mandatory visual/layout QA unavailable before image access; invalid candidates were not generated
+- Chrome/ChatGPT relay: unavailable before tab access; no message sent
+- report branch: codex-report-20260712_015818_963e81f
+- report PR: pending
+- next safe action: restore visual/browser control and restart review production with Figure 10

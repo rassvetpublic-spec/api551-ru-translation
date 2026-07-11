@@ -1,0 +1,18 @@
+{
+  "source_gate": "PASS",
+  "docs_sync": "PASS",
+  "figure_all_known": "PASS",
+  "figure8_package_check": "PASS",
+  "json_utf8": "PASS",
+  "pdf_render": "PASS",
+  "png_read": "PASS",
+  "zip_integrity": "PASS",
+  "python_direct_primary_checks": "5/5 PASS",
+  "github_pr45_checks": "PASS",
+  "github_pr47_checks": "PASS",
+  "per_figure_source_gates": 43,
+  "per_figure_source_gate_failures": 0,
+  "review_packages_delivered": 0,
+  "visual_layout_qa": "BLOCKED",
+  "browser_relay": "BLOCKED"
+}

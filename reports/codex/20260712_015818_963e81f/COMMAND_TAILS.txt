@@ -1,0 +1,200 @@
+    60,
+    61,
+    63,
+    64,
+    65,
+    67,
+    68,
+    69
+  ]
+}
+phase=P5 batch=12 figure=059 command=rules-for exit=0 duration_ms=170
+rules report: reports/source_gate/figure_059_rules_report.md
+work order: reports/source_gate/figure_059_work_order.json
+phase=P5 batch=12 figure=060 command=source-gate --ci exit=0 duration_ms=173
+    58,
+    59,
+    60,
+    61,
+    63,
+    64,
+    65,
+    67,
+    68,
+    69
+  ]
+}
+phase=P5 batch=12 figure=060 command=rules-for exit=0 duration_ms=178
+rules report: reports/source_gate/figure_060_rules_report.md
+work order: reports/source_gate/figure_060_work_order.json
+phase=P5 batch=13 figure=061 command=source-gate --ci exit=0 duration_ms=186
+    58,
+    59,
+    60,
+    61,
+    63,
+    64,
+    65,
+    67,
+    68,
+    69
+  ]
+}
+phase=P5 batch=13 figure=061 command=rules-for exit=0 duration_ms=168
+rules report: reports/source_gate/figure_061_rules_report.md
+work order: reports/source_gate/figure_061_work_order.json
+phase=P5 batch=13 figure=063 command=source-gate --ci exit=0 duration_ms=172
+    58,
+    59,
+    60,
+    61,
+    63,
+    64,
+    65,
+    67,
+    68,
+    69
+  ]
+}
+phase=P5 batch=13 figure=063 command=rules-for exit=0 duration_ms=169
+rules report: reports/source_gate/figure_063_rules_report.md
+work order: reports/source_gate/figure_063_work_order.json
+phase=P5 batch=13 figure=064 command=source-gate --ci exit=0 duration_ms=169
+    58,
+    59,
+    60,
+    61,
+    63,
+    64,
+    65,
+    67,
+    68,
+    69
+  ]
+}
+phase=P5 batch=13 figure=064 command=rules-for exit=0 duration_ms=168
+rules report: reports/source_gate/figure_064_rules_report.md
+work order: reports/source_gate/figure_064_work_order.json
+phase=P5 batch=14 figure=065 command=source-gate --ci exit=0 duration_ms=173
+    58,
+    59,
+    60,
+    61,
+    63,
+    64,
+    65,
+    67,
+    68,
+    69
+  ]
+}
+phase=P5 batch=14 figure=065 command=rules-for exit=0 duration_ms=342
+rules report: reports/source_gate/figure_065_rules_report.md
+work order: reports/source_gate/figure_065_work_order.json
+phase=P5 batch=14 figure=067 command=source-gate --ci exit=0 duration_ms=186
+    58,
+    59,
+    60,
+    61,
+    63,
+    64,
+    65,
+    67,
+    68,
+    69
+  ]
+}
+phase=P5 batch=14 figure=067 command=rules-for exit=0 duration_ms=168
+rules report: reports/source_gate/figure_067_rules_report.md
+work order: reports/source_gate/figure_067_work_order.json
+phase=P5 batch=14 figure=068 command=source-gate --ci exit=0 duration_ms=178
+    58,
+    59,
+    60,
+    61,
+    63,
+    64,
+    65,
+    67,
+    68,
+    69
+  ]
+}
+phase=P5 batch=14 figure=068 command=rules-for exit=0 duration_ms=192
+rules report: reports/source_gate/figure_068_rules_report.md
+work order: reports/source_gate/figure_068_work_order.json
+phase=P5 batch=15 figure=069 command=source-gate --ci exit=0 duration_ms=173
+    58,
+    59,
+    60,
+    61,
+    63,
+    64,
+    65,
+    67,
+    68,
+    69
+  ]
+}
+phase=P5 batch=15 figure=069 command=rules-for exit=0 duration_ms=171
+rules report: reports/source_gate/figure_069_rules_report.md
+work order: reports/source_gate/figure_069_work_order.json
+phase=PYTHON_BOOTSTRAP command=py -0p; pip upgrade; activation test exit=0 duration_ms=6825
+py_launchers:
+ -V:3.13 *        <USER_HOME>\AppData\Local\Programs\Python\Python313\python.exe
+upgrade_tail:
+Downloading setuptools-83.0.0-py3-none-any.whl (1.0 MB)
+   ---------------------------------------- 1.0/1.0 MB 46.6 MB/s eta 0:00:00
+Installing collected packages: setuptools, pip
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 82.0.1
+    Not uninstalling setuptools at <USER_HOME>\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\lib\site-packages, outside environment C:\GIT\api551\.venv
+    Can't uninstall 'setuptools'. No files were found to uninstall.
+  Attempting uninstall: pip
+    Found existing installation: pip 25.0.1
+    Uninstalling pip-25.0.1:
+      Successfully uninstalled pip-25.0.1
+Successfully installed pip-26.1.2 setuptools-83.0.0
+activation:
+Python 3.12.13
+pip 26.1.2 from C:\GIT\api551\.venv\Lib\site-packages\pip (python 3.12)
+
+phase=PYTHON_TOOL_INVENTORY command=static repo/inbox scan exit=0 repo_py=4 inbox_files=0 no_old_tools_executed=true
+phase=PYTHON_DIRECT_SMOKE name=source_gate_direct command=.venv/python tools/api551/api551.py  exit=2 duration_ms=114
+usage: api551 [-h]
+              {source-gate,status,docs-sync-check,figure-check,package-check,install-package,accept-figure,rules-for,open-review,pr-check}
+              ...
+api551: error: the following arguments are required: action
+phase=PYTHON_DIRECT_SMOKE retry_reason=PowerShell automatic variable args collision; no api551 action executed in failed attempt
+phase=PYTHON_DIRECT_SMOKE name=source_gate_direct command=.venv/python tools/api551/api551.py source-gate --ci exit=0 duration_ms=113
+    58,
+    59,
+    60,
+    61,
+    63,
+    64,
+    65,
+    67,
+    68,
+    69
+  ]
+}
+phase=PYTHON_DIRECT_SMOKE name=status_direct command=.venv/python tools/api551/api551.py status --ci --json exit=0 duration_ms=100
+    58,
+    59,
+    60,
+    61,
+    63,
+    64,
+    65,
+    67,
+    68,
+    69
+  ]
+}
+phase=PYTHON_DIRECT_SMOKE name=docs_sync_direct command=.venv/python tools/api551/api551.py docs-sync-check --ci exit=0 duration_ms=105
+docs/status sync OK
+phase=PYTHON_DIRECT_SMOKE name=figure_all_known_direct command=.venv/python tools/api551/api551.py figure-check --all-known --ci exit=0 duration_ms=184
+figure-check OK (26 figure(s))
+phase=PYTHON_DIRECT_SMOKE name=package_check_008_direct command=.venv/python tools/api551/api551.py package-check -PackageZip C:\GIT\api551\reports\codex-local\20260712_015818_963e81f\API551_FIG08_R01_CURRENT_VERIFY.zip -Figure 008 exit=0 duration_ms=113
+package-check OK: C:\GIT\api551\reports\codex-local\20260712_015818_963e81f\API551_FIG08_R01_CURRENT_VERIFY.zip
