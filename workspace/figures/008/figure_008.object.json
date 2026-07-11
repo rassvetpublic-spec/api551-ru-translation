@@ -1,0 +1,395 @@
+{
+  "figure_no": 8,
+  "figure_id": "Figure 8",
+  "caption_original": "Figure 8—Fixed Thermocouple Head and Sheath with Type S Expansion Loop",
+  "caption_ru": "Рисунок 8 — Неподвижная головка термопары и оболочка с S-образной компенсационной петлёй",
+  "api_page": 35,
+  "pdf_page": 43,
+  "source_pdf_link": "../../../source/API%20551%202016%20(R2024).pdf#page=43",
+  "status": "accepted",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-12",
+  "ready_for_final_export": true,
+  "source_policy": "PDF-derived clean source crop from API 551 2016 (R2024), page 43; caption excluded from final PNG and represented only in HTML/TXT.",
+  "crop_bbox_pdf_points": [
+    55.0,
+    80.0,
+    555.0,
+    307.5
+  ],
+  "source_crop_pixels": [
+    1000,
+    455
+  ],
+  "cleanup_policy": "Source-text cleanup performed before translation rendering; no generative image editing; no new leader lines drawn; pure dimensions and protected graphics preserved.",
+  "translation_source": "api551_approved_label_master_v1.csv rows for Figure 8; visible repeated labels translated using approved Russian terms.",
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original_text": "Thermocouple head",
+      "effective_ru_text": "Головка термопары",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          160,
+          18
+        ],
+        "font_size": 17,
+        "lines": [
+          "Головка термопары"
+        ],
+        "text_bbox_px": [
+          160,
+          22,
+          338,
+          38
+        ]
+      },
+      "qa_note": "source glyphs removed before translation rendering; dimensions/protected graphics preserved"
+    },
+    {
+      "block_id": "block-003a",
+      "original_text": "¾ in. NPT",
+      "effective_ru_text": "NPT 3/4″",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          217,
+          54
+        ],
+        "font_size": 16,
+        "lines": [
+          "NPT 3/4″"
+        ],
+        "text_bbox_px": [
+          217,
+          57,
+          285,
+          70
+        ]
+      },
+      "qa_note": "source glyphs removed before translation rendering; dimensions/protected graphics preserved"
+    },
+    {
+      "block_id": "block-003b",
+      "original_text": "¾ in. NPT",
+      "effective_ru_text": "NPT 3/4″",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          60,
+          170
+        ],
+        "font_size": 16,
+        "lines": [
+          "NPT",
+          "3/4″"
+        ],
+        "text_bbox_px": [
+          60,
+          173,
+          92,
+          203
+        ]
+      },
+      "qa_note": "source glyphs removed before translation rendering; dimensions/protected graphics preserved"
+    },
+    {
+      "block_id": "block-005",
+      "original_text": "Clip",
+      "effective_ru_text": "Зажим",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          474,
+          61
+        ],
+        "font_size": 16,
+        "lines": [
+          "Зажим"
+        ],
+        "text_bbox_px": [
+          474,
+          64,
+          531,
+          76
+        ]
+      },
+      "qa_note": "source glyphs removed before translation rendering; dimensions/protected graphics preserved"
+    },
+    {
+      "block_id": "block-006",
+      "original_text": "Type - S expansion loop",
+      "effective_ru_text": "S-образная компенсационная петля",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          670,
+          19
+        ],
+        "font_size": 15,
+        "lines": [
+          "S-образная",
+          "компенсационная",
+          "петля"
+        ],
+        "text_bbox_px": [
+          670,
+          21,
+          813,
+          68
+        ]
+      },
+      "qa_note": "source glyphs removed before translation rendering; dimensions/protected graphics preserved"
+    },
+    {
+      "block_id": "block-007",
+      "original_text": "Provided one expansion loop per 10 ft (3000 mm) of tube",
+      "effective_ru_text": "Предусматривается одна компенсационная петля на каждые 10 футов (3000 мм) трубы.",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          705,
+          210
+        ],
+        "font_size": 15,
+        "lines": [
+          "Одна компенсационная петля",
+          "на каждые 10 футов (3000 мм)",
+          "трубы"
+        ],
+        "text_bbox_px": [
+          705,
+          213,
+          951,
+          264
+        ]
+      },
+      "qa_note": "source glyphs removed before translation rendering; dimensions/protected graphics preserved"
+    },
+    {
+      "block_id": "block-008",
+      "original_text": "Compression fitting",
+      "effective_ru_text": "Компрессионный фитинг",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          92,
+          349
+        ],
+        "font_size": 16,
+        "lines": [
+          "Компрессионный",
+          "фитинг"
+        ],
+        "text_bbox_px": [
+          92,
+          351,
+          237,
+          388
+        ]
+      },
+      "qa_note": "source glyphs removed before translation rendering; dimensions/protected graphics preserved"
+    },
+    {
+      "block_id": "block-009",
+      "original_text": "Section A - A",
+      "effective_ru_text": "Разрез A-A",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          150,
+          395
+        ],
+        "font_size": 21,
+        "lines": [
+          "Разрез A-A"
+        ],
+        "text_bbox_px": [
+          150,
+          400,
+          283,
+          419
+        ]
+      },
+      "qa_note": "source glyphs removed before translation rendering; dimensions/protected graphics preserved"
+    },
+    {
+      "block_id": "block-010",
+      "original_text": "Pad Attachment Detail",
+      "effective_ru_text": "Деталь крепления площадки",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          368,
+          429
+        ],
+        "font_size": 18,
+        "lines": [
+          "Деталь крепления площадки"
+        ],
+        "text_bbox_px": [
+          368,
+          433,
+          677,
+          450
+        ]
+      },
+      "qa_note": "source glyphs removed before translation rendering; dimensions/protected graphics preserved"
+    },
+    {
+      "block_id": "block-014",
+      "original_text": "Clip 2 in. long × 0.5 in. wide × 0.12 in thick",
+      "effective_ru_text": "Зажим длиной 2″, шириной 0.5″ и толщиной 0.12″.",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          643,
+          268
+        ],
+        "font_size": 15,
+        "lines": [
+          "Зажим длиной 2″,",
+          "шириной 0.5″",
+          "и толщиной 0.12″"
+        ],
+        "text_bbox_px": [
+          643,
+          270,
+          784,
+          323
+        ]
+      },
+      "qa_note": "source glyphs removed before translation rendering; dimensions/protected graphics preserved"
+    },
+    {
+      "block_id": "block-015",
+      "original_text": "Tube",
+      "effective_ru_text": "Труба",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          612,
+          342
+        ],
+        "font_size": 16,
+        "lines": [
+          "Труба"
+        ],
+        "text_bbox_px": [
+          611,
+          344,
+          661,
+          360
+        ]
+      },
+      "qa_note": "source glyphs removed before translation rendering; dimensions/protected graphics preserved"
+    },
+    {
+      "block_id": "block-016",
+      "original_text": "Thermocouple sheath",
+      "effective_ru_text": "Оболочка термопары",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          815,
+          282
+        ],
+        "font_size": 16,
+        "lines": [
+          "Оболочка",
+          "термопары"
+        ],
+        "text_bbox_px": [
+          815,
+          284,
+          909,
+          318
+        ]
+      },
+      "qa_note": "source glyphs removed before translation rendering; dimensions/protected graphics preserved"
+    },
+    {
+      "block_id": "block-013",
+      "original_text": "Clip Installation Detail",
+      "effective_ru_text": "Деталь установки зажима",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          712,
+          429
+        ],
+        "font_size": 18,
+        "lines": [
+          "Деталь установки зажима"
+        ],
+        "text_bbox_px": [
+          712,
+          433,
+          986,
+          450
+        ]
+      },
+      "qa_note": "source glyphs removed before translation rendering; dimensions/protected graphics preserved"
+    }
+  ],
+  "protected_blocks": [
+    {
+      "block_id": "block-004",
+      "text": "A",
+      "reason": "symbol_only"
+    },
+    {
+      "block_id": "block-011",
+      "text": "1 in.",
+      "reason": "pure_linear_dimension"
+    },
+    {
+      "block_id": "block-012",
+      "text": "⅛ in.",
+      "reason": "pure_linear_dimension"
+    },
+    {
+      "block_id": "block-017",
+      "text": "0.12 in.",
+      "reason": "pure_linear_dimension"
+    },
+    {
+      "block_id": "block-018",
+      "text": "0.75 in.",
+      "reason": "pure_linear_dimension"
+    }
+  ],
+  "qa": {
+    "source_crop_from_pdf": true,
+    "caption_inside_png": false,
+    "final_png_size_px": [
+      1000,
+      455
+    ],
+    "source_crop_size_px": [
+      1000,
+      455
+    ],
+    "residual_english_manual_review_required": true,
+    "notes": [
+      "Figure 8 labels are raster text in the PDF page image; cleanup masks were restricted to source glyph components inside text-only ROIs.",
+      "Dimensions marked not_for_translation in the master register were left unchanged.",
+      "The review package is not accepted until explicit user approval."
+    ]
+  },
+  "source_package": "API551_FIG08_ACCEPTED_R01_2026-07-11"
+}
