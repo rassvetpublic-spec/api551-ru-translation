@@ -108,8 +108,8 @@ docs/project/API551_STAGE4_HANDOFF_CURRENT.json
 Текущий статус после принятия Figure 3 R03:
 
 ```text
-accepted: 24/69
-not_accepted: 45/69
+accepted: 25/69
+not_accepted: 44/69
 changed/review: 0
 Figure 2: accepted
 Figure 3: accepted

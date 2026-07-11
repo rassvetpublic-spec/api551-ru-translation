@@ -1,0 +1,339 @@
+{
+  "figure_no": 7,
+  "figure_id": "Figure 7",
+  "caption_original": "Figure 7—Type Skin Thermocouple with Radiation Shield",
+  "caption_ru": "Рисунок 7 — Поверхностная термопара с радиационным экраном",
+  "api_page": 34,
+  "pdf_page": 42,
+  "source_pdf_link": "../../../source/API%20551%202016%20(R2024).pdf#page=42",
+  "status": "accepted",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-11",
+  "ready_for_final_export": true,
+  "source_policy": "PDF-derived clean source crop from API 551 2016 (R2024), page 42; caption excluded from final PNG and represented only in HTML/TXT.",
+  "crop_bbox_pdf_points": [
+    40.0,
+    132.0,
+    572.0,
+    542.06
+  ],
+  "source_crop_pixels": [
+    1064,
+    821
+  ],
+  "cleanup_policy": "Source-text cleanup performed before translation rendering; no generative editing; no new leader lines drawn; dimensions and protected graphics preserved where possible.",
+  "translation_source": "api551_approved_label_master_v1.csv rows for Figure 7; normalized ⅜ as 3/8″ for readable inch fraction in block-002.",
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original_text": "Thermocouple “K” or “N” ⅜ in. or ¼ in. OD sheath MgO insulation",
+      "effective_ru_text": "Термопара типа «K» или «N», оболочка с наружным диаметром 3/8″ или 1/4″, изоляция MgO.",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          88,
+          52
+        ],
+        "font_size": 15,
+        "lines": [
+          "Термопара типа «K» или «N»",
+          "оболочка с наружным",
+          "диаметром 3/8″ или 1/4″,",
+          "изоляция MgO"
+        ],
+        "text_bbox_px": [
+          87,
+          55,
+          317,
+          117
+        ]
+      },
+      "qa_note": ""
+    },
+    {
+      "block_id": "block-003",
+      "original_text": "6 in. (150 mm) Stainless steel transition epoxy potted",
+      "effective_ru_text": "Переходной участок из нержавеющей стали длиной 6″ (150 мм), залитый эпоксидным компаундом.",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          658,
+          1
+        ],
+        "font_size": 14,
+        "lines": [
+          "Переходной участок",
+          "из нержавеющей стали",
+          "6″ (150 мм), залитый",
+          "эпоксидным компаундом"
+        ],
+        "text_bbox_px": [
+          658,
+          3,
+          845,
+          62
+        ]
+      },
+      "qa_note": ""
+    },
+    {
+      "block_id": "block-006a",
+      "original_text": "Shield",
+      "effective_ru_text": "Экран",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          524,
+          438
+        ],
+        "font_size": 18,
+        "lines": [
+          "Экран"
+        ],
+        "text_bbox_px": [
+          524,
+          442,
+          582,
+          459
+        ]
+      },
+      "qa_note": ""
+    },
+    {
+      "block_id": "block-007",
+      "original_text": "Section A-A",
+      "effective_ru_text": "Разрез A-A",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          760,
+          411
+        ],
+        "font_size": 21,
+        "lines": [
+          "Разрез A-A"
+        ],
+        "text_bbox_px": [
+          760,
+          416,
+          893,
+          435
+        ]
+      },
+      "qa_note": ""
+    },
+    {
+      "block_id": "block-006b",
+      "original_text": "Shield",
+      "effective_ru_text": "Экран",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          222,
+          458
+        ],
+        "font_size": 18,
+        "lines": [
+          "Экран"
+        ],
+        "text_bbox_px": [
+          222,
+          462,
+          280,
+          479
+        ]
+      },
+      "qa_note": ""
+    },
+    {
+      "block_id": "block-006c",
+      "original_text": "Shield",
+      "effective_ru_text": "Экран",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          276,
+          489
+        ],
+        "font_size": 18,
+        "lines": [
+          "Экран"
+        ],
+        "text_bbox_px": [
+          276,
+          493,
+          334,
+          510
+        ]
+      },
+      "qa_note": ""
+    },
+    {
+      "block_id": "block-012",
+      "original_text": "Pad centered inside shield",
+      "effective_ru_text": "Площадка, центрированная внутри экрана",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          230,
+          687
+        ],
+        "font_size": 16,
+        "lines": [
+          "Площадка,",
+          "центрированная",
+          "внутри экрана"
+        ],
+        "text_bbox_px": [
+          230,
+          690,
+          371,
+          739
+        ]
+      },
+      "qa_note": ""
+    },
+    {
+      "block_id": "block-016",
+      "original_text": "Furnace exterior steel skin",
+      "effective_ru_text": "Наружная стальная обшивка печи",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          810,
+          696
+        ],
+        "font_size": 16,
+        "lines": [
+          "Наружная",
+          "стальная обшивка",
+          "печи"
+        ],
+        "text_bbox_px": [
+          810,
+          699,
+          966,
+          745
+        ]
+      },
+      "qa_note": ""
+    },
+    {
+      "block_id": "block-017",
+      "original_text": "Fill shield with high temperature, castable insulation. Weld shield on sides and front. Do not weld end where the sheath exits the shield.",
+      "effective_ru_text": "Заполнить экран высокотемпературной литой изоляцией. Приварить экран по бокам и спереди. Не приваривать конец в месте выхода оболочки из экрана.",
+      "placed": true,
+      "placement": {
+        "mode": "free_text",
+        "xy": [
+          76,
+          752
+        ],
+        "font_size": 15,
+        "lines": [
+          "Заполнить экран высокотемпературной литой изоляцией. Приварить",
+          "экран по бокам и спереди. Не приваривать конец в месте выхода",
+          "оболочки из экрана."
+        ],
+        "text_bbox_px": [
+          76,
+          754,
+          631,
+          801
+        ]
+      },
+      "qa_note": ""
+    },
+    {
+      "block_id": "block-004",
+      "original_text": "1 in.",
+      "effective_ru_text": "1″",
+      "placed": false,
+      "protected": true,
+      "qa_note": "protected dimension/symbol left unchanged in PNG per master action protect_do_not_translate or visual equivalence"
+    },
+    {
+      "block_id": "block-005",
+      "original_text": "120°",
+      "effective_ru_text": "120°",
+      "placed": false,
+      "protected": true,
+      "qa_note": "protected dimension/symbol left unchanged in PNG per master action protect_do_not_translate or visual equivalence"
+    },
+    {
+      "block_id": "block-008",
+      "original_text": "⅝ in.",
+      "effective_ru_text": "5/8″",
+      "placed": false,
+      "protected": true,
+      "qa_note": "protected dimension/symbol left unchanged in PNG per master action protect_do_not_translate or visual equivalence"
+    },
+    {
+      "block_id": "block-009",
+      "original_text": "1½ in.",
+      "effective_ru_text": "1½″",
+      "placed": false,
+      "protected": true,
+      "qa_note": "protected dimension/symbol left unchanged in PNG per master action protect_do_not_translate or visual equivalence"
+    },
+    {
+      "block_id": "block-010",
+      "original_text": "1¾ in.",
+      "effective_ru_text": "1¾″",
+      "placed": false,
+      "protected": true,
+      "qa_note": "protected dimension/symbol left unchanged in PNG per master action protect_do_not_translate or visual equivalence"
+    },
+    {
+      "block_id": "block-011",
+      "original_text": "½ in.",
+      "effective_ru_text": "1/2″",
+      "placed": false,
+      "protected": true,
+      "qa_note": "protected dimension/symbol left unchanged in PNG per master action protect_do_not_translate or visual equivalence"
+    },
+    {
+      "block_id": "block-013",
+      "original_text": "“C”",
+      "effective_ru_text": "«C»",
+      "placed": false,
+      "protected": true,
+      "qa_note": "protected dimension/symbol left unchanged in PNG per master action protect_do_not_translate or visual equivalence"
+    },
+    {
+      "block_id": "block-014",
+      "original_text": "3½ in.",
+      "effective_ru_text": "3½″",
+      "placed": false,
+      "protected": true,
+      "qa_note": "protected dimension/symbol left unchanged in PNG per master action protect_do_not_translate or visual equivalence"
+    },
+    {
+      "block_id": "block-015",
+      "original_text": "12 in.",
+      "effective_ru_text": "12″",
+      "placed": false,
+      "protected": true,
+      "qa_note": "protected dimension/symbol left unchanged in PNG per master action protect_do_not_translate or visual equivalence"
+    }
+  ],
+  "qa": {
+    "caption_inside_png": false,
+    "source_crop_has_caption": false,
+    "rendered_from_pdf": true,
+    "leader_lines_redrawn": false,
+    "protected_dimensions_kept": true,
+    "known_review_points": [
+      "Lower-middle Shield cleanup mask narrowed to protect arc and leader-line area."
+    ]
+  },
+  "source_package": "API551_FIG07_ACCEPTED_R01_2026-07-10"
+}
