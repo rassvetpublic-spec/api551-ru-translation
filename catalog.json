@@ -6,9 +6,9 @@
   "pdf_expected_path": "source/API 551 2016 (R2024).pdf",
   "stats": {
     "total": 69,
-    "accepted": 25,
+    "accepted": 26,
     "changed": 0,
-    "not_accepted": 44
+    "not_accepted": 43
   },
   "figures": [
     {
@@ -137,8 +137,15 @@
       "caption_ru": "Рисунок 8 — Неподвижная головка термопары и оболочка с S-образной компенсационной петлёй",
       "api_page": "35",
       "pdf_page": "43",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=43"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=43",
+      "folder": "workspace/figures/008",
+      "source_package": "API551_FIG08_ACCEPTED_R01_2026-07-11",
+      "html": "workspace/figures/008/figure_008.object.html",
+      "json": "workspace/figures/008/figure_008.object.json",
+      "png": "workspace/figures/008/figure_008.png",
+      "source_crop": "workspace/figures/008/figure_008.source_crop.png",
+      "out_html": "workspace/figures/008/figure_008.out.html"
     },
     {
       "figure_no": 9,
