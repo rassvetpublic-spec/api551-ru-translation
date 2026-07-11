@@ -43,7 +43,7 @@
   ],
   "browser_control": "unavailable",
   "report_branch": "codex-report-20260712_015818_963e81f",
-  "report_pr": "pending",
+  "report_pr": "https://github.com/rassvetpublic-spec/api551-ru-translation/pull/48",
   "next_safe_action": "Restore local visual/browser control, then rerun review production starting with Figure 10.",
-  "ended_utc": "2026-07-11T23:11:13.3992092Z"
+  "ended_utc": "2026-07-11T23:11:48.0416229Z"
 }

@@ -17,5 +17,5 @@
 - blocker: mandatory visual/layout QA unavailable before image access; invalid candidates were not generated
 - Chrome/ChatGPT relay: unavailable before tab access; no message sent
 - report branch: codex-report-20260712_015818_963e81f
-- report PR: pending
+- report PR: https://github.com/rassvetpublic-spec/api551-ru-translation/pull/48
 - next safe action: restore visual/browser control and restart review production with Figure 10
