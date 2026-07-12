@@ -31,52 +31,52 @@ LABELS = {
         "ru": "Обрезать лишнюю оболочку и закрепить её перед клеммной головкой U-образным болтом и уголком, приваренным к обшивке печи.",
         "text": "Обрезать лишнюю оболочку и\nзакрепить её перед клеммной\nголовкой U-образным болтом\nи уголком, приваренным\nк обшивке печи.",
         "strategy": "leader_line_callout",
-        "cleanup_roi": (180, 185, 720, 320),
-        "source_anchor": [493, 320],
-        "placement": ("bottom_center", 493, 320),
+        "cleanup_rois": [(185, 190, 725, 302), (185, 302, 440, 342)],
+        "source_anchor": [491, 316],
+        "placement": ("bottom_center", 491, 316),
     },
     "block-003": {
         "original": "Refractory and insulation",
         "ru": "Огнеупорная футеровка и теплоизоляция",
         "text": "Огнеупорная футеровка\nи теплоизоляция",
         "strategy": "multi_leader_line_callout",
-        "cleanup_roi": (745, 80, 1180, 138),
-        "source_anchor": [[860, 138], [955, 138], [1035, 138]],
-        "placement": ("bottom_multi", 860, 955, 1035, 138),
+        "cleanup_rois": [(750, 85, 1170, 132)],
+        "source_anchor": [[885, 131], [945, 133], [1065, 131]],
+        "placement": ("bottom_multi", 885, 945, 1065, 131),
     },
     "block-004": {
         "original": "Sheath expansion loop equals two tube diameters",
         "ru": "Компенсационная петля оболочки равна двум диаметрам трубы.",
         "text": "Компенсационная петля\nоболочки равна двум\nдиаметрам трубы.",
         "strategy": "leader_line_callout",
-        "cleanup_roi": (1260, 140, 1740, 210),
-        "source_anchor": [1614, 218],
-        "placement": ("bottom_right", 1614, 218),
+        "cleanup_rois": [(1270, 145, 1720, 230)],
+        "source_anchor": [1666, 224],
+        "placement": ("bottom_right", 1666, 224),
     },
     "block-005": {
         "original": "Sheath coil should expand in the direction of tube thermal growth",
         "ru": "Виток оболочки должен расширяться в направлении теплового роста трубы.",
         "text": "Виток оболочки должен\nрасширяться в направлении\nтеплового роста трубы.",
         "strategy": "source_free_text_no_leader",
-        "cleanup_roi": (1170, 300, 1620, 425),
+        "cleanup_rois": [(1190, 300, 1580, 435)],
         "source_anchor": None,
-        "placement": ("free", 1200, 320),
+        "placement": ("free", 1210, 310),
     },
     "block-006": {
         "original": "T/C compression fitting",
         "ru": "Компрессионный фитинг термопары",
         "text": "Компрессионный фитинг\nтермопары",
         "strategy": "leader_line_callout",
-        "cleanup_roi": (390, 595, 700, 685),
-        "source_anchor": [592, 573],
-        "placement": ("top_left", 380, 573),
+        "cleanup_rois": [(410, 595, 710, 675)],
+        "source_anchor": [590, 599],
+        "placement": ("top_left", 390, 599),
     },
     "block-007": {
         "original": "3 in.",
         "ru": None,
         "text": None,
         "strategy": "protected_dimension",
-        "cleanup_roi": None,
+        "cleanup_rois": None,
         "source_anchor": None,
         "placement": None,
     },
@@ -85,36 +85,36 @@ LABELS = {
         "ru": "Наружная стальная обшивка печи",
         "text": "Наружная стальная\nобшивка печи",
         "strategy": "leader_line_callout",
-        "cleanup_roi": (490, 695, 780, 800),
-        "source_anchor": [770, 690],
-        "placement": ("top_right", 770, 690),
+        "cleanup_rois": [(495, 690, 780, 775)],
+        "source_anchor": [793, 699],
+        "placement": ("top_right", 793, 699),
     },
     "block-009": {
         "original": "Thermocouple sheath",
         "ru": "Оболочка термопары",
         "text": "Оболочка\nтермопары",
         "strategy": "leader_line_callout",
-        "cleanup_roi": (1360, 535, 1620, 610),
-        "source_anchor": [1620, 596],
-        "placement": ("right_top", 1620, 552),
+        "cleanup_rois": [(1385, 540, 1627, 620)],
+        "source_anchor": [1628, 578],
+        "placement": ("right_top", 1628, 545),
     },
     "block-010": {
         "original": "Furnace tube",
         "ru": "Труба печи",
         "text": "Труба печи",
         "strategy": "leader_line_callout",
-        "cleanup_roi": (1440, 748, 1690, 805),
-        "source_anchor": [1690, 740],
-        "placement": ("top_right", 1690, 740),
+        "cleanup_rois": [(1465, 740, 1700, 785)],
+        "source_anchor": [1705, 759],
+        "placement": ("top_right", 1705, 740),
     },
     "block-011": {
         "original": "Clip",
         "ru": "Зажим",
         "text": "Зажим",
         "strategy": "leader_line_callout",
-        "cleanup_roi": (2040, 748, 2190, 805),
-        "source_anchor": [2035, 746],
-        "placement": ("left_top", 2035, 739),
+        "cleanup_rois": [(2030, 740, 2115, 785)],
+        "source_anchor": [2032, 752],
+        "placement": ("left_top", 2032, 740),
     },
 }
 
@@ -153,7 +153,7 @@ def render_source(repo_root: Path) -> Image.Image:
 
 def ink_mask_for_roi(source: Image.Image, roi: tuple[int, int, int, int]) -> Image.Image:
     gray = source.crop(roi).convert("L")
-    local = gray.point(lambda value: 255 if value < 245 else 0)
+    local = gray.point(lambda value: 255 if value < 254 else 0)
     local = local.filter(ImageFilter.MaxFilter(3))
     mask = Image.new("L", source.size, 0)
     mask.paste(local, (roi[0], roi[1]))
@@ -172,14 +172,16 @@ def command_clean(args: argparse.Namespace) -> None:
     cleanup_rows = []
 
     for block, row in LABELS.items():
-        roi = row["cleanup_roi"]
-        if roi is None:
+        rois = row["cleanup_rois"]
+        if rois is None:
             continue
-        local_mask = ink_mask_for_roi(source, roi)
-        combined_mask = ImageChops.lighter(combined_mask, local_mask)
-        cleaned.paste((255, 255, 255), (0, 0), local_mask)
-        changed = sum(1 for value in local_mask.getdata() if value)
-        cleanup_rows.append({"block_id": block, "source_text_roi": list(roi), "masked_pixels": changed})
+        changed = 0
+        for roi in rois:
+            local_mask = ink_mask_for_roi(source, roi)
+            combined_mask = ImageChops.lighter(combined_mask, local_mask)
+            cleaned.paste((255, 255, 255), (0, 0), local_mask)
+            changed += sum(1 for value in local_mask.get_flattened_data() if value)
+        cleanup_rows.append({"block_id": block, "source_text_rois": [list(roi) for roi in rois], "masked_pixels": changed})
 
     del draw_mask
     diff = ImageChops.difference(source, cleaned).convert("L")
