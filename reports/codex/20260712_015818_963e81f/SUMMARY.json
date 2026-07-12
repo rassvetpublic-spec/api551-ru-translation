@@ -1,61 +1,52 @@
 {
   "run_id": "20260712_015818_963e81f",
-  "package_no": "005",
+  "package_no": "006",
   "status": "PASS",
   "repo": "rassvetpublic-spec/api551-ru-translation",
-  "base": {
-    "branch": "candidates",
-    "sha": "16b9eb5b6c9a4cb27de2eeca325b8c11ceadb323"
-  },
-  "package_005": {
-    "manifest": "PASS",
+  "base": {"branch":"candidates","sha":"16b9eb5b6c9a4cb27de2eeca325b8c11ceadb323"},
+  "package_006": {
+    "registry": "PASS",
     "bootstrap": "PASS",
-    "write_boundary": "C:\\GIT only",
-    "token_saver": true
+    "rule_ack": "PASS",
+    "per_label_strategy_gate": "PASS",
+    "production_source": "original PDF page 43",
+    "r01_invalidated": true,
+    "used_r01_as_production_source": false
   },
   "tooling": {
-    "draft_pr": 50,
-    "branch": "tooling/full-control-005-20260712",
-    "status": "OPEN_DRAFT"
+    "pr_50": {"branch":"tooling/full-control-005-20260712","status":"OPEN_DRAFT_CLEAN","branch_guard":"PASS","three_entrypoint_smoke_tests":"PASS"},
+    "pr_51": {"branch":"tooling/fig10-r02-frame-20260712","status":"OPEN_DRAFT","builder_self_test":"PASS","frame_validator":"PASS"}
   },
   "preview": {
-    "branch": "preview/fig10-20260712-005",
-    "commit": "9473c7ff4bc204b861ca4fb4ff0a3f884979842f",
+    "branch": "preview-fig10-r02-20260712",
+    "commit": "26c3f96",
     "state": "review",
     "color": "orange",
-    "root_index": "PASS",
+    "caption": "R02 — рамки и расположение пересобраны",
+    "catalog_modified": false,
     "local_only_image": true
   },
-  "report": {
-    "draft_pr": 48,
-    "branch": "codex-report-20260712_015818_963e81f",
-    "status": "PASS"
-  },
+  "report": {"draft_pr":48,"branch":"codex-report-20260712_015818_963e81f","status":"PASS"},
   "figure_010": {
+    "revision": "R02",
     "status": "review_only_not_accepted",
     "source_gate": "PASS",
+    "cleaned_only_visual_qa": "PASS",
     "visual_layout_qa": "PASS",
+    "frame_qa": "PASS",
     "package_check": "PASS",
     "fresh_extract": "PASS",
-    "approved_labels": 9,
-    "protected": [
-      "3 in."
-    ],
+    "fresh_extracted_png_inspected": true,
     "caption_inside_png": false,
-    "source_crop_exact_current_pdf_render": true
+    "protected_dimension_3_in_preserved": true
   },
   "review_zip": {
-    "path": "C:\\GIT\\api551\\_local_artifacts\\review_queue\\20260712_015818_963e81f\\API551_FIGURE_010_REVIEW_R01_20260712.zip",
-    "bytes": 854752,
-    "sha256": "19c78b30a741bc9d7463b241d3f9e6b6c39eca874f509eaccf7a8bda21c49d4f"
+    "path": "C:\\GIT\\api551\\_local_artifacts\\review_queue\\20260712_015818_963e81f\\API551_FIGURE_010_REVIEW_R02_20260712.zip",
+    "sha256": "a6c53cfd59f162f28f658ba4497b63bba00ebd72ee482c5b8b266c34c71d323e",
+    "root": "010/",
+    "file_count": 6
   },
-  "catalog": {
-    "total": 69,
-    "accepted": 26,
-    "changed": 0,
-    "not_accepted": 43,
-    "modified": false
-  },
+  "catalog": {"total":69,"accepted":26,"changed":0,"not_accepted":43,"modified":false},
   "writes_outside_c_git": false,
-  "next": "Open root index.html on the local preview branch and review Figure 10; acceptance requires an explicit user message."
+  "next": "User visual review of Figure 10 R02; no acceptance or merge without explicit user instruction."
 }

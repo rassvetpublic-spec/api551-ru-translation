@@ -1,81 +1,26 @@
 {
   "overall": "PASS",
   "items": [
-    {
-      "name": "package_005_manifest",
-      "result": "PASS"
-    },
-    {
-      "name": "bootstrap_005",
-      "result": "PASS"
-    },
-    {
-      "name": "python_venv",
-      "result": "PASS",
-      "version": "3.12.13"
-    },
-    {
-      "name": "canonical_api551_source_gate",
-      "result": "PASS"
-    },
-    {
-      "name": "figure_010_catalog_status",
-      "result": "PASS",
-      "value": "not_accepted"
-    },
-    {
-      "name": "figure_010_current_pdf_crop_exact_match",
-      "result": "PASS"
-    },
-    {
-      "name": "approved_label_master_exact_match",
-      "result": "PASS",
-      "count": 9
-    },
-    {
-      "name": "protected_dimension",
-      "result": "PASS",
-      "value": "3 in."
-    },
-    {
-      "name": "visual_layout_full_left_right",
-      "result": "PASS"
-    },
-    {
-      "name": "canonical_package_check",
-      "result": "PASS"
-    },
-    {
-      "name": "fresh_extract_six_files",
-      "result": "PASS"
-    },
-    {
-      "name": "repo_local_review_queue",
-      "result": "PASS"
-    },
-    {
-      "name": "root_index_orange_review_preview",
-      "result": "PASS"
-    },
-    {
-      "name": "catalog_index_accepted_state",
-      "result": "PASS",
-      "detail": "catalog unchanged; index has review-only preview block"
-    },
-    {
-      "name": "downloads_write_boundary",
-      "result": "PASS",
-      "detail": "package ZIP read only; no new outputs written to D drive"
-    },
-    {
-      "name": "tooling_persistence",
-      "result": "PASS",
-      "detail": "draft PR 50"
-    },
-    {
-      "name": "text_report_relay",
-      "result": "PASS",
-      "detail": "draft PR 48 updated"
-    }
+    {"name":"package_006_registry_and_bootstrap","result":"PASS"},
+    {"name":"canonical_api551_source_gate","result":"PASS"},
+    {"name":"figure_010_catalog_status","result":"PASS","value":"not_accepted"},
+    {"name":"r01_rejected_not_used","result":"PASS"},
+    {"name":"rule_ack_before_drawing","result":"PASS"},
+    {"name":"per_label_strategy_gate_before_drawing","result":"PASS"},
+    {"name":"fresh_pdf_page43_crop","result":"PASS"},
+    {"name":"cleaned_only_visual_gate","result":"PASS"},
+    {"name":"protected_dimension_3_in_pixel_preserved","result":"PASS"},
+    {"name":"eight_text_driven_frames_padding_4_px","result":"PASS"},
+    {"name":"per_label_visual_layout_qa","result":"PASS"},
+    {"name":"fresh_extracted_png_visual_inspection","result":"PASS"},
+    {"name":"figure_010_frame_qa_validator","result":"PASS"},
+    {"name":"canonical_package_check_exact_six_files","result":"PASS"},
+    {"name":"preview_branch_guard_validate_only","result":"PASS","branch":"preview-fig10-r02-20260712"},
+    {"name":"preview_index_orange_review_card","result":"PASS"},
+    {"name":"catalog_and_accepted_state_unchanged","result":"PASS"},
+    {"name":"pr_50_branch_guard_main_candidates_forbidden_preview_only","result":"PASS"},
+    {"name":"pr_50_three_entrypoint_validate_only_and_smoke_tests","result":"PASS"},
+    {"name":"pr_51_builder_and_validator_tests","result":"PASS"},
+    {"name":"write_boundary_c_git_only","result":"PASS"}
   ]
 }

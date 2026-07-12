@@ -1,8 +1,9 @@
 # Decisions
 
-- Package 005 supersedes packages 001-004.
-- Persistent outputs are restricted to C:\GIT.
-- Figure 10 remains review-only.
-- The verified current Figure 10 package was revalidated against current sources and copied into the package 005 repo-local review queue.
-- Preview image remains local-only; the preview branch commits only index.html and preview.json text.
-- Tooling changes are isolated in draft PR #50.
+- Package 006 supersedes and includes package 005 for Figure 10 R02 work.
+- Figure 10 R01 is rejected and was not patched or used as a production source.
+- R02 was rebuilt from a fresh original-PDF page 43 crop after rule-ack and per-label strategy gates.
+- All eight leader-line callouts use text-driven thin gray frames with 4 px padding; block-005 remains source free text and block-007 remains protected.
+- Figure 10 remains review-only; catalog, index accepted state, and accepted status are unchanged.
+- Preview metadata is on preview-fig10-r02-20260712; its image remains a local-only ignored artifact.
+- Persistent tooling is isolated in draft PR #50 and draft PR #51; text-only report remains draft PR #48.

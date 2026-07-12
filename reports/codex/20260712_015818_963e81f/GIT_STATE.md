@@ -1,10 +1,9 @@
 # Git state
 
 - candidates baseline: 16b9eb5b6c9a4cb27de2eeca325b8c11ceadb323
-- tooling branch: tooling/full-control-005-20260712
-- tooling draft PR: #50
-- local preview branch: preview/fig10-20260712-005
-- preview commit: 9473c7ff4bc204b861ca4fb4ff0a3f884979842f
-- report branch: codex-report-20260712_015818_963e81f
-- report draft PR: #48
-- no acceptance merge performed
+- PR #50 branch: tooling/full-control-005-20260712; guard update commit ee313415d54b45edd5ac394f2ad55770c8648478
+- PR #51 branch: tooling/fig10-r02-frame-20260712; final geometry commit a575472
+- preview branch: preview-fig10-r02-20260712; commit 26c3f96
+- report branch: codex-report-20260712_015818_963e81f; draft PR #48
+- no Figure 10 acceptance commit or merge performed
+- catalog.json and accepted state unchanged

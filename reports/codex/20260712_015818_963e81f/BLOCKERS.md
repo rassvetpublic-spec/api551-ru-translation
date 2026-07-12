@@ -2,4 +2,4 @@
 
 No delivery blocker.
 
-Direct Codex file preview still fails at Windows sandbox-helper setup. The verified in-memory image inspection path passed for full and detailed Figure 10 views.
+The first preview-worktree checkout hit the repository LFS budget during smudge. It was repeated successfully with `GIT_LFS_SKIP_SMUDGE=1`; no Figure source or review asset depended on the failed download.

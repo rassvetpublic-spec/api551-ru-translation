@@ -1,16 +1,14 @@
-# API551 Codex package 005 handoff
+# API551 Codex package 006 handoff
 
 - run_id: 20260712_015818_963e81f
 - status: PASS
-- source gate: PASS
-- Figure 10: review only, not accepted
-- visual/layout QA: PASS
-- package-check and fresh extraction: PASS
-- review ZIP: C:\GIT\api551\_local_artifacts\review_queue\20260712_015818_963e81f\API551_FIGURE_010_REVIEW_R01_20260712.zip
-- SHA-256: 19c78b30a741bc9d7463b241d3f9e6b6c39eca874f509eaccf7a8bda21c49d4f
-- local preview branch: preview/fig10-20260712-005
-- root index preview: orange review card, PASS
-- tooling draft PR: #50
+- Figure 10: R02 review only, not accepted; R01 invalidated and not used
+- source: original PDF page 43; source/rule/strategy gates PASS
+- cleaned-only, visual/layout, frame QA, package-check, fresh extract: PASS
+- review ZIP: C:\GIT\api551\_local_artifacts\review_queue\20260712_015818_963e81f\API551_FIGURE_010_REVIEW_R02_20260712.zip
+- SHA-256: a6c53cfd59f162f28f658ba4497b63bba00ebd72ee482c5b8b266c34c71d323e
+- preview branch: preview-fig10-r02-20260712; orange review card; catalog unchanged
+- tooling draft PRs: #50 (preview guard and entrypoints), #51 (Figure 10 R02 builder/frame validator)
 - report draft PR: #48
-- catalog/index accepted state: unchanged; catalog remains 26 accepted, 43 not accepted
-- next: open root index.html and review Figure 10; do not accept or merge without an explicit user acceptance
+- catalog: 26 accepted, 43 not accepted; no accepted-state change
+- next: user visual review; do not accept or merge Figure 10 without explicit instruction
