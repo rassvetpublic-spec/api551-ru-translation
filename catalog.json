@@ -6,9 +6,9 @@
   "pdf_expected_path": "source/API 551 2016 (R2024).pdf",
   "stats": {
     "total": 69,
-    "accepted": 26,
+    "accepted": 27,
     "changed": 0,
-    "not_accepted": 43
+    "not_accepted": 42
   },
   "figures": [
     {
@@ -171,8 +171,15 @@
       "caption_ru": "Рисунок 10 — Поверхностная термопара печной трубы",
       "api_page": "35",
       "pdf_page": "43",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=43"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=43",
+      "folder": "workspace/figures/010",
+      "source_package": "API551_FIGURE_010_ACCEPTED_R02_20260712",
+      "html": "workspace/figures/010/figure_010.object.html",
+      "json": "workspace/figures/010/figure_010.object.json",
+      "png": "workspace/figures/010/figure_010.png",
+      "source_crop": "workspace/figures/010/figure_010.source_crop.png",
+      "out_html": "workspace/figures/010/figure_010.out.html"
     },
     {
       "figure_no": 11,
