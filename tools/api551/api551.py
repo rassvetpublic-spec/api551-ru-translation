@@ -227,12 +227,15 @@ def status(args: argparse.Namespace) -> None:
     print("accepted_figures: " + ",".join(map(str, stats["accepted_figures"])))
 
 
-def find_catalog_figure(root: Path, fig_id: str) -> dict[str, Any]:
-    catalog = read_json(root / "catalog.json")
+def find_catalog_figure_in(catalog: dict[str, Any], fig_id: str) -> dict[str, Any]:
     for item in catalog.get("figures", []):
         if figure_id(item.get("figure_no")) == fig_id:
             return item
     fail(f"Figure {fig_id} not found in catalog")
+
+
+def find_catalog_figure(root: Path, fig_id: str) -> dict[str, Any]:
+    return find_catalog_figure_in(read_json(root / "catalog.json"), fig_id)
 
 
 def validate_image_refs(html_path: Path) -> None:
@@ -547,7 +550,7 @@ def accept_figure(args: argparse.Namespace) -> None:
 
     catalog_path = root / "catalog.json"
     catalog = read_json(catalog_path)
-    fig = find_catalog_figure(root, fig_id)
+    fig = find_catalog_figure_in(catalog, fig_id)
     caption = fig.get("caption_ru") or fig.get("caption_original") or f"Figure {int(fig_id)}"
     fig_dir = root / "workspace" / "figures" / fig_id
     ensure_caption_file(root, fig_id, str(caption))
