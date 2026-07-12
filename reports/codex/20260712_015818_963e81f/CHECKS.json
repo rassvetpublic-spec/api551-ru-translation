@@ -74,8 +74,8 @@
     },
     {
       "name": "text_report_relay",
-      "result": "PENDING",
-      "detail": "draft PR 48 update"
+      "result": "PASS",
+      "detail": "draft PR 48 updated"
     }
   ]
 }
