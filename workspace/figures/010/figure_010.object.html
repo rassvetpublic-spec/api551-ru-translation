@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Рисунок 10 — R02 accepted object</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; color: #111827; background: #f6f7f9; }
+    main { max-width: 2300px; margin: 0 auto; background: #fff; border: 1px solid #d9dee7; padding: 22px; }
+    h1 { margin: 0 0 8px; font-size: 22px; }
+    .meta { color: #92400e; margin-bottom: 14px; }
+    .image-wrap { padding: 12px; text-align: center; border: 1px solid #e5e7eb; margin: 10px 0 16px; }
+    img { max-width: 100%; height: auto; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border-bottom: 1px solid #e5e7eb; padding: 7px 8px; text-align: left; vertical-align: top; font-size: 13px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Рисунок 10 — Поверхностная термопара печной трубы</h1>
+  <div class="meta">R02 · accepted_by_user_2026-07-12 · PDF page 43 · <a href="../../../source/API%20551%202016%20(R2024).pdf#page=43">source PDF</a></div>
+  <h2>Финальный PNG</h2>
+  <div class="image-wrap"><img src="figure_010.png" alt="Figure 10 R02 accepted"></div>
+  <h2>Fresh source crop</h2>
+  <div class="image-wrap"><img src="figure_010.source_crop.png" alt="Figure 10 source crop from original PDF page 43"></div>
+  <h2>QA</h2>
+  <ul>
+    <li>Production source: original PDF page 43; R01 not used.</li>
+    <li>Cleaned-only visual gate: PASS.</li>
+    <li>Eight leader-line callouts use measured thin gray frames with 4 px padding.</li>
+    <li>Block 005 is source free text without a leader; block 007 “3 in.” is preserved pixel-for-pixel.</li>
+    <li>Caption is outside the PNG.</li>
+  </ul>
+  <table>
+    <thead><tr><th>Block</th><th>Strategy</th><th>Russian label</th><th>Frame / result</th></tr></thead>
+    <tbody>
+      <tr><td>002</td><td>leader_line_callout</td><td>Обрезать лишнюю оболочку и закрепить её перед клеммной головкой U-образным болтом и уголком, приваренным к обшивке печи.</td><td>4 px; touches; PASS</td></tr>
+      <tr><td>003</td><td>multi_leader_line_callout</td><td>Огнеупорная футеровка и теплоизоляция</td><td>4 px; three contacts; PASS</td></tr>
+      <tr><td>004</td><td>leader_line_callout</td><td>Компенсационная петля оболочки равна двум диаметрам трубы.</td><td>4 px; touches; PASS</td></tr>
+      <tr><td>005</td><td>source_free_text_no_leader</td><td>Виток оболочки должен расширяться в направлении теплового роста трубы.</td><td>no frame by source strategy; PASS</td></tr>
+      <tr><td>006</td><td>leader_line_callout</td><td>Компрессионный фитинг термопары</td><td>4 px; touches; PASS</td></tr>
+      <tr><td>007</td><td>protected_dimension</td><td>3 in.</td><td>unchanged; PASS</td></tr>
+      <tr><td>008</td><td>leader_line_callout</td><td>Наружная стальная обшивка печи</td><td>4 px; touches; PASS</td></tr>
+      <tr><td>009</td><td>leader_line_callout</td><td>Оболочка термопары</td><td>4 px; touches; PASS</td></tr>
+      <tr><td>010</td><td>leader_line_callout</td><td>Труба печи</td><td>4 px; source-PDF rationale; PASS</td></tr>
+      <tr><td>011</td><td>leader_line_callout</td><td>Зажим</td><td>4 px; touches; PASS</td></tr>
+    </tbody>
+  </table>
+</main>
+</body>
+</html>

@@ -1,0 +1,323 @@
+{
+  "figure_no": 10,
+  "figure_id": "Figure 10",
+  "revision": "R02",
+  "api_page": 35,
+  "pdf_page": 43,
+  "caption_ru": "Рисунок 10 — Поверхностная термопара печной трубы",
+  "status": "accepted",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-12",
+  "ready_for_final_export": true,
+  "source_package": "API551_FIGURE_010_ACCEPTED_R02_20260712",
+  "source_policy": "original PDF page 43 only; R01 rejected and not used as production source; approved label master translations preserved; OCR not used as source of truth",
+  "production_source": "source/API 551 2016 (R2024).pdf#page=43",
+  "source_crop": "figure_010.source_crop.png",
+  "review_png": "figure_010.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "3f59aa20dae530d7b368a4450dd148345cf2b2b57b2eea10fcec9eb9b72a228a",
+  "review_png_sha256": "f8bed13e0ec36a34e7abe6558e2ab03425282e263f9c223bca180e3a876c9ab4",
+  "qa": {
+    "rule_ack": "PASS",
+    "strategy_gate": "PASS",
+    "cleaned_only_visual_gate": "PASS",
+    "layout_visual_gate": "PASS",
+    "source_english_removed": true,
+    "protected_dimension_3_in_preserved": true,
+    "protected_graphics_intersection": false,
+    "font": "Nimbus Sans Regular 26 px",
+    "frame_padding_px": 4,
+    "frame_qa_external": "figure_010.frame_qa.json (kept outside review ZIP by package policy)"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "Trim excess sheath and support it prior to terminal head with “U” bolt and angle iron that is welded to furnace skin",
+      "approved_ru": "Обрезать лишнюю оболочку и закрепить её перед клеммной головкой U-образным болтом и уголком, приваренным к обшивке печи.",
+      "strategy": "leader_line_callout",
+      "source_anchor": [
+        491,
+        316
+      ],
+      "text_bbox": [
+        308,
+        203,
+        674,
+        312
+      ],
+      "frame_bbox": [
+        304,
+        199,
+        678,
+        316
+      ],
+      "padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "relation_to_leader_line": "touches",
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-003",
+      "original": "Refractory and insulation",
+      "approved_ru": "Огнеупорная футеровка и теплоизоляция",
+      "strategy": "multi_leader_line_callout",
+      "source_anchor": [
+        [
+          885,
+          131
+        ],
+        [
+          945,
+          133
+        ],
+        [
+          1065,
+          131
+        ]
+      ],
+      "text_bbox": [
+        831,
+        81,
+        1119,
+        127
+      ],
+      "frame_bbox": [
+        827,
+        77,
+        1123,
+        131
+      ],
+      "padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "relation_to_leader_line": "touches_multiple",
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-004",
+      "original": "Sheath expansion loop equals two tube diameters",
+      "approved_ru": "Компенсационная петля оболочки равна двум диаметрам трубы.",
+      "strategy": "leader_line_callout",
+      "source_anchor": [
+        1666,
+        224
+      ],
+      "text_bbox": [
+        1370,
+        151,
+        1662,
+        220
+      ],
+      "frame_bbox": [
+        1366,
+        147,
+        1666,
+        224
+      ],
+      "padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "relation_to_leader_line": "touches",
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Sheath coil should expand in the direction of tube thermal growth",
+      "approved_ru": "Виток оболочки должен расширяться в направлении теплового роста трубы.",
+      "strategy": "source_free_text_no_leader",
+      "source_anchor": null,
+      "text_bbox": [
+        1210,
+        310,
+        1553,
+        381
+      ],
+      "frame_bbox": null,
+      "padding_px": null,
+      "relation_to_leader_line": "not_applicable",
+      "visual_result": "PASS",
+      "notes": "Fresh source PDF confirms no leader line."
+    },
+    {
+      "block_id": "block-006",
+      "original": "T/C compression fitting",
+      "approved_ru": "Компрессионный фитинг термопары",
+      "strategy": "leader_line_callout",
+      "source_anchor": [
+        590,
+        599
+      ],
+      "text_bbox": [
+        394,
+        603,
+        694,
+        650
+      ],
+      "frame_bbox": [
+        390,
+        599,
+        698,
+        654
+      ],
+      "padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "relation_to_leader_line": "touches",
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-007",
+      "original": "3 in.",
+      "approved_ru": null,
+      "strategy": "protected_dimension",
+      "source_anchor": null,
+      "text_bbox": [
+        700,
+        575,
+        875,
+        660
+      ],
+      "frame_bbox": null,
+      "padding_px": null,
+      "relation_to_leader_line": "not_applicable",
+      "original_preserved": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Furnace exterior steel skin",
+      "approved_ru": "Наружная стальная обшивка печи",
+      "strategy": "leader_line_callout",
+      "source_anchor": [
+        793,
+        699
+      ],
+      "text_bbox": [
+        553,
+        703,
+        789,
+        744
+      ],
+      "frame_bbox": [
+        549,
+        699,
+        793,
+        748
+      ],
+      "padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "relation_to_leader_line": "touches",
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-009",
+      "original": "Thermocouple sheath",
+      "approved_ru": "Оболочка термопары",
+      "strategy": "leader_line_callout",
+      "source_anchor": [
+        1628,
+        578
+      ],
+      "text_bbox": [
+        1491,
+        549,
+        1624,
+        598
+      ],
+      "frame_bbox": [
+        1487,
+        545,
+        1628,
+        602
+      ],
+      "padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "relation_to_leader_line": "touches",
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-010",
+      "original": "Furnace tube",
+      "approved_ru": "Труба печи",
+      "strategy": "leader_line_callout",
+      "source_anchor": [
+        1705,
+        759
+      ],
+      "text_bbox": [
+        1565,
+        744,
+        1701,
+        771
+      ],
+      "frame_bbox": [
+        1561,
+        740,
+        1705,
+        775
+      ],
+      "padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "relation_to_leader_line": "touches",
+      "visual_result": "PASS",
+      "rationale": "Original PDF shows the label inside Figure 10 with a leader line; legacy master action metadata is unchanged."
+    },
+    {
+      "block_id": "block-011",
+      "original": "Clip",
+      "approved_ru": "Зажим",
+      "strategy": "leader_line_callout",
+      "source_anchor": [
+        2032,
+        752
+      ],
+      "text_bbox": [
+        2036,
+        744,
+        2116,
+        763
+      ],
+      "frame_bbox": [
+        2032,
+        740,
+        2120,
+        767
+      ],
+      "padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "relation_to_leader_line": "touches",
+      "visual_result": "PASS"
+    }
+  ],
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration"
+}

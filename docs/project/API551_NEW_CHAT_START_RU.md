@@ -105,11 +105,11 @@ source -> role -> problem -> risk -> required decision
 docs/project/API551_STAGE4_HANDOFF_CURRENT.json
 ```
 
-Текущий статус после принятия Figure 3 R03:
+Текущий статус Stage 4:
 
 ```text
-accepted: 26/69
-not_accepted: 43/69
+accepted: 27/69
+not_accepted: 42/69
 changed/review: 0
 Figure 2: accepted
 Figure 3: accepted
