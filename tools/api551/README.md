@@ -39,3 +39,12 @@ Repo-local точки входа PowerShell из пакета 005 описаны
 - tools/api551/publish_codex_report.ps1
 
 Каждый скрипт, изменяющий состояние, сначала запускают с ValidateOnly.
+
+## Figure 010 R02 frame rebuild
+
+Точки входа для обязательной пересборки Figure 10 R02:
+
+- `tools/api551/build_figure010_r02.py`
+- `tools/api551/validate_figure010_frame_qa.py`
+
+Русские инструкции: `docs/project/API551_FIGURE_010_REBUILD_R02_RU.md` и `docs/project/API551_FIGURE_010_FRAME_QA_TOOL_RU.md`.
