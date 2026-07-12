@@ -6,9 +6,9 @@
   "pdf_expected_path": "source/API 551 2016 (R2024).pdf",
   "stats": {
     "total": 69,
-    "accepted": 27,
+    "accepted": 28,
     "changed": 0,
-    "not_accepted": 42
+    "not_accepted": 41
   },
   "figures": [
     {
@@ -188,8 +188,15 @@
       "caption_ru": "Рисунок 11 — Пределы точности и применимые диапазоны температур для термисторов и термопреобразователей сопротивления",
       "api_page": "37",
       "pdf_page": "45",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=45"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=45",
+      "folder": "workspace/figures/011",
+      "source_package": "API551_FIGURE_011_ACCEPTED_R01_20260712",
+      "html": "workspace/figures/011/figure_011.object.html",
+      "json": "workspace/figures/011/figure_011.object.json",
+      "png": "workspace/figures/011/figure_011.png",
+      "source_crop": "workspace/figures/011/figure_011.source_crop.png",
+      "out_html": "workspace/figures/011/figure_011.out.html"
     },
     {
       "figure_no": 12,
