@@ -36,15 +36,19 @@ $start='<!-- API551_PREVIEW_QUEUE_START -->'
 $end='<!-- API551_PREVIEW_QUEUE_END -->'
 $items = Get-ChildItem -LiteralPath (Join-Path $RepoRoot "workspace\previews\$RunId") -Recurse -File -Filter 'preview.json' -ErrorAction SilentlyContinue | ForEach-Object {
   $j=Get-Content $_.FullName -Raw|ConvertFrom-Json
+  $captionSafe=[System.Net.WebUtility]::HtmlEncode([string]$j.caption)
   $color = switch($j.state){'review'{'#f59e0b'}'blocker'{'#dc2626'}'accepted'{'#16a34a'}default{'#6b7280'}}
   $img = if($j.image){"<img src='$($j.image)' alt='Figure $($j.figure) preview' style='max-width:260px;border:4px solid $color;border-radius:8px'>"}else{"<div style='width:260px;height:120px;border:4px solid $color;border-radius:8px;display:flex;align-items:center;justify-content:center'>no image</div>"}
-  "<div class='api551-preview-card' style='border-left:8px solid $color;padding:8px;margin:8px;background:#fff7ed'><b>Figure $($j.figure)</b> — $($j.state)<br>$img<br><small>$($j.caption)</small></div>"
+  "<div class='api551-preview-card' style='border-left:8px solid $color;padding:8px;margin:8px;background:#fff7ed'><b>Figure $($j.figure)</b> — $($j.state)<br>$img<br><small>$captionSafe</small></div>"
 }
 $block = $start + "`n<section id='api551-preview-queue' style='padding:16px;border:3px dashed #f59e0b;margin:16px 0;background:#fffbeb'><h2>API551 Preview Queue — $RunId</h2>" + (($items|Out-String)) + "</section>`n" + $end
 if($html.Contains($start) -and $html.Contains($end)){
   $html=[regex]::Replace($html,[regex]::Escape($start)+'.*?'+[regex]::Escape($end),[System.Text.RegularExpressions.MatchEvaluator]{param($m)$block},[System.Text.RegularExpressions.RegexOptions]::Singleline)
 }else{
-  $html=$block + "`n" + $html
+  $bodyMatch=[regex]::Match($html,'<body[^>]*>',[System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
+  if(!$bodyMatch.Success){throw 'Root index.html has no body element'}
+  $insertAt=$bodyMatch.Index+$bodyMatch.Length
+  $html=$html.Insert($insertAt,"`n"+$block)
 }
 [IO.File]::WriteAllText($index,$html,[Text.UTF8Encoding]::new($false))
 Write-Host "Preview updated in index.html for Figure $fig3 state=$State"
