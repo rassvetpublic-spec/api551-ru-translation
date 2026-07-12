@@ -1,0 +1,115 @@
+{
+  "figure_no": 21,
+  "figure_id": "Figure 21",
+  "revision": "R01",
+  "pdf_page": 82,
+  "caption_ru": "Рисунок 21 — График точности расходомера переменного сечения по VDI VDE 3513-2",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-12",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=82",
+  "source_policy": "original PDF page 82 and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_021.source_crop.png",
+  "review_png": "figure_021.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "1c19d55ca47c83396aaed26f6a99b60f3929a0c96546cab3cb1a33d5a6358e33",
+  "review_png_sha256": "91d6e8833ea46ffeec6c96f081bdfeb3ef3f5520a82eb0f492722bee88d649d6",
+  "qa": {
+    "rule_ack": "PASS",
+    "strategy_gate": "PASS",
+    "cleaned_only_visual_gate": "PASS",
+    "layout_visual_gate": "PASS",
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_preserved": true,
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-12",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain the approved orientation and placement logic without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-006",
+      "original": "Error (flow %)",
+      "approved_ru": "Погрешность (процент расхода)",
+      "strategy": "vertical_axis_title_raster_cleanup",
+      "text_bbox": [
+        55,
+        493,
+        97,
+        967
+      ],
+      "font_size_px": 31,
+      "frame_required": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-004",
+      "original": "G: 2.5%",
+      "approved_ru": "G: 2,5 %",
+      "strategy": "legend_text_preserve_line_sample",
+      "text_bbox": [
+        1215,
+        392,
+        1340,
+        420
+      ],
+      "font_size_px": 32,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-005",
+      "original": "G: 1.5%",
+      "approved_ru": "G: 1,5 %",
+      "strategy": "legend_text_preserve_line_sample",
+      "text_bbox": [
+        1215,
+        460,
+        1340,
+        489
+      ],
+      "font_size_px": 32,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-007",
+      "original": "Flow (read %)",
+      "approved_ru": "Расход (показание, %)",
+      "strategy": "horizontal_axis_title_raster_cleanup",
+      "text_bbox": [
+        657,
+        1533,
+        1118,
+        1575
+      ],
+      "font_size_px": 44,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-002",
+      "protected_text": "qG = 50%",
+      "strategy": "protected_by_current_figure_policy",
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-003",
+      "protected_text": "G: 4.0%",
+      "strategy": "protected_by_current_figure_policy",
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "protected-chart",
+      "protected_text": "grid, curves, markers, numeric ticks, legend frame and line samples",
+      "strategy": "protect_do_not_translate",
+      "visual_result": "PASS"
+    }
+  ],
+  "restored_notes": [],
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_021_ACCEPTED_R01_20260712",
+  "figure_specific_rule": "qG = 50% and G: 4.0% remain protected and unchanged; graph/grid/legend samples preserved."
+}
