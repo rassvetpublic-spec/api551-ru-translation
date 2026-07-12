@@ -1,0 +1,182 @@
+{
+  "figure_no": 15,
+  "figure_id": "Figure 15",
+  "revision": "R01",
+  "pdf_page": 54,
+  "caption_ru": "Рисунок 15 — Определение давления",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-12",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=54",
+  "source_policy": "original PDF page 54 and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_015.source_crop.png",
+  "review_png": "figure_015.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "422bff6fd72c809b4cd9b0799d9759ed759335972e8238bf2c067c50d1a47cd0",
+  "review_png_sha256": "776397db8f69c4dae87c758547a4d90319aef5690a243b95b18c21d48c203d80",
+  "qa": {
+    "rule_ack": "PASS",
+    "strategy_gate": "PASS",
+    "cleaned_only_visual_gate": "PASS",
+    "layout_visual_gate": "PASS",
+    "caption_inside_png": false,
+    "leader_line_callouts": 8,
+    "invented_callout_frames": 0,
+    "protected_graphics_preserved": true,
+    "frame_placement_rule_audit": "PASS",
+    "source_label_style": "unboxed leader-line free text",
+    "frame_policy": "no invented frame; preserve the source free-text callout strategy",
+    "placement_policy": "compact complete Russian text placed adjacent to the original leader-line endpoint without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "Absolute",
+      "approved_ru": "Абсолютное давление",
+      "rendered_ru": "Абсолютное\nдавление",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        342,
+        139,
+        548,
+        201
+      ],
+      "font_size_px": 36,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-003",
+      "original": "Gauge",
+      "approved_ru": "Избыточное давление",
+      "rendered_ru": "Избыточное\nдавление",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        598,
+        29,
+        802,
+        91
+      ],
+      "font_size_px": 36,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-004",
+      "original": "Gauge compound",
+      "approved_ru": "Составное давление",
+      "rendered_ru": "Составное\nдавление",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        850,
+        110,
+        1030,
+        170
+      ],
+      "font_size_px": 36,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Pressure",
+      "approved_ru": "Давление",
+      "rendered_ru": "Давление",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        72,
+        544,
+        238,
+        576
+      ],
+      "font_size_px": 36,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-006",
+      "original": "Vacuum",
+      "approved_ru": "Вакуум",
+      "rendered_ru": "Вакуум",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        520,
+        668,
+        640,
+        702
+      ],
+      "font_size_px": 36,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-007",
+      "original": "Barometric range",
+      "approved_ru": "Барометрический диапазон",
+      "rendered_ru": "Барометрический\nдиапазон",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        1080,
+        236,
+        1361,
+        294
+      ],
+      "font_size_px": 34,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Atmospheric [approx. 14.7 PSIA (100 kPa)]",
+      "approved_ru": "Атмосферное давление [прибл. 14,7 PSIA (100 кПа)]",
+      "rendered_ru": "Атмосферное давление\n[прибл. 14,7 PSIA (100 кПа)]",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        1120,
+        391,
+        1536,
+        449
+      ],
+      "font_size_px": 32,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-009",
+      "original": "Total vacuum (zero or absolute)",
+      "approved_ru": "Полный вакуум (ноль или абсолютное давление)",
+      "rendered_ru": "Полный вакуум\n(ноль или абсолютное\nдавление)",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        1120,
+        605,
+        1453,
+        690
+      ],
+      "font_size_px": 32,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    }
+  ],
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_015_ACCEPTED_R01_20260712"
+}

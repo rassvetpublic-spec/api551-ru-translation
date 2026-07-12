@@ -6,9 +6,9 @@
   "pdf_expected_path": "source/API 551 2016 (R2024).pdf",
   "stats": {
     "total": 69,
-    "accepted": 28,
+    "accepted": 31,
     "changed": 0,
-    "not_accepted": 41
+    "not_accepted": 38
   },
   "figures": [
     {
@@ -205,8 +205,15 @@
       "caption_ru": "Рисунок 12 — Пример установки пирометра для реактора Клауса",
       "api_page": "42",
       "pdf_page": "50",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=50"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=50",
+      "folder": "workspace/figures/012",
+      "source_package": "API551_FIGURE_012_ACCEPTED_R01_20260712",
+      "html": "workspace/figures/012/figure_012.object.html",
+      "json": "workspace/figures/012/figure_012.object.json",
+      "png": "workspace/figures/012/figure_012.png",
+      "source_crop": "workspace/figures/012/figure_012.source_crop.png",
+      "out_html": "workspace/figures/012/figure_012.out.html"
     },
     {
       "figure_no": 13,
@@ -215,8 +222,15 @@
       "caption_ru": "Рисунок 13 — Термопара в оболочке с бронированным выводом",
       "api_page": "42",
       "pdf_page": "50",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=50"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=50",
+      "folder": "workspace/figures/013",
+      "source_package": "API551_FIGURE_013_ACCEPTED_R01_20260712",
+      "html": "workspace/figures/013/figure_013.object.html",
+      "json": "workspace/figures/013/figure_013.object.json",
+      "png": "workspace/figures/013/figure_013.png",
+      "source_crop": "workspace/figures/013/figure_013.source_crop.png",
+      "out_html": "workspace/figures/013/figure_013.out.html"
     },
     {
       "figure_no": 14,
@@ -242,8 +256,15 @@
       "caption_ru": "Рисунок 15 — Определение давления",
       "api_page": "46",
       "pdf_page": "54",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=54"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=54",
+      "folder": "workspace/figures/015",
+      "source_package": "API551_FIGURE_015_ACCEPTED_R01_20260712",
+      "html": "workspace/figures/015/figure_015.object.html",
+      "json": "workspace/figures/015/figure_015.object.json",
+      "png": "workspace/figures/015/figure_015.png",
+      "source_crop": "workspace/figures/015/figure_015.source_crop.png",
+      "out_html": "workspace/figures/015/figure_015.out.html"
     },
     {
       "figure_no": 16,

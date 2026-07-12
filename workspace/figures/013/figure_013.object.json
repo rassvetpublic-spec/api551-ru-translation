@@ -1,0 +1,164 @@
+{
+  "figure_no": 13,
+  "figure_id": "Figure 13",
+  "revision": "R01",
+  "pdf_page": 50,
+  "caption_ru": "Рисунок 13 — Термопара в оболочке с бронированным выводом",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-12",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=50",
+  "source_policy": "original PDF page 50 and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_013.source_crop.png",
+  "review_png": "figure_013.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "df86bfaae0f0a2f2abb462cda2524db2c5ee17cda4e0946cd2823b569aeddb08",
+  "review_png_sha256": "c3a62b9028756a801594edb105f897a0d9e4de5842ac53cca524036220c578b3",
+  "qa": {
+    "rule_ack": "PASS",
+    "strategy_gate": "PASS",
+    "cleaned_only_visual_gate": "PASS",
+    "layout_visual_gate": "PASS",
+    "caption_inside_png": false,
+    "leader_line_callouts": 7,
+    "invented_callout_frames": 0,
+    "protected_graphics_preserved": true,
+    "frame_placement_rule_audit": "PASS",
+    "source_label_style": "unboxed leader-line free text",
+    "frame_policy": "no invented frame; preserve the source free-text callout strategy",
+    "placement_policy": "compact complete Russian text placed adjacent to the original leader-line endpoint without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "Sheathed couple with 24 in. min. flexible lead and spiral armor",
+      "approved_ru": "Термопара в оболочке с гибким выводом длиной не менее 24″ и спиральной бронёй",
+      "rendered_ru": "Термопара в оболочке с гибким\nвыводом длиной не менее 24″\nи спиральной бронёй",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        939,
+        250,
+        1440,
+        340
+      ],
+      "font_size_px": 34,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-003",
+      "original": "Armor or braid attached to sheath",
+      "approved_ru": "Броня или оплётка, прикреплённая к оболочке",
+      "rendered_ru": "Броня или оплётка,\nприкреплённая к оболочке",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        726,
+        370,
+        1135,
+        430
+      ],
+      "font_size_px": 33,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-004",
+      "original": "Potting seal",
+      "approved_ru": "Заливочное уплотнение",
+      "rendered_ru": "Заливочное\nуплотнение",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        1105,
+        560,
+        1306,
+        624
+      ],
+      "font_size_px": 36,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Compression fitting or spring loaded adapter",
+      "approved_ru": "Компрессионный фитинг или подпружиненный адаптер",
+      "rendered_ru": "Компрессионный фитинг или\nподпружиненный адаптер",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        770,
+        684,
+        1229,
+        746
+      ],
+      "font_size_px": 34,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-006",
+      "original": "Thermocouple head with transmitter",
+      "approved_ru": "Головка термопары с преобразователем",
+      "rendered_ru": "Головка термопары\nс преобразователем",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        1810,
+        66,
+        2087,
+        118
+      ],
+      "font_size_px": 29,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-007",
+      "original": "Cable seal fitting or strain relief bushing with rubber grommet",
+      "approved_ru": "Кабельный уплотнительный фитинг или втулка разгрузки натяжения с резиновой манжетой",
+      "rendered_ru": "Кабельный\nуплотнительный фитинг\nили втулка разгрузки\nнатяжения\nс резиновой манжетой",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        1770,
+        634,
+        2041,
+        742
+      ],
+      "font_size_px": 24,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Drip loop",
+      "approved_ru": "Каплеуловительная петля",
+      "rendered_ru": "Каплеуловительная петля",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        1705,
+        934,
+        2045,
+        961
+      ],
+      "font_size_px": 28,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    }
+  ],
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_013_ACCEPTED_R01_20260712"
+}
