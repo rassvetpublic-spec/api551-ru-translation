@@ -34,3 +34,5 @@ Codex не должен ждать ручной распаковки и не д�
 ## Git LFS
 
 Text-only relay устанавливает GIT_LFS_SKIP_SMUDGE=1 перед созданием временного worktree, поэтому не загружает бинарные LFS-объекты и не зависит от LFS bandwidth.
+
+После успешного push relay удаляет чистый временный report worktree без ключа force.

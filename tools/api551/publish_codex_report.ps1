@@ -51,4 +51,5 @@ if(!$NoPr -and (Get-Command gh -ErrorAction SilentlyContinue)){
     & gh pr create --repo rassvetpublic-spec/api551-ru-translation --draft --base $BaseBranch --head $branch --title "[REPORT] API551 Codex run $RunId" --body-file $body
   }
 }
+G @('worktree','remove',$wt)|Out-Null
 Write-Host "Codex report branch: $branch"
