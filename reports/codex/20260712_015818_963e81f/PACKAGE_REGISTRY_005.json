@@ -1,0 +1,40 @@
+{
+  "active_package": "005",
+  "package_name": "API551_CODEX_005_FULL_CONTROL_PACK_20260712",
+  "created_utc": "2026-07-11T23:47:00.839944+00:00",
+  "supersedes": [
+    {
+      "no": "001",
+      "name": "API551_CODEX_NIGHT_OPERATOR_PACK_20260712",
+      "status": "included"
+    },
+    {
+      "no": "002",
+      "name": "API551_CODEX_PYTHON_TOOLKIT_ADDON_20260712",
+      "status": "included"
+    },
+    {
+      "no": "003",
+      "name": "API551_CODEX_GITHUB_RELAY_ADDON_20260712",
+      "status": "included"
+    },
+    {
+      "no": "004",
+      "name": "API551_CODEX_AUTOFETCH_TOKEN_SAVER_20260712",
+      "status": "included"
+    }
+  ],
+  "write_boundary": {
+    "allowed_roots": [
+      "C:\\GIT\\api551",
+      "C:\\GIT\\inbox_chatgpt"
+    ],
+    "read_only_bootstrap_exception": "D:\\ЗАГРУЗКИ\\API551_CODEX_005_FULL_CONTROL_PACK_20260712.zip",
+    "forbidden_output_roots": [
+      "D:\\ЗАГРУЗКИ",
+      "C:\\Users",
+      "%TEMP% for persistent artifacts"
+    ]
+  },
+  "token_saver": true
+}

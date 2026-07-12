@@ -1,18 +1,81 @@
 {
-  "source_gate": "PASS",
-  "docs_sync": "PASS",
-  "figure_all_known": "PASS",
-  "figure8_package_check": "PASS",
-  "json_utf8": "PASS",
-  "pdf_render": "PASS",
-  "png_read": "PASS",
-  "zip_integrity": "PASS",
-  "python_direct_primary_checks": "5/5 PASS",
-  "github_pr45_checks": "PASS",
-  "github_pr47_checks": "PASS",
-  "per_figure_source_gates": 43,
-  "per_figure_source_gate_failures": 0,
-  "review_packages_delivered": 0,
-  "visual_layout_qa": "BLOCKED",
-  "browser_relay": "BLOCKED"
+  "overall": "PASS",
+  "items": [
+    {
+      "name": "package_005_manifest",
+      "result": "PASS"
+    },
+    {
+      "name": "bootstrap_005",
+      "result": "PASS"
+    },
+    {
+      "name": "python_venv",
+      "result": "PASS",
+      "version": "3.12.13"
+    },
+    {
+      "name": "canonical_api551_source_gate",
+      "result": "PASS"
+    },
+    {
+      "name": "figure_010_catalog_status",
+      "result": "PASS",
+      "value": "not_accepted"
+    },
+    {
+      "name": "figure_010_current_pdf_crop_exact_match",
+      "result": "PASS"
+    },
+    {
+      "name": "approved_label_master_exact_match",
+      "result": "PASS",
+      "count": 9
+    },
+    {
+      "name": "protected_dimension",
+      "result": "PASS",
+      "value": "3 in."
+    },
+    {
+      "name": "visual_layout_full_left_right",
+      "result": "PASS"
+    },
+    {
+      "name": "canonical_package_check",
+      "result": "PASS"
+    },
+    {
+      "name": "fresh_extract_six_files",
+      "result": "PASS"
+    },
+    {
+      "name": "repo_local_review_queue",
+      "result": "PASS"
+    },
+    {
+      "name": "root_index_orange_review_preview",
+      "result": "PASS"
+    },
+    {
+      "name": "catalog_index_accepted_state",
+      "result": "PASS",
+      "detail": "catalog unchanged; index has review-only preview block"
+    },
+    {
+      "name": "downloads_write_boundary",
+      "result": "PASS",
+      "detail": "package ZIP read only; no new outputs written to D drive"
+    },
+    {
+      "name": "tooling_persistence",
+      "result": "PASS",
+      "detail": "draft PR 50"
+    },
+    {
+      "name": "text_report_relay",
+      "result": "PENDING",
+      "detail": "draft PR 48 update"
+    }
+  ]
 }

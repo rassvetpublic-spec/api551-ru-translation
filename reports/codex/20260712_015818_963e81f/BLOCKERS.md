@@ -1,2 +1,5 @@
-- Chrome/ChatGPT relay unavailable; gh fallback selected.
-- All 43 not_accepted Figures were source-gated individually and blocked from packaging because mandatory visual/layout QA was unavailable. No review ZIPs were delivered.
+# Blockers
+
+No delivery blocker.
+
+Direct Codex file preview still fails at Windows sandbox-helper setup. The verified in-memory image inspection path passed for full and detailed Figure 10 views.

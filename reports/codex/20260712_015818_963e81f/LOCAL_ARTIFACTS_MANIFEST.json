@@ -1,0 +1,90 @@
+{
+  "run_id": "20260712_015818_963e81f",
+  "report_branch": "codex-report-20260712_015818_963e81f",
+  "artifacts": [
+    {
+      "local_path": "C:\\GIT\\api551\\reports\\codex-local\\20260712_015818_963e81f\\API551_FIG08_R01_CURRENT_VERIFY.zip",
+      "bytes": 502312,
+      "sha256": "d931fa04ef83ea1f87fa6b039b4c07a771de546f3d9a03841fb80742132cbfc6",
+      "committed": false
+    },
+    {
+      "local_path": "C:\\GIT\\api551\\reports\\codex-local\\20260712_015818_963e81f\\pdf_page43_smoke.png",
+      "bytes": 201381,
+      "sha256": "c8596e16cce2d3b4860f9812d54b4466d5cc4da3ced0c45073c7a1b0d15cc0ba",
+      "committed": false
+    },
+    {
+      "local_path": "C:\\GIT\\api551\\reports\\codex-local\\20260712_015818_963e81f\\fig8_package_check\\008\\figure_008.object.html",
+      "bytes": 5738,
+      "sha256": "d98fd2900b47ccfa3139ab4c914940a44e93cd0a87784ba30d8714e145a85729",
+      "committed": false
+    },
+    {
+      "local_path": "C:\\GIT\\api551\\reports\\codex-local\\20260712_015818_963e81f\\fig8_package_check\\008\\figure_008.out.html",
+      "bytes": 1254,
+      "sha256": "0fa8e7e1b47d478760355f818f40a9e9be362288fb59adc61d7aa975591373f9",
+      "committed": false
+    },
+    {
+      "local_path": "C:\\GIT\\api551\\reports\\codex-local\\20260712_015818_963e81f\\fig8_package_check\\008\\figure_008.png",
+      "bytes": 242479,
+      "sha256": "de97465b986df547fad32bf7ae58909a39d77f338e509694943cf89d577e3b2c",
+      "committed": false
+    },
+    {
+      "local_path": "C:\\GIT\\api551\\reports\\codex-local\\20260712_015818_963e81f\\fig8_package_check\\008\\figure_008.source_crop.png",
+      "bytes": 256042,
+      "sha256": "44df27bcef90e742fc050276faa4ea5f40f04e27cf119bb758f58aeede2fa5a0",
+      "committed": false
+    },
+    {
+      "local_path": "C:\\GIT\\api551\\reports\\codex-local\\20260712_015818_963e81f\\figure010_package005_extract\\010\\figure_010.object.html",
+      "bytes": 4388,
+      "sha256": "172a2264d8d658ce308d5b33b88b3bbeee78b679b849a5370a327e42b367aca7",
+      "committed": false
+    },
+    {
+      "local_path": "C:\\GIT\\api551\\reports\\codex-local\\20260712_015818_963e81f\\figure010_package005_extract\\010\\figure_010.out.html",
+      "bytes": 928,
+      "sha256": "741b6caa3d6b379310013a1529ed2dc2c1478d000bfbb0a3d2e044eed16f5908",
+      "committed": false
+    },
+    {
+      "local_path": "C:\\GIT\\api551\\reports\\codex-local\\20260712_015818_963e81f\\figure010_package005_extract\\010\\figure_010.png",
+      "bytes": 376147,
+      "sha256": "8fd00c4a00b33e84a1c924ab9b7e602d25570235d0ca40d9c8f0497c1d44a475",
+      "committed": false
+    },
+    {
+      "local_path": "C:\\GIT\\api551\\reports\\codex-local\\20260712_015818_963e81f\\figure010_package005_extract\\010\\figure_010.source_crop.png",
+      "bytes": 480087,
+      "sha256": "ec9ec0a3e507b012a85217bb2b4c5fbd9bb33edbc5f1062d54e973faedcac907",
+      "committed": false
+    },
+    {
+      "local_path": "C:\\GIT\\api551\\reports\\codex-local\\20260712_015818_963e81f\\visual_qa_010_005\\full.jpg",
+      "bytes": 25193,
+      "sha256": "ad9448b246d2db7f79729eb867dd4286092aa687f3ea9798875ab41ad9ccd354",
+      "committed": false
+    },
+    {
+      "local_path": "C:\\GIT\\api551\\reports\\codex-local\\20260712_015818_963e81f\\visual_qa_010_005\\left.jpg",
+      "bytes": 22137,
+      "sha256": "7f8ba240b28b5e7598aec574ab33e829764c58ef1e3ede2bc46a758febc2c6c5",
+      "committed": false
+    },
+    {
+      "local_path": "C:\\GIT\\api551\\reports\\codex-local\\20260712_015818_963e81f\\visual_qa_010_005\\right.jpg",
+      "bytes": 15664,
+      "sha256": "79c35f5f97b9c11a458dddd745634d7e6d39d5b03676ac321680bc575bb228c6",
+      "committed": false
+    },
+    {
+      "local_path": "C:\\GIT\\api551\\_local_artifacts\\review_queue\\20260712_015818_963e81f\\API551_FIGURE_010_REVIEW_R01_20260712.zip",
+      "bytes": 854752,
+      "sha256": "19c78b30a741bc9d7463b241d3f9e6b6c39eca874f509eaccf7a8bda21c49d4f",
+      "committed": false
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+Allowed persistent writes: C:\GIT\api551 and C:\GIT\inbox_chatgpt only.
+Review ZIPs: C:\GIT\api551\_local_artifacts\review_queue\20260712_015818_963e81f
