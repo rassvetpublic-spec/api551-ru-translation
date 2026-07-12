@@ -1,0 +1,254 @@
+{
+  "figure_no": 12,
+  "figure_id": "Figure 12",
+  "revision": "R01",
+  "pdf_page": 50,
+  "caption_ru": "Рисунок 12 — Пример установки пирометра для реактора Клауса",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-12",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=50",
+  "source_policy": "original PDF page 50 and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_012.source_crop.png",
+  "review_png": "figure_012.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "111a5daa6622077d580919b751ce9b4d27dae083ff7759215243469fd104d07b",
+  "review_png_sha256": "54334e91d403cf45f57d3dbf4b931fa8f24b2c36392674d3dd9f66b0f4bc369e",
+  "qa": {
+    "rule_ack": "PASS",
+    "strategy_gate": "PASS",
+    "cleaned_only_visual_gate": "PASS",
+    "layout_visual_gate": "PASS",
+    "caption_inside_png": false,
+    "leader_line_callouts": 12,
+    "invented_callout_frames": 0,
+    "protected_graphics_preserved": true,
+    "frame_placement_rule_audit": "PASS",
+    "source_label_style": "unboxed leader-line free text",
+    "frame_policy": "no invented frame; preserve the source free-text callout strategy",
+    "placement_policy": "compact complete Russian text placed adjacent to the original leader-line endpoint without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "Do not exceed allowed bend radius",
+      "approved_ru": "Не превышать допустимый радиус изгиба",
+      "rendered_ru": "Не превышать допустимый\nрадиус изгиба",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        135,
+        22,
+        529,
+        78
+      ],
+      "font_size_px": 31,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-003",
+      "original": "Combustion air purge (optional)",
+      "approved_ru": "Продувка воздухом горения (опция)",
+      "rendered_ru": "Продувка воздухом\nгорения (опция)",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        1450,
+        96,
+        1722,
+        150
+      ],
+      "font_size_px": 30,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-004",
+      "original": "Instrument air",
+      "approved_ru": "Приборный воздух",
+      "rendered_ru": "Приборный воздух",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        745,
+        127,
+        1007,
+        158
+      ],
+      "font_size_px": 30,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Armored fiber optic cable",
+      "approved_ru": "Бронированный волоконно-оптический кабель",
+      "rendered_ru": "Бронированный\nволоконно-оптический\nкабель",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        265,
+        247,
+        547,
+        313
+      ],
+      "font_size_px": 27,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-006",
+      "original": "Coil and Protect excess cable",
+      "approved_ru": "Свернуть в бухту и защитить избыточную длину кабеля",
+      "rendered_ru": "Свернуть в бухту\nи защитить избыточную\nдлину кабеля",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        290,
+        372,
+        557,
+        438
+      ],
+      "font_size_px": 24,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-007",
+      "original": "Full port ball valve",
+      "approved_ru": "Полнопроходной шаровой кран",
+      "rendered_ru": "Полнопроходной\nшаровой кран",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        895,
+        504,
+        1131,
+        556
+      ],
+      "font_size_px": 30,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Lens assembly",
+      "approved_ru": "Линзовый узел",
+      "rendered_ru": "Линзовый\nузел",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        35,
+        573,
+        173,
+        627
+      ],
+      "font_size_px": 30,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-009",
+      "original": "Disconnect for lens cleaning",
+      "approved_ru": "Разъём для очистки линзы",
+      "rendered_ru": "Разъём для\nочистки линзы",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        45,
+        662,
+        234,
+        708
+      ],
+      "font_size_px": 28,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-010",
+      "original": "Ball joint lens alignment assembly",
+      "approved_ru": "Узел шарнирной регулировки положения линзы",
+      "rendered_ru": "Узел шарнирной\nрегулировки положения\nлинзы",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        45,
+        766,
+        333,
+        829
+      ],
+      "font_size_px": 26,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-011",
+      "original": "Air purge collar",
+      "approved_ru": "Кольцо воздушной продувки",
+      "rendered_ru": "Кольцо воздушной\nпродувки",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        595,
+        794,
+        838,
+        846
+      ],
+      "font_size_px": 28,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-012",
+      "original": "Slope line away from lens",
+      "approved_ru": "Линию выполнять с уклоном от линзы",
+      "rendered_ru": "Линию выполнять с\nуклоном от линзы",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        560,
+        867,
+        815,
+        918
+      ],
+      "font_size_px": 28,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-013",
+      "original": "Spool length determined by target size and cooling required",
+      "approved_ru": "Длина катушки определяется размером цели и требуемым охлаждением",
+      "rendered_ru": "Длина катушки определяется\nразмером цели и требуемым\nохлаждением",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        460,
+        960,
+        817,
+        1026
+      ],
+      "font_size_px": 26,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    }
+  ],
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_012_ACCEPTED_R01_20260712"
+}
