@@ -10,6 +10,12 @@ param(
 )
 $ErrorActionPreference='Stop'
 $RepoRoot=(Resolve-Path $RepoRoot).Path
+$branchOutput=& git -C $RepoRoot branch --show-current 2>&1
+if($LASTEXITCODE -ne 0){throw "Cannot determine Git branch for $RepoRoot`: $branchOutput"}
+$currentBranch=($branchOutput|Out-String).Trim()
+if(!$currentBranch){throw 'Detached HEAD is forbidden for preview index updates'}
+if($currentBranch -in @('main','candidates')){throw "Preview index update is forbidden on protected branch: $currentBranch"}
+if($currentBranch -notlike 'preview-*'){throw "Preview index update requires a preview-* branch; current branch: $currentBranch"}
 if(!$RunId){$RunId=(Get-Content -LiteralPath (Join-Path $RepoRoot 'reports\codex-local\CURRENT_RUN_ID.txt') -Raw).Trim()}
 if(!$Figure){throw 'Pass -Figure NNN'}
 $fig3 = ('{0:d3}' -f [int]$Figure)
@@ -17,7 +23,7 @@ $index = Join-Path $RepoRoot 'index.html'
 if (!(Test-Path -LiteralPath $index)) { throw "Root index not found: $index" }
 if ($PreviewPng -and !(Test-Path -LiteralPath $PreviewPng)) { throw "Preview PNG not found: $PreviewPng" }
 if ($ValidateOnly) {
-  Write-Host "ValidateOnly PASS: Figure $fig3 state=$State; no files changed"
+  Write-Host "ValidateOnly PASS: branch=$currentBranch Figure $fig3 state=$State; no files changed"
   return
 }
 $previewDir = Join-Path $RepoRoot "workspace\previews\$RunId\$fig3"

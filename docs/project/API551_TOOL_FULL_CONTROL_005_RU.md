@@ -36,3 +36,14 @@ Codex не должен ждать ручной распаковки и не д�
 Text-only relay устанавливает GIT_LFS_SKIP_SMUDGE=1 перед созданием временного worktree, поэтому не загружает бинарные LFS-объекты и не зависит от LFS bandwidth.
 
 После успешного push relay удаляет чистый временный report worktree без ключа force.
+
+## Branch guard для preview index
+
+`tools\api551\api551_preview_index.ps1` разрешён только на ветке с именем `preview-*`.
+
+- `main` и `candidates` запрещены явно;
+- detached HEAD запрещён;
+- ветки, не соответствующие `preview-*`, запрещены;
+- guard выполняется и в режиме `-ValidateOnly`, и при обычном запуске до любых изменений файлов.
+
+Положительный smoke test должен выполняться на временной ветке вида `preview-smoke-*`. Отрицательные smoke tests должны подтверждать отказ на `main` и `candidates`.
