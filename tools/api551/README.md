@@ -48,3 +48,8 @@ Repo-local точки входа PowerShell из пакета 005 описаны
 - `tools/api551/validate_figure010_frame_qa.py`
 
 Русские инструкции: `docs/project/API551_FIGURE_010_REBUILD_R02_RU.md` и `docs/project/API551_FIGURE_010_FRAME_QA_TOOL_RU.md`.
+
+## Figure 011 R01 review rebuild
+
+- `tools/api551/build_figure011_r01.py` — fresh-PDF cleanup/render/fresh-extract gate для графика Figure 11.
+- `tools/api551/validate_figure011_qa.py` — проверка осей, legend table frames и protected line samples.
