@@ -1,0 +1,206 @@
+{
+  "figure_no": 19,
+  "figure_id": "Figure 19",
+  "revision": "R01",
+  "pdf_page": 76,
+  "caption_ru": "Рисунок 19 — Пример коэффициентов расширения",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-12",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=76",
+  "source_policy": "original PDF page 76 and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_019.source_crop.png",
+  "review_png": "figure_019.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "27423d03abac453af01b5dbcf2cfafaa87c4005fdf769bdc70f43d57585b93ea",
+  "review_png_sha256": "99a850903203f0fc5da9b275a5bb549f06a88a53df93fe9f103baf9db127c9a4",
+  "qa": {
+    "rule_ack": "PASS",
+    "strategy_gate": "PASS",
+    "cleaned_only_visual_gate": "PASS",
+    "layout_visual_gate": "PASS",
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_preserved": true,
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-12",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain the approved orientation and placement logic without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-004",
+      "original": "Orifice Plate Expansion Coefficient",
+      "approved_ru": "Коэффициент расширения измерительной диафрагмы",
+      "strategy": "vertical_axis_title",
+      "text_bbox": [
+        89,
+        467,
+        138,
+        1452
+      ],
+      "font_size_px": 38,
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-011a",
+      "original": "Flow Percent",
+      "approved_ru": "Процент расхода",
+      "strategy": "chart_legend_or_axis_label",
+      "text_bbox": [
+        1310,
+        1778,
+        1630,
+        1816
+      ],
+      "font_size_px": 40,
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-top-020",
+      "original": "0.020 Pressure ratio [systematic error <=0.31%]",
+      "approved_ru": "Отношение давлений 0,020 [Систематическая погрешность ≤0,31 %]",
+      "strategy": "chart_legend_or_axis_label",
+      "text_bbox": [
+        1926,
+        762,
+        2568,
+        821
+      ],
+      "font_size_px": 34,
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-top-035",
+      "original": "0.035 Pressure ratio [systematic error <=0.54%]",
+      "approved_ru": "Отношение давлений 0,035 [Систематическая погрешность ≤0,54 %]",
+      "strategy": "chart_legend_or_axis_label",
+      "text_bbox": [
+        1926,
+        945,
+        2568,
+        1004
+      ],
+      "font_size_px": 34,
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-top-050",
+      "original": "0.050 Pressure ratio [systematic error <=0.77%]",
+      "approved_ru": "Отношение давлений 0,050 [Систематическая погрешность ≤0,77 %]",
+      "strategy": "chart_legend_or_axis_label",
+      "text_bbox": [
+        1926,
+        1131,
+        2568,
+        1190
+      ],
+      "font_size_px": 34,
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-012",
+      "original": "Venturi Nozzle or Tube Expansion Coefficient",
+      "approved_ru": "Коэффициент расширения сопла или трубы Вентури",
+      "strategy": "vertical_axis_title",
+      "text_bbox": [
+        87,
+        2355,
+        140,
+        3356
+      ],
+      "font_size_px": 40,
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-011b",
+      "original": "Flow Percent",
+      "approved_ru": "Процент расхода",
+      "strategy": "chart_legend_or_axis_label",
+      "text_bbox": [
+        1295,
+        3596,
+        1615,
+        3634
+      ],
+      "font_size_px": 40,
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-bottom-010",
+      "original": "0.010 Pressure ratio [systematic error <=0.26%]",
+      "approved_ru": "Отношение давлений 0,010 [Систематическая погрешность ≤0,26 %]",
+      "strategy": "chart_legend_or_axis_label",
+      "text_bbox": [
+        1968,
+        2562,
+        2610,
+        2621
+      ],
+      "font_size_px": 34,
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-014",
+      "original": "0.020 pressure ratio [systematic error <=0.53%]",
+      "approved_ru": "Отношение давлений 0,020 [Систематическая погрешность ≤0,53 %]",
+      "strategy": "chart_legend_or_axis_label",
+      "text_bbox": [
+        1968,
+        2784,
+        2610,
+        2843
+      ],
+      "font_size_px": 34,
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-bottom-035",
+      "original": "0.035 Pressure ratio [systematic error <=0.92%]",
+      "approved_ru": "Отношение давлений 0,035 [Систематическая погрешность ≤0,92 %]",
+      "strategy": "chart_legend_or_axis_label",
+      "text_bbox": [
+        1968,
+        3012,
+        2610,
+        3071
+      ],
+      "font_size_px": 34,
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "protected-chart-data",
+      "protected_text": "all numeric axes, colored curves and legend line samples",
+      "strategy": "protect_do_not_translate",
+      "visual_result": "PASS"
+    }
+  ],
+  "restored_notes": [],
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_019_ACCEPTED_R01_20260712",
+  "figure_specific_rule": "Numeric ticks, curves and colored line samples are protected; no frames invented."
+}

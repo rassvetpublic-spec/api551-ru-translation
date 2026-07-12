@@ -1,0 +1,262 @@
+{
+  "figure_no": 17,
+  "figure_id": "Figure 17",
+  "revision": "R01",
+  "pdf_page": 74,
+  "caption_ru": "Рисунок 17 — Фланцы диафрагмы",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-12",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=74",
+  "source_policy": "original PDF page 74 and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_017.source_crop.png",
+  "review_png": "figure_017.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "1f96ddb12519dcc22df86a05416c5acf049b538c40e163b9cc4f3ca1c583ac7b",
+  "review_png_sha256": "6c8f6ac79e41eb548cd2adc4b74ba5520da3807f177bf07204354a43b2e96444",
+  "qa": {
+    "rule_ack": "PASS",
+    "strategy_gate": "PASS",
+    "cleaned_only_visual_gate": "PASS",
+    "layout_visual_gate": "PASS",
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_preserved": true,
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-12",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain the approved orientation and placement logic without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "Orifice with 100 mm (4 in.) paddle fabricated according to ISA RP 3.2 and engraved according to Note 8.",
+      "approved_ru": "Диафрагма с рукояткой 100 мм (4″), изготовленная согласно ISA RP 3.2 и маркированная согласно примечанию 8.",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        768,
+        260,
+        1595,
+        369
+      ],
+      "font_size_px": 42,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "leader_line_preserved": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-003",
+      "original": "Orifice plate and gaskets centered by stud bolts",
+      "approved_ru": "Диафрагма и прокладки центрируются шпильками.",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        2322,
+        592,
+        2840,
+        667
+      ],
+      "font_size_px": 42,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "leader_line_preserved": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Notch for jack screw nut",
+      "approved_ru": "Выемка под гайку отжимного винта",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        1260,
+        945,
+        1575,
+        1004
+      ],
+      "font_size_px": 38,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "leader_line_preserved": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-006",
+      "original": "Standard 3.2 mm (1/8 in.) spiral wound gasket",
+      "approved_ru": "Стандартная спирально-навитая прокладка 3,2 мм (1/8″)",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        2352,
+        1273,
+        2735,
+        1319
+      ],
+      "font_size_px": 25,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "leader_line_preserved": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-007",
+      "original": "Optional vent or drain hole",
+      "approved_ru": "Дополнительное вентиляционное или дренажное отверстие",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        1692,
+        1295,
+        2069,
+        1339
+      ],
+      "font_size_px": 24,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "leader_line_preserved": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-008",
+      "original": "FLOW",
+      "approved_ru": "ПОТОК",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        2626,
+        1409,
+        2761,
+        1440
+      ],
+      "font_size_px": 40,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "leader_line_preserved": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-013",
+      "original": "Jack screw assembly",
+      "approved_ru": "Узел отжимного винта",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        2628,
+        2117,
+        2894,
+        2173
+      ],
+      "font_size_px": 36,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "leader_line_preserved": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-014",
+      "original": "Orifice flange face",
+      "approved_ru": "Поверхность фланца диафрагмы",
+      "strategy": "leader_line_free_text",
+      "text_bbox": [
+        560,
+        2152,
+        915,
+        2216
+      ],
+      "font_size_px": 36,
+      "frame_required": false,
+      "source_cleanup_complete": true,
+      "leader_line_preserved": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "note-reference-1",
+      "protected_text": "Note 1",
+      "strategy": "protected_note_reference",
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "note-reference-2",
+      "protected_text": "Note 2",
+      "strategy": "protected_note_reference",
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "note-reference-3",
+      "protected_text": "Note 3",
+      "strategy": "protected_note_reference",
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "note-reference-4",
+      "protected_text": "Note 4",
+      "strategy": "protected_note_reference",
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "note-reference-5",
+      "protected_text": "Note 5",
+      "strategy": "protected_note_reference",
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "note-reference-6",
+      "protected_text": "Note 6",
+      "strategy": "protected_note_reference",
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "note-reference-7",
+      "protected_text": "Note 7",
+      "strategy": "protected_note_reference",
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "protected-dimensions",
+      "protected_text": "27 mm (13/16 in.) and drawing dimensions",
+      "strategy": "protect_do_not_translate",
+      "visual_result": "PASS"
+    }
+  ],
+  "restored_notes": [
+    {
+      "label": "ПРИМЕЧАНИЕ 1.",
+      "text_ru": "Размер от оси отбора до поверхности фланца превышает стандартные 25,4 мм (1,0″), когда применяются спирально-навитые прокладки толщиной 3,2 мм (1/8″). При β ≥ 0,4 для NPS 2″ и 3″, а также при β ≥ 0,65 для размеров NPS 4″ и более следует рассмотреть смещение отбора на 1,59 мм (1/16″) ближе к поверхности фланца. Влияние нестандартного расположения отбора диафрагмы на точность измерения см. в API MPMS, глава 14.3."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 2.",
+      "text_ru": "Для спирально-навитых прокладок требуется минимальная шероховатость поверхности. Приложение C ASME PCC-1 рекомендует обработку поверхности 3,2–6,4 мкм (128–250 микродюймов)."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 3.",
+      "text_ru": "Для фланцев Class 900 и выше для повышения прочности применялись муфтовые приварные присоединения NPS 3/4."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 4.",
+      "text_ru": "Отверстие под отжимной винт с соответствующей выемкой в каждом фланце пары предусматривается для разведения фланцев при установке диафрагмы."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 5.",
+      "text_ru": "Чтобы исключить помехи рукоятке диафрагмы, можно рассмотреть перенос отжимных винтов на один болт от отборов давления."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 6.",
+      "text_ru": "Диаметр отбора (D) для фланцев диафрагмы размером менее 3″ составляет 6,4 мм (1/4″), а для пары фланцев 3″ — 9,5 мм (3/8″). Эти диаметры должны сохраняться на минимальном расстоянии 2,5D от внутреннего диаметра трубы. В остальных случаях стандартный диаметр отбора составляет 12,7 мм (1/2″)."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 7.",
+      "text_ru": "Если не указано иное, во фланце диафрагмы выполняются два отбора, расположенные под углом 180° друг к другу."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 8.",
+      "text_ru": "Выполнить гравировку: UPSTREAM (вверх по потоку); измеренный диаметр отверстия; позиционное обозначение прибора; размер фланца; класс давления и тип уплотнительной поверхности; материал диафрагмы; тип диафрагмы. Размер дренажного отверстия, если оно предусмотрено, должен быть указан седьмой строкой."
+    }
+  ],
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_017_ACCEPTED_R01_20260712",
+  "components_order": [
+    "image",
+    "restored_notes_1_8",
+    "caption"
+  ],
+  "figure_specific_rule": "Notes 1-8 restored below drawing; Note 3 remains a separate note block."
+}

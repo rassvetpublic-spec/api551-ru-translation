@@ -6,9 +6,9 @@
   "pdf_expected_path": "source/API 551 2016 (R2024).pdf",
   "stats": {
     "total": 69,
-    "accepted": 31,
+    "accepted": 36,
     "changed": 0,
-    "not_accepted": 38
+    "not_accepted": 33
   },
   "figures": [
     {
@@ -290,8 +290,15 @@
       "caption_ru": "Рисунок 17 — Фланцы диафрагмы",
       "api_page": "66",
       "pdf_page": "74",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=74"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=74",
+      "folder": "workspace/figures/017",
+      "source_package": "API551_FIGURE_017_ACCEPTED_R01_20260712",
+      "html": "workspace/figures/017/figure_017.object.html",
+      "json": "workspace/figures/017/figure_017.object.json",
+      "png": "workspace/figures/017/figure_017.png",
+      "source_crop": "workspace/figures/017/figure_017.source_crop.png",
+      "out_html": "workspace/figures/017/figure_017.out.html"
     },
     {
       "figure_no": 18,
@@ -317,8 +324,15 @@
       "caption_ru": "Рисунок 19 — Пример коэффициентов расширения",
       "api_page": "68",
       "pdf_page": "76",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=76"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=76",
+      "folder": "workspace/figures/019",
+      "source_package": "API551_FIGURE_019_ACCEPTED_R01_20260712",
+      "html": "workspace/figures/019/figure_019.object.html",
+      "json": "workspace/figures/019/figure_019.object.json",
+      "png": "workspace/figures/019/figure_019.png",
+      "source_crop": "workspace/figures/019/figure_019.source_crop.png",
+      "out_html": "workspace/figures/019/figure_019.out.html"
     },
     {
       "figure_no": 20,
@@ -327,8 +341,15 @@
       "caption_ru": "Рисунок 20 — Размеры классической трубы Вентури",
       "api_page": "69",
       "pdf_page": "77",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=77"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=77",
+      "folder": "workspace/figures/020",
+      "source_package": "API551_FIGURE_020_ACCEPTED_R01_20260712",
+      "html": "workspace/figures/020/figure_020.object.html",
+      "json": "workspace/figures/020/figure_020.object.json",
+      "png": "workspace/figures/020/figure_020.png",
+      "source_crop": "workspace/figures/020/figure_020.source_crop.png",
+      "out_html": "workspace/figures/020/figure_020.out.html"
     },
     {
       "figure_no": 21,
@@ -337,8 +358,15 @@
       "caption_ru": "Рисунок 21 — График точности расходомера переменного сечения по VDI VDE 3513-2",
       "api_page": "74",
       "pdf_page": "82",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=82"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=82",
+      "folder": "workspace/figures/021",
+      "source_package": "API551_FIGURE_021_ACCEPTED_R01_20260712",
+      "html": "workspace/figures/021/figure_021.object.html",
+      "json": "workspace/figures/021/figure_021.object.json",
+      "png": "workspace/figures/021/figure_021.png",
+      "source_crop": "workspace/figures/021/figure_021.source_crop.png",
+      "out_html": "workspace/figures/021/figure_021.out.html"
     },
     {
       "figure_no": 22,
@@ -347,8 +375,15 @@
       "caption_ru": "Рисунок 22 — Установка расходомера переменного сечения",
       "api_page": "76",
       "pdf_page": "84",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=84"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=84",
+      "folder": "workspace/figures/022",
+      "source_package": "API551_FIGURE_022_ACCEPTED_R01_20260712",
+      "html": "workspace/figures/022/figure_022.object.html",
+      "json": "workspace/figures/022/figure_022.object.json",
+      "png": "workspace/figures/022/figure_022.png",
+      "source_crop": "workspace/figures/022/figure_022.source_crop.png",
+      "out_html": "workspace/figures/022/figure_022.out.html"
     },
     {
       "figure_no": 23,
