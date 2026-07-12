@@ -23,6 +23,7 @@ if ($ValidateOnly) {
   Write-Host "ValidateOnly PASS: local report=$local branch=$branch base=$BaseBranch; no files changed"
   return
 }
+$env:GIT_LFS_SKIP_SMUDGE='1'
 G @('fetch','origin')|Out-Null
 $wtlist=& git -C $RepoRoot worktree list --porcelain
 if(($wtlist -join "`n") -match [regex]::Escape($wt)){Stop-Here "Report worktree already exists: $wt"}

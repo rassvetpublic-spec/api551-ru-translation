@@ -30,3 +30,7 @@ Codex не должен ждать ручной распаковки и не д�
 - pwsh -NoProfile -ExecutionPolicy Bypass -File tools\api551\publish_codex_report.ps1 -ValidateOnly
 
 После PASS целевой скрипт запускают той же командой без ключа ValidateOnly. Все persistent outputs остаются внутри C:\GIT.
+
+## Git LFS
+
+Text-only relay устанавливает GIT_LFS_SKIP_SMUDGE=1 перед созданием временного worktree, поэтому не загружает бинарные LFS-объекты и не зависит от LFS bandwidth.
