@@ -1,0 +1,550 @@
+{
+  "figure_no": 55,
+  "figure_id": "Figure 55",
+  "revision": "R04",
+  "api_page": 182,
+  "pdf_page": 190,
+  "caption_original": "Figure 55—Tightly Coupled Transmitter Side Mounted to a Mono-flange",
+  "caption_ru": "Рисунок 55 — Компактно присоединённый преобразователь, смонтированный сбоку на монофланце",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-13",
+  "ready_for_final_export": true,
+  "working_branch_source": "candidates",
+  "working_branch_source_sha": "d6edc2726d54149ea6bf2f0b5948a00c1fd71c3d",
+  "catalog_state": "accepted_by_user; pending candidates integration",
+  "production_source": "source/API 551 2016 (R2024).pdf#page=190",
+  "production_source_sha256": "d458b3a899902f216767e753aa5737a9745b61adcab02f85c9521937a9d3e270",
+  "production_source_size": 8089772,
+  "source_policy": "original PDF + current approved label master + CURRENT rules; OCR not used as source truth",
+  "source_crop": "figure_055.source_crop.png",
+  "review_png": "figure_055.png",
+  "caption_inside_png": false,
+  "source_crop_pdf_rect_points": [
+    40,
+    80,
+    560,
+    660
+  ],
+  "render_scale": 2.0,
+  "source_crop_sha256": "66aeeb6c861e51553ebbaabcc15b6963936c4c4b7eb995488ea1ae782910a00d",
+  "review_png_sha256": "a8795f2e2fa940eeb6760fcf1523eeb79dbcd3e12fc2f1dbcd7314de2059ff13",
+  "clean_intermediate_sha256_build_evidence": "40479157fe44f3c545829e550bf5a51c1cbfda870e2695d8494322341d5d7326",
+  "qa": {
+    "source_gate": "PASS_WITH_NONBLOCKING_BRANCH_DIVERGENCE",
+    "source_gate_note": "candidates is current working source; main is behind candidates and was not modified",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "residual_source_text_visual_check": "PASS",
+    "caption_inside_png": false,
+    "leader_line_callout_frame_gate": "PASS",
+    "frame_padding_gate": "PASS_4PX_ALL_SIDES",
+    "protected_graphics_intersection": "NONE",
+    "changed_pixels": 47740,
+    "changed_pixels_outside_cleanup_or_placement_zones": 0,
+    "changed_file_scope": "six-file Figure object package; image binaries unchanged from R01/R02",
+    "no_image_generation": true,
+    "no_generative_editing": true,
+    "unapproved_master_translation_overwrite": false,
+    "visual_review": "PASS_USER_ACCEPTED_2026-07-13",
+    "notes": [
+      "Figure rebuilt from verified PDF-derived crop; no previous translated PNG used as production source.",
+      "All nine visual text instances were removed before Russian rendering.",
+      "All translated leader-line labels use compact thin gray frames with 4 px internal padding.",
+      "Visual layout and five translations absent from the approved master were explicitly accepted by the user on 2026-07-13.",
+      "Catalog/index/handoff integration is performed only by the repo-local accept-figure command."
+    ],
+    "package_shape": "PASS_CANONICAL_6_FILES",
+    "out_html_clean_object": true,
+    "object_html_review_page": false,
+    "user_visual_approval": "PASS_2026-07-13",
+    "fresh_extracted_png_inspection": "PASS"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "candidate-001",
+      "original": "Close coupled pressure transmitter",
+      "ru": "Компактно присоединённый преобразователь давления",
+      "translation_status": "accepted_by_user_2026-07-13",
+      "translation_source": "approved caption terminology + engineering normalization",
+      "master_reference": "fig55_stage3j_candidate_0001 (ru_text blank; manual review required)",
+      "strategy": "leader_line_callout",
+      "cleanup_bbox": [
+        625,
+        254,
+        909,
+        277
+      ],
+      "placement_bbox": [
+        623,
+        238,
+        814,
+        273
+      ],
+      "frame_bbox": [
+        623,
+        238,
+        814,
+        273
+      ],
+      "text_bbox": [
+        627,
+        242,
+        810,
+        269
+      ],
+      "font_px": 14,
+      "lines": [
+        "Компактно присоединённый",
+        "преобразователь давления"
+      ],
+      "padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "leader_side": "left",
+      "leader_relation": "touches",
+      "leader_gap_px": 0,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-002",
+      "original": "Breakout fitting ½ NPT male tube adapter inserted into a ½ NPT male x ¾ tube connector. Alternatives are using Type B two bolt flanges according to IEC 61518 or an o-ring union with female tail pieces.",
+      "ru": "Разъёмный фитинг: трубный переходник с наружной резьбой 1/2 NPT, вставленный в соединитель 1/2 NPT наружная резьба × 3/4 трубка. Альтернативные варианты — применение двухболтовых фланцев типа B по IEC 61518 или разъёмного соединения с O-ring и ответными частями с внутренней резьбой.",
+      "translation_status": "approved_master_manual_approved",
+      "translation_source": "source/api551_approved_label_master_v1.csv; fraction ¾ normalized as 3/4",
+      "master_reference": "block-002",
+      "strategy": "leader_line_callout",
+      "cleanup_bbox": [
+        627,
+        335,
+        955,
+        458
+      ],
+      "placement_bbox": [
+        623,
+        293,
+        922,
+        400
+      ],
+      "frame_bbox": [
+        623,
+        293,
+        922,
+        400
+      ],
+      "text_bbox": [
+        627,
+        297,
+        918,
+        396
+      ],
+      "font_px": 14,
+      "lines": [
+        "Разъёмный фитинг: трубный переходник",
+        "с наружной резьбой 1/2 NPT,",
+        "вставленный в соединитель",
+        "1/2 NPT наружная резьба × 3/4 трубка.",
+        "Альтернативные варианты — применение",
+        "двухболтовых фланцев типа B по IEC 61518",
+        "или разъёмного соединения с O-ring",
+        "и ответными частями с внутренней резьбой."
+      ],
+      "padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "leader_side": "left",
+      "leader_relation": "minimal_safe_gap",
+      "leader_gap_px": 1,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "candidate-process-top",
+      "original": "Process connection",
+      "ru": "Технологическое присоединение",
+      "translation_status": "accepted_by_user_2026-07-13",
+      "translation_source": "accepted Figure 54 terminology",
+      "master_reference": "visual PDF label; same term also present in fig55_stage3j_candidate_0003",
+      "strategy": "leader_line_callout",
+      "cleanup_bbox": [
+        227,
+        524,
+        389,
+        547
+      ],
+      "placement_bbox": [
+        281,
+        502,
+        391,
+        535
+      ],
+      "frame_bbox": [
+        281,
+        502,
+        391,
+        535
+      ],
+      "text_bbox": [
+        285,
+        506,
+        387,
+        531
+      ],
+      "font_px": 13,
+      "lines": [
+        "Технологическое",
+        "присоединение"
+      ],
+      "padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "leader_side": "right",
+      "leader_relation": "minimal_safe_gap",
+      "leader_gap_px": 1,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-003",
+      "original": "Four bolt flanges are recommended to avoid alignment issues with side mounted instruments.",
+      "ru": "Для исключения проблем с соосностью приборов, установленных сбоку, рекомендуется применять четырёхболтовые фланцы.",
+      "translation_status": "approved_master_manual_approved",
+      "translation_source": "source/api551_approved_label_master_v1.csv",
+      "master_reference": "block-003",
+      "strategy": "leader_line_callout",
+      "cleanup_bbox": [
+        670,
+        510,
+        965,
+        573
+      ],
+      "placement_bbox": [
+        670,
+        476,
+        937,
+        536
+      ],
+      "frame_bbox": [
+        670,
+        476,
+        937,
+        536
+      ],
+      "text_bbox": [
+        674,
+        480,
+        933,
+        532
+      ],
+      "font_px": 14,
+      "lines": [
+        "Для исключения проблем с соосностью",
+        "приборов, установленных сбоку,",
+        "рекомендуется применять",
+        "четырёхболтовые фланцы."
+      ],
+      "padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "leader_side": "left",
+      "leader_relation": "minimal_safe_gap",
+      "leader_gap_px": 1,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-004",
+      "original": "Rodding is not practical with monoflanges.",
+      "ru": "Прочистка шомполом при использовании монофланцев непрактична.",
+      "translation_status": "approved_master_manual_approved",
+      "translation_source": "source/api551_approved_label_master_v1.csv",
+      "master_reference": "block-004",
+      "strategy": "leader_line_callout",
+      "cleanup_bbox": [
+        724,
+        617,
+        916,
+        660
+      ],
+      "placement_bbox": [
+        723,
+        598,
+        952,
+        644
+      ],
+      "frame_bbox": [
+        723,
+        598,
+        952,
+        644
+      ],
+      "text_bbox": [
+        727,
+        602,
+        948,
+        640
+      ],
+      "font_px": 14,
+      "lines": [
+        "Прочистка шомполом",
+        "при использовании монофланцев",
+        "непрактична."
+      ],
+      "padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "leader_side": "left",
+      "leader_relation": "touches",
+      "leader_gap_px": 0,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "candidate-vent",
+      "original": "Vent connection",
+      "ru": "Вентиляционное присоединение",
+      "translation_status": "accepted_by_user_2026-07-13",
+      "translation_source": "accepted Figure 54 vent terminology + source word connection",
+      "master_reference": "split from fig55_stage3j_candidate_0003 (ru_text blank; manual review required)",
+      "strategy": "leader_line_callout",
+      "cleanup_bbox": [
+        240,
+        957,
+        373,
+        980
+      ],
+      "placement_bbox": [
+        240,
+        944,
+        350,
+        977
+      ],
+      "frame_bbox": [
+        240,
+        944,
+        350,
+        977
+      ],
+      "text_bbox": [
+        244,
+        948,
+        346,
+        973
+      ],
+      "font_px": 13,
+      "lines": [
+        "Вентиляционное",
+        "присоединение"
+      ],
+      "padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "leader_side": "left",
+      "leader_relation": "minimal_safe_gap",
+      "leader_gap_px": 1,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "candidate-process-bottom",
+      "original": "Process connection",
+      "ru": "Технологическое присоединение",
+      "translation_status": "accepted_by_user_2026-07-13",
+      "translation_source": "accepted Figure 54 terminology",
+      "master_reference": "split from fig55_stage3j_candidate_0003 (ru_text blank; manual review required)",
+      "strategy": "leader_line_callout",
+      "cleanup_bbox": [
+        210,
+        1008,
+        372,
+        1031
+      ],
+      "placement_bbox": [
+        262,
+        995,
+        372,
+        1028
+      ],
+      "frame_bbox": [
+        262,
+        995,
+        372,
+        1028
+      ],
+      "text_bbox": [
+        266,
+        999,
+        368,
+        1024
+      ],
+      "font_px": 13,
+      "lines": [
+        "Технологическое",
+        "присоединение"
+      ],
+      "padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "leader_side": "right",
+      "leader_relation": "touches",
+      "leader_gap_px": 0,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "candidate-osy",
+      "original": "OS&Y Process block valve",
+      "ru": "Технологический запорный клапан OS&Y",
+      "translation_status": "accepted_by_user_2026-07-13",
+      "translation_source": "engineering candidate; OS&Y preserved",
+      "master_reference": "split from fig55_stage3j_candidate_0002 (ru_text blank; manual review required)",
+      "strategy": "leader_line_callout",
+      "cleanup_bbox": [
+        620,
+        943,
+        839,
+        966
+      ],
+      "placement_bbox": [
+        667,
+        934,
+        839,
+        964
+      ],
+      "frame_bbox": [
+        667,
+        934,
+        839,
+        964
+      ],
+      "text_bbox": [
+        671,
+        938,
+        835,
+        960
+      ],
+      "font_px": 13,
+      "lines": [
+        "Технологический запорный",
+        "клапан OS&Y"
+      ],
+      "padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "leader_side": "right",
+      "leader_relation": "touches",
+      "leader_gap_px": 0,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "candidate-bleed",
+      "original": "Bleed valve",
+      "ru": "Сбросной клапан",
+      "translation_status": "accepted_by_user_2026-07-13",
+      "translation_source": "accepted Figure 54 block-and-bleed terminology",
+      "master_reference": "split from fig55_stage3j_candidate_0002 (ru_text blank; manual review required)",
+      "strategy": "leader_line_callout",
+      "cleanup_bbox": [
+        602,
+        998,
+        700,
+        1021
+      ],
+      "placement_bbox": [
+        600,
+        990,
+        721,
+        1013
+      ],
+      "frame_bbox": [
+        600,
+        990,
+        721,
+        1013
+      ],
+      "text_bbox": [
+        604,
+        994,
+        717,
+        1009
+      ],
+      "font_px": 14,
+      "lines": [
+        "Сбросной клапан"
+      ],
+      "padding_px": {
+        "left": 4,
+        "top": 4,
+        "right": 4,
+        "bottom": 4
+      },
+      "leader_side": "left",
+      "leader_relation": "touches",
+      "leader_gap_px": 0,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    }
+  ],
+  "composite_html": false,
+  "status": "accepted",
+  "source_package": "API551_FIGURE_055_ACCEPTED_R04_20260713",
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration",
+  "package_format": "canonical_figure_object_6_files",
+  "package_files": [
+    "figure_055.png",
+    "figure_055.source_crop.png",
+    "figure_055.caption_ru.txt",
+    "figure_055.object.html",
+    "figure_055.object.json",
+    "figure_055.out.html"
+  ],
+  "translation_decisions_accepted_by_user": [
+    {
+      "original": "Close coupled pressure transmitter",
+      "proposal": "Компактно присоединённый преобразователь давления"
+    },
+    {
+      "original": "Process connection",
+      "proposal": "Технологическое присоединение",
+      "instances": 2
+    },
+    {
+      "original": "Vent connection",
+      "proposal": "Вентиляционное присоединение"
+    },
+    {
+      "original": "OS&Y Process block valve",
+      "proposal": "Технологический запорный клапан OS&Y"
+    },
+    {
+      "original": "Bleed valve",
+      "proposal": "Сбросной клапан"
+    }
+  ]
+}

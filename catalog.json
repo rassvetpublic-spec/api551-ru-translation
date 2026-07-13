@@ -6,9 +6,9 @@
   "pdf_expected_path": "source/API 551 2016 (R2024).pdf",
   "stats": {
     "total": 69,
-    "accepted": 56,
+    "accepted": 57,
     "changed": 0,
-    "not_accepted": 13
+    "not_accepted": 12
   },
   "figures": [
     {
@@ -937,8 +937,15 @@
       "caption_ru": "Рисунок 55 — Компактно присоединённый преобразователь, смонтированный сбоку на монофланце",
       "api_page": "182",
       "pdf_page": "190",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=190"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=190",
+      "folder": "workspace/figures/055",
+      "source_package": "API551_FIGURE_055_ACCEPTED_R04_20260713",
+      "html": "workspace/figures/055/figure_055.object.html",
+      "json": "workspace/figures/055/figure_055.object.json",
+      "png": "workspace/figures/055/figure_055.png",
+      "source_crop": "workspace/figures/055/figure_055.source_crop.png",
+      "out_html": "workspace/figures/055/figure_055.out.html"
     },
     {
       "figure_no": 56,

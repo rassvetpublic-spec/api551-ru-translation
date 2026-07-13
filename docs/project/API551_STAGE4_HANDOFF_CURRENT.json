@@ -11,9 +11,9 @@
   ],
   "current_stage": "Stage 4 Figure Objects",
   "figures_total": 69,
-  "figures_accepted": 56,
+  "figures_accepted": 57,
   "figures_changed": 0,
-  "figures_not_accepted": 13,
+  "figures_not_accepted": 12,
   "accepted_figures": [
     1,
     2,
@@ -69,6 +69,7 @@
     52,
     53,
     54,
+    55,
     62,
     66
   ],

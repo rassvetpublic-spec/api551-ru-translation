@@ -301,7 +301,7 @@ jobs:
           figures = catalog.get("figures", [])
           if len(figures) != 69:
               raise SystemExit(f"catalog must contain 69 figures, got {len(figures)}")
-          accepted_expected = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 62, 66}
+          accepted_expected = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 62, 66}
           accepted = {int(f["figure_no"]) for f in figures if f.get("status") == "accepted"}
           changed = [f for f in figures if str(f.get("status", "")).startswith("измененно_")]
           not_accepted = [f for f in figures if f.get("status") == "not_accepted"]
@@ -309,9 +309,9 @@ jobs:
               raise SystemExit(f"accepted figure set mismatch: {sorted(accepted)}")
           if changed:
               raise SystemExit(f"changed/review figures must be empty after current acceptance, got {[f.get('figure_no') for f in changed]}")
-          if len(not_accepted) != 13:
+          if len(not_accepted) != 12:
               raise SystemExit(f"not_accepted count mismatch: {len(not_accepted)}")
-          expected_stats = {"total": 69, "accepted": 56, "changed": 0, "not_accepted": 13}
+          expected_stats = {"total": 69, "accepted": 57, "changed": 0, "not_accepted": 12}
           if catalog.get("stats", {}) != expected_stats:
               raise SystemExit("catalog stats mismatch")
 
