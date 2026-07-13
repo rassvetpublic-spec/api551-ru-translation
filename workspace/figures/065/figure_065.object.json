@@ -1,0 +1,336 @@
+{
+  "figure_no": 65,
+  "figure_id": "Figure 65",
+  "revision": "R02",
+  "api_page": 205,
+  "pdf_page": 213,
+  "caption_original": "Figure 65—Pressure Gauge Installations",
+  "caption_ru": "Рисунок 65 — Установки манометров",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-14",
+  "ready_for_final_export": true,
+  "working_branch_source": "candidates",
+  "working_branch_source_sha": "71f518b9b14093470f75cc95af2f7ed01e57d7d6",
+  "production_source": "source/API 551 2016 (R2024).pdf#page=213",
+  "production_source_sha256": "d458b3a899902f216767e753aa5737a9745b61adcab02f85c9521937a9d3e270",
+  "source_policy": "original PDF + approved label master + CURRENT rules; OCR not used as source truth",
+  "source_crop": "figure_065.source_crop.png",
+  "review_png": "figure_065.png",
+  "caption_inside_png": false,
+  "source_crop_pdf_rect_points": [
+    40,
+    80,
+    572,
+    705
+  ],
+  "render_scale": 2.0,
+  "source_crop_sha256": "d3cf983f6fd2539ab99d42d8ae87f1fbdaaac9b03f17c62daa72a597d3bd8e27",
+  "review_png_sha256": "610d4da3f38ba5c1fe625a79163137d0de18d082fb8c42a9122eea5e8a49f15e",
+  "qa": {
+    "source_gate": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "no_image_generation": true,
+    "no_generative_editing": true,
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-14",
+    "special_structure": "standard",
+    "notes": [
+      "Generated in one batch from the verified PDF.",
+      "Visual layout and translations explicitly accepted by the user on 2026-07-14.",
+      "Catalog/index/handoff integration is performed only by the repo-local accept-figure command."
+    ],
+    "user_visual_approval": "PASS_2026-07-14"
+  },
+  "visual_label_blocks": [
+    {
+      "cleanup_bbox": [
+        135,
+        85,
+        471,
+        123
+      ],
+      "placement_bbox": [
+        131,
+        81,
+        431,
+        127
+      ],
+      "text_lines": [
+        "Манометр и мембранный разделитель",
+        "поставлять как единую сварную сборку"
+      ],
+      "font_px": 13,
+      "block_id": "assembly",
+      "ru": "Манометр и мембранный разделитель поставлять как единую сварную сборку",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        398,
+        150,
+        650,
+        308
+      ],
+      "placement_bbox": [
+        394,
+        146,
+        679,
+        312
+      ],
+      "text_lines": [
+        "Для пара и конденсирующихся сред при",
+        "температуре от 300 °C (350 °F) рассмотреть",
+        "установку между манометром и разделителем",
+        "шестигранного ниппеля длиной 125 мм (5″) для",
+        "отвода тепла"
+      ],
+      "font_px": 12,
+      "block_id": "steam",
+      "ru": "Для пара и конденсирующихся сред при температуре от 300 °C (350 °F) рассмотреть установку между манометром и разделителем шестигранного ниппеля длиной 125 мм (5″) для отвода тепла",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        407,
+        372,
+        607,
+        430
+      ],
+      "placement_bbox": [
+        403,
+        368,
+        623,
+        434
+      ],
+      "text_lines": [
+        "Вместо переходного ниппеля 1/2 ×",
+        "3/4 допускается обжимной",
+        "ниппель"
+      ],
+      "font_px": 13,
+      "block_id": "swage",
+      "ru": "Вместо переходного ниппеля 1/2 × 3/4 допускается обжимной ниппель",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        106,
+        473,
+        202,
+        511
+      ],
+      "placement_bbox": [
+        102,
+        469,
+        247,
+        515
+      ],
+      "text_lines": [
+        "Вентиляционный",
+        "клапан NPS 3/4"
+      ],
+      "font_px": 12,
+      "block_id": "vent",
+      "ru": "Вентиляционный клапан NPS 3/4",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        540,
+        452,
+        670,
+        470
+      ],
+      "placement_bbox": [
+        564,
+        448,
+        674,
+        474
+      ],
+      "text_lines": [
+        "Муфта NPS 1/2"
+      ],
+      "font_px": 12,
+      "block_id": "coupling",
+      "ru": "Муфта NPS 1/2",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        862,
+        474,
+        976,
+        512
+      ],
+      "placement_bbox": [
+        840,
+        470,
+        980,
+        516
+      ],
+      "text_lines": [
+        "Сифон типа pig tail",
+        "NPS 1/2"
+      ],
+      "font_px": 12,
+      "block_id": "pigtail",
+      "ru": "Сифон типа pig tail NPS 1/2",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        834,
+        705,
+        990,
+        763
+      ],
+      "placement_bbox": [
+        829,
+        701,
+        994,
+        767
+      ],
+      "text_lines": [
+        "Выше этой точки может",
+        "потребоваться защита от",
+        "замерзания"
+      ],
+      "font_px": 12,
+      "block_id": "freeze1",
+      "ru": "Выше этой точки может потребоваться защита от замерзания",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        362,
+        905,
+        493,
+        943
+      ],
+      "placement_bbox": [
+        358,
+        901,
+        498,
+        947
+      ],
+      "text_lines": [
+        "Компактный сифон",
+        "NPS 1/2"
+      ],
+      "font_px": 12,
+      "block_id": "compact",
+      "ru": "Компактный сифон NPS 1/2",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        567,
+        911,
+        672,
+        949
+      ],
+      "placement_bbox": [
+        531,
+        907,
+        676,
+        953
+      ],
+      "text_lines": [
+        "Обжимной ниппель 1/2",
+        "× 3/4 NPS"
+      ],
+      "font_px": 12,
+      "block_id": "swage2",
+      "ru": "Обжимной ниппель 1/2 × 3/4 NPS",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        110,
+        1009,
+        207,
+        1047
+      ],
+      "placement_bbox": [
+        106,
+        1005,
+        266,
+        1051
+      ],
+      "text_lines": [
+        "Манометрический клапан",
+        "1/2 × 3/4 NPS"
+      ],
+      "font_px": 12,
+      "block_id": "gauge",
+      "ru": "Манометрический клапан 1/2 × 3/4 NPS",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        361,
+        988,
+        516,
+        1046
+      ],
+      "placement_bbox": [
+        357,
+        984,
+        522,
+        1050
+      ],
+      "text_lines": [
+        "Выше этой точки может",
+        "потребоваться защита от",
+        "замерзания"
+      ],
+      "font_px": 12,
+      "block_id": "freeze2",
+      "ru": "Выше этой точки может потребоваться защита от замерзания",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        360,
+        1115,
+        628,
+        1153
+      ],
+      "placement_bbox": [
+        356,
+        1108,
+        591,
+        1161
+      ],
+      "text_lines": [
+        "Встроенный клапан — альтернатива",
+        "показанному наружному клапану",
+        "стравливания"
+      ],
+      "font_px": 13,
+      "block_id": "integral",
+      "ru": "Встроенный клапан — альтернатива показанному наружному клапану стравливания",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    }
+  ],
+  "notes_ru": [],
+  "package_format": "canonical_figure_object_6_files",
+  "catalog_state": "accepted_by_user; pending candidates integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_065_ACCEPTED_R02_20260714",
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration"
+}

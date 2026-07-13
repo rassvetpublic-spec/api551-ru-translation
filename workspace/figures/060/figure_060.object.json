@@ -1,0 +1,307 @@
+{
+  "figure_no": 60,
+  "figure_id": "Figure 60",
+  "revision": "R02",
+  "api_page": 190,
+  "pdf_page": 198,
+  "caption_original": "Figure 60—Piezometric Wind Stabilization Fitting Fabrication",
+  "caption_ru": "Рисунок 60 — Изготовление пьезометрического штуцера стабилизации ветрового воздействия",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-14",
+  "ready_for_final_export": true,
+  "working_branch_source": "candidates",
+  "working_branch_source_sha": "71f518b9b14093470f75cc95af2f7ed01e57d7d6",
+  "production_source": "source/API 551 2016 (R2024).pdf#page=198",
+  "production_source_sha256": "d458b3a899902f216767e753aa5737a9745b61adcab02f85c9521937a9d3e270",
+  "source_policy": "original PDF + approved label master + CURRENT rules; OCR not used as source truth",
+  "source_crop": "figure_060.source_crop.png",
+  "review_png": "figure_060.png",
+  "caption_inside_png": false,
+  "source_crop_pdf_rect_points": [
+    40,
+    80,
+    572,
+    690
+  ],
+  "render_scale": 2.0,
+  "source_crop_sha256": "48b1b54afe54c7cbd2842bfa783ba21eb4f0ae85d8802a44e0e8a282f7b4a3ee",
+  "review_png_sha256": "2703ac01f7ed42440499f6c7fa94f0f1f215784479faa1ffa656b07523004125",
+  "qa": {
+    "source_gate": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "no_image_generation": true,
+    "no_generative_editing": true,
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-14",
+    "special_structure": "standard",
+    "notes": [
+      "Generated in one batch from the verified PDF.",
+      "Visual layout and translations explicitly accepted by the user on 2026-07-14.",
+      "Catalog/index/handoff integration is performed only by the repo-local accept-figure command."
+    ],
+    "user_visual_approval": "PASS_2026-07-14"
+  },
+  "visual_label_blocks": [
+    {
+      "cleanup_bbox": [
+        387,
+        68,
+        532,
+        106
+      ],
+      "placement_bbox": [
+        383,
+        64,
+        593,
+        110
+      ],
+      "text_lines": [
+        "Резьбовая трубная заглушка из",
+        "нержавеющей стали"
+      ],
+      "font_px": 13,
+      "block_id": "cap",
+      "ru": "Резьбовая трубная заглушка из нержавеющей стали",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        471,
+        190,
+        728,
+        248
+      ],
+      "placement_bbox": [
+        472,
+        186,
+        732,
+        252
+      ],
+      "text_lines": [
+        "Установить фитинг вертикально в",
+        "верхней точке со свободным обдувом со",
+        "всех сторон"
+      ],
+      "font_px": 13,
+      "block_id": "mount",
+      "ru": "Установить фитинг вертикально в верхней точке со свободным обдувом со всех сторон",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        525,
+        315,
+        590,
+        353
+      ],
+      "placement_bbox": [
+        484,
+        311,
+        594,
+        357
+      ],
+      "text_lines": [
+        "Разрез A–A"
+      ],
+      "font_px": 13,
+      "block_id": "section",
+      "ru": "Разрез A–A",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        711,
+        351,
+        849,
+        389
+      ],
+      "placement_bbox": [
+        673,
+        347,
+        853,
+        393
+      ],
+      "text_lines": [
+        "Труба 2 NPS из",
+        "нержавеющей стали"
+      ],
+      "font_px": 13,
+      "block_id": "pipe",
+      "ru": "Труба 2 NPS из нержавеющей стали",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        641,
+        660,
+        822,
+        698
+      ],
+      "placement_bbox": [
+        606,
+        653,
+        826,
+        706
+      ],
+      "text_lines": [
+        "Сверло № 70 (0,711 мм);",
+        "отверстие зачистить и",
+        "отполировать"
+      ],
+      "font_px": 13,
+      "block_id": "drill",
+      "ru": "Сверло № 70 (0,711 мм); отверстие зачистить и отполировать",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        427,
+        723,
+        550,
+        761
+      ],
+      "placement_bbox": [
+        423,
+        719,
+        603,
+        765
+      ],
+      "text_lines": [
+        "Трубка свободного дренажа",
+        "без карманов"
+      ],
+      "font_px": 13,
+      "block_id": "drain",
+      "ru": "Трубка свободного дренажа без карманов",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        493,
+        807,
+        622,
+        845
+      ],
+      "placement_bbox": [
+        446,
+        803,
+        626,
+        849
+      ],
+      "text_lines": [
+        "Преобразователь тяги или",
+        "манометр"
+      ],
+      "font_px": 13,
+      "block_id": "draft",
+      "ru": "Преобразователь тяги или манометр",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        796,
+        820,
+        880,
+        838
+      ],
+      "placement_bbox": [
+        809,
+        816,
+        884,
+        842
+      ],
+      "text_lines": [
+        "К печи"
+      ],
+      "font_px": 13,
+      "block_id": "furnace",
+      "ru": "К печи",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        167,
+        886,
+        259,
+        924
+      ],
+      "placement_bbox": [
+        163,
+        882,
+        323,
+        928
+      ],
+      "text_lines": [
+        "Трубка из нержавеющей",
+        "стали 1/2″"
+      ],
+      "font_px": 13,
+      "block_id": "tube",
+      "ru": "Трубка из нержавеющей стали 1/2″",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        172,
+        1059,
+        278,
+        1097
+      ],
+      "placement_bbox": [
+        168,
+        1055,
+        323,
+        1101
+      ],
+      "text_lines": [
+        "К другим приборам",
+        "измерения тяги"
+      ],
+      "font_px": 13,
+      "block_id": "other",
+      "ru": "К другим приборам измерения тяги",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        687,
+        1139,
+        834,
+        1177
+      ],
+      "placement_bbox": [
+        663,
+        1135,
+        838,
+        1181
+      ],
+      "text_lines": [
+        "Дренажные карманы для",
+        "сбора влаги"
+      ],
+      "font_px": 13,
+      "block_id": "legs",
+      "ru": "Дренажные карманы для сбора влаги",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    }
+  ],
+  "notes_ru": [],
+  "package_format": "canonical_figure_object_6_files",
+  "catalog_state": "accepted_by_user; pending candidates integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_060_ACCEPTED_R02_20260714",
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration"
+}
