@@ -6,9 +6,9 @@
   "pdf_expected_path": "source/API 551 2016 (R2024).pdf",
   "stats": {
     "total": 69,
-    "accepted": 46,
+    "accepted": 56,
     "changed": 0,
-    "not_accepted": 23
+    "not_accepted": 13
   },
   "figures": [
     {
@@ -680,8 +680,15 @@
       "caption_ru": "Рисунок 40 — Магнитный указатель уровня с ведомым индикатором",
       "api_page": "155",
       "pdf_page": "163",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=163"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=163",
+      "folder": "workspace/figures/040",
+      "source_package": "API551_FIGURE_040_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/040/figure_040.object.html",
+      "json": "workspace/figures/040/figure_040.object.json",
+      "png": "workspace/figures/040/figure_040.png",
+      "source_crop": "workspace/figures/040/figure_040.source_crop.png",
+      "out_html": "workspace/figures/040/figure_040.out.html"
     },
     {
       "figure_no": 41,
@@ -690,8 +697,15 @@
       "caption_ru": "Рисунок 41 — Магнитный указатель уровня с флажковыми индикаторами",
       "api_page": "156",
       "pdf_page": "164",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=164"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=164",
+      "folder": "workspace/figures/041",
+      "source_package": "API551_FIGURE_041_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/041/figure_041.object.html",
+      "json": "workspace/figures/041/figure_041.object.json",
+      "png": "workspace/figures/041/figure_041.png",
+      "source_crop": "workspace/figures/041/figure_041.source_crop.png",
+      "out_html": "workspace/figures/041/figure_041.out.html"
     },
     {
       "figure_no": 42,
@@ -700,8 +714,15 @@
       "caption_ru": "Рисунок 42 — Значения насыщения преобразователя при калибровке на относительную плотность 0,70",
       "api_page": "159",
       "pdf_page": "167",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=167"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=167",
+      "folder": "workspace/figures/042",
+      "source_package": "API551_FIGURE_042_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/042/figure_042.object.html",
+      "json": "workspace/figures/042/figure_042.object.json",
+      "png": "workspace/figures/042/figure_042.png",
+      "source_crop": "workspace/figures/042/figure_042.source_crop.png",
+      "out_html": "workspace/figures/042/figure_042.out.html"
     },
     {
       "figure_no": 43,
@@ -710,8 +731,15 @@
       "caption_ru": "Рисунок 43 — Зависимость относительной плотности углеводородов от температуры",
       "api_page": "160",
       "pdf_page": "168",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=168"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=168",
+      "folder": "workspace/figures/043",
+      "source_package": "API551_FIGURE_043_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/043/figure_043.object.html",
+      "json": "workspace/figures/043/figure_043.object.json",
+      "png": "workspace/figures/043/figure_043.png",
+      "source_crop": "workspace/figures/043/figure_043.source_crop.png",
+      "out_html": "workspace/figures/043/figure_043.out.html"
     },
     {
       "figure_no": 44,
@@ -720,8 +748,15 @@
       "caption_ru": "Рисунок 44 — Сообщение жидкости при неоднородных средах",
       "api_page": "161",
       "pdf_page": "169",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=169"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=169",
+      "folder": "workspace/figures/044",
+      "source_package": "API551_FIGURE_044_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/044/figure_044.object.html",
+      "json": "workspace/figures/044/figure_044.object.json",
+      "png": "workspace/figures/044/figure_044.png",
+      "source_crop": "workspace/figures/044/figure_044.source_crop.png",
+      "out_html": "workspace/figures/044/figure_044.out.html"
     },
     {
       "figure_no": 45,
@@ -730,8 +765,15 @@
       "caption_ru": "Рисунок 45 — Установки преобразователя давления",
       "api_page": "164",
       "pdf_page": "172",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=172"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=172",
+      "folder": "workspace/figures/045",
+      "source_package": "API551_FIGURE_045_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/045/figure_045.object.html",
+      "json": "workspace/figures/045/figure_045.object.json",
+      "png": "workspace/figures/045/figure_045.png",
+      "source_crop": "workspace/figures/045/figure_045.source_crop.png",
+      "out_html": "workspace/figures/045/figure_045.out.html"
     },
     {
       "figure_no": 46,
@@ -757,8 +799,15 @@
       "caption_ru": "Рисунок 47 — Отстойная камера",
       "api_page": "167",
       "pdf_page": "175",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=175"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=175",
+      "folder": "workspace/figures/047",
+      "source_package": "API551_FIGURE_047_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/047/figure_047.object.html",
+      "json": "workspace/figures/047/figure_047.object.json",
+      "png": "workspace/figures/047/figure_047.png",
+      "source_crop": "workspace/figures/047/figure_047.source_crop.png",
+      "out_html": "workspace/figures/047/figure_047.out.html"
     },
     {
       "figure_no": 48,
@@ -784,8 +833,15 @@
       "caption_ru": "Рисунок 49 — Глухая пробка с шестигранной головкой и резьбовым отверстием",
       "api_page": "171",
       "pdf_page": "179",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=179"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=179",
+      "folder": "workspace/figures/049",
+      "source_package": "API551_FIGURE_049_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/049/figure_049.object.html",
+      "json": "workspace/figures/049/figure_049.object.json",
+      "png": "workspace/figures/049/figure_049.png",
+      "source_crop": "workspace/figures/049/figure_049.source_crop.png",
+      "out_html": "workspace/figures/049/figure_049.out.html"
     },
     {
       "figure_no": 50,
@@ -847,8 +903,15 @@
       "caption_ru": "Рисунок 53 — Схема расположения клапанов приборных клапанных блоков",
       "api_page": "177",
       "pdf_page": "185",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=185"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=185",
+      "folder": "workspace/figures/053",
+      "source_package": "API551_FIGURE_053_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/053/figure_053.object.html",
+      "json": "workspace/figures/053/figure_053.object.json",
+      "png": "workspace/figures/053/figure_053.png",
+      "source_crop": "workspace/figures/053/figure_053.source_crop.png",
+      "out_html": "workspace/figures/053/figure_053.out.html"
     },
     {
       "figure_no": 54,
@@ -857,8 +920,15 @@
       "caption_ru": "Рисунок 54 — Преобразователь давления с двухболтовым присоединением",
       "api_page": "179",
       "pdf_page": "187",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=187"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=187",
+      "folder": "workspace/figures/054",
+      "source_package": "API551_FIGURE_054_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/054/figure_054.object.html",
+      "json": "workspace/figures/054/figure_054.object.json",
+      "png": "workspace/figures/054/figure_054.png",
+      "source_crop": "workspace/figures/054/figure_054.source_crop.png",
+      "out_html": "workspace/figures/054/figure_054.out.html"
     },
     {
       "figure_no": 55,

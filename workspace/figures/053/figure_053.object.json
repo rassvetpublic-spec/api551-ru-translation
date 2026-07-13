@@ -1,0 +1,1167 @@
+{
+  "figure_no": 53,
+  "figure_id": "Figure 53",
+  "revision": "R01",
+  "api_page": null,
+  "pdf_page": 185,
+  "caption_ru": "Рисунок 53 — Схема расположения клапанов приборных клапанных блоков",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-13",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=185",
+  "source_policy": "original PDF and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_053.source_crop.png",
+  "review_png": "figure_053.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "2227bd6d3d0b78c78c758c932f8cc4f9b4dcc1dc45c71fdde95a1b0f8cc62cd6",
+  "review_png_sha256": "d7369038ecef729a72eaadc1fe4c0d83f37f8a9577ad758ad054aa6f234fc2bb",
+  "qa": {
+    "rule_ack": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_policy": "leader lines, dimensions, contours, tables and graph data preserved",
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-13",
+    "notes": [
+      "Повторяющиеся подписи заменены по каждой фактической позиции.",
+      "Условные обозначения клапанов и соединительные линии сохранены."
+    ],
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-13",
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain approved orientation and placement without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "D/P Instrument / equalization",
+      "approved_ru": "Уравнивание прибора\nдифференциального давления",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        130,
+        38,
+        258,
+        76
+      ],
+      "placement_bbox": [
+        114,
+        30,
+        278,
+        100
+      ],
+      "text_bbox": [
+        113,
+        53,
+        278,
+        76
+      ],
+      "font_px": 10,
+      "lines": [
+        "Уравнивание прибора",
+        "дифференциального давления"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-003",
+      "original": "Level / transmitter",
+      "approved_ru": "Преобразователь\nуровня",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        455,
+        35,
+        549,
+        73
+      ],
+      "placement_bbox": [
+        439,
+        27,
+        569,
+        97
+      ],
+      "text_bbox": [
+        444,
+        47,
+        564,
+        77
+      ],
+      "font_px": 13,
+      "lines": [
+        "Преобразователь",
+        "уровня"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-004",
+      "original": "Pressure / transmitter/gauge",
+      "approved_ru": "Преобразователь давления\nманометр",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        724,
+        35,
+        876,
+        73
+      ],
+      "placement_bbox": [
+        708,
+        27,
+        896,
+        97
+      ],
+      "text_bbox": [
+        714,
+        48,
+        890,
+        76
+      ],
+      "font_px": 12,
+      "lines": [
+        "Преобразователь давления",
+        "манометр"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Instrument",
+      "approved_ru": "Прибор",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        151,
+        93,
+        236,
+        111
+      ],
+      "placement_bbox": [
+        139,
+        85,
+        256,
+        127
+      ],
+      "text_bbox": [
+        172,
+        98,
+        223,
+        113
+      ],
+      "font_px": 13,
+      "lines": [
+        "Прибор"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Instrument",
+      "approved_ru": "Прибор",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        459,
+        93,
+        544,
+        111
+      ],
+      "placement_bbox": [
+        447,
+        85,
+        564,
+        127
+      ],
+      "text_bbox": [
+        480,
+        98,
+        531,
+        113
+      ],
+      "font_px": 13,
+      "lines": [
+        "Прибор"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Instrument",
+      "approved_ru": "Прибор",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        758,
+        93,
+        843,
+        111
+      ],
+      "placement_bbox": [
+        746,
+        85,
+        863,
+        127
+      ],
+      "text_bbox": [
+        779,
+        98,
+        830,
+        113
+      ],
+      "font_px": 13,
+      "lines": [
+        "Прибор"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Instrument",
+      "approved_ru": "Прибор",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        147,
+        396,
+        232,
+        414
+      ],
+      "placement_bbox": [
+        135,
+        388,
+        252,
+        430
+      ],
+      "text_bbox": [
+        168,
+        401,
+        219,
+        416
+      ],
+      "font_px": 13,
+      "lines": [
+        "Прибор"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Instrument",
+      "approved_ru": "Прибор",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        460,
+        398,
+        545,
+        416
+      ],
+      "placement_bbox": [
+        448,
+        390,
+        565,
+        432
+      ],
+      "text_bbox": [
+        481,
+        403,
+        532,
+        418
+      ],
+      "font_px": 13,
+      "lines": [
+        "Прибор"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Instrument",
+      "approved_ru": "Прибор",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        757,
+        398,
+        842,
+        416
+      ],
+      "placement_bbox": [
+        745,
+        390,
+        862,
+        432
+      ],
+      "text_bbox": [
+        778,
+        403,
+        829,
+        418
+      ],
+      "font_px": 13,
+      "lines": [
+        "Прибор"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-006",
+      "original": "Equalize",
+      "approved_ru": "Уравнивание",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        155,
+        168,
+        224,
+        186
+      ],
+      "placement_bbox": [
+        143,
+        160,
+        244,
+        202
+      ],
+      "text_bbox": [
+        152,
+        175,
+        234,
+        187
+      ],
+      "font_px": 12,
+      "lines": [
+        "Уравнивание"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-006",
+      "original": "Equalize",
+      "approved_ru": "Уравнивание",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        151,
+        495,
+        220,
+        513
+      ],
+      "placement_bbox": [
+        139,
+        487,
+        240,
+        529
+      ],
+      "text_bbox": [
+        148,
+        502,
+        230,
+        514
+      ],
+      "font_px": 12,
+      "lines": [
+        "Уравнивание"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-006",
+      "original": "Equalize",
+      "approved_ru": "Уравнивание",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        766,
+        493,
+        835,
+        511
+      ],
+      "placement_bbox": [
+        754,
+        485,
+        855,
+        527
+      ],
+      "text_bbox": [
+        763,
+        500,
+        845,
+        512
+      ],
+      "font_px": 12,
+      "lines": [
+        "Уравнивание"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-007",
+      "original": "Vent/test",
+      "approved_ru": "Вентиляция\nпроверка",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        677,
+        472,
+        747,
+        490
+      ],
+      "placement_bbox": [
+        665,
+        464,
+        767,
+        514
+      ],
+      "text_bbox": [
+        678,
+        476,
+        754,
+        502
+      ],
+      "font_px": 12,
+      "lines": [
+        "Вентиляция",
+        "проверка"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-007",
+      "original": "Vent/test",
+      "approved_ru": "Вентиляция\nпроверка",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        468,
+        589,
+        538,
+        607
+      ],
+      "placement_bbox": [
+        456,
+        581,
+        558,
+        631
+      ],
+      "text_bbox": [
+        469,
+        593,
+        545,
+        619
+      ],
+      "font_px": 12,
+      "lines": [
+        "Вентиляция",
+        "проверка"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-007",
+      "original": "Vent/test",
+      "approved_ru": "Вентиляция\nпроверка",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        861,
+        472,
+        931,
+        490
+      ],
+      "placement_bbox": [
+        849,
+        464,
+        951,
+        514
+      ],
+      "text_bbox": [
+        862,
+        476,
+        938,
+        502
+      ],
+      "font_px": 12,
+      "lines": [
+        "Вентиляция",
+        "проверка"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-007",
+      "original": "Vent/test",
+      "approved_ru": "Вентиляция\nпроверка",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        819,
+        168,
+        889,
+        186
+      ],
+      "placement_bbox": [
+        807,
+        160,
+        909,
+        210
+      ],
+      "text_bbox": [
+        820,
+        172,
+        896,
+        198
+      ],
+      "font_px": 12,
+      "lines": [
+        "Вентиляция",
+        "проверка"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Block/ / isolate",
+      "approved_ru": "Блокировать\nотсечь",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        365,
+        206,
+        417,
+        244
+      ],
+      "placement_bbox": [
+        355,
+        200,
+        431,
+        260
+      ],
+      "text_bbox": [
+        355,
+        219,
+        430,
+        240
+      ],
+      "font_px": 11,
+      "lines": [
+        "Блокировать",
+        "отсечь"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Block/ / isolate",
+      "approved_ru": "Блокировать\nотсечь",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        587,
+        206,
+        639,
+        244
+      ],
+      "placement_bbox": [
+        577,
+        200,
+        653,
+        260
+      ],
+      "text_bbox": [
+        577,
+        219,
+        652,
+        240
+      ],
+      "font_px": 11,
+      "lines": [
+        "Блокировать",
+        "отсечь"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Block/ / isolate",
+      "approved_ru": "Блокировать\nотсечь",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        824,
+        210,
+        876,
+        248
+      ],
+      "placement_bbox": [
+        814,
+        204,
+        890,
+        264
+      ],
+      "text_bbox": [
+        814,
+        223,
+        889,
+        244
+      ],
+      "font_px": 11,
+      "lines": [
+        "Блокировать",
+        "отсечь"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Block/ / isolate",
+      "approved_ru": "Блокировать\nотсечь",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        65,
+        526,
+        117,
+        564
+      ],
+      "placement_bbox": [
+        55,
+        520,
+        131,
+        580
+      ],
+      "text_bbox": [
+        55,
+        539,
+        130,
+        560
+      ],
+      "font_px": 11,
+      "lines": [
+        "Блокировать",
+        "отсечь"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Block/ / isolate",
+      "approved_ru": "Блокировать\nотсечь",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        259,
+        526,
+        311,
+        564
+      ],
+      "placement_bbox": [
+        249,
+        520,
+        325,
+        580
+      ],
+      "text_bbox": [
+        249,
+        539,
+        324,
+        560
+      ],
+      "font_px": 11,
+      "lines": [
+        "Блокировать",
+        "отсечь"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Block/ / isolate",
+      "approved_ru": "Блокировать\nотсечь",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        346,
+        526,
+        398,
+        564
+      ],
+      "placement_bbox": [
+        336,
+        520,
+        412,
+        580
+      ],
+      "text_bbox": [
+        336,
+        539,
+        411,
+        560
+      ],
+      "font_px": 11,
+      "lines": [
+        "Блокировать",
+        "отсечь"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Block/ / isolate",
+      "approved_ru": "Блокировать\nотсечь",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        603,
+        526,
+        655,
+        564
+      ],
+      "placement_bbox": [
+        593,
+        520,
+        669,
+        580
+      ],
+      "text_bbox": [
+        593,
+        539,
+        668,
+        560
+      ],
+      "font_px": 11,
+      "lines": [
+        "Блокировать",
+        "отсечь"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Block/ / isolate",
+      "approved_ru": "Блокировать\nотсечь",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        683,
+        526,
+        735,
+        564
+      ],
+      "placement_bbox": [
+        673,
+        520,
+        749,
+        580
+      ],
+      "text_bbox": [
+        673,
+        539,
+        748,
+        560
+      ],
+      "font_px": 11,
+      "lines": [
+        "Блокировать",
+        "отсечь"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Block/ / isolate",
+      "approved_ru": "Блокировать\nотсечь",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        870,
+        526,
+        922,
+        564
+      ],
+      "placement_bbox": [
+        860,
+        520,
+        936,
+        580
+      ],
+      "text_bbox": [
+        860,
+        539,
+        935,
+        560
+      ],
+      "font_px": 11,
+      "lines": [
+        "Блокировать",
+        "отсечь"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-014",
+      "original": "Process",
+      "approved_ru": "Процесс",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        157,
+        283,
+        222,
+        301
+      ],
+      "placement_bbox": [
+        147,
+        277,
+        238,
+        315
+      ],
+      "text_bbox": [
+        166,
+        290,
+        219,
+        302
+      ],
+      "font_px": 12,
+      "lines": [
+        "Процесс"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-014",
+      "original": "Process",
+      "approved_ru": "Процесс",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        470,
+        283,
+        535,
+        301
+      ],
+      "placement_bbox": [
+        460,
+        277,
+        551,
+        315
+      ],
+      "text_bbox": [
+        479,
+        290,
+        532,
+        302
+      ],
+      "font_px": 12,
+      "lines": [
+        "Процесс"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-014",
+      "original": "Process",
+      "approved_ru": "Процесс",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        768,
+        283,
+        833,
+        301
+      ],
+      "placement_bbox": [
+        758,
+        277,
+        849,
+        315
+      ],
+      "text_bbox": [
+        777,
+        290,
+        830,
+        302
+      ],
+      "font_px": 12,
+      "lines": [
+        "Процесс"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-014",
+      "original": "Process",
+      "approved_ru": "Процесс",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        153,
+        588,
+        218,
+        606
+      ],
+      "placement_bbox": [
+        143,
+        582,
+        234,
+        620
+      ],
+      "text_bbox": [
+        162,
+        595,
+        215,
+        607
+      ],
+      "font_px": 12,
+      "lines": [
+        "Процесс"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-014",
+      "original": "Process",
+      "approved_ru": "Процесс",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        470,
+        622,
+        535,
+        640
+      ],
+      "placement_bbox": [
+        460,
+        616,
+        551,
+        654
+      ],
+      "text_bbox": [
+        479,
+        629,
+        532,
+        641
+      ],
+      "font_px": 12,
+      "lines": [
+        "Процесс"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-014",
+      "original": "Process",
+      "approved_ru": "Процесс",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        768,
+        590,
+        833,
+        608
+      ],
+      "placement_bbox": [
+        758,
+        584,
+        849,
+        622
+      ],
+      "text_bbox": [
+        777,
+        597,
+        830,
+        609
+      ],
+      "font_px": 12,
+      "lines": [
+        "Процесс"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-015",
+      "original": "Three valve / equalization",
+      "approved_ru": "Трёхклапанный блок\nс уравнительным клапаном",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        137,
+        346,
+        241,
+        384
+      ],
+      "placement_bbox": [
+        121,
+        336,
+        265,
+        408
+      ],
+      "text_bbox": [
+        119,
+        360,
+        266,
+        383
+      ],
+      "font_px": 10,
+      "lines": [
+        "Трёхклапанный блок",
+        "с уравнительным клапаном"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-016",
+      "original": "Five valve with double / equalization valves",
+      "approved_ru": "Пятиклапанный блок\nс двумя уравнительными\nклапанами",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        408,
+        349,
+        599,
+        387
+      ],
+      "placement_bbox": [
+        392,
+        339,
+        623,
+        415
+      ],
+      "text_bbox": [
+        433,
+        359,
+        581,
+        395
+      ],
+      "font_px": 11,
+      "lines": [
+        "Пятиклапанный блок",
+        "с двумя уравнительными",
+        "клапанами"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-017",
+      "original": "Five valve with single / equalization valve",
+      "approved_ru": "Пятиклапанный блок\nс одним уравнительным\nклапаном",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        708,
+        346,
+        892,
+        384
+      ],
+      "placement_bbox": [
+        692,
+        336,
+        916,
+        412
+      ],
+      "text_bbox": [
+        733,
+        356,
+        875,
+        392
+      ],
+      "font_px": 11,
+      "lines": [
+        "Пятиклапанный блок",
+        "с одним уравнительным",
+        "клапаном"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-006-double",
+      "original": "Equalize Equalize",
+      "approved_ru": "Уравнивание / Уравнивание",
+      "strategy": "free_text_repeated",
+      "cleanup_bbox": [
+        428,
+        493,
+        579,
+        511
+      ],
+      "placement_bbox": [
+        [
+          410,
+          488,
+          506,
+          516
+        ],
+        [
+          500,
+          488,
+          597,
+          516
+        ]
+      ],
+      "text_bbox": [
+        [
+          420,
+          497,
+          496,
+          507
+        ],
+        [
+          510,
+          497,
+          586,
+          507
+        ]
+      ],
+      "font_px": 11,
+      "lines": [
+        "Уравнивание",
+        "Уравнивание"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    }
+  ],
+  "composite_html": false,
+  "status": "accepted",
+  "source_package": "API551_FIGURE_053_ACCEPTED_R01_20260713",
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration"
+}

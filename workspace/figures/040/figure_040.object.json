@@ -1,0 +1,363 @@
+{
+  "figure_no": 40,
+  "figure_id": "Figure 40",
+  "revision": "R01",
+  "api_page": null,
+  "pdf_page": 163,
+  "caption_ru": "Рисунок 40 — Магнитный указатель уровня с ведомым индикатором",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-13",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=163",
+  "source_policy": "original PDF and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_040.source_crop.png",
+  "review_png": "figure_040.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "4afdce7bb28b10535f245896710fd88c1dfc0a26a3f1b87ed9955044f2c36f53",
+  "review_png_sha256": "bc11a1f6c82482f665634bf92cfa021972317f47defe7e067d03525aa9d3d8a7",
+  "qa": {
+    "rule_ack": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_policy": "leader lines, dimensions, contours, tables and graph data preserved",
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-13",
+    "notes": [
+      "Направления выносных линий сохранены.",
+      "Свободные надписи без рамок."
+    ],
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-13",
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain approved orientation and placement without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "Upper / connection / flange",
+      "approved_ru": "Верхний\nприсоединительный\nфланец",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        48,
+        103,
+        135,
+        161
+      ],
+      "placement_bbox": [
+        32,
+        95,
+        155,
+        173
+      ],
+      "text_bbox": [
+        33,
+        115,
+        153,
+        152
+      ],
+      "font_px": 11,
+      "lines": [
+        "Верхний",
+        "присоединительный",
+        "фланец"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Follower",
+      "approved_ru": "Ведомый\nиндикатор",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        100,
+        272,
+        168,
+        290
+      ],
+      "placement_bbox": [
+        84,
+        260,
+        212,
+        314
+      ],
+      "text_bbox": [
+        102,
+        270,
+        193,
+        303
+      ],
+      "font_px": 16,
+      "lines": [
+        "Ведомый",
+        "индикатор"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-006",
+      "original": "Float",
+      "approved_ru": "Поплавок",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        63,
+        370,
+        103,
+        388
+      ],
+      "placement_bbox": [
+        47,
+        360,
+        139,
+        404
+      ],
+      "text_bbox": [
+        50,
+        376,
+        136,
+        388
+      ],
+      "font_px": 17,
+      "lines": [
+        "Поплавок"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-007",
+      "original": "Glass tube",
+      "approved_ru": "Стеклянная\nтрубка",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        98,
+        531,
+        184,
+        549
+      ],
+      "placement_bbox": [
+        82,
+        521,
+        234,
+        573
+      ],
+      "text_bbox": [
+        108,
+        531,
+        208,
+        563
+      ],
+      "font_px": 16,
+      "lines": [
+        "Стеклянная",
+        "трубка"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Chamber",
+      "approved_ru": "Камера",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        74,
+        690,
+        148,
+        708
+      ],
+      "placement_bbox": [
+        58,
+        680,
+        184,
+        724
+      ],
+      "text_bbox": [
+        87,
+        694,
+        154,
+        710
+      ],
+      "font_px": 17,
+      "lines": [
+        "Камера"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-003",
+      "original": "Lower / connection / flange",
+      "approved_ru": "Нижний\nприсоединительный\nфланец",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        48,
+        805,
+        135,
+        863
+      ],
+      "placement_bbox": [
+        32,
+        797,
+        155,
+        875
+      ],
+      "text_bbox": [
+        33,
+        817,
+        153,
+        854
+      ],
+      "font_px": 11,
+      "lines": [
+        "Нижний",
+        "присоединительный",
+        "фланец"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-004",
+      "original": "Access / flange",
+      "approved_ru": "Ревизионный\nфланец",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        71,
+        966,
+        129,
+        1004
+      ],
+      "placement_bbox": [
+        55,
+        958,
+        165,
+        1020
+      ],
+      "text_bbox": [
+        57,
+        973,
+        162,
+        1004
+      ],
+      "font_px": 15,
+      "lines": [
+        "Ревизионный",
+        "фланец"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-009",
+      "original": "Stop spring",
+      "approved_ru": "Упорная\nпружина",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        432,
+        928,
+        523,
+        946
+      ],
+      "placement_bbox": [
+        416,
+        916,
+        540,
+        974
+      ],
+      "text_bbox": [
+        443,
+        930,
+        513,
+        960
+      ],
+      "font_px": 15,
+      "lines": [
+        "Упорная",
+        "пружина"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-009",
+      "original": "Stop spring",
+      "approved_ru": "Упорная\nпружина",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        428,
+        93,
+        519,
+        111
+      ],
+      "placement_bbox": [
+        412,
+        81,
+        540,
+        139
+      ],
+      "text_bbox": [
+        441,
+        95,
+        511,
+        125
+      ],
+      "font_px": 15,
+      "lines": [
+        "Упорная",
+        "пружина"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-010",
+      "original": "Scale",
+      "approved_ru": "Шкала",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        428,
+        628,
+        473,
+        646
+      ],
+      "placement_bbox": [
+        414,
+        620,
+        501,
+        662
+      ],
+      "text_bbox": [
+        427,
+        635,
+        487,
+        647
+      ],
+      "font_px": 17,
+      "lines": [
+        "Шкала"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    }
+  ],
+  "composite_html": false,
+  "status": "accepted",
+  "source_package": "API551_FIGURE_040_ACCEPTED_R01_20260713",
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration"
+}

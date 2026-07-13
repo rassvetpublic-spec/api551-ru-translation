@@ -1,0 +1,300 @@
+{
+  "figure_no": 54,
+  "figure_id": "Figure 54",
+  "revision": "R01",
+  "api_page": null,
+  "pdf_page": 187,
+  "caption_ru": "Рисунок 54 — Преобразователь давления с двухболтовым присоединением",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-13",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=187",
+  "source_policy": "original PDF and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_054.source_crop.png",
+  "review_png": "figure_054.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "75c558719d80bd4ae4a4d0bb9bfee5d1b72980eedc799584d9eeb5090520e62a",
+  "review_png_sha256": "82a55bf113def1edfad364db12a4f9df3a33528807526a910ea6247f9e98357f",
+  "qa": {
+    "rule_ack": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_policy": "leader lines, dimensions, contours, tables and graph data preserved",
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-13",
+    "notes": [
+      "Контуры фланца, клапанного блока, крепежа и стойки сохранены.",
+      "Свободные надписи без дополнительных рамок."
+    ],
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-13",
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain approved orientation and placement without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "Pressure transmitter / with two bolt IEC 61518 / flange",
+      "approved_ru": "Преобразователь давления\nс двухболтовым фланцем\nIEC 61518",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        517,
+        118,
+        685,
+        170
+      ],
+      "placement_bbox": [
+        501,
+        108,
+        717,
+        202
+      ],
+      "text_bbox": [
+        506,
+        134,
+        711,
+        176
+      ],
+      "font_px": 14,
+      "lines": [
+        "Преобразователь давления",
+        "с двухболтовым фланцем",
+        "IEC 61518"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-003",
+      "original": "Manifold / mounting bolts",
+      "approved_ru": "Монтажные болты\nклапанного блока",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        107,
+        357,
+        211,
+        391
+      ],
+      "placement_bbox": [
+        91,
+        347,
+        235,
+        415
+      ],
+      "text_bbox": [
+        94,
+        367,
+        232,
+        394
+      ],
+      "font_px": 14,
+      "lines": [
+        "Монтажные болты",
+        "клапанного блока"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-004",
+      "original": "Block and bleed / manifold with mating flange",
+      "approved_ru": "Запорно-сбросной клапанный\nблок с ответным фланцем",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        520,
+        340,
+        714,
+        374
+      ],
+      "placement_bbox": [
+        504,
+        330,
+        746,
+        398
+      ],
+      "text_bbox": [
+        514,
+        349,
+        736,
+        379
+      ],
+      "font_px": 14,
+      "lines": [
+        "Запорно-сбросной клапанный",
+        "блок с ответным фланцем"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-005",
+      "original": "¼ NPT vent",
+      "approved_ru": "Вентиляционное\nотверстие 1/4 NPT",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        122,
+        449,
+        206,
+        465
+      ],
+      "placement_bbox": [
+        106,
+        439,
+        230,
+        489
+      ],
+      "text_bbox": [
+        110,
+        451,
+        226,
+        477
+      ],
+      "font_px": 12,
+      "lines": [
+        "Вентиляционное",
+        "отверстие 1/4 NPT"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-006",
+      "original": "½ NPT process / connection",
+      "approved_ru": "Технологическое\nприсоединение 1/2 NPT",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        523,
+        678,
+        633,
+        712
+      ],
+      "placement_bbox": [
+        507,
+        668,
+        661,
+        736
+      ],
+      "text_bbox": [
+        509,
+        689,
+        659,
+        715
+      ],
+      "font_px": 12,
+      "lines": [
+        "Технологическое",
+        "присоединение 1/2 NPT"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-007",
+      "original": "2 NPS pipe / stand",
+      "approved_ru": "Стойка из трубы\n2 NPS",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        105,
+        834,
+        190,
+        868
+      ],
+      "placement_bbox": [
+        89,
+        824,
+        214,
+        892
+      ],
+      "text_bbox": [
+        90,
+        844,
+        213,
+        871
+      ],
+      "font_px": 14,
+      "lines": [
+        "Стойка из трубы",
+        "2 NPS"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Stamped stainless / steel mounting plate",
+      "approved_ru": "Штампованная монтажная\nпластина из нержавеющей стали",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        523,
+        797,
+        666,
+        831
+      ],
+      "placement_bbox": [
+        507,
+        787,
+        698,
+        855
+      ],
+      "text_bbox": [
+        513,
+        810,
+        691,
+        831
+      ],
+      "font_px": 10,
+      "lines": [
+        "Штампованная монтажная",
+        "пластина из нержавеющей стали"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-009",
+      "original": "To process tap",
+      "approved_ru": "К технологическому отбору",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        477,
+        935,
+        581,
+        951
+      ],
+      "placement_bbox": [
+        461,
+        925,
+        609,
+        971
+      ],
+      "text_bbox": [
+        461,
+        942,
+        609,
+        953
+      ],
+      "font_px": 10,
+      "lines": [
+        "К технологическому отбору"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    }
+  ],
+  "composite_html": false,
+  "status": "accepted",
+  "source_package": "API551_FIGURE_054_ACCEPTED_R01_20260713",
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration"
+}
