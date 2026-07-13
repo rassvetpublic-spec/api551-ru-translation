@@ -1,0 +1,480 @@
+{
+  "figure_no": 24,
+  "figure_id": "Figure 24",
+  "revision": "R01",
+  "api_page": null,
+  "pdf_page": 94,
+  "caption_ru": "Рисунок 24 — Типы подшипников турбинного расходомера",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-13",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=94",
+  "source_policy": "original PDF and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_024.source_crop.png",
+  "review_png": "figure_024.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "9669212150e17aabc306efae48b80093dbefb5ad3010b52418a7d74c62b6d598",
+  "review_png_sha256": "ca2ea0b5f7edd2ae5bae9fb1d1d3d5ec2f0a8ac56ecda3c80e35d9c931a33d55",
+  "qa": {
+    "rule_ack": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_policy": "leader lines, dimensions, contours, tables and graph data preserved",
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-13",
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-13",
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain the approved orientation and placement logic without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "Sleeve",
+      "approved_ru": "Втулка",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        357,
+        79,
+        415,
+        99
+      ],
+      "placement_bbox": [
+        324,
+        64,
+        444,
+        108
+      ],
+      "text_bbox": [
+        355,
+        77,
+        412,
+        94
+      ],
+      "font_px": 18,
+      "lines": [
+        "Втулка"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-003",
+      "original": "Thrust bearing",
+      "approved_ru": "Упорный\nподшипник",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        675,
+        82,
+        738,
+        122
+      ],
+      "placement_bbox": [
+        650,
+        56,
+        796,
+        140
+      ],
+      "text_bbox": [
+        681,
+        80,
+        764,
+        113
+      ],
+      "font_px": 16,
+      "lines": [
+        "Упорный",
+        "подшипник"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-004",
+      "original": "Journal",
+      "approved_ru": "Цапфа",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        363,
+        104,
+        425,
+        125
+      ],
+      "placement_bbox": [
+        324,
+        98,
+        460,
+        142
+      ],
+      "text_bbox": [
+        363,
+        111,
+        421,
+        128
+      ],
+      "font_px": 18,
+      "lines": [
+        "Цапфа"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Blade",
+      "approved_ru": "Лопатка",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        626,
+        342,
+        675,
+        363
+      ],
+      "placement_bbox": [
+        604,
+        324,
+        730,
+        380
+      ],
+      "text_bbox": [
+        633,
+        343,
+        701,
+        357
+      ],
+      "font_px": 18,
+      "lines": [
+        "Лопатка"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-006",
+      "original": "Journal Bearing",
+      "approved_ru": "Подшипник\nскольжения",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        447,
+        391,
+        587,
+        411
+      ],
+      "placement_bbox": [
+        404,
+        366,
+        640,
+        440
+      ],
+      "text_bbox": [
+        478,
+        385,
+        565,
+        416
+      ],
+      "font_px": 16,
+      "lines": [
+        "Подшипник",
+        "скольжения"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-007",
+      "original": "Blade",
+      "approved_ru": "Лопатка",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        605,
+        457,
+        653,
+        478
+      ],
+      "placement_bbox": [
+        580,
+        436,
+        730,
+        498
+      ],
+      "text_bbox": [
+        621,
+        458,
+        689,
+        472
+      ],
+      "font_px": 18,
+      "lines": [
+        "Лопатка"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Outer race",
+      "approved_ru": "Наружное\nкольцо",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        348,
+        481,
+        436,
+        502
+      ],
+      "placement_bbox": [
+        280,
+        464,
+        470,
+        532
+      ],
+      "text_bbox": [
+        340,
+        481,
+        410,
+        513
+      ],
+      "font_px": 15,
+      "lines": [
+        "Наружное",
+        "кольцо"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-009",
+      "original": "Shaft",
+      "approved_ru": "Вал",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        641,
+        547,
+        686,
+        568
+      ],
+      "placement_bbox": [
+        620,
+        532,
+        720,
+        584
+      ],
+      "text_bbox": [
+        653,
+        549,
+        686,
+        562
+      ],
+      "font_px": 18,
+      "lines": [
+        "Вал"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-010",
+      "original": "Inner race",
+      "approved_ru": "Внутреннее\nкольцо",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        602,
+        631,
+        686,
+        652
+      ],
+      "placement_bbox": [
+        574,
+        610,
+        770,
+        680
+      ],
+      "text_bbox": [
+        630,
+        628,
+        713,
+        660
+      ],
+      "font_px": 15,
+      "lines": [
+        "Внутреннее",
+        "кольцо"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-011",
+      "original": "Ball",
+      "approved_ru": "Шарик",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        588,
+        700,
+        620,
+        720
+      ],
+      "placement_bbox": [
+        562,
+        684,
+        670,
+        736
+      ],
+      "text_bbox": [
+        588,
+        701,
+        644,
+        718
+      ],
+      "font_px": 18,
+      "lines": [
+        "Шарик"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-012",
+      "original": "Ball Bearing",
+      "approved_ru": "Шариковый\nподшипник",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        463,
+        770,
+        571,
+        791
+      ],
+      "placement_bbox": [
+        416,
+        746,
+        630,
+        820
+      ],
+      "text_bbox": [
+        480,
+        765,
+        566,
+        798
+      ],
+      "font_px": 16,
+      "lines": [
+        "Шариковый",
+        "подшипник"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-013",
+      "original": "Pivot shaft",
+      "approved_ru": "Ось",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        403,
+        935,
+        529,
+        957
+      ],
+      "placement_bbox": [
+        408,
+        916,
+        560,
+        970
+      ],
+      "text_bbox": [
+        468,
+        934,
+        500,
+        947
+      ],
+      "font_px": 18,
+      "lines": [
+        "Ось"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-014",
+      "original": "Jewel",
+      "approved_ru": "Камень",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        354,
+        935,
+        401,
+        957
+      ],
+      "placement_bbox": [
+        316,
+        914,
+        430,
+        972
+      ],
+      "text_bbox": [
+        342,
+        934,
+        404,
+        947
+      ],
+      "font_px": 18,
+      "lines": [
+        "Камень"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-015",
+      "original": "Jewel Bearing",
+      "approved_ru": "Камневый\nподшипник",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        462,
+        1166,
+        586,
+        1187
+      ],
+      "placement_bbox": [
+        420,
+        1140,
+        640,
+        1212
+      ],
+      "text_bbox": [
+        488,
+        1158,
+        571,
+        1191
+      ],
+      "font_px": 16,
+      "lines": [
+        "Камневый",
+        "подшипник"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    }
+  ],
+  "special_structure": {},
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_024_ACCEPTED_R01_20260713"
+}

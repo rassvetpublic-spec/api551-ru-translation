@@ -1,0 +1,420 @@
+{
+  "figure_no": 26,
+  "figure_id": "Figure 26",
+  "revision": "R01",
+  "api_page": null,
+  "pdf_page": 115,
+  "caption_ru": "Рисунок 26 — Узлы указательного стекла",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-13",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=115",
+  "source_policy": "original PDF and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_026.source_crop.png",
+  "review_png": "figure_026.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "0433213479187326a81322715cec9acc7d2fba837d14519dbbdc0652560d1ee0",
+  "review_png_sha256": "b8c13584517f16b4dbafe44551f117399f3d5710253ef4a22fa16069fc40bd96",
+  "qa": {
+    "rule_ack": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_policy": "leader lines, dimensions, contours, tables and graph data preserved",
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-13",
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-13",
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain the approved orientation and placement logic without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "Four section gauge glass",
+      "approved_ru": "Указательное стекло\nиз четырёх секций",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        593,
+        113,
+        797,
+        133
+      ],
+      "placement_bbox": [
+        560,
+        90,
+        930,
+        160
+      ],
+      "text_bbox": [
+        667,
+        107,
+        822,
+        142
+      ],
+      "font_px": 16,
+      "lines": [
+        "Указательное стекло",
+        "из четырёх секций"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-003",
+      "original": "¾ NPS vent valve",
+      "approved_ru": "Вентиляционный клапан NPS 3/4",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        325,
+        134,
+        471,
+        155
+      ],
+      "placement_bbox": [
+        276,
+        114,
+        550,
+        174
+      ],
+      "text_bbox": [
+        297,
+        135,
+        529,
+        150
+      ],
+      "font_px": 15,
+      "lines": [
+        "Вентиляционный клапан NPS 3/4"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-004",
+      "original": "2 in. or 3 in. NPS standpipe",
+      "approved_ru": "Стояк NPS 2″ или 3″",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        316,
+        227,
+        454,
+        266
+      ],
+      "placement_bbox": [
+        260,
+        202,
+        504,
+        282
+      ],
+      "text_bbox": [
+        307,
+        233,
+        457,
+        245
+      ],
+      "font_px": 16,
+      "lines": [
+        "Стояк NPS 2″ или 3″"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-005",
+      "original": "The overlap between two gauges can be adjusted to obtain the overall length desired but it is recommended that at least a minimum of 25 mm (1 in.) be provided.",
+      "approved_ru": "Перекрытие между двумя указателями можно регулировать для получения требуемой общей длины, однако рекомендуется предусматривать минимальное перекрытие не менее 25 мм (1″).",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        142,
+        348,
+        498,
+        428
+      ],
+      "placement_bbox": [
+        64,
+        312,
+        544,
+        460
+      ],
+      "text_bbox": [
+        66,
+        361,
+        489,
+        409
+      ],
+      "font_px": 14,
+      "lines": [
+        "Перекрытие между двумя указателями можно регулировать для",
+        "получения требуемой общей длины, однако рекомендуется",
+        "предусматривать минимальное перекрытие не менее 25 мм (1″)."
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-006",
+      "original": "Five section gauge glass",
+      "approved_ru": "Указательное стекло\nиз пяти секций",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        285,
+        456,
+        486,
+        477
+      ],
+      "placement_bbox": [
+        236,
+        432,
+        580,
+        502
+      ],
+      "text_bbox": [
+        330,
+        449,
+        485,
+        483
+      ],
+      "font_px": 16,
+      "lines": [
+        "Указательное стекло",
+        "из пяти секций"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-007",
+      "original": "Overlap",
+      "approved_ru": "Перекрытие",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        438,
+        570,
+        504,
+        590
+      ],
+      "placement_bbox": [
+        404,
+        550,
+        558,
+        608
+      ],
+      "text_bbox": [
+        435,
+        570,
+        526,
+        586
+      ],
+      "font_px": 16,
+      "lines": [
+        "Перекрытие"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "½ NPS drain valve",
+      "approved_ru": "Дренажный клапан NPS 1/2",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        589,
+        758,
+        741,
+        779
+      ],
+      "placement_bbox": [
+        560,
+        736,
+        830,
+        796
+      ],
+      "text_bbox": [
+        598,
+        758,
+        791,
+        772
+      ],
+      "font_px": 15,
+      "lines": [
+        "Дренажный клапан NPS 1/2"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-009",
+      "original": "¾ NPS gauge cock with 2 NPS integral flange",
+      "approved_ru": "Кран указательного стекла NPS 3/4\nсо встроенным фланцем NPS 2",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        592,
+        801,
+        786,
+        841
+      ],
+      "placement_bbox": [
+        550,
+        780,
+        910,
+        862
+      ],
+      "text_bbox": [
+        614,
+        805,
+        845,
+        837
+      ],
+      "font_px": 14,
+      "lines": [
+        "Кран указательного стекла NPS 3/4",
+        "со встроенным фланцем NPS 2"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-010",
+      "original": "2 NPS Nozzle minimum",
+      "approved_ru": "Штуцер не менее NPS 2",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        810,
+        861,
+        925,
+        903
+      ],
+      "placement_bbox": [
+        772,
+        842,
+        1020,
+        916
+      ],
+      "text_bbox": [
+        817,
+        871,
+        975,
+        885
+      ],
+      "font_px": 14,
+      "lines": [
+        "Штуцер не менее NPS 2"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-011",
+      "original": "View A-A",
+      "approved_ru": "Вид A–A",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        689,
+        952,
+        769,
+        973
+      ],
+      "placement_bbox": [
+        660,
+        932,
+        804,
+        990
+      ],
+      "text_bbox": [
+        700,
+        952,
+        764,
+        966
+      ],
+      "font_px": 16,
+      "lines": [
+        "Вид A–A"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-012",
+      "original": "Pipe spec block valve",
+      "approved_ru": "Запорный клапан\nпо спецификации трубопровода",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        309,
+        1129,
+        485,
+        1149
+      ],
+      "placement_bbox": [
+        250,
+        1102,
+        550,
+        1182
+      ],
+      "text_bbox": [
+        295,
+        1126,
+        505,
+        1158
+      ],
+      "font_px": 14,
+      "lines": [
+        "Запорный клапан",
+        "по спецификации трубопровода"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-013",
+      "original": "Water collecting low point, freeze protect or drain as needed",
+      "approved_ru": "Нижняя точка скопления воды; предусмотреть защиту от замерзания или дренирование по мере необходимости.",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        645,
+        1109,
+        798,
+        1194
+      ],
+      "placement_bbox": [
+        596,
+        1082,
+        856,
+        1216
+      ],
+      "text_bbox": [
+        598,
+        1127,
+        834,
+        1169
+      ],
+      "font_px": 12,
+      "lines": [
+        "Нижняя точка скопления воды;",
+        "предусмотреть защиту от замерзания или",
+        "дренирование по мере необходимости."
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    }
+  ],
+  "special_structure": {},
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_026_ACCEPTED_R01_20260713"
+}

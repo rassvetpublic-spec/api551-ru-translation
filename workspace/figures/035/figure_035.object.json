@@ -1,0 +1,454 @@
+{
+  "figure_no": 35,
+  "figure_id": "Figure 35",
+  "revision": "R01",
+  "api_page": null,
+  "pdf_page": 145,
+  "caption_ru": "Рисунок 35 — Критические размеры для установки уровнемера GWR",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-13",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=145",
+  "source_policy": "original PDF and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_035.source_crop.png",
+  "review_png": "figure_035.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "be8b6a1a0851dadf652f07b4edf4117ee265d133df3b0cceec957f864f6cb263",
+  "review_png_sha256": "83ad369ddc91cb30493947dbd8e47edef63c03881da3969556720bddfc17841c",
+  "qa": {
+    "rule_ack": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_policy": "leader lines, dimensions, contours, tables and graph data preserved",
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-13",
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-13",
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain the approved orientation and placement logic without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "Upper reference point",
+      "approved_ru": "Верхняя опорная точка",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        344,
+        38,
+        521,
+        59
+      ],
+      "placement_bbox": [
+        304,
+        20,
+        560,
+        76
+      ],
+      "text_bbox": [
+        356,
+        40,
+        508,
+        54
+      ],
+      "font_px": 14,
+      "lines": [
+        "Верхняя опорная точка"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-003",
+      "original": "Upper transition zone",
+      "approved_ru": "Верхняя\nпереходная\nзона",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        534,
+        54,
+        609,
+        110
+      ],
+      "placement_bbox": [
+        514,
+        36,
+        640,
+        124
+      ],
+      "text_bbox": [
+        544,
+        58,
+        609,
+        97
+      ],
+      "font_px": 12,
+      "lines": [
+        "Верхняя",
+        "переходная",
+        "зона"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-004",
+      "original": "Hold off/ upper null zone",
+      "approved_ru": "Зона задержки /\nверхняя мёртвая зона",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        389,
+        66,
+        471,
+        123
+      ],
+      "placement_bbox": [
+        360,
+        56,
+        504,
+        136
+      ],
+      "text_bbox": [
+        370,
+        82,
+        494,
+        109
+      ],
+      "font_px": 12,
+      "lines": [
+        "Зона задержки /",
+        "верхняя мёртвая зона"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Probe length",
+      "approved_ru": "Длина\nзонда",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        456,
+        136,
+        508,
+        177
+      ],
+      "placement_bbox": [
+        430,
+        120,
+        534,
+        192
+      ],
+      "text_bbox": [
+        463,
+        141,
+        501,
+        169
+      ],
+      "font_px": 13,
+      "lines": [
+        "Длина",
+        "зонда"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-006",
+      "original": "Product level",
+      "approved_ru": "Уровень\nпродукта",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        93,
+        190,
+        158,
+        231
+      ],
+      "placement_bbox": [
+        60,
+        170,
+        190,
+        246
+      ],
+      "text_bbox": [
+        98,
+        193,
+        152,
+        222
+      ],
+      "font_px": 13,
+      "lines": [
+        "Уровень",
+        "продукта"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-007",
+      "original": "Tank height",
+      "approved_ru": "Высота\nрезервуара",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        493,
+        202,
+        545,
+        242
+      ],
+      "placement_bbox": [
+        474,
+        184,
+        576,
+        260
+      ],
+      "text_bbox": [
+        490,
+        207,
+        559,
+        236
+      ],
+      "font_px": 13,
+      "lines": [
+        "Высота",
+        "резервуара"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Range 0 to 100 %",
+      "approved_ru": "Диапазон 0–100 %",
+      "strategy": "vertical_axis",
+      "cleanup_bbox": [
+        974,
+        144,
+        995,
+        291
+      ],
+      "placement_bbox": [
+        960,
+        128,
+        1010,
+        304
+      ],
+      "text_bbox": [
+        973,
+        142,
+        996,
+        289
+      ],
+      "font_px": 16,
+      "lines": [
+        "Диапазон 0–100 %"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-009",
+      "original": "Interface level",
+      "approved_ru": "Уровень границы\nраздела",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        99,
+        251,
+        172,
+        292
+      ],
+      "placement_bbox": [
+        56,
+        234,
+        210,
+        312
+      ],
+      "text_bbox": [
+        85,
+        259,
+        181,
+        286
+      ],
+      "font_px": 12,
+      "lines": [
+        "Уровень границы",
+        "раздела"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-010",
+      "original": "Lower reference point",
+      "approved_ru": "Нижняя опорная\nточка",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        374,
+        346,
+        493,
+        381
+      ],
+      "placement_bbox": [
+        336,
+        328,
+        530,
+        398
+      ],
+      "text_bbox": [
+        386,
+        349,
+        479,
+        373
+      ],
+      "font_px": 12,
+      "lines": [
+        "Нижняя опорная",
+        "точка"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-011",
+      "original": "Lower transition zone",
+      "approved_ru": "Нижняя\nпереходная\nзона",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        535,
+        315,
+        611,
+        391
+      ],
+      "placement_bbox": [
+        512,
+        298,
+        640,
+        402
+      ],
+      "text_bbox": [
+        543,
+        328,
+        608,
+        367
+      ],
+      "font_px": 12,
+      "lines": [
+        "Нижняя",
+        "переходная",
+        "зона"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-012",
+      "original": "Lower reference point (Level = 0)",
+      "approved_ru": "Нижняя опорная точка\n(уровень = 0)",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        639,
+        346,
+        1001,
+        391
+      ],
+      "placement_bbox": [
+        620,
+        320,
+        1020,
+        406
+      ],
+      "text_bbox": [
+        751,
+        348,
+        888,
+        377
+      ],
+      "font_px": 13,
+      "lines": [
+        "Нижняя опорная точка",
+        "(уровень = 0)"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-013",
+      "original": "Parameters of tank and probe geometry",
+      "approved_ru": "Параметры геометрии резервуара и зонда",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        122,
+        402,
+        465,
+        422
+      ],
+      "placement_bbox": [
+        76,
+        384,
+        500,
+        430
+      ],
+      "text_bbox": [
+        158,
+        400,
+        417,
+        413
+      ],
+      "font_px": 13,
+      "lines": [
+        "Параметры геометрии резервуара и зонда"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-014",
+      "original": "Parameters for output configuration",
+      "approved_ru": "Параметры настройки выходного сигнала",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        603,
+        405,
+        914,
+        426
+      ],
+      "placement_bbox": [
+        560,
+        384,
+        960,
+        430
+      ],
+      "text_bbox": [
+        633,
+        400,
+        887,
+        413
+      ],
+      "font_px": 13,
+      "lines": [
+        "Параметры настройки выходного сигнала"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    }
+  ],
+  "special_structure": {},
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_035_ACCEPTED_R01_20260713"
+}

@@ -1,0 +1,423 @@
+{
+  "figure_no": 32,
+  "figure_id": "Figure 32",
+  "revision": "R01",
+  "api_page": null,
+  "pdf_page": 127,
+  "caption_ru": "Рисунок 32 — Схема мокрой калибровки буйкового прибора",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-13",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=127",
+  "source_policy": "original PDF and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_032.source_crop.png",
+  "review_png": "figure_032.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "a52500ba0a6111fb9ad9e8de5dbebbf08296610475832e947832408f5be36c13",
+  "review_png_sha256": "75460cea67a775f039e30ca828f311dba049b96883965f9ac504486b2c0018ec",
+  "qa": {
+    "rule_ack": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_policy": "leader lines, dimensions, contours, tables and graph data preserved",
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-13",
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-13",
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain the approved orientation and placement logic without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "Water supply",
+      "approved_ru": "Подача\nводы",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        514,
+        36,
+        576,
+        79
+      ],
+      "placement_bbox": [
+        480,
+        20,
+        610,
+        96
+      ],
+      "text_bbox": [
+        517,
+        40,
+        572,
+        73
+      ],
+      "font_px": 16,
+      "lines": [
+        "Подача",
+        "воды"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-003",
+      "original": "Close process valve",
+      "approved_ru": "Закрыть технологический клапан",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        730,
+        135,
+        898,
+        156
+      ],
+      "placement_bbox": [
+        690,
+        112,
+        960,
+        174
+      ],
+      "text_bbox": [
+        717,
+        135,
+        932,
+        149
+      ],
+      "font_px": 14,
+      "lines": [
+        "Закрыть технологический клапан"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-004",
+      "original": "Open vent valve (the water supply should not prevent free atmospheric venting while adjusting the calibration)",
+      "approved_ru": "Открыть вентиляционный клапан (подача воды не должна препятствовать свободному сбросу в атмосферу во время регулировки калибровки).",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        110,
+        95,
+        466,
+        160
+      ],
+      "placement_bbox": [
+        36,
+        64,
+        494,
+        182
+      ],
+      "text_bbox": [
+        38,
+        109,
+        456,
+        136
+      ],
+      "font_px": 12,
+      "lines": [
+        "Открыть вентиляционный клапан (подача воды не должна препятствовать",
+        "свободному сбросу в атмосферу во время регулировки калибровки)."
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Hole to free hang gauge board, assemble to ensure that it is vertical",
+      "approved_ru": "Отверстие для свободного подвеса мерной рейки; собрать так, чтобы она была вертикальной.",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        79,
+        354,
+        281,
+        441
+      ],
+      "placement_bbox": [
+        24,
+        328,
+        316,
+        470
+      ],
+      "text_bbox": [
+        26,
+        384,
+        309,
+        412
+      ],
+      "font_px": 12,
+      "lines": [
+        "Отверстие для свободного подвеса мерной рейки;",
+        "собрать так, чтобы она была вертикальной."
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-006",
+      "original": "To check the calibration, it is recommended that the displacer chamber be filled above the upper range value with the water drained in steps until the lower range value is reached",
+      "approved_ru": "Для проверки калибровки рекомендуется заполнить камеру буйка выше верхнего значения диапазона, затем сливать воду ступенями до достижения нижнего значения диапазона.",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        610,
+        446,
+        1009,
+        533
+      ],
+      "placement_bbox": [
+        572,
+        412,
+        1044,
+        560
+      ],
+      "text_bbox": [
+        574,
+        463,
+        1032,
+        505
+      ],
+      "font_px": 12,
+      "lines": [
+        "Для проверки калибровки рекомендуется заполнить камеру буйка выше верхнего",
+        "значения диапазона, затем сливать воду ступенями до достижения нижнего",
+        "значения диапазона."
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-007",
+      "original": "Attach tube to gauge board with cable ties",
+      "approved_ru": "Прикрепить трубку к мерной рейке кабельными стяжками.",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        86,
+        688,
+        301,
+        743
+      ],
+      "placement_bbox": [
+        24,
+        662,
+        344,
+        764
+      ],
+      "text_bbox": [
+        26,
+        698,
+        292,
+        723
+      ],
+      "font_px": 12,
+      "lines": [
+        "Прикрепить трубку к мерной рейке кабельными",
+        "стяжками."
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Mid range",
+      "approved_ru": "Середина\nдиапазона",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        518,
+        721,
+        568,
+        764
+      ],
+      "placement_bbox": [
+        484,
+        698,
+        604,
+        782
+      ],
+      "text_bbox": [
+        512,
+        725,
+        576,
+        753
+      ],
+      "font_px": 13,
+      "lines": [
+        "Середина",
+        "диапазона"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-009",
+      "original": "Displacer bottom (zero reference)",
+      "approved_ru": "Низ буйка\n(нулевая отметка)",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        639,
+        778,
+        781,
+        822
+      ],
+      "placement_bbox": [
+        600,
+        756,
+        830,
+        844
+      ],
+      "text_bbox": [
+        656,
+        783,
+        774,
+        815
+      ],
+      "font_px": 14,
+      "lines": [
+        "Низ буйка",
+        "(нулевая отметка)"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-010",
+      "original": "Close process valve",
+      "approved_ru": "Закрыть технологический клапан",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        748,
+        851,
+        917,
+        873
+      ],
+      "placement_bbox": [
+        704,
+        830,
+        970,
+        892
+      ],
+      "text_bbox": [
+        729,
+        853,
+        944,
+        867
+      ],
+      "font_px": 14,
+      "lines": [
+        "Закрыть технологический клапан"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-011",
+      "original": "Open drain valve",
+      "approved_ru": "Открыть дренажный клапан",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        358,
+        1004,
+        458,
+        1048
+      ],
+      "placement_bbox": [
+        310,
+        980,
+        520,
+        1064
+      ],
+      "text_bbox": [
+        324,
+        1014,
+        506,
+        1028
+      ],
+      "font_px": 14,
+      "lines": [
+        "Открыть дренажный клапан"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-012",
+      "original": "Temporary threaded tee with ¼ NPS drain valve and barb fitting for ¼ in. OD plastic tubing",
+      "approved_ru": "Временный резьбовой тройник с дренажным клапаном ¼ NPS и штуцером под пластиковую трубку наружным диаметром ¼″.",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        612,
+        1102,
+        942,
+        1167
+      ],
+      "placement_bbox": [
+        560,
+        1072,
+        1044,
+        1214
+      ],
+      "text_bbox": [
+        562,
+        1128,
+        1005,
+        1156
+      ],
+      "font_px": 12,
+      "lines": [
+        "Временный резьбовой тройник с дренажным клапаном ¼ NPS и штуцером под",
+        "пластиковую трубку наружным диаметром ¼″."
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-013",
+      "original": "¼ in. OD smooth-bore, clear vinyl tube, 270 kPa (40 psig) at 20 °C (70 °F) -40 to 73 °C (-40 to 165 °F)",
+      "approved_ru": "Гладкостенная прозрачная виниловая трубка наружным диаметром ¼″; 270 кПа (40 psig) при 20 °C (70 °F); от −40 до 73 °C (от −40 до 165 °F).",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        95,
+        1130,
+        327,
+        1217
+      ],
+      "placement_bbox": [
+        30,
+        1090,
+        376,
+        1220
+      ],
+      "text_bbox": [
+        32,
+        1135,
+        371,
+        1175
+      ],
+      "font_px": 11,
+      "lines": [
+        "Гладкостенная прозрачная виниловая трубка наружным",
+        "диаметром ¼″; 270 кПа (40 psig) при 20 °C (70 °F); от −40 до 73 °C",
+        "(от −40 до 165 °F)."
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    }
+  ],
+  "special_structure": {},
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_032_ACCEPTED_R01_20260713"
+}

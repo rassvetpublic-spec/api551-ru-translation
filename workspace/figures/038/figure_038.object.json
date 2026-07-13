@@ -1,0 +1,414 @@
+{
+  "figure_no": 38,
+  "figure_id": "Figure 38",
+  "revision": "R01",
+  "api_page": null,
+  "pdf_page": 158,
+  "caption_ru": "Рисунок 38 — Типовой указательный клапан с болтовой крышкой",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-13",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=158",
+  "source_policy": "original PDF and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_038.source_crop.png",
+  "review_png": "figure_038.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "7bb4c482dffe7efcef21cd58f6a32d6883d452ddbd575a62c9b2333c9a27318d",
+  "review_png_sha256": "518fde95c25425b10bab7647bb7c7bbac49d6e666751a2081ab6e1f38312fb97",
+  "qa": {
+    "rule_ack": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_policy": "leader lines, dimensions, contours, tables and graph data preserved",
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-13",
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-13",
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain the approved orientation and placement logic without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "Cleanout",
+      "approved_ru": "Прочистка",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        245,
+        23,
+        320,
+        44
+      ],
+      "placement_bbox": [
+        220,
+        8,
+        350,
+        60
+      ],
+      "text_bbox": [
+        248,
+        26,
+        322,
+        40
+      ],
+      "font_px": 15,
+      "lines": [
+        "Прочистка"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-003",
+      "original": "½ or ¾ NPT female connection",
+      "approved_ru": "Внутреннее присоединение ½ или ¾ NPT",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        504,
+        57,
+        754,
+        78
+      ],
+      "placement_bbox": [
+        470,
+        36,
+        810,
+        98
+      ],
+      "text_bbox": [
+        503,
+        59,
+        776,
+        73
+      ],
+      "font_px": 14,
+      "lines": [
+        "Внутреннее присоединение ½ или ¾ NPT"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-004",
+      "original": "Gauge union",
+      "approved_ru": "Соединение указательного стекла",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        181,
+        79,
+        287,
+        99
+      ],
+      "placement_bbox": [
+        120,
+        62,
+        350,
+        118
+      ],
+      "text_bbox": [
+        131,
+        83,
+        339,
+        96
+      ],
+      "font_px": 13,
+      "lines": [
+        "Соединение указательного стекла"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Back seat",
+      "approved_ru": "Заднее седло",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        530,
+        132,
+        612,
+        153
+      ],
+      "placement_bbox": [
+        504,
+        116,
+        650,
+        170
+      ],
+      "text_bbox": [
+        531,
+        135,
+        622,
+        148
+      ],
+      "font_px": 14,
+      "lines": [
+        "Заднее седло"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-006",
+      "original": "Stem",
+      "approved_ru": "Шток",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        825,
+        171,
+        870,
+        192
+      ],
+      "placement_bbox": [
+        800,
+        156,
+        910,
+        208
+      ],
+      "text_bbox": [
+        836,
+        174,
+        873,
+        185
+      ],
+      "font_px": 15,
+      "lines": [
+        "Шток"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-007",
+      "original": "Ball check",
+      "approved_ru": "Шариковый обратный клапан",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        179,
+        206,
+        264,
+        227
+      ],
+      "placement_bbox": [
+        110,
+        188,
+        330,
+        246
+      ],
+      "text_bbox": [
+        131,
+        209,
+        309,
+        223
+      ],
+      "font_px": 13,
+      "lines": [
+        "Шариковый обратный клапан"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Renewable seat",
+      "approved_ru": "Сменное седло",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        171,
+        393,
+        303,
+        414
+      ],
+      "placement_bbox": [
+        130,
+        374,
+        350,
+        432
+      ],
+      "text_bbox": [
+        189,
+        395,
+        291,
+        408
+      ],
+      "font_px": 14,
+      "lines": [
+        "Сменное седло"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-009",
+      "original": "Gland",
+      "approved_ru": "Сальниковая втулка",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        769,
+        424,
+        820,
+        445
+      ],
+      "placement_bbox": [
+        720,
+        404,
+        890,
+        462
+      ],
+      "text_bbox": [
+        743,
+        426,
+        866,
+        439
+      ],
+      "font_px": 13,
+      "lines": [
+        "Сальниковая втулка"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-010",
+      "original": "½ NPT Connection",
+      "approved_ru": "Присоединение ½ NPT",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        186,
+        436,
+        341,
+        457
+      ],
+      "placement_bbox": [
+        144,
+        418,
+        390,
+        476
+      ],
+      "text_bbox": [
+        191,
+        439,
+        342,
+        453
+      ],
+      "font_px": 14,
+      "lines": [
+        "Присоединение ½ NPT"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-011",
+      "original": "Gasket",
+      "approved_ru": "Прокладка",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        425,
+        442,
+        501,
+        463
+      ],
+      "placement_bbox": [
+        390,
+        424,
+        540,
+        480
+      ],
+      "text_bbox": [
+        430,
+        444,
+        500,
+        458
+      ],
+      "font_px": 14,
+      "lines": [
+        "Прокладка"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-012",
+      "original": "Packing",
+      "approved_ru": "Набивка",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        699,
+        460,
+        780,
+        481
+      ],
+      "placement_bbox": [
+        670,
+        442,
+        820,
+        498
+      ],
+      "text_bbox": [
+        717,
+        461,
+        772,
+        473
+      ],
+      "font_px": 14,
+      "lines": [
+        "Набивка"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-013",
+      "original": "1½ or 2 NPS flange connection",
+      "approved_ru": "Фланцевое присоединение NPS 1½ или 2",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        214,
+        491,
+        466,
+        512
+      ],
+      "placement_bbox": [
+        140,
+        476,
+        490,
+        534
+      ],
+      "text_bbox": [
+        178,
+        497,
+        451,
+        511
+      ],
+      "font_px": 14,
+      "lines": [
+        "Фланцевое присоединение NPS 1½ или 2"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    }
+  ],
+  "special_structure": {
+    "long_paragraph_in_html": true
+  },
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_038_ACCEPTED_R01_20260713"
+}
