@@ -1,0 +1,322 @@
+{
+  "figure_no": 39,
+  "figure_id": "Figure 39",
+  "revision": "R01",
+  "api_page": null,
+  "pdf_page": 161,
+  "caption_ru": "Рисунок 39 — Измерительные отборы для измерения границы раздела фаз и уровня",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-13",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=161",
+  "source_policy": "original PDF and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_039.source_crop.png",
+  "review_png": "figure_039.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "78ebc11bf47d7be89a13f44672beab51bf3669420fb081191cf144c2e63298a9",
+  "review_png_sha256": "530821eadae634f5dbd9ae7fed7f147904bb2fbb464248b92cab232db030d523",
+  "qa": {
+    "rule_ack": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_policy": "leader lines, dimensions, contours, tables and graph data preserved",
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-13",
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-13",
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain the approved orientation and placement logic without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "Incorrect measurement connections",
+      "approved_ru": "Неправильные измерительные\nприсоединения",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        564,
+        25,
+        751,
+        65
+      ],
+      "placement_bbox": [
+        520,
+        4,
+        816,
+        88
+      ],
+      "text_bbox": [
+        566,
+        30,
+        769,
+        61
+      ],
+      "font_px": 14,
+      "lines": [
+        "Неправильные измерительные",
+        "присоединения"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-003",
+      "original": "Vapor space",
+      "approved_ru": "Паровое пространство",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        245,
+        98,
+        348,
+        118
+      ],
+      "placement_bbox": [
+        210,
+        80,
+        390,
+        136
+      ],
+      "text_bbox": [
+        225,
+        100,
+        374,
+        114
+      ],
+      "font_px": 14,
+      "lines": [
+        "Паровое пространство"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-004",
+      "original": "Maximum level",
+      "approved_ru": "Максимальный уровень",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        213,
+        159,
+        336,
+        180
+      ],
+      "placement_bbox": [
+        180,
+        142,
+        380,
+        198
+      ],
+      "text_bbox": [
+        202,
+        162,
+        358,
+        176
+      ],
+      "font_px": 14,
+      "lines": [
+        "Максимальный уровень"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Normal level",
+      "approved_ru": "Нормальный уровень",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        222,
+        243,
+        345,
+        264
+      ],
+      "placement_bbox": [
+        184,
+        226,
+        390,
+        280
+      ],
+      "text_bbox": [
+        216,
+        245,
+        357,
+        259
+      ],
+      "font_px": 14,
+      "lines": [
+        "Нормальный уровень"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-006",
+      "original": "Level measurement",
+      "approved_ru": "Измерение уровня",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        403,
+        261,
+        612,
+        282
+      ],
+      "placement_bbox": [
+        370,
+        242,
+        650,
+        300
+      ],
+      "text_bbox": [
+        449,
+        263,
+        571,
+        277
+      ],
+      "font_px": 14,
+      "lines": [
+        "Измерение уровня"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-007",
+      "original": "Max interface",
+      "approved_ru": "Максимальная граница раздела",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        527,
+        474,
+        626,
+        493
+      ],
+      "placement_bbox": [
+        470,
+        454,
+        684,
+        512
+      ],
+      "text_bbox": [
+        479,
+        476,
+        674,
+        489
+      ],
+      "font_px": 13,
+      "lines": [
+        "Максимальная граница раздела"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Normal interface",
+      "approved_ru": "Нормальная граница раздела",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        520,
+        521,
+        640,
+        539
+      ],
+      "placement_bbox": [
+        460,
+        502,
+        700,
+        558
+      ],
+      "text_bbox": [
+        489,
+        523,
+        670,
+        536
+      ],
+      "font_px": 13,
+      "lines": [
+        "Нормальная граница раздела"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-009",
+      "original": "Minimum hillside connection is 0.07 x Vessel OD",
+      "approved_ru": "Минимальное боковое присоединение —\n0,07 × наружный диаметр аппарата",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        822,
+        481,
+        963,
+        541
+      ],
+      "placement_bbox": [
+        780,
+        454,
+        1036,
+        560
+      ],
+      "text_bbox": [
+        792,
+        492,
+        1024,
+        520
+      ],
+      "font_px": 12,
+      "lines": [
+        "Минимальное боковое присоединение —",
+        "0,07 × наружный диаметр аппарата"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-010",
+      "original": "Interface measurement",
+      "approved_ru": "Измерение границы\nраздела",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        864,
+        621,
+        977,
+        661
+      ],
+      "placement_bbox": [
+        820,
+        600,
+        1030,
+        678
+      ],
+      "text_bbox": [
+        864,
+        624,
+        986,
+        653
+      ],
+      "font_px": 13,
+      "lines": [
+        "Измерение границы",
+        "раздела"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    }
+  ],
+  "special_structure": {},
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_039_ACCEPTED_R01_20260713"
+}

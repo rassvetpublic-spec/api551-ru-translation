@@ -6,9 +6,9 @@
   "pdf_expected_path": "source/API 551 2016 (R2024).pdf",
   "stats": {
     "total": 69,
-    "accepted": 36,
+    "accepted": 46,
     "changed": 0,
-    "not_accepted": 33
+    "not_accepted": 23
   },
   "figures": [
     {
@@ -409,8 +409,15 @@
       "caption_ru": "Рисунок 24 — Типы подшипников турбинного расходомера",
       "api_page": "86",
       "pdf_page": "94",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=94"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=94",
+      "folder": "workspace/figures/024",
+      "source_package": "API551_FIGURE_024_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/024/figure_024.object.html",
+      "json": "workspace/figures/024/figure_024.object.json",
+      "png": "workspace/figures/024/figure_024.png",
+      "source_crop": "workspace/figures/024/figure_024.source_crop.png",
+      "out_html": "workspace/figures/024/figure_024.out.html"
     },
     {
       "figure_no": 25,
@@ -436,8 +443,15 @@
       "caption_ru": "Рисунок 26 — Узлы указательного стекла",
       "api_page": "107",
       "pdf_page": "115",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=115"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=115",
+      "folder": "workspace/figures/026",
+      "source_package": "API551_FIGURE_026_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/026/figure_026.object.html",
+      "json": "workspace/figures/026/figure_026.object.json",
+      "png": "workspace/figures/026/figure_026.png",
+      "source_crop": "workspace/figures/026/figure_026.source_crop.png",
+      "out_html": "workspace/figures/026/figure_026.out.html"
     },
     {
       "figure_no": 27,
@@ -446,8 +460,15 @@
       "caption_ru": "Рисунок 27 — Присоединения приборов к нижним днищам",
       "api_page": "108",
       "pdf_page": "116",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=116"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=116",
+      "folder": "workspace/figures/027",
+      "source_package": "API551_FIGURE_027_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/027/figure_027.object.html",
+      "json": "workspace/figures/027/figure_027.object.json",
+      "png": "workspace/figures/027/figure_027.png",
+      "source_crop": "workspace/figures/027/figure_027.source_crop.png",
+      "out_html": "workspace/figures/027/figure_027.out.html"
     },
     {
       "figure_no": 28,
@@ -473,8 +494,15 @@
       "caption_ru": "Рисунок 29 — Преобразователи дифференциального уровня с мокрыми импульсными линиями",
       "api_page": "112",
       "pdf_page": "120",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=120"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=120",
+      "folder": "workspace/figures/029",
+      "source_package": "API551_FIGURE_029_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/029/figure_029.object.html",
+      "json": "workspace/figures/029/figure_029.object.json",
+      "png": "workspace/figures/029/figure_029.png",
+      "source_crop": "workspace/figures/029/figure_029.source_crop.png",
+      "out_html": "workspace/figures/029/figure_029.out.html"
     },
     {
       "figure_no": 30,
@@ -516,8 +544,15 @@
       "caption_ru": "Рисунок 32 — Схема мокрой калибровки буйкового прибора",
       "api_page": "119",
       "pdf_page": "127",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=127"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=127",
+      "folder": "workspace/figures/032",
+      "source_package": "API551_FIGURE_032_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/032/figure_032.object.html",
+      "json": "workspace/figures/032/figure_032.object.json",
+      "png": "workspace/figures/032/figure_032.png",
+      "source_crop": "workspace/figures/032/figure_032.source_crop.png",
+      "out_html": "workspace/figures/032/figure_032.out.html"
     },
     {
       "figure_no": 33,
@@ -543,8 +578,15 @@
       "caption_ru": "Рисунок 34 — Монтаж ВЧ ёмкостного адмиттансного преобразователя уровня или уровнемера GWR",
       "api_page": "130",
       "pdf_page": "138",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=138"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=138",
+      "folder": "workspace/figures/034",
+      "source_package": "API551_FIGURE_034_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/034/figure_034.object.html",
+      "json": "workspace/figures/034/figure_034.object.json",
+      "png": "workspace/figures/034/figure_034.png",
+      "source_crop": "workspace/figures/034/figure_034.source_crop.png",
+      "out_html": "workspace/figures/034/figure_034.out.html"
     },
     {
       "figure_no": 35,
@@ -553,8 +595,15 @@
       "caption_ru": "Рисунок 35 — Критические размеры для установки уровнемера GWR",
       "api_page": "137",
       "pdf_page": "145",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=145"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=145",
+      "folder": "workspace/figures/035",
+      "source_package": "API551_FIGURE_035_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/035/figure_035.object.html",
+      "json": "workspace/figures/035/figure_035.object.json",
+      "png": "workspace/figures/035/figure_035.png",
+      "source_crop": "workspace/figures/035/figure_035.source_crop.png",
+      "out_html": "workspace/figures/035/figure_035.out.html"
     },
     {
       "figure_no": 36,
@@ -563,8 +612,15 @@
       "caption_ru": "Рисунок 36 — Типовой экран настройки уровнемера по времени прохождения сигнала",
       "api_page": "138",
       "pdf_page": "146",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=146"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=146",
+      "folder": "workspace/figures/036",
+      "source_package": "API551_FIGURE_036_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/036/figure_036.object.html",
+      "json": "workspace/figures/036/figure_036.object.json",
+      "png": "workspace/figures/036/figure_036.png",
+      "source_crop": "workspace/figures/036/figure_036.source_crop.png",
+      "out_html": "workspace/figures/036/figure_036.out.html"
     },
     {
       "figure_no": 37,
@@ -590,8 +646,15 @@
       "caption_ru": "Рисунок 38 — Типовой указательный клапан с болтовой крышкой",
       "api_page": "150",
       "pdf_page": "158",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=158"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=158",
+      "folder": "workspace/figures/038",
+      "source_package": "API551_FIGURE_038_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/038/figure_038.object.html",
+      "json": "workspace/figures/038/figure_038.object.json",
+      "png": "workspace/figures/038/figure_038.png",
+      "source_crop": "workspace/figures/038/figure_038.source_crop.png",
+      "out_html": "workspace/figures/038/figure_038.out.html"
     },
     {
       "figure_no": 39,
@@ -600,8 +663,15 @@
       "caption_ru": "Рисунок 39 — Измерительные отборы для измерения границы раздела фаз и уровня",
       "api_page": "153",
       "pdf_page": "161",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=161"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=161",
+      "folder": "workspace/figures/039",
+      "source_package": "API551_FIGURE_039_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/039/figure_039.object.html",
+      "json": "workspace/figures/039/figure_039.object.json",
+      "png": "workspace/figures/039/figure_039.png",
+      "source_crop": "workspace/figures/039/figure_039.source_crop.png",
+      "out_html": "workspace/figures/039/figure_039.out.html"
     },
     {
       "figure_no": 40,

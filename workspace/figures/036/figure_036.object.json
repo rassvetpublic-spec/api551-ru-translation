@@ -1,0 +1,166 @@
+{
+  "figure_no": 36,
+  "figure_id": "Figure 36",
+  "revision": "R01",
+  "api_page": null,
+  "pdf_page": 146,
+  "caption_ru": "Рисунок 36 — Типовой экран настройки уровнемера по времени прохождения сигнала",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-13",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=146",
+  "source_policy": "original PDF and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_036.source_crop.png",
+  "review_png": "figure_036.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "31bb0158ad4d2fed245fbf9f6cfcee59ea1a66b5d9fb5745c7afec9016ad6721",
+  "review_png_sha256": "08fa203bc496c9601b7587be2ee82cfb2d562193f163b98726654a9099d9149a",
+  "qa": {
+    "rule_ack": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_policy": "leader lines, dimensions, contours, tables and graph data preserved",
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-13",
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-13",
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain the approved orientation and placement logic without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "Amplitude, mV",
+      "approved_ru": "Амплитуда, мВ",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        126,
+        33,
+        246,
+        54
+      ],
+      "placement_bbox": [
+        110,
+        20,
+        280,
+        68
+      ],
+      "text_bbox": [
+        142,
+        36,
+        247,
+        51
+      ],
+      "font_px": 15,
+      "lines": [
+        "Амплитуда, мВ"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-003",
+      "original": "P1 Surface",
+      "approved_ru": "P1 Поверхность",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        477,
+        198,
+        569,
+        218
+      ],
+      "placement_bbox": [
+        450,
+        182,
+        610,
+        234
+      ],
+      "text_bbox": [
+        477,
+        200,
+        582,
+        214
+      ],
+      "font_px": 14,
+      "lines": [
+        "P1 Поверхность"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-004",
+      "original": "P2 Probe end",
+      "approved_ru": "P2 Конец зонда",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        736,
+        764,
+        849,
+        785
+      ],
+      "placement_bbox": [
+        700,
+        744,
+        890,
+        800
+      ],
+      "text_bbox": [
+        744,
+        764,
+        846,
+        778
+      ],
+      "font_px": 14,
+      "lines": [
+        "P2 Конец зонда"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-005",
+      "original": "P3 Reference",
+      "approved_ru": "P3 Опорный сигнал",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        228,
+        627,
+        341,
+        648
+      ],
+      "placement_bbox": [
+        196,
+        610,
+        380,
+        666
+      ],
+      "text_bbox": [
+        224,
+        630,
+        352,
+        644
+      ],
+      "font_px": 14,
+      "lines": [
+        "P3 Опорный сигнал"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    }
+  ],
+  "special_structure": {
+    "table_reconstructed_in_html": true
+  },
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_036_ACCEPTED_R01_20260713"
+}
