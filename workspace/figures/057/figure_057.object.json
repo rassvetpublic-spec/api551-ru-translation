@@ -1,0 +1,321 @@
+{
+  "figure_no": 57,
+  "figure_id": "Figure 57",
+  "revision": "R02",
+  "api_page": 185,
+  "pdf_page": 193,
+  "caption_original": "Figure 57—Instrument Line Mounts",
+  "caption_ru": "Рисунок 57 — Опоры приборных линий",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-14",
+  "ready_for_final_export": true,
+  "working_branch_source": "candidates",
+  "working_branch_source_sha": "71f518b9b14093470f75cc95af2f7ed01e57d7d6",
+  "production_source": "source/API 551 2016 (R2024).pdf#page=193",
+  "production_source_sha256": "d458b3a899902f216767e753aa5737a9745b61adcab02f85c9521937a9d3e270",
+  "source_policy": "original PDF + approved label master + CURRENT rules; OCR not used as source truth",
+  "source_crop": "figure_057.source_crop.png",
+  "review_png": "figure_057.png",
+  "caption_inside_png": false,
+  "source_crop_pdf_rect_points": [
+    40,
+    80,
+    572,
+    235
+  ],
+  "render_scale": 2.0,
+  "source_crop_sha256": "7a224dcbe4036e084e906c4a59bbae545c7215856368d131f187fccf0cb3c82d",
+  "review_png_sha256": "d0d53d10cfedddd637d93cffc4d126b34c10c91337a46a22bb0076560ed2bc9e",
+  "qa": {
+    "source_gate": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "no_image_generation": true,
+    "no_generative_editing": true,
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-14",
+    "special_structure": "standard",
+    "notes": [
+      "Generated in one batch from the verified PDF.",
+      "Visual layout and translations explicitly accepted by the user on 2026-07-14.",
+      "Catalog/index/handoff integration is performed only by the repo-local accept-figure command."
+    ],
+    "user_visual_approval": "PASS_2026-07-14"
+  },
+  "visual_label_blocks": [
+    {
+      "cleanup_bbox": [
+        79,
+        68,
+        161,
+        104
+      ],
+      "placement_bbox": [
+        75,
+        64,
+        190,
+        108
+      ],
+      "text_lines": [
+        "Кабель и крепёж"
+      ],
+      "font_px": 13,
+      "block_id": "cable1",
+      "ru": "Кабель и крепёж",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        83,
+        210,
+        145,
+        246
+      ],
+      "placement_bbox": [
+        79,
+        206,
+        189,
+        250
+      ],
+      "text_lines": [
+        "Первичная",
+        "опора"
+      ],
+      "font_px": 13,
+      "block_id": "primary1",
+      "ru": "Первичная опора",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        229,
+        108,
+        315,
+        144
+      ],
+      "placement_bbox": [
+        225,
+        104,
+        345,
+        148
+      ],
+      "text_lines": [
+        "Вторичные опоры"
+      ],
+      "font_px": 13,
+      "block_id": "secondary1",
+      "ru": "Вторичные опоры",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        334,
+        44,
+        396,
+        80
+      ],
+      "placement_bbox": [
+        330,
+        40,
+        440,
+        84
+      ],
+      "text_lines": [
+        "Первичная",
+        "опора"
+      ],
+      "font_px": 13,
+      "block_id": "primary2",
+      "ru": "Первичная опора",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        499,
+        50,
+        585,
+        86
+      ],
+      "placement_bbox": [
+        469,
+        46,
+        589,
+        90
+      ],
+      "text_lines": [
+        "Вторичные опоры"
+      ],
+      "font_px": 13,
+      "block_id": "secondary2",
+      "ru": "Вторичные опоры",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        316,
+        240,
+        398,
+        276
+      ],
+      "placement_bbox": [
+        312,
+        236,
+        427,
+        280
+      ],
+      "text_lines": [
+        "Кабель и крепёж"
+      ],
+      "font_px": 13,
+      "block_id": "cable2",
+      "ru": "Кабель и крепёж",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        410,
+        274,
+        491,
+        292
+      ],
+      "placement_bbox": [
+        406,
+        270,
+        506,
+        296
+      ],
+      "text_lines": [
+        "Выше отбора"
+      ],
+      "font_px": 13,
+      "block_id": "above",
+      "ru": "Выше отбора",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        577,
+        225,
+        659,
+        261
+      ],
+      "placement_bbox": [
+        548,
+        221,
+        663,
+        265
+      ],
+      "text_lines": [
+        "Кабель и крепёж"
+      ],
+      "font_px": 13,
+      "block_id": "cable3",
+      "ru": "Кабель и крепёж",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        594,
+        274,
+        673,
+        292
+      ],
+      "placement_bbox": [
+        577,
+        270,
+        677,
+        296
+      ],
+      "text_lines": [
+        "Ниже отбора"
+      ],
+      "font_px": 13,
+      "block_id": "below",
+      "ru": "Ниже отбора",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        786,
+        222,
+        869,
+        258
+      ],
+      "placement_bbox": [
+        758,
+        218,
+        873,
+        262
+      ],
+      "text_lines": [
+        "Кабель и крепёж"
+      ],
+      "font_px": 13,
+      "block_id": "cable4",
+      "ru": "Кабель и крепёж",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        890,
+        246,
+        952,
+        282
+      ],
+      "placement_bbox": [
+        846,
+        242,
+        956,
+        286
+      ],
+      "text_lines": [
+        "Первичная",
+        "опора"
+      ],
+      "font_px": 13,
+      "block_id": "primary3",
+      "ru": "Первичная опора",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        898,
+        60,
+        984,
+        96
+      ],
+      "placement_bbox": [
+        873,
+        56,
+        988,
+        100
+      ],
+      "text_lines": [
+        "Вторичная опора"
+      ],
+      "font_px": 13,
+      "block_id": "secondary3",
+      "ru": "Вторичная опора",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    }
+  ],
+  "notes_ru": [],
+  "package_format": "canonical_figure_object_6_files",
+  "catalog_state": "accepted_by_user; pending candidates integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_057_ACCEPTED_R02_20260714",
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration"
+}

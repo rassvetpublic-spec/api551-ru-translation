@@ -1,7 +1,7 @@
 {
   "project": "API 551 RU Translation / Stage 4 Figure Objects",
   "language": "ru",
-  "updated": "2026-07-13",
+  "updated": "2026-07-14",
   "status": "current_stage4_handoff_for_new_chat_bootstrap",
   "repo": "rassvetpublic-spec/api551-ru-translation",
   "stable_branch": "main",
@@ -11,9 +11,9 @@
   ],
   "current_stage": "Stage 4 Figure Objects",
   "figures_total": 69,
-  "figures_accepted": 57,
+  "figures_accepted": 69,
   "figures_changed": 0,
-  "figures_not_accepted": 12,
+  "figures_not_accepted": 0,
   "accepted_figures": [
     1,
     2,
@@ -70,8 +70,20 @@
     53,
     54,
     55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
     62,
-    66
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69
   ],
   "latest_merged_prs": [
     {

@@ -1,0 +1,665 @@
+{
+  "figure_no": 67,
+  "figure_id": "Figure 67",
+  "revision": "R02",
+  "api_page": 210,
+  "pdf_page": 218,
+  "caption_original": "Figure 67—Purge Installations",
+  "caption_ru": "Рисунок 67 — Установки продувки",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-14",
+  "ready_for_final_export": true,
+  "working_branch_source": "candidates",
+  "working_branch_source_sha": "71f518b9b14093470f75cc95af2f7ed01e57d7d6",
+  "production_source": "source/API 551 2016 (R2024).pdf#page=218",
+  "production_source_sha256": "d458b3a899902f216767e753aa5737a9745b61adcab02f85c9521937a9d3e270",
+  "source_policy": "original PDF + approved label master + CURRENT rules; OCR not used as source truth",
+  "source_crop": "figure_067.source_crop.png",
+  "review_png": "figure_067.png",
+  "caption_inside_png": false,
+  "source_crop_pdf_rect_points": [
+    60,
+    80,
+    550,
+    580
+  ],
+  "render_scale": 2.0,
+  "source_crop_sha256": "f67b23707945cf49319cf2fbdadc56e60532c20888508b6ada924474d7a77da0",
+  "review_png_sha256": "b41c2a6279f84dfd16e99697de2c2919ae3ebba9e9572f45bf1379eed3b6ff6e",
+  "qa": {
+    "source_gate": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "no_image_generation": true,
+    "no_generative_editing": true,
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-14",
+    "special_structure": "notes_in_html",
+    "notes": [
+      "Generated in one batch from the verified PDF.",
+      "Visual layout and translations explicitly accepted by the user on 2026-07-14.",
+      "Catalog/index/handoff integration is performed only by the repo-local accept-figure command."
+    ],
+    "user_visual_approval": "PASS_2026-07-14"
+  },
+  "visual_label_blocks": [
+    {
+      "cleanup_bbox": [
+        389,
+        42,
+        610,
+        80
+      ],
+      "placement_bbox": [
+        404,
+        38,
+        614,
+        84
+      ],
+      "text_lines": [
+        "Расположение прибора при ρ",
+        "процесса > ρ продувки"
+      ],
+      "font_px": 12,
+      "block_id": "place1",
+      "ru": "Расположение прибора при ρ процесса > ρ продувки",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        180,
+        61,
+        258,
+        99
+      ],
+      "placement_bbox": [
+        176,
+        57,
+        306,
+        103
+      ],
+      "text_lines": [
+        "Коренной клапан",
+        "процесса"
+      ],
+      "font_px": 12,
+      "block_id": "root",
+      "ru": "Коренной клапан процесса",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        626,
+        81,
+        724,
+        99
+      ],
+      "placement_bbox": [
+        618,
+        77,
+        728,
+        103
+      ],
+      "text_lines": [
+        "Обратный клапан"
+      ],
+      "font_px": 12,
+      "block_id": "check",
+      "ru": "Обратный клапан",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        782,
+        80,
+        884,
+        118
+      ],
+      "placement_bbox": [
+        753,
+        76,
+        888,
+        122
+      ],
+      "text_lines": [
+        "Байпас/промывка",
+        "(опция)"
+      ],
+      "font_px": 12,
+      "block_id": "bypass",
+      "ru": "Байпас/промывка (опция)",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        284,
+        184,
+        506,
+        222
+      ],
+      "placement_bbox": [
+        280,
+        180,
+        490,
+        226
+      ],
+      "text_lines": [
+        "Расположение прибора при ρ",
+        "продувки > ρ процесса"
+      ],
+      "font_px": 12,
+      "block_id": "place2",
+      "ru": "Расположение прибора при ρ продувки > ρ процесса",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        176,
+        220,
+        231,
+        238
+      ],
+      "placement_bbox": [
+        172,
+        216,
+        242,
+        242
+      ],
+      "text_lines": [
+        "Тип A"
+      ],
+      "font_px": 12,
+      "block_id": "typeA",
+      "ru": "Тип A",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        690,
+        220,
+        746,
+        238
+      ],
+      "placement_bbox": [
+        680,
+        216,
+        750,
+        242
+      ],
+      "text_lines": [
+        "Тип B"
+      ],
+      "font_px": 12,
+      "block_id": "typeB",
+      "ru": "Тип B",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        348,
+        239,
+        552,
+        277
+      ],
+      "placement_bbox": [
+        344,
+        235,
+        514,
+        281
+      ],
+      "text_lines": [
+        "Регулятор перепада",
+        "давления (опция)"
+      ],
+      "font_px": 12,
+      "block_id": "reg1",
+      "ru": "Регулятор перепада давления (опция)",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        348,
+        303,
+        545,
+        321
+      ],
+      "placement_bbox": [
+        344,
+        294,
+        514,
+        330
+      ],
+      "text_lines": [
+        "Многооборотный",
+        "регулирующий клапан"
+      ],
+      "font_px": 12,
+      "block_id": "metering",
+      "ru": "Многооборотный регулирующий клапан",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        349,
+        380,
+        518,
+        418
+      ],
+      "placement_bbox": [
+        345,
+        376,
+        500,
+        422
+      ],
+      "text_lines": [
+        "Ротаметр с магнитной",
+        "связью"
+      ],
+      "font_px": 12,
+      "block_id": "rotameter",
+      "ru": "Ротаметр с магнитной связью",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        398,
+        475,
+        559,
+        513
+      ],
+      "placement_bbox": [
+        394,
+        471,
+        554,
+        517
+      ],
+      "text_lines": [
+        "Регулятор перепада",
+        "давления (опция)"
+      ],
+      "font_px": 12,
+      "block_id": "reg2",
+      "ru": "Регулятор перепада давления (опция)",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        415,
+        560,
+        597,
+        578
+      ],
+      "placement_bbox": [
+        466,
+        551,
+        601,
+        587
+      ],
+      "text_lines": [
+        "Сетчатый фильтр",
+        "(опция)"
+      ],
+      "font_px": 12,
+      "block_id": "filter",
+      "ru": "Сетчатый фильтр (опция)",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        203,
+        649,
+        402,
+        667
+      ],
+      "placement_bbox": [
+        199,
+        640,
+        359,
+        676
+      ],
+      "text_lines": [
+        "Запорный клапан подачи",
+        "продувки"
+      ],
+      "font_px": 12,
+      "block_id": "supply",
+      "ru": "Запорный клапан подачи продувки",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        500,
+        650,
+        855,
+        668
+      ],
+      "placement_bbox": [
+        639,
+        641,
+        859,
+        677
+      ],
+      "text_lines": [
+        "К устройствам регулирования",
+        "продувки (при необходимости)"
+      ],
+      "font_px": 12,
+      "block_id": "related",
+      "ru": "К устройствам регулирования продувки (при необходимости)",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        223,
+        676,
+        280,
+        694
+      ],
+      "placement_bbox": [
+        219,
+        672,
+        289,
+        698
+      ],
+      "text_lines": [
+        "Тип C"
+      ],
+      "font_px": 12,
+      "block_id": "C",
+      "ru": "Тип C",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        391,
+        676,
+        448,
+        694
+      ],
+      "placement_bbox": [
+        387,
+        672,
+        457,
+        698
+      ],
+      "text_lines": [
+        "Тип D"
+      ],
+      "font_px": 12,
+      "block_id": "D",
+      "ru": "Тип D",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        551,
+        676,
+        607,
+        694
+      ],
+      "placement_bbox": [
+        541,
+        672,
+        611,
+        698
+      ],
+      "text_lines": [
+        "Тип E"
+      ],
+      "font_px": 12,
+      "block_id": "E",
+      "ru": "Тип E",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        711,
+        676,
+        766,
+        694
+      ],
+      "placement_bbox": [
+        700,
+        672,
+        770,
+        698
+      ],
+      "text_lines": [
+        "Тип F"
+      ],
+      "font_px": 12,
+      "block_id": "F",
+      "ru": "Тип F",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        237,
+        847,
+        283,
+        865
+      ],
+      "placement_bbox": [
+        233,
+        843,
+        303,
+        869
+      ],
+      "text_lines": [
+        "Тип"
+      ],
+      "font_px": 11,
+      "block_id": "th1",
+      "ru": "Тип",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        515,
+        847,
+        614,
+        865
+      ],
+      "placement_bbox": [
+        518,
+        843,
+        618,
+        869
+      ],
+      "text_lines": [
+        "Описание"
+      ],
+      "font_px": 11,
+      "block_id": "th2",
+      "ru": "Описание",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        351,
+        869,
+        730,
+        887
+      ],
+      "placement_bbox": [
+        484,
+        862,
+        734,
+        894
+      ],
+      "text_lines": [
+        "Расходомер продувки с постоянным",
+        "давлением на входе"
+      ],
+      "font_px": 11,
+      "block_id": "Arow",
+      "ru": "Расходомер продувки с постоянным давлением на входе",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        351,
+        891,
+        738,
+        909
+      ],
+      "placement_bbox": [
+        492,
+        884,
+        742,
+        916
+      ],
+      "text_lines": [
+        "Расходомер продувки с постоянным",
+        "давлением на выходе"
+      ],
+      "font_px": 11,
+      "block_id": "Brow",
+      "ru": "Расходомер продувки с постоянным давлением на выходе",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        351,
+        913,
+        489,
+        931
+      ],
+      "placement_bbox": [
+        347,
+        906,
+        497,
+        938
+      ],
+      "text_lines": [
+        "Ограничительная",
+        "диафрагма"
+      ],
+      "font_px": 11,
+      "block_id": "Crow",
+      "ru": "Ограничительная диафрагма",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        351,
+        935,
+        496,
+        953
+      ],
+      "placement_bbox": [
+        347,
+        931,
+        492,
+        957
+      ],
+      "text_lines": [
+        "Капиллярный дроссель"
+      ],
+      "font_px": 11,
+      "block_id": "Drow",
+      "ru": "Капиллярный дроссель",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        351,
+        957,
+        542,
+        975
+      ],
+      "placement_bbox": [
+        347,
+        953,
+        527,
+        979
+      ],
+      "text_lines": [
+        "Дроссель из спечённого металла"
+      ],
+      "font_px": 11,
+      "block_id": "Erow",
+      "ru": "Дроссель из спечённого металла",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        351,
+        979,
+        442,
+        997
+      ],
+      "placement_bbox": [
+        347,
+        972,
+        477,
+        998
+      ],
+      "text_lines": [
+        "Сверлёная задвижка"
+      ],
+      "font_px": 11,
+      "block_id": "Frow",
+      "ru": "Сверлёная задвижка",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    }
+  ],
+  "notes_ru": [
+    {
+      "label": "ПРИМЕЧАНИЕ 1",
+      "text": "Сетчатые фильтры рекомендуются для капилляров, дросселей из спечённого металла и ограничительных диафрагм диаметром менее 3 мм (1/8″)."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 2",
+      "text": "Регуляторы перепада давления рекомендуются, если давление подачи продувки или процесса изменяет расход продувки более чем на ±10 %."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 3",
+      "text": "Сверлёные задвижки-дроссели не требуют байпасного/промывочного клапана."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 4",
+      "text": "Обратный клапан и трубопровод после него должны соответствовать условиям процесса."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 5",
+      "text": "Трубопровод подачи продувки может быть общим с соответствующими сервисами, например со вторым отбором преобразователя уровня или расхода."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 6",
+      "text": "Байпасные/промывочные линии рекомендуются для типов C–E, чтобы систему можно было проверить на закупоривание с помощью манометра."
+    }
+  ],
+  "package_format": "canonical_figure_object_6_files",
+  "catalog_state": "accepted_by_user; pending candidates integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_067_ACCEPTED_R02_20260714",
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration"
+}

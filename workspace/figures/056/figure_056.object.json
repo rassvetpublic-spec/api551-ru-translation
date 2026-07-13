@@ -1,0 +1,165 @@
+{
+  "figure_no": 56,
+  "figure_id": "Figure 56",
+  "revision": "R02",
+  "api_page": 184,
+  "pdf_page": 192,
+  "caption_original": "Figure 56—Reducing Flushing Ring",
+  "caption_ru": "Рисунок 56 — Переходное промывочное кольцо",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-14",
+  "ready_for_final_export": true,
+  "working_branch_source": "candidates",
+  "working_branch_source_sha": "71f518b9b14093470f75cc95af2f7ed01e57d7d6",
+  "production_source": "source/API 551 2016 (R2024).pdf#page=192",
+  "production_source_sha256": "d458b3a899902f216767e753aa5737a9745b61adcab02f85c9521937a9d3e270",
+  "source_policy": "original PDF + approved label master + CURRENT rules; OCR not used as source truth",
+  "source_crop": "figure_056.source_crop.png",
+  "review_png": "figure_056.png",
+  "caption_inside_png": false,
+  "source_crop_pdf_rect_points": [
+    40,
+    80,
+    572,
+    340
+  ],
+  "render_scale": 2.0,
+  "source_crop_sha256": "362ba5a412b39db7ac672b3b1fa57cb3576fab7ee9d442d9b8fb3fc05433e4f6",
+  "review_png_sha256": "fade0d6cbc0324227a8eab086ccb60db607382d27837fc1d4c1e83079a0c07f4",
+  "qa": {
+    "source_gate": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "no_image_generation": true,
+    "no_generative_editing": true,
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-14",
+    "special_structure": "standard",
+    "notes": [
+      "Generated in one batch from the verified PDF.",
+      "Visual layout and translations explicitly accepted by the user on 2026-07-14.",
+      "Catalog/index/handoff integration is performed only by the repo-local accept-figure command."
+    ],
+    "user_visual_approval": "PASS_2026-07-14"
+  },
+  "visual_label_blocks": [
+    {
+      "cleanup_bbox": [
+        154,
+        92,
+        250,
+        113
+      ],
+      "placement_bbox": [
+        150,
+        82,
+        300,
+        122
+      ],
+      "text_lines": [
+        "Сверлить и нарезать",
+        "резьбу"
+      ],
+      "font_px": 14,
+      "block_id": "candidate-0005",
+      "ru": "Сверлить и нарезать резьбу",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        506,
+        94,
+        609,
+        113
+      ],
+      "placement_bbox": [
+        493,
+        90,
+        613,
+        117
+      ],
+      "text_lines": [
+        "Диаметр «D»"
+      ],
+      "font_px": 14,
+      "block_id": "candidate-0006",
+      "ru": "Диаметр «D»",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        523,
+        431,
+        625,
+        449
+      ],
+      "placement_bbox": [
+        509,
+        427,
+        629,
+        453
+      ],
+      "text_lines": [
+        "Диаметр «A»"
+      ],
+      "font_px": 14,
+      "block_id": "candidate-0013",
+      "ru": "Диаметр «A»",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        828,
+        459,
+        911,
+        496
+      ],
+      "placement_bbox": [
+        765,
+        455,
+        915,
+        500
+      ],
+      "text_lines": [
+        "Типовой диаметр 5/8″"
+      ],
+      "font_px": 13,
+      "block_id": "block-002",
+      "ru": "Типовой диаметр 5/8″",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        739,
+        502,
+        833,
+        520
+      ],
+      "placement_bbox": [
+        717,
+        492,
+        837,
+        518
+      ],
+      "text_lines": [
+        "Разрез A–A"
+      ],
+      "font_px": 13,
+      "block_id": "section",
+      "ru": "Разрез A–A",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    }
+  ],
+  "notes_ru": [],
+  "package_format": "canonical_figure_object_6_files",
+  "catalog_state": "accepted_by_user; pending candidates integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_056_ACCEPTED_R02_20260714",
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration"
+}

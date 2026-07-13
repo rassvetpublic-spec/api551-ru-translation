@@ -1,0 +1,287 @@
+{
+  "figure_no": 63,
+  "figure_id": "Figure 63",
+  "revision": "R02",
+  "api_page": 202,
+  "pdf_page": 210,
+  "caption_original": "Figure 63—Level Transmitter with Capillaries",
+  "caption_ru": "Рисунок 63 — Преобразователь уровня с капиллярами",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-14",
+  "ready_for_final_export": true,
+  "working_branch_source": "candidates",
+  "working_branch_source_sha": "71f518b9b14093470f75cc95af2f7ed01e57d7d6",
+  "production_source": "source/API 551 2016 (R2024).pdf#page=210",
+  "production_source_sha256": "d458b3a899902f216767e753aa5737a9745b61adcab02f85c9521937a9d3e270",
+  "source_policy": "original PDF + approved label master + CURRENT rules; OCR not used as source truth",
+  "source_crop": "figure_063.source_crop.png",
+  "review_png": "figure_063.png",
+  "caption_inside_png": false,
+  "source_crop_pdf_rect_points": [
+    40,
+    80,
+    572,
+    518
+  ],
+  "render_scale": 2.0,
+  "source_crop_sha256": "ece4665f3e59dca7ae979f3264ce367cf318dd70934ca38eedf7c6b54a046174",
+  "review_png_sha256": "26edf7246764ab42501fe78bd1499f4fccb0d43a38d4b0e3dd159d2e2c0b50d1",
+  "qa": {
+    "source_gate": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "no_image_generation": true,
+    "no_generative_editing": true,
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-14",
+    "special_structure": "standard",
+    "notes": [
+      "Generated in one batch from the verified PDF.",
+      "Visual layout and translations explicitly accepted by the user on 2026-07-14.",
+      "Catalog/index/handoff integration is performed only by the repo-local accept-figure command."
+    ],
+    "user_visual_approval": "PASS_2026-07-14"
+  },
+  "visual_label_blocks": [
+    {
+      "cleanup_bbox": [
+        270,
+        113,
+        425,
+        191
+      ],
+      "placement_bbox": [
+        266,
+        109,
+        466,
+        195
+      ],
+      "text_lines": [
+        "Вентиляционный клапан",
+        "вместе с дренажным",
+        "обеспечивает промывку"
+      ],
+      "font_px": 13,
+      "block_id": "vent",
+      "ru": "Вентиляционный клапан вместе с дренажным обеспечивает промывку",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        649,
+        154,
+        730,
+        172
+      ],
+      "placement_bbox": [
+        624,
+        144,
+        734,
+        182
+      ],
+      "text_lines": [
+        "Сбросное",
+        "кольцо"
+      ],
+      "font_px": 13,
+      "block_id": "bleed",
+      "ru": "Сбросное кольцо",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        649,
+        204,
+        814,
+        242
+      ],
+      "placement_bbox": [
+        608,
+        200,
+        818,
+        246
+      ],
+      "text_lines": [
+        "Плоский межфланцевый",
+        "диафрагменный разделитель"
+      ],
+      "font_px": 13,
+      "block_id": "seal",
+      "ru": "Плоский межфланцевый диафрагменный разделитель",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        649,
+        258,
+        758,
+        296
+      ],
+      "placement_bbox": [
+        622,
+        254,
+        762,
+        300
+      ],
+      "text_lines": [
+        "Ответный фланец",
+        "ANSI"
+      ],
+      "font_px": 13,
+      "block_id": "flange",
+      "ru": "Ответный фланец ANSI",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        596,
+        410,
+        697,
+        448
+      ],
+      "placement_bbox": [
+        556,
+        406,
+        701,
+        452
+      ],
+      "text_lines": [
+        "Встроенная опорная",
+        "трубка"
+      ],
+      "font_px": 13,
+      "block_id": "support",
+      "ru": "Встроенная опорная трубка",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        319,
+        499,
+        491,
+        557
+      ],
+      "placement_bbox": [
+        315,
+        495,
+        495,
+        561
+      ],
+      "text_lines": [
+        "Минимальный радиус",
+        "изгиба 100–150 мм"
+      ],
+      "font_px": 13,
+      "block_id": "radius",
+      "ru": "Минимальный радиус изгиба 100–150 мм",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        590,
+        573,
+        750,
+        631
+      ],
+      "placement_bbox": [
+        544,
+        569,
+        754,
+        635
+      ],
+      "text_lines": [
+        "Для уменьшения температурных",
+        "перепадов капилляры",
+        "прокладывать совместно"
+      ],
+      "font_px": 13,
+      "block_id": "route",
+      "ru": "Для уменьшения температурных перепадов капилляры прокладывать совместно",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        265,
+        768,
+        355,
+        786
+      ],
+      "placement_bbox": [
+        261,
+        758,
+        381,
+        796
+      ],
+      "text_lines": [
+        "Дренажный",
+        "клапан"
+      ],
+      "font_px": 13,
+      "block_id": "drain",
+      "ru": "Дренажный клапан",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        823,
+        787,
+        950,
+        825
+      ],
+      "placement_bbox": [
+        784,
+        781,
+        954,
+        831
+      ],
+      "text_lines": [
+        "Свернуть в бухту и защитить",
+        "избыточную длину",
+        "капилляра"
+      ],
+      "font_px": 12,
+      "block_id": "coil",
+      "ru": "Свернуть в бухту и защитить избыточную длину капилляра",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        697,
+        836,
+        831,
+        874
+      ],
+      "placement_bbox": [
+        685,
+        828,
+        835,
+        874
+      ],
+      "text_lines": [
+        "Закрепить капилляр по",
+        "всей длине"
+      ],
+      "font_px": 12,
+      "block_id": "length",
+      "ru": "Закрепить капилляр по всей длине",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    }
+  ],
+  "notes_ru": [],
+  "package_format": "canonical_figure_object_6_files",
+  "catalog_state": "accepted_by_user; pending candidates integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_063_ACCEPTED_R02_20260714",
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration"
+}

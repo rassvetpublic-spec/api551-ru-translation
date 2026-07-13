@@ -1,0 +1,688 @@
+{
+  "figure_no": 58,
+  "figure_id": "Figure 58",
+  "revision": "R02",
+  "api_page": 188,
+  "pdf_page": 196,
+  "caption_original": "Figure 58—Close Coupled Flow Metering Installation Details",
+  "caption_ru": "Рисунок 58 — Детали компактной установки измерения расхода",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-14",
+  "ready_for_final_export": true,
+  "working_branch_source": "candidates",
+  "working_branch_source_sha": "71f518b9b14093470f75cc95af2f7ed01e57d7d6",
+  "production_source": "source/API 551 2016 (R2024).pdf#page=196",
+  "production_source_sha256": "d458b3a899902f216767e753aa5737a9745b61adcab02f85c9521937a9d3e270",
+  "source_policy": "original PDF + approved label master + CURRENT rules; OCR not used as source truth",
+  "source_crop": "figure_058.source_crop.png",
+  "review_png": "figure_058.png",
+  "caption_inside_png": false,
+  "source_crop_pdf_rect_points": [
+    40,
+    80,
+    572,
+    555
+  ],
+  "render_scale": 2.0,
+  "source_crop_sha256": "abddead6e60923690cc828bd4af6972a297bfcfe22182235c1475626eff109ce",
+  "review_png_sha256": "31e6bc01ca61d53792d5e94f705aaf8c71920738c4e5e9a27254fb40ee4d9f1a",
+  "qa": {
+    "source_gate": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "no_image_generation": true,
+    "no_generative_editing": true,
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-14",
+    "special_structure": "figure58_four_cell_table",
+    "notes": [
+      "Generated in one batch from the verified PDF.",
+      "Visual layout and translations explicitly accepted by the user on 2026-07-14.",
+      "Catalog/index/handoff integration is performed only by the repo-local accept-figure command."
+    ],
+    "user_visual_approval": "PASS_2026-07-14"
+  },
+  "visual_label_blocks": [
+    {
+      "cleanup_bbox": [
+        158,
+        38,
+        418,
+        56
+      ],
+      "placement_bbox": [
+        154,
+        27,
+        419,
+        67
+      ],
+      "text_lines": [
+        "Жидкая среда: расходомер ниже",
+        "отборов"
+      ],
+      "font_px": 14,
+      "block_id": "head1",
+      "ru": "Жидкая среда: расходомер ниже отборов",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        642,
+        39,
+        889,
+        57
+      ],
+      "placement_bbox": [
+        648,
+        28,
+        893,
+        68
+      ],
+      "text_lines": [
+        "Газовая среда: расходомер выше",
+        "отборов"
+      ],
+      "font_px": 14,
+      "block_id": "head2",
+      "ru": "Газовая среда: расходомер выше отборов",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        141,
+        484,
+        405,
+        524
+      ],
+      "placement_bbox": [
+        137,
+        480,
+        407,
+        528
+      ],
+      "text_lines": [
+        "Паровая среда: расходомер ниже",
+        "отборов (с продувкой)"
+      ],
+      "font_px": 14,
+      "block_id": "head3",
+      "ru": "Паровая среда: расходомер ниже отборов (с продувкой)",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        591,
+        484,
+        929,
+        524
+      ],
+      "placement_bbox": [
+        623,
+        480,
+        933,
+        528
+      ],
+      "text_lines": [
+        "Паровая или газообразная среда: расходомер",
+        "ниже отборов (с заполняющими тройниками)"
+      ],
+      "font_px": 13,
+      "block_id": "head4",
+      "ru": "Паровая или газообразная среда: расходомер ниже отборов (с заполняющими тройниками)",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        125,
+        128,
+        196,
+        165
+      ],
+      "placement_bbox": [
+        121,
+        124,
+        246,
+        169
+      ],
+      "text_lines": [
+        "Направление потока"
+      ],
+      "font_px": 12,
+      "block_id": "dir1",
+      "ru": "Направление потока",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        634,
+        149,
+        705,
+        187
+      ],
+      "placement_bbox": [
+        584,
+        145,
+        709,
+        191
+      ],
+      "text_lines": [
+        "Направление потока"
+      ],
+      "font_px": 12,
+      "block_id": "dir2",
+      "ru": "Направление потока",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        141,
+        551,
+        212,
+        588
+      ],
+      "placement_bbox": [
+        137,
+        547,
+        262,
+        592
+      ],
+      "text_lines": [
+        "Направление потока"
+      ],
+      "font_px": 12,
+      "block_id": "dir3",
+      "ru": "Направление потока",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        616,
+        547,
+        687,
+        585
+      ],
+      "placement_bbox": [
+        566,
+        543,
+        691,
+        589
+      ],
+      "text_lines": [
+        "Направление потока"
+      ],
+      "font_px": 12,
+      "block_id": "dir4",
+      "ru": "Направление потока",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        126,
+        641,
+        179,
+        659
+      ],
+      "placement_bbox": [
+        122,
+        632,
+        252,
+        668
+      ],
+      "text_lines": [
+        "Заполняющий",
+        "тройник"
+      ],
+      "font_px": 12,
+      "block_id": "fill1",
+      "ru": "Заполняющий тройник",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        623,
+        635,
+        676,
+        653
+      ],
+      "placement_bbox": [
+        550,
+        626,
+        680,
+        662
+      ],
+      "text_lines": [
+        "Заполняющий",
+        "тройник"
+      ],
+      "font_px": 12,
+      "block_id": "fill2",
+      "ru": "Заполняющий тройник",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        279,
+        75,
+        357,
+        93
+      ],
+      "placement_bbox": [
+        275,
+        71,
+        385,
+        97
+      ],
+      "text_lines": [
+        "Выше по потоку"
+      ],
+      "font_px": 12,
+      "block_id": "up1",
+      "ru": "Выше по потоку",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        355,
+        107,
+        456,
+        125
+      ],
+      "placement_bbox": [
+        351,
+        103,
+        461,
+        129
+      ],
+      "text_lines": [
+        "Ниже по потоку"
+      ],
+      "font_px": 12,
+      "block_id": "down1",
+      "ru": "Ниже по потоку",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        830,
+        90,
+        931,
+        108
+      ],
+      "placement_bbox": [
+        825,
+        86,
+        935,
+        112
+      ],
+      "text_lines": [
+        "Ниже по потоку"
+      ],
+      "font_px": 12,
+      "block_id": "down2",
+      "ru": "Ниже по потоку",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        284,
+        549,
+        362,
+        567
+      ],
+      "placement_bbox": [
+        280,
+        545,
+        390,
+        571
+      ],
+      "text_lines": [
+        "Выше по потоку"
+      ],
+      "font_px": 12,
+      "block_id": "up3",
+      "ru": "Выше по потоку",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        349,
+        580,
+        450,
+        598
+      ],
+      "placement_bbox": [
+        345,
+        576,
+        455,
+        602
+      ],
+      "text_lines": [
+        "Ниже по потоку"
+      ],
+      "font_px": 12,
+      "block_id": "down3",
+      "ru": "Ниже по потоку",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        770,
+        563,
+        848,
+        581
+      ],
+      "placement_bbox": [
+        742,
+        559,
+        852,
+        585
+      ],
+      "text_lines": [
+        "Выше по потоку"
+      ],
+      "font_px": 12,
+      "block_id": "up4",
+      "ru": "Выше по потоку",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        855,
+        611,
+        956,
+        629
+      ],
+      "placement_bbox": [
+        850,
+        607,
+        960,
+        633
+      ],
+      "text_lines": [
+        "Ниже по потоку"
+      ],
+      "font_px": 12,
+      "block_id": "down4",
+      "ru": "Ниже по потоку",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        305,
+        221,
+        393,
+        239
+      ],
+      "placement_bbox": [
+        301,
+        217,
+        406,
+        243
+      ],
+      "text_lines": [
+        "Горизонтально"
+      ],
+      "font_px": 12,
+      "block_id": "horizontal1",
+      "ru": "Горизонтально",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        298,
+        395,
+        362,
+        413
+      ],
+      "placement_bbox": [
+        294,
+        391,
+        384,
+        417
+      ],
+      "text_lines": [
+        "Вертикально"
+      ],
+      "font_px": 12,
+      "block_id": "vertical1",
+      "ru": "Вертикально",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        777,
+        221,
+        865,
+        239
+      ],
+      "placement_bbox": [
+        764,
+        217,
+        869,
+        243
+      ],
+      "text_lines": [
+        "Горизонтально"
+      ],
+      "font_px": 12,
+      "block_id": "horizontal2",
+      "ru": "Горизонтально",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        777,
+        395,
+        841,
+        413
+      ],
+      "placement_bbox": [
+        755,
+        391,
+        845,
+        417
+      ],
+      "text_lines": [
+        "Вертикально"
+      ],
+      "font_px": 12,
+      "block_id": "vertical2",
+      "ru": "Вертикально",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        135,
+        866,
+        198,
+        884
+      ],
+      "placement_bbox": [
+        131,
+        862,
+        241,
+        888
+      ],
+      "text_lines": [
+        "Теплоизолировать"
+      ],
+      "font_px": 12,
+      "block_id": "insulate",
+      "ru": "Теплоизолировать",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        345,
+        707,
+        433,
+        725
+      ],
+      "placement_bbox": [
+        341,
+        703,
+        446,
+        729
+      ],
+      "text_lines": [
+        "Горизонтально"
+      ],
+      "font_px": 12,
+      "block_id": "horizontal3",
+      "ru": "Горизонтально",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        344,
+        921,
+        408,
+        939
+      ],
+      "placement_bbox": [
+        340,
+        917,
+        430,
+        943
+      ],
+      "text_lines": [
+        "Вертикально"
+      ],
+      "font_px": 12,
+      "block_id": "vertical3",
+      "ru": "Вертикально",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        811,
+        707,
+        899,
+        725
+      ],
+      "placement_bbox": [
+        798,
+        703,
+        903,
+        729
+      ],
+      "text_lines": [
+        "Горизонтально"
+      ],
+      "font_px": 12,
+      "block_id": "horizontal4",
+      "ru": "Горизонтально",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        804,
+        921,
+        869,
+        939
+      ],
+      "placement_bbox": [
+        783,
+        917,
+        873,
+        943
+      ],
+      "text_lines": [
+        "Вертикально"
+      ],
+      "font_px": 12,
+      "block_id": "vertical4",
+      "ru": "Вертикально",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        125,
+        667,
+        207,
+        705
+      ],
+      "placement_bbox": [
+        121,
+        663,
+        236,
+        709
+      ],
+      "text_lines": [
+        "Продувочный",
+        "клапан"
+      ],
+      "font_px": 12,
+      "block_id": "blow",
+      "ru": "Продувочный клапан",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    }
+  ],
+  "notes_ru": [
+    {
+      "label": "ПРИМЕЧАНИЕ 1",
+      "text": "Показаны манометрические клапаны; допускается применение задвижек по спецификации трубопровода, особенно если требуются тройники для прочистки шомполом."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 2",
+      "text": "Импульсные линии должны иметь минимальную длину и быть симметричными."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 3",
+      "text": "Уклон линии должен быть не менее 1:12 для исключения карманов и обеспечения выпуска газа или дренирования."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 4",
+      "text": "Отбор высокого давления прибора присоединять к стороне трубопровода выше по потоку."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 5",
+      "text": "Для жидких сред предпочтительно направление потока снизу вверх."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 6",
+      "text": "Для жидкостей, пара и конденсирующихся паров прибор устанавливать ниже отборов."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 7",
+      "text": "Для неконденсирующегося газа расходомер устанавливать выше отборов."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 8",
+      "text": "Для паровой среды оба заполняющих тройника должны находиться на одном уровне с верхним отбором."
+    }
+  ],
+  "package_format": "canonical_figure_object_6_files",
+  "catalog_state": "accepted_by_user; pending candidates integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_058_ACCEPTED_R02_20260714",
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration"
+}
