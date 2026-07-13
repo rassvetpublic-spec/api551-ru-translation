@@ -1,0 +1,174 @@
+{
+  "figure_no": 49,
+  "figure_id": "Figure 49",
+  "revision": "R01",
+  "api_page": null,
+  "pdf_page": 179,
+  "caption_ru": "Рисунок 49 — Глухая пробка с шестигранной головкой и резьбовым отверстием",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-13",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=179",
+  "source_policy": "original PDF and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_049.source_crop.png",
+  "review_png": "figure_049.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "d593c30e82734c30d167f8ec205dc5becfdc06b148f3d5cf58e35e7820afdd0b",
+  "review_png_sha256": "bb72ff6b28eacfd6668d12ec96453f38bf199fbb3a6edcf278ae78c254845f69",
+  "qa": {
+    "rule_ack": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_policy": "leader lines, dimensions, contours, tables and graph data preserved",
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-13",
+    "notes": [
+      "Размерные и осевые линии сохранены.",
+      "Надписи размещены рядом с исходными выносками без рамок."
+    ],
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-13",
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain approved orientation and placement without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "Nominal width across the hex flats / according to ASME B16.11-2011 Table / 5 for hex plugs and bushings",
+      "approved_ru": "Номинальный размер под ключ\nпо плоским граням шестигранника\nсогласно таблице 5 ASME B16.11-2011\nдля шестигранных пробок и втулок",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        329,
+        238,
+        640,
+        299
+      ],
+      "placement_bbox": [
+        313,
+        230,
+        676,
+        331
+      ],
+      "text_bbox": [
+        362,
+        251,
+        626,
+        309
+      ],
+      "font_px": 13,
+      "lines": [
+        "Номинальный размер под ключ",
+        "по плоским граням шестигранника",
+        "согласно таблице 5 ASME B16.11-2011",
+        "для шестигранных пробок и втулок"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-003",
+      "original": "Dimensions according to ASME / B16.11-2011 for round head plug / according to Table 5",
+      "approved_ru": "Размеры круглой головки пробки\nсогласно таблице 5\nASME B16.11-2011",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        326,
+        333,
+        592,
+        394
+      ],
+      "placement_bbox": [
+        310,
+        325,
+        628,
+        422
+      ],
+      "text_bbox": [
+        353,
+        352,
+        584,
+        394
+      ],
+      "font_px": 13,
+      "lines": [
+        "Размеры круглой головки пробки",
+        "согласно таблице 5",
+        "ASME B16.11-2011"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-004",
+      "original": "Bore same as Schedule 160 Pipe",
+      "approved_ru": "Проходное отверстие как\nу трубы Schedule 160",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        326,
+        410,
+        593,
+        428
+      ],
+      "placement_bbox": [
+        310,
+        400,
+        621,
+        452
+      ],
+      "text_bbox": [
+        370,
+        412,
+        561,
+        440
+      ],
+      "font_px": 14,
+      "lines": [
+        "Проходное отверстие как",
+        "у трубы Schedule 160"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Threaded according to ANSI B1.20.1",
+      "approved_ru": "Резьба согласно ANSI B1.20.1",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        326,
+        522,
+        619,
+        540
+      ],
+      "placement_bbox": [
+        310,
+        512,
+        647,
+        560
+      ],
+      "text_bbox": [
+        370,
+        530,
+        587,
+        542
+      ],
+      "font_px": 14,
+      "lines": [
+        "Резьба согласно ANSI B1.20.1"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    }
+  ],
+  "composite_html": false,
+  "status": "accepted",
+  "source_package": "API551_FIGURE_049_ACCEPTED_R01_20260713",
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration"
+}
