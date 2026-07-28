@@ -2,7 +2,7 @@
 
 Status: CURRENT compact onboarding / source-gate / handoff helper.  
 Project: API 551 RU Translation.  
-Scope: completed Stage 4 baseline, controlled promotion to `main`, and transition to Stage 5.
+Scope: completed Stage 4 baseline in `main` and controlled transition to Stage 5.
 
 This file is a helper. It is not source truth and does not replace:
 
