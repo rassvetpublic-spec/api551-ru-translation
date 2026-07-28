@@ -1,11 +1,11 @@
 # API551 Package QA Current
 
-Status: CURRENT package validation workflow for Stage 4 Figure packages.
+Status: CURRENT validation record for completed Stage 4 Figure packages. Use only for audit or an explicitly reopened Figure.
 
 ## 1. Default command
 
 ```powershell
-.\tools\api551\api551.ps1 package-check -PackageZip C:\GIT\package.zip -Figure 003
+.\tools\api551\api551.ps1 package-check -PackageZip C:\Irvis-UPG\GIT\package.zip -Figure 003
 ```
 
 ## 2. Package shape
@@ -49,7 +49,7 @@ Reject the package if:
 
 ## 5. Visual review boundary
 
-Use the clean repo for versioned text and PR work. Use `C:\GIT\API551_HYDRATED_VIEW` for visual hydrated review when real PNG/PDF/ZIP assets are needed locally.
+Use GitHub for versioned truth. The current hydrated snapshot is `C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT`; it is not a Git worktree and must not be used for commit/push.
 
 ## accept-figure command
 
