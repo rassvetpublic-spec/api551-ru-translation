@@ -2,7 +2,7 @@
 
 Working repository for the API 551 Russian technical translation project.
 
-## Current Stage 4 entrypoint
+## Current project entrypoint
 
 For any new chat or local work, start here:
 
@@ -26,9 +26,11 @@ Primary bootstrap files:
 12. `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md` when local LFS recovery or visual hydrated folders are relevant
 13. `docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md` when diagnosing why the repo-local toolkit blocks a workflow
 
-Working branch: `candidates`.
+Stage 4 status: completed (`69/69` Figure objects accepted).
 
-Stable branch: `main`.
+Stable branch: `main`. The completed Stage 4 baseline is being promoted from `candidates` to `main`.
+
+Stage 5 status: transition only; its scope and acceptance criteria require a separate CURRENT specification before production work starts.
 
 `main` must not be changed directly without explicit user permission.
 
@@ -118,8 +120,8 @@ For normal clone/sync work, use no-smudge LFS. Fetch LFS assets only by exact in
 Keep the clean Git repo separate from visual hydrated assets:
 
 ```text
-C:\GIT\API 551
-C:\GIT\API551_HYDRATED_VIEW
+C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT
+C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT
 ```
 
 Never commit hydrated PNG/PDF/ZIP files as ordinary Git modifications.
@@ -136,10 +138,12 @@ Do not use image generation, generative image editing, old translated PNGs, or s
 
 ## PR workflow
 
-Default PR sequence:
+Stage 4 promotion sequence:
 
 ```text
-source-gate -> clean branch from candidates -> change -> local checks -> PR into candidates -> CI/status check -> merge only after explicit user command -> verify candidates -> handoff
+verify candidates 69/69 -> PR candidates into main -> CI/status check -> explicit merge -> verify main
 ```
+
+After promotion, new work must start from `main` on a task branch and return through PR. Stage 5 production must not start until its CURRENT specification exists.
 
 For accepted Figure candidates, update the synchronized state: Figure object files, `catalog.json`, `index.html`, `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`, and any hard-coded accepted status in workflows/docs.
