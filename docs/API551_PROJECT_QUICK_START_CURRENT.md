@@ -132,7 +132,7 @@ Then, for Figure work:
 For package work:
 
 ```powershell
-.\tools\api551\api551.ps1 package-check -PackageZip C:\GIT\package.zip -Figure NNN
+.\tools\api551\api551.ps1 package-check -PackageZip C:\Irvis-UPG\GIT\package.zip -Figure NNN
 ```
 
 If there is a conflict, stop and report:
