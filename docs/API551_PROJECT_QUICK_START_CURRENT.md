@@ -1,8 +1,8 @@
 # API551 Project Quick Start
 
 Status: CURRENT compact onboarding / source-gate / handoff helper.  
-Project: API 551 RU Translation / Stage 4 Figure Objects.  
-Scope: Stage 4+ Figure object production, rework, package QA, and PR workflow.
+Project: API 551 RU Translation.  
+Scope: completed Stage 4 baseline, controlled promotion to `main`, and transition to Stage 5.
 
 This file is a helper. It is not source truth and does not replace:
 
@@ -21,7 +21,7 @@ If this file conflicts with an ACTIVE/CURRENT project file, the ACTIVE/CURRENT f
 
 ## 1. First command
 
-Run from `C:\GIT\API 551` or any folder inside the repo:
+Run from a Git worktree or use the GitHub connector. The hydrated snapshot is stored at `C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT` and is not a Git worktree:
 
 ```powershell
 .\tools\api551\api551.ps1 source-gate
@@ -43,12 +43,14 @@ docs/project/API551_STAGE4_HANDOFF_CURRENT.json
 
 The status must match `catalog.json` and `index.html`.
 
-Current expected Stage 4 status after Figure 3 R03:
+Final Stage 4 status:
 
 ```text
-accepted: 22/69
+accepted: 69/69
 changed/review: 0
-not_accepted: 47/69
+not_accepted: 0/69
+stage4: completed
+stage5: not started; CURRENT specification required
 ```
 
 ## 3. Source hierarchy
@@ -130,7 +132,7 @@ Then, for Figure work:
 For package work:
 
 ```powershell
-.\tools\api551\api551.ps1 package-check -PackageZip C:\GIT\package.zip -Figure NNN
+.\tools\api551\api551.ps1 package-check -PackageZip C:\Irvis-UPG\GIT\package.zip -Figure NNN
 ```
 
 If there is a conflict, stop and report:
@@ -160,7 +162,7 @@ Do not:
 Default chain:
 
 ```text
-source-gate -> clean branch from candidates -> change -> local checks -> PR into candidates -> CI/status check -> merge only after explicit user command -> verify candidates -> handoff
+source-gate -> verify candidates 69/69 -> PR candidates into main -> CI/status check -> explicit merge -> verify main
 ```
 
 Use:
@@ -192,13 +194,13 @@ Detailed rule: `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md`
 ## 9. New chat prompt
 
 ```text
-Работаем в проекте API 551 RU Translation / Stage 4 Figure Objects.
+Работаем в проекте API 551 RU Translation. Stage 4 завершён: 69/69 Figure приняты.
 
 Source of truth — GitHub repo:
 rassvetpublic-spec/api551-ru-translation
 
-Рабочая ветка: candidates.
-main напрямую не менять.
+Стабильная ветка: main. Stage 4 baseline должен быть в main.
+Новые изменения — только через отдельную task-ветку и PR. Stage 5 не начинать без CURRENT-ТЗ.
 
 Перед началом обязательно прочитай:
 1. docs/project/API551_NEW_CHAT_START_RU.md
@@ -212,5 +214,16 @@ main напрямую не менять.
 9. tools/api551/api551.ps1
 10. docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md, если нужно понять историю типовых ошибок toolkit.
 
-Сначала выполни source-gate, затем определи текущий Figure-статус и предложи следующий минимальный проверяемый шаг.
+Сначала выполни source-gate, подтверди 69/69 и наличие Stage 5 CURRENT-ТЗ. Если ТЗ отсутствует — остановись и запроси его.
 ```
+
+## accept-figure command
+
+For a Figure candidate already approved by the user, use the repo-local acceptance command instead of one-off scripts:
+
+```powershell
+.	oolspi551pi551.ps1 accept-figure -Figure NNN -PackageZip <path-to-review-zip>
+```
+
+The command performs package-check, installs `workspace/figures/NNN`, marks the Figure as accepted, updates `catalog.json`, `index.html`, `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`, bootstrap status markers, and the hard-coded accepted state in `.github/workflows/structure-check.yml`. It does not commit, push, merge, or delete branches.
+

@@ -1,0 +1,845 @@
+{
+  "figure_no": 45,
+  "figure_id": "Figure 45",
+  "revision": "R01",
+  "api_page": null,
+  "pdf_page": 172,
+  "caption_ru": "Рисунок 45 — Установки преобразователя давления",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-13",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=172",
+  "source_policy": "original PDF and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_045.source_crop.png",
+  "review_png": "figure_045.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "6e468ed212fb7f53f706bc55dc32694cf0e30014461dd9f1569af6f4f0c130e5",
+  "review_png_sha256": "6985b391961c59e7e0c81cee40128f74ab1c8930edeb0ed431dad5436f566ba5",
+  "qa": {
+    "rule_ack": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_policy": "leader lines, dimensions, contours, tables and graph data preserved",
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-13",
+    "notes": [
+      "Три монтажные схемы сохранены раздельно.",
+      "Линии уклонов, арматура и трубные соединения защищены."
+    ],
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-13",
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain approved orientation and placement without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "Above the Tap Connections / Vapor and Cryogenic Services",
+      "approved_ru": "Выше отборных присоединений\nпаровые и криогенные среды",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        100,
+        43,
+        359,
+        79
+      ],
+      "placement_bbox": [
+        88,
+        35,
+        375,
+        99
+      ],
+      "text_bbox": [
+        112,
+        52,
+        350,
+        82
+      ],
+      "font_px": 14,
+      "lines": [
+        "Выше отборных присоединений",
+        "паровые и криогенные среды"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-003",
+      "original": "Above the Tap Connection with Filling Tee / Condensing and Corrosive Vapor Services",
+      "approved_ru": "Выше отбора с заполняющим тройником\nконденсирующиеся и коррозионные\nпаровые среды",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        535,
+        42,
+        899,
+        78
+      ],
+      "placement_bbox": [
+        519,
+        34,
+        915,
+        106
+      ],
+      "text_bbox": [
+        575,
+        47,
+        858,
+        92
+      ],
+      "font_px": 13,
+      "lines": [
+        "Выше отбора с заполняющим тройником",
+        "конденсирующиеся и коррозионные",
+        "паровые среды"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-016",
+      "original": "Below the Tap Connection / Liquid and Condensing Services",
+      "approved_ru": "Ниже отборного присоединения\nжидкостные и конденсирующиеся среды",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        653,
+        597,
+        932,
+        633
+      ],
+      "placement_bbox": [
+        637,
+        589,
+        948,
+        636
+      ],
+      "text_bbox": [
+        638,
+        597,
+        946,
+        627
+      ],
+      "font_px": 14,
+      "lines": [
+        "Ниже отборного присоединения",
+        "жидкостные и конденсирующиеся среды"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-004",
+      "original": "Remote mount / block and bleed / valve manifold",
+      "approved_ru": "Выносной монтаж\nклапанного блока с запорным\nи сбросным клапанами",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        55,
+        127,
+        167,
+        179
+      ],
+      "placement_bbox": [
+        43,
+        117,
+        191,
+        209
+      ],
+      "text_bbox": [
+        37,
+        146,
+        197,
+        180
+      ],
+      "font_px": 10,
+      "lines": [
+        "Выносной монтаж",
+        "клапанного блока с запорным",
+        "и сбросным клапанами"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Pressure transmitter / with ½ NPT connection",
+      "approved_ru": "Преобразователь давления\nс присоединением 1/2 NPT",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        295,
+        141,
+        459,
+        175
+      ],
+      "placement_bbox": [
+        279,
+        133,
+        483,
+        195
+      ],
+      "text_bbox": [
+        286,
+        149,
+        476,
+        179
+      ],
+      "font_px": 13,
+      "lines": [
+        "Преобразователь давления",
+        "с присоединением 1/2 NPT"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-012",
+      "original": "Pressure transmitter / with two bolt IEC 61518 / flange",
+      "approved_ru": "Преобразователь давления\nс двухболтовым фланцем\nIEC 61518",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        425,
+        253,
+        593,
+        305
+      ],
+      "placement_bbox": [
+        409,
+        245,
+        617,
+        329
+      ],
+      "text_bbox": [
+        418,
+        266,
+        608,
+        308
+      ],
+      "font_px": 13,
+      "lines": [
+        "Преобразователь давления",
+        "с двухболтовым фланцем",
+        "IEC 61518"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-006",
+      "original": "Transmitter and tube / free draining without / pockets",
+      "approved_ru": "Преобразователь и трубка\nсамодренирующиеся\nбез карманов",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        298,
+        203,
+        445,
+        255
+      ],
+      "placement_bbox": [
+        282,
+        193,
+        469,
+        279
+      ],
+      "text_bbox": [
+        283,
+        213,
+        467,
+        258
+      ],
+      "font_px": 13,
+      "lines": [
+        "Преобразователь и трубка",
+        "самодренирующиеся",
+        "без карманов"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-006",
+      "original": "Transmitter and tube / free draining without / pockets",
+      "approved_ru": "Преобразователь и трубка\nсамодренирующиеся\nбез карманов",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        789,
+        473,
+        936,
+        525
+      ],
+      "placement_bbox": [
+        773,
+        463,
+        960,
+        549
+      ],
+      "text_bbox": [
+        774,
+        483,
+        958,
+        528
+      ],
+      "font_px": 13,
+      "lines": [
+        "Преобразователь и трубка",
+        "самодренирующиеся",
+        "без карманов"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-007",
+      "original": "½ NPT x ½ T / male connector",
+      "approved_ru": "Штуцер с наружной резьбой\n1/2 NPT × 1/2 T",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        92,
+        282,
+        202,
+        316
+      ],
+      "placement_bbox": [
+        76,
+        272,
+        230,
+        340
+      ],
+      "text_bbox": [
+        77,
+        295,
+        229,
+        317
+      ],
+      "font_px": 10,
+      "lines": [
+        "Штуцер с наружной резьбой",
+        "1/2 NPT × 1/2 T"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-007",
+      "original": "½ NPT x ½ T / male connector",
+      "approved_ru": "Штуцер с наружной резьбой\n1/2 NPT × 1/2 T",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        484,
+        104,
+        593,
+        138
+      ],
+      "placement_bbox": [
+        468,
+        94,
+        621,
+        162
+      ],
+      "text_bbox": [
+        468,
+        117,
+        620,
+        139
+      ],
+      "font_px": 10,
+      "lines": [
+        "Штуцер с наружной резьбой",
+        "1/2 NPT × 1/2 T"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-007",
+      "original": "½ NPT x ½ T / male connector",
+      "approved_ru": "Штуцер с наружной резьбой\n1/2 NPT × 1/2 T",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        620,
+        422,
+        729,
+        456
+      ],
+      "placement_bbox": [
+        604,
+        412,
+        757,
+        480
+      ],
+      "text_bbox": [
+        604,
+        435,
+        756,
+        457
+      ],
+      "font_px": 10,
+      "lines": [
+        "Штуцер с наружной резьбой",
+        "1/2 NPT × 1/2 T"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "¾ NPT x ½ T / male connector",
+      "approved_ru": "Штуцер с наружной резьбой\n3/4 NPT × 1/2 T",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        403,
+        323,
+        512,
+        357
+      ],
+      "placement_bbox": [
+        387,
+        313,
+        540,
+        381
+      ],
+      "text_bbox": [
+        387,
+        336,
+        539,
+        358
+      ],
+      "font_px": 10,
+      "lines": [
+        "Штуцер с наружной резьбой",
+        "3/4 NPT × 1/2 T"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "¾ NPT x ½ T / male connector",
+      "approved_ru": "Штуцер с наружной резьбой\n3/4 NPT × 1/2 T",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        814,
+        149,
+        924,
+        183
+      ],
+      "placement_bbox": [
+        798,
+        139,
+        952,
+        207
+      ],
+      "text_bbox": [
+        799,
+        162,
+        951,
+        184
+      ],
+      "font_px": 10,
+      "lines": [
+        "Штуцер с наружной резьбой",
+        "3/4 NPT × 1/2 T"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "¾ NPT x ½ T / male connector",
+      "approved_ru": "Штуцер с наружной резьбой\n3/4 NPT × 1/2 T",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        798,
+        402,
+        907,
+        436
+      ],
+      "placement_bbox": [
+        782,
+        392,
+        935,
+        460
+      ],
+      "text_bbox": [
+        782,
+        415,
+        934,
+        437
+      ],
+      "font_px": 10,
+      "lines": [
+        "Штуцер с наружной резьбой",
+        "3/4 NPT × 1/2 T"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "¾ NPT x ½ T / male connector",
+      "approved_ru": "Штуцер с наружной резьбой\n3/4 NPT × 1/2 T",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        198,
+        473,
+        308,
+        507
+      ],
+      "placement_bbox": [
+        182,
+        463,
+        336,
+        531
+      ],
+      "text_bbox": [
+        183,
+        486,
+        335,
+        508
+      ],
+      "font_px": 10,
+      "lines": [
+        "Штуцер с наружной резьбой",
+        "3/4 NPT × 1/2 T"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-009",
+      "original": "Filling Tee",
+      "approved_ru": "Заполняющий тройник",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        695,
+        82,
+        767,
+        98
+      ],
+      "placement_bbox": [
+        683,
+        74,
+        787,
+        114
+      ],
+      "text_bbox": [
+        674,
+        89,
+        796,
+        99
+      ],
+      "font_px": 10,
+      "lines": [
+        "Заполняющий тройник"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-010",
+      "original": "Min slope 30°",
+      "approved_ru": "Минимальный уклон 30°",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        744,
+        108,
+        841,
+        124
+      ],
+      "placement_bbox": [
+        732,
+        100,
+        861,
+        140
+      ],
+      "text_bbox": [
+        731,
+        115,
+        861,
+        125
+      ],
+      "font_px": 10,
+      "lines": [
+        "Минимальный уклон 30°"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-011",
+      "original": "Block and bleed / valve manifold",
+      "approved_ru": "Клапанный блок с запорным\nи сбросным клапанами",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        479,
+        177,
+        592,
+        211
+      ],
+      "placement_bbox": [
+        467,
+        169,
+        616,
+        235
+      ],
+      "text_bbox": [
+        465,
+        190,
+        617,
+        213
+      ],
+      "font_px": 10,
+      "lines": [
+        "Клапанный блок с запорным",
+        "и сбросным клапанами"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-011",
+      "original": "Block and bleed / valve manifold",
+      "approved_ru": "Клапанный блок с запорным\nи сбросным клапанами",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        620,
+        467,
+        734,
+        501
+      ],
+      "placement_bbox": [
+        608,
+        459,
+        758,
+        525
+      ],
+      "text_bbox": [
+        607,
+        480,
+        759,
+        503
+      ],
+      "font_px": 10,
+      "lines": [
+        "Клапанный блок с запорным",
+        "и сбросным клапанами"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-013",
+      "original": "Pipe spec / process valve",
+      "approved_ru": "Технологический клапан\nпо спецификации трубопровода",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        214,
+        378,
+        312,
+        412
+      ],
+      "placement_bbox": [
+        202,
+        370,
+        336,
+        436
+      ],
+      "text_bbox": [
+        183,
+        392,
+        355,
+        414
+      ],
+      "font_px": 10,
+      "lines": [
+        "Технологический клапан",
+        "по спецификации трубопровода"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-013",
+      "original": "Pipe spec / process valve",
+      "approved_ru": "Технологический клапан\nпо спецификации трубопровода",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        835,
+        203,
+        933,
+        237
+      ],
+      "placement_bbox": [
+        823,
+        195,
+        957,
+        261
+      ],
+      "text_bbox": [
+        804,
+        217,
+        976,
+        239
+      ],
+      "font_px": 10,
+      "lines": [
+        "Технологический клапан",
+        "по спецификации трубопровода"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-014",
+      "original": "Min. 1:12 slope",
+      "approved_ru": "Минимальный уклон 1:12",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        153,
+        351,
+        262,
+        367
+      ],
+      "placement_bbox": [
+        137,
+        343,
+        282,
+        383
+      ],
+      "text_bbox": [
+        142,
+        358,
+        277,
+        368
+      ],
+      "font_px": 10,
+      "lines": [
+        "Минимальный уклон 1:12"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-014",
+      "original": "Min. 1:12 slope",
+      "approved_ru": "Минимальный уклон 1:12",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        702,
+        371,
+        811,
+        387
+      ],
+      "placement_bbox": [
+        686,
+        363,
+        831,
+        403
+      ],
+      "text_bbox": [
+        691,
+        378,
+        826,
+        388
+      ],
+      "font_px": 10,
+      "lines": [
+        "Минимальный уклон 1:12"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-015",
+      "original": "DP style pressure / transmitter",
+      "approved_ru": "Преобразователь давления\nв исполнении DP",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        787,
+        545,
+        913,
+        579
+      ],
+      "placement_bbox": [
+        775,
+        537,
+        933,
+        599
+      ],
+      "text_bbox": [
+        781,
+        557,
+        927,
+        578
+      ],
+      "font_px": 10,
+      "lines": [
+        "Преобразователь давления",
+        "в исполнении DP"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-017",
+      "original": "Alternate decontamination drain",
+      "approved_ru": "Альтернативный дренаж\nдля обеззараживания",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        290,
+        609,
+        516,
+        625
+      ],
+      "placement_bbox": [
+        274,
+        601,
+        540,
+        636
+      ],
+      "text_bbox": [
+        327,
+        605,
+        487,
+        632
+      ],
+      "font_px": 12,
+      "lines": [
+        "Альтернативный дренаж",
+        "для обеззараживания"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    }
+  ],
+  "composite_html": false,
+  "status": "accepted",
+  "source_package": "API551_FIGURE_045_ACCEPTED_R01_20260713",
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration"
+}

@@ -1,7 +1,7 @@
-# API 551 Stage 4 — старт нового чата
+# API 551 — старт нового чата после завершения Stage 4
 
-Статус: CURRENT bootstrap для продолжения Stage 4 в новом чате.  
-Проект: API 551 RU Translation / Stage 4 Figure Objects.  
+Статус: CURRENT bootstrap для завершённого Stage 4 и перехода к Stage 5.  
+Проект: API 551 RU Translation.  
 Язык работы: русский.
 
 Этот файл нужен, чтобы новый чат начал работу без восстановления контекста по старой переписке. Если этот файл конфликтует с `source/API551_SOURCE_MANIFEST_CURRENT.json`, CURRENT policy/rules или системными инструкциями проекта, более высокий источник управляет.
@@ -20,7 +20,7 @@
 tools/api551/
 ```
 
-Не начинать Stage 4 с временных скриптов в `C:\GIT`. Новые project tools должны жить в `/tools/api551`.
+Stage 4 завершён (`69/69`). Не начинать Stage 5 без отдельного CURRENT-ТЗ. Новые project tools должны жить в `/tools/api551`.
 
 ## 2. Source of truth
 
@@ -30,7 +30,7 @@ tools/api551/
 rassvetpublic-spec/api551-ru-translation
 ```
 
-Рабочая ветка Stage 4:
+Ветка завершённого Stage 4 перед promotion:
 
 ```text
 candidates
@@ -97,7 +97,7 @@ Source-gate обязан проверить:
 source -> role -> problem -> risk -> required decision
 ```
 
-## 5. Текущее состояние Stage 4
+## 5. Итоговое состояние Stage 4
 
 Машинно-читаемый текущий статус хранится в:
 
@@ -105,11 +105,11 @@ source -> role -> problem -> risk -> required decision
 docs/project/API551_STAGE4_HANDOFF_CURRENT.json
 ```
 
-Текущий статус после принятия Figure 3 R03:
+Текущий статус Stage 4:
 
 ```text
-accepted: 22/69
-not_accepted: 47/69
+accepted: 69/69
+not_accepted: 0/69
 changed/review: 0
 Figure 2: accepted
 Figure 3: accepted
@@ -117,7 +117,7 @@ LFS-tolerant CI: включён
 Repo-local toolkit: /tools/api551
 ```
 
-Перед началом новой работы всегда сверить эти числа командой:
+Stage 4 закрыт. Перед новой работой сверить эти числа и проверить наличие отдельного Stage 5 CURRENT-ТЗ:
 
 ```powershell
 .\tools\api551\api551.ps1 status
@@ -133,17 +133,13 @@ git lfs pull
 
 Для обычного clone / sync использовать no-smudge режим. Точечно скачивать LFS только при реальной необходимости.
 
-Основной repo:
+Текущий полный hydrated snapshot (без `.git`):
 
 ```text
-C:\GIT\API 551
+C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT
 ```
 
-Hydrated visual view:
-
-```text
-C:\GIT\API551_HYDRATED_VIEW
-```
+GitHub остаётся источником истины для веток, SHA и текстового состояния.
 
 Не коммитить hydrated PNG/PDF/ZIP как обычные Git modifications.
 
@@ -192,7 +188,7 @@ Acceptance PR обязан обновить и проверить весь си�
 Минимальная цепочка:
 
 ```text
-source-gate -> clean branch from candidates -> changes -> local/diff check -> PR into candidates -> CI/status check -> merge only after explicit user command -> verify candidates -> handoff
+source-gate -> verify candidates 69/69 -> PR candidates into main -> CI/status check -> explicit merge -> verify main -> Stage 5 transition
 ```
 
 Для user-accepted Figure:
@@ -258,3 +254,14 @@ Git LFS assets не скачивать по умолчанию.
 ## 12. Следующий безопасный шаг
 
 После source-gate выбрать следующий `not_accepted` Figure из `catalog.json`, проверить его source labels и rules, затем готовить review package без изменения accepted status до явного принятия пользователем.
+
+## accept-figure command
+
+For a Figure candidate already approved by the user, use the repo-local acceptance command instead of one-off scripts:
+
+```powershell
+.	oolspi551pi551.ps1 accept-figure -Figure NNN -PackageZip <path-to-review-zip>
+```
+
+The command performs package-check, installs `workspace/figures/NNN`, marks the Figure as accepted, updates `catalog.json`, `index.html`, `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`, bootstrap status markers, and the hard-coded accepted state in `.github/workflows/structure-check.yml`. It does not commit, push, merge, or delete branches.
+

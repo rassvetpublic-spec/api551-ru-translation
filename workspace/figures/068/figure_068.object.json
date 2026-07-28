@@ -1,0 +1,142 @@
+{
+  "figure_no": 68,
+  "figure_id": "Figure 68",
+  "revision": "R02",
+  "api_page": 215,
+  "pdf_page": 223,
+  "caption_original": "Figure 68—Typical Molded Enclosures",
+  "caption_ru": "Рисунок 68 — Типовые формованные защитные кожухи",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-14",
+  "ready_for_final_export": true,
+  "working_branch_source": "candidates",
+  "working_branch_source_sha": "71f518b9b14093470f75cc95af2f7ed01e57d7d6",
+  "production_source": "source/API 551 2016 (R2024).pdf#page=223",
+  "production_source_sha256": "d458b3a899902f216767e753aa5737a9745b61adcab02f85c9521937a9d3e270",
+  "source_policy": "original PDF + approved label master + CURRENT rules; OCR not used as source truth",
+  "source_crop": "figure_068.source_crop.png",
+  "review_png": "figure_068.png",
+  "caption_inside_png": false,
+  "source_crop_pdf_rect_points": [
+    80,
+    80,
+    545,
+    670
+  ],
+  "render_scale": 2.0,
+  "source_crop_sha256": "a97980287d1f15b760170ce952d53bd08662fe39cd7c298840d551748b3bfb16",
+  "review_png_sha256": "0ff6c6123e0450b77682a6871e410ec56972bf0398842d2721d4e8955879724e",
+  "qa": {
+    "source_gate": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "no_image_generation": true,
+    "no_generative_editing": true,
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-14",
+    "special_structure": "standard",
+    "notes": [
+      "Generated in one batch from the verified PDF.",
+      "Visual layout and translations explicitly accepted by the user on 2026-07-14.",
+      "Catalog/index/handoff integration is performed only by the repo-local accept-figure command."
+    ],
+    "user_visual_approval": "PASS_2026-07-14"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "manual-raster-label",
+      "ru": "Солнцезащитный козырёк",
+      "cleanup_bbox": [
+        95,
+        360,
+        355,
+        445
+      ],
+      "placement_bbox": [
+        95,
+        360,
+        355,
+        445
+      ],
+      "text_lines": [
+        "Солнцезащитный козырёк"
+      ],
+      "font_px": 14,
+      "translation_status": "approved_master",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "block_id": "manual-raster-label",
+      "ru": "Преобразователь, установленный на фланце",
+      "cleanup_bbox": [
+        500,
+        360,
+        875,
+        455
+      ],
+      "placement_bbox": [
+        500,
+        360,
+        875,
+        455
+      ],
+      "text_lines": [
+        "Преобразователь, установленный на фланце"
+      ],
+      "font_px": 14,
+      "translation_status": "approved_master",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "block_id": "manual-raster-label",
+      "ru": "Индикатор перепада давления",
+      "cleanup_bbox": [
+        90,
+        960,
+        430,
+        1170
+      ],
+      "placement_bbox": [
+        90,
+        960,
+        430,
+        1170
+      ],
+      "text_lines": [
+        "Индикатор перепада давления"
+      ],
+      "font_px": 14,
+      "translation_status": "approved_master",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "block_id": "manual-raster-label",
+      "ru": "Преобразователь перепада давления",
+      "cleanup_bbox": [
+        500,
+        960,
+        885,
+        1170
+      ],
+      "placement_bbox": [
+        500,
+        960,
+        885,
+        1170
+      ],
+      "text_lines": [
+        "Преобразователь перепада давления"
+      ],
+      "font_px": 14,
+      "translation_status": "approved_master",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    }
+  ],
+  "notes_ru": [],
+  "package_format": "canonical_figure_object_6_files",
+  "catalog_state": "accepted_by_user; pending candidates integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_068_ACCEPTED_R02_20260714",
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration"
+}

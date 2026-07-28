@@ -1,14 +1,14 @@
 {
-  "package_id": "API551_STAGE4_ACCEPTED_002_003_051_2026-07-09",
+  "package_id": "API551_STAGE4_ACCEPTED_002_003_005_051_2026-07-10",
   "created_utc": "2026-06-17T14:12:56.057388+03:00",
-  "updated_utc": "2026-07-09T00:00:00+03:00",
+  "updated_utc": "2026-07-10T00:00:00+03:00",
   "layout": "portable local review package; unpack/use from any local project folder; PDF is included in source/",
   "pdf_expected_path": "source/API 551 2016 (R2024).pdf",
   "stats": {
     "total": 69,
-    "accepted": 22,
+    "accepted": 69,
     "changed": 0,
-    "not_accepted": 47
+    "not_accepted": 0
   },
   "figures": [
     {
@@ -86,8 +86,15 @@
       "caption_ru": "Рисунок 5 — Керамическая защитная гильза",
       "api_page": "29",
       "pdf_page": "37",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=37"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=37",
+      "folder": "workspace/figures/005",
+      "source_package": "API551_FIG05_ACCEPTED_R02_2026-07-10",
+      "html": "workspace/figures/005/figure_005.object.html",
+      "json": "workspace/figures/005/figure_005.object.json",
+      "png": "workspace/figures/005/figure_005.png",
+      "source_crop": "workspace/figures/005/figure_005.source_crop.png",
+      "out_html": "workspace/figures/005/figure_005.out.html"
     },
     {
       "figure_no": 6,
@@ -96,8 +103,15 @@
       "caption_ru": "Рисунок 6 — Типы термопар в металлической оболочке",
       "api_page": "31",
       "pdf_page": "39",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=39"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=39",
+      "folder": "workspace/figures/006",
+      "source_package": "API551_FIG06_ACCEPTED_R04_NORMALIZED_20260710",
+      "html": "workspace/figures/006/figure_006.object.html",
+      "json": "workspace/figures/006/figure_006.object.json",
+      "png": "workspace/figures/006/figure_006.png",
+      "source_crop": "workspace/figures/006/figure_006.source_crop.png",
+      "out_html": "workspace/figures/006/figure_006.out.html"
     },
     {
       "figure_no": 7,
@@ -106,8 +120,15 @@
       "caption_ru": "Рисунок 7 — Поверхностная термопара с радиационным экраном",
       "api_page": "34",
       "pdf_page": "42",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=42"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=42",
+      "folder": "workspace/figures/007",
+      "source_package": "API551_FIG07_ACCEPTED_R01_2026-07-10",
+      "html": "workspace/figures/007/figure_007.object.html",
+      "json": "workspace/figures/007/figure_007.object.json",
+      "png": "workspace/figures/007/figure_007.png",
+      "source_crop": "workspace/figures/007/figure_007.source_crop.png",
+      "out_html": "workspace/figures/007/figure_007.out.html"
     },
     {
       "figure_no": 8,
@@ -116,8 +137,15 @@
       "caption_ru": "Рисунок 8 — Неподвижная головка термопары и оболочка с S-образной компенсационной петлёй",
       "api_page": "35",
       "pdf_page": "43",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=43"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=43",
+      "folder": "workspace/figures/008",
+      "source_package": "API551_FIG08_ACCEPTED_R01_2026-07-11",
+      "html": "workspace/figures/008/figure_008.object.html",
+      "json": "workspace/figures/008/figure_008.object.json",
+      "png": "workspace/figures/008/figure_008.png",
+      "source_crop": "workspace/figures/008/figure_008.source_crop.png",
+      "out_html": "workspace/figures/008/figure_008.out.html"
     },
     {
       "figure_no": 9,
@@ -143,8 +171,15 @@
       "caption_ru": "Рисунок 10 — Поверхностная термопара печной трубы",
       "api_page": "35",
       "pdf_page": "43",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=43"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=43",
+      "folder": "workspace/figures/010",
+      "source_package": "API551_FIGURE_010_ACCEPTED_R02_20260712",
+      "html": "workspace/figures/010/figure_010.object.html",
+      "json": "workspace/figures/010/figure_010.object.json",
+      "png": "workspace/figures/010/figure_010.png",
+      "source_crop": "workspace/figures/010/figure_010.source_crop.png",
+      "out_html": "workspace/figures/010/figure_010.out.html"
     },
     {
       "figure_no": 11,
@@ -153,8 +188,15 @@
       "caption_ru": "Рисунок 11 — Пределы точности и применимые диапазоны температур для термисторов и термопреобразователей сопротивления",
       "api_page": "37",
       "pdf_page": "45",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=45"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=45",
+      "folder": "workspace/figures/011",
+      "source_package": "API551_FIGURE_011_ACCEPTED_R01_20260712",
+      "html": "workspace/figures/011/figure_011.object.html",
+      "json": "workspace/figures/011/figure_011.object.json",
+      "png": "workspace/figures/011/figure_011.png",
+      "source_crop": "workspace/figures/011/figure_011.source_crop.png",
+      "out_html": "workspace/figures/011/figure_011.out.html"
     },
     {
       "figure_no": 12,
@@ -163,8 +205,15 @@
       "caption_ru": "Рисунок 12 — Пример установки пирометра для реактора Клауса",
       "api_page": "42",
       "pdf_page": "50",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=50"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=50",
+      "folder": "workspace/figures/012",
+      "source_package": "API551_FIGURE_012_ACCEPTED_R01_20260712",
+      "html": "workspace/figures/012/figure_012.object.html",
+      "json": "workspace/figures/012/figure_012.object.json",
+      "png": "workspace/figures/012/figure_012.png",
+      "source_crop": "workspace/figures/012/figure_012.source_crop.png",
+      "out_html": "workspace/figures/012/figure_012.out.html"
     },
     {
       "figure_no": 13,
@@ -173,8 +222,15 @@
       "caption_ru": "Рисунок 13 — Термопара в оболочке с бронированным выводом",
       "api_page": "42",
       "pdf_page": "50",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=50"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=50",
+      "folder": "workspace/figures/013",
+      "source_package": "API551_FIGURE_013_ACCEPTED_R01_20260712",
+      "html": "workspace/figures/013/figure_013.object.html",
+      "json": "workspace/figures/013/figure_013.object.json",
+      "png": "workspace/figures/013/figure_013.png",
+      "source_crop": "workspace/figures/013/figure_013.source_crop.png",
+      "out_html": "workspace/figures/013/figure_013.out.html"
     },
     {
       "figure_no": 14,
@@ -200,8 +256,15 @@
       "caption_ru": "Рисунок 15 — Определение давления",
       "api_page": "46",
       "pdf_page": "54",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=54"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=54",
+      "folder": "workspace/figures/015",
+      "source_package": "API551_FIGURE_015_ACCEPTED_R01_20260712",
+      "html": "workspace/figures/015/figure_015.object.html",
+      "json": "workspace/figures/015/figure_015.object.json",
+      "png": "workspace/figures/015/figure_015.png",
+      "source_crop": "workspace/figures/015/figure_015.source_crop.png",
+      "out_html": "workspace/figures/015/figure_015.out.html"
     },
     {
       "figure_no": 16,
@@ -227,8 +290,15 @@
       "caption_ru": "Рисунок 17 — Фланцы диафрагмы",
       "api_page": "66",
       "pdf_page": "74",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=74"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=74",
+      "folder": "workspace/figures/017",
+      "source_package": "API551_FIGURE_017_ACCEPTED_R01_20260712",
+      "html": "workspace/figures/017/figure_017.object.html",
+      "json": "workspace/figures/017/figure_017.object.json",
+      "png": "workspace/figures/017/figure_017.png",
+      "source_crop": "workspace/figures/017/figure_017.source_crop.png",
+      "out_html": "workspace/figures/017/figure_017.out.html"
     },
     {
       "figure_no": 18,
@@ -254,8 +324,15 @@
       "caption_ru": "Рисунок 19 — Пример коэффициентов расширения",
       "api_page": "68",
       "pdf_page": "76",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=76"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=76",
+      "folder": "workspace/figures/019",
+      "source_package": "API551_FIGURE_019_ACCEPTED_R01_20260712",
+      "html": "workspace/figures/019/figure_019.object.html",
+      "json": "workspace/figures/019/figure_019.object.json",
+      "png": "workspace/figures/019/figure_019.png",
+      "source_crop": "workspace/figures/019/figure_019.source_crop.png",
+      "out_html": "workspace/figures/019/figure_019.out.html"
     },
     {
       "figure_no": 20,
@@ -264,8 +341,15 @@
       "caption_ru": "Рисунок 20 — Размеры классической трубы Вентури",
       "api_page": "69",
       "pdf_page": "77",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=77"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=77",
+      "folder": "workspace/figures/020",
+      "source_package": "API551_FIGURE_020_ACCEPTED_R01_20260712",
+      "html": "workspace/figures/020/figure_020.object.html",
+      "json": "workspace/figures/020/figure_020.object.json",
+      "png": "workspace/figures/020/figure_020.png",
+      "source_crop": "workspace/figures/020/figure_020.source_crop.png",
+      "out_html": "workspace/figures/020/figure_020.out.html"
     },
     {
       "figure_no": 21,
@@ -274,8 +358,15 @@
       "caption_ru": "Рисунок 21 — График точности расходомера переменного сечения по VDI VDE 3513-2",
       "api_page": "74",
       "pdf_page": "82",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=82"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=82",
+      "folder": "workspace/figures/021",
+      "source_package": "API551_FIGURE_021_ACCEPTED_R01_20260712",
+      "html": "workspace/figures/021/figure_021.object.html",
+      "json": "workspace/figures/021/figure_021.object.json",
+      "png": "workspace/figures/021/figure_021.png",
+      "source_crop": "workspace/figures/021/figure_021.source_crop.png",
+      "out_html": "workspace/figures/021/figure_021.out.html"
     },
     {
       "figure_no": 22,
@@ -284,8 +375,15 @@
       "caption_ru": "Рисунок 22 — Установка расходомера переменного сечения",
       "api_page": "76",
       "pdf_page": "84",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=84"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=84",
+      "folder": "workspace/figures/022",
+      "source_package": "API551_FIGURE_022_ACCEPTED_R01_20260712",
+      "html": "workspace/figures/022/figure_022.object.html",
+      "json": "workspace/figures/022/figure_022.object.json",
+      "png": "workspace/figures/022/figure_022.png",
+      "source_crop": "workspace/figures/022/figure_022.source_crop.png",
+      "out_html": "workspace/figures/022/figure_022.out.html"
     },
     {
       "figure_no": 23,
@@ -311,8 +409,15 @@
       "caption_ru": "Рисунок 24 — Типы подшипников турбинного расходомера",
       "api_page": "86",
       "pdf_page": "94",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=94"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=94",
+      "folder": "workspace/figures/024",
+      "source_package": "API551_FIGURE_024_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/024/figure_024.object.html",
+      "json": "workspace/figures/024/figure_024.object.json",
+      "png": "workspace/figures/024/figure_024.png",
+      "source_crop": "workspace/figures/024/figure_024.source_crop.png",
+      "out_html": "workspace/figures/024/figure_024.out.html"
     },
     {
       "figure_no": 25,
@@ -338,8 +443,15 @@
       "caption_ru": "Рисунок 26 — Узлы указательного стекла",
       "api_page": "107",
       "pdf_page": "115",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=115"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=115",
+      "folder": "workspace/figures/026",
+      "source_package": "API551_FIGURE_026_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/026/figure_026.object.html",
+      "json": "workspace/figures/026/figure_026.object.json",
+      "png": "workspace/figures/026/figure_026.png",
+      "source_crop": "workspace/figures/026/figure_026.source_crop.png",
+      "out_html": "workspace/figures/026/figure_026.out.html"
     },
     {
       "figure_no": 27,
@@ -348,8 +460,15 @@
       "caption_ru": "Рисунок 27 — Присоединения приборов к нижним днищам",
       "api_page": "108",
       "pdf_page": "116",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=116"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=116",
+      "folder": "workspace/figures/027",
+      "source_package": "API551_FIGURE_027_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/027/figure_027.object.html",
+      "json": "workspace/figures/027/figure_027.object.json",
+      "png": "workspace/figures/027/figure_027.png",
+      "source_crop": "workspace/figures/027/figure_027.source_crop.png",
+      "out_html": "workspace/figures/027/figure_027.out.html"
     },
     {
       "figure_no": 28,
@@ -375,8 +494,15 @@
       "caption_ru": "Рисунок 29 — Преобразователи дифференциального уровня с мокрыми импульсными линиями",
       "api_page": "112",
       "pdf_page": "120",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=120"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=120",
+      "folder": "workspace/figures/029",
+      "source_package": "API551_FIGURE_029_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/029/figure_029.object.html",
+      "json": "workspace/figures/029/figure_029.object.json",
+      "png": "workspace/figures/029/figure_029.png",
+      "source_crop": "workspace/figures/029/figure_029.source_crop.png",
+      "out_html": "workspace/figures/029/figure_029.out.html"
     },
     {
       "figure_no": 30,
@@ -418,8 +544,15 @@
       "caption_ru": "Рисунок 32 — Схема мокрой калибровки буйкового прибора",
       "api_page": "119",
       "pdf_page": "127",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=127"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=127",
+      "folder": "workspace/figures/032",
+      "source_package": "API551_FIGURE_032_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/032/figure_032.object.html",
+      "json": "workspace/figures/032/figure_032.object.json",
+      "png": "workspace/figures/032/figure_032.png",
+      "source_crop": "workspace/figures/032/figure_032.source_crop.png",
+      "out_html": "workspace/figures/032/figure_032.out.html"
     },
     {
       "figure_no": 33,
@@ -445,8 +578,15 @@
       "caption_ru": "Рисунок 34 — Монтаж ВЧ ёмкостного адмиттансного преобразователя уровня или уровнемера GWR",
       "api_page": "130",
       "pdf_page": "138",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=138"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=138",
+      "folder": "workspace/figures/034",
+      "source_package": "API551_FIGURE_034_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/034/figure_034.object.html",
+      "json": "workspace/figures/034/figure_034.object.json",
+      "png": "workspace/figures/034/figure_034.png",
+      "source_crop": "workspace/figures/034/figure_034.source_crop.png",
+      "out_html": "workspace/figures/034/figure_034.out.html"
     },
     {
       "figure_no": 35,
@@ -455,8 +595,15 @@
       "caption_ru": "Рисунок 35 — Критические размеры для установки уровнемера GWR",
       "api_page": "137",
       "pdf_page": "145",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=145"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=145",
+      "folder": "workspace/figures/035",
+      "source_package": "API551_FIGURE_035_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/035/figure_035.object.html",
+      "json": "workspace/figures/035/figure_035.object.json",
+      "png": "workspace/figures/035/figure_035.png",
+      "source_crop": "workspace/figures/035/figure_035.source_crop.png",
+      "out_html": "workspace/figures/035/figure_035.out.html"
     },
     {
       "figure_no": 36,
@@ -465,8 +612,15 @@
       "caption_ru": "Рисунок 36 — Типовой экран настройки уровнемера по времени прохождения сигнала",
       "api_page": "138",
       "pdf_page": "146",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=146"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=146",
+      "folder": "workspace/figures/036",
+      "source_package": "API551_FIGURE_036_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/036/figure_036.object.html",
+      "json": "workspace/figures/036/figure_036.object.json",
+      "png": "workspace/figures/036/figure_036.png",
+      "source_crop": "workspace/figures/036/figure_036.source_crop.png",
+      "out_html": "workspace/figures/036/figure_036.out.html"
     },
     {
       "figure_no": 37,
@@ -492,8 +646,15 @@
       "caption_ru": "Рисунок 38 — Типовой указательный клапан с болтовой крышкой",
       "api_page": "150",
       "pdf_page": "158",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=158"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=158",
+      "folder": "workspace/figures/038",
+      "source_package": "API551_FIGURE_038_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/038/figure_038.object.html",
+      "json": "workspace/figures/038/figure_038.object.json",
+      "png": "workspace/figures/038/figure_038.png",
+      "source_crop": "workspace/figures/038/figure_038.source_crop.png",
+      "out_html": "workspace/figures/038/figure_038.out.html"
     },
     {
       "figure_no": 39,
@@ -502,8 +663,15 @@
       "caption_ru": "Рисунок 39 — Измерительные отборы для измерения границы раздела фаз и уровня",
       "api_page": "153",
       "pdf_page": "161",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=161"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=161",
+      "folder": "workspace/figures/039",
+      "source_package": "API551_FIGURE_039_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/039/figure_039.object.html",
+      "json": "workspace/figures/039/figure_039.object.json",
+      "png": "workspace/figures/039/figure_039.png",
+      "source_crop": "workspace/figures/039/figure_039.source_crop.png",
+      "out_html": "workspace/figures/039/figure_039.out.html"
     },
     {
       "figure_no": 40,
@@ -512,8 +680,15 @@
       "caption_ru": "Рисунок 40 — Магнитный указатель уровня с ведомым индикатором",
       "api_page": "155",
       "pdf_page": "163",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=163"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=163",
+      "folder": "workspace/figures/040",
+      "source_package": "API551_FIGURE_040_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/040/figure_040.object.html",
+      "json": "workspace/figures/040/figure_040.object.json",
+      "png": "workspace/figures/040/figure_040.png",
+      "source_crop": "workspace/figures/040/figure_040.source_crop.png",
+      "out_html": "workspace/figures/040/figure_040.out.html"
     },
     {
       "figure_no": 41,
@@ -522,8 +697,15 @@
       "caption_ru": "Рисунок 41 — Магнитный указатель уровня с флажковыми индикаторами",
       "api_page": "156",
       "pdf_page": "164",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=164"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=164",
+      "folder": "workspace/figures/041",
+      "source_package": "API551_FIGURE_041_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/041/figure_041.object.html",
+      "json": "workspace/figures/041/figure_041.object.json",
+      "png": "workspace/figures/041/figure_041.png",
+      "source_crop": "workspace/figures/041/figure_041.source_crop.png",
+      "out_html": "workspace/figures/041/figure_041.out.html"
     },
     {
       "figure_no": 42,
@@ -532,8 +714,15 @@
       "caption_ru": "Рисунок 42 — Значения насыщения преобразователя при калибровке на относительную плотность 0,70",
       "api_page": "159",
       "pdf_page": "167",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=167"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=167",
+      "folder": "workspace/figures/042",
+      "source_package": "API551_FIGURE_042_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/042/figure_042.object.html",
+      "json": "workspace/figures/042/figure_042.object.json",
+      "png": "workspace/figures/042/figure_042.png",
+      "source_crop": "workspace/figures/042/figure_042.source_crop.png",
+      "out_html": "workspace/figures/042/figure_042.out.html"
     },
     {
       "figure_no": 43,
@@ -542,8 +731,15 @@
       "caption_ru": "Рисунок 43 — Зависимость относительной плотности углеводородов от температуры",
       "api_page": "160",
       "pdf_page": "168",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=168"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=168",
+      "folder": "workspace/figures/043",
+      "source_package": "API551_FIGURE_043_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/043/figure_043.object.html",
+      "json": "workspace/figures/043/figure_043.object.json",
+      "png": "workspace/figures/043/figure_043.png",
+      "source_crop": "workspace/figures/043/figure_043.source_crop.png",
+      "out_html": "workspace/figures/043/figure_043.out.html"
     },
     {
       "figure_no": 44,
@@ -552,8 +748,15 @@
       "caption_ru": "Рисунок 44 — Сообщение жидкости при неоднородных средах",
       "api_page": "161",
       "pdf_page": "169",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=169"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=169",
+      "folder": "workspace/figures/044",
+      "source_package": "API551_FIGURE_044_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/044/figure_044.object.html",
+      "json": "workspace/figures/044/figure_044.object.json",
+      "png": "workspace/figures/044/figure_044.png",
+      "source_crop": "workspace/figures/044/figure_044.source_crop.png",
+      "out_html": "workspace/figures/044/figure_044.out.html"
     },
     {
       "figure_no": 45,
@@ -562,8 +765,15 @@
       "caption_ru": "Рисунок 45 — Установки преобразователя давления",
       "api_page": "164",
       "pdf_page": "172",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=172"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=172",
+      "folder": "workspace/figures/045",
+      "source_package": "API551_FIGURE_045_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/045/figure_045.object.html",
+      "json": "workspace/figures/045/figure_045.object.json",
+      "png": "workspace/figures/045/figure_045.png",
+      "source_crop": "workspace/figures/045/figure_045.source_crop.png",
+      "out_html": "workspace/figures/045/figure_045.out.html"
     },
     {
       "figure_no": 46,
@@ -589,8 +799,15 @@
       "caption_ru": "Рисунок 47 — Отстойная камера",
       "api_page": "167",
       "pdf_page": "175",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=175"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=175",
+      "folder": "workspace/figures/047",
+      "source_package": "API551_FIGURE_047_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/047/figure_047.object.html",
+      "json": "workspace/figures/047/figure_047.object.json",
+      "png": "workspace/figures/047/figure_047.png",
+      "source_crop": "workspace/figures/047/figure_047.source_crop.png",
+      "out_html": "workspace/figures/047/figure_047.out.html"
     },
     {
       "figure_no": 48,
@@ -616,8 +833,15 @@
       "caption_ru": "Рисунок 49 — Глухая пробка с шестигранной головкой и резьбовым отверстием",
       "api_page": "171",
       "pdf_page": "179",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=179"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=179",
+      "folder": "workspace/figures/049",
+      "source_package": "API551_FIGURE_049_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/049/figure_049.object.html",
+      "json": "workspace/figures/049/figure_049.object.json",
+      "png": "workspace/figures/049/figure_049.png",
+      "source_crop": "workspace/figures/049/figure_049.source_crop.png",
+      "out_html": "workspace/figures/049/figure_049.out.html"
     },
     {
       "figure_no": 50,
@@ -679,8 +903,15 @@
       "caption_ru": "Рисунок 53 — Схема расположения клапанов приборных клапанных блоков",
       "api_page": "177",
       "pdf_page": "185",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=185"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=185",
+      "folder": "workspace/figures/053",
+      "source_package": "API551_FIGURE_053_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/053/figure_053.object.html",
+      "json": "workspace/figures/053/figure_053.object.json",
+      "png": "workspace/figures/053/figure_053.png",
+      "source_crop": "workspace/figures/053/figure_053.source_crop.png",
+      "out_html": "workspace/figures/053/figure_053.out.html"
     },
     {
       "figure_no": 54,
@@ -689,8 +920,15 @@
       "caption_ru": "Рисунок 54 — Преобразователь давления с двухболтовым присоединением",
       "api_page": "179",
       "pdf_page": "187",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=187"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=187",
+      "folder": "workspace/figures/054",
+      "source_package": "API551_FIGURE_054_ACCEPTED_R01_20260713",
+      "html": "workspace/figures/054/figure_054.object.html",
+      "json": "workspace/figures/054/figure_054.object.json",
+      "png": "workspace/figures/054/figure_054.png",
+      "source_crop": "workspace/figures/054/figure_054.source_crop.png",
+      "out_html": "workspace/figures/054/figure_054.out.html"
     },
     {
       "figure_no": 55,
@@ -699,8 +937,15 @@
       "caption_ru": "Рисунок 55 — Компактно присоединённый преобразователь, смонтированный сбоку на монофланце",
       "api_page": "182",
       "pdf_page": "190",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=190"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=190",
+      "folder": "workspace/figures/055",
+      "source_package": "API551_FIGURE_055_ACCEPTED_R04_20260713",
+      "html": "workspace/figures/055/figure_055.object.html",
+      "json": "workspace/figures/055/figure_055.object.json",
+      "png": "workspace/figures/055/figure_055.png",
+      "source_crop": "workspace/figures/055/figure_055.source_crop.png",
+      "out_html": "workspace/figures/055/figure_055.out.html"
     },
     {
       "figure_no": 56,
@@ -709,8 +954,15 @@
       "caption_ru": "Рисунок 56 — Переходное промывочное кольцо",
       "api_page": "184",
       "pdf_page": "192",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=192"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=192",
+      "folder": "workspace/figures/056",
+      "source_package": "API551_FIGURE_056_ACCEPTED_R02_20260714",
+      "html": "workspace/figures/056/figure_056.object.html",
+      "json": "workspace/figures/056/figure_056.object.json",
+      "png": "workspace/figures/056/figure_056.png",
+      "source_crop": "workspace/figures/056/figure_056.source_crop.png",
+      "out_html": "workspace/figures/056/figure_056.out.html"
     },
     {
       "figure_no": 57,
@@ -719,8 +971,15 @@
       "caption_ru": "Рисунок 57 — Опоры приборных линий",
       "api_page": "185",
       "pdf_page": "193",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=193"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=193",
+      "folder": "workspace/figures/057",
+      "source_package": "API551_FIGURE_057_ACCEPTED_R02_20260714",
+      "html": "workspace/figures/057/figure_057.object.html",
+      "json": "workspace/figures/057/figure_057.object.json",
+      "png": "workspace/figures/057/figure_057.png",
+      "source_crop": "workspace/figures/057/figure_057.source_crop.png",
+      "out_html": "workspace/figures/057/figure_057.out.html"
     },
     {
       "figure_no": 58,
@@ -729,8 +988,15 @@
       "caption_ru": "Рисунок 58 — Детали компактной установки измерения расхода",
       "api_page": "188",
       "pdf_page": "196",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=196"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=196",
+      "folder": "workspace/figures/058",
+      "source_package": "API551_FIGURE_058_ACCEPTED_R02_20260714",
+      "html": "workspace/figures/058/figure_058.object.html",
+      "json": "workspace/figures/058/figure_058.object.json",
+      "png": "workspace/figures/058/figure_058.png",
+      "source_crop": "workspace/figures/058/figure_058.source_crop.png",
+      "out_html": "workspace/figures/058/figure_058.out.html"
     },
     {
       "figure_no": 59,
@@ -739,8 +1005,15 @@
       "caption_ru": "Рисунок 59 — Изготовление пьезометрического штуцера стабилизации ветрового воздействия",
       "api_page": "189",
       "pdf_page": "197",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=197"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=197",
+      "folder": "workspace/figures/059",
+      "source_package": "API551_FIGURE_059_ACCEPTED_R02_20260714",
+      "html": "workspace/figures/059/figure_059.object.html",
+      "json": "workspace/figures/059/figure_059.object.json",
+      "png": "workspace/figures/059/figure_059.png",
+      "source_crop": "workspace/figures/059/figure_059.source_crop.png",
+      "out_html": "workspace/figures/059/figure_059.out.html"
     },
     {
       "figure_no": 60,
@@ -749,8 +1022,15 @@
       "caption_ru": "Рисунок 60 — Изготовление пьезометрического штуцера стабилизации ветрового воздействия",
       "api_page": "190",
       "pdf_page": "198",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=198"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=198",
+      "folder": "workspace/figures/060",
+      "source_package": "API551_FIGURE_060_ACCEPTED_R02_20260714",
+      "html": "workspace/figures/060/figure_060.object.html",
+      "json": "workspace/figures/060/figure_060.object.json",
+      "png": "workspace/figures/060/figure_060.png",
+      "source_crop": "workspace/figures/060/figure_060.source_crop.png",
+      "out_html": "workspace/figures/060/figure_060.out.html"
     },
     {
       "figure_no": 61,
@@ -759,8 +1039,15 @@
       "caption_ru": "Рисунок 61 — Промышленный пьезометрический штуцер стабилизации ветрового воздействия",
       "api_page": "191",
       "pdf_page": "199",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=199"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=199",
+      "folder": "workspace/figures/061",
+      "source_package": "API551_FIGURE_061_ACCEPTED_R02_20260714",
+      "html": "workspace/figures/061/figure_061.object.html",
+      "json": "workspace/figures/061/figure_061.object.json",
+      "png": "workspace/figures/061/figure_061.png",
+      "source_crop": "workspace/figures/061/figure_061.source_crop.png",
+      "out_html": "workspace/figures/061/figure_061.out.html"
     },
     {
       "figure_no": 62,
@@ -786,8 +1073,15 @@
       "caption_ru": "Рисунок 63 — Преобразователь уровня с капиллярами",
       "api_page": "202",
       "pdf_page": "210",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=210"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=210",
+      "folder": "workspace/figures/063",
+      "source_package": "API551_FIGURE_063_ACCEPTED_R02_20260714",
+      "html": "workspace/figures/063/figure_063.object.html",
+      "json": "workspace/figures/063/figure_063.object.json",
+      "png": "workspace/figures/063/figure_063.png",
+      "source_crop": "workspace/figures/063/figure_063.source_crop.png",
+      "out_html": "workspace/figures/063/figure_063.out.html"
     },
     {
       "figure_no": 64,
@@ -796,8 +1090,15 @@
       "caption_ru": "Рисунок 64 — Температуры замерзания смесей этиленгликоля и воды",
       "api_page": "203",
       "pdf_page": "211",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=211"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=211",
+      "folder": "workspace/figures/064",
+      "source_package": "API551_FIGURE_064_ACCEPTED_R02_20260714",
+      "html": "workspace/figures/064/figure_064.object.html",
+      "json": "workspace/figures/064/figure_064.object.json",
+      "png": "workspace/figures/064/figure_064.png",
+      "source_crop": "workspace/figures/064/figure_064.source_crop.png",
+      "out_html": "workspace/figures/064/figure_064.out.html"
     },
     {
       "figure_no": 65,
@@ -806,8 +1107,15 @@
       "caption_ru": "Рисунок 65 — Установки манометров",
       "api_page": "205",
       "pdf_page": "213",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=213"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=213",
+      "folder": "workspace/figures/065",
+      "source_package": "API551_FIGURE_065_ACCEPTED_R02_20260714",
+      "html": "workspace/figures/065/figure_065.object.html",
+      "json": "workspace/figures/065/figure_065.object.json",
+      "png": "workspace/figures/065/figure_065.png",
+      "source_crop": "workspace/figures/065/figure_065.source_crop.png",
+      "out_html": "workspace/figures/065/figure_065.out.html"
     },
     {
       "figure_no": 66,
@@ -833,8 +1141,15 @@
       "caption_ru": "Рисунок 67 — Установки продувки",
       "api_page": "210",
       "pdf_page": "218",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=218"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=218",
+      "folder": "workspace/figures/067",
+      "source_package": "API551_FIGURE_067_ACCEPTED_R02_20260714",
+      "html": "workspace/figures/067/figure_067.object.html",
+      "json": "workspace/figures/067/figure_067.object.json",
+      "png": "workspace/figures/067/figure_067.png",
+      "source_crop": "workspace/figures/067/figure_067.source_crop.png",
+      "out_html": "workspace/figures/067/figure_067.out.html"
     },
     {
       "figure_no": 68,
@@ -843,8 +1158,15 @@
       "caption_ru": "Рисунок 68 — Типовые формованные защитные кожухи",
       "api_page": "215",
       "pdf_page": "223",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=223"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=223",
+      "folder": "workspace/figures/068",
+      "source_package": "API551_FIGURE_068_ACCEPTED_R02_20260714",
+      "html": "workspace/figures/068/figure_068.object.html",
+      "json": "workspace/figures/068/figure_068.object.json",
+      "png": "workspace/figures/068/figure_068.png",
+      "source_crop": "workspace/figures/068/figure_068.source_crop.png",
+      "out_html": "workspace/figures/068/figure_068.out.html"
     },
     {
       "figure_no": 69,
@@ -853,8 +1175,15 @@
       "caption_ru": "Рисунок 69 — Электрообогрев приборов",
       "api_page": "219",
       "pdf_page": "227",
-      "status": "not_accepted",
-      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=227"
+      "status": "accepted",
+      "source_pdf_link": "source/API%20551%202016%20(R2024).pdf#page=227",
+      "folder": "workspace/figures/069",
+      "source_package": "API551_FIGURE_069_ACCEPTED_R02_20260714",
+      "html": "workspace/figures/069/figure_069.object.html",
+      "json": "workspace/figures/069/figure_069.object.json",
+      "png": "workspace/figures/069/figure_069.png",
+      "source_crop": "workspace/figures/069/figure_069.source_crop.png",
+      "out_html": "workspace/figures/069/figure_069.out.html"
     }
   ],
   "html_policy": {

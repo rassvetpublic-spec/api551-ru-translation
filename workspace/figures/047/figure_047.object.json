@@ -1,0 +1,412 @@
+{
+  "figure_no": 47,
+  "figure_id": "Figure 47",
+  "revision": "R01",
+  "api_page": null,
+  "pdf_page": 175,
+  "caption_ru": "Рисунок 47 — Отстойная камера",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-13",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=175",
+  "source_policy": "original PDF and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_047.source_crop.png",
+  "review_png": "figure_047.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "378b4792bcd1b0ed766afc201d5797d6f5dfced444766f16ea609f3574470931",
+  "review_png_sha256": "7a54b6aa871e3cec4895418a991a54c6c04fbf54b54412de38b2b8f306cc6450",
+  "qa": {
+    "rule_ack": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_policy": "leader lines, dimensions, contours, tables and graph data preserved",
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-13",
+    "notes": [
+      "Исходный блок NOTE 1–NOTE 11 удалён из PNG и восстановлен отдельной таблицей ниже чертежа.",
+      "Ссылки Note N внутри схемы сохранены как защищённые обозначения согласно master."
+    ],
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-13",
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain approved orientation and placement without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "From process top",
+      "approved_ru": "От верха технологического\nаппарата",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        307,
+        41,
+        447,
+        59
+      ],
+      "placement_bbox": [
+        287,
+        31,
+        479,
+        87
+      ],
+      "text_bbox": [
+        288,
+        45,
+        478,
+        72
+      ],
+      "font_px": 13,
+      "lines": [
+        "От верха технологического",
+        "аппарата"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-009",
+      "original": "Max liquid level",
+      "approved_ru": "Максимальный\nуровень жидкости",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        499,
+        493,
+        622,
+        511
+      ],
+      "placement_bbox": [
+        483,
+        483,
+        646,
+        539
+      ],
+      "text_bbox": [
+        495,
+        496,
+        633,
+        525
+      ],
+      "font_px": 14,
+      "lines": [
+        "Максимальный",
+        "уровень жидкости"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-011",
+      "original": "To instrument",
+      "approved_ru": "К прибору",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        591,
+        569,
+        699,
+        587
+      ],
+      "placement_bbox": [
+        575,
+        561,
+        660,
+        603
+      ],
+      "text_bbox": [
+        577,
+        574,
+        658,
+        589
+      ],
+      "font_px": 15,
+      "lines": [
+        "К прибору"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "notes-001-011",
+      "original": "NOTE 1–NOTE 11 block",
+      "approved_ru": "Вынесено в HTML-таблицу ниже рисунка",
+      "strategy": "composite_notes_below",
+      "cleanup_bbox": [
+        [
+          -221,
+          521,
+          228,
+          537
+        ],
+        [
+          -144,
+          539,
+          231,
+          555
+        ],
+        [
+          -144,
+          557,
+          213,
+          573
+        ],
+        [
+          -144,
+          575,
+          -41,
+          591
+        ],
+        [
+          -221,
+          599,
+          250,
+          615
+        ],
+        [
+          -144,
+          617,
+          189,
+          633
+        ],
+        [
+          -221,
+          642,
+          -162,
+          657
+        ],
+        [
+          -146,
+          642,
+          201,
+          657
+        ],
+        [
+          -144,
+          660,
+          222,
+          675
+        ],
+        [
+          -144,
+          678,
+          -24,
+          693
+        ],
+        [
+          -221,
+          702,
+          -162,
+          717
+        ],
+        [
+          -146,
+          702,
+          217,
+          717
+        ],
+        [
+          -144,
+          716,
+          250,
+          735
+        ],
+        [
+          -144,
+          734,
+          210,
+          753
+        ],
+        [
+          -144,
+          756,
+          200,
+          771
+        ],
+        [
+          -144,
+          774,
+          225,
+          789
+        ],
+        [
+          -144,
+          792,
+          224,
+          807
+        ],
+        [
+          -221,
+          816,
+          -162,
+          831
+        ],
+        [
+          -146,
+          816,
+          233,
+          831
+        ],
+        [
+          -144,
+          834,
+          -57,
+          849
+        ],
+        [
+          -221,
+          858,
+          -162,
+          873
+        ],
+        [
+          -146,
+          858,
+          240,
+          873
+        ],
+        [
+          -144,
+          876,
+          279,
+          891
+        ],
+        [
+          -144,
+          894,
+          298,
+          909
+        ],
+        [
+          -144,
+          912,
+          278,
+          927
+        ],
+        [
+          -144,
+          930,
+          203,
+          945
+        ],
+        [
+          -221,
+          954,
+          -162,
+          969
+        ],
+        [
+          -146,
+          954,
+          279,
+          969
+        ],
+        [
+          -144,
+          972,
+          282,
+          987
+        ],
+        [
+          -144,
+          990,
+          135,
+          1005
+        ],
+        [
+          -221,
+          1014,
+          -162,
+          1029
+        ],
+        [
+          -146,
+          1014,
+          300,
+          1029
+        ],
+        [
+          -144,
+          1032,
+          -31,
+          1047
+        ],
+        [
+          -221,
+          1056,
+          -162,
+          1071
+        ],
+        [
+          -146,
+          1056,
+          291,
+          1071
+        ],
+        [
+          -144,
+          1074,
+          299,
+          1089
+        ],
+        [
+          -144,
+          1092,
+          31,
+          1107
+        ],
+        [
+          -221,
+          1116,
+          297,
+          1131
+        ],
+        [
+          -144,
+          1134,
+          290,
+          1149
+        ],
+        [
+          -144,
+          1152,
+          -77,
+          1167
+        ],
+        [
+          -221,
+          1176,
+          282,
+          1191
+        ],
+        [
+          -144,
+          1194,
+          239,
+          1209
+        ],
+        [
+          -144,
+          1212,
+          91,
+          1227
+        ]
+      ],
+      "placement_bbox": null,
+      "text_bbox": null,
+      "font_px": null,
+      "lines": [],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    }
+  ],
+  "composite_html": true,
+  "status": "accepted",
+  "source_package": "API551_FIGURE_047_ACCEPTED_R01_20260713",
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration"
+}

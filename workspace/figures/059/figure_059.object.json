@@ -1,0 +1,370 @@
+{
+  "figure_no": 59,
+  "figure_id": "Figure 59",
+  "revision": "R02",
+  "api_page": 189,
+  "pdf_page": 197,
+  "caption_original": "Figure 59—Piezometric Wind Stabilization Fitting Fabrication",
+  "caption_ru": "Рисунок 59 — Изготовление пьезометрического штуцера стабилизации ветрового воздействия",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-14",
+  "ready_for_final_export": true,
+  "working_branch_source": "candidates",
+  "working_branch_source_sha": "71f518b9b14093470f75cc95af2f7ed01e57d7d6",
+  "production_source": "source/API 551 2016 (R2024).pdf#page=197",
+  "production_source_sha256": "d458b3a899902f216767e753aa5737a9745b61adcab02f85c9521937a9d3e270",
+  "source_policy": "original PDF + approved label master + CURRENT rules; OCR not used as source truth",
+  "source_crop": "figure_059.source_crop.png",
+  "review_png": "figure_059.png",
+  "caption_inside_png": false,
+  "source_crop_pdf_rect_points": [
+    40,
+    350,
+    572,
+    630
+  ],
+  "render_scale": 2.0,
+  "source_crop_sha256": "fcaeeacfc199f62d44573cbaebd9191aec57a3d807e05f528d5ed2c05e08b6a3",
+  "review_png_sha256": "e96f6f4b3f7305419d1634c3569b8dff74fdeec7d46c214f5471001bd355134b",
+  "qa": {
+    "source_gate": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "no_image_generation": true,
+    "no_generative_editing": true,
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-14",
+    "special_structure": "notes_in_html",
+    "notes": [
+      "Generated in one batch from the verified PDF.",
+      "Visual layout and translations explicitly accepted by the user on 2026-07-14.",
+      "Catalog/index/handoff integration is performed only by the repo-local accept-figure command."
+    ],
+    "user_visual_approval": "PASS_2026-07-14"
+  },
+  "visual_label_blocks": [
+    {
+      "cleanup_bbox": [
+        361,
+        43,
+        568,
+        81
+      ],
+      "placement_bbox": [
+        357,
+        36,
+        547,
+        89
+      ],
+      "text_lines": [
+        "К общему",
+        "пьезометрическому штуцеру",
+        "измерения тяги"
+      ],
+      "font_px": 13,
+      "block_id": "route",
+      "ru": "К общему пьезометрическому штуцеру измерения тяги",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        247,
+        51,
+        293,
+        69
+      ],
+      "placement_bbox": [
+        243,
+        47,
+        313,
+        73
+      ],
+      "text_lines": [
+        "Уклон"
+      ],
+      "font_px": 13,
+      "block_id": "slope",
+      "ru": "Уклон",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        94,
+        88,
+        160,
+        106
+      ],
+      "placement_bbox": [
+        90,
+        84,
+        160,
+        110
+      ],
+      "text_lines": [
+        "Печь"
+      ],
+      "font_px": 13,
+      "block_id": "furnace",
+      "ru": "Печь",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        91,
+        138,
+        155,
+        176
+      ],
+      "placement_bbox": [
+        87,
+        134,
+        192,
+        180
+      ],
+      "text_lines": [
+        "Открыто в",
+        "топку"
+      ],
+      "font_px": 13,
+      "block_id": "open",
+      "ru": "Открыто в топку",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        363,
+        204,
+        396,
+        242
+      ],
+      "placement_bbox": [
+        359,
+        200,
+        469,
+        246
+      ],
+      "text_lines": [
+        "Дренажный",
+        "карман"
+      ],
+      "font_px": 12,
+      "block_id": "drip1",
+      "ru": "Дренажный карман",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        255,
+        224,
+        333,
+        262
+      ],
+      "placement_bbox": [
+        251,
+        220,
+        376,
+        266
+      ],
+      "text_lines": [
+        "Подъём не менее",
+        "18″"
+      ],
+      "font_px": 12,
+      "block_id": "rise",
+      "ru": "Подъём не менее 18″",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        187,
+        287,
+        290,
+        325
+      ],
+      "placement_bbox": [
+        183,
+        283,
+        333,
+        329
+      ],
+      "text_lines": [
+        "Резьбовой переходник",
+        "1½ × ½″"
+      ],
+      "font_px": 12,
+      "block_id": "reducer",
+      "ru": "Резьбовой переходник 1½ × ½″",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        478,
+        341,
+        511,
+        379
+      ],
+      "placement_bbox": [
+        474,
+        337,
+        584,
+        383
+      ],
+      "text_lines": [
+        "Дренажный",
+        "карман"
+      ],
+      "font_px": 12,
+      "block_id": "drip2",
+      "ru": "Дренажный карман",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        178,
+        383,
+        295,
+        421
+      ],
+      "placement_bbox": [
+        174,
+        379,
+        319,
+        425
+      ],
+      "text_lines": [
+        "Трубка из нержавеющей",
+        "стали ½″"
+      ],
+      "font_px": 12,
+      "block_id": "tube",
+      "ru": "Трубка из нержавеющей стали ½″",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        708,
+        165,
+        843,
+        190
+      ],
+      "placement_bbox": [
+        737,
+        161,
+        847,
+        194
+      ],
+      "text_lines": [
+        "Муфта 3″"
+      ],
+      "font_px": 12,
+      "block_id": "coupling",
+      "ru": "Муфта 3″",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        804,
+        190,
+        894,
+        208
+      ],
+      "placement_bbox": [
+        793,
+        186,
+        898,
+        212
+      ],
+      "text_lines": [
+        "Труба 1½″"
+      ],
+      "font_px": 12,
+      "block_id": "pipe15",
+      "ru": "Труба 1½″",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        761,
+        274,
+        820,
+        290
+      ],
+      "placement_bbox": [
+        739,
+        270,
+        824,
+        294
+      ],
+      "text_lines": [
+        "Деталь A"
+      ],
+      "font_px": 12,
+      "block_id": "detail",
+      "ru": "Деталь A",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        667,
+        71,
+        683,
+        213
+      ],
+      "placement_bbox": [
+        557,
+        67,
+        687,
+        217
+      ],
+      "text_lines": [
+        "Футеровка и",
+        "изоляция"
+      ],
+      "font_px": 12,
+      "block_id": "refractory",
+      "ru": "Футеровка и изоляция",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    }
+  ],
+  "notes_ru": [
+    {
+      "label": "ПРИМЕЧАНИЕ 1",
+      "text": "Для загрязнённых топлив предусмотреть фитинг для прочистки шомполом. См. деталь A."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 2",
+      "text": "Приборы измерения тяги и манометры располагать так, чтобы исключить воздействие вибрации."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 3",
+      "text": "Все трубки прокладывать с уклоном без образования карманов."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 4",
+      "text": "Для печи с естественной тягой клапан не требуется."
+    },
+    {
+      "label": "ПРИМЕЧАНИЕ 5",
+      "text": "В качестве альтернативы пьезометрическому штуцеру измерения тяги предусмотреть штуцер типа mud-dabber, присоединённый к направленному вниз уличному отводу. Прибор располагать в защищённой от ветра зоне."
+    }
+  ],
+  "package_format": "canonical_figure_object_6_files",
+  "catalog_state": "accepted_by_user; pending candidates integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_059_ACCEPTED_R02_20260714",
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration"
+}

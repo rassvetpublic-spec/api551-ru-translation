@@ -29,3 +29,27 @@ Read-only commands do not modify the repository. `install-package` modifies only
 ## Source-gate model
 
 The toolkit checks the active source/rule files, catalog/handoff status, documentation sync, LFS-safe binary state, and Figure object consistency. It must stop with a clear error instead of guessing when project state is inconsistent.
+
+## Full Control package 005
+
+Repo-local точки входа PowerShell из пакета 005 описаны в docs/project/API551_TOOL_FULL_CONTROL_005_RU.md:
+
+- tools/api551/api551_005_bootstrap.ps1
+- tools/api551/api551_preview_index.ps1
+- tools/api551/publish_codex_report.ps1
+
+Каждый скрипт, изменяющий состояние, сначала запускают с ValidateOnly.
+
+## Figure 010 R02 frame rebuild
+
+Точки входа для обязательной пересборки Figure 10 R02:
+
+- `tools/api551/build_figure010_r02.py`
+- `tools/api551/validate_figure010_frame_qa.py`
+
+Русские инструкции: `docs/project/API551_FIGURE_010_REBUILD_R02_RU.md` и `docs/project/API551_FIGURE_010_FRAME_QA_TOOL_RU.md`.
+
+## Figure 011 R01 review rebuild
+
+- `tools/api551/build_figure011_r01.py` — fresh-PDF cleanup/render/fresh-extract gate для графика Figure 11.
+- `tools/api551/validate_figure011_qa.py` — проверка осей, legend table frames и protected line samples.

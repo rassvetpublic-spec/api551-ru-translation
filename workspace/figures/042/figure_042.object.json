@@ -1,0 +1,139 @@
+{
+  "figure_no": 42,
+  "figure_id": "Figure 42",
+  "revision": "R01",
+  "api_page": null,
+  "pdf_page": 167,
+  "caption_ru": "Рисунок 42 — Значения насыщения преобразователя при калибровке на относительную плотность 0,70",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-13",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=167",
+  "source_policy": "original PDF and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_042.source_crop.png",
+  "review_png": "figure_042.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "eb034f1bdc4b002d2599e3daac27ed33fbb28846f5cc28d470da6faba3129fc9",
+  "review_png_sha256": "b3aba5caea5fb2584242561b4d35e337d07856fac7bb676733390b9ae2db3c46",
+  "qa": {
+    "rule_ack": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_policy": "leader lines, dimensions, contours, tables and graph data preserved",
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-13",
+    "notes": [
+      "Числовые значения, сетка и кривые защищены и не переводились.",
+      "Вертикальное направление осевой надписи сохранено."
+    ],
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-13",
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain approved orientation and placement without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-004",
+      "original": "Transmitter Output at a 100 % Level",
+      "approved_ru": "Выход преобразователя\nпри уровне 100 %",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        20,
+        105,
+        38,
+        419
+      ],
+      "placement_bbox": [
+        4,
+        89,
+        54,
+        435
+      ],
+      "text_bbox": [
+        8,
+        155,
+        49,
+        369
+      ],
+      "font_px": 16,
+      "lines": [
+        "Выход преобразователя",
+        "при уровне 100 %"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Actual Level for Liquids ≥ 0.7 S.G.",
+      "approved_ru": "Фактический уровень для жидкостей\nс относительной плотностью ≥0,7",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        262,
+        235,
+        542,
+        258
+      ],
+      "placement_bbox": [
+        246,
+        223,
+        566,
+        290
+      ],
+      "text_bbox": [
+        256,
+        241,
+        556,
+        271
+      ],
+      "font_px": 15,
+      "lines": [
+        "Фактический уровень для жидкостей",
+        "с относительной плотностью ≥0,7"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-022",
+      "original": "Specific Gravity",
+      "approved_ru": "Относительная плотность",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        282,
+        488,
+        423,
+        506
+      ],
+      "placement_bbox": [
+        258,
+        478,
+        447,
+        520
+      ],
+      "text_bbox": [
+        262,
+        494,
+        443,
+        503
+      ],
+      "font_px": 13,
+      "lines": [
+        "Относительная плотность"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    }
+  ],
+  "composite_html": false,
+  "status": "accepted",
+  "source_package": "API551_FIGURE_042_ACCEPTED_R01_20260713",
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration"
+}

@@ -1,0 +1,144 @@
+{
+  "figure_no": 61,
+  "figure_id": "Figure 61",
+  "revision": "R02",
+  "api_page": 191,
+  "pdf_page": 199,
+  "caption_original": "Figure 61—A Commercial Piezometric Wind Stabilization Fitting",
+  "caption_ru": "Рисунок 61 — Промышленный пьезометрический штуцер стабилизации ветрового воздействия",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-14",
+  "ready_for_final_export": true,
+  "working_branch_source": "candidates",
+  "working_branch_source_sha": "71f518b9b14093470f75cc95af2f7ed01e57d7d6",
+  "production_source": "source/API 551 2016 (R2024).pdf#page=199",
+  "production_source_sha256": "d458b3a899902f216767e753aa5737a9745b61adcab02f85c9521937a9d3e270",
+  "source_policy": "original PDF + approved label master + CURRENT rules; OCR not used as source truth",
+  "source_crop": "figure_061.source_crop.png",
+  "review_png": "figure_061.png",
+  "caption_inside_png": false,
+  "source_crop_pdf_rect_points": [
+    40,
+    275,
+    572,
+    415
+  ],
+  "render_scale": 2.0,
+  "source_crop_sha256": "506f5fff1df167712f5c7c37e507cb9eb85eb9849375f7c6d09887f572c23e0a",
+  "review_png_sha256": "7f14b828e06f06da4c951026baad9cf0e8d9803de6ea9ea6285e82224b4d3263",
+  "qa": {
+    "source_gate": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "no_image_generation": true,
+    "no_generative_editing": true,
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-14",
+    "special_structure": "standard",
+    "notes": [
+      "Generated in one batch from the verified PDF.",
+      "Visual layout and translations explicitly accepted by the user on 2026-07-14.",
+      "Catalog/index/handoff integration is performed only by the repo-local accept-figure command."
+    ],
+    "user_visual_approval": "PASS_2026-07-14"
+  },
+  "visual_label_blocks": [
+    {
+      "cleanup_bbox": [
+        173,
+        254,
+        288,
+        274
+      ],
+      "placement_bbox": [
+        169,
+        250,
+        269,
+        278
+      ],
+      "text_lines": [
+        "Вид снизу"
+      ],
+      "font_px": 13,
+      "block_id": "bottom",
+      "ru": "Вид снизу",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        744,
+        254,
+        832,
+        274
+      ],
+      "placement_bbox": [
+        736,
+        250,
+        836,
+        278
+      ],
+      "text_lines": [
+        "Вид сбоку"
+      ],
+      "font_px": 13,
+      "block_id": "side",
+      "ru": "Вид сбоку",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        727,
+        73,
+        906,
+        93
+      ],
+      "placement_bbox": [
+        750,
+        64,
+        910,
+        102
+      ],
+      "text_lines": [
+        "Труба 2″ (поставка",
+        "других)"
+      ],
+      "font_px": 13,
+      "block_id": "pipe",
+      "ru": "Труба 2″ (поставка других)",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    },
+    {
+      "cleanup_bbox": [
+        678,
+        129,
+        783,
+        148
+      ],
+      "placement_bbox": [
+        617,
+        120,
+        787,
+        156
+      ],
+      "text_lines": [
+        "Внутренняя трубная резьба",
+        "2,00″"
+      ],
+      "font_px": 12,
+      "block_id": "fpt",
+      "ru": "Внутренняя трубная резьба 2,00″",
+      "translation_status": "approved_master_or_source_text",
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-14"
+    }
+  ],
+  "notes_ru": [],
+  "package_format": "canonical_figure_object_6_files",
+  "catalog_state": "accepted_by_user; pending candidates integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_061_ACCEPTED_R02_20260714",
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration"
+}

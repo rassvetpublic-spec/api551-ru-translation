@@ -4,7 +4,7 @@ Status: CURRENT operational documentation for the repo-local API551 toolkit.
 
 ## 1. Single entrypoint
 
-All Stage 4 tooling starts from the repository-local entrypoint:
+Stage 4 is complete. Audit, source-gate, and any explicitly reopened Figure work use the repository-local entrypoint:
 
 ```powershell
 .\tools\api551\api551.ps1 source-gate
@@ -13,16 +13,16 @@ All Stage 4 tooling starts from the repository-local entrypoint:
 The repository path normally used on Windows is:
 
 ```text
-C:\GIT\API 551
+C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT
 ```
 
 The visual hydrated view, when needed, is separate:
 
 ```text
-C:\GIT\API551_HYDRATED_VIEW
+C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT
 ```
 
-Do not run one-off scripts from `C:\GIT` as the default workflow. New project automation belongs in `/tools/api551`.
+The current snapshot has no `.git`; use GitHub operations separately. Do not run one-off scripts from the old `C:\GIT` root. New project automation belongs in `/tools/api551`.
 
 ## 2. Default commands
 
@@ -32,7 +32,7 @@ Do not run one-off scripts from `C:\GIT` as the default workflow. New project au
 .\tools\api551\api551.ps1 docs-sync-check
 .\tools\api551\api551.ps1 rules-for -Figure 003
 .\tools\api551\api551.ps1 figure-check -Figure 003
-.\tools\api551\api551.ps1 package-check -PackageZip C:\GIT\package.zip -Figure 003
+.\tools\api551\api551.ps1 package-check -PackageZip C:\Irvis-UPG\GIT\package.zip -Figure 003
 .\tools\api551\api551.ps1 pr-check -Pr 37
 ```
 
@@ -54,3 +54,14 @@ The toolkit exists to prevent the repeated errors from manual ad-hoc workflows:
 - broken relative image links;
 - LFS pointers being mistaken for real PNGs inside packages;
 - manual branch and PR checks performed without a consistent source-gate.
+
+## accept-figure command
+
+For a Figure candidate already approved by the user, use the repo-local acceptance command instead of one-off scripts:
+
+```powershell
+.	oolspi551pi551.ps1 accept-figure -Figure NNN -PackageZip <path-to-review-zip>
+```
+
+The command performs package-check, installs `workspace/figures/NNN`, marks the Figure as accepted, updates `catalog.json`, `index.html`, `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`, bootstrap status markers, and the hard-coded accepted state in `.github/workflows/structure-check.yml`. It does not commit, push, merge, or delete branches.
+

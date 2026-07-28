@@ -1,0 +1,143 @@
+{
+  "figure_no": 20,
+  "figure_id": "Figure 20",
+  "revision": "R01",
+  "pdf_page": 77,
+  "caption_ru": "Рисунок 20 — Размеры классической трубы Вентури",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-12",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=77",
+  "source_policy": "original PDF page 77 and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_020.source_crop.png",
+  "review_png": "figure_020.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "ea899b2ddce6a7981c001116b2b5f2cbdb0b937b8fdeabbd8132bdee26b30767",
+  "review_png_sha256": "e071c9baf828990a6272e9aad0004672d8bed7fc19a47ca86af09f0085fc365e",
+  "qa": {
+    "rule_ack": "PASS",
+    "strategy_gate": "PASS",
+    "cleaned_only_visual_gate": "PASS",
+    "layout_visual_gate": "PASS",
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_preserved": true,
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-12",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain the approved orientation and placement logic without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "Note 3",
+      "approved_ru": "Примечание 3",
+      "strategy": "drawing_free_text",
+      "text_bbox": [
+        551,
+        637,
+        750,
+        665
+      ],
+      "font_size_px": 30,
+      "frame_required": false,
+      "protected_dimensions_preserved": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-003",
+      "original": "Conical Divergent E",
+      "approved_ru": "Конический диффузор E",
+      "strategy": "drawing_free_text",
+      "text_bbox": [
+        1918,
+        103,
+        2305,
+        136
+      ],
+      "font_size_px": 34,
+      "frame_required": false,
+      "protected_dimensions_preserved": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-004a",
+      "original": "Entrance A",
+      "approved_ru": "Входной участок A",
+      "strategy": "drawing_free_text",
+      "text_bbox": [
+        497,
+        1014,
+        714,
+        1037
+      ],
+      "font_size_px": 25,
+      "frame_required": false,
+      "protected_dimensions_preserved": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-004b",
+      "original": "Convergent B",
+      "approved_ru": "Конфузор B",
+      "strategy": "drawing_free_text",
+      "text_bbox": [
+        929,
+        1012,
+        1081,
+        1040
+      ],
+      "font_size_px": 28,
+      "frame_required": false,
+      "protected_dimensions_preserved": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-004c",
+      "original": "Throat C",
+      "approved_ru": "Горловина C",
+      "strategy": "drawing_free_text",
+      "text_bbox": [
+        1286,
+        1013,
+        1444,
+        1039
+      ],
+      "font_size_px": 27,
+      "frame_required": false,
+      "protected_dimensions_preserved": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-004d",
+      "original": "Truncated Divergent ≥0.65E",
+      "approved_ru": "Усечённый диффузор ≥0,65E",
+      "strategy": "drawing_free_text",
+      "text_bbox": [
+        1768,
+        1014,
+        2108,
+        1038
+      ],
+      "font_size_px": 25,
+      "frame_required": false,
+      "protected_dimensions_preserved": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "protected-dimensions",
+      "protected_text": "a, c, R1, R2, R3, d, D, angles and dimension lines",
+      "strategy": "protect_do_not_translate",
+      "visual_result": "PASS"
+    }
+  ],
+  "restored_notes": [],
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_020_ACCEPTED_R01_20260712",
+  "figure_specific_rule": "Only the upper Venturi drawing belongs to Figure 20. Fabrication Method, embedded tables, definitions and NOTE 1–NOTE 3 below it are excluded from the Figure object.",
+  "excluded_source_region": "everything at and below Fabrication Method"
+}

@@ -1,0 +1,423 @@
+{
+  "figure_no": 29,
+  "figure_id": "Figure 29",
+  "revision": "R01",
+  "api_page": null,
+  "pdf_page": 120,
+  "caption_ru": "Рисунок 29 — Преобразователи дифференциального уровня с мокрыми импульсными линиями",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-13",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=120",
+  "source_policy": "original PDF and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_029.source_crop.png",
+  "review_png": "figure_029.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "027e9b514841275672de95f3b4686bcc3a611be47eb5ec43b2a1f2e261fbc9fd",
+  "review_png_sha256": "03f66e6cdd03918c4fcc1582f0edd53bbea57c30b6c202d658f849f3d839906e",
+  "qa": {
+    "rule_ack": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_policy": "leader lines, dimensions, contours, tables and graph data preserved",
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-13",
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-13",
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain the approved orientation and placement logic without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "Plugged vent tee for fill overflow",
+      "approved_ru": "Вентиляционный тройник с заглушкой\nдля перелива при заполнении",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        634,
+        57,
+        779,
+        99
+      ],
+      "placement_bbox": [
+        600,
+        24,
+        850,
+        116
+      ],
+      "text_bbox": [
+        609,
+        55,
+        840,
+        84
+      ],
+      "font_px": 13,
+      "lines": [
+        "Вентиляционный тройник с заглушкой",
+        "для перелива при заполнении"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-003",
+      "original": "Flow",
+      "approved_ru": "Поток",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        324,
+        90,
+        371,
+        129
+      ],
+      "placement_bbox": [
+        300,
+        76,
+        410,
+        140
+      ],
+      "text_bbox": [
+        333,
+        99,
+        377,
+        111
+      ],
+      "font_px": 16,
+      "lines": [
+        "Поток"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-004",
+      "original": "Orifice plate and flow meter flanges",
+      "approved_ru": "Диафрагма и фланцы\nрасходомера",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        316,
+        169,
+        472,
+        212
+      ],
+      "placement_bbox": [
+        260,
+        144,
+        530,
+        228
+      ],
+      "text_bbox": [
+        323,
+        170,
+        466,
+        201
+      ],
+      "font_px": 14,
+      "lines": [
+        "Диафрагма и фланцы",
+        "расходомера"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-005",
+      "original": "HP side for transmitter with positive region linearized",
+      "approved_ru": "Сторона высокого давления для преобразователя\nс линеаризованной положительной областью",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        586,
+        192,
+        776,
+        256
+      ],
+      "placement_bbox": [
+        630,
+        120,
+        950,
+        246
+      ],
+      "text_bbox": [
+        632,
+        168,
+        914,
+        196
+      ],
+      "font_px": 12,
+      "lines": [
+        "Сторона высокого давления для преобразователя",
+        "с линеаризованной положительной областью"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-006",
+      "original": "Vent valve with plug for fill overflow",
+      "approved_ru": "Вентиляционный клапан с заглушкой\nдля перелива при заполнении",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        426,
+        228,
+        590,
+        270
+      ],
+      "placement_bbox": [
+        330,
+        190,
+        594,
+        290
+      ],
+      "text_bbox": [
+        349,
+        225,
+        575,
+        254
+      ],
+      "font_px": 13,
+      "lines": [
+        "Вентиляционный клапан с заглушкой",
+        "для перелива при заполнении"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-007",
+      "original": "Fill Valves",
+      "approved_ru": "Клапаны\nзаполнения",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        592,
+        301,
+        650,
+        344
+      ],
+      "placement_bbox": [
+        566,
+        282,
+        686,
+        362
+      ],
+      "text_bbox": [
+        588,
+        306,
+        664,
+        334
+      ],
+      "font_px": 14,
+      "lines": [
+        "Клапаны",
+        "заполнения"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Flow transmitter",
+      "approved_ru": "Преобразователь\nрасхода",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        372,
+        355,
+        464,
+        398
+      ],
+      "placement_bbox": [
+        330,
+        332,
+        524,
+        418
+      ],
+      "text_bbox": [
+        369,
+        358,
+        484,
+        390
+      ],
+      "font_px": 14,
+      "lines": [
+        "Преобразователь",
+        "расхода"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-009",
+      "original": "HP side for transmitter with negative region linearized",
+      "approved_ru": "Сторона высокого давления для преобразователя\nс линеаризованной отрицательной областью",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        869,
+        381,
+        1001,
+        466
+      ],
+      "placement_bbox": [
+        820,
+        350,
+        1050,
+        492
+      ],
+      "text_bbox": [
+        822,
+        395,
+        1001,
+        445
+      ],
+      "font_px": 11,
+      "lines": [
+        "Сторона высокого давления для",
+        "преобразователя",
+        "с линеаризованной отрицательной",
+        "областью"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-010",
+      "original": "Level transmitter",
+      "approved_ru": "Преобразователь уровня",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        809,
+        478,
+        951,
+        499
+      ],
+      "placement_bbox": [
+        760,
+        456,
+        1016,
+        516
+      ],
+      "text_bbox": [
+        806,
+        477,
+        970,
+        492
+      ],
+      "font_px": 14,
+      "lines": [
+        "Преобразователь уровня"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-011",
+      "original": "Plug unused port",
+      "approved_ru": "Заглушить неиспользуемый порт",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        588,
+        484,
+        733,
+        506
+      ],
+      "placement_bbox": [
+        540,
+        460,
+        800,
+        522
+      ],
+      "text_bbox": [
+        570,
+        484,
+        770,
+        497
+      ],
+      "font_px": 13,
+      "lines": [
+        "Заглушить неиспользуемый порт"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-012",
+      "original": "Five valve manifold with drain/fill points",
+      "approved_ru": "Пятивентильный клапанный блок\nс точками дренажа и заполнения",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        598,
+        519,
+        762,
+        562
+      ],
+      "placement_bbox": [
+        550,
+        496,
+        840,
+        580
+      ],
+      "text_bbox": [
+        601,
+        523,
+        789,
+        551
+      ],
+      "font_px": 12,
+      "lines": [
+        "Пятивентильный клапанный блок",
+        "с точками дренажа и заполнения"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-013",
+      "original": "Alternate location for fill valve",
+      "approved_ru": "Альтернативное расположение\nклапана заполнения",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        413,
+        532,
+        561,
+        575
+      ],
+      "placement_bbox": [
+        350,
+        504,
+        604,
+        580
+      ],
+      "text_bbox": [
+        389,
+        528,
+        564,
+        552
+      ],
+      "font_px": 12,
+      "lines": [
+        "Альтернативное расположение",
+        "клапана заполнения"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    }
+  ],
+  "special_structure": {},
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_029_ACCEPTED_R01_20260713"
+}

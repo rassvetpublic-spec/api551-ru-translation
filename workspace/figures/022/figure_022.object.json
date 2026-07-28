@@ -1,0 +1,106 @@
+{
+  "figure_no": 22,
+  "figure_id": "Figure 22",
+  "revision": "R01",
+  "pdf_page": 84,
+  "caption_ru": "Рисунок 22 — Установка расходомера переменного сечения",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-12",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=84",
+  "source_policy": "original PDF page 84 and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_022.source_crop.png",
+  "review_png": "figure_022.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "f558c740bf92ab6cb7d483a853e96163d4c40772db1cd6b7b5f4dea312baf9b6",
+  "review_png_sha256": "d469e75d5bf512ac8a4b2391d1098eb788be4788a9024acc373c1aac98b243d9",
+  "qa": {
+    "rule_ack": "PASS",
+    "strategy_gate": "PASS",
+    "cleaned_only_visual_gate": "PASS",
+    "layout_visual_gate": "PASS",
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_preserved": true,
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-12",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain the approved orientation and placement logic without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "250 mm [Nom]",
+      "approved_ru": "250 мм [ном.]",
+      "strategy": "vertical_label",
+      "text_bbox": [
+        2616,
+        1291,
+        2664,
+        1540
+      ],
+      "font_size_px": 38,
+      "frame_required": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-003",
+      "original": "50 SCFM",
+      "approved_ru": "50 стандартных куб. футов мин",
+      "strategy": "drawing_free_text",
+      "text_bbox": [
+        2076,
+        1395,
+        2219,
+        1472
+      ],
+      "font_size_px": 24,
+      "frame_required": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-004",
+      "original": "Flow",
+      "approved_ru": "Поток",
+      "strategy": "vertical_label",
+      "text_bbox": [
+        1858,
+        1517,
+        1898,
+        1633
+      ],
+      "font_size_px": 38,
+      "frame_required": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Bypass",
+      "approved_ru": "Байпас",
+      "strategy": "drawing_free_text",
+      "text_bbox": [
+        1286,
+        2092,
+        1414,
+        2120
+      ],
+      "font_size_px": 38,
+      "frame_required": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "protected-dial-values",
+      "protected_text": "120, 100, 0 and all dial/pipe geometry",
+      "strategy": "protect_do_not_translate",
+      "visual_result": "PASS"
+    }
+  ],
+  "restored_notes": [],
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_022_ACCEPTED_R01_20260712",
+  "figure_specific_rule": "Dial values and dimensions not selected for translation remain protected; caption outside PNG."
+}

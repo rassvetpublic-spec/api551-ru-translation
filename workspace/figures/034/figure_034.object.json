@@ -1,0 +1,265 @@
+{
+  "figure_no": 34,
+  "figure_id": "Figure 34",
+  "revision": "R01",
+  "api_page": null,
+  "pdf_page": 138,
+  "caption_ru": "Рисунок 34 — Монтаж ВЧ ёмкостного адмиттансного преобразователя уровня или уровнемера GWR",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-13",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=138",
+  "source_policy": "original PDF and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_034.source_crop.png",
+  "review_png": "figure_034.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "ac55d345668479cc7d962144e596723060b17beb987a3080024c6d16023f148c",
+  "review_png_sha256": "49e689b2292d41bbeaba60fd84dfeb3edd0355aa631400f84b0d2e9d61fc68ae",
+  "qa": {
+    "rule_ack": "PASS",
+    "fresh_pdf_render": true,
+    "clean_before_draw": true,
+    "caption_inside_png": false,
+    "invented_callout_frames": 0,
+    "protected_graphics_policy": "leader lines, dimensions, contours, tables and graph data preserved",
+    "visual_acceptance": "PASS_USER_ACCEPTED_2026-07-13",
+    "frame_placement_rule_audit": "PASS",
+    "user_visual_approval": "PASS_2026-07-13",
+    "fresh_extracted_png_inspection": "PASS",
+    "frame_policy": "no invented frames; preserve each source label strategy and existing protected frames only",
+    "placement_policy": "complete Russian labels retain the approved orientation and placement logic without crossing or covering protected graphics",
+    "text_fit": "complete and unclipped"
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "Nozzle extension zone, 0.08 D",
+      "approved_ru": "Зона удлинения патрубка, 0,08 D",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        285,
+        146,
+        532,
+        171
+      ],
+      "placement_bbox": [
+        240,
+        126,
+        590,
+        192
+      ],
+      "text_bbox": [
+        299,
+        150,
+        530,
+        166
+      ],
+      "font_px": 15,
+      "lines": [
+        "Зона удлинения патрубка, 0,08 D"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-003",
+      "original": "Optional valve for venting and calibration fills",
+      "approved_ru": "Дополнительный клапан для вентиляции\nи заполнения при калибровке",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        698,
+        150,
+        904,
+        190
+      ],
+      "placement_bbox": [
+        660,
+        124,
+        970,
+        212
+      ],
+      "text_bbox": [
+        681,
+        152,
+        949,
+        183
+      ],
+      "font_px": 14,
+      "lines": [
+        "Дополнительный клапан для вентиляции",
+        "и заполнения при калибровке"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-004",
+      "original": "Exclusion zone",
+      "approved_ru": "Зона\nисключения",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        120,
+        426,
+        200,
+        467
+      ],
+      "placement_bbox": [
+        76,
+        400,
+        240,
+        490
+      ],
+      "text_bbox": [
+        116,
+        428,
+        199,
+        457
+      ],
+      "font_px": 15,
+      "lines": [
+        "Зона",
+        "исключения"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-005",
+      "original": "To prevent grounding, RF and GWR internal probes should free hang. Internal probes particularly those mounted at an angle should have adequate bending resistance so that they can withstand liquid turbulence and they won’t droop and contact the nozzle or the vessel shell.",
+      "approved_ru": "Во избежание заземления внутренние зонды ВЧ и GWR должны свободно подвешиваться. Внутренние зонды, особенно установленные под углом, должны иметь достаточную жёсткость на изгиб, чтобы выдерживать турбулентность жидкости, не провисать и не касаться патрубка или стенки аппарата.",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        235,
+        469,
+        585,
+        609
+      ],
+      "placement_bbox": [
+        164,
+        426,
+        632,
+        646
+      ],
+      "text_bbox": [
+        165,
+        506,
+        621,
+        564
+      ],
+      "font_px": 12,
+      "lines": [
+        "Во избежание заземления внутренние зонды ВЧ и GWR должны свободно",
+        "подвешиваться. Внутренние зонды, особенно установленные под углом, должны",
+        "иметь достаточную жёсткость на изгиб, чтобы выдерживать турбулентность",
+        "жидкости, не провисать и не касаться патрубка или стенки аппарата."
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-006",
+      "original": "Liquid level",
+      "approved_ru": "Уровень жидкости",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        393,
+        716,
+        486,
+        737
+      ],
+      "placement_bbox": [
+        356,
+        696,
+        530,
+        756
+      ],
+      "text_bbox": [
+        379,
+        718,
+        506,
+        732
+      ],
+      "font_px": 15,
+      "lines": [
+        "Уровень жидкости"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-007",
+      "original": "Longer range values possible with internal probes",
+      "approved_ru": "Больший диапазон возможен\nпри внутренних зондах",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        708,
+        1091,
+        878,
+        1152
+      ],
+      "placement_bbox": [
+        670,
+        1064,
+        950,
+        1180
+      ],
+      "text_bbox": [
+        721,
+        1107,
+        899,
+        1136
+      ],
+      "font_px": 13,
+      "lines": [
+        "Больший диапазон возможен",
+        "при внутренних зондах"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Nozzle exclusion zone (nozzle OD x 0.5) + 125 mm or (nozzle OD x 0.5) + 6 in.",
+      "approved_ru": "Зона исключения патрубка\n(наружный Ø патрубка × 0,5) + 125 мм\nили (наружный Ø патрубка × 0,5) + 6″",
+      "strategy": "free_text",
+      "cleanup_bbox": [
+        145,
+        1104,
+        394,
+        1165
+      ],
+      "placement_bbox": [
+        84,
+        1064,
+        490,
+        1200
+      ],
+      "text_bbox": [
+        86,
+        1109,
+        300,
+        1152
+      ],
+      "font_px": 12,
+      "lines": [
+        "Зона исключения патрубка",
+        "(наружный Ø патрубка × 0,5) + 125 мм",
+        "или (наружный Ø патрубка × 0,5) + 6″"
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS_USER_ACCEPTED_2026-07-13"
+    }
+  ],
+  "special_structure": {},
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_034_ACCEPTED_R01_20260713"
+}

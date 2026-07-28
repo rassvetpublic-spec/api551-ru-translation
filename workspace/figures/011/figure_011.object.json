@@ -1,0 +1,207 @@
+{
+  "figure_no": 11,
+  "figure_id": "Figure 11",
+  "revision": "R01",
+  "api_page": 37,
+  "pdf_page": 45,
+  "caption_ru": "Рисунок 11 — Пределы точности и применимые диапазоны температур для термисторов и термопреобразователей сопротивления",
+  "stage4_status": "accepted",
+  "approval_status": "accepted_by_user_2026-07-12",
+  "ready_for_final_export": true,
+  "production_source": "source/API 551 2016 (R2024).pdf#page=45",
+  "source_policy": "original PDF page 45 and approved label master; OCR not used as source of truth",
+  "source_crop": "figure_011.source_crop.png",
+  "review_png": "figure_011.png",
+  "caption_inside_png": false,
+  "source_crop_sha256": "35973b6b67fb8f5ddf25ebdba4486a5c83ee2ac0e46bc870f185a18b58a6519c",
+  "review_png_sha256": "90a3b2d2bb55c338be1f9d668349d81461e3787c6bd2b28c9968d7dfc19e77b3",
+  "qa": {
+    "rule_ack": "PASS",
+    "strategy_gate": "PASS",
+    "cleaned_only_visual_gate": "PASS",
+    "layout_visual_gate": "PASS",
+    "leader_line_callouts": 0,
+    "invented_callout_frames": 0,
+    "protected_legend_table_frames": 9,
+    "graph_grid_ticks_curves_preserved": true,
+    "legend_line_samples_preserved": true,
+    "caption_inside_png": false
+  },
+  "visual_label_blocks": [
+    {
+      "block_id": "block-002",
+      "original": "Uncertainty in Degrees Celsius",
+      "approved_ru": "Неопределённость, градусы Цельсия",
+      "strategy": "vertical_axis_title",
+      "text_bbox": [
+        31,
+        138,
+        68,
+        674
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-003",
+      "original": "Temperature in Celsius",
+      "approved_ru": "Температура, градусы Цельсия",
+      "strategy": "horizontal_axis_title",
+      "text_bbox": [
+        693,
+        794,
+        1137,
+        823
+      ],
+      "frame_required": false,
+      "protected_graphics_intersection": false,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-004",
+      "original": "Legend",
+      "approved_ru": "Легенда",
+      "strategy": "legend_table_cell",
+      "cell_bbox": [
+        1277,
+        223,
+        1811,
+        255
+      ],
+      "frame_kind": "protected_existing_table_cell",
+      "frame_preserved": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-005",
+      "original": "Description",
+      "approved_ru": "Описание",
+      "strategy": "legend_table_cell",
+      "cell_bbox": [
+        1277,
+        255,
+        1526,
+        286
+      ],
+      "frame_kind": "protected_existing_table_cell",
+      "frame_preserved": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-006",
+      "original": "Line Type",
+      "approved_ru": "Тип линии",
+      "strategy": "legend_table_cell",
+      "cell_bbox": [
+        1526,
+        255,
+        1811,
+        286
+      ],
+      "frame_kind": "protected_existing_table_cell",
+      "frame_preserved": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-007",
+      "original": "Wire Wound (Class A)",
+      "approved_ru": "Проволочный RTD (класс A)",
+      "strategy": "legend_table_cell",
+      "cell_bbox": [
+        1277,
+        286,
+        1526,
+        318
+      ],
+      "frame_kind": "protected_existing_table_cell",
+      "frame_preserved": true,
+      "line_sample_cell_unchanged": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-008",
+      "original": "Thin Film (Class A)",
+      "approved_ru": "Тонкоплёночный RTD (класс A)",
+      "strategy": "legend_table_cell",
+      "cell_bbox": [
+        1277,
+        318,
+        1526,
+        349
+      ],
+      "frame_kind": "protected_existing_table_cell",
+      "frame_preserved": true,
+      "line_sample_cell_unchanged": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-009",
+      "original": "Wire Wound (Class B)",
+      "approved_ru": "Проволочный RTD (класс B)",
+      "strategy": "legend_table_cell",
+      "cell_bbox": [
+        1277,
+        349,
+        1526,
+        381
+      ],
+      "frame_kind": "protected_existing_table_cell",
+      "frame_preserved": true,
+      "line_sample_cell_unchanged": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-010",
+      "original": "Thin Film (Class B)",
+      "approved_ru": "Тонкоплёночный RTD (класс B)",
+      "strategy": "legend_table_cell",
+      "cell_bbox": [
+        1277,
+        381,
+        1526,
+        412
+      ],
+      "frame_kind": "protected_existing_table_cell",
+      "frame_preserved": true,
+      "line_sample_cell_unchanged": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-011",
+      "original": "Thermistor (±0.1°C)",
+      "approved_ru": "Термистор (±0,1 °C)",
+      "strategy": "legend_table_cell",
+      "cell_bbox": [
+        1277,
+        412,
+        1526,
+        444
+      ],
+      "frame_kind": "protected_existing_table_cell",
+      "frame_preserved": true,
+      "line_sample_cell_unchanged": true,
+      "visual_result": "PASS"
+    },
+    {
+      "block_id": "block-012",
+      "original": "Thermistor (±0.2°C)",
+      "approved_ru": "Термистор (±0,2 °C)",
+      "strategy": "legend_table_cell",
+      "cell_bbox": [
+        1277,
+        444,
+        1526,
+        475
+      ],
+      "frame_kind": "protected_existing_table_cell",
+      "frame_preserved": true,
+      "line_sample_cell_unchanged": true,
+      "visual_result": "PASS"
+    }
+  ],
+  "unresolved_items": [],
+  "next_action": "accepted_for_candidates_integration",
+  "status": "accepted",
+  "source_package": "API551_FIGURE_011_ACCEPTED_R01_20260712"
+}
