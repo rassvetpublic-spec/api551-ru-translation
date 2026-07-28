@@ -32,7 +32,7 @@ The current snapshot has no `.git`; use GitHub operations separately. Do not run
 .\tools\api551\api551.ps1 docs-sync-check
 .\tools\api551\api551.ps1 rules-for -Figure 003
 .\tools\api551\api551.ps1 figure-check -Figure 003
-.\tools\api551\api551.ps1 package-check -PackageZip C:\GIT\package.zip -Figure 003
+.\tools\api551\api551.ps1 package-check -PackageZip C:\Irvis-UPG\GIT\package.zip -Figure 003
 .\tools\api551\api551.ps1 pr-check -Pr 37
 ```
 
