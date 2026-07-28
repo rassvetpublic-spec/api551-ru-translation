@@ -4,7 +4,7 @@ Status: CURRENT operational documentation for the repo-local API551 toolkit.
 
 ## 1. Single entrypoint
 
-All Stage 4 tooling starts from the repository-local entrypoint:
+Stage 4 is complete. Audit, source-gate, and any explicitly reopened Figure work use the repository-local entrypoint:
 
 ```powershell
 .\tools\api551\api551.ps1 source-gate
@@ -13,16 +13,16 @@ All Stage 4 tooling starts from the repository-local entrypoint:
 The repository path normally used on Windows is:
 
 ```text
-C:\GIT\API 551
+C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT
 ```
 
 The visual hydrated view, when needed, is separate:
 
 ```text
-C:\GIT\API551_HYDRATED_VIEW
+C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT
 ```
 
-Do not run one-off scripts from `C:\GIT` as the default workflow. New project automation belongs in `/tools/api551`.
+The current snapshot has no `.git`; use GitHub operations separately. Do not run one-off scripts from the old `C:\GIT` root. New project automation belongs in `/tools/api551`.
 
 ## 2. Default commands
 
