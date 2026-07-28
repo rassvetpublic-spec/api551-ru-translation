@@ -1,8 +1,8 @@
 # API 551 — Local LFS Hydrated View Workflow
 
 Status: CURRENT local workflow rule.  
-Project: API 551 RU Translation / Stage 4 Figure Objects.  
-Updated: 2026-07-08.
+Project: API 551 RU Translation / completed Stage 4 Figure Objects.  
+Updated: 2026-07-28.
 
 This document defines the local recovery/view workflow for Git LFS binary assets when broad LFS downloads are undesirable or unavailable.
 
@@ -22,19 +22,19 @@ This workflow exists to prevent:
 Recommended local folders:
 
 ```text
-C:\GIT\API 551
+C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT
 ```
 
 Clean Git repository. Use it for Git operations, branches, commits, PR preparation, and sync with `origin/main` and `origin/candidates`. It should normally contain Git LFS pointer files after no-smudge sync.
 
 ```text
-C:\GIT\API551_HYDRATED_VIEW
+C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT
 ```
 
 Local visual-review and recovery copy. It may contain real PNG/PDF/ZIP files copied from a trusted local backup. Do not use it as Git source truth and do not commit from it.
 
 ```text
-C:\GIT\API 551 — копия
+C:\Irvis-UPG\GIT\_api551_tmp
 ```
 
 Optional local backup/source folder containing previously hydrated binary files. Use it only as a binary recovery source after SHA-256 and size validation against the current branch's LFS pointers.
@@ -45,9 +45,9 @@ Optional local backup/source folder containing previously hydrated binary files.
 2. Do not use a hydrated worktree with many `M` binary files for normal PR work.
 3. Do not run `git add .` after hydrating binary files.
 4. Do not commit hydrated PNG/PDF/ZIP files as ordinary modified files.
-5. Keep `C:\GIT\API 551` clean for Git work.
-6. Keep real binary files in `C:\GIT\API551_HYDRATED_VIEW` or a dated ZIP backup.
-7. Treat `C:\GIT\API551_HYDRATED_VIEW` as local convenience/evidence only, not as source of truth for rules, status, catalog, or translation decisions.
+5. Keep `C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT` clean for Git work.
+6. Keep real binary files in `C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT` or a dated ZIP backup.
+7. Treat `C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT` as local convenience/evidence only, not as source of truth for rules, status, catalog, or translation decisions.
 
 ## 4. Safe hydration condition
 
@@ -71,7 +71,7 @@ workspace/figures/<NNN>/figure_<NNN>.png
 workspace/figures/<NNN>/figure_<NNN>.source_crop.png
 ```
 
-For the current 21 accepted Figures, that means 42 real PNG files.
+For the completed 69 accepted Figures, both required files must be present for every Figure.
 
 ## 6. Recommended local operating pattern
 
@@ -79,18 +79,18 @@ Use this pattern after a stable promotion to `main`:
 
 1. Sync the clean Git repository with no broad LFS pull.
 2. Verify the active branch and `catalog.json` accepted counts.
-3. Build or refresh `C:\GIT\API551_HYDRATED_VIEW` from local real binaries.
+3. Build or refresh `C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT` from local real binaries.
 4. Validate each copied binary against the active branch LFS pointer `oid sha256` and `size`.
 5. Create a dated local backup ZIP of hydrated view/source/archive when a meaningful accepted state is reached.
-6. Return `C:\GIT\API 551` to a clean Git state before new branch/PR work.
+6. Return `C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT` to a clean Git state before new branch/PR work.
 
 ## 7. Backup naming
 
 Recommended local backup names:
 
 ```text
-C:\GIT\API551_HYDRATED_BACKUP_MAIN_<YYYY-MM-DD>.zip
-C:\GIT\API551_LOCAL_LFS_AND_WORKSPACE_BACKUP_<YYYY-MM-DD>.zip
+C:\Irvis-UPG\GIT\API551_HYDRATED_BACKUP_MAIN_<YYYY-MM-DD>.zip
+C:\Irvis-UPG\GIT\API551_LOCAL_LFS_AND_WORKSPACE_BACKUP_<YYYY-MM-DD>.zip
 ```
 
 These backups are local safety artifacts. Do not add them to the Git repository unless the user explicitly redefines the artifact policy.
@@ -114,7 +114,7 @@ If a hydration attempt leaves the clean Git repository with many `M` binary file
 
 1. do not commit;
 2. create a backup of the hydrated folders if needed;
-3. copy hydrated content to `C:\GIT\API551_HYDRATED_VIEW`;
+3. copy hydrated content to `C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT`;
 4. restore the Git repository to the branch state with `git reset --hard origin/<branch>`;
 5. continue Git work only from the clean repository.
 
