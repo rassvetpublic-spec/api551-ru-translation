@@ -2,7 +2,7 @@
   "project": "API 551 RU Translation / Stage 4 Figure Objects",
   "language": "ru",
   "updated": "2026-07-28",
-  "status": "stage4_completed_pending_promotion_to_main",
+  "status": "stage4_completed_promoted_to_main",
   "repo": "rassvetpublic-spec/api551-ru-translation",
   "stable_branch": "main",
   "working_branch": "candidates",
@@ -202,12 +202,15 @@
     ],
     "failure_condition": "A Figure acceptance PR is incomplete if catalog/index accepted counts differ from handoff/bootstrap status or if handoff accepted_figures does not include the newly accepted Figure."
   },
-  "next_recommended_action": "Promote the completed 69/69 Stage 4 baseline from candidates to main through a checked PR; then create a separate CURRENT Stage 5 specification before production work.",
+  "next_recommended_action": "Create and approve a separate CURRENT Stage 5 specification before production work starts.",
   "stage4_completed": true,
   "stage4_completed_on": "2026-07-28",
   "stage5_status": "not_started_requires_current_specification",
   "stage4_baseline_branch": "candidates",
   "stage4_baseline_commit": "fbc861e7a3ec22aae098d15420cbda452f5d2802",
   "local_full_snapshot_path": "C:\\Irvis-UPG\\GIT\\API551_GITHUB_FULL_SNAPSHOT",
-  "local_snapshot_is_git_worktree": false
+  "local_snapshot_is_git_worktree": false,
+  "stable_branch_commit": "8b349c0fa513841498521167c581a9ceaf743bb4",
+  "promotion_pr": 63,
+  "promoted_on": "2026-07-28"
 }
