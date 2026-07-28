@@ -28,7 +28,7 @@ Primary bootstrap files:
 
 Stage 4 status: completed (`69/69` Figure objects accepted).
 
-Stable branch: `main`. The completed Stage 4 baseline is being promoted from `candidates` to `main`.
+Stable branch: `main`. The completed Stage 4 baseline has been promoted from `candidates` to `main` through PR #63.
 
 Stage 5 status: transition only; its scope and acceptance criteria require a separate CURRENT specification before production work starts.
 
