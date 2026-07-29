@@ -68,3 +68,24 @@ git diff --check
 3. повторить source-gate;
 4. удалять task-ветку только после проверки уникальных commit и разрешённого cleanup;
 5. не запускать broad `git lfs pull` по умолчанию.
+
+## 9. Проверенный скачанный скрипт
+
+Сначала найти нужный `.ps1` в Downloads, затем прогнать через `scripts/api551_validate_and_run_ps1_pwsh.ps1`. Не запускать неизвестный target напрямую и не обходить Parse/ValidateOnly.
+
+## 10. Overlay ZIP — только для переоткрытого Figure
+
+Проверить ZIP штатной package-командой до установки. Не принимать multi-root ZIP, LFS pointer вместо PNG, неверный Figure number, broken links или downgrade accepted metadata.
+
+## 11. Компактный результат
+
+Перед отправкой результата в чат выполнить:
+
+```powershell
+git branch --show-current
+git rev-parse HEAD
+git status --short
+git lfs fsck
+```
+
+Для PR добавить вывод repo-local `pr-check`. Не присылать весь журнал, если достаточно финальных строк и точной ошибки.
