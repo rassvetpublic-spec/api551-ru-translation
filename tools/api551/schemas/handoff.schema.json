@@ -1,29 +1,104 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "API551 Stage 4 handoff",
+  "title": "API551 Stage 4+ handoff and Stage 5 branch policy",
   "type": "object",
   "required": [
     "project",
     "repo",
     "stable_branch",
     "working_branch",
+    "working_branch_policy",
     "figures_total",
     "figures_accepted",
     "figures_changed",
     "figures_not_accepted",
     "accepted_figures",
     "active_source_gate_files",
-    "acceptance_update_rule"
+    "acceptance_update_rule",
+    "stage4_completed",
+    "stage5_status"
   ],
   "properties": {
-    "project": {"type": "string"},
-    "repo": {"type": "string"},
-    "stable_branch": {"const": "main"},
-    "working_branch": {"const": "candidates"},
-    "figures_total": {"const": 69},
-    "figures_accepted": {"type": "integer"},
-    "figures_changed": {"type": "integer"},
-    "figures_not_accepted": {"type": "integer"},
-    "accepted_figures": {"type": "array", "items": {"type": "integer"}}
-  }
+    "project": {
+      "type": "string"
+    },
+    "repo": {
+      "const": "rassvetpublic-spec/api551-ru-translation"
+    },
+    "stable_branch": {
+      "const": "main"
+    },
+    "working_branch": {
+      "const": "task/*"
+    },
+    "working_branch_policy": {
+      "type": "object",
+      "required": [
+        "base_branch",
+        "allowed_exact",
+        "allowed_prefixes",
+        "rule"
+      ],
+      "properties": {
+        "base_branch": {
+          "const": "main"
+        },
+        "allowed_exact": {
+          "const": [
+            "main"
+          ]
+        },
+        "allowed_prefixes": {
+          "const": [
+            "task/",
+            "accept-",
+            "fix-",
+            "fix/",
+            "tools/",
+            "docs/",
+            "ci/",
+            "rules/"
+          ]
+        },
+        "rule": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "figures_total": {
+      "const": 69
+    },
+    "figures_accepted": {
+      "const": 69
+    },
+    "figures_changed": {
+      "const": 0
+    },
+    "figures_not_accepted": {
+      "const": 0
+    },
+    "accepted_figures": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "active_source_gate_files": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "acceptance_update_rule": {
+      "type": "object"
+    },
+    "stage4_completed": {
+      "const": true
+    },
+    "stage5_status": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
 }
