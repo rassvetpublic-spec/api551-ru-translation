@@ -317,8 +317,8 @@ jobs:
           if catalog.get("stats", {}) != expected_stats:
               raise SystemExit("catalog stats mismatch")
 
-          if handoff.get("working_branch") != "candidates":
-              raise SystemExit("handoff working_branch must be candidates")
+          if handoff.get("working_branch") != "task branches from main":
+              raise SystemExit("handoff working_branch must be task branches from main")
           if handoff.get("stable_branch") != "main":
               raise SystemExit("handoff stable_branch must be main")
           if handoff.get("figures_total") != expected_stats["total"]:
