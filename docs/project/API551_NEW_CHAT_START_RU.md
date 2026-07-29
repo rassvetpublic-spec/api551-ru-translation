@@ -1,6 +1,6 @@
-# API 551 — старт нового чата после завершения Stage 4
+# API 551 — старт нового чата: Stage 4 завершён, Stage 5 открыт
 
-Статус: CURRENT bootstrap для завершённого Stage 4 и перехода к Stage 5.  
+Статус: CURRENT bootstrap для завершённого Stage 4 и Stage 5 по утверждённому CURRENT-ТЗ.  
 Проект: API 551 RU Translation.  
 Язык работы: русский.
 
@@ -20,7 +20,7 @@
 tools/api551/
 ```
 
-Stage 4 завершён (`69/69`). Не начинать Stage 5 без отдельного CURRENT-ТЗ. Новые project tools должны жить в `/tools/api551`.
+Stage 4 завершён (`69/69`). Stage 5 выполнять только по `source/TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md` и его Gate 1–5. Новые project tools должны жить в `/tools/api551`.
 
 ## 2. Source of truth
 
@@ -50,10 +50,11 @@ main
 
 1. `README.md`;
 2. `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`;
-3. `source/API551_SOURCE_MANIFEST_CURRENT.json`;
-4. `source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md`;
-5. `source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md`;
-6. `source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md`;
+3. `source/TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md`;
+4. `source/API551_SOURCE_MANIFEST_CURRENT.json`;
+5. `source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md`;
+6. `source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md`;
+7. `source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md`;
 7. `catalog.json`;
 8. `index.html`;
 9. `tools/api551/api551.ps1`;
@@ -81,8 +82,9 @@ main
 Source-gate обязан проверить:
 
 1. Project Instructions текущего проекта;
-2. CURRENT manifest;
-3. CURRENT consolidated policy/rules;
+2. Stage 5 CURRENT-ТЗ;
+3. CURRENT manifest;
+4. CURRENT consolidated policy/rules;
 4. CURRENT universal cleanup/placement addendum;
 5. CURRENT rework/source/frame-fit addendum;
 6. source data и роль каждого source;
@@ -117,7 +119,7 @@ LFS-tolerant CI: включён
 Repo-local toolkit: /tools/api551
 ```
 
-Stage 4 закрыт. Перед новой работой сверить эти числа и проверить наличие отдельного Stage 5 CURRENT-ТЗ:
+Stage 4 закрыт. Stage 5 CURRENT-ТЗ зарегистрировано; перед Gate 1 сверить эти числа и убедиться, что регистрационный PR уже merged:
 
 ```powershell
 .\tools\api551\api551.ps1 status
@@ -188,7 +190,7 @@ Acceptance PR обязан обновить и проверить весь си�
 Минимальная цепочка:
 
 ```text
-source-gate -> verify candidates 69/69 -> PR candidates into main -> CI/status check -> explicit merge -> verify main -> Stage 5 transition
+source-gate -> task branch from main -> Stage 5 gate-scoped change -> PR into main -> CI/status check -> explicit merge -> verify main
 ```
 
 Для user-accepted Figure:
