@@ -227,7 +227,7 @@ rassvetpublic-spec/api551-ru-translation
 For a Figure candidate already approved by the user, use the repo-local acceptance command instead of one-off scripts:
 
 ```powershell
-.	oolspi551pi551.ps1 accept-figure -Figure NNN -PackageZip <path-to-review-zip>
+.\tools\api551\api551.ps1 accept-figure -Figure NNN -PackageZip <path-to-review-zip>
 ```
 
 The command performs package-check, installs `workspace/figures/NNN`, marks the Figure as accepted, updates `catalog.json`, `index.html`, `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`, bootstrap status markers, and the hard-coded accepted state in `.github/workflows/structure-check.yml`. It does not commit, push, merge, or delete branches.
