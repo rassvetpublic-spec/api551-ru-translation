@@ -10,11 +10,12 @@ Do not work from memory, old chat context, old local caches, or archive files un
 
 Use these repository skills and rules:
 
-- `.codex/skills/api551-source-gate/SKILL.md`
-- `.codex/skills/api551-stage4-figure-operator/SKILL.md`
-- `.codex/skills/api551-figure-layout-qa/SKILL.md`
-- `docs/rules/STAGE4_ACCEPTANCE_PIPELINE_CURRENT_2026-06-26.md`
-- `docs/rules/GITHUB_PROJECT_PWSH_LOCAL_PIPELINE_CURRENT_2026-07-01.md`
+- always: `.codex/skills/api551-source-gate/SKILL.md`;
+- Stage 5 production: `source/TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md`;
+- only for an explicitly reopened Figure: `.codex/skills/api551-stage4-figure-operator/SKILL.md`, `.codex/skills/api551-figure-layout-qa/SKILL.md`, and `docs/rules/STAGE4_ACCEPTANCE_PIPELINE_CURRENT_2026-06-26.md`;
+- local PowerShell workflow when relevant: `docs/rules/GITHUB_PROJECT_PWSH_LOCAL_PIPELINE_CURRENT_2026-07-01.md`.
+
+Stage 4 Figure skills and acceptance rules must not replace or redirect the Stage 5 Gates 1–5 workflow.
 
 ## Current active source model
 
