@@ -1,69 +1,44 @@
 ---
 name: api551-source-gate
-description: Use before any API 551 Stage 4 work to verify the active repository, source model, manifest, and allowed source files.
+description: Use before API 551 Stage 4+ work to verify repository state, Stage 5 CURRENT specification, source model, branch policy, handoff/schema, documentation, and accepted Figure baseline.
 ---
 
 # API551 Source Gate
 
-Use this skill before any API 551 Stage 4 work.
-
-## Goal
-
-Prevent work from stale Project Sources, old local caches, superseded ZIP files, or archived evidence.
-
 ## Required checks
 
-1. Confirm repository:
-   - `rassvetpublic-spec/api551-ru-translation`
-   - branch is known.
-2. Read `README.md`.
-3. Read `source/API551_SOURCE_MANIFEST_CURRENT.json`.
-4. Verify that active source files are exactly the current minimized source model defined by the manifest and README.
-5. Confirm that `archive/` is preserved traceability/evidence, not active generation input.
-6. Confirm that `workspace/figures/` and `catalog.json` are available when Figure work is requested.
-7. Confirm `.github/workflows/structure-check.yml` exists.
+1. Confirm repo `rassvetpublic-spec/api551-ru-translation` and exact branch/head.
+2. Read README, new-chat bootstrap and handoff.
+3. Validate handoff against `tools/api551/schemas/handoff.schema.json`.
+4. Read Stage 5 CURRENT-TZ, manifest and CURRENT policy/rules.
+5. Verify the exact minimized `source/` model.
+6. Verify catalog/index/workspace and `69/69 accepted`, `changed: 0`, `not_accepted: 0`.
+7. Verify config/handoff/schema branch policy: stable `main`, default `task/*` from current `main`.
+8. Run repo-local source-gate and applicable CI.
+9. Treat archive and the no-`.git` snapshot as evidence/recovery only.
 
-## Current active source model
+## Stop
 
-Expected active source files are the files currently listed in `source/API551_SOURCE_MANIFEST_CURRENT.json` and `README.md`.
-
-The current model after the source cleanup is minimized. The former Stage 2/Stage 3/control ZIP packages were moved from `source/` into `archive/source-packages/` and are forbidden as generation input for final one-pass rebuild unless a task explicitly says audit/traceability.
-
-## Stop conditions
-
-Stop immediately if:
-
-- repository is unavailable;
-- branch is unclear;
-- README and manifest disagree;
-- active source files are missing;
-- a file is present in Google Drive but not visible in GitHub, or vice versa, and the task depends on it;
-- the task requires archive files as generation input without explicit user approval;
-- accepted Figure status cannot be verified.
-
-Report the stop in this format:
+Stop on unclear repo/branch/head, source conflict, invalid schema, status drift, stale task base, failed/incomplete CI or archive/snapshot misuse.
 
 ```text
 SOURCE_GATE: FAIL
 repo:
-branch:
-missing/conflict:
-risk:
-question:
+branch/head:
+source -> role -> problem -> risk -> required decision
 ```
 
-## Pass report
-
-When the gate passes, report only:
+## Pass
 
 ```text
 SOURCE_GATE: OK
 repo:
-branch:
+branch/head:
 active source files:
-accepted count:
-changed/review:
-next proposed batch:
+accepted/changed/not_accepted:
+Stage 5 gate:
+CI/status:
+next authorized step:
 ```
 
-Do not generate files until the user confirms the batch.
+Do not move beyond the authorized gate or merge without explicit authorization.
