@@ -25,6 +25,7 @@ jobs:
 
           active = [
               "API551_SOURCE_MANIFEST_CURRENT.json",
+              "TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md",
               "API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md",
               "API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md",
               "API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md",
@@ -42,6 +43,22 @@ jobs:
               "docs/project/API551_NEW_CHAT_START_RU.md",
               "docs/project/API551_STAGE4_HANDOFF_CURRENT.json",
               "docs/API551_PROJECT_QUICK_START_CURRENT.md",
+              "source/TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md",
+          ]
+          current_control_docs = project_docs + [
+              "AGENTS.md",
+              "docs/project/API551_TOOLING_CURRENT.md",
+              "docs/project/API551_SOURCE_GATE_CURRENT.md",
+              "docs/project/API551_PR_WORKFLOW_CURRENT.md",
+              "docs/project/API551_PACKAGE_QA_CURRENT.md",
+              "docs/project/API551_FIGURE_LIFECYCLE_CURRENT.md",
+              "docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md",
+              "docs/rules/GITHUB_PROJECT_PIPELINE_CURRENT_2026-06-26.md",
+              "docs/rules/STAGE4_ACCEPTANCE_PIPELINE_CURRENT_2026-06-26.md",
+              "docs/rules/GITHUB_PROJECT_PWSH_LOCAL_PIPELINE_CURRENT_2026-07-01.md",
+              "docs/runbooks/API551_LOCAL_PWSH_PIPELINE_CURRENT_2026-07-01.md",
+              "tools/api551/README.md",
+              ".codex/skills/api551-source-gate/SKILL.md",
           ]
           required_dirs = [
               "source",
@@ -92,9 +109,13 @@ jobs:
               if not Path(helper).is_file():
                   raise SystemExit(f"missing helper script: {helper}")
 
-          for doc in project_docs:
+          for doc in current_control_docs:
               if not Path(doc).is_file():
-                  raise SystemExit(f"missing project bootstrap/handoff doc: {doc}")
+                  raise SystemExit(f"missing current control document: {doc}")
+              text = Path(doc).read_text(encoding="utf-8-sig")
+              controls = sorted({ord(ch) for ch in text if ord(ch) < 32 and ch not in "\r\n"})
+              if controls:
+                  raise SystemExit(f"forbidden control characters {controls} in {doc}")
 
           source_files = sorted(p.name for p in Path("source").iterdir() if p.is_file())
           if source_files != sorted(active):
@@ -273,6 +294,8 @@ jobs:
           python3 -m json.tool archive/extracted-reference/EXTRACTED_REFERENCE_MANIFEST.json > /dev/null
           python3 -m json.tool catalog.json > /dev/null
           python3 -m json.tool docs/project/API551_STAGE4_HANDOFF_CURRENT.json > /dev/null
+          python3 -m json.tool tools/api551/api551.config.json > /dev/null
+          python3 -m json.tool tools/api551/schemas/handoff.schema.json > /dev/null
 
       - name: Check catalog Stage 4 status
         run: |
@@ -315,10 +338,23 @@ jobs:
           if catalog.get("stats", {}) != expected_stats:
               raise SystemExit("catalog stats mismatch")
 
-          if handoff.get("working_branch") != "candidates":
-              raise SystemExit("handoff working_branch must be candidates")
+          config = json.loads(Path("tools/api551/api551.config.json").read_text(encoding="utf-8-sig"))
+          schema = json.loads(Path("tools/api551/schemas/handoff.schema.json").read_text(encoding="utf-8-sig"))
+          branch_policy = handoff.get("working_branch_policy", {})
+          if handoff.get("working_branch") != "task/*":
+              raise SystemExit("handoff working_branch must be task/*")
           if handoff.get("stable_branch") != "main":
               raise SystemExit("handoff stable_branch must be main")
+          if config.get("working_branch") != handoff.get("working_branch"):
+              raise SystemExit("config/handoff working_branch mismatch")
+          if config.get("allowed_branches") != branch_policy.get("allowed_exact"):
+              raise SystemExit("config/handoff exact branch allowlist mismatch")
+          if config.get("allowed_branch_prefixes") != branch_policy.get("allowed_prefixes"):
+              raise SystemExit("config/handoff branch-prefix allowlist mismatch")
+          if branch_policy.get("base_branch") != "main":
+              raise SystemExit("handoff branch policy base_branch must be main")
+          if schema.get("properties", {}).get("working_branch", {}).get("const") != "task/*":
+              raise SystemExit("handoff schema working_branch policy mismatch")
           if handoff.get("figures_total") != expected_stats["total"]:
               raise SystemExit("handoff figures_total mismatch")
           if handoff.get("figures_accepted") != expected_stats["accepted"]:

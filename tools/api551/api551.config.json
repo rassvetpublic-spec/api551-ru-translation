@@ -1,11 +1,11 @@
 {
-  "project": "API 551 RU Translation / Stage 4 Figure Objects",
+  "project": "API 551 RU Translation / Stage 5 Final Russian PDF",
   "language": "ru",
   "repo": "rassvetpublic-spec/api551-ru-translation",
   "stable_branch": "main",
-  "working_branch": "candidates",
-  "local_clean_repo_path": "C:\\GIT\\API 551",
-  "local_hydrated_view_path": "C:\\GIT\\API551_HYDRATED_VIEW",
+  "working_branch": "task/*",
+  "local_clean_repo_path": "C:\\Irvis-UPG\\GIT\\API 551",
+  "local_hydrated_view_path": "C:\\Irvis-UPG\\GIT\\API551_GITHUB_FULL_SNAPSHOT",
   "figures_total": 69,
   "status_source": "catalog.json + docs/project/API551_STAGE4_HANDOFF_CURRENT.json",
   "required_dirs": [
@@ -23,6 +23,7 @@
   ],
   "mandatory_source_files": [
     "source/API551_SOURCE_MANIFEST_CURRENT.json",
+    "source/TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md",
     "source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md",
     "source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md",
     "source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md",
@@ -55,8 +56,27 @@
     "review_only",
     "manual_visual_review_required_before_acceptance"
   ],
-  "accepted_status_values": ["accepted", "approved", null],
-  "accepted_status_prefixes": ["accepted_by_user_"],
+  "accepted_status_values": [
+    "accepted",
+    "approved",
+    null
+  ],
+  "accepted_status_prefixes": [
+    "accepted_by_user_"
+  ],
   "changed_status_prefix": "измененно_",
-  "not_accepted_status": "not_accepted"
+  "not_accepted_status": "not_accepted",
+  "allowed_branches": [
+    "main"
+  ],
+  "allowed_branch_prefixes": [
+    "task/",
+    "accept-",
+    "fix-",
+    "fix/",
+    "tools/",
+    "docs/",
+    "ci/",
+    "rules/"
+  ]
 }

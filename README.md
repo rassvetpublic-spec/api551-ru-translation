@@ -15,22 +15,23 @@ Primary bootstrap files:
 1. `docs/project/API551_NEW_CHAT_START_RU.md`
 2. `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`
 3. `docs/API551_PROJECT_QUICK_START_CURRENT.md`
-4. `source/API551_SOURCE_MANIFEST_CURRENT.json`
-5. `source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md`
-6. `source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md`
-7. `source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md`
-8. `catalog.json`
-9. `index.html`
-10. `.github/workflows/structure-check.yml`
-11. `.github/workflows/api551-tooling-check.yml`
-12. `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md` when local LFS recovery or visual hydrated folders are relevant
-13. `docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md` when diagnosing why the repo-local toolkit blocks a workflow
+4. `source/TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md`
+5. `source/API551_SOURCE_MANIFEST_CURRENT.json`
+6. `source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md`
+7. `source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md`
+8. `source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md`
+9. `catalog.json`
+10. `index.html`
+11. `.github/workflows/structure-check.yml`
+12. `.github/workflows/api551-tooling-check.yml`
+13. `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md` when local LFS recovery or visual hydrated folders are relevant
+14. `docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md` when diagnosing why the repo-local toolkit blocks a workflow
 
 Stage 4 status: completed (`69/69` Figure objects accepted).
 
 Stable branch: `main`. The completed Stage 4 baseline has been promoted from `candidates` to `main` through PR #63.
 
-Stage 5 status: transition only; its scope and acceptance criteria require a separate CURRENT specification before production work starts.
+Stage 5 status: CURRENT specification approved on 2026-07-29 and registered by task branch/PR. After merge, production proceeds only through Gates 1–5 of that specification.
 
 `main` must not be changed directly without explicit user permission.
 
@@ -55,7 +56,7 @@ Useful commands:
 .\tools\api551\api551.ps1 docs-sync-check
 .\tools\api551\api551.ps1 rules-for -Figure 003
 .\tools\api551\api551.ps1 figure-check -Figure 003
-.\tools\api551\api551.ps1 package-check -PackageZip C:\GIT\package.zip -Figure 003
+.\tools\api551\api551.ps1 package-check -PackageZip C:\Irvis-UPG\GIT\package.zip -Figure 003
 .\tools\api551\api551.ps1 pr-check -Pr 37
 ```
 
@@ -95,13 +96,14 @@ Do not add new active scripts to the repository root. New project tooling belong
 Required current files in `source/`:
 
 1. `API551_SOURCE_MANIFEST_CURRENT.json`
-2. `API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md`
-3. `API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md`
-4. `API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md`
-5. `TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md`
-6. `api551_approved_label_master_v1.csv`
-7. `TZ_API551_translation_project_RU.md`
-8. `API 551 2016 (R2024).pdf`
+2. `TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md`
+3. `API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md`
+4. `API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md`
+5. `API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md`
+6. `TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md`
+7. `api551_approved_label_master_v1.csv`
+8. `TZ_API551_translation_project_RU.md`
+9. `API 551 2016 (R2024).pdf`
 
 Archived source packages in `archive/source-packages/`:
 
@@ -144,6 +146,6 @@ Stage 4 promotion sequence:
 verify candidates 69/69 -> PR candidates into main -> CI/status check -> explicit merge -> verify main
 ```
 
-After promotion, new work must start from `main` on a task branch and return through PR. Stage 5 production must not start until its CURRENT specification exists.
+Stage 5 work starts from `main` on a task branch and returns through PR. Production begins with Gate 1 only after the CURRENT specification PR is merged; every later merge still requires explicit user approval.
 
 For accepted Figure candidates, update the synchronized state: Figure object files, `catalog.json`, `index.html`, `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`, and any hard-coded accepted status in workflows/docs.

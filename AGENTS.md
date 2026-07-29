@@ -4,17 +4,18 @@ This repository contains the working base for the API 551 Russian technical tran
 
 ## Required behavior
 
-Before any Stage 4 work, run the API551 source gate from `.codex/skills/api551-source-gate/SKILL.md`.
+Before any Stage 4+ work, run the API551 source gate from `.codex/skills/api551-source-gate/SKILL.md`.
 
 Do not work from memory, old chat context, old local caches, or archive files unless the active source gate explicitly allows it.
 
 Use these repository skills and rules:
 
-- `.codex/skills/api551-source-gate/SKILL.md`
-- `.codex/skills/api551-stage4-figure-operator/SKILL.md`
-- `.codex/skills/api551-figure-layout-qa/SKILL.md`
-- `docs/rules/STAGE4_ACCEPTANCE_PIPELINE_CURRENT_2026-06-26.md`
-- `docs/rules/GITHUB_PROJECT_PWSH_LOCAL_PIPELINE_CURRENT_2026-07-01.md`
+- always: `.codex/skills/api551-source-gate/SKILL.md`;
+- Stage 5 production: `source/TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md`;
+- only for an explicitly reopened Figure: `.codex/skills/api551-stage4-figure-operator/SKILL.md`, `.codex/skills/api551-figure-layout-qa/SKILL.md`, and `docs/rules/STAGE4_ACCEPTANCE_PIPELINE_CURRENT_2026-06-26.md`;
+- local PowerShell workflow when relevant: `docs/rules/GITHUB_PROJECT_PWSH_LOCAL_PIPELINE_CURRENT_2026-07-01.md`.
+
+Stage 4 Figure skills and acceptance rules must not replace or redirect the Stage 5 Gates 1–5 workflow.
 
 ## Current active source model
 
@@ -22,32 +23,27 @@ The active source model is the minimized `source/` model. The three legacy ZIP p
 
 Active source files are expected in `source/` and are defined by `source/API551_SOURCE_MANIFEST_CURRENT.json` and `README.md`.
 
+Stage 5 production is governed by `source/TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md`. Follow its Gates 1–5 and do not merge without explicit user approval.
+
 ## Write policy
 
-- Do not push Figure candidates directly to `main`.
-- Do not push accepted Figure status changes directly to `main`.
-- Use a branch for new work.
-- Use an acceptance branch from `candidates` for accepted Figure integration, normally `accept-figNN-YYYYMMDD`.
-- Do not use branch names under `candidates/...` while a real branch named `candidates` exists; use `figNN-*` or `accept-figNN-*` names instead.
-- For rules/playbook updates, use a dedicated branch and PR.
+- Do not modify `main` directly.
+- Stage 5 starts from current `main` on `task/<topic>` and returns through PR into `main`.
+- Explicitly reopened Stage 4 Figure work also starts from current `main` on a non-main branch.
+- Use a dedicated branch and PR for rules/playbook updates.
 - Never delete archive evidence.
+- Never merge until explicitly authorized and all CI, review, schema, docs and source-gate checks pass.
 
-## Acceptance pipeline
-
-When the user explicitly writes that a Figure is accepted, such as `Рисунок 51 принят` or `51 принят`, follow `docs/rules/STAGE4_ACCEPTANCE_PIPELINE_CURRENT_2026-06-26.md`.
-
-The required chain is:
+## Stage 4 Figure pipeline (reopen-only)
 
 1. source gate;
-2. acceptance branch from `candidates`;
+2. task branch from current `main`;
 3. coherent Figure/status/catalog/index/CI update;
-4. PR into `candidates`;
-5. merge only after checks;
-6. delete temporary acceptance branch after merge unless audit preservation is required;
-7. later promote `candidates` into `main` by PR, not by direct push;
-8. delete obsolete temporary candidate/acceptance branches after successful promotion.
+4. PR into `main`;
+5. explicit merge after successful checks;
+6. verify `main` before cleanup.
 
-If the current toolchain cannot safely commit binary/LFS Figure assets, stop and return a verified overlay ZIP plus local Git/LFS instructions instead of opening an incomplete PR.
+If binary/LFS assets cannot be committed safely, stop and return a verified overlay ZIP plus local instructions.
 
 ## Windows/local pwsh execution
 
@@ -60,7 +56,7 @@ For multi-step local work, provide a `.ps1` target script and run it through `sc
 Default local checkout path for operational examples is:
 
 ```text
-C:\GIT\API 551
+C:\Irvis-UPG\GIT\API 551
 ```
 
 Downloaded helper scripts and overlays should be discovered from the user's Downloads folder rather than hard-coded to a user profile path.
