@@ -93,3 +93,40 @@ Merge допустим только после явной команды пол�
 ## Handoff
 
 Сообщить repo, branch, PR, base/head SHA, changed files, CI, review status, merge SHA при наличии, риски и следующий шаг.
+
+## Проверка скачанных скриптов
+
+Многошаговый target-скрипт запускать через `scripts/api551_validate_and_run_ps1_pwsh.ps1` или его проверенную копию. Сначала проверять parse/ValidateOnly, затем выполнять.
+
+Target-скрипт обязан:
+
+1. иметь явные параметры и понятный `-ValidateOnly` для рискованных изменений;
+2. проверять repo/root/branch/head до записи;
+3. прекращать работу при ошибке `git`, `gh`, `pwsh` или несовпадении SHA;
+4. не считать `Everything up-to-date` доказательством remote success без проверки ref;
+5. не выполнять merge, force, delete или destructive reset без отдельной команды;
+6. печатать краткий итог без секретов и больших debug dump.
+
+## Формат команд в чате
+
+Для одной короткой операции допустима одна строка `pwsh -NoProfile -Command "..."`. Для сложной операции отдавать `.ps1`-файл, ссылку и короткую команду запуска. Не включать в команду приглашение `PS C:\...>` или ранее полученный вывод.
+
+## Overlay/package — только reopen-only
+
+Overlay ZIP проверять только для явно переоткрытого Figure:
+
+- ZIP integrity;
+- один ожидаемый root;
+- отсутствие PDF и stray production files;
+- реальные PNG, не LFS pointer text;
+- относительные HTML links;
+- совпадение Figure number/status;
+- отсутствие unapproved accepted-state regression.
+
+## PR preflight
+
+До merge получить PR base/head, exact SHA, changed files, review threads и финальные workflow runs. После любого commit старый зелёный CI недействителен.
+
+## Доставка и отчёт
+
+Сохранять target-скрипт с понятным именем, не создавать постоянные one-off scripts в корне repo, не выводить token/credential. Итог: branch, head, выполненные проверки, изменённые файлы, ошибки и следующий шаг.
