@@ -53,6 +53,10 @@ jobs:
               "docs/project/API551_PACKAGE_QA_CURRENT.md",
               "docs/project/API551_FIGURE_LIFECYCLE_CURRENT.md",
               "docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md",
+              "docs/rules/GITHUB_PROJECT_PIPELINE_CURRENT_2026-06-26.md",
+              "docs/rules/STAGE4_ACCEPTANCE_PIPELINE_CURRENT_2026-06-26.md",
+              "docs/rules/GITHUB_PROJECT_PWSH_LOCAL_PIPELINE_CURRENT_2026-07-01.md",
+              "docs/runbooks/API551_LOCAL_PWSH_PIPELINE_CURRENT_2026-07-01.md",
               "tools/api551/README.md",
               ".codex/skills/api551-source-gate/SKILL.md",
           ]
