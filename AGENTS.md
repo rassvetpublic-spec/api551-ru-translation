@@ -4,7 +4,7 @@ This repository contains the working base for the API 551 Russian technical tran
 
 ## Required behavior
 
-Before any Stage 4 work, run the API551 source gate from `.codex/skills/api551-source-gate/SKILL.md`.
+Before any Stage 4+ work, run the API551 source gate from `.codex/skills/api551-source-gate/SKILL.md`.
 
 Do not work from memory, old chat context, old local caches, or archive files unless the active source gate explicitly allows it.
 
@@ -21,6 +21,8 @@ Use these repository skills and rules:
 The active source model is the minimized `source/` model. The three legacy ZIP packages were moved to `archive/source-packages/` and must not be used as generation input unless a task explicitly asks for audit or traceability.
 
 Active source files are expected in `source/` and are defined by `source/API551_SOURCE_MANIFEST_CURRENT.json` and `README.md`.
+
+Stage 5 production is governed by `source/TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md`. Follow its Gates 1–5 and do not merge without explicit user approval.
 
 ## Write policy
 
