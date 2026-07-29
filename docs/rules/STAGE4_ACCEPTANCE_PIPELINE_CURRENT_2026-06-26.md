@@ -77,3 +77,9 @@ The old `candidates -> main` promotion sequence is completed history. It must no
 ## Cleanup
 
 Delete a temporary branch only after verified merge and only after confirming it contains no needed unique commits. Never delete `main`, archive/evidence branches or a branch explicitly preserved by the user.
+
+## Failure handling and report
+
+При конфликте acceptance/version/source/status остановиться и показать источник, роль, проблему, риск и требуемое решение. Не понижать accepted status автоматически и не собирать неполный PR.
+
+После операции сообщить Figure/version, branch, PR, base/head SHA, синхронизированные файлы, package/LFS/visual checks, CI/review status, merge SHA при наличии и оставшийся риск.
