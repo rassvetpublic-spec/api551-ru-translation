@@ -65,22 +65,22 @@ Use this order before meaningful API 551 work:
 5. `source/TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md`.
 6. `source/API551_SOURCE_MANIFEST_CURRENT.json`.
 7. `source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md`.
-7. `source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md`.
-8. `source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md`.
-9. Mandatory source data in `source/`:
+8. `source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md`.
+9. `source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md`.
+10. Mandatory source data in `source/`:
    - `API 551 2016 (R2024).pdf`;
    - `api551_approved_label_master_v1.csv`;
    - `TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md`;
    - `TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md`;
    - `TZ_API551_translation_project_RU.md` as baseline/restart/archive.
-10. GitHub state:
+11. GitHub state:
     - `catalog.json`;
     - `index.html`;
     - `workspace/figures/`;
     - `.github/workflows/structure-check.yml`;
     - `.github/workflows/api551-tooling-check.yml`;
     - `docs/rules/*CURRENT*`.
-11. Tooling docs:
+12. Tooling docs:
     - `docs/project/API551_TOOLING_CURRENT.md`;
     - `docs/project/API551_SOURCE_GATE_CURRENT.md`;
     - `docs/project/API551_RULES_RESOLUTION_CURRENT.md`;
@@ -88,11 +88,11 @@ Use this order before meaningful API 551 work:
     - `docs/project/API551_PACKAGE_QA_CURRENT.md`;
     - `docs/project/API551_PR_WORKFLOW_CURRENT.md`;
     - `docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md` when diagnosing why the repo-local toolkit blocks a workflow.
-12. Local LFS/hydrated-view workflow when relevant:
+13. Local LFS/hydrated-view workflow when relevant:
     - `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md`.
-13. Current chat instruction for the current task.
-14. Memory and old chats as reference only.
-15. `archive/*` as reference/evidence only.
+14. Current chat instruction for the current task.
+15. Memory and old chats as reference only.
+16. `archive/*` as reference/evidence only.
 
 ## 4. Active source model
 
