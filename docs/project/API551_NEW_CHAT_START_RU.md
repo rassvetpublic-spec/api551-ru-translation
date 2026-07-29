@@ -133,3 +133,9 @@ Stable: main. Stage 5 — task/<topic> от актуального main и PR в
 ```
 
 Команда не выполняет commit, push, merge или удаление веток.
+
+## 13. Карта перенесённых правил
+
+Детальные Figure cleanup/layout правила не дублируются в bootstrap: ими управляют три CURRENT policy/rules файла и accepted Figure object. Правила package/acceptance сохранены в `API551_PACKAGE_QA_CURRENT.md`, `API551_FIGURE_LIFECYCLE_CURRENT.md` и reopen-only acceptance pipeline.
+
+При переоткрытии Figure синхронно проверять object JSON/HTML, PNG/source crop, `catalog.json`, `index.html`, handoff и hard-coded CI status. Для обычного Stage 5 Gate 1–5 эти Figure-правила не заменяют CURRENT-ТЗ.
