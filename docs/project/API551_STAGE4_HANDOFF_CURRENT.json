@@ -5,7 +5,24 @@
   "status": "stage5_current_specification_registered",
   "repo": "rassvetpublic-spec/api551-ru-translation",
   "stable_branch": "main",
-  "working_branch": "task branches from main",
+  "working_branch": "task/*",
+  "working_branch_policy": {
+    "base_branch": "main",
+    "allowed_exact": [
+      "main"
+    ],
+    "allowed_prefixes": [
+      "task/",
+      "accept-",
+      "fix-",
+      "fix/",
+      "tools/",
+      "docs/",
+      "ci/",
+      "rules/"
+    ],
+    "rule": "Stage 5 branches start from current main; default naming is task/<topic>. Reopened Stage 4 maintenance uses a dedicated non-main branch and PR."
+  },
   "do_not_modify_directly": [
     "main"
   ],
@@ -87,6 +104,18 @@
   ],
   "latest_merged_prs": [
     {
+      "pr": 64,
+      "title": "Finalize Stage 4 promotion status",
+      "base": "main",
+      "meaning": "CURRENT documentation was synchronized after promotion; main reached commit 4a537be3eafc3a54db1faf32aab0c1494c5c91ac."
+    },
+    {
+      "pr": 63,
+      "title": "Promote completed Stage 4 to main",
+      "base": "main",
+      "meaning": "Completed Stage 4 baseline with 69/69 accepted Figure objects was promoted from candidates to main."
+    },
+    {
       "pr": 37,
       "title": "Fix Figure 3 R03 workspace package",
       "base": "candidates",
@@ -134,6 +163,7 @@
     "tools/api551/api551.ps1",
     "tools/api551/api551.py",
     "tools/api551/api551.config.json",
+    "tools/api551/schemas/handoff.schema.json",
     "tools/api551/rules/active_rules.lock.json",
     "tools/api551/rules/figure_rule_map.json",
     "docs/project/API551_TOOLING_CURRENT.md",
@@ -143,13 +173,14 @@
     "docs/project/API551_PACKAGE_QA_CURRENT.md",
     "docs/project/API551_PR_WORKFLOW_CURRENT.md",
     "docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md when diagnosing why the repo-local toolkit blocks a workflow",
-    "docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md when local LFS recovery or hydrated-view handling is relevant"
+    "docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md when local LFS recovery or hydrated-view handling is relevant",
+    ".codex/skills/api551-source-gate/SKILL.md"
   ],
   "tooling_policy": {
     "entrypoint": "tools/api551/api551.ps1",
     "core": "tools/api551/api551.py",
     "first_command": ".\\tools\\api551\\api551.ps1 source-gate",
-    "rule": "Repo-local tools under /tools/api551 are the default. Do not create new one-off active scripts in C:\\GIT as the normal workflow.",
+    "rule": "Repo-local tools under /tools/api551 are the default. Do not create one-off active scripts in the old C:\\GIT root as the normal workflow.",
     "write_boundary": "Toolkit write actions must not commit, push, merge, or delete branches. Git write operations require explicit user instruction."
   },
   "lfs_policy": {
@@ -158,15 +189,15 @@
     "local_clone": "Use GIT_LFS_SKIP_SMUDGE=1 for normal clone/sync work.",
     "download": "Download LFS assets only by exact include path when needed.",
     "pointer_files": "Small text LFS pointer files in local no-smudge checkout are expected and must not be treated as project corruption.",
-    "hydrated_view": "Keep the clean Git repo separate from local real PNG/PDF/ZIP review assets. Use C:\\GIT\\API551_HYDRATED_VIEW for hydrated visual review and recovery. Do not commit hydrated binary files as ordinary modifications."
+    "hydrated_view": "Use C:\\Irvis-UPG\\GIT\\API 551 as the Git worktree and C:\\Irvis-UPG\\GIT\\API551_GITHUB_FULL_SNAPSHOT as the separate no-.git snapshot. Real LFS files in the worktree are valid only when git lfs fsck passes and git status is clean."
   },
   "local_lfs_hydrated_view_workflow": {
     "doc": "docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md",
-    "clean_repo_path": "C:\\GIT\\API 551",
-    "hydrated_view_path": "C:\\GIT\\API551_HYDRATED_VIEW",
-    "backup_source_example": "C:\\GIT\\API 551 — копия",
-    "rule": "Copy local binary files into a hydrated view only after matching source SHA-256 and byte size against the current branch LFS pointer oid sha256 and size.",
-    "do_not_commit": "Do not git add or commit hydrated PNG/PDF/ZIP files as ordinary Git modifications. Use the clean repo for branches and PRs."
+    "clean_repo_path": "C:\\Irvis-UPG\\GIT\\API 551",
+    "hydrated_view_path": "C:\\Irvis-UPG\\GIT\\API551_GITHUB_FULL_SNAPSHOT",
+    "backup_source_example": "C:\\Irvis-UPG\\GIT\\API551_GITHUB_FULL_SNAPSHOT",
+    "rule": "Copy a real LFS file from the snapshot only after its SHA-256 and byte size match the current branch pointer; after import require git lfs fsck OK and a clean git status.",
+    "do_not_commit": "Do not commit unverified or changed hydrated binaries. A smudged LFS worktree is valid only when the index still represents the tracked pointer and git status is clean."
   },
   "repair_history": {
     "doc": "docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md",
@@ -221,5 +252,7 @@
     "registration_branch": "task/stage5-current-tz-20260729",
     "baseline_commit": "4a537be3eafc3a54db1faf32aab0c1494c5c91ac",
     "production_gate": "Gate 1 starts only after merge; every merge requires explicit user approval"
-  }
+  },
+  "local_clean_repo_path": "C:\\Irvis-UPG\\GIT\\API 551",
+  "stable_branch_commit_role": "Stage 5 registration baseline before PR #65; replace only after verified merge through a follow-up PR."
 }
