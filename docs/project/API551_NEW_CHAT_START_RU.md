@@ -55,19 +55,19 @@ main
 5. `source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md`;
 6. `source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md`;
 7. `source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md`;
-7. `catalog.json`;
-8. `index.html`;
-9. `tools/api551/api551.ps1`;
-10. `docs/project/API551_TOOLING_CURRENT.md`;
-11. `docs/project/API551_SOURCE_GATE_CURRENT.md`;
-12. `docs/project/API551_RULES_RESOLUTION_CURRENT.md`;
-13. `docs/project/API551_FIGURE_LIFECYCLE_CURRENT.md`;
-14. `docs/project/API551_PACKAGE_QA_CURRENT.md`;
-15. `docs/project/API551_PR_WORKFLOW_CURRENT.md`;
-16. `.github/workflows/structure-check.yml`;
-17. `.github/workflows/api551-tooling-check.yml`;
-18. `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md`, если задача касается LFS/local hydrated view;
-19. `docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md`, если нужно понять историю типовых ошибок toolkit.
+8. `catalog.json`;
+9. `index.html`;
+10. `tools/api551/api551.ps1`;
+11. `docs/project/API551_TOOLING_CURRENT.md`;
+12. `docs/project/API551_SOURCE_GATE_CURRENT.md`;
+13. `docs/project/API551_RULES_RESOLUTION_CURRENT.md`;
+14. `docs/project/API551_FIGURE_LIFECYCLE_CURRENT.md`;
+15. `docs/project/API551_PACKAGE_QA_CURRENT.md`;
+16. `docs/project/API551_PR_WORKFLOW_CURRENT.md`;
+17. `.github/workflows/structure-check.yml`;
+18. `.github/workflows/api551-tooling-check.yml`;
+19. `docs/project/API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md`, если задача касается LFS/local hydrated view;
+20. `docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md`, если нужно понять историю типовых ошибок toolkit.
 
 `API551_PROMPTS.md`, старые ZIP, review HTML, audit/report и patch-файлы использовать только как archive/evidence/reference, если они не конфликтуют с CURRENT источниками.
 
