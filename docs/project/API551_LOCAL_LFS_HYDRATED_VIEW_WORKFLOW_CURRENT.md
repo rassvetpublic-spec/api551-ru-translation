@@ -57,3 +57,26 @@ On SHA/size mismatch, stop and report the exact path. If status is non-empty, do
 ## CI relationship
 
 CI validates text and pointers without broad LFS download. Local hydrated content supplements QA but never overrides CURRENT project sources.
+
+## Operating pattern
+
+1. Обновить Git-worktree без broad LFS pull.
+2. Проверить branch/head и catalog status.
+3. Импортировать только недостающие tracked LFS paths из snapshot.
+4. Для каждого файла проверить oid/size.
+5. Выполнить `git lfs fsck` и проверить чистый status.
+6. Сделать отдельный датированный backup snapshot при значимой точке.
+7. Повторить source-gate перед новой задачей.
+
+## Backup naming
+
+```text
+C:\Irvis-UPG\GIT\API551_HYDRATED_BACKUP_MAIN_<YYYY-MM-DD>.zip
+C:\Irvis-UPG\GIT\API551_LOCAL_LFS_AND_WORKSPACE_BACKUP_<YYYY-MM-DD>.zip
+```
+
+Backup — локальный safety artifact, не production input и не файл repo без отдельного решения пользователя.
+
+## Source-gate impact
+
+При LFS-budget, recovery или visual-review задаче handoff обязан явно различать Git-worktree и snapshot, сообщать проверенные SHA/size и не повышать локальный cache до source of truth.
