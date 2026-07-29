@@ -85,13 +85,13 @@ Source-gate обязан проверить:
 2. Stage 5 CURRENT-ТЗ;
 3. CURRENT manifest;
 4. CURRENT consolidated policy/rules;
-4. CURRENT universal cleanup/placement addendum;
-5. CURRENT rework/source/frame-fit addendum;
-6. source data и роль каждого source;
-7. GitHub `catalog.json`, `index.html`, `workspace/figures/`, workflow;
-8. текущий Figure-статус;
-9. docs/status sync;
-10. применимые `tools/api551` checks.
+5. CURRENT universal cleanup/placement addendum;
+6. CURRENT rework/source/frame-fit addendum;
+7. source data и роль каждого source;
+8. GitHub `catalog.json`, `index.html`, `workspace/figures/`, workflow;
+9. текущий Figure-статус;
+10. docs/status sync;
+11. применимые `tools/api551` checks.
 
 При конфликте остановиться и показать:
 
