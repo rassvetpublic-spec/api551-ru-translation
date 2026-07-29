@@ -1,6 +1,6 @@
 # API551 repo-local toolkit
 
-Status: CURRENT repo-local tooling entrypoint for API 551 Stage 4+.
+Status: CURRENT repo-local tooling entrypoint for API 551 Stage 4+ and Stage 5.
 
 Run from the repository root or any child folder:
 
@@ -18,7 +18,7 @@ The PowerShell file is only a Windows entrypoint. The core logic is in `tools/ap
 .\tools\api551\api551.ps1 docs-sync-check
 .\tools\api551\api551.ps1 rules-for -Figure 003
 .\tools\api551\api551.ps1 figure-check -Figure 003
-.\tools\api551\api551.ps1 package-check -PackageZip C:\GIT\package.zip -Figure 003
+.\tools\api551\api551.ps1 package-check -PackageZip C:\Irvis-UPG\GIT\package.zip -Figure 003
 .\tools\api551\api551.ps1 pr-check -Pr 37
 ```
 
