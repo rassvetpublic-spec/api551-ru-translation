@@ -25,6 +25,7 @@ jobs:
 
           active = [
               "API551_SOURCE_MANIFEST_CURRENT.json",
+              "TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md",
               "API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md",
               "API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md",
               "API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md",
@@ -42,6 +43,7 @@ jobs:
               "docs/project/API551_NEW_CHAT_START_RU.md",
               "docs/project/API551_STAGE4_HANDOFF_CURRENT.json",
               "docs/API551_PROJECT_QUICK_START_CURRENT.md",
+              "source/TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md",
           ]
           required_dirs = [
               "source",
