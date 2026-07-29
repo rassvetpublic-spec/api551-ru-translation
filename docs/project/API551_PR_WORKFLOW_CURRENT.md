@@ -1,53 +1,47 @@
 # API551 PR Workflow Current
 
-Status: CURRENT PR workflow for Stage 4 promotion and subsequent task branches.
+Status: CURRENT PR workflow for completed Stage 4 and Stage 5 task branches.
 
-## 1. Default chain
+## Default chain
 
 ```text
-source-gate -> verify candidates 69/69 -> PR candidates into main -> CI/status check -> explicit merge -> verify main
+source-gate -> task/* from current main -> scoped change -> diff/review -> PR into main -> all CI/docs checks -> explicit merge -> verify main
 ```
 
-## 2. Branch policy
+## Branch policy
 
-- `main` is stable and must not be modified directly without explicit user permission.
-- The completed Stage 4 promotion targets `main` from `candidates`.
-- After promotion, new work starts from current `main` on a dedicated task branch and returns through PR.
-- Stage 5 production is blocked until a separate CURRENT specification defines its scope and acceptance criteria.
-- Do not reuse stale branches without checking head SHA and remote state.
+- Stable: `main`; no direct writes.
+- Default work: `task/<topic>` from current `main`.
+- PR base: `main`.
+- `candidates` is historical Stage 4 state, not the Stage 5 working branch.
+- Reopened Figure/maintenance work also uses a dedicated non-main branch from current `main`.
 
-## 3. PR check command
+Executable policy is synchronized in config, handoff and handoff schema.
+
+## PR #65 registration boundary
+
+Gate 1 starts only after review remarks are fixed, final-head CI is green, deep docs/schema/source-gate audit passes, PR #65 is explicitly merged, and updated `main` is verified.
+
+## PR check
 
 ```powershell
-.\tools\api551\api551.ps1 pr-check -Pr 37
+.\tools\api551\api551.ps1 pr-check -Pr N
 ```
 
-This command uses GitHub CLI when available and prints PR metadata and check status without requiring fragile shell `jq` quoting.
+## Merge policy
 
-## 4. Merge policy
+Verify base/head, exact head SHA, all required checks, intended diff, addressed reviews, schema validity, docs sync, source-gate and explicit user authorization. Do not merge while any check is queued, running, failed, cancelled or stale.
 
-Merge only after the user explicitly says the PR can be merged.
+## Force/cleanup
 
-Before merge verify:
-
-1. PR base/head match the intended transition (`main` <- `candidates` for Stage 4 promotion);
-2. head SHA is the expected current commit;
-3. CI is successful;
-4. changed files are limited to the intended scope;
-5. open review comments are understood or resolved;
-6. no direct unreviewed write to `main` is involved.
-
-## 5. Force push policy
-
-If a branch must be overwritten, use expected-head guarded force-with-lease. Do not force push blindly. After force push, verify PR head through GitHub API or `gh pr view`; the local `gh` result may lag immediately after push.
+Do not force-push blindly. Delete a temporary branch only after verified merge and separate safety review.
 
 ## accept-figure command
 
-For a Figure candidate already approved by the user, use the repo-local acceptance command instead of one-off scripts:
+Only for an explicitly reopened and accepted Figure:
 
 ```powershell
-.	oolspi551pi551.ps1 accept-figure -Figure NNN -PackageZip <path-to-review-zip>
+.\tools\api551\api551.ps1 accept-figure -Figure NNN -PackageZip <path-to-review-zip>
 ```
 
-The command performs package-check, installs `workspace/figures/NNN`, marks the Figure as accepted, updates `catalog.json`, `index.html`, `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`, bootstrap status markers, and the hard-coded accepted state in `.github/workflows/structure-check.yml`. It does not commit, push, merge, or delete branches.
-
+The command does not commit, push, merge or delete branches.
