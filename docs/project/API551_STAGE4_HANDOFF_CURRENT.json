@@ -1,15 +1,15 @@
 {
-  "project": "API 551 RU Translation / Stage 4 Figure Objects",
+  "project": "API 551 RU Translation / Stage 4 completed / Stage 5 Final RU PDF",
   "language": "ru",
-  "updated": "2026-07-28",
-  "status": "stage4_completed_promoted_to_main",
+  "updated": "2026-07-29",
+  "status": "stage5_current_specification_registered",
   "repo": "rassvetpublic-spec/api551-ru-translation",
   "stable_branch": "main",
-  "working_branch": "candidates",
+  "working_branch": "task branches from main",
   "do_not_modify_directly": [
     "main"
   ],
-  "current_stage": "Stage 4 completed",
+  "current_stage": "Stage 5 Gate 0 — CURRENT specification registered",
   "figures_total": 69,
   "figures_accepted": 69,
   "figures_changed": 0,
@@ -123,6 +123,7 @@
     "docs/project/API551_STAGE4_HANDOFF_CURRENT.json",
     "docs/API551_PROJECT_QUICK_START_CURRENT.md",
     "source/API551_SOURCE_MANIFEST_CURRENT.json",
+    "source/TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md",
     "source/API551_CONSOLIDATED_POLICIES_and_RULES_CURRENT_2026-06-18.md",
     "source/API551_UNIVERSAL_FIGURE_LABEL_CLEANUP_AND_PLACEMENT_RULES_CURRENT_2026-06-25.md",
     "source/API551_FIGURE_REWORK_SOURCE_AND_FRAME_FIT_RULES_CURRENT_2026-07-01.md",
@@ -202,15 +203,23 @@
     ],
     "failure_condition": "A Figure acceptance PR is incomplete if catalog/index accepted counts differ from handoff/bootstrap status or if handoff accepted_figures does not include the newly accepted Figure."
   },
-  "next_recommended_action": "Create and approve a separate CURRENT Stage 5 specification before production work starts.",
+  "next_recommended_action": "After merge of the Stage 5 CURRENT specification PR, start Gate 1 source mapping in a new task branch from main.",
   "stage4_completed": true,
   "stage4_completed_on": "2026-07-28",
-  "stage5_status": "not_started_requires_current_specification",
+  "stage5_status": "current_specification_registered_gate1_ready_after_merge",
   "stage4_baseline_branch": "candidates",
   "stage4_baseline_commit": "fbc861e7a3ec22aae098d15420cbda452f5d2802",
   "local_full_snapshot_path": "C:\\Irvis-UPG\\GIT\\API551_GITHUB_FULL_SNAPSHOT",
   "local_snapshot_is_git_worktree": false,
-  "stable_branch_commit": "8b349c0fa513841498521167c581a9ceaf743bb4",
+  "stable_branch_commit": "4a537be3eafc3a54db1faf32aab0c1494c5c91ac",
   "promotion_pr": 63,
-  "promoted_on": "2026-07-28"
+  "promoted_on": "2026-07-28",
+  "stage5_specification": {
+    "path": "source/TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md",
+    "status": "CURRENT",
+    "approved_by_user_on": "2026-07-29",
+    "registration_branch": "task/stage5-current-tz-20260729",
+    "baseline_commit": "4a537be3eafc3a54db1faf32aab0c1494c5c91ac",
+    "production_gate": "Gate 1 starts only after merge; every merge requires explicit user approval"
+  }
 }
