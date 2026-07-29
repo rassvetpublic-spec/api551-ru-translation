@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Repo-local API551 Stage 4 toolkit.
+"""Repo-local API551 Stage 4+ toolkit.
 
 Read-only checks are the default. Write actions never commit, push, merge, or delete branches.
 """
@@ -124,9 +124,37 @@ def catalog_stats(catalog: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+
+def validate_schema_node(value: Any, schema: dict[str, Any], path: str = "$") -> None:
+    if "const" in schema and value != schema["const"]:
+        fail(f"{path} must equal {schema['const']!r}, got {value!r}")
+    expected_type = schema.get("type")
+    type_map = {"object": dict, "array": list, "string": str, "integer": int, "boolean": bool}
+    if expected_type in type_map:
+        expected = type_map[expected_type]
+        if not isinstance(value, expected) or (expected_type == "integer" and isinstance(value, bool)):
+            fail(f"{path} must be {expected_type}, got {type(value).__name__}")
+    if isinstance(value, dict):
+        for key in schema.get("required", []):
+            if key not in value:
+                fail(f"{path} missing schema-required key: {key}")
+        for key, child_schema in schema.get("properties", {}).items():
+            if key in value:
+                validate_schema_node(value[key], child_schema, f"{path}.{key}")
+        if schema.get("additionalProperties") is False:
+            extras = sorted(set(value) - set(schema.get("properties", {})))
+            if extras:
+                fail(f"{path} contains schema-forbidden keys: {extras}")
+    if isinstance(value, list) and "items" in schema:
+        for index, item in enumerate(value):
+            validate_schema_node(item, schema["items"], f"{path}[{index}]")
+
+
 def validate_status_sync(root: Path) -> dict[str, Any]:
     catalog = read_json(root / "catalog.json")
     handoff = read_json(root / "docs" / "project" / "API551_STAGE4_HANDOFF_CURRENT.json")
+    schema = read_json(root / "tools" / "api551" / "schemas" / "handoff.schema.json")
+    validate_schema_node(handoff, schema, "handoff")
     stats = catalog_stats(catalog)
     if stats["total"] != 69:
         fail(f"catalog must contain 69 figures, got {stats['total']}")
@@ -153,31 +181,82 @@ def validate_status_sync(root: Path) -> dict[str, Any]:
 
 def docs_sync_check(root: Path, quiet: bool = False) -> dict[str, Any]:
     stats = validate_status_sync(root)
-    docs = [
+    cfg = load_config(root)
+    handoff = read_json(root / "docs" / "project" / "API551_STAGE4_HANDOFF_CURRENT.json")
+    schema = read_json(root / "tools" / "api551" / "schemas" / "handoff.schema.json")
+
+    entrypoints = [rel_path(root, name) for name in cfg["project_entrypoint_docs"]]
+    entrypoints.extend([
+        root / "AGENTS.md",
+        root / "tools" / "api551" / "README.md",
+        root / ".codex" / "skills" / "api551-source-gate" / "SKILL.md",
+    ])
+    for doc in entrypoints:
+        if not doc.is_file():
+            fail(f"missing documentation file: {doc.relative_to(root).as_posix()}")
+        text = read_text(doc)
+        controls = sorted({ord(ch) for ch in text if ord(ch) < 32 and ch not in "\r\n"})
+        if controls:
+            fail(f"documentation contains forbidden control characters {controls}: {doc.relative_to(root).as_posix()}")
+
+    source_gate_docs = [
         root / "README.md",
         root / "docs" / "API551_PROJECT_QUICK_START_CURRENT.md",
         root / "docs" / "project" / "API551_NEW_CHAT_START_RU.md",
         root / "docs" / "project" / "API551_TOOLING_CURRENT.md",
         root / "docs" / "project" / "API551_SOURCE_GATE_CURRENT.md",
     ]
-    for doc in docs:
-        if not doc.is_file():
-            fail(f"missing documentation file: {doc.relative_to(root).as_posix()}")
-        text = read_text(doc)
-        if "source-gate" not in text:
+    for doc in source_gate_docs:
+        if "source-gate" not in read_text(doc):
             fail(f"documentation does not mention source-gate: {doc.relative_to(root).as_posix()}")
+
     bootstrap = read_text(root / "docs" / "project" / "API551_NEW_CHAT_START_RU.md")
     for marker in [f"accepted: {stats['accepted']}/69", f"not_accepted: {stats['not_accepted']}/69", f"changed/review: {stats['changed']}"]:
         if marker not in bootstrap:
             fail(f"bootstrap marker missing: {marker}")
-    for doc in [root / "README.md", root / "docs" / "API551_PROJECT_QUICK_START_CURRENT.md", root / "docs" / "project" / "API551_NEW_CHAT_START_RU.md"]:
+
+    primary_docs = [
+        root / "README.md",
+        root / "docs" / "API551_PROJECT_QUICK_START_CURRENT.md",
+        root / "docs" / "project" / "API551_NEW_CHAT_START_RU.md",
+    ]
+    for doc in primary_docs:
         text = read_text(doc)
         if "docs/project/API551_STAGE4_HANDOFF_CURRENT.json" not in text:
             fail(f"{doc.relative_to(root).as_posix()} does not mention handoff JSON")
+        if "source/TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md" not in text:
+            fail(f"{doc.relative_to(root).as_posix()} does not mention Stage 5 CURRENT specification")
         if not has_tool_marker(text):
             fail(f"{doc.relative_to(root).as_posix()} does not mention repo-local toolkit entrypoint")
+
+    stale_markers = [
+        "Stage 5 production is blocked until a separate CURRENT specification",
+        "Задача: продолжить Stage 4 Figure Objects.",
+        "После source-gate выбрать следующий \x60not_accepted\x60 Figure",
+        "task branches from main",
+    ]
+    for doc in entrypoints:
+        text = read_text(doc)
+        for marker in stale_markers:
+            if marker in text:
+                fail(f"stale Stage 4/transition marker in {doc.relative_to(root).as_posix()}: {marker}")
+
+    policy = handoff.get("working_branch_policy", {})
+    if handoff.get("stable_branch") != cfg.get("stable_branch"):
+        fail("config/handoff stable_branch mismatch")
+    if handoff.get("working_branch") != cfg.get("working_branch"):
+        fail("config/handoff working_branch mismatch")
+    if policy.get("base_branch") != cfg.get("stable_branch"):
+        fail("handoff branch policy base_branch mismatch")
+    if policy.get("allowed_exact") != cfg.get("allowed_branches"):
+        fail("config/handoff exact branch allowlist mismatch")
+    if policy.get("allowed_prefixes") != cfg.get("allowed_branch_prefixes"):
+        fail("config/handoff branch-prefix allowlist mismatch")
+    if schema.get("properties", {}).get("working_branch", {}).get("const") != cfg.get("working_branch"):
+        fail("schema/config working_branch mismatch")
+
     if not quiet:
-        print("docs/status sync OK")
+        print("docs/status/branch-policy sync OK")
     return stats
 
 
@@ -205,10 +284,10 @@ def source_gate(args: argparse.Namespace) -> None:
     if (root / ".git").exists() and not args.ci:
         try:
             branch = subprocess.check_output(["git", "branch", "--show-current"], cwd=root, text=True, stderr=subprocess.DEVNULL).strip()
-            allowed = {cfg["working_branch"], "tools/api551-stage4-toolkit-v1"}
-            allowed_prefixes = ("accept-", "fix-", "fix/", "tools/", "docs/", "ci/", "rules/")
+            allowed = set(cfg.get("allowed_branches", [cfg["stable_branch"]]))
+            allowed_prefixes = tuple(cfg.get("allowed_branch_prefixes", ["task/"]))
             if branch and branch not in allowed and not branch.startswith(allowed_prefixes):
-                fail(f"current branch is {branch!r}; expected one of {sorted(allowed)} or work branch prefixes {allowed_prefixes}")
+                fail(f"current branch is {branch!r}; expected one of {sorted(allowed)} or branch prefixes {allowed_prefixes}")
         except subprocess.CalledProcessError:
             pass
     print("source-gate OK")
@@ -506,7 +585,7 @@ def update_bootstrap_markers(root: Path, stats: dict[str, Any]) -> None:
     text = re.sub(r"changed/review: \d+", f"changed/review: {stats['changed']}", text)
     text = re.sub(r"Текущий статус после принятия Figure .*?:", "Текущий статус Stage 4:", text)
     if "accept-figure" not in text:
-        text += """
+        text += r"""
 
 ## accept-figure
 
@@ -669,7 +748,7 @@ def pr_check(args: argparse.Namespace) -> None:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(prog="api551", description="API551 Stage 4 repo-local toolkit")
+    parser = argparse.ArgumentParser(prog="api551", description="API551 Stage 4+ repo-local toolkit")
     sub = parser.add_subparsers(dest="action", required=True)
     p = sub.add_parser("source-gate"); p.add_argument("--ci", action="store_true"); p.set_defaults(func=source_gate)
     p = sub.add_parser("status"); p.add_argument("--ci", action="store_true"); p.add_argument("--json", action="store_true"); p.set_defaults(func=status)
