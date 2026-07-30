@@ -31,7 +31,7 @@ Stage 4 status: completed (`69/69` Figure objects accepted).
 
 Stable branch: `main`. The completed Stage 4 baseline has been promoted from `candidates` to `main` through PR #63.
 
-Stage 5 status: CURRENT specification approved on 2026-07-29 and registered by task branch/PR. After merge, production proceeds only through Gates 1–5 of that specification.
+Stage 5 status: Gate 0 completed. Registration PR #65 is merged in `main` at `eeca80146ff59660326eef55582ad611f2d7c3c4`; Gate 1 (the 244-page source map) is authorized and not started.
 
 `main` must not be changed directly without explicit user permission.
 
@@ -119,11 +119,11 @@ Do not run `git lfs pull` by default.
 
 For normal clone/sync work, use no-smudge LFS. Fetch LFS assets only by exact include path when needed.
 
-Keep the clean Git repo separate from visual hydrated assets:
+Keep the Git worktree separate from the no-`.git` hydrated snapshot:
 
 ```text
-C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT
-C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT
+Git worktree: C:\Irvis-UPG\GIT\API 551
+Hydrated snapshot: C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT
 ```
 
 Never commit hydrated PNG/PDF/ZIP files as ordinary Git modifications.
@@ -146,6 +146,6 @@ Stage 4 promotion sequence:
 verify candidates 69/69 -> PR candidates into main -> CI/status check -> explicit merge -> verify main
 ```
 
-Stage 5 work starts from `main` on a task branch and returns through PR. Production begins with Gate 1 only after the CURRENT specification PR is merged; every later merge still requires explicit user approval.
+Stage 5 work starts from `main` on a task branch and returns through PR. Registration PR #65 is merged; the next scoped step is Gate 1, and every later merge still requires explicit user approval.
 
 For accepted Figure candidates, update the synchronized state: Figure object files, `catalog.json`, `index.html`, `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`, and any hard-coded accepted status in workflows/docs.
