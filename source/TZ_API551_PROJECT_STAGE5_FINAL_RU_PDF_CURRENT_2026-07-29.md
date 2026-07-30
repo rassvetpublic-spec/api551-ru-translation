@@ -24,7 +24,7 @@
 - GitHub repo: `rassvetpublic-spec/api551-ru-translation`.
 - Stable branch: `main`.
 - Pre-registration baseline commit: `4a537be3eafc3a54db1faf32aab0c1494c5c91ac`.
-- Current `main` after registration PR #65: `eeca80146ff59660326eef55582ad611f2d7c3c4`.
+- Registration merge checkpoint for PR #65: `eeca80146ff59660326eef55582ad611f2d7c3c4`. Resolve the live `main` head from GitHub before every new task branch.
 - Stage 4: завершён, `69/69 accepted`, `changed: 0`, `not_accepted: 0`.
 - Исходный PDF: 244 страницы, 8 089 772 байта.
 - SHA-256 исходного PDF: `d458b3a899902f216767e753aa5737a9745b61adcab02f85c9521937a9d3e270`.
