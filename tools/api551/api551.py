@@ -184,6 +184,7 @@ def docs_sync_check(root: Path, quiet: bool = False) -> dict[str, Any]:
     cfg = load_config(root)
     handoff = read_json(root / "docs" / "project" / "API551_STAGE4_HANDOFF_CURRENT.json")
     schema = read_json(root / "tools" / "api551" / "schemas" / "handoff.schema.json")
+    manifest = read_json(root / "source" / "API551_SOURCE_MANIFEST_CURRENT.json")
 
     entrypoints = [rel_path(root, name) for name in cfg["project_entrypoint_docs"]]
     entrypoints.extend([
@@ -214,6 +215,77 @@ def docs_sync_check(root: Path, quiet: bool = False) -> dict[str, Any]:
     for marker in [f"accepted: {stats['accepted']}/69", f"not_accepted: {stats['not_accepted']}/69", f"changed/review: {stats['changed']}"]:
         if marker not in bootstrap:
             fail(f"bootstrap marker missing: {marker}")
+
+    expected_registration_merge = "eeca80146ff59660326eef55582ad611f2d7c3c4"
+    expected_stage5_status = "gate0_complete_gate1_not_started"
+    if handoff.get("status") != "stage5_gate0_complete_gate1_ready":
+        fail("handoff post-merge status is stale")
+    if handoff.get("current_stage") != "Stage 5 Gate 1 — source mapping ready, not started":
+        fail("handoff current_stage must declare Gate 1 ready and not started")
+    if handoff.get("stage5_status") != expected_stage5_status:
+        fail("handoff stage5_status mismatch")
+    if handoff.get("stable_branch_commit") != expected_registration_merge:
+        fail("handoff stable_branch_commit is not the verified PR #65 registration checkpoint")
+    stage5_spec = handoff.get("stage5_specification", {})
+    if stage5_spec.get("registration_pr") != 65:
+        fail("handoff Stage 5 registration PR mismatch")
+    if stage5_spec.get("registration_merge_commit") != expected_registration_merge:
+        fail("handoff Stage 5 registration merge commit mismatch")
+    registration = manifest.get("stage5_registration", {})
+    if manifest.get("status") != "stage5_gate0_complete_gate1_not_started_stage4_baseline_preserved":
+        fail("manifest post-merge Stage 5 status is stale")
+    if registration.get("pr") != 65 or registration.get("merge_commit") != expected_registration_merge:
+        fail("manifest Stage 5 registration metadata mismatch")
+    if registration.get("gate0_status") != "complete" or registration.get("gate1_status") != "not_started":
+        fail("manifest Stage 5 gate state mismatch")
+
+    postmerge_markers = {
+        root / "README.md": [
+            expected_registration_merge,
+            r"C:\Irvis-UPG\GIT\API 551",
+            r"C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT",
+            "Gate 1 (the 244-page source map) is authorized and not started",
+        ],
+        root / "docs" / "project" / "API551_NEW_CHAT_START_RU.md": [
+            "Gate 0 completed by merged PR #65; Gate 1 authorized, not started",
+            "Gate 3 — проверка и принятие полной HTML/JSON-карты",
+        ],
+        root / "docs" / "API551_PROJECT_QUICK_START_CURRENT.md": [
+            "Gate 0 completed by merged PR #65; Gate 1 authorized, not started",
+        ],
+        root / "docs" / "project" / "API551_PR_WORKFLOW_CURRENT.md": [
+            expected_registration_merge,
+            "Gate 0 is complete",
+        ],
+        root / "docs" / "project" / "API551_LOCAL_LFS_HYDRATED_VIEW_WORKFLOW_CURRENT.md": [
+            expected_registration_merge,
+            "161 LFS paths",
+        ],
+        root / "source" / "TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md": [
+            expected_registration_merge,
+            "Gate 1 разрешён и ещё не начат",
+        ],
+    }
+    for doc, markers in postmerge_markers.items():
+        text = read_text(doc)
+        for marker in markers:
+            if marker not in text:
+                fail(f"post-merge marker missing in {doc.relative_to(root).as_posix()}: {marker}")
+
+    postmerge_stale_markers = [
+        "Gate 0 registration PR; Gate 1 only after verified merge",
+        "Перед Gate 1 убедиться, что PR #65 смержен",
+        "Если PR #65 ещё не merged",
+        "Если merged — начни только Gate 1",
+        "После merge PR #65",
+        "Gate 1 starts after merge",
+        "До merge регистрационного PR",
+    ]
+    for doc in postmerge_markers:
+        text = read_text(doc)
+        for marker in postmerge_stale_markers:
+            if marker in text:
+                fail(f"stale pre-merge marker in {doc.relative_to(root).as_posix()}: {marker}")
 
     primary_docs = [
         root / "README.md",

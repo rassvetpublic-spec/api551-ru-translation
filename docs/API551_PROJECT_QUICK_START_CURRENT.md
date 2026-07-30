@@ -51,7 +51,7 @@ accepted: 69/69
 changed/review: 0
 not_accepted: 0/69
 stage4: completed
-stage5: CURRENT specification approved and registered; Gate 1 starts after merge
+stage5: Gate 0 completed by merged PR #65; Gate 1 authorized, not started
 ```
 
 ## 3. Source hierarchy
@@ -219,7 +219,7 @@ rassvetpublic-spec/api551-ru-translation
 10. tools/api551/api551.ps1
 11. docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md, если нужно понять историю типовых ошибок toolkit.
 
-Сначала выполни source-gate, подтверди 69/69 и прочитай Stage 5 CURRENT-ТЗ. Gate 1 начинается только после merge регистрационного PR.
+PR #65 уже смержен в `main`. Сначала выполни source-gate, подтверди `69/69` и прочитай Stage 5 CURRENT-ТЗ; затем выполняй только Gate 1 в новой task-ветке от актуального `main`.
 ```
 
 ## accept-figure command

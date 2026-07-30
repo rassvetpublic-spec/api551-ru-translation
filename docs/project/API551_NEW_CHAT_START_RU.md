@@ -62,10 +62,10 @@ accepted: 69/69
 not_accepted: 0/69
 changed/review: 0
 stage4: completed
-stage5: Gate 0 registration PR; Gate 1 only after verified merge
+stage5: Gate 0 completed by merged PR #65; Gate 1 authorized, not started
 ```
 
-Перед Gate 1 убедиться, что PR #65 смержен в `main`, затем повторить source-gate на новой `task/*` ветке от обновлённого `main`.
+PR #65 уже смержен в `main` (`eeca80146ff59660326eef55582ad611f2d7c3c4`). Для Gate 1 создать новую `task/*` ветку от актуального `main` и повторить source-gate.
 
 ## 6. Git LFS
 
@@ -78,9 +78,9 @@ stage5: Gate 0 registration PR; Gate 1 only after verified merge
 ## 7. Stage 5 Gates
 
 1. Gate 1 — карта 244 страниц и объектов.
-2. Gate 2 — OCR/translation QA и русский текст.
-3. Gate 3 — нативные таблицы.
-4. Gate 4 — сборка с 69 accepted Figure.
+2. Gate 2 — перевод, реконструкция нативных таблиц и полный русский HTML/JSON.
+3. Gate 3 — проверка и принятие полной HTML/JSON-карты.
+4. Gate 4 — финальная PDF-сборка с 69 accepted Figure.
 5. Gate 5 — полный постраничный и машинный QA.
 
 ## 8. Figure
@@ -116,13 +116,12 @@ Stable: main. Stage 5 — task/<topic> от актуального main и PR в
 
 Прочитай bootstrap, handoff/schema, Stage 5 CURRENT-ТЗ, manifest, CURRENT policy/rules, catalog/index.
 Запусти .\tools\api551\api551.ps1 source-gate.
-Если PR #65 ещё не merged — остановись.
-Если merged — начни только Gate 1: карту 244 страниц, таблиц, Figure, NOTE, сносок и ссылок.
+PR #65 смержен в main, Gate 0 завершён. Создай task-ветку от актуального main, повтори source-gate и выполняй только Gate 1: карту 244 страниц, таблиц, Figure, NOTE, сносок и ссылок.
 ```
 
 ## 12. Следующий безопасный шаг
 
-После merge PR #65 и повторного source-gate создать `task/*` от актуального `main` и выполнить только Gate 1.
+Создать `task/stage5-gate1-page-map` от актуального `main`, повторить source-gate и выполнить только Gate 1.
 
 ## accept-figure command
 

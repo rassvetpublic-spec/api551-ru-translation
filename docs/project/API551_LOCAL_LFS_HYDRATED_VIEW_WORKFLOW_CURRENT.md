@@ -2,7 +2,7 @@
 
 Status: CURRENT local workflow rule.  
 Project: API 551 RU Translation / Stage 5.  
-Updated: 2026-07-29.
+Updated: 2026-07-30.
 
 ## Folder roles
 
@@ -44,7 +44,7 @@ git rev-parse HEAD
 (git lfs ls-files --name-only).Count
 ```
 
-Baseline before PR #65 merge: HEAD `4a537be3eafc3a54db1faf32aab0c1494c5c91ac` and 161 LFS paths. After merge, update the expected HEAD from verified `main`.
+Verified PR #65 registration checkpoint: `eeca80146ff59660326eef55582ad611f2d7c3c4` and 161 LFS paths. This is not a moving expected HEAD; before every later task, resolve current `main` from GitHub and validate that live SHA locally.
 
 ## Figure coverage
 

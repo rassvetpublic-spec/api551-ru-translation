@@ -21,8 +21,9 @@ CI: `python3 tools/api551/api551.py source-gate --ci`.
 7. config/handoff/schema branch-policy sync;
 8. current branch against exact/prefix allowlists;
 9. CURRENT docs, Stage 5 markers and forbidden control characters;
-10. repo-local tooling and LFS-safe state;
-11. archive/snapshot exclusion from production authority.
+10. post-merge invariant: PR #65 is merged, Gate 0 is complete, Gate 1 is not started, the registration checkpoint is synchronized, and the live branch head is resolved separately;
+11. repo-local tooling and LFS-safe state;
+12. archive/snapshot exclusion from production authority.
 
 ## Branch policy
 

@@ -18,9 +18,9 @@ source-gate -> task/* from current main -> scoped change -> diff/review -> PR in
 
 Executable policy is synchronized in config, handoff and handoff schema.
 
-## PR #65 registration boundary
+## PR #65 registration status
 
-Gate 1 starts only after review remarks are fixed, final-head CI is green, deep docs/schema/source-gate audit passes, PR #65 is explicitly merged, and updated `main` is verified.
+PR #65 is merged and verified in `main` at `eeca80146ff59660326eef55582ad611f2d7c3c4`; Gate 0 is complete. Gate 1 may start only in a new task branch from current `main` after a fresh source-gate.
 
 ## PR check
 

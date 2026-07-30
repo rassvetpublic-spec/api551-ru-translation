@@ -1,7 +1,7 @@
 {
   "project": "API 551 Stage 5 — Final Russian PDF",
-  "updated": "2026-07-29",
-  "status": "stage5_current_specification_registered_stage4_baseline_preserved",
+  "updated": "2026-07-30",
+  "status": "stage5_gate0_complete_gate1_not_started_stage4_baseline_preserved",
   "canonical_source_policy": {
     "primary_source_folder": {
       "name": "API 551/Source",
@@ -17,11 +17,14 @@
   "mandatory_sources": [
     {
       "file": "TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md",
-      "role": "CURRENT Stage 5 specification for the complete Russian PDF; approved by the user on 2026-07-29 and registered through a task branch and PR",
+      "role": "CURRENT Stage 5 specification for the complete Russian PDF; approved by the user on 2026-07-29 and registered in main through merged PR #65",
       "source_path": "source/TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md",
       "baseline_commit": "4a537be3eafc3a54db1faf32aab0c1494c5c91ac",
       "approval": "user_approved_2026-07-29",
-      "read_check": "github_text_fetch_required"
+      "read_check": "github_text_fetch_ok_after_PR_65_merge",
+      "baseline_commit_role": "pre-registration main",
+      "registration_pr": 65,
+      "registration_merge_commit": "eeca80146ff59660326eef55582ad611f2d7c3c4"
     },
     {
       "file": "TZ_API551_PROJECT_STAGE4_CONSOLIDATED_CURRENT_2026-06-18.md",
@@ -190,5 +193,12 @@
       "stage_c_assets PNG/crops",
       "duplicate PDF/CSV/rules from control build"
     ]
+  },
+  "stage5_registration": {
+    "pr": 65,
+    "merge_commit": "eeca80146ff59660326eef55582ad611f2d7c3c4",
+    "merged_on": "2026-07-29",
+    "gate0_status": "complete",
+    "gate1_status": "not_started"
   }
 }

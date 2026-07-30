@@ -297,6 +297,9 @@ jobs:
           python3 -m json.tool tools/api551/api551.config.json > /dev/null
           python3 -m json.tool tools/api551/schemas/handoff.schema.json > /dev/null
 
+      - name: Check Stage 5 post-merge documentation sync
+        run: python3 tools/api551/api551.py docs-sync-check --ci
+
       - name: Check catalog Stage 4 status
         run: |
           python3 - <<'PY'
