@@ -225,7 +225,7 @@ def docs_sync_check(root: Path, quiet: bool = False) -> dict[str, Any]:
     if handoff.get("stage5_status") != expected_stage5_status:
         fail("handoff stage5_status mismatch")
     if handoff.get("stable_branch_commit") != expected_registration_merge:
-        fail("handoff stable_branch_commit is not the verified PR #65 merge")
+        fail("handoff stable_branch_commit is not the verified PR #65 registration checkpoint")
     stage5_spec = handoff.get("stage5_specification", {})
     if stage5_spec.get("registration_pr") != 65:
         fail("handoff Stage 5 registration PR mismatch")
