@@ -1,8 +1,8 @@
 {
   "project": "API 551 RU Translation / Stage 4 completed / Stage 5 Final RU PDF",
   "language": "ru",
-  "updated": "2026-07-29",
-  "status": "stage5_current_specification_registered",
+  "updated": "2026-07-30",
+  "status": "stage5_gate0_complete_gate1_ready",
   "repo": "rassvetpublic-spec/api551-ru-translation",
   "stable_branch": "main",
   "working_branch": "task/*",
@@ -26,7 +26,7 @@
   "do_not_modify_directly": [
     "main"
   ],
-  "current_stage": "Stage 5 Gate 0 — CURRENT specification registered",
+  "current_stage": "Stage 5 Gate 1 — source mapping ready, not started",
   "figures_total": 69,
   "figures_accepted": 69,
   "figures_changed": 0,
@@ -103,6 +103,12 @@
     69
   ],
   "latest_merged_prs": [
+    {
+      "pr": 65,
+      "title": "Register Stage 5 CURRENT specification",
+      "base": "main",
+      "meaning": "Stage 5 CURRENT specification and synchronized control documentation were merged into main at eeca80146ff59660326eef55582ad611f2d7c3c4; Gate 0 completed."
+    },
     {
       "pr": 64,
       "title": "Finalize Stage 4 promotion status",
@@ -234,15 +240,15 @@
     ],
     "failure_condition": "A Figure acceptance PR is incomplete if catalog/index accepted counts differ from handoff/bootstrap status or if handoff accepted_figures does not include the newly accepted Figure."
   },
-  "next_recommended_action": "After merge of the Stage 5 CURRENT specification PR, start Gate 1 source mapping in a new task branch from main.",
+  "next_recommended_action": "Start Stage 5 Gate 1 source mapping (244-page map) in task/stage5-gate1-page-map from current main; Gate 1 has not started.",
   "stage4_completed": true,
   "stage4_completed_on": "2026-07-28",
-  "stage5_status": "current_specification_registered_gate1_ready_after_merge",
+  "stage5_status": "gate0_complete_gate1_not_started",
   "stage4_baseline_branch": "candidates",
   "stage4_baseline_commit": "fbc861e7a3ec22aae098d15420cbda452f5d2802",
   "local_full_snapshot_path": "C:\\Irvis-UPG\\GIT\\API551_GITHUB_FULL_SNAPSHOT",
   "local_snapshot_is_git_worktree": false,
-  "stable_branch_commit": "4a537be3eafc3a54db1faf32aab0c1494c5c91ac",
+  "stable_branch_commit": "eeca80146ff59660326eef55582ad611f2d7c3c4",
   "promotion_pr": 63,
   "promoted_on": "2026-07-28",
   "stage5_specification": {
@@ -251,8 +257,12 @@
     "approved_by_user_on": "2026-07-29",
     "registration_branch": "task/stage5-current-tz-20260729",
     "baseline_commit": "4a537be3eafc3a54db1faf32aab0c1494c5c91ac",
-    "production_gate": "Gate 1 starts only after merge; every merge requires explicit user approval"
+    "production_gate": "PR #65 merged; Gate 1 is authorized and not started; every later merge requires explicit user approval",
+    "registration_pr": 65,
+    "registration_merge_commit": "eeca80146ff59660326eef55582ad611f2d7c3c4",
+    "merged_on": "2026-07-29",
+    "baseline_commit_role": "pre-registration main"
   },
   "local_clean_repo_path": "C:\\Irvis-UPG\\GIT\\API 551",
-  "stable_branch_commit_role": "Stage 5 registration baseline before PR #65; replace only after verified merge through a follow-up PR."
+  "stable_branch_commit_role": "Verified main after merged PR #65; update only after a later verified merge through a follow-up PR."
 }
