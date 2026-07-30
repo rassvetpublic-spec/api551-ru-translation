@@ -31,7 +31,7 @@ Stage 4 status: completed (`69/69` Figure objects accepted).
 
 Stable branch: `main`. The completed Stage 4 baseline has been promoted from `candidates` to `main` through PR #63.
 
-Stage 5 status: Gate 0 completed. Registration PR #65 is merged in `main` at `eeca80146ff59660326eef55582ad611f2d7c3c4`; Gate 1 (the 244-page source map) is authorized and not started.
+Stage 5 status: Gate 0 completed. Registration PR #65 is merged in `main` at `eeca80146ff59660326eef55582ad611f2d7c3c4`. Gate 1 machine map is complete: 244/244 pages; manual review is pending for 88 pages and 187 flagged ambiguities. Gate 2 is blocked.
 
 `main` must not be changed directly without explicit user permission.
 
@@ -146,6 +146,6 @@ Stage 4 promotion sequence:
 verify candidates 69/69 -> PR candidates into main -> CI/status check -> explicit merge -> verify main
 ```
 
-Stage 5 work starts from `main` on a task branch and returns through PR. Registration PR #65 is merged; the next scoped step is Gate 1, and every later merge still requires explicit user approval.
+Stage 5 work starts from `main` on a task branch and returns through PR. Registration PR #65 is merged; Gate 1 machine mapping is complete in `task/stage5-gate1-page-map`, but Gate 1 is not accepted until manual review closes the flagged queue. Every later merge still requires explicit user approval.
 
 For accepted Figure candidates, update the synchronized state: Figure object files, `catalog.json`, `index.html`, `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`, and any hard-coded accepted status in workflows/docs.

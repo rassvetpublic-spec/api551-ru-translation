@@ -25,5 +25,8 @@ jobs:
       - name: Run API551 docs sync check
         run: python3 tools/api551/api551.py docs-sync-check --ci
 
+      - name: Run Stage 5 Gate 1 map check
+        run: python3 tools/api551/api551.py gate1-check --ci
+
       - name: Run API551 accepted Figure checks
         run: python3 tools/api551/api551.py figure-check --all-known --ci

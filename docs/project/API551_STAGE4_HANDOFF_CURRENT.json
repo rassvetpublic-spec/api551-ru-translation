@@ -2,7 +2,7 @@
   "project": "API 551 RU Translation / Stage 4 completed / Stage 5 Final RU PDF",
   "language": "ru",
   "updated": "2026-07-30",
-  "status": "stage5_gate0_complete_gate1_ready",
+  "status": "stage5_gate1_machine_map_complete_manual_review_pending",
   "repo": "rassvetpublic-spec/api551-ru-translation",
   "stable_branch": "main",
   "working_branch": "task/*",
@@ -26,7 +26,7 @@
   "do_not_modify_directly": [
     "main"
   ],
-  "current_stage": "Stage 5 Gate 1 — source mapping ready, not started",
+  "current_stage": "Stage 5 Gate 1 — machine map complete, manual review pending",
   "figures_total": 69,
   "figures_accepted": 69,
   "figures_changed": 0,
@@ -240,10 +240,10 @@
     ],
     "failure_condition": "A Figure acceptance PR is incomplete if catalog/index accepted counts differ from handoff/bootstrap status or if handoff accepted_figures does not include the newly accepted Figure."
   },
-  "next_recommended_action": "Start Stage 5 Gate 1 source mapping (244-page map) in task/stage5-gate1-page-map from current main; Gate 1 has not started.",
+  "next_recommended_action": "Review the 88 flagged pages and 187 ambiguities in workspace/stage5/gate1; resolve 12 unresolved reference targets and do not start Gate 2 until Gate 1 is accepted.",
   "stage4_completed": true,
   "stage4_completed_on": "2026-07-28",
-  "stage5_status": "gate0_complete_gate1_not_started",
+  "stage5_status": "gate1_machine_map_complete_manual_review_pending",
   "stage4_baseline_branch": "candidates",
   "stage4_baseline_commit": "fbc861e7a3ec22aae098d15420cbda452f5d2802",
   "local_full_snapshot_path": "C:\\Irvis-UPG\\GIT\\API551_GITHUB_FULL_SNAPSHOT",
@@ -257,11 +257,24 @@
     "approved_by_user_on": "2026-07-29",
     "registration_branch": "task/stage5-current-tz-20260729",
     "baseline_commit": "4a537be3eafc3a54db1faf32aab0c1494c5c91ac",
-    "production_gate": "PR #65 merged; Gate 1 is authorized and not started; every later merge requires explicit user approval",
+    "production_gate": "PR #65 merged; Gate 1 machine map is complete, manual review is pending, Gate 2 is blocked; every later merge requires explicit user approval",
     "registration_pr": 65,
     "registration_merge_commit": "eeca80146ff59660326eef55582ad611f2d7c3c4",
     "merged_on": "2026-07-29",
     "baseline_commit_role": "pre-registration main"
+  },
+  "stage5_gate1_work_product": {
+    "branch": "task/stage5-gate1-page-map",
+    "index": "workspace/stage5/gate1/API551_STAGE5_GATE1_PAGE_MAP_INDEX.json",
+    "anchor_registry": "workspace/stage5/gate1/API551_STAGE5_GATE1_ANCHOR_REGISTRY.json",
+    "qa_report": "workspace/stage5/gate1/API551_STAGE5_GATE1_QA_REPORT.json",
+    "mapped_pages": 244,
+    "figures_mapped": 69,
+    "tables_detected": 21,
+    "manual_review_pages": 88,
+    "ambiguities": 187,
+    "unresolved_reference_targets": 12,
+    "status": "machine_map_complete_manual_review_pending"
   },
   "local_clean_repo_path": "C:\\Irvis-UPG\\GIT\\API 551",
   "stable_branch_commit_role": "Verified Stage 5 registration checkpoint from merged PR #65; this is not a moving latest-main head. Resolve current main live before every task branch."

@@ -51,7 +51,7 @@ accepted: 69/69
 changed/review: 0
 not_accepted: 0/69
 stage4: completed
-stage5: Gate 0 completed by merged PR #65; Gate 1 authorized, not started
+stage5: Gate 1 machine map complete: 244/244 pages; manual review pending
 ```
 
 ## 3. Source hierarchy
@@ -219,7 +219,7 @@ rassvetpublic-spec/api551-ru-translation
 10. tools/api551/api551.ps1
 11. docs/project/API551_TOOLING_REPAIR_HISTORY_2026-07-09.md, если нужно понять историю типовых ошибок toolkit.
 
-PR #65 уже смержен в `main`. Сначала выполни source-gate, подтверди `69/69` и прочитай Stage 5 CURRENT-ТЗ; затем выполняй только Gate 1 в новой task-ветке от актуального `main`.
+PR #65 уже смержен в `main`. Машинная карта Gate 1 построена для `244/244` страниц в `task/stage5-gate1-page-map`; сначала выполни source-gate и `gate1-check`, затем продолжай только ручную проверку Gate 1. Gate 2 не начинать.
 ```
 
 ## accept-figure command
@@ -231,4 +231,3 @@ For a Figure candidate already approved by the user, use the repo-local acceptan
 ```
 
 The command performs package-check, installs `workspace/figures/NNN`, marks the Figure as accepted, updates `catalog.json`, `index.html`, `docs/project/API551_STAGE4_HANDOFF_CURRENT.json`, bootstrap status markers, and the hard-coded accepted state in `.github/workflows/structure-check.yml`. It does not commit, push, merge, or delete branches.
-
