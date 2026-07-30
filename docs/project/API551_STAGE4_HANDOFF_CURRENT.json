@@ -264,5 +264,5 @@
     "baseline_commit_role": "pre-registration main"
   },
   "local_clean_repo_path": "C:\\Irvis-UPG\\GIT\\API 551",
-  "stable_branch_commit_role": "Verified main after merged PR #65; update only after a later verified merge through a follow-up PR."
+  "stable_branch_commit_role": "Verified Stage 5 registration checkpoint from merged PR #65; this is not a moving latest-main head. Resolve current main live before every task branch."
 }
