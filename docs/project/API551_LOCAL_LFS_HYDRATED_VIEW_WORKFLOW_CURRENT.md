@@ -44,7 +44,7 @@ git rev-parse HEAD
 (git lfs ls-files --name-only).Count
 ```
 
-Verified `main` after PR #65 merge: HEAD `eeca80146ff59660326eef55582ad611f2d7c3c4` and 161 LFS paths. Treat this SHA as the current checkpoint; after any later merge, obtain the new expected HEAD from verified `main`.
+Verified PR #65 registration checkpoint: `eeca80146ff59660326eef55582ad611f2d7c3c4` and 161 LFS paths. This is not a moving expected HEAD; before every later task, resolve current `main` from GitHub and validate that live SHA locally.
 
 ## Figure coverage
 
