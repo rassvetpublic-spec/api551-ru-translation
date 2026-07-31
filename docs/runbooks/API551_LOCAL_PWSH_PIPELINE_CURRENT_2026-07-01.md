@@ -1,7 +1,7 @@
 # API 551 — локальный PowerShell runbook
 
 Статус: CURRENT Stage 5 runbook.  
-Обновлено: 2026-07-29.
+Обновлено: 2026-07-31.
 
 ## 1. Рабочая папка
 
@@ -37,7 +37,7 @@ git pull --ff-only origin main
 git switch -c 'task/<topic>'
 ```
 
-Ветка должна начинаться от актуального `main`. `candidates` не использовать как Stage 5 base.
+Ветка должна начинаться от актуального `main`. Отдельная Stage 4 baseline-ветка как база не используется.
 
 ## 5. Проверить изменения
 

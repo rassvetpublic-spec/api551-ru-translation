@@ -13,7 +13,7 @@ source-gate -> task/* from current main -> scoped change -> diff/review -> PR in
 - Stable: `main`; no direct writes.
 - Default work: `task/<topic>` from current `main`.
 - PR base: `main`.
-- `candidates` is historical Stage 4 state, not the Stage 5 working branch.
+- No separate Stage 4 baseline branch is retained; the completed baseline is preserved in `main` history.
 - Reopened Figure/maintenance work also uses a dedicated non-main branch from current `main`.
 
 Executable policy is synchronized in config, handoff and handoff schema.

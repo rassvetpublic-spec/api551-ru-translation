@@ -29,7 +29,7 @@ Primary bootstrap files:
 
 Stage 4 status: completed (`69/69` Figure objects accepted).
 
-Stable branch: `main`. The completed Stage 4 baseline has been promoted from `candidates` to `main` through PR #63.
+Stable branch: `main`. The completed Stage 4 baseline is preserved in `main` at commit `fbc861e7a3ec22aae098d15420cbda452f5d2802`; PR #63 records the completed promotion. No separate Stage 4 baseline branch is retained.
 
 Stage 5 status: Gate 0 completed. Registration PR #65 is merged in `main` at `eeca80146ff59660326eef55582ad611f2d7c3c4`; Gate 1 (the 244-page source map) is authorized and not started.
 
@@ -140,10 +140,10 @@ Do not use image generation, generative image editing, old translated PNGs, or s
 
 ## PR workflow
 
-Stage 4 promotion sequence:
+Stage 4 promotion is complete:
 
 ```text
-verify candidates 69/69 -> PR candidates into main -> CI/status check -> explicit merge -> verify main
+69/69 accepted -> PR #63 -> main verified -> separate Stage 4 baseline branch retired
 ```
 
 Stage 5 work starts from `main` on a task branch and returns through PR. Registration PR #65 is merged; the next scoped step is Gate 1, and every later merge still requires explicit user approval.

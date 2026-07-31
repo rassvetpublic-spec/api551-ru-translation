@@ -1,7 +1,7 @@
 # API 551 — GitHub + PowerShell Local Pipeline
 
 Статус: CURRENT для Stage 5 и явно переоткрытых Figure.  
-Обновлено: 2026-07-29.
+Обновлено: 2026-07-31.
 
 ## Приоритет
 
@@ -27,7 +27,7 @@ Snapshot не содержит `.git` и не используется для co
 source-gate -> update main -> task/* from main -> checked change -> PR into main -> all checks -> explicit merge -> verify main
 ```
 
-`candidates` не является рабочей веткой Stage 5.
+Отдельная Stage 4 baseline-ветка не используется; рабочие ветки создаются от актуального `main`.
 
 ## PowerShell
 

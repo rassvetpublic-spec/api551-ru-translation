@@ -1,7 +1,7 @@
 param(
   [string]$RepoRoot = 'C:\GIT\api551',
   [string]$RunId = '',
-  [string]$BaseBranch = 'candidates',
+  [string]$BaseBranch = 'main',
   [switch]$NoPr,
   [switch]$ValidateOnly
 )

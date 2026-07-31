@@ -46,7 +46,6 @@ jobs:
             "docs/rules/GITHUB_PROJECT_PWSH_LOCAL_PIPELINE_CURRENT_2026-07-01.md",
             "docs/runbooks/API551_LOCAL_PWSH_PIPELINE_CURRENT_2026-07-01.md",
             "scripts/api551_validate_and_run_ps1_pwsh.ps1",
-            "scripts/api551_sync_candidates_pwsh.ps1",
             "scripts/api551_check_pr_pwsh.ps1",
             "scripts/api551_overlay_sanity_pwsh.ps1"
           )

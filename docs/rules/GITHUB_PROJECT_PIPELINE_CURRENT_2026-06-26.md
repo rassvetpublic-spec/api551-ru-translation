@@ -68,7 +68,7 @@ fix/<short-topic>-YYYY-MM-DD
 cleanup/<short-topic>-YYYY-MM-DD
 ```
 
-Avoid names that collide with existing ref namespaces, for example do not create `candidates/...` when a real branch named `candidates` exists.
+Avoid names that collide with existing ref namespaces, for example do not create `main/...` when a real branch named `main` exists.
 
 Preferred connector tools:
 
@@ -207,7 +207,6 @@ Protected or retained branches:
 
 ```text
 main
-candidates
 archive branches
 evidence branches
 branches explicitly preserved by the user
