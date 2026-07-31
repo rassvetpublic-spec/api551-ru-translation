@@ -1,7 +1,7 @@
 {
   "project": "API 551 RU Translation / Stage 4 completed / Stage 5 Final RU PDF",
   "language": "ru",
-  "updated": "2026-07-30",
+  "updated": "2026-07-31",
   "status": "stage5_gate1_machine_map_complete_manual_review_pending",
   "repo": "rassvetpublic-spec/api551-ru-translation",
   "stable_branch": "main",
@@ -244,7 +244,7 @@
   "stage4_completed": true,
   "stage4_completed_on": "2026-07-28",
   "stage5_status": "gate1_machine_map_complete_manual_review_pending",
-  "stage4_baseline_branch": "candidates",
+  "stage4_baseline_branch": "main",
   "stage4_baseline_commit": "fbc861e7a3ec22aae098d15420cbda452f5d2802",
   "local_full_snapshot_path": "C:\\Irvis-UPG\\GIT\\API551_GITHUB_FULL_SNAPSHOT",
   "local_snapshot_is_git_worktree": false,

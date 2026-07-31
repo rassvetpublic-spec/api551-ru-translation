@@ -14,7 +14,7 @@ $branchOutput=& git -C $RepoRoot branch --show-current 2>&1
 if($LASTEXITCODE -ne 0){throw "Cannot determine Git branch for $RepoRoot`: $branchOutput"}
 $currentBranch=($branchOutput|Out-String).Trim()
 if(!$currentBranch){throw 'Detached HEAD is forbidden for preview index updates'}
-if($currentBranch -in @('main','candidates')){throw "Preview index update is forbidden on protected branch: $currentBranch"}
+if($currentBranch -eq 'main'){throw "Preview index update is forbidden on protected branch: $currentBranch"}
 if($currentBranch -notlike 'preview-*'){throw "Preview index update requires a preview-* branch; current branch: $currentBranch"}
 if(!$RunId){$RunId=(Get-Content -LiteralPath (Join-Path $RepoRoot 'reports\codex-local\CURRENT_RUN_ID.txt') -Raw).Trim()}
 if(!$Figure){throw 'Pass -Figure NNN'}

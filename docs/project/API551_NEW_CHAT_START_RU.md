@@ -21,7 +21,7 @@ Snapshot без `.git`: `C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT`.
 - Stable: `main`.
 - Stage 5: `task/<topic>` от актуального `main`, затем PR в `main`.
 - `main` напрямую не менять.
-- `candidates` — историческая ветка завершённого Stage 4, не рабочая ветка Stage 5.
+- Отдельной Stage 4 baseline-ветки нет: baseline зафиксирован коммитом `fbc861e7a3ec22aae098d15420cbda452f5d2802` и сохранён в истории `main`.
 
 Политика веток синхронизируется в config, handoff и handoff schema.
 

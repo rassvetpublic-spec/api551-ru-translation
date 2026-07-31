@@ -28,6 +28,7 @@ Stage 5 production is governed by `source/TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_
 ## Write policy
 
 - Do not modify `main` directly.
+- The completed Stage 4 baseline is preserved in `main` at commit `fbc861e7a3ec22aae098d15420cbda452f5d2802`; no separate persistent Stage 4 baseline branch is used.
 - Stage 5 starts from current `main` on `task/<topic>` and returns through PR into `main`.
 - Explicitly reopened Stage 4 Figure work also starts from current `main` on a non-main branch.
 - Use a dedicated branch and PR for rules/playbook updates.

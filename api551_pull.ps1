@@ -50,7 +50,7 @@ function Resolve-BranchName([string]$RequestedBranch) {
     if ($branchNames.Count -eq 0) { throw "No branches returned from GitHub" }
 
     $ordered = New-Object System.Collections.Generic.List[string]
-    foreach ($preferred in @("candidates", "main")) {
+    foreach ($preferred in @("main")) {
         if ($branchNames -contains $preferred) { [void]$ordered.Add($preferred) }
     }
     foreach ($name in ($branchNames | Sort-Object)) {
@@ -62,7 +62,7 @@ function Resolve-BranchName([string]$RequestedBranch) {
         Write-Host ("[{0}] {1}" -f ($i + 1), $ordered[$i])
     }
 
-    $defaultBranch = if ($ordered.Contains("candidates")) { "candidates" } elseif ($ordered.Contains("main")) { "main" } else { $ordered[0] }
+    $defaultBranch = if ($ordered.Contains("main")) { "main" } else { $ordered[0] }
     $answer = Read-Host "Select branch (Enter=$defaultBranch, number or name)"
     if ([string]::IsNullOrWhiteSpace($answer)) { return $defaultBranch }
 
