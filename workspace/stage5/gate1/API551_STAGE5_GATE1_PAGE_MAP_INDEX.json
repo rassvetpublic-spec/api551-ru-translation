@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "project": "API 551 RU Translation / Stage 5 Gate 1",
+  "generated_at_utc": "2026-07-30T13:10:14Z",
+  "source_pdf": {
+    "name": "API 551 2016 (R2024).pdf",
+    "pages": 244,
+    "bytes": 8089772,
+    "sha256": "d458b3a899902f216767e753aa5737a9745b61adcab02f85c9521937a9d3e270"
+  },
+  "primary_method": "rendered page at 150 DPI -> Tesseract OCR eng psm 3",
+  "secondary_method": "embedded PDF text layer comparison and vector table geometry",
+  "ambiguity_policy": "flag for manual review; do not guess",
+  "status": "machine_map_complete_manual_review_pending",
+  "page_count": 244,
+  "chunks": [
+    {
+      "path": "page_map/API551_STAGE5_GATE1_PAGE_MAP_001_016.json",
+      "page_range": [
+        1,
+        16
+      ],
+      "page_count": 16,
+      "bytes": 456617,
+      "sha256": "705846df10106614a944f914c7aa44b3f21e37dfdad826f428f3656af4a95aef"
+    },
+    {
+      "path": "page_map/API551_STAGE5_GATE1_PAGE_MAP_017_032.json",
+      "page_range": [
+        17,
+        32
+      ],
+      "page_count": 16,
+      "bytes": 526516,
+      "sha256": "7eee62ddbf67041bdb13ced1532d1fe6461c7fa535fa7f2eeae0f7635d5194a4"
+    },
+    {
+      "path": "page_map/API551_STAGE5_GATE1_PAGE_MAP_033_048.json",
+      "page_range": [
+        33,
+        48
+      ],
+      "page_count": 16,
+      "bytes": 533046,
+      "sha256": "4c77db46c63e225bcade246d8715a0242c7aa4fe05ff36ae93bd811bfe042a55"
+    },
+    {
+      "path": "page_map/API551_STAGE5_GATE1_PAGE_MAP_049_064.json",
+      "page_range": [
+        49,
+        64
+      ],
+      "page_count": 16,
+      "bytes": 527585,
+      "sha256": "f99cc97e9dba2cae6d2be6952012de268d2075cee4580e78a88c3773c7dff23e"
+    },
+    {
+      "path": "page_map/API551_STAGE5_GATE1_PAGE_MAP_065_080.json",
+      "page_range": [
+        65,
+        80
+      ],
+      "page_count": 16,
+      "bytes": 557074,
+      "sha256": "d22c9b05ced7fe4fc8eb862b21f13433c938e8a5845c1b9084f38f0a84aca645"
+    },
+    {
+      "path": "page_map/API551_STAGE5_GATE1_PAGE_MAP_081_096.json",
+      "page_range": [
+        81,
+        96
+      ],
+      "page_count": 16,
+      "bytes": 464548,
+      "sha256": "d3b36451f6fe436c8c19d349a6b559ec649a0aedff8516c30a9c7bc9dffc2cae"
+    },
+    {
+      "path": "page_map/API551_STAGE5_GATE1_PAGE_MAP_097_112.json",
+      "page_range": [
+        97,
+        112
+      ],
+      "page_count": 16,
+      "bytes": 520420,
+      "sha256": "9eaca0ffdeab3a1d8aa0fbf65743d3622fb0714ffecf070e41aa00dd0e87021c"
+    },
+    {
+      "path": "page_map/API551_STAGE5_GATE1_PAGE_MAP_113_128.json",
+      "page_range": [
+        113,
+        128
+      ],
+      "page_count": 16,
+      "bytes": 506496,
+      "sha256": "efaad7c6f9a1b41398a0335bb974b7b285f6c3168d852e449bac60409ff82236"
+    },
+    {
+      "path": "page_map/API551_STAGE5_GATE1_PAGE_MAP_129_144.json",
+      "page_range": [
+        129,
+        144
+      ],
+      "page_count": 16,
+      "bytes": 527107,
+      "sha256": "315e6eae54db04307015196c1153422e2be17e545ea987a6d91bdf5a384cb1dc"
+    },
+    {
+      "path": "page_map/API551_STAGE5_GATE1_PAGE_MAP_145_160.json",
+      "page_range": [
+        145,
+        160
+      ],
+      "page_count": 16,
+      "bytes": 544466,
+      "sha256": "5905062c37c0c37cb1fe8765516778f85e6f59b32795da72954d9b1f0c5439b6"
+    },
+    {
+      "path": "page_map/API551_STAGE5_GATE1_PAGE_MAP_161_176.json",
+      "page_range": [
+        161,
+        176
+      ],
+      "page_count": 16,
+      "bytes": 497191,
+      "sha256": "7b7bd98404c79176754f31199ff24946801cb21dad1a36fb843917d183a8474d"
+    },
+    {
+      "path": "page_map/API551_STAGE5_GATE1_PAGE_MAP_177_192.json",
+      "page_range": [
+        177,
+        192
+      ],
+      "page_count": 16,
+      "bytes": 443495,
+      "sha256": "e41f23f23951d1c06190fd8b07999b3adfa92034f4758e34f8959675f73f9315"
+    },
+    {
+      "path": "page_map/API551_STAGE5_GATE1_PAGE_MAP_193_208.json",
+      "page_range": [
+        193,
+        208
+      ],
+      "page_count": 16,
+      "bytes": 551498,
+      "sha256": "615868c4581c5798d13d3dc1148519221c0608344db3081fee9b627bdca38d32"
+    },
+    {
+      "path": "page_map/API551_STAGE5_GATE1_PAGE_MAP_209_224.json",
+      "page_range": [
+        209,
+        224
+      ],
+      "page_count": 16,
+      "bytes": 521327,
+      "sha256": "761b0a9f26b36d42ce88247ce8ad65389918e44c7dcaeedaa1d05d1bf9e5331c"
+    },
+    {
+      "path": "page_map/API551_STAGE5_GATE1_PAGE_MAP_225_240.json",
+      "page_range": [
+        225,
+        240
+      ],
+      "page_count": 16,
+      "bytes": 437929,
+      "sha256": "c7919225a721e05d3f4510fff3f4e8ebb2b7c9609b29ccfdcd90451dfbbfe01d"
+    },
+    {
+      "path": "page_map/API551_STAGE5_GATE1_PAGE_MAP_241_244.json",
+      "page_range": [
+        241,
+        244
+      ],
+      "page_count": 4,
+      "bytes": 33121,
+      "sha256": "0d6a0bf897beaad2a5abb45ba2bef8ab0200d8346291138449af4390fedc241d"
+    }
+  ],
+  "anchor_registry": {
+    "path": "API551_STAGE5_GATE1_ANCHOR_REGISTRY.json",
+    "bytes": 173309,
+    "sha256": "bf40bd26d7f8706b745d1d0ce541fb0be413649abf586f17d42f72e800e84865"
+  },
+  "qa_report": {
+    "path": "API551_STAGE5_GATE1_QA_REPORT.json",
+    "bytes": 4225,
+    "sha256": "21eab6ab19ddbd0c426034a41145ab2992e9f3557068c4065c2fbbc150ae3106"
+  }
+}

@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 from datetime import date
+import hashlib
 import json
 import os
 import re
@@ -217,11 +218,11 @@ def docs_sync_check(root: Path, quiet: bool = False) -> dict[str, Any]:
             fail(f"bootstrap marker missing: {marker}")
 
     expected_registration_merge = "eeca80146ff59660326eef55582ad611f2d7c3c4"
-    expected_stage5_status = "gate0_complete_gate1_not_started"
-    if handoff.get("status") != "stage5_gate0_complete_gate1_ready":
-        fail("handoff post-merge status is stale")
-    if handoff.get("current_stage") != "Stage 5 Gate 1 — source mapping ready, not started":
-        fail("handoff current_stage must declare Gate 1 ready and not started")
+    expected_stage5_status = "gate1_machine_map_complete_manual_review_pending"
+    if handoff.get("status") != "stage5_gate1_machine_map_complete_manual_review_pending":
+        fail("handoff Gate 1 status is stale")
+    if handoff.get("current_stage") != "Stage 5 Gate 1 — machine map complete, manual review pending":
+        fail("handoff current_stage must declare Gate 1 machine map complete and manual review pending")
     if handoff.get("stage5_status") != expected_stage5_status:
         fail("handoff stage5_status mismatch")
     if handoff.get("stable_branch_commit") != expected_registration_merge:
@@ -232,26 +233,29 @@ def docs_sync_check(root: Path, quiet: bool = False) -> dict[str, Any]:
     if stage5_spec.get("registration_merge_commit") != expected_registration_merge:
         fail("handoff Stage 5 registration merge commit mismatch")
     registration = manifest.get("stage5_registration", {})
-    if manifest.get("status") != "stage5_gate0_complete_gate1_not_started_stage4_baseline_preserved":
-        fail("manifest post-merge Stage 5 status is stale")
+    if manifest.get("status") != "stage5_gate1_machine_map_complete_manual_review_pending_stage4_baseline_preserved":
+        fail("manifest Gate 1 status is stale")
     if registration.get("pr") != 65 or registration.get("merge_commit") != expected_registration_merge:
         fail("manifest Stage 5 registration metadata mismatch")
-    if registration.get("gate0_status") != "complete" or registration.get("gate1_status") != "not_started":
+    if registration.get("gate0_status") != "complete" or registration.get("gate1_status") != "machine_map_complete_manual_review_pending":
         fail("manifest Stage 5 gate state mismatch")
+    gate1_summary = gate1_check_data(root, quiet=True)
+    if gate1_summary.get("pages") != 244 or gate1_summary.get("figures") != 69:
+        fail("Gate 1 machine map summary mismatch")
 
     postmerge_markers = {
         root / "README.md": [
             expected_registration_merge,
             r"C:\Irvis-UPG\GIT\API 551",
             r"C:\Irvis-UPG\GIT\API551_GITHUB_FULL_SNAPSHOT",
-            "Gate 1 (the 244-page source map) is authorized and not started",
+            "Gate 1 machine map is complete: 244/244 pages",
         ],
         root / "docs" / "project" / "API551_NEW_CHAT_START_RU.md": [
-            "Gate 0 completed by merged PR #65; Gate 1 authorized, not started",
+            "Gate 1 machine map complete: 244/244 pages; manual review pending",
             "Gate 3 — проверка и принятие полной HTML/JSON-карты",
         ],
         root / "docs" / "API551_PROJECT_QUICK_START_CURRENT.md": [
-            "Gate 0 completed by merged PR #65; Gate 1 authorized, not started",
+            "Gate 1 machine map complete: 244/244 pages; manual review pending",
         ],
         root / "docs" / "project" / "API551_PR_WORKFLOW_CURRENT.md": [
             expected_registration_merge,
@@ -263,7 +267,7 @@ def docs_sync_check(root: Path, quiet: bool = False) -> dict[str, Any]:
         ],
         root / "source" / "TZ_API551_PROJECT_STAGE5_FINAL_RU_PDF_CURRENT_2026-07-29.md": [
             expected_registration_merge,
-            "Gate 1 разрешён и ещё не начат",
+            "Машинная карта Gate 1 построена для 244/244 страниц",
         ],
     }
     for doc, markers in postmerge_markers.items():
@@ -280,6 +284,10 @@ def docs_sync_check(root: Path, quiet: bool = False) -> dict[str, Any]:
         "После merge PR #65",
         "Gate 1 starts after merge",
         "До merge регистрационного PR",
+        "Gate 1 (the 244-page source map) is authorized and not started",
+        "Gate 1 authorized, not started",
+        "Gate 1 разрешён и ещё не начат",
+        "карта 244 страниц ещё не создана",
     ]
     for doc in postmerge_markers:
         text = read_text(doc)
@@ -355,6 +363,7 @@ def source_gate(args: argparse.Namespace) -> None:
     ]:
         ensure_file(root, filename)
     stats = docs_sync_check(root, quiet=True)
+    gate1_check_data(root, quiet=True)
     if (root / ".git").exists() and not args.ci:
         try:
             branch = subprocess.check_output(["git", "branch", "--show-current"], cwd=root, text=True, stderr=subprocess.DEVNULL).strip()
@@ -378,6 +387,108 @@ def status(args: argparse.Namespace) -> None:
     print(f"changed/review: {stats['changed']}")
     print(f"not_accepted: {stats['not_accepted']}/69")
     print("accepted_figures: " + ",".join(map(str, stats["accepted_figures"])))
+
+
+def gate1_check_data(root: Path, quiet: bool = False) -> dict[str, Any]:
+    gate1_root = root / "workspace" / "stage5" / "gate1"
+    index_path = gate1_root / "API551_STAGE5_GATE1_PAGE_MAP_INDEX.json"
+    registry_path = gate1_root / "API551_STAGE5_GATE1_ANCHOR_REGISTRY.json"
+    qa_path = gate1_root / "API551_STAGE5_GATE1_QA_REPORT.json"
+    generator_path = root / "tools" / "api551" / "stage5_gate1_map.py"
+    readme_path = gate1_root / "README.md"
+    for path in [index_path, registry_path, qa_path, generator_path, readme_path]:
+        if not path.is_file():
+            fail(f"missing Gate 1 artifact: {path.relative_to(root).as_posix()}")
+
+    index = read_json(index_path)
+    registry = read_json(registry_path)
+    qa = read_json(qa_path)
+    expected_source = {
+        "name": "API 551 2016 (R2024).pdf",
+        "pages": 244,
+        "bytes": 8089772,
+        "sha256": "d458b3a899902f216767e753aa5737a9745b61adcab02f85c9521937a9d3e270",
+    }
+    if index.get("source_pdf") != expected_source:
+        fail("Gate 1 source PDF metadata mismatch")
+    chunks = index.get("chunks", [])
+    if len(chunks) != 16:
+        fail(f"Gate 1 map must contain 16 chunks, got {len(chunks)}")
+
+    pages: list[dict[str, Any]] = []
+    for chunk in chunks:
+        rel = chunk.get("path")
+        if not isinstance(rel, str) or not rel.startswith("page_map/"):
+            fail(f"bad Gate 1 chunk path: {rel!r}")
+        path = gate1_root / rel
+        if not path.is_file():
+            fail(f"missing Gate 1 chunk: {rel}")
+        data = path.read_bytes()
+        if len(data) != chunk.get("bytes"):
+            fail(f"Gate 1 chunk size mismatch: {rel}")
+        if hashlib.sha256(data).hexdigest() != chunk.get("sha256"):
+            fail(f"Gate 1 chunk SHA-256 mismatch: {rel}")
+        if len(data) >= 1_000_000:
+            fail(f"Gate 1 chunk exceeds 1 MB: {rel}")
+        payload = json.loads(data.decode("utf-8"))
+        pages.extend(payload.get("pages", []))
+
+    page_numbers = [page.get("pdf_page") for page in pages]
+    if page_numbers != list(range(1, 245)):
+        fail("Gate 1 page coverage/order is not exactly 1..244")
+    block_ids = [block.get("block_id") for page in pages for block in page.get("blocks", [])]
+    if len(block_ids) != len(set(block_ids)):
+        fail("Gate 1 contains duplicate block IDs")
+    for page in pages:
+        for block in page.get("blocks", []):
+            bbox = block.get("bbox_norm")
+            if not isinstance(bbox, list) or len(bbox) != 4 or any(
+                not isinstance(value, (int, float)) or value < 0 or value > 1 for value in bbox
+            ):
+                fail(f"bad normalized bbox in {block.get('block_id')}")
+
+    figure_numbers = sorted(
+        int(figure["figure_no"]) for page in pages for figure in page.get("figures", [])
+    )
+    if figure_numbers != list(range(1, 70)):
+        fail("Gate 1 Figure coverage is not exactly 1..69")
+    anchor_ids = [anchor.get("anchor_id") for anchor in registry.get("anchors", [])]
+    if len(anchor_ids) != len(set(anchor_ids)):
+        fail("Gate 1 anchor registry contains duplicate IDs")
+    if registry.get("duplicate_anchor_ids"):
+        fail("Gate 1 anchor registry reports duplicate IDs")
+
+    coverage = qa.get("coverage", {})
+    acceptance = qa.get("gate1_acceptance", {})
+    if coverage.get("mapped_pages") != 244 or coverage.get("missing_pages") != []:
+        fail("Gate 1 QA page coverage mismatch")
+    if coverage.get("figures_mapped") != 69 or coverage.get("figure_numbers") != list(range(1, 70)):
+        fail("Gate 1 QA Figure coverage mismatch")
+    if acceptance.get("machine_coverage_pass") is not True:
+        fail("Gate 1 machine coverage is not PASS")
+    if acceptance.get("manual_review_complete") is not False or acceptance.get("gate1_accepted") is not False:
+        fail("Gate 1 must remain unaccepted until manual review is complete")
+
+    summary = {
+        "pages": len(pages),
+        "blocks": len(block_ids),
+        "figures": len(figure_numbers),
+        "tables": coverage.get("tables_detected"),
+        "anchors": len(anchor_ids),
+        "references": registry.get("reference_count"),
+        "unresolved_reference_targets": registry.get("unresolved_reference_target_count"),
+        "manual_review_pages": qa.get("manual_review", {}).get("required_page_count"),
+        "ambiguities": qa.get("manual_review", {}).get("ambiguity_count"),
+        "status": qa.get("status"),
+    }
+    if not quiet:
+        print("gate1 machine map OK; manual review pending")
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+    return summary
+
+
+def gate1_check(args: argparse.Namespace) -> None:
+    gate1_check_data(repo_root())
 
 
 def find_catalog_figure_in(catalog: dict[str, Any], fig_id: str) -> dict[str, Any]:
@@ -827,6 +938,7 @@ def build_parser() -> argparse.ArgumentParser:
     p = sub.add_parser("source-gate"); p.add_argument("--ci", action="store_true"); p.set_defaults(func=source_gate)
     p = sub.add_parser("status"); p.add_argument("--ci", action="store_true"); p.add_argument("--json", action="store_true"); p.set_defaults(func=status)
     p = sub.add_parser("docs-sync-check"); p.add_argument("--ci", action="store_true"); p.set_defaults(func=lambda args: docs_sync_check(repo_root()))
+    p = sub.add_parser("gate1-check"); p.add_argument("--ci", action="store_true"); p.set_defaults(func=gate1_check)
     p = sub.add_parser("figure-check"); p.add_argument("-Figure", "--figure", default=None); p.add_argument("--all-known", action="store_true"); p.add_argument("--ci", action="store_true"); p.set_defaults(func=figure_check)
     p = sub.add_parser("package-check"); p.add_argument("-PackageZip", "--package-zip", required=True); p.add_argument("-Figure", "--figure", default=None); p.set_defaults(func=package_check)
     p = sub.add_parser("install-package"); p.add_argument("-PackageZip", "--package-zip", required=True); p.add_argument("-Figure", "--figure", default=None); p.set_defaults(func=install_package)

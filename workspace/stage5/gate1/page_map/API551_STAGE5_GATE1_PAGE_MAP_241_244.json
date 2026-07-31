@@ -1,0 +1,1174 @@
+{
+  "schema_version": "1.0",
+  "project": "API 551 RU Translation / Stage 5 Gate 1",
+  "generated_at_utc": "2026-07-30T13:10:14Z",
+  "source_pdf": {
+    "name": "API 551 2016 (R2024).pdf",
+    "pages": 244,
+    "bytes": 8089772,
+    "sha256": "d458b3a899902f216767e753aa5737a9745b61adcab02f85c9521937a9d3e270"
+  },
+  "primary_method": "rendered page at 150 DPI -> Tesseract OCR eng psm 3",
+  "secondary_method": "embedded PDF text layer comparison and vector table geometry",
+  "ambiguity_policy": "flag for manual review; do not guess",
+  "page_range": [
+    241,
+    244
+  ],
+  "page_count": 4,
+  "pages": [
+    {
+      "pdf_page": 241,
+      "pdf_page_label": "241",
+      "page_size_pt": [
+        612.0,
+        792.0
+      ],
+      "render": {
+        "dpi": 150,
+        "pixel_width": 1275,
+        "pixel_height": 1650,
+        "colorspace": "grayscale",
+        "retained": false
+      },
+      "ocr": {
+        "engine": "tesseract",
+        "language": "eng",
+        "psm": 3,
+        "word_count": 170,
+        "block_count": 24,
+        "mean_word_confidence": 92.72,
+        "text_sha256": "ad90465d2c3e99a6198fa8904198a98aa3b96c70f0cbfa91f9de310d9113bc45"
+      },
+      "secondary_text_layer": {
+        "line_count": 25,
+        "token_count": 170,
+        "text_sha256": "3012164849dba4f56e14faf5d5406fd2c656dead196fec4f77c7381bb6132047",
+        "ocr_token_recall": 0.9824,
+        "role": "secondary_control_only"
+      },
+      "blocks": [
+        {
+          "block_id": "p241-b0001",
+          "type": "service_zone",
+          "text": "PROCESS MEASUREMENT 233",
+          "bbox_px": [
+            562,
+            124,
+            1174,
+            136
+          ],
+          "bbox_norm": [
+            0.440784,
+            0.075152,
+            0.920784,
+            0.082424
+          ],
+          "ocr_confidence": 70.42,
+          "word_count": 3,
+          "classification_method": "repeating_header_regex",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "PROCESS MEASUREMENT",
+            "embedded_max_font_size_pt": 7.98,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0002",
+          "type": "paragraph_line",
+          "text": "PIP PCCLI001, Level Measurement Design Criteria",
+          "bbox_px": [
+            127,
+            186,
+            587,
+            205
+          ],
+          "bbox_norm": [
+            0.099608,
+            0.112727,
+            0.460392,
+            0.124242
+          ],
+          "ocr_confidence": 83.13,
+          "word_count": 6,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "PIP PCCLI001, Level Measurement Design Criteria",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0003",
+          "type": "paragraph_line",
+          "text": "PIP PCCPRO01, Pressure Measurement Design Criteria",
+          "bbox_px": [
+            127,
+            236,
+            632,
+            255
+          ],
+          "bbox_norm": [
+            0.099608,
+            0.14303,
+            0.495686,
+            0.154545
+          ],
+          "ocr_confidence": 87.54,
+          "word_count": 6,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "PIP PCCPR001, Pressure Measurement Design Criteria",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 0.8333
+          }
+        },
+        {
+          "block_id": "p241-b0004",
+          "type": "paragraph_line",
+          "text": "PIP PCCTE001, Temperature Measurement Design Criteria",
+          "bbox_px": [
+            127,
+            286,
+            663,
+            305
+          ],
+          "bbox_norm": [
+            0.099608,
+            0.173333,
+            0.52,
+            0.184848
+          ],
+          "ocr_confidence": 95.42,
+          "word_count": 6,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "PIP PCCTE001, Temperature Measurement Design Criteria",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0005",
+          "type": "paragraph_line",
+          "text": "PIP PCCWE001, Weigh Systems Design Criteria",
+          "bbox_px": [
+            127,
+            336,
+            566,
+            355
+          ],
+          "bbox_norm": [
+            0.099608,
+            0.203636,
+            0.443922,
+            0.215152
+          ],
+          "ocr_confidence": 94.66,
+          "word_count": 6,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "PIP PCCWE001, Weigh Systems Design Criteria",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0006",
+          "type": "paragraph_line",
+          "text": "PIP PCEDO001, Guidelines for Control Systems Documentation",
+          "bbox_px": [
+            127,
+            386,
+            705,
+            405
+          ],
+          "bbox_norm": [
+            0.099608,
+            0.233939,
+            0.552941,
+            0.245455
+          ],
+          "ocr_confidence": 94.75,
+          "word_count": 7,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "PIP PCEDO001, Guidelines for Control Systems Documentation",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0007",
+          "type": "paragraph_line",
+          "text": "PIP PCEFL001, Flow Measurement Guidelines",
+          "bbox_px": [
+            127,
+            436,
+            550,
+            454
+          ],
+          "bbox_norm": [
+            0.099608,
+            0.264242,
+            0.431373,
+            0.275152
+          ],
+          "ocr_confidence": 83.72,
+          "word_count": 5,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "PIP PCEFL001, Flow Measurement Guidelines",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0008",
+          "type": "paragraph_line",
+          "text": "PIP PCELI001, Level Measurement Guidelines",
+          "bbox_px": [
+            127,
+            486,
+            549,
+            504
+          ],
+          "bbox_norm": [
+            0.099608,
+            0.294545,
+            0.430588,
+            0.305455
+          ],
+          "ocr_confidence": 93.7,
+          "word_count": 5,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "PIP PCELI001, Level Measurement Guidelines",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0009",
+          "type": "paragraph_line",
+          "text": "PIP PCETE001, Temperature Measurement Guidelines",
+          "bbox_px": [
+            127,
+            536,
+            624,
+            555
+          ],
+          "bbox_norm": [
+            0.099608,
+            0.324848,
+            0.489412,
+            0.336364
+          ],
+          "ocr_confidence": 94.64,
+          "word_count": 5,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "PIP PCETE001, Temperature Measurement Guidelines",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0010",
+          "type": "paragraph_line",
+          "text": "PIP PCFGNO00, /nstrument Pipe Support Fabrication Details",
+          "bbox_px": [
+            127,
+            586,
+            674,
+            605
+          ],
+          "bbox_norm": [
+            0.099608,
+            0.355152,
+            0.528627,
+            0.366667
+          ],
+          "ocr_confidence": 88.89,
+          "word_count": 7,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "PIP PCFGN000, Instrument Pipe Support Fabrication Details",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 0.7143
+          }
+        },
+        {
+          "block_id": "p241-b0011",
+          "type": "paragraph_line",
+          "text": "PIP PCFTE100, Thermowell Fabrication Details",
+          "bbox_px": [
+            127,
+            636,
+            555,
+            654
+          ],
+          "bbox_norm": [
+            0.099608,
+            0.385455,
+            0.435294,
+            0.396364
+          ],
+          "ocr_confidence": 94.18,
+          "word_count": 5,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "PIP PCFTE100, Thermowell Fabrication Details",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0012",
+          "type": "paragraph_line",
+          "text": "PIP PCIDP100, Differential Pressure Transmitter Installation Details",
+          "bbox_px": [
+            127,
+            686,
+            733,
+            704
+          ],
+          "bbox_norm": [
+            0.099608,
+            0.415758,
+            0.574902,
+            0.426667
+          ],
+          "ocr_confidence": 95.72,
+          "word_count": 7,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "PIP PCIDP100, Differential Pressure Transmitter Installation Details",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0013",
+          "type": "paragraph_line",
+          "text": "PIP PCIGN300, General Instrument Accessory Details",
+          "bbox_px": [
+            127,
+            732,
+            615,
+            759
+          ],
+          "bbox_norm": [
+            0.099608,
+            0.443636,
+            0.482353,
+            0.46
+          ],
+          "ocr_confidence": 95.26,
+          "word_count": 6,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "PIP PCIGN300, General Instrument Accessory Details",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0014",
+          "type": "paragraph_line",
+          "text": "PIP PCIIA000, Instrument Air Installation Details",
+          "bbox_px": [
+            127,
+            786,
+            558,
+            804
+          ],
+          "bbox_norm": [
+            0.099608,
+            0.476364,
+            0.437647,
+            0.487273
+          ],
+          "ocr_confidence": 79.91,
+          "word_count": 6,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "PIP PCIIA000, Instrument Air Installation Details",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0015",
+          "type": "paragraph_line",
+          "text": "PIP PCIPR100, Pressure Transmitter Installation Details",
+          "bbox_px": [
+            127,
+            836,
+            630,
+            854
+          ],
+          "bbox_norm": [
+            0.099608,
+            0.506667,
+            0.494118,
+            0.517576
+          ],
+          "ocr_confidence": 95.4,
+          "word_count": 6,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "PIP PCIPR100, Pressure Transmitter Installation Details",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0016",
+          "type": "paragraph_line",
+          "text": "PIP PCITE200, RTD/Thermocouple Installation Details",
+          "bbox_px": [
+            127,
+            886,
+            617,
+            905
+          ],
+          "bbox_norm": [
+            0.099608,
+            0.53697,
+            0.483922,
+            0.548485
+          ],
+          "ocr_confidence": 93.66,
+          "word_count": 5,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "PIP PCITE200, RTD/Thermocouple Installation Details",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0017",
+          "type": "paragraph_line",
+          "text": "PIP PNF0200, Vents, Drains, and Instrument Connection Details",
+          "bbox_px": [
+            127,
+            936,
+            706,
+            954
+          ],
+          "bbox_norm": [
+            0.099608,
+            0.567273,
+            0.553725,
+            0.578182
+          ],
+          "ocr_confidence": 89.55,
+          "word_count": 8,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "PIP PNF0200, Vents, Drains, and Instrument Connection Details",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0018",
+          "type": "paragraph_line",
+          "text": "SAE AIR6202, Test Cell Mass Fuel Flow Measurement Using Coriolis Flow Meters",
+          "bbox_px": [
+            126,
+            986,
+            866,
+            1005
+          ],
+          "bbox_norm": [
+            0.098824,
+            0.597576,
+            0.679216,
+            0.609091
+          ],
+          "ocr_confidence": 95.86,
+          "word_count": 12,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "SAE AIR6202, Test Cell Mass Fuel Flow Measurement Using Coriolis Flow Meters",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0019",
+          "type": "paragraph_line",
+          "text": "SAE AS5304, Standard Specification for Turbine Flowmeters",
+          "bbox_px": [
+            126,
+            1036,
+            672,
+            1055
+          ],
+          "bbox_norm": [
+            0.098824,
+            0.627879,
+            0.527059,
+            0.639394
+          ],
+          "ocr_confidence": 95.4,
+          "word_count": 7,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "SAE AS5304, Standard Specification for Turbine Flowmeters",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0020",
+          "type": "paragraph_line",
+          "text": "SAE HS-1086, Metals and Alloys in the Unified Numbering System (UNS) 12th Edition",
+          "bbox_px": [
+            126,
+            1086,
+            901,
+            1105
+          ],
+          "bbox_norm": [
+            0.098824,
+            0.658182,
+            0.706667,
+            0.669697
+          ],
+          "ocr_confidence": 95.74,
+          "word_count": 13,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "SAE HS-1086, Metals and Alloys in the Unified Numbering System (UNS) 12th Edition",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0021",
+          "type": "paragraph_line",
+          "text": "SAMA RC 17-10 35, Bushing and Wells for Temperature Sensing Elements",
+          "bbox_px": [
+            126,
+            1133,
+            798,
+            1155
+          ],
+          "bbox_norm": [
+            0.098824,
+            0.686667,
+            0.625882,
+            0.7
+          ],
+          "ocr_confidence": 96.06,
+          "word_count": 11,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "SAMA RC 17-10 35, Bushing and Wells for Temperature Sensing Elements",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0022",
+          "type": "paragraph_line",
+          "text": "SAMA RC 21-4, Temperature-Resistance Values for Resistance Thermometer Elements of Platinum, Nickel and",
+          "bbox_px": [
+            126,
+            1186,
+            1176,
+            1205
+          ],
+          "bbox_norm": [
+            0.098824,
+            0.718788,
+            0.922353,
+            0.730303
+          ],
+          "ocr_confidence": 95.21,
+          "word_count": 13,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "SAMA RC 21-4, Temperature-Resistance Values for Resistance Thermometer Elements of Platinum, Nickel and",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0023",
+          "type": "paragraph_line",
+          "text": "Copper",
+          "bbox_px": [
+            127,
+            1211,
+            194,
+            1230
+          ],
+          "bbox_norm": [
+            0.099608,
+            0.733939,
+            0.152157,
+            0.745455
+          ],
+          "ocr_confidence": 96.87,
+          "word_count": 1,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "Copper",
+            "embedded_max_font_size_pt": 9.96,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p241-b0024",
+          "type": "paragraph_line",
+          "text": "35 Measurement, Control & Automation Association, 2093 Harper's Mill Road, Williamsburg, VA 23185, www.measure.org.",
+          "bbox_px": [
+            126,
+            1513,
+            1113,
+            1533
+          ],
+          "bbox_norm": [
+            0.098824,
+            0.91697,
+            0.872941,
+            0.929091
+          ],
+          "ocr_confidence": 93.76,
+          "word_count": 14,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "35 Measurement, Control & Automation Association, 2093 Harper's Mill Road, Williamsburg, VA 23185, www.measure.org.",
+            "embedded_max_font_size_pt": 9.0,
+            "token_recall": 1.0
+          }
+        }
+      ],
+      "figures": [],
+      "tables": [],
+      "anchors": [
+        {
+          "anchor_id": "page-241",
+          "kind": "page",
+          "page": 241,
+          "block_id": null,
+          "label": "PDF page 241"
+        }
+      ],
+      "references": [],
+      "service_block_ids": [
+        "p241-b0001"
+      ],
+      "ambiguities": [],
+      "manual_review_required": false
+    },
+    {
+      "pdf_page": 242,
+      "pdf_page_label": "242",
+      "page_size_pt": [
+        612.0,
+        792.0
+      ],
+      "render": {
+        "dpi": 150,
+        "pixel_width": 1275,
+        "pixel_height": 1650,
+        "colorspace": "grayscale",
+        "retained": false
+      },
+      "ocr": {
+        "engine": "tesseract",
+        "language": "eng",
+        "psm": 3,
+        "word_count": 0,
+        "block_count": 0,
+        "mean_word_confidence": null,
+        "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "secondary_text_layer": {
+        "line_count": 0,
+        "token_count": 0,
+        "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "ocr_token_recall": null,
+        "role": "secondary_control_only"
+      },
+      "blocks": [],
+      "figures": [],
+      "tables": [],
+      "anchors": [
+        {
+          "anchor_id": "page-242",
+          "kind": "page",
+          "page": 242,
+          "block_id": null,
+          "label": "PDF page 242"
+        }
+      ],
+      "references": [],
+      "service_block_ids": [],
+      "ambiguities": [],
+      "manual_review_required": false
+    },
+    {
+      "pdf_page": 243,
+      "pdf_page_label": "243",
+      "page_size_pt": [
+        612.0,
+        792.0
+      ],
+      "render": {
+        "dpi": 150,
+        "pixel_width": 1275,
+        "pixel_height": 1650,
+        "colorspace": "grayscale",
+        "retained": false
+      },
+      "ocr": {
+        "engine": "tesseract",
+        "language": "eng",
+        "psm": 3,
+        "word_count": 0,
+        "block_count": 0,
+        "mean_word_confidence": null,
+        "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "secondary_text_layer": {
+        "line_count": 0,
+        "token_count": 0,
+        "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "ocr_token_recall": null,
+        "role": "secondary_control_only"
+      },
+      "blocks": [],
+      "figures": [],
+      "tables": [],
+      "anchors": [
+        {
+          "anchor_id": "page-243",
+          "kind": "page",
+          "page": 243,
+          "block_id": null,
+          "label": "PDF page 243"
+        }
+      ],
+      "references": [],
+      "service_block_ids": [],
+      "ambiguities": [],
+      "manual_review_required": false
+    },
+    {
+      "pdf_page": 244,
+      "pdf_page_label": "244",
+      "page_size_pt": [
+        612.0,
+        792.0
+      ],
+      "render": {
+        "dpi": 150,
+        "pixel_width": 1275,
+        "pixel_height": 1650,
+        "colorspace": "grayscale",
+        "retained": false
+      },
+      "ocr": {
+        "engine": "tesseract",
+        "language": "eng",
+        "psm": 3,
+        "word_count": 56,
+        "block_count": 14,
+        "mean_word_confidence": 92.63,
+        "text_sha256": "9d455cf03600a120c4eeae7d63af0f25609eff116d2d039605a8915edb7b9e34"
+      },
+      "secondary_text_layer": {
+        "line_count": 5,
+        "token_count": 13,
+        "text_sha256": "381bcd3438458d96eedfc9ed84634e347e9626e8567274da0de5b9a948651f8b",
+        "ocr_token_recall": 1.0,
+        "role": "secondary_control_only"
+      },
+      "blocks": [
+        {
+          "block_id": "p244-b0001",
+          "type": "heading_candidate",
+          "text": "y American",
+          "bbox_px": [
+            232,
+            968,
+            554,
+            1033
+          ],
+          "bbox_norm": [
+            0.181961,
+            0.586667,
+            0.43451,
+            0.626061
+          ],
+          "ocr_confidence": 90.35,
+          "word_count": 2,
+          "classification_method": "ocr_line_height",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "200 Massachusetts Avenue, NW",
+            "embedded_max_font_size_pt": 9.0,
+            "token_recall": 0.0
+          }
+        },
+        {
+          "block_id": "p244-b0002",
+          "type": "paragraph_line",
+          "text": "Petroleum",
+          "bbox_px": [
+            446,
+            1009,
+            563,
+            1027
+          ],
+          "bbox_norm": [
+            0.349804,
+            0.611515,
+            0.441569,
+            0.622424
+          ],
+          "ocr_confidence": 96.22,
+          "word_count": 1,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr"
+        },
+        {
+          "block_id": "p244-b0003",
+          "type": "heading_candidate",
+          "text": "yA a Institute",
+          "bbox_px": [
+            215,
+            1019,
+            538,
+            1067
+          ],
+          "bbox_norm": [
+            0.168627,
+            0.617576,
+            0.421961,
+            0.646667
+          ],
+          "ocr_confidence": 86.52,
+          "word_count": 3,
+          "classification_method": "ocr_line_height",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "200 Massachusetts Avenue, NW",
+            "embedded_max_font_size_pt": 9.0,
+            "token_recall": 0.0
+          }
+        },
+        {
+          "block_id": "p244-b0004",
+          "type": "heading",
+          "text": "200 Massachusetts Avenue, NW",
+          "bbox_px": [
+            228,
+            1095,
+            494,
+            1111
+          ],
+          "bbox_norm": [
+            0.178824,
+            0.663636,
+            0.387451,
+            0.673333
+          ],
+          "ocr_confidence": 96.9,
+          "word_count": 4,
+          "classification_method": "ocr_section_regex",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "200 Massachusetts Avenue, NW",
+            "embedded_max_font_size_pt": 9.0,
+            "token_recall": 1.0
+          },
+          "anchor_id": "section-200"
+        },
+        {
+          "block_id": "p244-b0005",
+          "type": "paragraph_line",
+          "text": "Suite 1100",
+          "bbox_px": [
+            228,
+            1118,
+            314,
+            1132
+          ],
+          "bbox_norm": [
+            0.178824,
+            0.677576,
+            0.246275,
+            0.686061
+          ],
+          "ocr_confidence": 96.53,
+          "word_count": 2,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "Suite 1100",
+            "embedded_max_font_size_pt": 9.0,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p244-b0006",
+          "type": "paragraph_line",
+          "text": "Washington, DC 20001-5571",
+          "bbox_px": [
+            227,
+            1140,
+            461,
+            1158
+          ],
+          "bbox_norm": [
+            0.178039,
+            0.690909,
+            0.361569,
+            0.701818
+          ],
+          "ocr_confidence": 96.48,
+          "word_count": 3,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "Washington, DC 20001-5571",
+            "embedded_max_font_size_pt": 9.0,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p244-b0007",
+          "type": "paragraph_line",
+          "text": "202-682-8000",
+          "bbox_px": [
+            228,
+            1185,
+            341,
+            1199
+          ],
+          "bbox_norm": [
+            0.178824,
+            0.718182,
+            0.267451,
+            0.726667
+          ],
+          "ocr_confidence": 95.91,
+          "word_count": 1,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "202-682-8000",
+            "embedded_max_font_size_pt": 9.0,
+            "token_recall": 1.0
+          }
+        },
+        {
+          "block_id": "p244-b0008",
+          "type": "paragraph_line",
+          "text": "Additional copies are available online at www.api.org/pubs",
+          "bbox_px": [
+            227,
+            1233,
+            701,
+            1249
+          ],
+          "bbox_norm": [
+            0.178039,
+            0.747273,
+            0.549804,
+            0.75697
+          ],
+          "ocr_confidence": 94.52,
+          "word_count": 7,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr"
+        },
+        {
+          "block_id": "p244-b0009",
+          "type": "paragraph_line",
+          "text": "Phone Orders: 1-800-854-7179 (Toll-free in the U.S. and Canada)",
+          "bbox_px": [
+            229,
+            1275,
+            753,
+            1291
+          ],
+          "bbox_norm": [
+            0.179608,
+            0.772727,
+            0.590588,
+            0.782424
+          ],
+          "ocr_confidence": 86.36,
+          "word_count": 9,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr"
+        },
+        {
+          "block_id": "p244-b0010",
+          "type": "paragraph_line",
+          "text": "303-397-7956 (Local and International)",
+          "bbox_px": [
+            353,
+            1296,
+            689,
+            1312
+          ],
+          "bbox_norm": [
+            0.276863,
+            0.785455,
+            0.540392,
+            0.795152
+          ],
+          "ocr_confidence": 96.22,
+          "word_count": 4,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr"
+        },
+        {
+          "block_id": "p244-b0011",
+          "type": "paragraph_line",
+          "text": "Fax Orders: 303-397-2740",
+          "bbox_px": [
+            229,
+            1317,
+            465,
+            1330
+          ],
+          "bbox_norm": [
+            0.179608,
+            0.798182,
+            0.364706,
+            0.806061
+          ],
+          "ocr_confidence": 96.07,
+          "word_count": 3,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr"
+        },
+        {
+          "block_id": "p244-b0012",
+          "type": "paragraph_line",
+          "text": "Information about API publications, programs and services is available",
+          "bbox_px": [
+            229,
+            1358,
+            767,
+            1375
+          ],
+          "bbox_norm": [
+            0.179608,
+            0.82303,
+            0.601569,
+            0.833333
+          ],
+          "ocr_confidence": 96.61,
+          "word_count": 9,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr"
+        },
+        {
+          "block_id": "p244-b0013",
+          "type": "paragraph_line",
+          "text": "‘on the web at www.api.org.",
+          "bbox_px": [
+            228,
+            1379,
+            433,
+            1396
+          ],
+          "bbox_norm": [
+            0.178824,
+            0.835758,
+            0.339608,
+            0.846061
+          ],
+          "ocr_confidence": 92.33,
+          "word_count": 5,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr"
+        },
+        {
+          "block_id": "p244-b0014",
+          "type": "paragraph_line",
+          "text": "Product No. C55102",
+          "bbox_px": [
+            226,
+            1423,
+            402,
+            1437
+          ],
+          "bbox_norm": [
+            0.177255,
+            0.862424,
+            0.315294,
+            0.870909
+          ],
+          "ocr_confidence": 93.94,
+          "word_count": 3,
+          "classification_method": "ocr_default",
+          "primary_source": "rendered_page_ocr",
+          "secondary_text_match": {
+            "embedded_text": "Product No. C55102",
+            "embedded_max_font_size_pt": 9.0,
+            "token_recall": 1.0
+          }
+        }
+      ],
+      "figures": [],
+      "tables": [],
+      "anchors": [
+        {
+          "anchor_id": "page-244",
+          "kind": "page",
+          "page": 244,
+          "block_id": null,
+          "label": "PDF page 244"
+        },
+        {
+          "anchor_id": "section-200",
+          "kind": "heading",
+          "page": 244,
+          "block_id": "p244-b0004",
+          "label": "200 Massachusetts Avenue, NW"
+        }
+      ],
+      "references": [],
+      "service_block_ids": [],
+      "ambiguities": [],
+      "manual_review_required": false
+    }
+  ]
+}

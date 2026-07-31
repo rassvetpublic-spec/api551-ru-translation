@@ -1,0 +1,7435 @@
+{
+  "schema_version": "1.0",
+  "project": "API 551 RU Translation / Stage 5 Gate 1",
+  "generated_at_utc": "2026-07-30T13:10:14Z",
+  "source_pdf": {
+    "name": "API 551 2016 (R2024).pdf",
+    "pages": 244,
+    "bytes": 8089772,
+    "sha256": "d458b3a899902f216767e753aa5737a9745b61adcab02f85c9521937a9d3e270"
+  },
+  "primary_method": "rendered page at 150 DPI -> Tesseract OCR eng psm 3",
+  "secondary_method": "embedded PDF text layer comparison and vector table geometry",
+  "ambiguity_policy": "flag for manual review; do not guess",
+  "anchor_count": 783,
+  "duplicate_anchor_ids": [],
+  "disambiguated_anchor_ids": [
+    {
+      "original": "section-2",
+      "replacement": "section-2-p010-002",
+      "page": 10,
+      "block_id": "p010-b0030"
+    },
+    {
+      "original": "section-2",
+      "replacement": "section-2-p045-003",
+      "page": 45,
+      "block_id": "p045-b0024"
+    },
+    {
+      "original": "section-7",
+      "replacement": "section-7-p053-003",
+      "page": 53,
+      "block_id": "p053-b0003"
+    },
+    {
+      "original": "table-10",
+      "replacement": "table-10-p067-002",
+      "page": 67,
+      "block_id": "p067-b0002"
+    },
+    {
+      "original": "page-074-note-2",
+      "replacement": "page-074-note-2-p074-007",
+      "page": 74,
+      "block_id": "p074-b0024"
+    },
+    {
+      "original": "page-074-note-1",
+      "replacement": "page-074-note-1-p074-009",
+      "page": 74,
+      "block_id": "p074-b0032"
+    },
+    {
+      "original": "page-074-note-2",
+      "replacement": "page-074-note-2-p074-010",
+      "page": 74,
+      "block_id": "p074-b0037"
+    },
+    {
+      "original": "page-074-note-3",
+      "replacement": "page-074-note-3-p074-011",
+      "page": 74,
+      "block_id": "p074-b0039"
+    },
+    {
+      "original": "page-074-note-4",
+      "replacement": "page-074-note-4-p074-012",
+      "page": 74,
+      "block_id": "p074-b0041"
+    },
+    {
+      "original": "page-074-note-5",
+      "replacement": "page-074-note-5-p074-013",
+      "page": 74,
+      "block_id": "p074-b0044"
+    },
+    {
+      "original": "page-077-note-3",
+      "replacement": "page-077-note-3-p077-006",
+      "page": 77,
+      "block_id": "p077-b0046"
+    },
+    {
+      "original": "section-7",
+      "replacement": "section-7-p111-002",
+      "page": 111,
+      "block_id": "p111-b0018"
+    },
+    {
+      "original": "section-2",
+      "replacement": "section-2-p115-002",
+      "page": 115,
+      "block_id": "p115-b0034"
+    },
+    {
+      "original": "page-116-note-2",
+      "replacement": "page-116-note-2-p116-004",
+      "page": 116,
+      "block_id": "p116-b0022"
+    },
+    {
+      "original": "page-116-note-2",
+      "replacement": "page-116-note-2-p116-006",
+      "page": 116,
+      "block_id": "p116-b0026"
+    },
+    {
+      "original": "page-116-note-5",
+      "replacement": "page-116-note-5-p116-009",
+      "page": 116,
+      "block_id": "p116-b0031"
+    },
+    {
+      "original": "section-8",
+      "replacement": "section-8-p170-002",
+      "page": 170,
+      "block_id": "p170-b0009"
+    },
+    {
+      "original": "page-175-note-1",
+      "replacement": "page-175-note-1-p175-004",
+      "page": 175,
+      "block_id": "p175-b0009"
+    },
+    {
+      "original": "page-175-note-6",
+      "replacement": "page-175-note-6-p175-009",
+      "page": 175,
+      "block_id": "p175-b0033"
+    },
+    {
+      "original": "section-9",
+      "replacement": "section-9-p203-003",
+      "page": 203,
+      "block_id": "p203-b0027"
+    },
+    {
+      "original": "section-10",
+      "replacement": "section-10-p217-004",
+      "page": 217,
+      "block_id": "p217-b0032"
+    },
+    {
+      "original": "section-24",
+      "replacement": "section-24-p231-002",
+      "page": 231,
+      "block_id": "p231-b0031"
+    },
+    {
+      "original": "section-26",
+      "replacement": "section-26-p234-002",
+      "page": 234,
+      "block_id": "p234-b0031"
+    }
+  ],
+  "anchors": [
+    {
+      "anchor_id": "page-001",
+      "kind": "page",
+      "page": 1,
+      "block_id": null,
+      "label": "PDF page 1"
+    },
+    {
+      "anchor_id": "page-002",
+      "kind": "page",
+      "page": 2,
+      "block_id": null,
+      "label": "PDF page 2"
+    },
+    {
+      "anchor_id": "page-003",
+      "kind": "page",
+      "page": 3,
+      "block_id": null,
+      "label": "PDF page 3"
+    },
+    {
+      "anchor_id": "page-004",
+      "kind": "page",
+      "page": 4,
+      "block_id": null,
+      "label": "PDF page 4"
+    },
+    {
+      "anchor_id": "page-005",
+      "kind": "page",
+      "page": 5,
+      "block_id": null,
+      "label": "PDF page 5"
+    },
+    {
+      "anchor_id": "page-006",
+      "kind": "page",
+      "page": 6,
+      "block_id": null,
+      "label": "PDF page 6"
+    },
+    {
+      "anchor_id": "page-007",
+      "kind": "page",
+      "page": 7,
+      "block_id": null,
+      "label": "PDF page 7"
+    },
+    {
+      "anchor_id": "page-008",
+      "kind": "page",
+      "page": 8,
+      "block_id": null,
+      "label": "PDF page 8"
+    },
+    {
+      "anchor_id": "page-009",
+      "kind": "page",
+      "page": 9,
+      "block_id": null,
+      "label": "PDF page 9"
+    },
+    {
+      "anchor_id": "section-1",
+      "kind": "heading",
+      "page": 9,
+      "block_id": "p009-b0002",
+      "label": "1 Scope"
+    },
+    {
+      "anchor_id": "section-2",
+      "kind": "heading",
+      "page": 9,
+      "block_id": "p009-b0013",
+      "label": "2 Normative References"
+    },
+    {
+      "anchor_id": "page-010",
+      "kind": "page",
+      "page": 10,
+      "block_id": null,
+      "label": "PDF page 10"
+    },
+    {
+      "anchor_id": "section-2-p010-002",
+      "kind": "heading",
+      "page": 10,
+      "block_id": "p010-b0030",
+      "label": "2 ASTM International, 100 Barr Harbor Drive, West Conshohocken, Pennsylvania 19428, www.astm.org."
+    },
+    {
+      "anchor_id": "page-011",
+      "kind": "page",
+      "page": 11,
+      "block_id": null,
+      "label": "PDF page 11"
+    },
+    {
+      "anchor_id": "page-012",
+      "kind": "page",
+      "page": 12,
+      "block_id": null,
+      "label": "PDF page 12"
+    },
+    {
+      "anchor_id": "section-7",
+      "kind": "heading",
+      "page": 12,
+      "block_id": "p012-b0032",
+      "label": "7 Institute of Electrical and Electronics Engineers, 445 Hoes Lane, Piscataway, New Jersey 08854, www.ieee.org."
+    },
+    {
+      "anchor_id": "section-8",
+      "kind": "heading",
+      "page": 12,
+      "block_id": "p012-b0033",
+      "label": "8 The Instrumentation, Systems, and Automation Society, 67 Alexander Drive, Research Triangle Park, North Carolina, 22709,"
+    },
+    {
+      "anchor_id": "page-013",
+      "kind": "page",
+      "page": 13,
+      "block_id": null,
+      "label": "PDF page 13"
+    },
+    {
+      "anchor_id": "section-9",
+      "kind": "heading",
+      "page": 13,
+      "block_id": "p013-b0032",
+      "label": "9 International Organization for Standardization, 1, ch. de la Voie-Creuse, Case postale 56, CH-1211, Geneva 20, Switzerland,"
+    },
+    {
+      "anchor_id": "section-10",
+      "kind": "heading",
+      "page": 13,
+      "block_id": "p013-b0034",
+      "label": "10 Japanese Standards Association, 1-24 Akaska 4 Minato-Ku, Tokyo, Japan 107, www,jsa.or,jp."
+    },
+    {
+      "anchor_id": "section-11",
+      "kind": "heading",
+      "page": 13,
+      "block_id": "p013-b0035",
+      "label": "11 Naval Sea Systems Command (Ship Systems), Commander Naval Sea Systems Command, Command Standards Executive,"
+    },
+    {
+      "anchor_id": "section-1333",
+      "kind": "heading",
+      "page": 13,
+      "block_id": "p013-b0036",
+      "label": "1333 Isaac Hull Avenue SE Stop 5160, Washington Navy Yard, www.navsea.navy.mil."
+    },
+    {
+      "anchor_id": "page-014",
+      "kind": "page",
+      "page": 14,
+      "block_id": null,
+      "label": "PDF page 14"
+    },
+    {
+      "anchor_id": "page-015",
+      "kind": "page",
+      "page": 15,
+      "block_id": null,
+      "label": "PDF page 15"
+    },
+    {
+      "anchor_id": "section-3-1",
+      "kind": "heading",
+      "page": 15,
+      "block_id": "p015-b0003",
+      "label": "3.1 Introduction"
+    },
+    {
+      "anchor_id": "section-3-2",
+      "kind": "heading",
+      "page": 15,
+      "block_id": "p015-b0009",
+      "label": "3.2 Measurement Terminology"
+    },
+    {
+      "anchor_id": "page-016",
+      "kind": "page",
+      "page": 16,
+      "block_id": null,
+      "label": "PDF page 16"
+    },
+    {
+      "anchor_id": "section-3-3",
+      "kind": "heading",
+      "page": 16,
+      "block_id": "p016-b0007",
+      "label": "3.3 Instrument Range Selection"
+    },
+    {
+      "anchor_id": "page-017",
+      "kind": "page",
+      "page": 17,
+      "block_id": null,
+      "label": "PDF page 17"
+    },
+    {
+      "anchor_id": "section-3-3-2",
+      "kind": "heading",
+      "page": 17,
+      "block_id": "p017-b0002",
+      "label": "3.3.2 Units of Measurement and their Presentation"
+    },
+    {
+      "anchor_id": "table-1",
+      "kind": "table",
+      "page": 17,
+      "block_id": "p017-b0037",
+      "label": "Table 1—Conversion Factors for Inches of Water at Common Base Temperatures"
+    },
+    {
+      "anchor_id": "page-018",
+      "kind": "page",
+      "page": 18,
+      "block_id": null,
+      "label": "PDF page 18"
+    },
+    {
+      "anchor_id": "section-3-4",
+      "kind": "heading",
+      "page": 18,
+      "block_id": "p018-b0020",
+      "label": "3.4 Instrument Selection"
+    },
+    {
+      "anchor_id": "page-019",
+      "kind": "page",
+      "page": 19,
+      "block_id": null,
+      "label": "PDF page 19"
+    },
+    {
+      "anchor_id": "page-020",
+      "kind": "page",
+      "page": 20,
+      "block_id": null,
+      "label": "PDF page 20"
+    },
+    {
+      "anchor_id": "section-3-5",
+      "kind": "heading",
+      "page": 20,
+      "block_id": "p020-b0014",
+      "label": "3.5 Mechanical Integrity"
+    },
+    {
+      "anchor_id": "section-3-6",
+      "kind": "heading",
+      "page": 20,
+      "block_id": "p020-b0018",
+      "label": "3.6 Metallurgy and Soft Goods Selection"
+    },
+    {
+      "anchor_id": "section-3-6-1",
+      "kind": "heading",
+      "page": 20,
+      "block_id": "p020-b0019",
+      "label": "3.6.1 Introduction"
+    },
+    {
+      "anchor_id": "page-021",
+      "kind": "page",
+      "page": 21,
+      "block_id": null,
+      "label": "PDF page 21"
+    },
+    {
+      "anchor_id": "section-3-6-2",
+      "kind": "heading",
+      "page": 21,
+      "block_id": "p021-b0002",
+      "label": "3.6.2 Wetted Materials"
+    },
+    {
+      "anchor_id": "page-022",
+      "kind": "page",
+      "page": 22,
+      "block_id": null,
+      "label": "PDF page 22"
+    },
+    {
+      "anchor_id": "page-023",
+      "kind": "page",
+      "page": 23,
+      "block_id": null,
+      "label": "PDF page 23"
+    },
+    {
+      "anchor_id": "section-3-6-4",
+      "kind": "heading",
+      "page": 23,
+      "block_id": "p023-b0021",
+      "label": "3.6.4 Soft Goods"
+    },
+    {
+      "anchor_id": "section-3-6-5",
+      "kind": "heading",
+      "page": 23,
+      "block_id": "p023-b0037",
+      "label": "3.6.5 NACE"
+    },
+    {
+      "anchor_id": "section-3-6-5-1",
+      "kind": "heading",
+      "page": 23,
+      "block_id": "p023-b0038",
+      "label": "3.6.5.1 General"
+    },
+    {
+      "anchor_id": "page-024",
+      "kind": "page",
+      "page": 24,
+      "block_id": null,
+      "label": "PDF page 24"
+    },
+    {
+      "anchor_id": "section-3-6-5-2",
+      "kind": "heading",
+      "page": 24,
+      "block_id": "p024-b0004",
+      "label": "3.6.5.2 NACE MR0175/ISO15156"
+    },
+    {
+      "anchor_id": "section-3-6-5-3",
+      "kind": "heading",
+      "page": 24,
+      "block_id": "p024-b0019",
+      "label": "3.6.5.3 NACE MR0103"
+    },
+    {
+      "anchor_id": "section-3-6-6",
+      "kind": "heading",
+      "page": 24,
+      "block_id": "p024-b0030",
+      "label": "3.6.6 Hydrogen Services"
+    },
+    {
+      "anchor_id": "page-025",
+      "kind": "page",
+      "page": 25,
+      "block_id": null,
+      "label": "PDF page 25"
+    },
+    {
+      "anchor_id": "section-3-6-7",
+      "kind": "heading",
+      "page": 25,
+      "block_id": "p025-b0016",
+      "label": "3.6.7 Liquid Metal Embrittlement"
+    },
+    {
+      "anchor_id": "section-3-7",
+      "kind": "heading",
+      "page": 25,
+      "block_id": "p025-b0029",
+      "label": "3.7 Signal Transmission and Communications"
+    },
+    {
+      "anchor_id": "section-3-7-1",
+      "kind": "heading",
+      "page": 25,
+      "block_id": "p025-b0033",
+      "label": "3.7.1 Electronic Analog Signals"
+    },
+    {
+      "anchor_id": "page-026",
+      "kind": "page",
+      "page": 26,
+      "block_id": null,
+      "label": "PDF page 26"
+    },
+    {
+      "anchor_id": "table-2",
+      "kind": "table",
+      "page": 26,
+      "block_id": "p026-b0007",
+      "label": "Table 2—Output Signal, mA"
+    },
+    {
+      "anchor_id": "section-3-7-2",
+      "kind": "heading",
+      "page": 26,
+      "block_id": "p026-b0031",
+      "label": "3.7.2 Pneumatic Signals"
+    },
+    {
+      "anchor_id": "page-027",
+      "kind": "page",
+      "page": 27,
+      "block_id": null,
+      "label": "PDF page 27"
+    },
+    {
+      "anchor_id": "section-3-8-1",
+      "kind": "heading",
+      "page": 27,
+      "block_id": "p027-b0032",
+      "label": "3.8.1 Power"
+    },
+    {
+      "anchor_id": "page-028",
+      "kind": "page",
+      "page": 28,
+      "block_id": null,
+      "label": "PDF page 28"
+    },
+    {
+      "anchor_id": "page-028-note-1",
+      "kind": "note",
+      "page": 28,
+      "block_id": "p028-b0019",
+      "label": "NOTE See IEC 61000-5.2, IEEE 1050, API 552, and NAMUR NE 98 for further information regarding grounding and electrical"
+    },
+    {
+      "anchor_id": "section-3-8-3",
+      "kind": "heading",
+      "page": 28,
+      "block_id": "p028-b0021",
+      "label": "3.8.3 Isolation and Surge Protection"
+    },
+    {
+      "anchor_id": "section-3-9",
+      "kind": "heading",
+      "page": 28,
+      "block_id": "p028-b0030",
+      "label": "3.9 Local Indicators"
+    },
+    {
+      "anchor_id": "section-3-9-1",
+      "kind": "heading",
+      "page": 28,
+      "block_id": "p028-b0031",
+      "label": "3.9.1 General"
+    },
+    {
+      "anchor_id": "section-3-9-2",
+      "kind": "heading",
+      "page": 28,
+      "block_id": "p028-b0036",
+      "label": "3.9.2 Direct Connect Gauges"
+    },
+    {
+      "anchor_id": "page-029",
+      "kind": "page",
+      "page": 29,
+      "block_id": null,
+      "label": "PDF page 29"
+    },
+    {
+      "anchor_id": "section-3-9-3",
+      "kind": "heading",
+      "page": 29,
+      "block_id": "p029-b0020",
+      "label": "3.9.3 Local Electronic Indicators"
+    },
+    {
+      "anchor_id": "section-3-10",
+      "kind": "heading",
+      "page": 29,
+      "block_id": "p029-b0029",
+      "label": "3.10 Tagging and Nameplates"
+    },
+    {
+      "anchor_id": "page-030",
+      "kind": "page",
+      "page": 30,
+      "block_id": null,
+      "label": "PDF page 30"
+    },
+    {
+      "anchor_id": "page-030-note-1",
+      "kind": "note",
+      "page": 30,
+      "block_id": "p030-b0020",
+      "label": "NOTE See API 554, Part 2 for further discussion of configuration management."
+    },
+    {
+      "anchor_id": "section-3-12",
+      "kind": "heading",
+      "page": 30,
+      "block_id": "p030-b0021",
+      "label": "3.12 Documentation"
+    },
+    {
+      "anchor_id": "section-4",
+      "kind": "heading",
+      "page": 30,
+      "block_id": "p030-b0033",
+      "label": "4 Temperature"
+    },
+    {
+      "anchor_id": "section-4-1",
+      "kind": "heading",
+      "page": 30,
+      "block_id": "p030-b0034",
+      "label": "4.1 Introduction"
+    },
+    {
+      "anchor_id": "page-031",
+      "kind": "page",
+      "page": 31,
+      "block_id": null,
+      "label": "PDF page 31"
+    },
+    {
+      "anchor_id": "section-4-2-1",
+      "kind": "heading",
+      "page": 31,
+      "block_id": "p031-b0003",
+      "label": "4.2.1 General"
+    },
+    {
+      "anchor_id": "section-4-2-2",
+      "kind": "heading",
+      "page": 31,
+      "block_id": "p031-b0012",
+      "label": "4.2.2 Thermowell Terminology"
+    },
+    {
+      "anchor_id": "section-4-2-3",
+      "kind": "heading",
+      "page": 31,
+      "block_id": "p031-b0018",
+      "label": "4.2.3 Measurement Error Reduction"
+    },
+    {
+      "anchor_id": "section-4-2-4",
+      "kind": "heading",
+      "page": 31,
+      "block_id": "p031-b0036",
+      "label": "4.2.4 Thermowell Strength"
+    },
+    {
+      "anchor_id": "page-032",
+      "kind": "page",
+      "page": 32,
+      "block_id": null,
+      "label": "PDF page 32"
+    },
+    {
+      "anchor_id": "page-032-note-1",
+      "kind": "note",
+      "page": 32,
+      "block_id": "p032-b0029",
+      "label": "NOTE 1 9 in. ASME B40.9 threaded themowell with lagging extension shown."
+    },
+    {
+      "anchor_id": "page-032-note-2",
+      "kind": "note",
+      "page": 32,
+      "block_id": "p032-b0030",
+      "label": "NOTE 2 9 in. ASME B40.9 flanged themowell with 1‘/2 NPS Class 300 flange shown."
+    },
+    {
+      "anchor_id": "figure-1",
+      "kind": "figure",
+      "page": 32,
+      "block_id": "p032-b0031",
+      "label": "Figure 1—Thermowell Terminology"
+    },
+    {
+      "anchor_id": "page-033",
+      "kind": "page",
+      "page": 33,
+      "block_id": null,
+      "label": "PDF page 33"
+    },
+    {
+      "anchor_id": "page-033-note-1",
+      "kind": "note",
+      "page": 33,
+      "block_id": "p033-b0032",
+      "label": "NOTE 1 To allow well removal, Dimension C should be 610 mm (24 in.) or the total length of the"
+    },
+    {
+      "anchor_id": "page-033-note-2",
+      "kind": "note",
+      "page": 33,
+      "block_id": "p033-b0034",
+      "label": "NOTE 2 To prevent pockets, eccentric reducers should be provided on horizontal pipe."
+    },
+    {
+      "anchor_id": "page-033-note-3",
+      "kind": "note",
+      "page": 33,
+      "block_id": "p033-b0035",
+      "label": "NOTE 3 The inside diameter of the branch connection should 21 in."
+    },
+    {
+      "anchor_id": "page-033-note-4",
+      "kind": "note",
+      "page": 33,
+      "block_id": "p033-b0036",
+      "label": "NOTE 4 _Innon-cryogenic services the thermowell preferably is installed on the top of the pipe."
+    },
+    {
+      "anchor_id": "page-033-note-5",
+      "kind": "note",
+      "page": 33,
+      "block_id": "p033-b0039",
+      "label": "NOTE 5 Minimum pipe size can vary with the depth of the nozzle and the length of the well plus"
+    },
+    {
+      "anchor_id": "page-033-note-6",
+      "kind": "note",
+      "page": 33,
+      "block_id": "p033-b0041",
+      "label": "NOTE 6 To allow for the element length, the minimum depth for an RTD’s and Bimetal indicators"
+    },
+    {
+      "anchor_id": "figure-2",
+      "kind": "figure",
+      "page": 33,
+      "block_id": "p033-b0043",
+      "label": "Figure 2—Thermowell Installation"
+    },
+    {
+      "anchor_id": "page-034",
+      "kind": "page",
+      "page": 34,
+      "block_id": null,
+      "label": "PDF page 34"
+    },
+    {
+      "anchor_id": "section-4-2-5",
+      "kind": "heading",
+      "page": 34,
+      "block_id": "p034-b0020",
+      "label": "4.2.5 Materials"
+    },
+    {
+      "anchor_id": "section-4-2-6",
+      "kind": "heading",
+      "page": 34,
+      "block_id": "p034-b0029",
+      "label": "4.2.6 Construction"
+    },
+    {
+      "anchor_id": "page-035",
+      "kind": "page",
+      "page": 35,
+      "block_id": null,
+      "label": "PDF page 35"
+    },
+    {
+      "anchor_id": "page-035-note-1",
+      "kind": "note",
+      "page": 35,
+      "block_id": "p035-b0058",
+      "label": "NOTE 1 Provide NPT threads if the % connection functions as a pressure"
+    },
+    {
+      "anchor_id": "figure-3",
+      "kind": "figure",
+      "page": 35,
+      "block_id": "p035-b0060",
+      "label": "Figure 3—Standard Thermowells"
+    },
+    {
+      "anchor_id": "page-036",
+      "kind": "page",
+      "page": 36,
+      "block_id": null,
+      "label": "PDF page 36"
+    },
+    {
+      "anchor_id": "figure-4",
+      "kind": "figure",
+      "page": 36,
+      "block_id": "p036-b0010",
+      "label": "Figure 4—Van Stone Well in a Studding Outlet"
+    },
+    {
+      "anchor_id": "section-4-2-7",
+      "kind": "heading",
+      "page": 36,
+      "block_id": "p036-b0011",
+      "label": "4.2.7 Reactor Thermowells"
+    },
+    {
+      "anchor_id": "page-037",
+      "kind": "page",
+      "page": 37,
+      "block_id": null,
+      "label": "PDF page 37"
+    },
+    {
+      "anchor_id": "section-4-2-8",
+      "kind": "heading",
+      "page": 37,
+      "block_id": "p037-b0002",
+      "label": "4.2.8 High Temperature Thermowells"
+    },
+    {
+      "anchor_id": "figure-5",
+      "kind": "figure",
+      "page": 37,
+      "block_id": "p037-b0019",
+      "label": "Figure 5—Ceramic Thermowell"
+    },
+    {
+      "anchor_id": "page-038",
+      "kind": "page",
+      "page": 38,
+      "block_id": null,
+      "label": "PDF page 38"
+    },
+    {
+      "anchor_id": "section-4-3",
+      "kind": "heading",
+      "page": 38,
+      "block_id": "p038-b0002",
+      "label": "4.3 Thermocouples"
+    },
+    {
+      "anchor_id": "section-4-3-1",
+      "kind": "heading",
+      "page": 38,
+      "block_id": "p038-b0003",
+      "label": "4.3.1 General"
+    },
+    {
+      "anchor_id": "table-3",
+      "kind": "table",
+      "page": 38,
+      "block_id": "p038-b0011",
+      "label": "Table 3—Standard ISA/ASTM Thermocouples Types"
+    },
+    {
+      "anchor_id": "section-4-3-2",
+      "kind": "heading",
+      "page": 38,
+      "block_id": "p038-b0028",
+      "label": "4.3.2 Fabrication"
+    },
+    {
+      "anchor_id": "page-039",
+      "kind": "page",
+      "page": 39,
+      "block_id": null,
+      "label": "PDF page 39"
+    },
+    {
+      "anchor_id": "figure-6",
+      "kind": "figure",
+      "page": 39,
+      "block_id": "p039-b0015",
+      "label": "Figure 6—Metal-sheathed Thermocouple Types"
+    },
+    {
+      "anchor_id": "table-4",
+      "kind": "table",
+      "page": 39,
+      "block_id": "p039-b0016",
+      "label": "Table 4—Thermocouple Interchangeability Tolerance"
+    },
+    {
+      "anchor_id": "table-5",
+      "kind": "table",
+      "page": 39,
+      "block_id": "p039-b0037",
+      "label": "Table 5—Recommended Limit for Single Element Sheathed Thermocouples"
+    },
+    {
+      "anchor_id": "page-040",
+      "kind": "page",
+      "page": 40,
+      "block_id": null,
+      "label": "PDF page 40"
+    },
+    {
+      "anchor_id": "section-4-3-3",
+      "kind": "heading",
+      "page": 40,
+      "block_id": "p040-b0002",
+      "label": "4.3.3 High Temperature Thermocouple Measurements"
+    },
+    {
+      "anchor_id": "page-041",
+      "kind": "page",
+      "page": 41,
+      "block_id": null,
+      "label": "PDF page 41"
+    },
+    {
+      "anchor_id": "section-4-3-4",
+      "kind": "heading",
+      "page": 41,
+      "block_id": "p041-b0002",
+      "label": "4.3.4 Skin Tube Temperature Measurement"
+    },
+    {
+      "anchor_id": "page-042",
+      "kind": "page",
+      "page": 42,
+      "block_id": null,
+      "label": "PDF page 42"
+    },
+    {
+      "anchor_id": "figure-7",
+      "kind": "figure",
+      "page": 42,
+      "block_id": "p042-b0026",
+      "label": "Figure 7—Type Skin Thermocouple with Radiation Shield"
+    },
+    {
+      "anchor_id": "page-043",
+      "kind": "page",
+      "page": 43,
+      "block_id": null,
+      "label": "PDF page 43"
+    },
+    {
+      "anchor_id": "figure-8",
+      "kind": "figure",
+      "page": 43,
+      "block_id": "p043-b0015",
+      "label": "Figure 8—Fixed Thermocouple Head and Sheath with Type S Expansion Loop"
+    },
+    {
+      "anchor_id": "figure-9",
+      "kind": "figure",
+      "page": 43,
+      "block_id": "p043-b0024",
+      "label": "Figure 9—Knife Edge Tube Skin Thermocouple"
+    },
+    {
+      "anchor_id": "figure-10",
+      "kind": "figure",
+      "page": 43,
+      "block_id": "p043-b0040",
+      "label": "Figure 10—Furnace Tube Skin Thermocouple"
+    },
+    {
+      "anchor_id": "page-044",
+      "kind": "page",
+      "page": 44,
+      "block_id": null,
+      "label": "PDF page 44"
+    },
+    {
+      "anchor_id": "section-4-3-5",
+      "kind": "heading",
+      "page": 44,
+      "block_id": "p044-b0002",
+      "label": "4.3.5 Thermocouple Extension Wire"
+    },
+    {
+      "anchor_id": "section-4-4",
+      "kind": "heading",
+      "page": 44,
+      "block_id": "p044-b0021",
+      "label": "4.4 Resistance Temperature Devices"
+    },
+    {
+      "anchor_id": "section-4-4-1",
+      "kind": "heading",
+      "page": 44,
+      "block_id": "p044-b0022",
+      "label": "4.4.1 General"
+    },
+    {
+      "anchor_id": "table-6",
+      "kind": "table",
+      "page": 44,
+      "block_id": "p044-b0030",
+      "label": "Table 6—Standard Resistant Temperature Elements"
+    },
+    {
+      "anchor_id": "section-4-4-2",
+      "kind": "heading",
+      "page": 44,
+      "block_id": "p044-b0036",
+      "label": "4.4.2 Calibration"
+    },
+    {
+      "anchor_id": "page-045",
+      "kind": "page",
+      "page": 45,
+      "block_id": null,
+      "label": "PDF page 45"
+    },
+    {
+      "anchor_id": "table-7",
+      "kind": "table",
+      "page": 45,
+      "block_id": "p045-b0007",
+      "label": "Table 7—Alternate Resistant Temperature Elements"
+    },
+    {
+      "anchor_id": "section-2-p045-003",
+      "kind": "heading",
+      "page": 45,
+      "block_id": "p045-b0024",
+      "label": "2 Legend H"
+    },
+    {
+      "anchor_id": "figure-11",
+      "kind": "figure",
+      "page": 45,
+      "block_id": "p045-b0038",
+      "label": "Figure 11—Accuracy Limits and Usable Temperature Ranges for Tthermistors and RTDs"
+    },
+    {
+      "anchor_id": "page-046",
+      "kind": "page",
+      "page": 46,
+      "block_id": null,
+      "label": "PDF page 46"
+    },
+    {
+      "anchor_id": "section-4-4-3",
+      "kind": "heading",
+      "page": 46,
+      "block_id": "p046-b0002",
+      "label": "4.4.3 Fabrication"
+    },
+    {
+      "anchor_id": "section-4-4-4",
+      "kind": "heading",
+      "page": 46,
+      "block_id": "p046-b0023",
+      "label": "4.4.4 Application"
+    },
+    {
+      "anchor_id": "page-047",
+      "kind": "page",
+      "page": 47,
+      "block_id": null,
+      "label": "PDF page 47"
+    },
+    {
+      "anchor_id": "section-4-4-5",
+      "kind": "heading",
+      "page": 47,
+      "block_id": "p047-b0007",
+      "label": "4.4.5 RTD Extension Wires and Signal Transmission"
+    },
+    {
+      "anchor_id": "section-4-5",
+      "kind": "heading",
+      "page": 47,
+      "block_id": "p047-b0015",
+      "label": "4.5 Thermistors"
+    },
+    {
+      "anchor_id": "page-048",
+      "kind": "page",
+      "page": 48,
+      "block_id": null,
+      "label": "PDF page 48"
+    },
+    {
+      "anchor_id": "section-4-5-2",
+      "kind": "heading",
+      "page": 48,
+      "block_id": "p048-b0007",
+      "label": "4.5.2 Linearization"
+    },
+    {
+      "anchor_id": "section-4-6",
+      "kind": "heading",
+      "page": 48,
+      "block_id": "p048-b0031",
+      "label": "4.6 Distributed Temperature Sensing"
+    },
+    {
+      "anchor_id": "page-049",
+      "kind": "page",
+      "page": 49,
+      "block_id": null,
+      "label": "PDF page 49"
+    },
+    {
+      "anchor_id": "section-4-7",
+      "kind": "heading",
+      "page": 49,
+      "block_id": "p049-b0002",
+      "label": "4.7 Radiation Pyrometers"
+    },
+    {
+      "anchor_id": "section-4-8",
+      "kind": "heading",
+      "page": 49,
+      "block_id": "p049-b0030",
+      "label": "4.8 Temperature Element Wiring"
+    },
+    {
+      "anchor_id": "page-050",
+      "kind": "page",
+      "page": 50,
+      "block_id": null,
+      "label": "PDF page 50"
+    },
+    {
+      "anchor_id": "figure-12",
+      "kind": "figure",
+      "page": 50,
+      "block_id": "p050-b0020",
+      "label": "Figure 12—Example Pyrometer Installation for Claus Reactor"
+    },
+    {
+      "anchor_id": "figure-13",
+      "kind": "figure",
+      "page": 50,
+      "block_id": "p050-b0035",
+      "label": "Figure 13—Sheathed-type Thermocouple with Armored Lead"
+    },
+    {
+      "anchor_id": "section-4-9",
+      "kind": "heading",
+      "page": 50,
+      "block_id": "p050-b0036",
+      "label": "4.9 Temperature Signal Conditioners and Transmitters"
+    },
+    {
+      "anchor_id": "page-051",
+      "kind": "page",
+      "page": 51,
+      "block_id": null,
+      "label": "PDF page 51"
+    },
+    {
+      "anchor_id": "figure-14",
+      "kind": "figure",
+      "page": 51,
+      "block_id": "p051-b0019",
+      "label": "Figure 14—Transmitter Mounted in Connection Head"
+    },
+    {
+      "anchor_id": "section-4-10",
+      "kind": "heading",
+      "page": 51,
+      "block_id": "p051-b0020",
+      "label": "4.10 Local Temperature Indicators"
+    },
+    {
+      "anchor_id": "section-4-10-1",
+      "kind": "heading",
+      "page": 51,
+      "block_id": "p051-b0021",
+      "label": "4.10.1 Bimetal Dial Thermometers"
+    },
+    {
+      "anchor_id": "page-052",
+      "kind": "page",
+      "page": 52,
+      "block_id": null,
+      "label": "PDF page 52"
+    },
+    {
+      "anchor_id": "section-4-10-2",
+      "kind": "heading",
+      "page": 52,
+      "block_id": "p052-b0016",
+      "label": "4.10.2 Filled System Temperature Instruments"
+    },
+    {
+      "anchor_id": "page-053",
+      "kind": "page",
+      "page": 53,
+      "block_id": null,
+      "label": "PDF page 53"
+    },
+    {
+      "anchor_id": "table-8",
+      "kind": "table",
+      "page": 53,
+      "block_id": "p053-b0002",
+      "label": "Table 8—Thermal Fill Types"
+    },
+    {
+      "anchor_id": "section-7-p053-003",
+      "kind": "heading",
+      "page": 53,
+      "block_id": "p053-b0003",
+      "label": "7 Typical Range"
+    },
+    {
+      "anchor_id": "section-4-10-3",
+      "kind": "heading",
+      "page": 53,
+      "block_id": "p053-b0027",
+      "label": "4.10.3 Local Electronic Thermometers"
+    },
+    {
+      "anchor_id": "section-5",
+      "kind": "heading",
+      "page": 53,
+      "block_id": "p053-b0031",
+      "label": "5 Pressure"
+    },
+    {
+      "anchor_id": "section-5-1",
+      "kind": "heading",
+      "page": 53,
+      "block_id": "p053-b0032",
+      "label": "5.1 Introduction"
+    },
+    {
+      "anchor_id": "page-054",
+      "kind": "page",
+      "page": 54,
+      "block_id": null,
+      "label": "PDF page 54"
+    },
+    {
+      "anchor_id": "section-5-2",
+      "kind": "heading",
+      "page": 54,
+      "block_id": "p054-b0005",
+      "label": "5.2 Pressure Measurements"
+    },
+    {
+      "anchor_id": "figure-15",
+      "kind": "figure",
+      "page": 54,
+      "block_id": "p054-b0040",
+      "label": "Figure 15—Definition of Pressure"
+    },
+    {
+      "anchor_id": "page-055",
+      "kind": "page",
+      "page": 55,
+      "block_id": null,
+      "label": "PDF page 55"
+    },
+    {
+      "anchor_id": "section-5-3",
+      "kind": "heading",
+      "page": 55,
+      "block_id": "p055-b0002",
+      "label": "5.3 Pressure and Differential Pressure Transmitters"
+    },
+    {
+      "anchor_id": "section-210-3",
+      "kind": "heading",
+      "page": 55,
+      "block_id": "p055-b0015",
+      "label": "210.3 MPa (1500 psig) with a high and low over range protection equal to the body pressure rating. Differential"
+    },
+    {
+      "anchor_id": "section-24",
+      "kind": "heading",
+      "page": 55,
+      "block_id": "p055-b0027",
+      "label": "24 AWG or spade lugs. The terminals are in a NEMA 4X or a corrosion resistant IEC 60529 IP 65 enclosure."
+    },
+    {
+      "anchor_id": "section-5-4",
+      "kind": "heading",
+      "page": 55,
+      "block_id": "p055-b0031",
+      "label": "5.4 Pressure Transmitter Performance"
+    },
+    {
+      "anchor_id": "section-5-4-1",
+      "kind": "heading",
+      "page": 55,
+      "block_id": "p055-b0032",
+      "label": "5.4.1 Intelligent versus Analog Transmitters"
+    },
+    {
+      "anchor_id": "section-5-4-1-1",
+      "kind": "heading",
+      "page": 55,
+      "block_id": "p055-b0033",
+      "label": "5.4.1.1 Intelligent Transmitters"
+    },
+    {
+      "anchor_id": "page-056",
+      "kind": "page",
+      "page": 56,
+      "block_id": null,
+      "label": "PDF page 56"
+    },
+    {
+      "anchor_id": "section-5-4-1-2",
+      "kind": "heading",
+      "page": 56,
+      "block_id": "p056-b0017",
+      "label": "5.4.1.2 Analog Transmitters"
+    },
+    {
+      "anchor_id": "section-5-4-2",
+      "kind": "heading",
+      "page": 56,
+      "block_id": "p056-b0032",
+      "label": "5.4.2 Pressure Transmitter Performance Characteristics"
+    },
+    {
+      "anchor_id": "page-057",
+      "kind": "page",
+      "page": 57,
+      "block_id": null,
+      "label": "PDF page 57"
+    },
+    {
+      "anchor_id": "page-058",
+      "kind": "page",
+      "page": 58,
+      "block_id": null,
+      "label": "PDF page 58"
+    },
+    {
+      "anchor_id": "section-5-4-4-2",
+      "kind": "heading",
+      "page": 58,
+      "block_id": "p058-b0026",
+      "label": "5.4.4.2 First Order Response"
+    },
+    {
+      "anchor_id": "page-059",
+      "kind": "page",
+      "page": 59,
+      "block_id": null,
+      "label": "PDF page 59"
+    },
+    {
+      "anchor_id": "section-5-4-4-4",
+      "kind": "heading",
+      "page": 59,
+      "block_id": "p059-b0036",
+      "label": "5.4.4.4 Process Piping Response"
+    },
+    {
+      "anchor_id": "page-060",
+      "kind": "page",
+      "page": 60,
+      "block_id": null,
+      "label": "PDF page 60"
+    },
+    {
+      "anchor_id": "section-5-4-4-5",
+      "kind": "heading",
+      "page": 60,
+      "block_id": "p060-b0017",
+      "label": "5.4.4.5 Process Diagnostics"
+    },
+    {
+      "anchor_id": "section-5-5",
+      "kind": "heading",
+      "page": 60,
+      "block_id": "p060-b0032",
+      "label": "5.5 Pressure Gauges"
+    },
+    {
+      "anchor_id": "page-061",
+      "kind": "page",
+      "page": 61,
+      "block_id": null,
+      "label": "PDF page 61"
+    },
+    {
+      "anchor_id": "table-9",
+      "kind": "table",
+      "page": 61,
+      "block_id": "p061-b0005",
+      "label": "Table 9—ASME B40.1 Pressure Gauge Grades"
+    },
+    {
+      "anchor_id": "page-062",
+      "kind": "page",
+      "page": 62,
+      "block_id": null,
+      "label": "PDF page 62"
+    },
+    {
+      "anchor_id": "section-5-5-3",
+      "kind": "heading",
+      "page": 62,
+      "block_id": "p062-b0002",
+      "label": "5.5.3 Safety Devices"
+    },
+    {
+      "anchor_id": "section-32-4",
+      "kind": "heading",
+      "page": 62,
+      "block_id": "p062-b0006",
+      "label": "32.4 MPa (4700 psig)."
+    },
+    {
+      "anchor_id": "section-5-5-4",
+      "kind": "heading",
+      "page": 62,
+      "block_id": "p062-b0017",
+      "label": "5.5.4 Gauge Damping"
+    },
+    {
+      "anchor_id": "section-5-5-5",
+      "kind": "heading",
+      "page": 62,
+      "block_id": "p062-b0031",
+      "label": "5.5.5 Operation and Maintenance"
+    },
+    {
+      "anchor_id": "page-063",
+      "kind": "page",
+      "page": 63,
+      "block_id": null,
+      "label": "PDF page 63"
+    },
+    {
+      "anchor_id": "section-5-6",
+      "kind": "heading",
+      "page": 63,
+      "block_id": "p063-b0007",
+      "label": "5.6 Miscellaneous Pressure Devices"
+    },
+    {
+      "anchor_id": "section-5-6-1",
+      "kind": "heading",
+      "page": 63,
+      "block_id": "p063-b0008",
+      "label": "5.6.1 Pressure Switches"
+    },
+    {
+      "anchor_id": "section-5-6-1-2",
+      "kind": "heading",
+      "page": 63,
+      "block_id": "p063-b0012",
+      "label": "5.6.1.2 Pressure Switch Types"
+    },
+    {
+      "anchor_id": "section-5-6-1-3",
+      "kind": "heading",
+      "page": 63,
+      "block_id": "p063-b0020",
+      "label": "5.6.1.3 Pressure Switch Application"
+    },
+    {
+      "anchor_id": "page-064",
+      "kind": "page",
+      "page": 64,
+      "block_id": null,
+      "label": "PDF page 64"
+    },
+    {
+      "anchor_id": "section-5-6-1-4",
+      "kind": "heading",
+      "page": 64,
+      "block_id": "p064-b0002",
+      "label": "5.6.1.4 Contact Selection"
+    },
+    {
+      "anchor_id": "section-5-6-2",
+      "kind": "heading",
+      "page": 64,
+      "block_id": "p064-b0035",
+      "label": "5.6.2 Bellows Meters"
+    },
+    {
+      "anchor_id": "page-065",
+      "kind": "page",
+      "page": 65,
+      "block_id": null,
+      "label": "PDF page 65"
+    },
+    {
+      "anchor_id": "section-6",
+      "kind": "heading",
+      "page": 65,
+      "block_id": "p065-b0005",
+      "label": "6 Flow"
+    },
+    {
+      "anchor_id": "section-6-1",
+      "kind": "heading",
+      "page": 65,
+      "block_id": "p065-b0006",
+      "label": "6.1 Introduction"
+    },
+    {
+      "anchor_id": "section-6-1-1",
+      "kind": "heading",
+      "page": 65,
+      "block_id": "p065-b0010",
+      "label": "6.1.1 Meter Types"
+    },
+    {
+      "anchor_id": "section-6-1-2",
+      "kind": "heading",
+      "page": 65,
+      "block_id": "p065-b0026",
+      "label": "6.1.2 Flow Profile"
+    },
+    {
+      "anchor_id": "page-066",
+      "kind": "page",
+      "page": 66,
+      "block_id": null,
+      "label": "PDF page 66"
+    },
+    {
+      "anchor_id": "table-10",
+      "kind": "table",
+      "page": 66,
+      "block_id": "p066-b0005",
+      "label": "Table 10—Comparison of Flow Metering Technologies"
+    },
+    {
+      "anchor_id": "page-067",
+      "kind": "page",
+      "page": 67,
+      "block_id": null,
+      "label": "PDF page 67"
+    },
+    {
+      "anchor_id": "table-10-p067-002",
+      "kind": "table",
+      "page": 67,
+      "block_id": "p067-b0002",
+      "label": "Table 10—Comparison of Flow Metering Technologies (Continued)"
+    },
+    {
+      "anchor_id": "figure-16",
+      "kind": "figure",
+      "page": 67,
+      "block_id": "p067-b0018",
+      "label": "Figure 16—Swirl with Elbows in 90° Planes"
+    },
+    {
+      "anchor_id": "page-068",
+      "kind": "page",
+      "page": 68,
+      "block_id": null,
+      "label": "PDF page 68"
+    },
+    {
+      "anchor_id": "section-6-1-4",
+      "kind": "heading",
+      "page": 68,
+      "block_id": "p068-b0034",
+      "label": "6.1.4 Two Phase Flow"
+    },
+    {
+      "anchor_id": "section-6-1-5",
+      "kind": "heading",
+      "page": 68,
+      "block_id": "p068-b0037",
+      "label": "6.1.5 Flow Meter Orientation"
+    },
+    {
+      "anchor_id": "page-069",
+      "kind": "page",
+      "page": 69,
+      "block_id": null,
+      "label": "PDF page 69"
+    },
+    {
+      "anchor_id": "section-6-1-6",
+      "kind": "heading",
+      "page": 69,
+      "block_id": "p069-b0018",
+      "label": "6.1.6 Meter Bypass"
+    },
+    {
+      "anchor_id": "section-6-2",
+      "kind": "heading",
+      "page": 69,
+      "block_id": "p069-b0026",
+      "label": "6.2 Head Type Flow Meters"
+    },
+    {
+      "anchor_id": "page-070",
+      "kind": "page",
+      "page": 70,
+      "block_id": null,
+      "label": "PDF page 70"
+    },
+    {
+      "anchor_id": "page-071",
+      "kind": "page",
+      "page": 71,
+      "block_id": null,
+      "label": "PDF page 71"
+    },
+    {
+      "anchor_id": "section-6-2-1",
+      "kind": "heading",
+      "page": 71,
+      "block_id": "p071-b0002",
+      "label": "6.2.1 Orifice Plate"
+    },
+    {
+      "anchor_id": "section-6-2-1-1",
+      "kind": "heading",
+      "page": 71,
+      "block_id": "p071-b0003",
+      "label": "6.2.1.1 Concentric Sharp-edge Orifice Plates"
+    },
+    {
+      "anchor_id": "section-6-2-1-3",
+      "kind": "heading",
+      "page": 71,
+      "block_id": "p071-b0032",
+      "label": "6.2.1.3 Meter Run Requirements for Orifice Plates"
+    },
+    {
+      "anchor_id": "section-20",
+      "kind": "heading",
+      "page": 71,
+      "block_id": "p071-b0037",
+      "label": "20 There is a difference of discharge coefficients of less than 0.1 % of ASME-3M and ISO equations when compared to the API,"
+    },
+    {
+      "anchor_id": "page-072",
+      "kind": "page",
+      "page": 72,
+      "block_id": null,
+      "label": "PDF page 72"
+    },
+    {
+      "anchor_id": "table-11",
+      "kind": "table",
+      "page": 72,
+      "block_id": "p072-b0008",
+      "label": "Table 11—Non-Ideal Flow Run Con"
+    },
+    {
+      "anchor_id": "section-6-2-1-4",
+      "kind": "heading",
+      "page": 72,
+      "block_id": "p072-b0026",
+      "label": "6.2.1.4 Orifice Meter Differential Pressures"
+    },
+    {
+      "anchor_id": "page-073",
+      "kind": "page",
+      "page": 73,
+      "block_id": null,
+      "label": "PDF page 73"
+    },
+    {
+      "anchor_id": "section-6-2-1-5",
+      "kind": "heading",
+      "page": 73,
+      "block_id": "p073-b0006",
+      "label": "6.2.1.5 Orifice Construction"
+    },
+    {
+      "anchor_id": "section-21",
+      "kind": "heading",
+      "page": 73,
+      "block_id": "p073-b0038",
+      "label": "21 See ISO TR 15377-2007, Section 5.1.2 on the method for adjusting the discharge coefficient and uncertainty term to account for"
+    },
+    {
+      "anchor_id": "page-074",
+      "kind": "page",
+      "page": 74,
+      "block_id": null,
+      "label": "PDF page 74"
+    },
+    {
+      "anchor_id": "page-074-note-3",
+      "kind": "note",
+      "page": 74,
+      "block_id": "p074-b0006",
+      "label": "Note 3: Orifice plate and gaskets"
+    },
+    {
+      "anchor_id": "page-074-note-7",
+      "kind": "note",
+      "page": 74,
+      "block_id": "p074-b0008",
+      "label": "Note 7, |"
+    },
+    {
+      "anchor_id": "page-074-note-5",
+      "kind": "note",
+      "page": 74,
+      "block_id": "p074-b0010",
+      "label": "Note 5 f wa =|)"
+    },
+    {
+      "anchor_id": "page-074-note-2",
+      "kind": "note",
+      "page": 74,
+      "block_id": "p074-b0021",
+      "label": "Note 2"
+    },
+    {
+      "anchor_id": "page-074-note-4",
+      "kind": "note",
+      "page": 74,
+      "block_id": "p074-b0022",
+      "label": "Note 4 i"
+    },
+    {
+      "anchor_id": "page-074-note-2-p074-007",
+      "kind": "note",
+      "page": 74,
+      "block_id": "p074-b0024",
+      "label": "Note 2"
+    },
+    {
+      "anchor_id": "page-074-note-1",
+      "kind": "note",
+      "page": 74,
+      "block_id": "p074-b0030",
+      "label": "Note 1"
+    },
+    {
+      "anchor_id": "page-074-note-1-p074-009",
+      "kind": "note",
+      "page": 74,
+      "block_id": "p074-b0032",
+      "label": "NOTE 1"
+    },
+    {
+      "anchor_id": "page-074-note-2-p074-010",
+      "kind": "note",
+      "page": 74,
+      "block_id": "p074-b0037",
+      "label": "NOTE 2"
+    },
+    {
+      "anchor_id": "page-074-note-3-p074-011",
+      "kind": "note",
+      "page": 74,
+      "block_id": "p074-b0039",
+      "label": "NOTE 3"
+    },
+    {
+      "anchor_id": "page-074-note-4-p074-012",
+      "kind": "note",
+      "page": 74,
+      "block_id": "p074-b0041",
+      "label": "NOTE 4"
+    },
+    {
+      "anchor_id": "page-074-note-5-p074-013",
+      "kind": "note",
+      "page": 74,
+      "block_id": "p074-b0044",
+      "label": "NOTE 5"
+    },
+    {
+      "anchor_id": "page-074-note-6",
+      "kind": "note",
+      "page": 74,
+      "block_id": "p074-b0047",
+      "label": "NOTE 6"
+    },
+    {
+      "anchor_id": "page-074-note-8",
+      "kind": "note",
+      "page": 74,
+      "block_id": "p074-b0053",
+      "label": "NOTE 8"
+    },
+    {
+      "anchor_id": "figure-17",
+      "kind": "figure",
+      "page": 74,
+      "block_id": "p074-b0056",
+      "label": "Figure 17—Orifice Flanges"
+    },
+    {
+      "anchor_id": "page-075",
+      "kind": "page",
+      "page": 75,
+      "block_id": null,
+      "label": "PDF page 75"
+    },
+    {
+      "anchor_id": "section-6-2-1-6",
+      "kind": "heading",
+      "page": 75,
+      "block_id": "p075-b0002",
+      "label": "6.2.1.6 Honed Orifice Runs and Integral Orifices"
+    },
+    {
+      "anchor_id": "figure-18",
+      "kind": "figure",
+      "page": 75,
+      "block_id": "p075-b0017",
+      "label": "Figure 18—Integral Orifice Meter Run"
+    },
+    {
+      "anchor_id": "section-6-2-2",
+      "kind": "heading",
+      "page": 75,
+      "block_id": "p075-b0018",
+      "label": "6.2.2 Flow Tubes"
+    },
+    {
+      "anchor_id": "page-076",
+      "kind": "page",
+      "page": 76,
+      "block_id": null,
+      "label": "PDF page 76"
+    },
+    {
+      "anchor_id": "figure-19",
+      "kind": "figure",
+      "page": 76,
+      "block_id": "p076-b0028",
+      "label": "Figure 19—Example Expansion Coefficients"
+    },
+    {
+      "anchor_id": "page-077",
+      "kind": "page",
+      "page": 77,
+      "block_id": null,
+      "label": "PDF page 77"
+    },
+    {
+      "anchor_id": "page-077-note-3",
+      "kind": "note",
+      "page": 77,
+      "block_id": "p077-b0008",
+      "label": "Note 3 |"
+    },
+    {
+      "anchor_id": "section-83",
+      "kind": "heading",
+      "page": 77,
+      "block_id": "p077-b0022",
+      "label": "83 Dimensions (Center Line Average Value)"
+    },
+    {
+      "anchor_id": "page-077-note-1",
+      "kind": "note",
+      "page": 77,
+      "block_id": "p077-b0044",
+      "label": "NOTE 1 Curvature due to welding allowed."
+    },
+    {
+      "anchor_id": "page-077-note-2",
+      "kind": "note",
+      "page": 77,
+      "block_id": "p077-b0045",
+      "label": "NOTE 2 Clean free from encrustation. Height of internal weld seams <0.05D."
+    },
+    {
+      "anchor_id": "page-077-note-3-p077-006",
+      "kind": "note",
+      "page": 77,
+      "block_id": "p077-b0046",
+      "label": "NOTE 3 Upstream pipe with center line average value roughness <10°4D for 22D."
+    },
+    {
+      "anchor_id": "figure-20",
+      "kind": "figure",
+      "page": 77,
+      "block_id": "p077-b0047",
+      "label": "Figure 20—Classical Venturi Tube Dimensions"
+    },
+    {
+      "anchor_id": "page-078",
+      "kind": "page",
+      "page": 78,
+      "block_id": null,
+      "label": "PDF page 78"
+    },
+    {
+      "anchor_id": "page-079",
+      "kind": "page",
+      "page": 79,
+      "block_id": null,
+      "label": "PDF page 79"
+    },
+    {
+      "anchor_id": "section-6-2-4",
+      "kind": "heading",
+      "page": 79,
+      "block_id": "p079-b0008",
+      "label": "6.2.4 Cone Meter"
+    },
+    {
+      "anchor_id": "section-6-2-6",
+      "kind": "heading",
+      "page": 79,
+      "block_id": "p079-b0027",
+      "label": "6.2.6 Wedge Meters"
+    },
+    {
+      "anchor_id": "page-080",
+      "kind": "page",
+      "page": 80,
+      "block_id": null,
+      "label": "PDF page 80"
+    },
+    {
+      "anchor_id": "section-6-2-7",
+      "kind": "heading",
+      "page": 80,
+      "block_id": "p080-b0002",
+      "label": "6.2.7 Elbow Meters"
+    },
+    {
+      "anchor_id": "section-6-2-8",
+      "kind": "heading",
+      "page": 80,
+      "block_id": "p080-b0007",
+      "label": "6.2.8 Pitot Tubes"
+    },
+    {
+      "anchor_id": "section-6-2-9",
+      "kind": "heading",
+      "page": 80,
+      "block_id": "p080-b0020",
+      "label": "6.2.9 Averaging Pitot Tubes"
+    },
+    {
+      "anchor_id": "section-6-3-1",
+      "kind": "heading",
+      "page": 80,
+      "block_id": "p080-b0038",
+      "label": "6.3.1 General"
+    },
+    {
+      "anchor_id": "page-081",
+      "kind": "page",
+      "page": 81,
+      "block_id": null,
+      "label": "PDF page 81"
+    },
+    {
+      "anchor_id": "section-6-3-2",
+      "kind": "heading",
+      "page": 81,
+      "block_id": "p081-b0010",
+      "label": "6.3.2 Variable Area Meter Characteristics"
+    },
+    {
+      "anchor_id": "page-082",
+      "kind": "page",
+      "page": 82,
+      "block_id": null,
+      "label": "PDF page 82"
+    },
+    {
+      "anchor_id": "section-6-3-3",
+      "kind": "heading",
+      "page": 82,
+      "block_id": "p082-b0008",
+      "label": "6.3.3 Variable Area Flow Meter Accuracy"
+    },
+    {
+      "anchor_id": "section-6-3-4",
+      "kind": "heading",
+      "page": 82,
+      "block_id": "p082-b0016",
+      "label": "6.3.4 Viscosity"
+    },
+    {
+      "anchor_id": "figure-21",
+      "kind": "figure",
+      "page": 82,
+      "block_id": "p082-b0031",
+      "label": "Figure 21—VDI/VDE 3513-2 Variable Meter Accuracy Plot"
+    },
+    {
+      "anchor_id": "page-083",
+      "kind": "page",
+      "page": 83,
+      "block_id": null,
+      "label": "PDF page 83"
+    },
+    {
+      "anchor_id": "section-6-3-5",
+      "kind": "heading",
+      "page": 83,
+      "block_id": "p083-b0002",
+      "label": "6.3.5 Direct Reading Variable Area Meters"
+    },
+    {
+      "anchor_id": "section-6-3-6",
+      "kind": "heading",
+      "page": 83,
+      "block_id": "p083-b0009",
+      "label": "6.3.6 Metal Tube Variable Area Meters"
+    },
+    {
+      "anchor_id": "section-6-3-7",
+      "kind": "heading",
+      "page": 83,
+      "block_id": "p083-b0022",
+      "label": "6.3.7 Installation"
+    },
+    {
+      "anchor_id": "page-084",
+      "kind": "page",
+      "page": 84,
+      "block_id": null,
+      "label": "PDF page 84"
+    },
+    {
+      "anchor_id": "figure-22",
+      "kind": "figure",
+      "page": 84,
+      "block_id": "p084-b0009",
+      "label": "Figure 22—Variable Area Meter Installation"
+    },
+    {
+      "anchor_id": "section-6-4",
+      "kind": "heading",
+      "page": 84,
+      "block_id": "p084-b0010",
+      "label": "6.4 Magnetic Flowmeters"
+    },
+    {
+      "anchor_id": "section-6-4-1",
+      "kind": "heading",
+      "page": 84,
+      "block_id": "p084-b0011",
+      "label": "6.4.1 General"
+    },
+    {
+      "anchor_id": "page-085",
+      "kind": "page",
+      "page": 85,
+      "block_id": null,
+      "label": "PDF page 85"
+    },
+    {
+      "anchor_id": "page-086",
+      "kind": "page",
+      "page": 86,
+      "block_id": null,
+      "label": "PDF page 86"
+    },
+    {
+      "anchor_id": "section-6-4-2",
+      "kind": "heading",
+      "page": 86,
+      "block_id": "p086-b0019",
+      "label": "6.4.2 Magnetic Flow Meter Types"
+    },
+    {
+      "anchor_id": "section-6-4-2-1",
+      "kind": "heading",
+      "page": 86,
+      "block_id": "p086-b0020",
+      "label": "6.4.2.1 General"
+    },
+    {
+      "anchor_id": "section-6-4-2-2",
+      "kind": "heading",
+      "page": 86,
+      "block_id": "p086-b0023",
+      "label": "6.4.2.2 Pulsed Excitation Meters"
+    },
+    {
+      "anchor_id": "page-087",
+      "kind": "page",
+      "page": 87,
+      "block_id": null,
+      "label": "PDF page 87"
+    },
+    {
+      "anchor_id": "section-6-4-2-3",
+      "kind": "heading",
+      "page": 87,
+      "block_id": "p087-b0009",
+      "label": "6.4.2.3 Continuous Excitation Meters"
+    },
+    {
+      "anchor_id": "page-088",
+      "kind": "page",
+      "page": 88,
+      "block_id": null,
+      "label": "PDF page 88"
+    },
+    {
+      "anchor_id": "section-6-4-4",
+      "kind": "heading",
+      "page": 88,
+      "block_id": "p088-b0005",
+      "label": "6.4.4 Installation"
+    },
+    {
+      "anchor_id": "section-6-4-4-1",
+      "kind": "heading",
+      "page": 88,
+      "block_id": "p088-b0006",
+      "label": "6.4.4.1 General"
+    },
+    {
+      "anchor_id": "page-089",
+      "kind": "page",
+      "page": 89,
+      "block_id": null,
+      "label": "PDF page 89"
+    },
+    {
+      "anchor_id": "section-6-4-4-3",
+      "kind": "heading",
+      "page": 89,
+      "block_id": "p089-b0020",
+      "label": "6.4.4.3 Grounding"
+    },
+    {
+      "anchor_id": "page-090",
+      "kind": "page",
+      "page": 90,
+      "block_id": null,
+      "label": "PDF page 90"
+    },
+    {
+      "anchor_id": "section-6-5",
+      "kind": "heading",
+      "page": 90,
+      "block_id": "p090-b0002",
+      "label": "6.5 Turbine Meters"
+    },
+    {
+      "anchor_id": "section-6-5-1",
+      "kind": "heading",
+      "page": 90,
+      "block_id": "p090-b0003",
+      "label": "6.5.1 General"
+    },
+    {
+      "anchor_id": "page-091",
+      "kind": "page",
+      "page": 91,
+      "block_id": null,
+      "label": "PDF page 91"
+    },
+    {
+      "anchor_id": "figure-23",
+      "kind": "figure",
+      "page": 91,
+      "block_id": "p091-b0010",
+      "label": "Figure 23—Turbine Meter Cutaway"
+    },
+    {
+      "anchor_id": "page-092",
+      "kind": "page",
+      "page": 92,
+      "block_id": null,
+      "label": "PDF page 92"
+    },
+    {
+      "anchor_id": "section-6-5-3",
+      "kind": "heading",
+      "page": 92,
+      "block_id": "p092-b0006",
+      "label": "6.5.3 Universal Viscosity Curve"
+    },
+    {
+      "anchor_id": "page-093",
+      "kind": "page",
+      "page": 93,
+      "block_id": null,
+      "label": "PDF page 93"
+    },
+    {
+      "anchor_id": "section-6-5-4",
+      "kind": "heading",
+      "page": 93,
+      "block_id": "p093-b0010",
+      "label": "6.5.4 Bearings"
+    },
+    {
+      "anchor_id": "section-6-5-4-1",
+      "kind": "heading",
+      "page": 93,
+      "block_id": "p093-b0011",
+      "label": "6.5.4.1 General"
+    },
+    {
+      "anchor_id": "section-6-5-4-2",
+      "kind": "heading",
+      "page": 93,
+      "block_id": "p093-b0016",
+      "label": "6.5.4.2 Journal Bearings"
+    },
+    {
+      "anchor_id": "page-094",
+      "kind": "page",
+      "page": 94,
+      "block_id": null,
+      "label": "PDF page 94"
+    },
+    {
+      "anchor_id": "figure-24",
+      "kind": "figure",
+      "page": 94,
+      "block_id": "p094-b0012",
+      "label": "Figure 24—Turbine Meter Bearing Types"
+    },
+    {
+      "anchor_id": "page-095",
+      "kind": "page",
+      "page": 95,
+      "block_id": null,
+      "label": "PDF page 95"
+    },
+    {
+      "anchor_id": "section-6-5-4-4",
+      "kind": "heading",
+      "page": 95,
+      "block_id": "p095-b0023",
+      "label": "6.5.4.4 Pivot Bearings"
+    },
+    {
+      "anchor_id": "section-6-5-5",
+      "kind": "heading",
+      "page": 95,
+      "block_id": "p095-b0035",
+      "label": "6.5.5 Pickups"
+    },
+    {
+      "anchor_id": "section-6-5-5-1",
+      "kind": "heading",
+      "page": 95,
+      "block_id": "p095-b0036",
+      "label": "6.5.5.1 General"
+    },
+    {
+      "anchor_id": "page-096",
+      "kind": "page",
+      "page": 96,
+      "block_id": null,
+      "label": "PDF page 96"
+    },
+    {
+      "anchor_id": "section-6-5-5-2",
+      "kind": "heading",
+      "page": 96,
+      "block_id": "p096-b0010",
+      "label": "6.5.5.2 Magnetic Reluctance Pickup"
+    },
+    {
+      "anchor_id": "section-6-5-5-3",
+      "kind": "heading",
+      "page": 96,
+      "block_id": "p096-b0024",
+      "label": "6.5.5.3 Magnetic Inductive Pickup"
+    },
+    {
+      "anchor_id": "section-6-5-5-4",
+      "kind": "heading",
+      "page": 96,
+      "block_id": "p096-b0029",
+      "label": "6.5.5.4 Modulated Carrier Pickup"
+    },
+    {
+      "anchor_id": "page-097",
+      "kind": "page",
+      "page": 97,
+      "block_id": null,
+      "label": "PDF page 97"
+    },
+    {
+      "anchor_id": "section-6-5-5-5",
+      "kind": "heading",
+      "page": 97,
+      "block_id": "p097-b0002",
+      "label": "6.5.5.5 Output Electronics"
+    },
+    {
+      "anchor_id": "section-6-5-6",
+      "kind": "heading",
+      "page": 97,
+      "block_id": "p097-b0014",
+      "label": "6.5.6 Installation"
+    },
+    {
+      "anchor_id": "section-6-5-6-1",
+      "kind": "heading",
+      "page": 97,
+      "block_id": "p097-b0015",
+      "label": "6.5.6.1 General"
+    },
+    {
+      "anchor_id": "section-6-5-6-2",
+      "kind": "heading",
+      "page": 97,
+      "block_id": "p097-b0018",
+      "label": "6.5.6.2 Pipe Layout"
+    },
+    {
+      "anchor_id": "section-6-5-6-3",
+      "kind": "heading",
+      "page": 97,
+      "block_id": "p097-b0023",
+      "label": "6.5.6.3 Wiring"
+    },
+    {
+      "anchor_id": "section-6-5-7",
+      "kind": "heading",
+      "page": 97,
+      "block_id": "p097-b0032",
+      "label": "6.5.7 Meter Start-Up and Operation"
+    },
+    {
+      "anchor_id": "page-098",
+      "kind": "page",
+      "page": 98,
+      "block_id": null,
+      "label": "PDF page 98"
+    },
+    {
+      "anchor_id": "section-6-6",
+      "kind": "heading",
+      "page": 98,
+      "block_id": "p098-b0002",
+      "label": "6.6 Positive Displacement Meters"
+    },
+    {
+      "anchor_id": "section-6-6-1",
+      "kind": "heading",
+      "page": 98,
+      "block_id": "p098-b0003",
+      "label": "6.6.1 General"
+    },
+    {
+      "anchor_id": "page-099",
+      "kind": "page",
+      "page": 99,
+      "block_id": null,
+      "label": "PDF page 99"
+    },
+    {
+      "anchor_id": "section-6-6-2",
+      "kind": "heading",
+      "page": 99,
+      "block_id": "p099-b0002",
+      "label": "6.6.2 Installation"
+    },
+    {
+      "anchor_id": "section-6-7",
+      "kind": "heading",
+      "page": 99,
+      "block_id": "p099-b0012",
+      "label": "6.7 Vortex Meters"
+    },
+    {
+      "anchor_id": "section-6-7-1",
+      "kind": "heading",
+      "page": 99,
+      "block_id": "p099-b0013",
+      "label": "6.7.1 General"
+    },
+    {
+      "anchor_id": "page-100",
+      "kind": "page",
+      "page": 100,
+      "block_id": null,
+      "label": "PDF page 100"
+    },
+    {
+      "anchor_id": "section-6-7-2",
+      "kind": "heading",
+      "page": 100,
+      "block_id": "p100-b0013",
+      "label": "6.7.2 Selection and Sizing"
+    },
+    {
+      "anchor_id": "page-101",
+      "kind": "page",
+      "page": 101,
+      "block_id": null,
+      "label": "PDF page 101"
+    },
+    {
+      "anchor_id": "section-6-7-4",
+      "kind": "heading",
+      "page": 101,
+      "block_id": "p101-b0036",
+      "label": "6.7.4 Installation"
+    },
+    {
+      "anchor_id": "page-102",
+      "kind": "page",
+      "page": 102,
+      "block_id": null,
+      "label": "PDF page 102"
+    },
+    {
+      "anchor_id": "section-6-8",
+      "kind": "heading",
+      "page": 102,
+      "block_id": "p102-b0018",
+      "label": "6.8 Ultrasonic Flow Meters"
+    },
+    {
+      "anchor_id": "section-6-8-1",
+      "kind": "heading",
+      "page": 102,
+      "block_id": "p102-b0019",
+      "label": "6.8.1 General"
+    },
+    {
+      "anchor_id": "page-103",
+      "kind": "page",
+      "page": 103,
+      "block_id": null,
+      "label": "PDF page 103"
+    },
+    {
+      "anchor_id": "section-6-8-2",
+      "kind": "heading",
+      "page": 103,
+      "block_id": "p103-b0002",
+      "label": "6.8.2 Selection"
+    },
+    {
+      "anchor_id": "section-6-8-3",
+      "kind": "heading",
+      "page": 103,
+      "block_id": "p103-b0011",
+      "label": "6.8.3 Operating Conditions"
+    },
+    {
+      "anchor_id": "section-6-8-4",
+      "kind": "heading",
+      "page": 103,
+      "block_id": "p103-b0018",
+      "label": "6.8.4 Doppler Flow Meters"
+    },
+    {
+      "anchor_id": "page-104",
+      "kind": "page",
+      "page": 104,
+      "block_id": null,
+      "label": "PDF page 104"
+    },
+    {
+      "anchor_id": "section-6-8-6",
+      "kind": "heading",
+      "page": 104,
+      "block_id": "p104-b0002",
+      "label": "6.8.6 Sound Velocity"
+    },
+    {
+      "anchor_id": "section-6-8-7",
+      "kind": "heading",
+      "page": 104,
+      "block_id": "p104-b0008",
+      "label": "6.8.7 Reliability"
+    },
+    {
+      "anchor_id": "section-6-8-8",
+      "kind": "heading",
+      "page": 104,
+      "block_id": "p104-b0018",
+      "label": "6.8.8 Noise Rejection and Diagnostics"
+    },
+    {
+      "anchor_id": "page-105",
+      "kind": "page",
+      "page": 105,
+      "block_id": null,
+      "label": "PDF page 105"
+    },
+    {
+      "anchor_id": "section-6-8-9",
+      "kind": "heading",
+      "page": 105,
+      "block_id": "p105-b0007",
+      "label": "6.8.9 Single Path versus Multi-Path Meters"
+    },
+    {
+      "anchor_id": "section-6-8-10",
+      "kind": "heading",
+      "page": 105,
+      "block_id": "p105-b0019",
+      "label": "6.8.10 Insert Transducers"
+    },
+    {
+      "anchor_id": "page-106",
+      "kind": "page",
+      "page": 106,
+      "block_id": null,
+      "label": "PDF page 106"
+    },
+    {
+      "anchor_id": "section-6-8-12",
+      "kind": "heading",
+      "page": 106,
+      "block_id": "p106-b0022",
+      "label": "6.8.12 Meter Assemblies"
+    },
+    {
+      "anchor_id": "section-6-8-13",
+      "kind": "heading",
+      "page": 106,
+      "block_id": "p106-b0036",
+      "label": "6.8.13 Installation"
+    },
+    {
+      "anchor_id": "page-107",
+      "kind": "page",
+      "page": 107,
+      "block_id": null,
+      "label": "PDF page 107"
+    },
+    {
+      "anchor_id": "section-6-9",
+      "kind": "heading",
+      "page": 107,
+      "block_id": "p107-b0014",
+      "label": "6.9 Coriolis Flow Meter"
+    },
+    {
+      "anchor_id": "section-6-9-1",
+      "kind": "heading",
+      "page": 107,
+      "block_id": "p107-b0015",
+      "label": "6.9.1 General"
+    },
+    {
+      "anchor_id": "page-108",
+      "kind": "page",
+      "page": 108,
+      "block_id": null,
+      "label": "PDF page 108"
+    },
+    {
+      "anchor_id": "section-6-9-2",
+      "kind": "heading",
+      "page": 108,
+      "block_id": "p108-b0011",
+      "label": "6.9.2 Selection and Sizing"
+    },
+    {
+      "anchor_id": "section-6-9-3",
+      "kind": "heading",
+      "page": 108,
+      "block_id": "p108-b0018",
+      "label": "6.9.3 Material Selection"
+    },
+    {
+      "anchor_id": "section-6-9-4",
+      "kind": "heading",
+      "page": 108,
+      "block_id": "p108-b0031",
+      "label": "6.9.4 Meter Housings and Sensor Integrity"
+    },
+    {
+      "anchor_id": "page-109",
+      "kind": "page",
+      "page": 109,
+      "block_id": null,
+      "label": "PDF page 109"
+    },
+    {
+      "anchor_id": "section-6-9-5",
+      "kind": "heading",
+      "page": 109,
+      "block_id": "p109-b0007",
+      "label": "6.9.5 Installation"
+    },
+    {
+      "anchor_id": "section-6-10",
+      "kind": "heading",
+      "page": 109,
+      "block_id": "p109-b0026",
+      "label": "6.10 Thermal Dispersion Meter"
+    },
+    {
+      "anchor_id": "page-110",
+      "kind": "page",
+      "page": 110,
+      "block_id": null,
+      "label": "PDF page 110"
+    },
+    {
+      "anchor_id": "figure-25",
+      "kind": "figure",
+      "page": 110,
+      "block_id": "p110-b0009",
+      "label": "Figure 25—Relative Thermal Conductivity of Common Gases"
+    },
+    {
+      "anchor_id": "page-111",
+      "kind": "page",
+      "page": 111,
+      "block_id": null,
+      "label": "PDF page 111"
+    },
+    {
+      "anchor_id": "section-7-p111-002",
+      "kind": "heading",
+      "page": 111,
+      "block_id": "p111-b0018",
+      "label": "7 Level"
+    },
+    {
+      "anchor_id": "section-7-1",
+      "kind": "heading",
+      "page": 111,
+      "block_id": "p111-b0019",
+      "label": "7.1 Introduction"
+    },
+    {
+      "anchor_id": "section-7-2",
+      "kind": "heading",
+      "page": 111,
+      "block_id": "p111-b0024",
+      "label": "7.2 Vessel Connections"
+    },
+    {
+      "anchor_id": "section-7-2-1",
+      "kind": "heading",
+      "page": 111,
+      "block_id": "p111-b0025",
+      "label": "7.2.1 General"
+    },
+    {
+      "anchor_id": "page-112",
+      "kind": "page",
+      "page": 112,
+      "block_id": null,
+      "label": "PDF page 112"
+    },
+    {
+      "anchor_id": "table-12",
+      "kind": "table",
+      "page": 112,
+      "block_id": "p112-b0002",
+      "label": "Table 12—Typical Pi"
+    },
+    {
+      "anchor_id": "page-113",
+      "kind": "page",
+      "page": 113,
+      "block_id": null,
+      "label": "PDF page 113"
+    },
+    {
+      "anchor_id": "section-7-2-4",
+      "kind": "heading",
+      "page": 113,
+      "block_id": "p113-b0015",
+      "label": "7.2.4 Vessel Head Connections"
+    },
+    {
+      "anchor_id": "section-7-2-5",
+      "kind": "heading",
+      "page": 113,
+      "block_id": "p113-b0026",
+      "label": "7.2.5 Displacer Vessel Connections"
+    },
+    {
+      "anchor_id": "section-7-2-6",
+      "kind": "heading",
+      "page": 113,
+      "block_id": "p113-b0035",
+      "label": "7.2.6 Float Switch Connections"
+    },
+    {
+      "anchor_id": "page-114",
+      "kind": "page",
+      "page": 114,
+      "block_id": null,
+      "label": "PDF page 114"
+    },
+    {
+      "anchor_id": "section-7-2-8",
+      "kind": "heading",
+      "page": 114,
+      "block_id": "p114-b0015",
+      "label": "7.2.8 Level Glass Connections"
+    },
+    {
+      "anchor_id": "section-7-2-9",
+      "kind": "heading",
+      "page": 114,
+      "block_id": "p114-b0027",
+      "label": "7.2.9 Thermowells"
+    },
+    {
+      "anchor_id": "page-115",
+      "kind": "page",
+      "page": 115,
+      "block_id": null,
+      "label": "PDF page 115"
+    },
+    {
+      "anchor_id": "section-2-p115-002",
+      "kind": "heading",
+      "page": 115,
+      "block_id": "p115-b0034",
+      "label": "2 NPS Nozzle"
+    },
+    {
+      "anchor_id": "figure-26",
+      "kind": "figure",
+      "page": 115,
+      "block_id": "p115-b0053",
+      "label": "Figure 26—Gauge Glass Assemblies"
+    },
+    {
+      "anchor_id": "page-116",
+      "kind": "page",
+      "page": 116,
+      "block_id": null,
+      "label": "PDF page 116"
+    },
+    {
+      "anchor_id": "page-116-note-5",
+      "kind": "note",
+      "page": 116,
+      "block_id": "p116-b0015",
+      "label": "Note 5"
+    },
+    {
+      "anchor_id": "page-116-note-2",
+      "kind": "note",
+      "page": 116,
+      "block_id": "p116-b0019",
+      "label": "Note nN"
+    },
+    {
+      "anchor_id": "page-116-note-2-p116-004",
+      "kind": "note",
+      "page": 116,
+      "block_id": "p116-b0022",
+      "label": "Note 2 y"
+    },
+    {
+      "anchor_id": "page-116-note-1",
+      "kind": "note",
+      "page": 116,
+      "block_id": "p116-b0024",
+      "label": "NOTE 1 The transmitter elevation for a standard 2:1 elipse head is 0.25 ID + 230 mm (9 in.)"
+    },
+    {
+      "anchor_id": "page-116-note-2-p116-006",
+      "kind": "note",
+      "page": 116,
+      "block_id": "p116-b0026",
+      "label": "NOTE 2 Taps should not be attached to liquid lines. The measurment error in mm due to velocity"
+    },
+    {
+      "anchor_id": "page-116-note-3",
+      "kind": "note",
+      "page": 116,
+      "block_id": "p116-b0029",
+      "label": "NOTE 3 Supply low point drain valve to flush water, solids, etc."
+    },
+    {
+      "anchor_id": "page-116-note-4",
+      "kind": "note",
+      "page": 116,
+      "block_id": "p116-b0030",
+      "label": "NOTE 4 Skirt and head penetration located according to general plant and process requirements."
+    },
+    {
+      "anchor_id": "page-116-note-5-p116-009",
+      "kind": "note",
+      "page": 116,
+      "block_id": "p116-b0031",
+      "label": "NOTE 5 Transmitter is at the same elevation as bottom row of holes on the stand pipe inlet."
+    },
+    {
+      "anchor_id": "page-116-note-6",
+      "kind": "note",
+      "page": 116,
+      "block_id": "p116-b0032",
+      "label": "NOTE 6 Level tap should free drain into vessel."
+    },
+    {
+      "anchor_id": "figure-27",
+      "kind": "figure",
+      "page": 116,
+      "block_id": "p116-b0033",
+      "label": "Figure 27—Instrument Connections to Bottom Heads"
+    },
+    {
+      "anchor_id": "page-117",
+      "kind": "page",
+      "page": 117,
+      "block_id": null,
+      "label": "PDF page 117"
+    },
+    {
+      "anchor_id": "section-7-2-10",
+      "kind": "heading",
+      "page": 117,
+      "block_id": "p117-b0008",
+      "label": "7.2.10 Bridles"
+    },
+    {
+      "anchor_id": "section-7-2-11",
+      "kind": "heading",
+      "page": 117,
+      "block_id": "p117-b0017",
+      "label": "7.2.11 Block Valves"
+    },
+    {
+      "anchor_id": "section-7-2-12",
+      "kind": "heading",
+      "page": 117,
+      "block_id": "p117-b0024",
+      "label": "7.2.12 Drain and Vent Connections"
+    },
+    {
+      "anchor_id": "section-7-2-13",
+      "kind": "heading",
+      "page": 117,
+      "block_id": "p117-b0034",
+      "label": "7.2.13 Strain Relief"
+    },
+    {
+      "anchor_id": "page-118",
+      "kind": "page",
+      "page": 118,
+      "block_id": null,
+      "label": "PDF page 118"
+    },
+    {
+      "anchor_id": "section-7-3",
+      "kind": "heading",
+      "page": 118,
+      "block_id": "p118-b0002",
+      "label": "7.3 Level Transmitters"
+    },
+    {
+      "anchor_id": "section-7-3-1",
+      "kind": "heading",
+      "page": 118,
+      "block_id": "p118-b0003",
+      "label": "7.3.1 General"
+    },
+    {
+      "anchor_id": "section-7-3-2",
+      "kind": "heading",
+      "page": 118,
+      "block_id": "p118-b0006",
+      "label": "7.3.2 Hydrostatic Measurement"
+    },
+    {
+      "anchor_id": "section-7-3-2-1",
+      "kind": "heading",
+      "page": 118,
+      "block_id": "p118-b0007",
+      "label": "7.3.2.1 General"
+    },
+    {
+      "anchor_id": "section-7-3-2-2",
+      "kind": "heading",
+      "page": 118,
+      "block_id": "p118-b0026",
+      "label": "7.3.2.2 Wet Leg Differential Pressure Level Measurement"
+    },
+    {
+      "anchor_id": "page-119",
+      "kind": "page",
+      "page": 119,
+      "block_id": null,
+      "label": "PDF page 119"
+    },
+    {
+      "anchor_id": "figure-28",
+      "kind": "figure",
+      "page": 119,
+      "block_id": "p119-b0012",
+      "label": "Figure 28—General Formulas for the Calibration of a Differential Level Instrument"
+    },
+    {
+      "anchor_id": "page-120",
+      "kind": "page",
+      "page": 120,
+      "block_id": null,
+      "label": "PDF page 120"
+    },
+    {
+      "anchor_id": "figure-29",
+      "kind": "figure",
+      "page": 120,
+      "block_id": "p120-b0032",
+      "label": "Figure 29—Differential Level Transmitters with Wet Legs"
+    },
+    {
+      "anchor_id": "page-121",
+      "kind": "page",
+      "page": 121,
+      "block_id": null,
+      "label": "PDF page 121"
+    },
+    {
+      "anchor_id": "section-7-3-2-4",
+      "kind": "heading",
+      "page": 121,
+      "block_id": "p121-b0020",
+      "label": "7.3.2.4 Liquid Level Measurement with Diaphragm Seals"
+    },
+    {
+      "anchor_id": "section-7-3-2-5",
+      "kind": "heading",
+      "page": 121,
+      "block_id": "p121-b0028",
+      "label": "7.3.2.5 Submersible Hydrostatic Pressure Transmitters"
+    },
+    {
+      "anchor_id": "page-122",
+      "kind": "page",
+      "page": 122,
+      "block_id": null,
+      "label": "PDF page 122"
+    },
+    {
+      "anchor_id": "section-7-3-2-6",
+      "kind": "heading",
+      "page": 122,
+      "block_id": "p122-b0002",
+      "label": "7.3.2.6 Steam Drum Level Measurement"
+    },
+    {
+      "anchor_id": "section-7-3-2-7",
+      "kind": "heading",
+      "page": 122,
+      "block_id": "p122-b0017",
+      "label": "7.3.2.7 Steam Drum Startup"
+    },
+    {
+      "anchor_id": "section-7-3-2-8",
+      "kind": "heading",
+      "page": 122,
+      "block_id": "p122-b0027",
+      "label": "7.3.2.8 Bubbler Level Measurement"
+    },
+    {
+      "anchor_id": "page-123",
+      "kind": "page",
+      "page": 123,
+      "block_id": null,
+      "label": "PDF page 123"
+    },
+    {
+      "anchor_id": "figure-30",
+      "kind": "figure",
+      "page": 123,
+      "block_id": "p123-b0020",
+      "label": "Figure 30—Steam Drum Density Compensation Fitting"
+    },
+    {
+      "anchor_id": "page-124",
+      "kind": "page",
+      "page": 124,
+      "block_id": null,
+      "label": "PDF page 124"
+    },
+    {
+      "anchor_id": "section-7-3-3",
+      "kind": "heading",
+      "page": 124,
+      "block_id": "p124-b0018",
+      "label": "7.3.3 Displacement"
+    },
+    {
+      "anchor_id": "section-7-3-3-1",
+      "kind": "heading",
+      "page": 124,
+      "block_id": "p124-b0019",
+      "label": "7.3.3.1 General"
+    },
+    {
+      "anchor_id": "page-125",
+      "kind": "page",
+      "page": 125,
+      "block_id": null,
+      "label": "PDF page 125"
+    },
+    {
+      "anchor_id": "section-7-3-3-2",
+      "kind": "heading",
+      "page": 125,
+      "block_id": "p125-b0008",
+      "label": "7.3.3.2 Internal Displacers"
+    },
+    {
+      "anchor_id": "section-7-3-3-3",
+      "kind": "heading",
+      "page": 125,
+      "block_id": "p125-b0020",
+      "label": "7.3.3.3 External Chambers"
+    },
+    {
+      "anchor_id": "section-7-3-3-4",
+      "kind": "heading",
+      "page": 125,
+      "block_id": "p125-b0033",
+      "label": "7.3.3.4 Calibration"
+    },
+    {
+      "anchor_id": "page-126",
+      "kind": "page",
+      "page": 126,
+      "block_id": null,
+      "label": "PDF page 126"
+    },
+    {
+      "anchor_id": "figure-31",
+      "kind": "figure",
+      "page": 126,
+      "block_id": "p126-b0014",
+      "label": "Figure 31—Displacer Transmitter Mounting"
+    },
+    {
+      "anchor_id": "section-7-3-3-5",
+      "kind": "heading",
+      "page": 126,
+      "block_id": "p126-b0021",
+      "label": "7.3.3.5 Disadvantages"
+    },
+    {
+      "anchor_id": "page-127",
+      "kind": "page",
+      "page": 127,
+      "block_id": null,
+      "label": "PDF page 127"
+    },
+    {
+      "anchor_id": "figure-32",
+      "kind": "figure",
+      "page": 127,
+      "block_id": "p127-b0030",
+      "label": "Figure 32—Arrangement for a Displacer Wet Calibration"
+    },
+    {
+      "anchor_id": "page-128",
+      "kind": "page",
+      "page": 128,
+      "block_id": null,
+      "label": "PDF page 128"
+    },
+    {
+      "anchor_id": "section-7-3-4",
+      "kind": "heading",
+      "page": 128,
+      "block_id": "p128-b0038",
+      "label": "7.3.4 Nuclear"
+    },
+    {
+      "anchor_id": "section-7-3-4-1",
+      "kind": "heading",
+      "page": 128,
+      "block_id": "p128-b0039",
+      "label": "7.3.4.1 General"
+    },
+    {
+      "anchor_id": "page-129",
+      "kind": "page",
+      "page": 129,
+      "block_id": null,
+      "label": "PDF page 129"
+    },
+    {
+      "anchor_id": "figure-33",
+      "kind": "figure",
+      "page": 129,
+      "block_id": "p129-b0017",
+      "label": "Figure 33—Nuclear Level Transmitter"
+    },
+    {
+      "anchor_id": "section-7-3-4-2",
+      "kind": "heading",
+      "page": 129,
+      "block_id": "p129-b0018",
+      "label": "7.3.4.2 Types of Detectors"
+    },
+    {
+      "anchor_id": "section-7-3-4-2-1",
+      "kind": "heading",
+      "page": 129,
+      "block_id": "p129-b0019",
+      "label": "7.3.4.2.1 Scintillation Detectors"
+    },
+    {
+      "anchor_id": "page-130",
+      "kind": "page",
+      "page": 130,
+      "block_id": null,
+      "label": "PDF page 130"
+    },
+    {
+      "anchor_id": "table-13",
+      "kind": "table",
+      "page": 130,
+      "block_id": "p130-b0002",
+      "label": "Table 13—Comparison of Nuclear Detectors"
+    },
+    {
+      "anchor_id": "page-131",
+      "kind": "page",
+      "page": 131,
+      "block_id": null,
+      "label": "PDF page 131"
+    },
+    {
+      "anchor_id": "section-7-3-4-2-4",
+      "kind": "heading",
+      "page": 131,
+      "block_id": "p131-b0006",
+      "label": "7.3.4.2.4 Nuclear Interface Scanners"
+    },
+    {
+      "anchor_id": "section-7-3-4-2-5",
+      "kind": "heading",
+      "page": 131,
+      "block_id": "p131-b0025",
+      "label": "7.3.4.2.5 Neutron Backscatter"
+    },
+    {
+      "anchor_id": "section-7-3-4-3",
+      "kind": "heading",
+      "page": 131,
+      "block_id": "p131-b0038",
+      "label": "7.3.4.3 Types of Sources"
+    },
+    {
+      "anchor_id": "page-132",
+      "kind": "page",
+      "page": 132,
+      "block_id": null,
+      "label": "PDF page 132"
+    },
+    {
+      "anchor_id": "table-14",
+      "kind": "table",
+      "page": 132,
+      "block_id": "p132-b0002",
+      "label": "Table 14—Types of Isotopes"
+    },
+    {
+      "anchor_id": "section-7-3-4-4",
+      "kind": "heading",
+      "page": 132,
+      "block_id": "p132-b0025",
+      "label": "7.3.4.4 Source Holders"
+    },
+    {
+      "anchor_id": "page-133",
+      "kind": "page",
+      "page": 133,
+      "block_id": null,
+      "label": "PDF page 133"
+    },
+    {
+      "anchor_id": "section-7-3-4-5",
+      "kind": "heading",
+      "page": 133,
+      "block_id": "p133-b0020",
+      "label": "7.3.4.5 Source Sizing"
+    },
+    {
+      "anchor_id": "page-134",
+      "kind": "page",
+      "page": 134,
+      "block_id": null,
+      "label": "PDF page 134"
+    },
+    {
+      "anchor_id": "section-7-3-4-6",
+      "kind": "heading",
+      "page": 134,
+      "block_id": "p134-b0023",
+      "label": "7.3.4.6 Licensing"
+    },
+    {
+      "anchor_id": "page-135",
+      "kind": "page",
+      "page": 135,
+      "block_id": null,
+      "label": "PDF page 135"
+    },
+    {
+      "anchor_id": "table-15",
+      "kind": "table",
+      "page": 135,
+      "block_id": "p135-b0003",
+      "label": "Table 15—Nuclear Regulations by Source Size"
+    },
+    {
+      "anchor_id": "page-136",
+      "kind": "page",
+      "page": 136,
+      "block_id": null,
+      "label": "PDF page 136"
+    },
+    {
+      "anchor_id": "section-7-3-4-7",
+      "kind": "heading",
+      "page": 136,
+      "block_id": "p136-b0006",
+      "label": "7.3.4.7 Installation"
+    },
+    {
+      "anchor_id": "section-7-3-4-8",
+      "kind": "heading",
+      "page": 136,
+      "block_id": "p136-b0011",
+      "label": "7.3.4.8 Operation"
+    },
+    {
+      "anchor_id": "page-137",
+      "kind": "page",
+      "page": 137,
+      "block_id": null,
+      "label": "PDF page 137"
+    },
+    {
+      "anchor_id": "section-7-3-5",
+      "kind": "heading",
+      "page": 137,
+      "block_id": "p137-b0007",
+      "label": "7.3.5 Ultrasonic Level"
+    },
+    {
+      "anchor_id": "section-7-3-5-1",
+      "kind": "heading",
+      "page": 137,
+      "block_id": "p137-b0008",
+      "label": "7.3.5.1 Operation"
+    },
+    {
+      "anchor_id": "section-7-3-5-2",
+      "kind": "heading",
+      "page": 137,
+      "block_id": "p137-b0021",
+      "label": "7.3.5.2 Precautions"
+    },
+    {
+      "anchor_id": "section-7-3-6-1",
+      "kind": "heading",
+      "page": 137,
+      "block_id": "p137-b0027",
+      "label": "7.3.6.1 General"
+    },
+    {
+      "anchor_id": "page-138",
+      "kind": "page",
+      "page": 138,
+      "block_id": null,
+      "label": "PDF page 138"
+    },
+    {
+      "anchor_id": "figure-34",
+      "kind": "figure",
+      "page": 138,
+      "block_id": "p138-b0021",
+      "label": "Figure 34—RF Capacitance/Admittance or GWR Level Transmitter Mounting"
+    },
+    {
+      "anchor_id": "page-139",
+      "kind": "page",
+      "page": 139,
+      "block_id": null,
+      "label": "PDF page 139"
+    },
+    {
+      "anchor_id": "section-7-3-6-3",
+      "kind": "heading",
+      "page": 139,
+      "block_id": "p139-b0023",
+      "label": "7.3.6.3 Conductive Liquids"
+    },
+    {
+      "anchor_id": "section-7-3-6-4",
+      "kind": "heading",
+      "page": 139,
+      "block_id": "p139-b0038",
+      "label": "7.3.6.4 Coatings"
+    },
+    {
+      "anchor_id": "page-140",
+      "kind": "page",
+      "page": 140,
+      "block_id": null,
+      "label": "PDF page 140"
+    },
+    {
+      "anchor_id": "section-7-3-6-5",
+      "kind": "heading",
+      "page": 140,
+      "block_id": "p140-b0012",
+      "label": "7.3.6.5 Foam"
+    },
+    {
+      "anchor_id": "section-7-3-6-6",
+      "kind": "heading",
+      "page": 140,
+      "block_id": "p140-b0016",
+      "label": "7.3.6.6 Instrument Range"
+    },
+    {
+      "anchor_id": "section-7-3-6-7",
+      "kind": "heading",
+      "page": 140,
+      "block_id": "p140-b0023",
+      "label": "7.3.6.7 Probe Selection"
+    },
+    {
+      "anchor_id": "page-141",
+      "kind": "page",
+      "page": 141,
+      "block_id": null,
+      "label": "PDF page 141"
+    },
+    {
+      "anchor_id": "section-7-3-6-8",
+      "kind": "heading",
+      "page": 141,
+      "block_id": "p141-b0002",
+      "label": "7.3.6.8 Installation"
+    },
+    {
+      "anchor_id": "section-7-3-7",
+      "kind": "heading",
+      "page": 141,
+      "block_id": "p141-b0027",
+      "label": "7.3.7 Guided Wave Radar"
+    },
+    {
+      "anchor_id": "page-142",
+      "kind": "page",
+      "page": 142,
+      "block_id": null,
+      "label": "PDF page 142"
+    },
+    {
+      "anchor_id": "section-7-3-7-2",
+      "kind": "heading",
+      "page": 142,
+      "block_id": "p142-b0010",
+      "label": "7.3.7.2 Level"
+    },
+    {
+      "anchor_id": "section-7-3-7-3",
+      "kind": "heading",
+      "page": 142,
+      "block_id": "p142-b0027",
+      "label": "7.3.7.3 Interface"
+    },
+    {
+      "anchor_id": "page-143",
+      "kind": "page",
+      "page": 143,
+      "block_id": null,
+      "label": "PDF page 143"
+    },
+    {
+      "anchor_id": "section-7-3-7-4",
+      "kind": "heading",
+      "page": 143,
+      "block_id": "p143-b0004",
+      "label": "7.3.7.4 Level and Interface"
+    },
+    {
+      "anchor_id": "section-7-3-7-5",
+      "kind": "heading",
+      "page": 143,
+      "block_id": "p143-b0009",
+      "label": "7.3.7.5 Emulsions"
+    },
+    {
+      "anchor_id": "section-7-3-7-6",
+      "kind": "heading",
+      "page": 143,
+      "block_id": "p143-b0032",
+      "label": "7.3.7.6 Solids Measurements"
+    },
+    {
+      "anchor_id": "page-144",
+      "kind": "page",
+      "page": 144,
+      "block_id": null,
+      "label": "PDF page 144"
+    },
+    {
+      "anchor_id": "section-7-3-7-7",
+      "kind": "heading",
+      "page": 144,
+      "block_id": "p144-b0002",
+      "label": "7.3.7.7 Steam Applications"
+    },
+    {
+      "anchor_id": "section-7-3-7-8",
+      "kind": "heading",
+      "page": 144,
+      "block_id": "p144-b0010",
+      "label": "7.3.7.8 Foam and Coating Applications"
+    },
+    {
+      "anchor_id": "table-16",
+      "kind": "table",
+      "page": 144,
+      "block_id": "p144-b0021",
+      "label": "Table 16—Probe Types"
+    },
+    {
+      "anchor_id": "table-17",
+      "kind": "table",
+      "page": 144,
+      "block_id": "p144-b0026",
+      "label": "Table 17—Typical Viscosities"
+    },
+    {
+      "anchor_id": "section-7-3-7-9",
+      "kind": "heading",
+      "page": 144,
+      "block_id": "p144-b0031",
+      "label": "7.3.7.9 Configuration and Commissioning"
+    },
+    {
+      "anchor_id": "page-145",
+      "kind": "page",
+      "page": 145,
+      "block_id": null,
+      "label": "PDF page 145"
+    },
+    {
+      "anchor_id": "figure-35",
+      "kind": "figure",
+      "page": 145,
+      "block_id": "p145-b0023",
+      "label": "Figure 35—Critical Dimensions for GWR Installation"
+    },
+    {
+      "anchor_id": "section-7-3-8-1",
+      "kind": "heading",
+      "page": 145,
+      "block_id": "p145-b0025",
+      "label": "7.3.8.1 General"
+    },
+    {
+      "anchor_id": "page-146",
+      "kind": "page",
+      "page": 146,
+      "block_id": null,
+      "label": "PDF page 146"
+    },
+    {
+      "anchor_id": "figure-36",
+      "kind": "figure",
+      "page": 146,
+      "block_id": "p146-b0036",
+      "label": "Figure 36—Typical Display for Configuring a Transit Time Level Instrument"
+    },
+    {
+      "anchor_id": "page-147",
+      "kind": "page",
+      "page": 147,
+      "block_id": null,
+      "label": "PDF page 147"
+    },
+    {
+      "anchor_id": "section-7-3-8-2",
+      "kind": "heading",
+      "page": 147,
+      "block_id": "p147-b0007",
+      "label": "7.3.8.2 Frequencies"
+    },
+    {
+      "anchor_id": "section-26",
+      "kind": "heading",
+      "page": 147,
+      "block_id": "p147-b0009",
+      "label": "26 GHz frequencies are the more common. Frequencies are chosen for various reasons ranging from licensing"
+    },
+    {
+      "anchor_id": "page-148",
+      "kind": "page",
+      "page": 148,
+      "block_id": null,
+      "label": "PDF page 148"
+    },
+    {
+      "anchor_id": "section-7-3-8-4",
+      "kind": "heading",
+      "page": 148,
+      "block_id": "p148-b0022",
+      "label": "7.3.8.4 Application"
+    },
+    {
+      "anchor_id": "page-149",
+      "kind": "page",
+      "page": 149,
+      "block_id": null,
+      "label": "PDF page 149"
+    },
+    {
+      "anchor_id": "section-7-3-8-5",
+      "kind": "heading",
+      "page": 149,
+      "block_id": "p149-b0013",
+      "label": "7.3.8.5 Stilling Wells"
+    },
+    {
+      "anchor_id": "page-150",
+      "kind": "page",
+      "page": 150,
+      "block_id": null,
+      "label": "PDF page 150"
+    },
+    {
+      "anchor_id": "section-7-3-8-6",
+      "kind": "heading",
+      "page": 150,
+      "block_id": "p150-b0017",
+      "label": "7.3.8.6 Foam Measurement"
+    },
+    {
+      "anchor_id": "section-7-3-8-7",
+      "kind": "heading",
+      "page": 150,
+      "block_id": "p150-b0027",
+      "label": "7.3.8.7 Solids Measurement"
+    },
+    {
+      "anchor_id": "page-151",
+      "kind": "page",
+      "page": 151,
+      "block_id": null,
+      "label": "PDF page 151"
+    },
+    {
+      "anchor_id": "section-7-3-8-8",
+      "kind": "heading",
+      "page": 151,
+      "block_id": "p151-b0002",
+      "label": "7.3.8.8 High Vapor Pressure Liquids"
+    },
+    {
+      "anchor_id": "section-7-3-8-9",
+      "kind": "heading",
+      "page": 151,
+      "block_id": "p151-b0006",
+      "label": "7.3.8.9 Configuration and Commissioning"
+    },
+    {
+      "anchor_id": "section-7-3-9",
+      "kind": "heading",
+      "page": 151,
+      "block_id": "p151-b0026",
+      "label": "7.3.9 Magnetostrictive"
+    },
+    {
+      "anchor_id": "page-152",
+      "kind": "page",
+      "page": 152,
+      "block_id": null,
+      "label": "PDF page 152"
+    },
+    {
+      "anchor_id": "section-7-4",
+      "kind": "heading",
+      "page": 152,
+      "block_id": "p152-b0003",
+      "label": "7.4 Level Switches"
+    },
+    {
+      "anchor_id": "section-7-4-2",
+      "kind": "heading",
+      "page": 152,
+      "block_id": "p152-b0022",
+      "label": "7.4.2 Level Switch Application"
+    },
+    {
+      "anchor_id": "page-153",
+      "kind": "page",
+      "page": 153,
+      "block_id": null,
+      "label": "PDF page 153"
+    },
+    {
+      "anchor_id": "section-74-3",
+      "kind": "heading",
+      "page": 153,
+      "block_id": "p153-b0012",
+      "label": "74.3 Testing"
+    },
+    {
+      "anchor_id": "section-7-5",
+      "kind": "heading",
+      "page": 153,
+      "block_id": "p153-b0027",
+      "label": "7.5 Local Level Indicators"
+    },
+    {
+      "anchor_id": "section-7-5-1",
+      "kind": "heading",
+      "page": 153,
+      "block_id": "p153-b0028",
+      "label": "7.5.1 General"
+    },
+    {
+      "anchor_id": "section-7-5-2",
+      "kind": "heading",
+      "page": 153,
+      "block_id": "p153-b0033",
+      "label": "7.5.2 Armored Gauge Glasses"
+    },
+    {
+      "anchor_id": "page-154",
+      "kind": "page",
+      "page": 154,
+      "block_id": null,
+      "label": "PDF page 154"
+    },
+    {
+      "anchor_id": "figure-37",
+      "kind": "figure",
+      "page": 154,
+      "block_id": "p154-b0017",
+      "label": "Figure 37—Grade-mounted Overflow Alarm Switches"
+    },
+    {
+      "anchor_id": "page-155",
+      "kind": "page",
+      "page": 155,
+      "block_id": null,
+      "label": "PDF page 155"
+    },
+    {
+      "anchor_id": "section-7-5-2-2",
+      "kind": "heading",
+      "page": 155,
+      "block_id": "p155-b0012",
+      "label": "7.5.2.2 Gauge Types"
+    },
+    {
+      "anchor_id": "page-156",
+      "kind": "page",
+      "page": 156,
+      "block_id": null,
+      "label": "PDF page 156"
+    },
+    {
+      "anchor_id": "section-7-5-2-4",
+      "kind": "heading",
+      "page": 156,
+      "block_id": "p156-b0012",
+      "label": "7.5.2.4 Gauge Body"
+    },
+    {
+      "anchor_id": "page-157",
+      "kind": "page",
+      "page": 157,
+      "block_id": null,
+      "label": "PDF page 157"
+    },
+    {
+      "anchor_id": "section-7-5-2-5",
+      "kind": "heading",
+      "page": 157,
+      "block_id": "p157-b0002",
+      "label": "7.5.2.5 Glass"
+    },
+    {
+      "anchor_id": "section-7-5-2-6",
+      "kind": "heading",
+      "page": 157,
+      "block_id": "p157-b0021",
+      "label": "7.5.2.6 Gauge Valves"
+    },
+    {
+      "anchor_id": "page-158",
+      "kind": "page",
+      "page": 158,
+      "block_id": null,
+      "label": "PDF page 158"
+    },
+    {
+      "anchor_id": "figure-38",
+      "kind": "figure",
+      "page": 158,
+      "block_id": "p158-b0019",
+      "label": "Figure 38—Typical Bolted Bonnet Gauge Valve"
+    },
+    {
+      "anchor_id": "page-159",
+      "kind": "page",
+      "page": 159,
+      "block_id": null,
+      "label": "PDF page 159"
+    },
+    {
+      "anchor_id": "section-7-5-2-7",
+      "kind": "heading",
+      "page": 159,
+      "block_id": "p159-b0006",
+      "label": "7.5.2.7 Illuminators and Gauge Accessories"
+    },
+    {
+      "anchor_id": "section-7-5-2-8",
+      "kind": "heading",
+      "page": 159,
+      "block_id": "p159-b0022",
+      "label": "7.5.2.8 Gauge Shields"
+    },
+    {
+      "anchor_id": "page-160",
+      "kind": "page",
+      "page": 160,
+      "block_id": null,
+      "label": "PDF page 160"
+    },
+    {
+      "anchor_id": "section-7-5-2-9",
+      "kind": "heading",
+      "page": 160,
+      "block_id": "p160-b0002",
+      "label": "7.5.2.9 Steam Gauge Failure"
+    },
+    {
+      "anchor_id": "section-7-5-2-10",
+      "kind": "heading",
+      "page": 160,
+      "block_id": "p160-b0016",
+      "label": "7.5.2.10 Gauge Assemblies"
+    },
+    {
+      "anchor_id": "section-7-5-2-11",
+      "kind": "heading",
+      "page": 160,
+      "block_id": "p160-b0024",
+      "label": "7.5.2.11 Installation"
+    },
+    {
+      "anchor_id": "section-7-5-3",
+      "kind": "heading",
+      "page": 160,
+      "block_id": "p160-b0031",
+      "label": "7.5.3 Magnetic Gauges"
+    },
+    {
+      "anchor_id": "page-161",
+      "kind": "page",
+      "page": 161,
+      "block_id": null,
+      "label": "PDF page 161"
+    },
+    {
+      "anchor_id": "figure-39",
+      "kind": "figure",
+      "page": 161,
+      "block_id": "p161-b0016",
+      "label": "Figure 39—Measurement Taps for Interface and Level Services"
+    },
+    {
+      "anchor_id": "section-7-5-3-1",
+      "kind": "heading",
+      "page": 161,
+      "block_id": "p161-b0024",
+      "label": "7.5.3.1 Float Chamber"
+    },
+    {
+      "anchor_id": "page-162",
+      "kind": "page",
+      "page": 162,
+      "block_id": null,
+      "label": "PDF page 162"
+    },
+    {
+      "anchor_id": "section-7-5-3-2",
+      "kind": "heading",
+      "page": 162,
+      "block_id": "p162-b0017",
+      "label": "7.5.3.2 Floats"
+    },
+    {
+      "anchor_id": "section-7-5-3-3",
+      "kind": "heading",
+      "page": 162,
+      "block_id": "p162-b0034",
+      "label": "7.5.3.3 Indicators"
+    },
+    {
+      "anchor_id": "page-163",
+      "kind": "page",
+      "page": 163,
+      "block_id": null,
+      "label": "PDF page 163"
+    },
+    {
+      "anchor_id": "figure-40",
+      "kind": "figure",
+      "page": 163,
+      "block_id": "p163-b0016",
+      "label": "Figure 40—Follower-type Magnetic Level Gauge"
+    },
+    {
+      "anchor_id": "page-164",
+      "kind": "page",
+      "page": 164,
+      "block_id": null,
+      "label": "PDF page 164"
+    },
+    {
+      "anchor_id": "figure-41",
+      "kind": "figure",
+      "page": 164,
+      "block_id": "p164-b0011",
+      "label": "Figure 41—Magnetic Gauge with Flag Indicators"
+    },
+    {
+      "anchor_id": "page-165",
+      "kind": "page",
+      "page": 165,
+      "block_id": null,
+      "label": "PDF page 165"
+    },
+    {
+      "anchor_id": "section-7-5-3-4",
+      "kind": "heading",
+      "page": 165,
+      "block_id": "p165-b0016",
+      "label": "7.5.3.4 Interface Measurement"
+    },
+    {
+      "anchor_id": "section-7-5-3-5",
+      "kind": "heading",
+      "page": 165,
+      "block_id": "p165-b0030",
+      "label": "7.5.3.5 Transmitters and Switches"
+    },
+    {
+      "anchor_id": "page-166",
+      "kind": "page",
+      "page": 166,
+      "block_id": null,
+      "label": "PDF page 166"
+    },
+    {
+      "anchor_id": "section-7-5-3-6",
+      "kind": "heading",
+      "page": 166,
+      "block_id": "p166-b0004",
+      "label": "7.5.3.6 Installation and Operation"
+    },
+    {
+      "anchor_id": "section-7-6",
+      "kind": "heading",
+      "page": 166,
+      "block_id": "p166-b0015",
+      "label": "7.6 Specific Gravity Precautions"
+    },
+    {
+      "anchor_id": "section-7-6-1",
+      "kind": "heading",
+      "page": 166,
+      "block_id": "p166-b0018",
+      "label": "7.6.1 Specific Gravity Differences in the Vessel"
+    },
+    {
+      "anchor_id": "section-7-6-2",
+      "kind": "heading",
+      "page": 166,
+      "block_id": "p166-b0032",
+      "label": "7.6.2 Specific Gravity Differences in the Impulse Piping"
+    },
+    {
+      "anchor_id": "page-167",
+      "kind": "page",
+      "page": 167,
+      "block_id": null,
+      "label": "PDF page 167"
+    },
+    {
+      "anchor_id": "figure-42",
+      "kind": "figure",
+      "page": 167,
+      "block_id": "p167-b0015",
+      "label": "Figure 42—Transmitter Saturation Values with a 0.70 S.G. Calibration"
+    },
+    {
+      "anchor_id": "section-7-6-3",
+      "kind": "heading",
+      "page": 167,
+      "block_id": "p167-b0016",
+      "label": "7.6.3 Specific Gravity Differences in Bridles"
+    },
+    {
+      "anchor_id": "section-7-7",
+      "kind": "heading",
+      "page": 167,
+      "block_id": "p167-b0025",
+      "label": "7.7 Emulsions and Foams"
+    },
+    {
+      "anchor_id": "page-168",
+      "kind": "page",
+      "page": 168,
+      "block_id": null,
+      "label": "PDF page 168"
+    },
+    {
+      "anchor_id": "figure-43",
+      "kind": "figure",
+      "page": 168,
+      "block_id": "p168-b0040",
+      "label": "Figure 43—Specific Gravity-Temperature Relationship for Hydrocarbons"
+    },
+    {
+      "anchor_id": "page-169",
+      "kind": "page",
+      "page": 169,
+      "block_id": null,
+      "label": "PDF page 169"
+    },
+    {
+      "anchor_id": "figure-44",
+      "kind": "figure",
+      "page": 169,
+      "block_id": "p169-b0012",
+      "label": "Figure 44—Liquid Communication with Non-Homogeneous Fluids"
+    },
+    {
+      "anchor_id": "page-170",
+      "kind": "page",
+      "page": 170,
+      "block_id": null,
+      "label": "PDF page 170"
+    },
+    {
+      "anchor_id": "section-8-p170-002",
+      "kind": "heading",
+      "page": 170,
+      "block_id": "p170-b0009",
+      "label": "8 Instrument Installation"
+    },
+    {
+      "anchor_id": "section-8-1",
+      "kind": "heading",
+      "page": 170,
+      "block_id": "p170-b0010",
+      "label": "8.1 Introduction"
+    },
+    {
+      "anchor_id": "section-8-2",
+      "kind": "heading",
+      "page": 170,
+      "block_id": "p170-b0014",
+      "label": "8.2 General Requirements"
+    },
+    {
+      "anchor_id": "section-8-3",
+      "kind": "heading",
+      "page": 170,
+      "block_id": "p170-b0028",
+      "label": "8.3 Process Connections"
+    },
+    {
+      "anchor_id": "section-8-3-1",
+      "kind": "heading",
+      "page": 170,
+      "block_id": "p170-b0029",
+      "label": "8.3.1 Instrument Installation"
+    },
+    {
+      "anchor_id": "page-171",
+      "kind": "page",
+      "page": 171,
+      "block_id": null,
+      "label": "PDF page 171"
+    },
+    {
+      "anchor_id": "page-172",
+      "kind": "page",
+      "page": 172,
+      "block_id": null,
+      "label": "PDF page 172"
+    },
+    {
+      "anchor_id": "figure-45",
+      "kind": "figure",
+      "page": 172,
+      "block_id": "p172-b0053",
+      "label": "Figure 45—Pressure Transmitter Installations"
+    },
+    {
+      "anchor_id": "page-173",
+      "kind": "page",
+      "page": 173,
+      "block_id": null,
+      "label": "PDF page 173"
+    },
+    {
+      "anchor_id": "figure-46",
+      "kind": "figure",
+      "page": 173,
+      "block_id": "p173-b0009",
+      "label": "Figure 46—End View of Horizontal Pipe Taps"
+    },
+    {
+      "anchor_id": "section-8-3-4",
+      "kind": "heading",
+      "page": 173,
+      "block_id": "p173-b0010",
+      "label": "8.3.4 Instrument Pots and Reservoirs"
+    },
+    {
+      "anchor_id": "page-174",
+      "kind": "page",
+      "page": 174,
+      "block_id": null,
+      "label": "PDF page 174"
+    },
+    {
+      "anchor_id": "section-8-3-5",
+      "kind": "heading",
+      "page": 174,
+      "block_id": "p174-b0004",
+      "label": "8.3.5 Two Phase Flow in Impulse Lines"
+    },
+    {
+      "anchor_id": "page-175",
+      "kind": "page",
+      "page": 175,
+      "block_id": null,
+      "label": "PDF page 175"
+    },
+    {
+      "anchor_id": "page-175-note-1",
+      "kind": "note",
+      "page": 175,
+      "block_id": "p175-b0005",
+      "label": "Note oN"
+    },
+    {
+      "anchor_id": "page-175-note-6",
+      "kind": "note",
+      "page": 175,
+      "block_id": "p175-b0007",
+      "label": "Note 6"
+    },
+    {
+      "anchor_id": "page-175-note-1-p175-004",
+      "kind": "note",
+      "page": 175,
+      "block_id": "p175-b0009",
+      "label": "NOTE 1"
+    },
+    {
+      "anchor_id": "page-175-note-2",
+      "kind": "note",
+      "page": 175,
+      "block_id": "p175-b0016",
+      "label": "NOTE 2"
+    },
+    {
+      "anchor_id": "page-175-note-3",
+      "kind": "note",
+      "page": 175,
+      "block_id": "p175-b0019",
+      "label": "NOTE 3"
+    },
+    {
+      "anchor_id": "page-175-note-4",
+      "kind": "note",
+      "page": 175,
+      "block_id": "p175-b0023",
+      "label": "NOTE 4"
+    },
+    {
+      "anchor_id": "page-175-note-5",
+      "kind": "note",
+      "page": 175,
+      "block_id": "p175-b0030",
+      "label": "NOTE 5"
+    },
+    {
+      "anchor_id": "page-175-note-6-p175-009",
+      "kind": "note",
+      "page": 175,
+      "block_id": "p175-b0033",
+      "label": "NOTE 6"
+    },
+    {
+      "anchor_id": "page-175-note-7",
+      "kind": "note",
+      "page": 175,
+      "block_id": "p175-b0039",
+      "label": "NOTE 7"
+    },
+    {
+      "anchor_id": "page-175-note-8",
+      "kind": "note",
+      "page": 175,
+      "block_id": "p175-b0043",
+      "label": "NOTE 8"
+    },
+    {
+      "anchor_id": "page-175-note-9",
+      "kind": "note",
+      "page": 175,
+      "block_id": "p175-b0046",
+      "label": "NOTE 9"
+    },
+    {
+      "anchor_id": "page-175-note-10",
+      "kind": "note",
+      "page": 175,
+      "block_id": "p175-b0050",
+      "label": "NOTE 10"
+    },
+    {
+      "anchor_id": "page-175-note-11",
+      "kind": "note",
+      "page": 175,
+      "block_id": "p175-b0054",
+      "label": "NOTE 11"
+    },
+    {
+      "anchor_id": "figure-47",
+      "kind": "figure",
+      "page": 175,
+      "block_id": "p175-b0058",
+      "label": "Figure 47—Settling Chamber"
+    },
+    {
+      "anchor_id": "page-176",
+      "kind": "page",
+      "page": 176,
+      "block_id": null,
+      "label": "PDF page 176"
+    },
+    {
+      "anchor_id": "figure-48",
+      "kind": "figure",
+      "page": 176,
+      "block_id": "p176-b0018",
+      "label": "Figure 48—Differential Pressure Measurement"
+    },
+    {
+      "anchor_id": "section-8-4",
+      "kind": "heading",
+      "page": 176,
+      "block_id": "p176-b0021",
+      "label": "8.4 Connection Lengths"
+    },
+    {
+      "anchor_id": "section-8-4-1",
+      "kind": "heading",
+      "page": 176,
+      "block_id": "p176-b0032",
+      "label": "8.4.1 Close Coupled Connections"
+    },
+    {
+      "anchor_id": "section-8-4-2",
+      "kind": "heading",
+      "page": 176,
+      "block_id": "p176-b0037",
+      "label": "8.4.2 Remote Connections"
+    },
+    {
+      "anchor_id": "page-177",
+      "kind": "page",
+      "page": 177,
+      "block_id": null,
+      "label": "PDF page 177"
+    },
+    {
+      "anchor_id": "section-8-4-3",
+      "kind": "heading",
+      "page": 177,
+      "block_id": "p177-b0004",
+      "label": "8.4.3 Tightly Coupled Connections"
+    },
+    {
+      "anchor_id": "section-8-5",
+      "kind": "heading",
+      "page": 177,
+      "block_id": "p177-b0008",
+      "label": "8.5 Instrument Access"
+    },
+    {
+      "anchor_id": "section-8-5-1",
+      "kind": "heading",
+      "page": 177,
+      "block_id": "p177-b0009",
+      "label": "8.5.1 General"
+    },
+    {
+      "anchor_id": "section-8-5-2",
+      "kind": "heading",
+      "page": 177,
+      "block_id": "p177-b0019",
+      "label": "8.5.2 Easy Access"
+    },
+    {
+      "anchor_id": "section-8-5-3",
+      "kind": "heading",
+      "page": 177,
+      "block_id": "p177-b0024",
+      "label": "8.5.3 Normal Access"
+    },
+    {
+      "anchor_id": "section-8-5-4",
+      "kind": "heading",
+      "page": 177,
+      "block_id": "p177-b0035",
+      "label": "8.5.4 Limited Access"
+    },
+    {
+      "anchor_id": "page-178",
+      "kind": "page",
+      "page": 178,
+      "block_id": null,
+      "label": "PDF page 178"
+    },
+    {
+      "anchor_id": "section-8-6",
+      "kind": "heading",
+      "page": 178,
+      "block_id": "p178-b0010",
+      "label": "8.6 Impulse Line Installation"
+    },
+    {
+      "anchor_id": "section-8-6-1",
+      "kind": "heading",
+      "page": 178,
+      "block_id": "p178-b0011",
+      "label": "8.6.1 Impulse Line Specifications"
+    },
+    {
+      "anchor_id": "section-8-6-2",
+      "kind": "heading",
+      "page": 178,
+      "block_id": "p178-b0018",
+      "label": "8.6.2 Pipe Installation"
+    },
+    {
+      "anchor_id": "page-179",
+      "kind": "page",
+      "page": 179,
+      "block_id": null,
+      "label": "PDF page 179"
+    },
+    {
+      "anchor_id": "figure-49",
+      "kind": "figure",
+      "page": 179,
+      "block_id": "p179-b0020",
+      "label": "Figure 49—Tapped Hex Head Bull Plug"
+    },
+    {
+      "anchor_id": "page-180",
+      "kind": "page",
+      "page": 180,
+      "block_id": null,
+      "label": "PDF page 180"
+    },
+    {
+      "anchor_id": "section-8-6-4",
+      "kind": "heading",
+      "page": 180,
+      "block_id": "p180-b0016",
+      "label": "8.6.4 Tubing Installation"
+    },
+    {
+      "anchor_id": "page-181",
+      "kind": "page",
+      "page": 181,
+      "block_id": null,
+      "label": "PDF page 181"
+    },
+    {
+      "anchor_id": "figure-50",
+      "kind": "figure",
+      "page": 181,
+      "block_id": "p181-b0002",
+      "label": "Figure 50—API Type Ill High-pressure Tube Fitting"
+    },
+    {
+      "anchor_id": "page-182",
+      "kind": "page",
+      "page": 182,
+      "block_id": null,
+      "label": "PDF page 182"
+    },
+    {
+      "anchor_id": "table-18",
+      "kind": "table",
+      "page": 182,
+      "block_id": "p182-b0017",
+      "label": "Table 18—Tubing Support"
+    },
+    {
+      "anchor_id": "page-183",
+      "kind": "page",
+      "page": 183,
+      "block_id": null,
+      "label": "PDF page 183"
+    },
+    {
+      "anchor_id": "section-8-6-5",
+      "kind": "heading",
+      "page": 183,
+      "block_id": "p183-b0004",
+      "label": "8.6.5 Process Plugging"
+    },
+    {
+      "anchor_id": "section-8-7",
+      "kind": "heading",
+      "page": 183,
+      "block_id": "p183-b0023",
+      "label": "8.7 Instrument Valves and Manifolds"
+    },
+    {
+      "anchor_id": "section-8-7-1",
+      "kind": "heading",
+      "page": 183,
+      "block_id": "p183-b0034",
+      "label": "8.7.1 Needle Valves"
+    },
+    {
+      "anchor_id": "page-184",
+      "kind": "page",
+      "page": 184,
+      "block_id": null,
+      "label": "PDF page 184"
+    },
+    {
+      "anchor_id": "figure-51",
+      "kind": "figure",
+      "page": 184,
+      "block_id": "p184-b0007",
+      "label": "Figure 51—Rodding Tee’s"
+    },
+    {
+      "anchor_id": "section-8-7-2",
+      "kind": "heading",
+      "page": 184,
+      "block_id": "p184-b0008",
+      "label": "8.7.2 Bleed Valves"
+    },
+    {
+      "anchor_id": "page-185",
+      "kind": "page",
+      "page": 185,
+      "block_id": null,
+      "label": "PDF page 185"
+    },
+    {
+      "anchor_id": "figure-52",
+      "kind": "figure",
+      "page": 185,
+      "block_id": "p185-b0008",
+      "label": "Figure 52—Typical Rodding Unit for Orifice Flanges"
+    },
+    {
+      "anchor_id": "figure-53",
+      "kind": "figure",
+      "page": 185,
+      "block_id": "p185-b0026",
+      "label": "Figure 53—Valve Arrangement for Instrument Manifolds"
+    },
+    {
+      "anchor_id": "page-186",
+      "kind": "page",
+      "page": 186,
+      "block_id": null,
+      "label": "PDF page 186"
+    },
+    {
+      "anchor_id": "section-8-7-4",
+      "kind": "heading",
+      "page": 186,
+      "block_id": "p186-b0016",
+      "label": "8.7.4 Valve Handles"
+    },
+    {
+      "anchor_id": "section-8-7-5",
+      "kind": "heading",
+      "page": 186,
+      "block_id": "p186-b0024",
+      "label": "8.7.5 Two Bolt Instrument Flanges"
+    },
+    {
+      "anchor_id": "page-187",
+      "kind": "page",
+      "page": 187,
+      "block_id": null,
+      "label": "PDF page 187"
+    },
+    {
+      "anchor_id": "figure-54",
+      "kind": "figure",
+      "page": 187,
+      "block_id": "p187-b0017",
+      "label": "Figure 54—Two-bolt Pressure Transmitter"
+    },
+    {
+      "anchor_id": "page-188",
+      "kind": "page",
+      "page": 188,
+      "block_id": null,
+      "label": "PDF page 188"
+    },
+    {
+      "anchor_id": "section-8-7-6",
+      "kind": "heading",
+      "page": 188,
+      "block_id": "p188-b0002",
+      "label": "8.7.6 Multi Process Connection Manifolds"
+    },
+    {
+      "anchor_id": "section-8-7-6-1",
+      "kind": "heading",
+      "page": 188,
+      "block_id": "p188-b0003",
+      "label": "8.7.6.1 General"
+    },
+    {
+      "anchor_id": "section-8-7-6-2",
+      "kind": "heading",
+      "page": 188,
+      "block_id": "p188-b0012",
+      "label": "8.7.6.2 Three Valve Manifolds"
+    },
+    {
+      "anchor_id": "section-8-7-6-3",
+      "kind": "heading",
+      "page": 188,
+      "block_id": "p188-b0021",
+      "label": "8.7.6.3 Five Valve Manifolds"
+    },
+    {
+      "anchor_id": "section-8-7-6-4",
+      "kind": "heading",
+      "page": 188,
+      "block_id": "p188-b0028",
+      "label": "8.7.6.4 Equalizing Valve"
+    },
+    {
+      "anchor_id": "section-8-7-6-5",
+      "kind": "heading",
+      "page": 188,
+      "block_id": "p188-b0032",
+      "label": "8.7.6.5 Liquid Level Manifolds"
+    },
+    {
+      "anchor_id": "page-189",
+      "kind": "page",
+      "page": 189,
+      "block_id": null,
+      "label": "PDF page 189"
+    },
+    {
+      "anchor_id": "section-8-7-7",
+      "kind": "heading",
+      "page": 189,
+      "block_id": "p189-b0002",
+      "label": "8.7.7 Single Process Connection Manifolds"
+    },
+    {
+      "anchor_id": "section-8-7-7-4",
+      "kind": "heading",
+      "page": 189,
+      "block_id": "p189-b0017",
+      "label": "8.7.7.4 Gauge Valves"
+    },
+    {
+      "anchor_id": "section-8-7-8",
+      "kind": "heading",
+      "page": 189,
+      "block_id": "p189-b0027",
+      "label": "8.7.8 Special Purpose Manifolds"
+    },
+    {
+      "anchor_id": "section-8-7-8-1",
+      "kind": "heading",
+      "page": 189,
+      "block_id": "p189-b0028",
+      "label": "8.7.8.1 Steam Trace Block"
+    },
+    {
+      "anchor_id": "section-8-7-8-2",
+      "kind": "heading",
+      "page": 189,
+      "block_id": "p189-b0032",
+      "label": "8.7.8.2 Custom Manifolds"
+    },
+    {
+      "anchor_id": "page-190",
+      "kind": "page",
+      "page": 190,
+      "block_id": null,
+      "label": "PDF page 190"
+    },
+    {
+      "anchor_id": "figure-55",
+      "kind": "figure",
+      "page": 190,
+      "block_id": "p190-b0020",
+      "label": "Figure 55—Tightly Coupled Transmitter Side-mounted to a Mono-flange"
+    },
+    {
+      "anchor_id": "page-191",
+      "kind": "page",
+      "page": 191,
+      "block_id": null,
+      "label": "PDF page 191"
+    },
+    {
+      "anchor_id": "section-8-8",
+      "kind": "heading",
+      "page": 191,
+      "block_id": "p191-b0002",
+      "label": "8.8 Flushing Connections and Bleed Rings"
+    },
+    {
+      "anchor_id": "section-8-9",
+      "kind": "heading",
+      "page": 191,
+      "block_id": "p191-b0027",
+      "label": "8.9 Calibration Connections"
+    },
+    {
+      "anchor_id": "section-8-10",
+      "kind": "heading",
+      "page": 191,
+      "block_id": "p191-b0037",
+      "label": "8.10 Supports"
+    },
+    {
+      "anchor_id": "page-192",
+      "kind": "page",
+      "page": 192,
+      "block_id": null,
+      "label": "PDF page 192"
+    },
+    {
+      "anchor_id": "figure-56",
+      "kind": "figure",
+      "page": 192,
+      "block_id": "p192-b0009",
+      "label": "Figure 56—Reducing Flushing Ring"
+    },
+    {
+      "anchor_id": "page-193",
+      "kind": "page",
+      "page": 193,
+      "block_id": null,
+      "label": "PDF page 193"
+    },
+    {
+      "anchor_id": "figure-57",
+      "kind": "figure",
+      "page": 193,
+      "block_id": "p193-b0016",
+      "label": "Figure 57—Instrument Line Mounts"
+    },
+    {
+      "anchor_id": "section-8-11",
+      "kind": "heading",
+      "page": 193,
+      "block_id": "p193-b0021",
+      "label": "8.11 Environment"
+    },
+    {
+      "anchor_id": "page-194",
+      "kind": "page",
+      "page": 194,
+      "block_id": null,
+      "label": "PDF page 194"
+    },
+    {
+      "anchor_id": "section-8-12",
+      "kind": "heading",
+      "page": 194,
+      "block_id": "p194-b0017",
+      "label": "8.12 Thermal Stress, Structural Loads and Vibration"
+    },
+    {
+      "anchor_id": "page-195",
+      "kind": "page",
+      "page": 195,
+      "block_id": null,
+      "label": "PDF page 195"
+    },
+    {
+      "anchor_id": "section-8-13",
+      "kind": "heading",
+      "page": 195,
+      "block_id": "p195-b0002",
+      "label": "8.13 Process Pulsation"
+    },
+    {
+      "anchor_id": "section-8-14",
+      "kind": "heading",
+      "page": 195,
+      "block_id": "p195-b0012",
+      "label": "8.14 Differential Pressure Flow Meters"
+    },
+    {
+      "anchor_id": "section-8-15",
+      "kind": "heading",
+      "page": 195,
+      "block_id": "p195-b0028",
+      "label": "8.15 Process Differential Pressure Measurement"
+    },
+    {
+      "anchor_id": "section-8-16",
+      "kind": "heading",
+      "page": 195,
+      "block_id": "p195-b0036",
+      "label": "8.16 Draft Measurement"
+    },
+    {
+      "anchor_id": "section-8-16-1",
+      "kind": "heading",
+      "page": 195,
+      "block_id": "p195-b0037",
+      "label": "8.16.1 General"
+    },
+    {
+      "anchor_id": "page-196",
+      "kind": "page",
+      "page": 196,
+      "block_id": null,
+      "label": "PDF page 196"
+    },
+    {
+      "anchor_id": "page-196-note-1",
+      "kind": "note",
+      "page": 196,
+      "block_id": "p196-b0050",
+      "label": "NOTE 1 Gauge valves shown, but piping specification gate valves can be provided as well,"
+    },
+    {
+      "anchor_id": "page-196-note-2",
+      "kind": "note",
+      "page": 196,
+      "block_id": "p196-b0052",
+      "label": "NOTE 2 Impulse lines should be minimum length and should be symmetrical."
+    },
+    {
+      "anchor_id": "page-196-note-3",
+      "kind": "note",
+      "page": 196,
+      "block_id": "p196-b0053",
+      "label": "NOTE 3 Slop line at least 1:12 to avoid pocking and to ensure venting or draining."
+    },
+    {
+      "anchor_id": "page-196-note-4",
+      "kind": "note",
+      "page": 196,
+      "block_id": "p196-b0054",
+      "label": "NOTE 4 Connect high pressure instrument tap to the up steam side of the pipe."
+    },
+    {
+      "anchor_id": "page-196-note-5",
+      "kind": "note",
+      "page": 196,
+      "block_id": "p196-b0055",
+      "label": "NOTE 5 Flow up is preferred for liquid services."
+    },
+    {
+      "anchor_id": "page-196-note-6",
+      "kind": "note",
+      "page": 196,
+      "block_id": "p196-b0056",
+      "label": "NOTE 6 Install instrument below the taps for liquids, steam, or condensable vapors."
+    },
+    {
+      "anchor_id": "page-196-note-7",
+      "kind": "note",
+      "page": 196,
+      "block_id": "p196-b0057",
+      "label": "NOTE 7 Install the meter above the taps for non-condensing gas."
+    },
+    {
+      "anchor_id": "page-196-note-8",
+      "kind": "note",
+      "page": 196,
+      "block_id": "p196-b0058",
+      "label": "NOTE 8 For steam service both filling-tees are even with the upper tap."
+    },
+    {
+      "anchor_id": "figure-58",
+      "kind": "figure",
+      "page": 196,
+      "block_id": "p196-b0059",
+      "label": "Figure 58—Close-coupled Flow Metering Installation Details"
+    },
+    {
+      "anchor_id": "page-197",
+      "kind": "page",
+      "page": 197,
+      "block_id": null,
+      "label": "PDF page 197"
+    },
+    {
+      "anchor_id": "page-198",
+      "kind": "page",
+      "page": 198,
+      "block_id": null,
+      "label": "PDF page 198"
+    },
+    {
+      "anchor_id": "figure-60",
+      "kind": "figure",
+      "page": 198,
+      "block_id": "p198-b0029",
+      "label": "Figure 60—Piezometric Wind Stabilization Fitting Fabrication"
+    },
+    {
+      "anchor_id": "page-199",
+      "kind": "page",
+      "page": 199,
+      "block_id": null,
+      "label": "PDF page 199"
+    },
+    {
+      "anchor_id": "section-8-16-3",
+      "kind": "heading",
+      "page": 199,
+      "block_id": "p199-b0002",
+      "label": "8.16.3 Circular Piezometric Draft Fitting"
+    },
+    {
+      "anchor_id": "figure-61",
+      "kind": "figure",
+      "page": 199,
+      "block_id": "p199-b0022",
+      "label": "Figure 61—A Commercial Piezometric Wind Stabilization Fitting"
+    },
+    {
+      "anchor_id": "section-8-16-4",
+      "kind": "heading",
+      "page": 199,
+      "block_id": "p199-b0023",
+      "label": "8.16.4 Piezometric Draft Fitting Location"
+    },
+    {
+      "anchor_id": "section-8-16-5",
+      "kind": "heading",
+      "page": 199,
+      "block_id": "p199-b0031",
+      "label": "8.16.5 Thermal Effects on Draft Measurement"
+    },
+    {
+      "anchor_id": "page-200",
+      "kind": "page",
+      "page": 200,
+      "block_id": null,
+      "label": "PDF page 200"
+    },
+    {
+      "anchor_id": "section-8-17",
+      "kind": "heading",
+      "page": 200,
+      "block_id": "p200-b0002",
+      "label": "8.17 Cryogenic Installations"
+    },
+    {
+      "anchor_id": "section-8-18",
+      "kind": "heading",
+      "page": 200,
+      "block_id": "p200-b0023",
+      "label": "8.18 Oxygen Installations"
+    },
+    {
+      "anchor_id": "section-8-18-1",
+      "kind": "heading",
+      "page": 200,
+      "block_id": "p200-b0024",
+      "label": "8.18.1 General"
+    },
+    {
+      "anchor_id": "section-8-18-2",
+      "kind": "heading",
+      "page": 200,
+      "block_id": "p200-b0030",
+      "label": "8.18.2 Reaction with Organic Compounds"
+    },
+    {
+      "anchor_id": "page-201",
+      "kind": "page",
+      "page": 201,
+      "block_id": null,
+      "label": "PDF page 201"
+    },
+    {
+      "anchor_id": "section-8-18-4",
+      "kind": "heading",
+      "page": 201,
+      "block_id": "p201-b0005",
+      "label": "8.18.4 Static Discharge"
+    },
+    {
+      "anchor_id": "section-8-18-5",
+      "kind": "heading",
+      "page": 201,
+      "block_id": "p201-b0010",
+      "label": "8.18.5 Heat of Compression"
+    },
+    {
+      "anchor_id": "section-8-18-6",
+      "kind": "heading",
+      "page": 201,
+      "block_id": "p201-b0017",
+      "label": "8.18.6 Materials"
+    },
+    {
+      "anchor_id": "section-8-18-7",
+      "kind": "heading",
+      "page": 201,
+      "block_id": "p201-b0036",
+      "label": "8.18.7 Design Recommendations"
+    },
+    {
+      "anchor_id": "page-202",
+      "kind": "page",
+      "page": 202,
+      "block_id": null,
+      "label": "PDF page 202"
+    },
+    {
+      "anchor_id": "section-8-18-8",
+      "kind": "heading",
+      "page": 202,
+      "block_id": "p202-b0029",
+      "label": "8.18.8 Valves"
+    },
+    {
+      "anchor_id": "page-203",
+      "kind": "page",
+      "page": 203,
+      "block_id": null,
+      "label": "PDF page 203"
+    },
+    {
+      "anchor_id": "section-8-18-9",
+      "kind": "heading",
+      "page": 203,
+      "block_id": "p203-b0008",
+      "label": "8.18.9 Cleaning"
+    },
+    {
+      "anchor_id": "section-9-p203-003",
+      "kind": "heading",
+      "page": 203,
+      "block_id": "p203-b0027",
+      "label": "9 Instrument Protection"
+    },
+    {
+      "anchor_id": "section-9-1",
+      "kind": "heading",
+      "page": 203,
+      "block_id": "p203-b0028",
+      "label": "9.1 Introduction"
+    },
+    {
+      "anchor_id": "page-204",
+      "kind": "page",
+      "page": 204,
+      "block_id": null,
+      "label": "PDF page 204"
+    },
+    {
+      "anchor_id": "section-9-2",
+      "kind": "heading",
+      "page": 204,
+      "block_id": "p204-b0002",
+      "label": "9.2 Diaphragm Seals"
+    },
+    {
+      "anchor_id": "section-9-2-1",
+      "kind": "heading",
+      "page": 204,
+      "block_id": "p204-b0024",
+      "label": "9.2.1 Construction"
+    },
+    {
+      "anchor_id": "page-205",
+      "kind": "page",
+      "page": 205,
+      "block_id": null,
+      "label": "PDF page 205"
+    },
+    {
+      "anchor_id": "figure-62",
+      "kind": "figure",
+      "page": 205,
+      "block_id": "p205-b0036",
+      "label": "Figure 62—Wafer-style Diaphragm Seal"
+    },
+    {
+      "anchor_id": "page-206",
+      "kind": "page",
+      "page": 206,
+      "block_id": null,
+      "label": "PDF page 206"
+    },
+    {
+      "anchor_id": "section-9-2-2",
+      "kind": "heading",
+      "page": 206,
+      "block_id": "p206-b0002",
+      "label": "9.2.2 Diaphragms"
+    },
+    {
+      "anchor_id": "table-19",
+      "kind": "table",
+      "page": 206,
+      "block_id": "p206-b0012",
+      "label": "Table 19—Diaphragm Seal Materials"
+    },
+    {
+      "anchor_id": "section-9-2-3",
+      "kind": "heading",
+      "page": 206,
+      "block_id": "p206-b0024",
+      "label": "9.2.3 Capillaries"
+    },
+    {
+      "anchor_id": "page-207",
+      "kind": "page",
+      "page": 207,
+      "block_id": null,
+      "label": "PDF page 207"
+    },
+    {
+      "anchor_id": "section-9-2-4",
+      "kind": "heading",
+      "page": 207,
+      "block_id": "p207-b0037",
+      "label": "9.2.4 Fill Fluids"
+    },
+    {
+      "anchor_id": "page-208",
+      "kind": "page",
+      "page": 208,
+      "block_id": null,
+      "label": "PDF page 208"
+    },
+    {
+      "anchor_id": "section-9-2-5",
+      "kind": "heading",
+      "page": 208,
+      "block_id": "p208-b0017",
+      "label": "9.2.5 Time Response"
+    },
+    {
+      "anchor_id": "section-9-2-6",
+      "kind": "heading",
+      "page": 208,
+      "block_id": "p208-b0027",
+      "label": "9.2.6 Vacuum Applications"
+    },
+    {
+      "anchor_id": "page-209",
+      "kind": "page",
+      "page": 209,
+      "block_id": null,
+      "label": "PDF page 209"
+    },
+    {
+      "anchor_id": "section-9-2-7",
+      "kind": "heading",
+      "page": 209,
+      "block_id": "p209-b0002",
+      "label": "9.2.7 Pressure Gauge Diaphragm Seals"
+    },
+    {
+      "anchor_id": "section-9-2-8",
+      "kind": "heading",
+      "page": 209,
+      "block_id": "p209-b0011",
+      "label": "9.2.8 Installation"
+    },
+    {
+      "anchor_id": "section-9-3",
+      "kind": "heading",
+      "page": 209,
+      "block_id": "p209-b0025",
+      "label": "9.3 Barrier Fluids and Seal Liquids"
+    },
+    {
+      "anchor_id": "section-9-3-1",
+      "kind": "heading",
+      "page": 209,
+      "block_id": "p209-b0036",
+      "label": "9.3.1 Seal Liquid Selection"
+    },
+    {
+      "anchor_id": "page-210",
+      "kind": "page",
+      "page": 210,
+      "block_id": null,
+      "label": "PDF page 210"
+    },
+    {
+      "anchor_id": "figure-63",
+      "kind": "figure",
+      "page": 210,
+      "block_id": "p210-b0032",
+      "label": "Figure 63—Level Transmitter with Capillaries"
+    },
+    {
+      "anchor_id": "page-211",
+      "kind": "page",
+      "page": 211,
+      "block_id": null,
+      "label": "PDF page 211"
+    },
+    {
+      "anchor_id": "figure-64",
+      "kind": "figure",
+      "page": 211,
+      "block_id": "p211-b0038",
+      "label": "Figure 64—Freezing Points of Ethylene Glycol and Water Mixtures"
+    },
+    {
+      "anchor_id": "page-212",
+      "kind": "page",
+      "page": 212,
+      "block_id": null,
+      "label": "PDF page 212"
+    },
+    {
+      "anchor_id": "section-9-3-2",
+      "kind": "heading",
+      "page": 212,
+      "block_id": "p212-b0023",
+      "label": "9.3.2 Gauge Siphons"
+    },
+    {
+      "anchor_id": "section-9-4",
+      "kind": "heading",
+      "page": 212,
+      "block_id": "p212-b0037",
+      "label": "9.4 Purges"
+    },
+    {
+      "anchor_id": "section-9-4-1",
+      "kind": "heading",
+      "page": 212,
+      "block_id": "p212-b0038",
+      "label": "9.4.1 General"
+    },
+    {
+      "anchor_id": "page-213",
+      "kind": "page",
+      "page": 213,
+      "block_id": null,
+      "label": "PDF page 213"
+    },
+    {
+      "anchor_id": "figure-65",
+      "kind": "figure",
+      "page": 213,
+      "block_id": "p213-b0035",
+      "label": "Figure 65—Pressure Gauge Installations"
+    },
+    {
+      "anchor_id": "page-214",
+      "kind": "page",
+      "page": 214,
+      "block_id": null,
+      "label": "PDF page 214"
+    },
+    {
+      "anchor_id": "page-215",
+      "kind": "page",
+      "page": 215,
+      "block_id": null,
+      "label": "PDF page 215"
+    },
+    {
+      "anchor_id": "table-20",
+      "kind": "table",
+      "page": 215,
+      "block_id": "p215-b0003",
+      "label": "Table 20—Purge Fluids"
+    },
+    {
+      "anchor_id": "section-9-4-4",
+      "kind": "heading",
+      "page": 215,
+      "block_id": "p215-b0070",
+      "label": "9.4.4 Purge Control"
+    },
+    {
+      "anchor_id": "page-216",
+      "kind": "page",
+      "page": 216,
+      "block_id": null,
+      "label": "PDF page 216"
+    },
+    {
+      "anchor_id": "figure-66",
+      "kind": "figure",
+      "page": 216,
+      "block_id": "p216-b0014",
+      "label": "Figure 66—Recommended Purge Rates for Various Orifice Flange Tap Sizes"
+    },
+    {
+      "anchor_id": "page-217",
+      "kind": "page",
+      "page": 217,
+      "block_id": null,
+      "label": "PDF page 217"
+    },
+    {
+      "anchor_id": "section-2-0",
+      "kind": "heading",
+      "page": 217,
+      "block_id": "p217-b0005",
+      "label": "2.0 ACFH (6.0 to 60 L/Hr) of air typically is satisfactory. Errors from excessive purge flows can be detected by"
+    },
+    {
+      "anchor_id": "section-9-4-5",
+      "kind": "heading",
+      "page": 217,
+      "block_id": "p217-b0015",
+      "label": "9.4.5 Purge Piping"
+    },
+    {
+      "anchor_id": "section-10-p217-004",
+      "kind": "heading",
+      "page": 217,
+      "block_id": "p217-b0032",
+      "label": "10 Instrument Heating and Climate Protection"
+    },
+    {
+      "anchor_id": "section-10-1",
+      "kind": "heading",
+      "page": 217,
+      "block_id": "p217-b0033",
+      "label": "10.1 Introduction"
+    },
+    {
+      "anchor_id": "page-218",
+      "kind": "page",
+      "page": 218,
+      "block_id": null,
+      "label": "PDF page 218"
+    },
+    {
+      "anchor_id": "page-218-note-1",
+      "kind": "note",
+      "page": 218,
+      "block_id": "p218-b0028",
+      "label": "NOTE 1"
+    },
+    {
+      "anchor_id": "page-218-note-2",
+      "kind": "note",
+      "page": 218,
+      "block_id": "p218-b0031",
+      "label": "NOTE 2"
+    },
+    {
+      "anchor_id": "page-218-note-3",
+      "kind": "note",
+      "page": 218,
+      "block_id": "p218-b0034",
+      "label": "NOTE 3"
+    },
+    {
+      "anchor_id": "page-218-note-4",
+      "kind": "note",
+      "page": 218,
+      "block_id": "p218-b0036",
+      "label": "NOTE 4"
+    },
+    {
+      "anchor_id": "page-218-note-5",
+      "kind": "note",
+      "page": 218,
+      "block_id": "p218-b0038",
+      "label": "NOTE 5"
+    },
+    {
+      "anchor_id": "page-218-note-6",
+      "kind": "note",
+      "page": 218,
+      "block_id": "p218-b0042",
+      "label": "NOTE 6"
+    },
+    {
+      "anchor_id": "figure-67",
+      "kind": "figure",
+      "page": 218,
+      "block_id": "p218-b0044",
+      "label": "Figure 67—Purge Installations"
+    },
+    {
+      "anchor_id": "page-219",
+      "kind": "page",
+      "page": 219,
+      "block_id": null,
+      "label": "PDF page 219"
+    },
+    {
+      "anchor_id": "section-10-2",
+      "kind": "heading",
+      "page": 219,
+      "block_id": "p219-b0006",
+      "label": "10.2 General"
+    },
+    {
+      "anchor_id": "page-220",
+      "kind": "page",
+      "page": 220,
+      "block_id": null,
+      "label": "PDF page 220"
+    },
+    {
+      "anchor_id": "section-10-3-1",
+      "kind": "heading",
+      "page": 220,
+      "block_id": "p220-b0010",
+      "label": "10.3.1 Electrical Tracing Advantages"
+    },
+    {
+      "anchor_id": "section-10-3-2",
+      "kind": "heading",
+      "page": 220,
+      "block_id": "p220-b0025",
+      "label": "10.3.2 Electric Tracing Limitations"
+    },
+    {
+      "anchor_id": "page-221",
+      "kind": "page",
+      "page": 221,
+      "block_id": null,
+      "label": "PDF page 221"
+    },
+    {
+      "anchor_id": "section-10-3-3",
+      "kind": "heading",
+      "page": 221,
+      "block_id": "p221-b0002",
+      "label": "10.3.3 Steam Tracing Advantages"
+    },
+    {
+      "anchor_id": "section-10-3-4",
+      "kind": "heading",
+      "page": 221,
+      "block_id": "p221-b0008",
+      "label": "10.3.4 Steam Tracing Limitations"
+    },
+    {
+      "anchor_id": "section-10-4",
+      "kind": "heading",
+      "page": 221,
+      "block_id": "p221-b0020",
+      "label": "10.4 Light Steam Tracing"
+    },
+    {
+      "anchor_id": "page-222",
+      "kind": "page",
+      "page": 222,
+      "block_id": null,
+      "label": "PDF page 222"
+    },
+    {
+      "anchor_id": "section-10-5",
+      "kind": "heading",
+      "page": 222,
+      "block_id": "p222-b0004",
+      "label": "10.5 Insulation and Protective Coverings"
+    },
+    {
+      "anchor_id": "section-10-6",
+      "kind": "heading",
+      "page": 222,
+      "block_id": "p222-b0020",
+      "label": "10.6 Instrument Housings"
+    },
+    {
+      "anchor_id": "section-10-6-1",
+      "kind": "heading",
+      "page": 222,
+      "block_id": "p222-b0021",
+      "label": "10.6.1 General"
+    },
+    {
+      "anchor_id": "page-223",
+      "kind": "page",
+      "page": 223,
+      "block_id": null,
+      "label": "PDF page 223"
+    },
+    {
+      "anchor_id": "figure-68",
+      "kind": "figure",
+      "page": 223,
+      "block_id": "p223-b0007",
+      "label": "Figure 68—Typical Molded Enclosures"
+    },
+    {
+      "anchor_id": "page-224",
+      "kind": "page",
+      "page": 224,
+      "block_id": null,
+      "label": "PDF page 224"
+    },
+    {
+      "anchor_id": "section-10-6-2",
+      "kind": "heading",
+      "page": 224,
+      "block_id": "p224-b0005",
+      "label": "10.6.2 Soft Enclosures"
+    },
+    {
+      "anchor_id": "section-10-6-3",
+      "kind": "heading",
+      "page": 224,
+      "block_id": "p224-b0016",
+      "label": "10.6.3 Full Molded Enclosures"
+    },
+    {
+      "anchor_id": "section-10-6-4",
+      "kind": "heading",
+      "page": 224,
+      "block_id": "p224-b0030",
+      "label": "10.6.4 Partial Molded Enclosures"
+    },
+    {
+      "anchor_id": "page-225",
+      "kind": "page",
+      "page": 225,
+      "block_id": null,
+      "label": "PDF page 225"
+    },
+    {
+      "anchor_id": "section-10-7",
+      "kind": "heading",
+      "page": 225,
+      "block_id": "p225-b0002",
+      "label": "10.7 Viscous Liquids and Condensation Prevention"
+    },
+    {
+      "anchor_id": "section-10-8",
+      "kind": "heading",
+      "page": 225,
+      "block_id": "p225-b0011",
+      "label": "10.8 Special Applications"
+    },
+    {
+      "anchor_id": "page-226",
+      "kind": "page",
+      "page": 226,
+      "block_id": null,
+      "label": "PDF page 226"
+    },
+    {
+      "anchor_id": "section-10-9",
+      "kind": "heading",
+      "page": 226,
+      "block_id": "p226-b0002",
+      "label": "10.9 Electrical Tracing Methods and Materials"
+    },
+    {
+      "anchor_id": "section-10-10",
+      "kind": "heading",
+      "page": 226,
+      "block_id": "p226-b0035",
+      "label": "10.10 Steam Tracing Methods and Materials"
+    },
+    {
+      "anchor_id": "page-227",
+      "kind": "page",
+      "page": 227,
+      "block_id": null,
+      "label": "PDF page 227"
+    },
+    {
+      "anchor_id": "figure-69",
+      "kind": "figure",
+      "page": 227,
+      "block_id": "p227-b0027",
+      "label": "Figure 69—Instrument Electrical Tracing"
+    },
+    {
+      "anchor_id": "page-228",
+      "kind": "page",
+      "page": 228,
+      "block_id": null,
+      "label": "PDF page 228"
+    },
+    {
+      "anchor_id": "page-229",
+      "kind": "page",
+      "page": 229,
+      "block_id": null,
+      "label": "PDF page 229"
+    },
+    {
+      "anchor_id": "section-bibliography",
+      "kind": "heading",
+      "page": 229,
+      "block_id": "p229-b0002",
+      "label": "Bibliography"
+    },
+    {
+      "anchor_id": "section-introduction",
+      "kind": "heading",
+      "page": 229,
+      "block_id": "p229-b0025",
+      "label": "Introduction to the Determination of the Volume of Displacement and Tank Provers"
+    },
+    {
+      "anchor_id": "page-230",
+      "kind": "page",
+      "page": 230,
+      "block_id": null,
+      "label": "PDF page 230"
+    },
+    {
+      "anchor_id": "page-231",
+      "kind": "page",
+      "page": 231,
+      "block_id": null,
+      "label": "PDF page 231"
+    },
+    {
+      "anchor_id": "section-24-p231-002",
+      "kind": "heading",
+      "page": 231,
+      "block_id": "p231-b0031",
+      "label": "24 American Gas Association, 400 N. Capitol St., NW, Suite 450, Washington, DC 20001, www.aga.org."
+    },
+    {
+      "anchor_id": "section-25",
+      "kind": "heading",
+      "page": 231,
+      "block_id": "p231-b0032",
+      "label": "25 American Society of Heating, Refrigeration, and Air-Conditioning Engineers, 1791 Tullie Circle, N.E. Atlanta, GA 30329,"
+    },
+    {
+      "anchor_id": "page-232",
+      "kind": "page",
+      "page": 232,
+      "block_id": null,
+      "label": "PDF page 232"
+    },
+    {
+      "anchor_id": "page-233",
+      "kind": "page",
+      "page": 233,
+      "block_id": null,
+      "label": "PDF page 233"
+    },
+    {
+      "anchor_id": "page-234",
+      "kind": "page",
+      "page": 234,
+      "block_id": null,
+      "label": "PDF page 234"
+    },
+    {
+      "anchor_id": "section-26-p234-002",
+      "kind": "heading",
+      "page": 234,
+      "block_id": "p234-b0031",
+      "label": "26 British Standards Institution, Chiswick High Road, London, W4 4AL, United Kingdom, www.bsi-global.com."
+    },
+    {
+      "anchor_id": "section-27",
+      "kind": "heading",
+      "page": 234,
+      "block_id": "p234-b0032",
+      "label": "27 Energy Institute, 61 New Cavendish Street, London, W1G 7AR, UK, www.energyinst.org."
+    },
+    {
+      "anchor_id": "section-28",
+      "kind": "heading",
+      "page": 234,
+      "block_id": "p234-b0033",
+      "label": "28 European Committee for Standardization, Avenue Marnix 17, B-1000, Brussels, Belgium, www.cen.eu."
+    },
+    {
+      "anchor_id": "page-235",
+      "kind": "page",
+      "page": 235,
+      "block_id": null,
+      "label": "PDF page 235"
+    },
+    {
+      "anchor_id": "page-236",
+      "kind": "page",
+      "page": 236,
+      "block_id": null,
+      "label": "PDF page 236"
+    },
+    {
+      "anchor_id": "section-29",
+      "kind": "heading",
+      "page": 236,
+      "block_id": "p236-b0032",
+      "label": "29 European Industrial Gases Association AISBL, Avenue des Arts 3-5, B-1210 Brussels, www.eiga.org."
+    },
+    {
+      "anchor_id": "page-237",
+      "kind": "page",
+      "page": 237,
+      "block_id": null,
+      "label": "PDF page 237"
+    },
+    {
+      "anchor_id": "page-238",
+      "kind": "page",
+      "page": 238,
+      "block_id": null,
+      "label": "PDF page 238"
+    },
+    {
+      "anchor_id": "page-239",
+      "kind": "page",
+      "page": 239,
+      "block_id": null,
+      "label": "PDF page 239"
+    },
+    {
+      "anchor_id": "section-31",
+      "kind": "heading",
+      "page": 239,
+      "block_id": "p239-b0028",
+      "label": "31 The National Aeronautics and Space Administration, NASA Headquarters, Suite 5K39, Washington, DC 20546-000,"
+    },
+    {
+      "anchor_id": "section-32",
+      "kind": "heading",
+      "page": 239,
+      "block_id": "p239-b0030",
+      "label": "32 National Fluid Power Association, 3333 North Mayfair Road, Suite 211, Milwaukee, Wisconsin 53222-3219, www.nfpa.com."
+    },
+    {
+      "anchor_id": "section-33",
+      "kind": "heading",
+      "page": 239,
+      "block_id": "p239-b0031",
+      "label": "33 National Institute of Standards and Technology, Deputy Director, Technology Services, National Institute of Standards and"
+    },
+    {
+      "anchor_id": "page-240",
+      "kind": "page",
+      "page": 240,
+      "block_id": null,
+      "label": "PDF page 240"
+    },
+    {
+      "anchor_id": "page-241",
+      "kind": "page",
+      "page": 241,
+      "block_id": null,
+      "label": "PDF page 241"
+    },
+    {
+      "anchor_id": "page-242",
+      "kind": "page",
+      "page": 242,
+      "block_id": null,
+      "label": "PDF page 242"
+    },
+    {
+      "anchor_id": "page-243",
+      "kind": "page",
+      "page": 243,
+      "block_id": null,
+      "label": "PDF page 243"
+    },
+    {
+      "anchor_id": "page-244",
+      "kind": "page",
+      "page": 244,
+      "block_id": null,
+      "label": "PDF page 244"
+    },
+    {
+      "anchor_id": "section-200",
+      "kind": "heading",
+      "page": 244,
+      "block_id": "p244-b0004",
+      "label": "200 Massachusetts Avenue, NW"
+    }
+  ],
+  "reference_count": 254,
+  "references": [
+    {
+      "page": 10,
+      "source_block_id": "p010-b0015",
+      "kind": "section",
+      "label": "Section I",
+      "target_anchor_id": "section-i"
+    },
+    {
+      "page": 12,
+      "source_block_id": "p012-b0008",
+      "kind": "section",
+      "label": "Section 4",
+      "target_anchor_id": "section-4"
+    },
+    {
+      "page": 17,
+      "source_block_id": "p017-b0019",
+      "kind": "table",
+      "label": "Table C",
+      "target_anchor_id": "table-c"
+    },
+    {
+      "page": 17,
+      "source_block_id": "p017-b0035",
+      "kind": "table",
+      "label": "Table 1",
+      "target_anchor_id": "table-1"
+    },
+    {
+      "page": 17,
+      "source_block_id": "p017-b0037",
+      "kind": "table",
+      "label": "Table 1",
+      "target_anchor_id": "table-1"
+    },
+    {
+      "page": 23,
+      "source_block_id": "p023-b0035",
+      "kind": "table",
+      "label": "Table C",
+      "target_anchor_id": "table-c"
+    },
+    {
+      "page": 24,
+      "source_block_id": "p024-b0012",
+      "kind": "table",
+      "label": "Table A",
+      "target_anchor_id": "table-a"
+    },
+    {
+      "page": 26,
+      "source_block_id": "p026-b0003",
+      "kind": "table",
+      "label": "Table 2",
+      "target_anchor_id": "table-2"
+    },
+    {
+      "page": 26,
+      "source_block_id": "p026-b0007",
+      "kind": "table",
+      "label": "Table 2",
+      "target_anchor_id": "table-2"
+    },
+    {
+      "page": 28,
+      "source_block_id": "p028-b0024",
+      "kind": "section",
+      "label": "Section 8.2",
+      "target_anchor_id": "section-8-2"
+    },
+    {
+      "page": 29,
+      "source_block_id": "p029-b0040",
+      "kind": "section",
+      "label": "Section 1",
+      "target_anchor_id": "section-1"
+    },
+    {
+      "page": 31,
+      "source_block_id": "p031-b0013",
+      "kind": "figure",
+      "label": "Figure 1",
+      "target_anchor_id": "figure-1"
+    },
+    {
+      "page": 31,
+      "source_block_id": "p031-b0038",
+      "kind": "figure",
+      "label": "Figure 2",
+      "target_anchor_id": "figure-2"
+    },
+    {
+      "page": 32,
+      "source_block_id": "p032-b0031",
+      "kind": "figure",
+      "label": "Figure 1",
+      "target_anchor_id": "figure-1"
+    },
+    {
+      "page": 33,
+      "source_block_id": "p033-b0043",
+      "kind": "figure",
+      "label": "Figure 2",
+      "target_anchor_id": "figure-2"
+    },
+    {
+      "page": 34,
+      "source_block_id": "p034-b0008",
+      "kind": "figure",
+      "label": "Figure 4",
+      "target_anchor_id": "figure-4"
+    },
+    {
+      "page": 34,
+      "source_block_id": "p034-b0030",
+      "kind": "figure",
+      "label": "Figure 3",
+      "target_anchor_id": "figure-3"
+    },
+    {
+      "page": 35,
+      "source_block_id": "p035-b0060",
+      "kind": "figure",
+      "label": "Figure 3",
+      "target_anchor_id": "figure-3"
+    },
+    {
+      "page": 36,
+      "source_block_id": "p036-b0003",
+      "kind": "figure",
+      "label": "Figure 4",
+      "target_anchor_id": "figure-4"
+    },
+    {
+      "page": 36,
+      "source_block_id": "p036-b0010",
+      "kind": "figure",
+      "label": "Figure 4",
+      "target_anchor_id": "figure-4"
+    },
+    {
+      "page": 37,
+      "source_block_id": "p037-b0007",
+      "kind": "figure",
+      "label": "Figure 5",
+      "target_anchor_id": "figure-5"
+    },
+    {
+      "page": 37,
+      "source_block_id": "p037-b0019",
+      "kind": "figure",
+      "label": "Figure 5",
+      "target_anchor_id": "figure-5"
+    },
+    {
+      "page": 38,
+      "source_block_id": "p038-b0005",
+      "kind": "table",
+      "label": "Table 3",
+      "target_anchor_id": "table-3"
+    },
+    {
+      "page": 38,
+      "source_block_id": "p038-b0011",
+      "kind": "table",
+      "label": "Table 3",
+      "target_anchor_id": "table-3"
+    },
+    {
+      "page": 38,
+      "source_block_id": "p038-b0035",
+      "kind": "table",
+      "label": "Table 5",
+      "target_anchor_id": "table-5"
+    },
+    {
+      "page": 38,
+      "source_block_id": "p038-b0039",
+      "kind": "table",
+      "label": "Table 4",
+      "target_anchor_id": "table-4"
+    },
+    {
+      "page": 38,
+      "source_block_id": "p038-b0040",
+      "kind": "figure",
+      "label": "Figure 6",
+      "target_anchor_id": "figure-6"
+    },
+    {
+      "page": 39,
+      "source_block_id": "p039-b0015",
+      "kind": "figure",
+      "label": "Figure 6",
+      "target_anchor_id": "figure-6"
+    },
+    {
+      "page": 39,
+      "source_block_id": "p039-b0016",
+      "kind": "table",
+      "label": "Table 4",
+      "target_anchor_id": "table-4"
+    },
+    {
+      "page": 39,
+      "source_block_id": "p039-b0037",
+      "kind": "table",
+      "label": "Table 5",
+      "target_anchor_id": "table-5"
+    },
+    {
+      "page": 41,
+      "source_block_id": "p041-b0022",
+      "kind": "figure",
+      "label": "Figure 8",
+      "target_anchor_id": "figure-8"
+    },
+    {
+      "page": 41,
+      "source_block_id": "p041-b0027",
+      "kind": "figure",
+      "label": "Figure 9",
+      "target_anchor_id": "figure-9"
+    },
+    {
+      "page": 41,
+      "source_block_id": "p041-b0035",
+      "kind": "figure",
+      "label": "Figure 8",
+      "target_anchor_id": "figure-8"
+    },
+    {
+      "page": 41,
+      "source_block_id": "p041-b0042",
+      "kind": "figure",
+      "label": "Figure 8",
+      "target_anchor_id": "figure-8"
+    },
+    {
+      "page": 42,
+      "source_block_id": "p042-b0003",
+      "kind": "figure",
+      "label": "Figure 7",
+      "target_anchor_id": "figure-7"
+    },
+    {
+      "page": 42,
+      "source_block_id": "p042-b0004",
+      "kind": "figure",
+      "label": "Figure 7",
+      "target_anchor_id": "figure-7"
+    },
+    {
+      "page": 42,
+      "source_block_id": "p042-b0016",
+      "kind": "section",
+      "label": "Section A",
+      "target_anchor_id": "section-a"
+    },
+    {
+      "page": 42,
+      "source_block_id": "p042-b0026",
+      "kind": "figure",
+      "label": "Figure 7",
+      "target_anchor_id": "figure-7"
+    },
+    {
+      "page": 42,
+      "source_block_id": "p042-b0027",
+      "kind": "figure",
+      "label": "Figure 10",
+      "target_anchor_id": "figure-10"
+    },
+    {
+      "page": 42,
+      "source_block_id": "p042-b0034",
+      "kind": "figure",
+      "label": "Figure 8",
+      "target_anchor_id": "figure-8"
+    },
+    {
+      "page": 43,
+      "source_block_id": "p043-b0015",
+      "kind": "figure",
+      "label": "Figure 8",
+      "target_anchor_id": "figure-8"
+    },
+    {
+      "page": 43,
+      "source_block_id": "p043-b0024",
+      "kind": "figure",
+      "label": "Figure 9",
+      "target_anchor_id": "figure-9"
+    },
+    {
+      "page": 43,
+      "source_block_id": "p043-b0040",
+      "kind": "figure",
+      "label": "Figure 10",
+      "target_anchor_id": "figure-10"
+    },
+    {
+      "page": 44,
+      "source_block_id": "p044-b0009",
+      "kind": "table",
+      "label": "Table 2",
+      "target_anchor_id": "table-2"
+    },
+    {
+      "page": 44,
+      "source_block_id": "p044-b0017",
+      "kind": "figure",
+      "label": "Figure 14",
+      "target_anchor_id": "figure-14"
+    },
+    {
+      "page": 44,
+      "source_block_id": "p044-b0029",
+      "kind": "table",
+      "label": "Table 6",
+      "target_anchor_id": "table-6"
+    },
+    {
+      "page": 44,
+      "source_block_id": "p044-b0030",
+      "kind": "table",
+      "label": "Table 6",
+      "target_anchor_id": "table-6"
+    },
+    {
+      "page": 45,
+      "source_block_id": "p045-b0005",
+      "kind": "table",
+      "label": "Table 7",
+      "target_anchor_id": "table-7"
+    },
+    {
+      "page": 45,
+      "source_block_id": "p045-b0007",
+      "kind": "table",
+      "label": "Table 7",
+      "target_anchor_id": "table-7"
+    },
+    {
+      "page": 45,
+      "source_block_id": "p045-b0021",
+      "kind": "figure",
+      "label": "Figure 11",
+      "target_anchor_id": "figure-11"
+    },
+    {
+      "page": 45,
+      "source_block_id": "p045-b0038",
+      "kind": "figure",
+      "label": "Figure 11",
+      "target_anchor_id": "figure-11"
+    },
+    {
+      "page": 47,
+      "source_block_id": "p047-b0020",
+      "kind": "figure",
+      "label": "Figure 11",
+      "target_anchor_id": "figure-11"
+    },
+    {
+      "page": 49,
+      "source_block_id": "p049-b0024",
+      "kind": "figure",
+      "label": "Figure 12",
+      "target_anchor_id": "figure-12"
+    },
+    {
+      "page": 49,
+      "source_block_id": "p049-b0038",
+      "kind": "figure",
+      "label": "Figure 13",
+      "target_anchor_id": "figure-13"
+    },
+    {
+      "page": 50,
+      "source_block_id": "p050-b0020",
+      "kind": "figure",
+      "label": "Figure 12",
+      "target_anchor_id": "figure-12"
+    },
+    {
+      "page": 50,
+      "source_block_id": "p050-b0035",
+      "kind": "figure",
+      "label": "Figure 13",
+      "target_anchor_id": "figure-13"
+    },
+    {
+      "page": 51,
+      "source_block_id": "p051-b0011",
+      "kind": "figure",
+      "label": "Figure 14",
+      "target_anchor_id": "figure-14"
+    },
+    {
+      "page": 51,
+      "source_block_id": "p051-b0019",
+      "kind": "figure",
+      "label": "Figure 14",
+      "target_anchor_id": "figure-14"
+    },
+    {
+      "page": 52,
+      "source_block_id": "p052-b0026",
+      "kind": "table",
+      "label": "Table 8",
+      "target_anchor_id": "table-8"
+    },
+    {
+      "page": 53,
+      "source_block_id": "p053-b0002",
+      "kind": "table",
+      "label": "Table 8",
+      "target_anchor_id": "table-8"
+    },
+    {
+      "page": 54,
+      "source_block_id": "p054-b0019",
+      "kind": "figure",
+      "label": "Figure 15",
+      "target_anchor_id": "figure-15"
+    },
+    {
+      "page": 54,
+      "source_block_id": "p054-b0040",
+      "kind": "figure",
+      "label": "Figure 15",
+      "target_anchor_id": "figure-15"
+    },
+    {
+      "page": 56,
+      "source_block_id": "p056-b0031",
+      "kind": "section",
+      "label": "Section 501.15",
+      "target_anchor_id": "section-501-15"
+    },
+    {
+      "page": 61,
+      "source_block_id": "p061-b0003",
+      "kind": "table",
+      "label": "Table 9",
+      "target_anchor_id": "table-9"
+    },
+    {
+      "page": 61,
+      "source_block_id": "p061-b0005",
+      "kind": "table",
+      "label": "Table 9",
+      "target_anchor_id": "table-9"
+    },
+    {
+      "page": 61,
+      "source_block_id": "p061-b0017",
+      "kind": "figure",
+      "label": "Figure 5",
+      "target_anchor_id": "figure-5"
+    },
+    {
+      "page": 63,
+      "source_block_id": "p063-b0028",
+      "kind": "section",
+      "label": "Section 8",
+      "target_anchor_id": "section-8"
+    },
+    {
+      "page": 64,
+      "source_block_id": "p064-b0019",
+      "kind": "section",
+      "label": "Section 501.17",
+      "target_anchor_id": "section-501-17"
+    },
+    {
+      "page": 65,
+      "source_block_id": "p065-b0018",
+      "kind": "table",
+      "label": "Table 10",
+      "target_anchor_id": "table-10"
+    },
+    {
+      "page": 66,
+      "source_block_id": "p066-b0005",
+      "kind": "table",
+      "label": "Table 10",
+      "target_anchor_id": "table-10"
+    },
+    {
+      "page": 67,
+      "source_block_id": "p067-b0002",
+      "kind": "table",
+      "label": "Table 10",
+      "target_anchor_id": "table-10"
+    },
+    {
+      "page": 67,
+      "source_block_id": "p067-b0017",
+      "kind": "figure",
+      "label": "Figure 16",
+      "target_anchor_id": "figure-16"
+    },
+    {
+      "page": 67,
+      "source_block_id": "p067-b0018",
+      "kind": "figure",
+      "label": "Figure 16",
+      "target_anchor_id": "figure-16"
+    },
+    {
+      "page": 68,
+      "source_block_id": "p068-b0014",
+      "kind": "section",
+      "label": "Section 1",
+      "target_anchor_id": "section-1"
+    },
+    {
+      "page": 70,
+      "source_block_id": "p070-b0022",
+      "kind": "section",
+      "label": "Section 1.12.5",
+      "target_anchor_id": "section-1-12-5"
+    },
+    {
+      "page": 70,
+      "source_block_id": "p070-b0031",
+      "kind": "figure",
+      "label": "Figure 18",
+      "target_anchor_id": "figure-18"
+    },
+    {
+      "page": 70,
+      "source_block_id": "p070-b0031",
+      "kind": "figure",
+      "label": "Figure 66",
+      "target_anchor_id": "figure-66"
+    },
+    {
+      "page": 71,
+      "source_block_id": "p071-b0022",
+      "kind": "section",
+      "label": "Section 6.1",
+      "target_anchor_id": "section-6-1"
+    },
+    {
+      "page": 71,
+      "source_block_id": "p071-b0022",
+      "kind": "section",
+      "label": "Section 6.2",
+      "target_anchor_id": "section-6-2"
+    },
+    {
+      "page": 71,
+      "source_block_id": "p071-b0025",
+      "kind": "section",
+      "label": "Section 6.1",
+      "target_anchor_id": "section-6-1"
+    },
+    {
+      "page": 71,
+      "source_block_id": "p071-b0033",
+      "kind": "table",
+      "label": "Table 2",
+      "target_anchor_id": "table-2"
+    },
+    {
+      "page": 71,
+      "source_block_id": "p071-b0034",
+      "kind": "table",
+      "label": "Table 3",
+      "target_anchor_id": "table-3"
+    },
+    {
+      "page": 72,
+      "source_block_id": "p072-b0002",
+      "kind": "table",
+      "label": "Table 3",
+      "target_anchor_id": "table-3"
+    },
+    {
+      "page": 72,
+      "source_block_id": "p072-b0005",
+      "kind": "table",
+      "label": "Table 3",
+      "target_anchor_id": "table-3"
+    },
+    {
+      "page": 72,
+      "source_block_id": "p072-b0006",
+      "kind": "table",
+      "label": "Table 4",
+      "target_anchor_id": "table-4"
+    },
+    {
+      "page": 72,
+      "source_block_id": "p072-b0007",
+      "kind": "table",
+      "label": "Table 11",
+      "target_anchor_id": "table-11"
+    },
+    {
+      "page": 72,
+      "source_block_id": "p072-b0008",
+      "kind": "table",
+      "label": "Table 11",
+      "target_anchor_id": "table-11"
+    },
+    {
+      "page": 72,
+      "source_block_id": "p072-b0016",
+      "kind": "table",
+      "label": "Table 3",
+      "target_anchor_id": "table-3"
+    },
+    {
+      "page": 72,
+      "source_block_id": "p072-b0018",
+      "kind": "table",
+      "label": "Table 2",
+      "target_anchor_id": "table-2"
+    },
+    {
+      "page": 73,
+      "source_block_id": "p073-b0002",
+      "kind": "figure",
+      "label": "Figure 19",
+      "target_anchor_id": "figure-19"
+    },
+    {
+      "page": 73,
+      "source_block_id": "p073-b0005",
+      "kind": "section",
+      "label": "Section 8",
+      "target_anchor_id": "section-8"
+    },
+    {
+      "page": 73,
+      "source_block_id": "p073-b0022",
+      "kind": "table",
+      "label": "Table 2",
+      "target_anchor_id": "table-2"
+    },
+    {
+      "page": 73,
+      "source_block_id": "p073-b0030",
+      "kind": "figure",
+      "label": "Figure 17",
+      "target_anchor_id": "figure-17"
+    },
+    {
+      "page": 73,
+      "source_block_id": "p073-b0038",
+      "kind": "section",
+      "label": "Section 5.1.2",
+      "target_anchor_id": "section-5-1-2"
+    },
+    {
+      "page": 74,
+      "source_block_id": "p074-b0056",
+      "kind": "figure",
+      "label": "Figure 17",
+      "target_anchor_id": "figure-17"
+    },
+    {
+      "page": 75,
+      "source_block_id": "p075-b0005",
+      "kind": "figure",
+      "label": "Figure 4",
+      "target_anchor_id": "figure-4"
+    },
+    {
+      "page": 75,
+      "source_block_id": "p075-b0008",
+      "kind": "figure",
+      "label": "Figure 18",
+      "target_anchor_id": "figure-18"
+    },
+    {
+      "page": 75,
+      "source_block_id": "p075-b0016",
+      "kind": "section",
+      "label": "Section 5.2",
+      "target_anchor_id": "section-5-2"
+    },
+    {
+      "page": 75,
+      "source_block_id": "p075-b0017",
+      "kind": "figure",
+      "label": "Figure 18",
+      "target_anchor_id": "figure-18"
+    },
+    {
+      "page": 75,
+      "source_block_id": "p075-b0022",
+      "kind": "figure",
+      "label": "Figure 20",
+      "target_anchor_id": "figure-20"
+    },
+    {
+      "page": 75,
+      "source_block_id": "p075-b0033",
+      "kind": "figure",
+      "label": "Figure 20",
+      "target_anchor_id": "figure-20"
+    },
+    {
+      "page": 76,
+      "source_block_id": "p076-b0028",
+      "kind": "figure",
+      "label": "Figure 19",
+      "target_anchor_id": "figure-19"
+    },
+    {
+      "page": 77,
+      "source_block_id": "p077-b0047",
+      "kind": "figure",
+      "label": "Figure 20",
+      "target_anchor_id": "figure-20"
+    },
+    {
+      "page": 78,
+      "source_block_id": "p078-b0003",
+      "kind": "table",
+      "label": "Table 4",
+      "target_anchor_id": "table-4"
+    },
+    {
+      "page": 78,
+      "source_block_id": "p078-b0003",
+      "kind": "table",
+      "label": "Table 1",
+      "target_anchor_id": "table-1"
+    },
+    {
+      "page": 78,
+      "source_block_id": "p078-b0006",
+      "kind": "table",
+      "label": "Table 3",
+      "target_anchor_id": "table-3"
+    },
+    {
+      "page": 79,
+      "source_block_id": "p079-b0006",
+      "kind": "section",
+      "label": "Section 8",
+      "target_anchor_id": "section-8"
+    },
+    {
+      "page": 79,
+      "source_block_id": "p079-b0039",
+      "kind": "section",
+      "label": "Section 9.2",
+      "target_anchor_id": "section-9-2"
+    },
+    {
+      "page": 81,
+      "source_block_id": "p081-b0016",
+      "kind": "section",
+      "label": "Section 9.4.4",
+      "target_anchor_id": "section-9-4-4"
+    },
+    {
+      "page": 82,
+      "source_block_id": "p082-b0015",
+      "kind": "figure",
+      "label": "Figure 21",
+      "target_anchor_id": "figure-21"
+    },
+    {
+      "page": 82,
+      "source_block_id": "p082-b0031",
+      "kind": "figure",
+      "label": "Figure 21",
+      "target_anchor_id": "figure-21"
+    },
+    {
+      "page": 83,
+      "source_block_id": "p083-b0036",
+      "kind": "figure",
+      "label": "Figure 22",
+      "target_anchor_id": "figure-22"
+    },
+    {
+      "page": 84,
+      "source_block_id": "p084-b0009",
+      "kind": "figure",
+      "label": "Figure 22",
+      "target_anchor_id": "figure-22"
+    },
+    {
+      "page": 91,
+      "source_block_id": "p091-b0005",
+      "kind": "figure",
+      "label": "Figure 23",
+      "target_anchor_id": "figure-23"
+    },
+    {
+      "page": 91,
+      "source_block_id": "p091-b0010",
+      "kind": "figure",
+      "label": "Figure 23",
+      "target_anchor_id": "figure-23"
+    },
+    {
+      "page": 93,
+      "source_block_id": "p093-b0015",
+      "kind": "figure",
+      "label": "Figure 24",
+      "target_anchor_id": "figure-24"
+    },
+    {
+      "page": 94,
+      "source_block_id": "p094-b0012",
+      "kind": "figure",
+      "label": "Figure 24",
+      "target_anchor_id": "figure-24"
+    },
+    {
+      "page": 109,
+      "source_block_id": "p109-b0033",
+      "kind": "figure",
+      "label": "Figure 25",
+      "target_anchor_id": "figure-25"
+    },
+    {
+      "page": 110,
+      "source_block_id": "p110-b0009",
+      "kind": "figure",
+      "label": "Figure 25",
+      "target_anchor_id": "figure-25"
+    },
+    {
+      "page": 110,
+      "source_block_id": "p110-b0024",
+      "kind": "table",
+      "label": "Table 6.1.4",
+      "target_anchor_id": "table-6-1-4"
+    },
+    {
+      "page": 110,
+      "source_block_id": "p110-b0025",
+      "kind": "table",
+      "label": "Table 6.1.4",
+      "target_anchor_id": "table-6-1-4"
+    },
+    {
+      "page": 111,
+      "source_block_id": "p111-b0035",
+      "kind": "table",
+      "label": "Table 12",
+      "target_anchor_id": "table-12"
+    },
+    {
+      "page": 111,
+      "source_block_id": "p111-b0041",
+      "kind": "figure",
+      "label": "Figure 27",
+      "target_anchor_id": "figure-27"
+    },
+    {
+      "page": 112,
+      "source_block_id": "p112-b0002",
+      "kind": "table",
+      "label": "Table 12",
+      "target_anchor_id": "table-12"
+    },
+    {
+      "page": 113,
+      "source_block_id": "p113-b0018",
+      "kind": "figure",
+      "label": "Figure 27",
+      "target_anchor_id": "figure-27"
+    },
+    {
+      "page": 113,
+      "source_block_id": "p113-b0025",
+      "kind": "figure",
+      "label": "Figure 34",
+      "target_anchor_id": "figure-34"
+    },
+    {
+      "page": 113,
+      "source_block_id": "p113-b0031",
+      "kind": "figure",
+      "label": "Figure 31",
+      "target_anchor_id": "figure-31"
+    },
+    {
+      "page": 114,
+      "source_block_id": "p114-b0016",
+      "kind": "figure",
+      "label": "Figure 26",
+      "target_anchor_id": "figure-26"
+    },
+    {
+      "page": 115,
+      "source_block_id": "p115-b0053",
+      "kind": "figure",
+      "label": "Figure 26",
+      "target_anchor_id": "figure-26"
+    },
+    {
+      "page": 116,
+      "source_block_id": "p116-b0033",
+      "kind": "figure",
+      "label": "Figure 27",
+      "target_anchor_id": "figure-27"
+    },
+    {
+      "page": 118,
+      "source_block_id": "p118-b0029",
+      "kind": "figure",
+      "label": "Figure 28",
+      "target_anchor_id": "figure-28"
+    },
+    {
+      "page": 118,
+      "source_block_id": "p118-b0035",
+      "kind": "figure",
+      "label": "Figure 28",
+      "target_anchor_id": "figure-28"
+    },
+    {
+      "page": 119,
+      "source_block_id": "p119-b0012",
+      "kind": "figure",
+      "label": "Figure 28",
+      "target_anchor_id": "figure-28"
+    },
+    {
+      "page": 120,
+      "source_block_id": "p120-b0014",
+      "kind": "figure",
+      "label": "Figure 29",
+      "target_anchor_id": "figure-29"
+    },
+    {
+      "page": 120,
+      "source_block_id": "p120-b0032",
+      "kind": "figure",
+      "label": "Figure 29",
+      "target_anchor_id": "figure-29"
+    },
+    {
+      "page": 121,
+      "source_block_id": "p121-b0026",
+      "kind": "figure",
+      "label": "Figure 28",
+      "target_anchor_id": "figure-28"
+    },
+    {
+      "page": 122,
+      "source_block_id": "p122-b0004",
+      "kind": "figure",
+      "label": "Figure 30",
+      "target_anchor_id": "figure-30"
+    },
+    {
+      "page": 123,
+      "source_block_id": "p123-b0020",
+      "kind": "figure",
+      "label": "Figure 30",
+      "target_anchor_id": "figure-30"
+    },
+    {
+      "page": 125,
+      "source_block_id": "p125-b0022",
+      "kind": "figure",
+      "label": "Figure 31",
+      "target_anchor_id": "figure-31"
+    },
+    {
+      "page": 126,
+      "source_block_id": "p126-b0014",
+      "kind": "figure",
+      "label": "Figure 31",
+      "target_anchor_id": "figure-31"
+    },
+    {
+      "page": 126,
+      "source_block_id": "p126-b0017",
+      "kind": "figure",
+      "label": "Figure 32",
+      "target_anchor_id": "figure-32"
+    },
+    {
+      "page": 127,
+      "source_block_id": "p127-b0030",
+      "kind": "figure",
+      "label": "Figure 32",
+      "target_anchor_id": "figure-32"
+    },
+    {
+      "page": 129,
+      "source_block_id": "p129-b0007",
+      "kind": "figure",
+      "label": "Figure 33",
+      "target_anchor_id": "figure-33"
+    },
+    {
+      "page": 129,
+      "source_block_id": "p129-b0017",
+      "kind": "figure",
+      "label": "Figure 33",
+      "target_anchor_id": "figure-33"
+    },
+    {
+      "page": 129,
+      "source_block_id": "p129-b0020",
+      "kind": "table",
+      "label": "Table 13",
+      "target_anchor_id": "table-13"
+    },
+    {
+      "page": 130,
+      "source_block_id": "p130-b0002",
+      "kind": "table",
+      "label": "Table 13",
+      "target_anchor_id": "table-13"
+    },
+    {
+      "page": 131,
+      "source_block_id": "p131-b0042",
+      "kind": "table",
+      "label": "Table 14",
+      "target_anchor_id": "table-14"
+    },
+    {
+      "page": 132,
+      "source_block_id": "p132-b0002",
+      "kind": "table",
+      "label": "Table 14",
+      "target_anchor_id": "table-14"
+    },
+    {
+      "page": 134,
+      "source_block_id": "p134-b0029",
+      "kind": "table",
+      "label": "Table 15",
+      "target_anchor_id": "table-15"
+    },
+    {
+      "page": 135,
+      "source_block_id": "p135-b0003",
+      "kind": "table",
+      "label": "Table 15",
+      "target_anchor_id": "table-15"
+    },
+    {
+      "page": 137,
+      "source_block_id": "p137-b0031",
+      "kind": "figure",
+      "label": "Figure 34",
+      "target_anchor_id": "figure-34"
+    },
+    {
+      "page": 138,
+      "source_block_id": "p138-b0021",
+      "kind": "figure",
+      "label": "Figure 34",
+      "target_anchor_id": "figure-34"
+    },
+    {
+      "page": 143,
+      "source_block_id": "p143-b0025",
+      "kind": "figure",
+      "label": "Figure 34",
+      "target_anchor_id": "figure-34"
+    },
+    {
+      "page": 144,
+      "source_block_id": "p144-b0018",
+      "kind": "table",
+      "label": "Table 16",
+      "target_anchor_id": "table-16"
+    },
+    {
+      "page": 144,
+      "source_block_id": "p144-b0018",
+      "kind": "table",
+      "label": "Table 17",
+      "target_anchor_id": "table-17"
+    },
+    {
+      "page": 144,
+      "source_block_id": "p144-b0021",
+      "kind": "table",
+      "label": "Table 16",
+      "target_anchor_id": "table-16"
+    },
+    {
+      "page": 144,
+      "source_block_id": "p144-b0026",
+      "kind": "table",
+      "label": "Table 17",
+      "target_anchor_id": "table-17"
+    },
+    {
+      "page": 144,
+      "source_block_id": "p144-b0033",
+      "kind": "figure",
+      "label": "Figure 35",
+      "target_anchor_id": "figure-35"
+    },
+    {
+      "page": 144,
+      "source_block_id": "p144-b0035",
+      "kind": "figure",
+      "label": "Figure 36",
+      "target_anchor_id": "figure-36"
+    },
+    {
+      "page": 145,
+      "source_block_id": "p145-b0023",
+      "kind": "figure",
+      "label": "Figure 35",
+      "target_anchor_id": "figure-35"
+    },
+    {
+      "page": 146,
+      "source_block_id": "p146-b0036",
+      "kind": "figure",
+      "label": "Figure 36",
+      "target_anchor_id": "figure-36"
+    },
+    {
+      "page": 151,
+      "source_block_id": "p151-b0022",
+      "kind": "figure",
+      "label": "Figure 36",
+      "target_anchor_id": "figure-36"
+    },
+    {
+      "page": 153,
+      "source_block_id": "p153-b0023",
+      "kind": "figure",
+      "label": "Figure 37",
+      "target_anchor_id": "figure-37"
+    },
+    {
+      "page": 153,
+      "source_block_id": "p153-b0036",
+      "kind": "section",
+      "label": "Section I",
+      "target_anchor_id": "section-i"
+    },
+    {
+      "page": 153,
+      "source_block_id": "p153-b0037",
+      "kind": "section",
+      "label": "Section 3.9",
+      "target_anchor_id": "section-3-9"
+    },
+    {
+      "page": 154,
+      "source_block_id": "p154-b0017",
+      "kind": "figure",
+      "label": "Figure 37",
+      "target_anchor_id": "figure-37"
+    },
+    {
+      "page": 157,
+      "source_block_id": "p157-b0024",
+      "kind": "figure",
+      "label": "Figure 38",
+      "target_anchor_id": "figure-38"
+    },
+    {
+      "page": 158,
+      "source_block_id": "p158-b0019",
+      "kind": "figure",
+      "label": "Figure 38",
+      "target_anchor_id": "figure-38"
+    },
+    {
+      "page": 160,
+      "source_block_id": "p160-b0025",
+      "kind": "figure",
+      "label": "Figure 39",
+      "target_anchor_id": "figure-39"
+    },
+    {
+      "page": 161,
+      "source_block_id": "p161-b0016",
+      "kind": "figure",
+      "label": "Figure 39",
+      "target_anchor_id": "figure-39"
+    },
+    {
+      "page": 162,
+      "source_block_id": "p162-b0012",
+      "kind": "figure",
+      "label": "Figure 39",
+      "target_anchor_id": "figure-39"
+    },
+    {
+      "page": 162,
+      "source_block_id": "p162-b0035",
+      "kind": "figure",
+      "label": "Figure 40",
+      "target_anchor_id": "figure-40"
+    },
+    {
+      "page": 162,
+      "source_block_id": "p162-b0035",
+      "kind": "figure",
+      "label": "Figure 41",
+      "target_anchor_id": "figure-41"
+    },
+    {
+      "page": 163,
+      "source_block_id": "p163-b0016",
+      "kind": "figure",
+      "label": "Figure 40",
+      "target_anchor_id": "figure-40"
+    },
+    {
+      "page": 164,
+      "source_block_id": "p164-b0011",
+      "kind": "figure",
+      "label": "Figure 41",
+      "target_anchor_id": "figure-41"
+    },
+    {
+      "page": 166,
+      "source_block_id": "p166-b0022",
+      "kind": "figure",
+      "label": "Figure 42",
+      "target_anchor_id": "figure-42"
+    },
+    {
+      "page": 166,
+      "source_block_id": "p166-b0023",
+      "kind": "figure",
+      "label": "Figure 43",
+      "target_anchor_id": "figure-43"
+    },
+    {
+      "page": 167,
+      "source_block_id": "p167-b0015",
+      "kind": "figure",
+      "label": "Figure 42",
+      "target_anchor_id": "figure-42"
+    },
+    {
+      "page": 167,
+      "source_block_id": "p167-b0018",
+      "kind": "figure",
+      "label": "Figure 44",
+      "target_anchor_id": "figure-44"
+    },
+    {
+      "page": 168,
+      "source_block_id": "p168-b0040",
+      "kind": "figure",
+      "label": "Figure 43",
+      "target_anchor_id": "figure-43"
+    },
+    {
+      "page": 169,
+      "source_block_id": "p169-b0012",
+      "kind": "figure",
+      "label": "Figure 44",
+      "target_anchor_id": "figure-44"
+    },
+    {
+      "page": 171,
+      "source_block_id": "p171-b0034",
+      "kind": "figure",
+      "label": "Figure 45",
+      "target_anchor_id": "figure-45"
+    },
+    {
+      "page": 171,
+      "source_block_id": "p171-b0038",
+      "kind": "figure",
+      "label": "Figure 46",
+      "target_anchor_id": "figure-46"
+    },
+    {
+      "page": 172,
+      "source_block_id": "p172-b0053",
+      "kind": "figure",
+      "label": "Figure 45",
+      "target_anchor_id": "figure-45"
+    },
+    {
+      "page": 172,
+      "source_block_id": "p172-b0056",
+      "kind": "figure",
+      "label": "Figure 46",
+      "target_anchor_id": "figure-46"
+    },
+    {
+      "page": 172,
+      "source_block_id": "p172-b0056",
+      "kind": "figure",
+      "label": "Figure 45",
+      "target_anchor_id": "figure-45"
+    },
+    {
+      "page": 173,
+      "source_block_id": "p173-b0009",
+      "kind": "figure",
+      "label": "Figure 46",
+      "target_anchor_id": "figure-46"
+    },
+    {
+      "page": 173,
+      "source_block_id": "p173-b0027",
+      "kind": "figure",
+      "label": "Figure 47",
+      "target_anchor_id": "figure-47"
+    },
+    {
+      "page": 174,
+      "source_block_id": "p174-b0030",
+      "kind": "figure",
+      "label": "Figure 48",
+      "target_anchor_id": "figure-48"
+    },
+    {
+      "page": 175,
+      "source_block_id": "p175-b0058",
+      "kind": "figure",
+      "label": "Figure 47",
+      "target_anchor_id": "figure-47"
+    },
+    {
+      "page": 176,
+      "source_block_id": "p176-b0018",
+      "kind": "figure",
+      "label": "Figure 48",
+      "target_anchor_id": "figure-48"
+    },
+    {
+      "page": 179,
+      "source_block_id": "p179-b0005",
+      "kind": "figure",
+      "label": "Figure 49",
+      "target_anchor_id": "figure-49"
+    },
+    {
+      "page": 179,
+      "source_block_id": "p179-b0017",
+      "kind": "table",
+      "label": "Table 5",
+      "target_anchor_id": "table-5"
+    },
+    {
+      "page": 179,
+      "source_block_id": "p179-b0020",
+      "kind": "figure",
+      "label": "Figure 49",
+      "target_anchor_id": "figure-49"
+    },
+    {
+      "page": 180,
+      "source_block_id": "p180-b0019",
+      "kind": "figure",
+      "label": "Figure 50",
+      "target_anchor_id": "figure-50"
+    },
+    {
+      "page": 180,
+      "source_block_id": "p180-b0037",
+      "kind": "figure",
+      "label": "Figure 47",
+      "target_anchor_id": "figure-47"
+    },
+    {
+      "page": 181,
+      "source_block_id": "p181-b0002",
+      "kind": "figure",
+      "label": "Figure 50",
+      "target_anchor_id": "figure-50"
+    },
+    {
+      "page": 182,
+      "source_block_id": "p182-b0015",
+      "kind": "table",
+      "label": "Table 18",
+      "target_anchor_id": "table-18"
+    },
+    {
+      "page": 182,
+      "source_block_id": "p182-b0017",
+      "kind": "table",
+      "label": "Table 18",
+      "target_anchor_id": "table-18"
+    },
+    {
+      "page": 182,
+      "source_block_id": "p182-b0037",
+      "kind": "section",
+      "label": "Section 1.2.2",
+      "target_anchor_id": "section-1-2-2"
+    },
+    {
+      "page": 183,
+      "source_block_id": "p183-b0007",
+      "kind": "figure",
+      "label": "Figure 51",
+      "target_anchor_id": "figure-51"
+    },
+    {
+      "page": 183,
+      "source_block_id": "p183-b0012",
+      "kind": "figure",
+      "label": "Figure 66",
+      "target_anchor_id": "figure-66"
+    },
+    {
+      "page": 183,
+      "source_block_id": "p183-b0013",
+      "kind": "figure",
+      "label": "Figure 52",
+      "target_anchor_id": "figure-52"
+    },
+    {
+      "page": 183,
+      "source_block_id": "p183-b0030",
+      "kind": "figure",
+      "label": "Figure 53",
+      "target_anchor_id": "figure-53"
+    },
+    {
+      "page": 184,
+      "source_block_id": "p184-b0007",
+      "kind": "figure",
+      "label": "Figure 51",
+      "target_anchor_id": "figure-51"
+    },
+    {
+      "page": 185,
+      "source_block_id": "p185-b0008",
+      "kind": "figure",
+      "label": "Figure 52",
+      "target_anchor_id": "figure-52"
+    },
+    {
+      "page": 185,
+      "source_block_id": "p185-b0026",
+      "kind": "figure",
+      "label": "Figure 53",
+      "target_anchor_id": "figure-53"
+    },
+    {
+      "page": 186,
+      "source_block_id": "p186-b0031",
+      "kind": "figure",
+      "label": "Figure 54",
+      "target_anchor_id": "figure-54"
+    },
+    {
+      "page": 187,
+      "source_block_id": "p187-b0017",
+      "kind": "figure",
+      "label": "Figure 54",
+      "target_anchor_id": "figure-54"
+    },
+    {
+      "page": 189,
+      "source_block_id": "p189-b0014",
+      "kind": "figure",
+      "label": "Figure 55",
+      "target_anchor_id": "figure-55"
+    },
+    {
+      "page": 189,
+      "source_block_id": "p189-b0025",
+      "kind": "figure",
+      "label": "Figure 65",
+      "target_anchor_id": "figure-65"
+    },
+    {
+      "page": 190,
+      "source_block_id": "p190-b0020",
+      "kind": "figure",
+      "label": "Figure 55",
+      "target_anchor_id": "figure-55"
+    },
+    {
+      "page": 191,
+      "source_block_id": "p191-b0004",
+      "kind": "figure",
+      "label": "Figure 63",
+      "target_anchor_id": "figure-63"
+    },
+    {
+      "page": 191,
+      "source_block_id": "p191-b0015",
+      "kind": "figure",
+      "label": "Figure 62",
+      "target_anchor_id": "figure-62"
+    },
+    {
+      "page": 191,
+      "source_block_id": "p191-b0020",
+      "kind": "figure",
+      "label": "Figure 56",
+      "target_anchor_id": "figure-56"
+    },
+    {
+      "page": 192,
+      "source_block_id": "p192-b0008",
+      "kind": "section",
+      "label": "Section A",
+      "target_anchor_id": "section-a"
+    },
+    {
+      "page": 192,
+      "source_block_id": "p192-b0009",
+      "kind": "figure",
+      "label": "Figure 56",
+      "target_anchor_id": "figure-56"
+    },
+    {
+      "page": 192,
+      "source_block_id": "p192-b0016",
+      "kind": "figure",
+      "label": "Figure 69",
+      "target_anchor_id": "figure-69"
+    },
+    {
+      "page": 192,
+      "source_block_id": "p192-b0018",
+      "kind": "table",
+      "label": "Table 2",
+      "target_anchor_id": "table-2"
+    },
+    {
+      "page": 192,
+      "source_block_id": "p192-b0022",
+      "kind": "figure",
+      "label": "Figure 57",
+      "target_anchor_id": "figure-57"
+    },
+    {
+      "page": 192,
+      "source_block_id": "p192-b0024",
+      "kind": "figure",
+      "label": "Figure 59",
+      "target_anchor_id": "figure-59"
+    },
+    {
+      "page": 193,
+      "source_block_id": "p193-b0016",
+      "kind": "figure",
+      "label": "Figure 57",
+      "target_anchor_id": "figure-57"
+    },
+    {
+      "page": 193,
+      "source_block_id": "p193-b0032",
+      "kind": "section",
+      "label": "Section 5.9.1",
+      "target_anchor_id": "section-5-9-1"
+    },
+    {
+      "page": 195,
+      "source_block_id": "p195-b0010",
+      "kind": "section",
+      "label": "Section 5.4.4.4",
+      "target_anchor_id": "section-5-4-4-4"
+    },
+    {
+      "page": 195,
+      "source_block_id": "p195-b0014",
+      "kind": "figure",
+      "label": "Figure 58",
+      "target_anchor_id": "figure-58"
+    },
+    {
+      "page": 196,
+      "source_block_id": "p196-b0059",
+      "kind": "figure",
+      "label": "Figure 58",
+      "target_anchor_id": "figure-58"
+    },
+    {
+      "page": 197,
+      "source_block_id": "p197-b0004",
+      "kind": "figure",
+      "label": "Figure 59",
+      "target_anchor_id": "figure-59"
+    },
+    {
+      "page": 197,
+      "source_block_id": "p197-b0029",
+      "kind": "figure",
+      "label": "Figure 5",
+      "target_anchor_id": "figure-5"
+    },
+    {
+      "page": 197,
+      "source_block_id": "p197-b0029",
+      "kind": "figure",
+      "label": "Figure 5",
+      "target_anchor_id": "figure-5"
+    },
+    {
+      "page": 198,
+      "source_block_id": "p198-b0029",
+      "kind": "figure",
+      "label": "Figure 60",
+      "target_anchor_id": "figure-60"
+    },
+    {
+      "page": 199,
+      "source_block_id": "p199-b0003",
+      "kind": "figure",
+      "label": "Figure 61",
+      "target_anchor_id": "figure-61"
+    },
+    {
+      "page": 199,
+      "source_block_id": "p199-b0022",
+      "kind": "figure",
+      "label": "Figure 61",
+      "target_anchor_id": "figure-61"
+    },
+    {
+      "page": 205,
+      "source_block_id": "p205-b0005",
+      "kind": "figure",
+      "label": "Figure 62",
+      "target_anchor_id": "figure-62"
+    },
+    {
+      "page": 205,
+      "source_block_id": "p205-b0036",
+      "kind": "figure",
+      "label": "Figure 62",
+      "target_anchor_id": "figure-62"
+    },
+    {
+      "page": 206,
+      "source_block_id": "p206-b0010",
+      "kind": "table",
+      "label": "Table 19",
+      "target_anchor_id": "table-19"
+    },
+    {
+      "page": 206,
+      "source_block_id": "p206-b0012",
+      "kind": "table",
+      "label": "Table 19",
+      "target_anchor_id": "table-19"
+    },
+    {
+      "page": 209,
+      "source_block_id": "p209-b0021",
+      "kind": "figure",
+      "label": "Figure 63",
+      "target_anchor_id": "figure-63"
+    },
+    {
+      "page": 209,
+      "source_block_id": "p209-b0027",
+      "kind": "figure",
+      "label": "Figure 29",
+      "target_anchor_id": "figure-29"
+    },
+    {
+      "page": 210,
+      "source_block_id": "p210-b0032",
+      "kind": "figure",
+      "label": "Figure 63",
+      "target_anchor_id": "figure-63"
+    },
+    {
+      "page": 211,
+      "source_block_id": "p211-b0015",
+      "kind": "figure",
+      "label": "Figure 64",
+      "target_anchor_id": "figure-64"
+    },
+    {
+      "page": 211,
+      "source_block_id": "p211-b0038",
+      "kind": "figure",
+      "label": "Figure 64",
+      "target_anchor_id": "figure-64"
+    },
+    {
+      "page": 212,
+      "source_block_id": "p212-b0035",
+      "kind": "figure",
+      "label": "Figure 65",
+      "target_anchor_id": "figure-65"
+    },
+    {
+      "page": 213,
+      "source_block_id": "p213-b0035",
+      "kind": "figure",
+      "label": "Figure 65",
+      "target_anchor_id": "figure-65"
+    },
+    {
+      "page": 214,
+      "source_block_id": "p214-b0023",
+      "kind": "table",
+      "label": "Table 20",
+      "target_anchor_id": "table-20"
+    },
+    {
+      "page": 215,
+      "source_block_id": "p215-b0003",
+      "kind": "table",
+      "label": "Table 20",
+      "target_anchor_id": "table-20"
+    },
+    {
+      "page": 215,
+      "source_block_id": "p215-b0068",
+      "kind": "figure",
+      "label": "Figure 66",
+      "target_anchor_id": "figure-66"
+    },
+    {
+      "page": 216,
+      "source_block_id": "p216-b0014",
+      "kind": "figure",
+      "label": "Figure 66",
+      "target_anchor_id": "figure-66"
+    },
+    {
+      "page": 217,
+      "source_block_id": "p217-b0030",
+      "kind": "figure",
+      "label": "Figure 67",
+      "target_anchor_id": "figure-67"
+    },
+    {
+      "page": 218,
+      "source_block_id": "p218-b0044",
+      "kind": "figure",
+      "label": "Figure 67",
+      "target_anchor_id": "figure-67"
+    },
+    {
+      "page": 222,
+      "source_block_id": "p222-b0029",
+      "kind": "figure",
+      "label": "Figure 68",
+      "target_anchor_id": "figure-68"
+    },
+    {
+      "page": 223,
+      "source_block_id": "p223-b0007",
+      "kind": "figure",
+      "label": "Figure 68",
+      "target_anchor_id": "figure-68"
+    },
+    {
+      "page": 226,
+      "source_block_id": "p226-b0034",
+      "kind": "figure",
+      "label": "Figure 69",
+      "target_anchor_id": "figure-69"
+    },
+    {
+      "page": 227,
+      "source_block_id": "p227-b0027",
+      "kind": "figure",
+      "label": "Figure 69",
+      "target_anchor_id": "figure-69"
+    },
+    {
+      "page": 229,
+      "source_block_id": "p229-b0017",
+      "kind": "section",
+      "label": "Section 2",
+      "target_anchor_id": "section-2"
+    }
+  ],
+  "unresolved_reference_target_count": 12,
+  "unresolved_reference_targets": [
+    "figure-59",
+    "section-1-12-5",
+    "section-1-2-2",
+    "section-5-1-2",
+    "section-5-9-1",
+    "section-501-15",
+    "section-501-17",
+    "section-a",
+    "section-i",
+    "table-6-1-4",
+    "table-a",
+    "table-c"
+  ]
+}

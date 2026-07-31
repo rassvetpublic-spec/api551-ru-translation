@@ -1,7 +1,7 @@
 {
   "project": "API 551 Stage 5 — Final Russian PDF",
   "updated": "2026-07-30",
-  "status": "stage5_gate0_complete_gate1_not_started_stage4_baseline_preserved",
+  "status": "stage5_gate1_machine_map_complete_manual_review_pending_stage4_baseline_preserved",
   "canonical_source_policy": {
     "primary_source_folder": {
       "name": "API 551/Source",
@@ -199,6 +199,15 @@
     "merge_commit": "eeca80146ff59660326eef55582ad611f2d7c3c4",
     "merged_on": "2026-07-29",
     "gate0_status": "complete",
-    "gate1_status": "not_started"
+    "gate1_status": "machine_map_complete_manual_review_pending",
+    "gate1_branch": "task/stage5-gate1-page-map",
+    "gate1_index": "workspace/stage5/gate1/API551_STAGE5_GATE1_PAGE_MAP_INDEX.json",
+    "gate1_qa_report": "workspace/stage5/gate1/API551_STAGE5_GATE1_QA_REPORT.json",
+    "mapped_pages": 244,
+    "figures_mapped": 69,
+    "tables_detected": 21,
+    "manual_review_pages": 88,
+    "ambiguities": 187,
+    "unresolved_reference_targets": 12
   }
 }

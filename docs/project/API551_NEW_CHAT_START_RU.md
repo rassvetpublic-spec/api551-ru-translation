@@ -62,10 +62,10 @@ accepted: 69/69
 not_accepted: 0/69
 changed/review: 0
 stage4: completed
-stage5: Gate 0 completed by merged PR #65; Gate 1 authorized, not started
+stage5: Gate 1 machine map complete: 244/244 pages; manual review pending
 ```
 
-PR #65 уже смержен в `main` (`eeca80146ff59660326eef55582ad611f2d7c3c4`). Для Gate 1 создать новую `task/*` ветку от актуального `main` и повторить source-gate.
+PR #65 уже смержен в `main` (`eeca80146ff59660326eef55582ad611f2d7c3c4`). Машинная карта Gate 1 построена в `task/stage5-gate1-page-map`; повторить source-gate и `gate1-check`, затем закрыть очередь ручной проверки. Gate 2 не начинать.
 
 ## 6. Git LFS
 
@@ -116,12 +116,12 @@ Stable: main. Stage 5 — task/<topic> от актуального main и PR в
 
 Прочитай bootstrap, handoff/schema, Stage 5 CURRENT-ТЗ, manifest, CURRENT policy/rules, catalog/index.
 Запусти .\tools\api551\api551.ps1 source-gate.
-PR #65 смержен в main, Gate 0 завершён. Создай task-ветку от актуального main, повтори source-gate и выполняй только Gate 1: карту 244 страниц, таблиц, Figure, NOTE, сносок и ссылок.
+PR #65 смержен в main, Gate 0 завершён. Ветка `task/stage5-gate1-page-map` содержит машинную карту `244/244`, Figure `69/69`, таблицы, NOTE, сноски и ссылки. Повтори source-gate и `gate1-check`, затем выполняй только ручную проверку Gate 1.
 ```
 
 ## 12. Следующий безопасный шаг
 
-Создать `task/stage5-gate1-page-map` от актуального `main`, повторить source-gate и выполнить только Gate 1.
+Проверить 88 отмеченных страниц и 187 неоднозначностей в `workspace/stage5/gate1`, закрыть 12 неразрешённых целей ссылок и не начинать Gate 2 до принятия Gate 1.
 
 ## accept-figure command
 
