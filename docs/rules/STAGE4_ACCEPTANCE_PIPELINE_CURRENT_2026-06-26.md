@@ -27,7 +27,7 @@ current main -> dedicated task/reopen branch -> coherent Figure update -> PR int
 ```
 
 - Do not write directly to `main`.
-- Do not use `candidates` as the active acceptance branch after Stage 4 promotion.
+- Do not use a persistent Stage 4 acceptance or baseline branch after Stage 4 promotion.
 - Default branch name: `task/reopen-figNN-YYYYMMDD` or another clear non-main task name.
 - PR base: `main`.
 - Merge only after explicit user authorization and successful CI/review/source-gate.
@@ -72,7 +72,7 @@ Before merge verify:
 
 ## Historical promotion boundary
 
-The old `candidates -> main` promotion sequence is completed history. It must not be repeated for Stage 5 or a reopened Figure.
+The old two-branch Stage 4 promotion sequence is completed history. It must not be repeated for Stage 5 or a reopened Figure.
 
 ## Cleanup
 

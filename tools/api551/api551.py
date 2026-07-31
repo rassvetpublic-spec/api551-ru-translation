@@ -326,6 +326,8 @@ def docs_sync_check(root: Path, quiet: bool = False) -> dict[str, Any]:
         fail("config/handoff branch-prefix allowlist mismatch")
     if schema.get("properties", {}).get("working_branch", {}).get("const") != cfg.get("working_branch"):
         fail("schema/config working_branch mismatch")
+    if handoff.get("stage4_baseline_branch") != cfg.get("stable_branch"):
+        fail("Stage 4 baseline must be preserved in the stable branch; a separate baseline branch is forbidden")
 
     if not quiet:
         print("docs/status/branch-policy sync OK")
